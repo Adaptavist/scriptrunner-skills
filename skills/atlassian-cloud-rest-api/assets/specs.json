@@ -1,0 +1,56 @@
+[
+  {
+    "description": "Assets Cloud REST APIs for object schemas, object types, objects, attributes, icons, statuses, and AQL search.",
+    "fileName": "assets-cloud-openapi.json",
+    "operationCount": 64,
+    "pathPrefix": "/rest/assets/1.0/",
+    "schemaCount": 52,
+    "sourceUrl": "https://dac-static.atlassian.com/cloud/assets/swagger.v3.json",
+    "title": "Assets Cloud REST API"
+  },
+  {
+    "description": "Confluence Cloud REST API v1 for CQL content search, audit, templates, and legacy space or content operations that are not available in v2.",
+    "fileName": "confluence-cloud-v1-openapi.json",
+    "operationCount": 130,
+    "pathPrefix": "/wiki/rest/api/",
+    "schemaCount": 168,
+    "sourceUrl": "https://dac-static.atlassian.com/cloud/confluence/swagger.v3.json",
+    "title": "Confluence Cloud REST API v1"
+  },
+  {
+    "description": "Confluence Cloud REST API v2 for pages, blogposts, spaces, attachments, comments, labels, content properties, tasks, whiteboards, databases, and other current Confluence resources.",
+    "fileName": "confluence-cloud-v2-openapi.json",
+    "operationCount": 218,
+    "pathPrefix": "/wiki/api/v2/",
+    "schemaCount": 142,
+    "sourceUrl": "https://dac-static.atlassian.com/cloud/confluence/openapi-v2.v3.json",
+    "title": "Confluence Cloud REST API v2"
+  },
+  {
+    "description": "Jira Cloud platform REST API v3 for core Jira resources such as issues, projects, users, workflows, fields, permissions, and dashboards.",
+    "fileName": "jira-cloud-platform-v3-openapi.json",
+    "operationCount": 617,
+    "pathPrefix": "/rest/api/3/",
+    "schemaCount": 971,
+    "sourceUrl": "https://dac-static.atlassian.com/cloud/jira/platform/swagger-v3.v3.json",
+    "title": "Jira Cloud platform REST API v3"
+  },
+  {
+    "description": "Jira Service Management Cloud REST APIs for service desks, requests, queues, approvals, SLAs, and organizations.",
+    "fileName": "jira-service-management-cloud-openapi.json",
+    "operationCount": 75,
+    "pathPrefix": "/rest/servicedeskapi/",
+    "schemaCount": 117,
+    "sourceUrl": "https://dac-static.atlassian.com/cloud/jira/service-desk/swagger.v3.json",
+    "title": "Jira Service Management Cloud REST API"
+  },
+  {
+    "description": "Jira Software Cloud REST APIs for boards, sprints, epics, backlog, and other software-specific endpoints.",
+    "fileName": "jira-software-cloud-openapi.json",
+    "operationCount": 105,
+    "pathPrefix": "/rest/agile/1.0/",
+    "schemaCount": 66,
+    "sourceUrl": "https://dac-static.atlassian.com/cloud/jira/software/swagger.v3.json",
+    "title": "Jira Software Cloud REST API"
+  }
+]

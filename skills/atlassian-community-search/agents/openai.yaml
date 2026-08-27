@@ -1,0 +1,4 @@
+interface:
+    display_name: 'Atlassian Community Search'
+    short_description: 'Research Atlassian Community via LiQL'
+    default_prompt: 'Use $atlassian-community-search to research relevant Atlassian Community posts and synthesize the findings.'

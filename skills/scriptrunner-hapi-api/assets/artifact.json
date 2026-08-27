@@ -1,0 +1,9 @@
+{
+  "classCount": 3631,
+  "coordinate": "com.adaptavist.scriptrunner.cloud:hapi:0.2.104",
+  "fileName": "hapi-0.2.104.jar",
+  "sha256": "15a925b32e27cd1ff77d7f2d62b1855b2b3115160ba78354f94e058252dcec74",
+  "sizeBytes": 8430872,
+  "sourceUrl": "https://nexus.adaptavist.net/repository/external/com/adaptavist/scriptrunner/cloud/hapi/0.2.104/hapi-0.2.104.jar",
+  "version": "0.2.104"
+}

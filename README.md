@@ -13,7 +13,6 @@ examples.
 - `atlassian-community-search`
 - `scriptrunner-documentation`
 - `scriptrunner-example-scripts`
-- `scriptrunner-hapi-api`
 - `scriptrunner-platform-guidance`
 
 List the skills without installing them:

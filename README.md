@@ -30,10 +30,3 @@ npx skills add Adaptavist/scriptrunner-skills --skill scriptrunner-documentation
 
 See the [`skills` CLI documentation](https://github.com/vercel-labs/skills) for
 agent selection, global installation, and other options.
-
-## Publishing
-
-This repository is generated from the ScriptRunner Migration Suite pipeline.
-The `skills/` directory and this README are replaced when their source content
-changes; tagged publications use
-`sms-<sms-core-short-sha>-pipeline-<GitLab-pipeline-id>`.

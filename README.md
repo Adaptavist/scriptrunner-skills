@@ -11,6 +11,7 @@ examples.
 
 - `atlassian-cloud-rest-api`
 - `atlassian-community-search`
+- `jira-expressions`
 - `scriptrunner-documentation`
 - `scriptrunner-example-scripts`
 - `scriptrunner-platform-guidance`

@@ -953,7 +953,7 @@ ScriptRunner for Jira Cloud cannot access Atlassian's Java APIs. All automation 
 
     <workflow_functions>
         <overview>
-            Workflow conditions and validators on Cloud must be implemented as Jira expressions. Use the `jira-expression-generator` subagent for Jira expression generation. Do not handcraft expressions from memory in the build agent. Workflow post functions remain Groovy-based.
+            Workflow conditions and validators on Cloud must be implemented as Jira expressions. Use the `jira-expression-generator` subagent for Jira expression generation when it is available; otherwise load the bundled `jira-expressions` skill and follow its references. Do not handcraft expressions from memory in the build agent. Workflow post functions remain Groovy-based.
     </overview>
 
     <pre_review_workflow_note>

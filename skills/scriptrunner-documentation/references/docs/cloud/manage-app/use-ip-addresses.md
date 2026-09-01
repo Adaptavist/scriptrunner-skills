@@ -18,8 +18,6 @@ We have summarized below some of the most **important information** regarding Sc
 -   Access to our IP addresses for allowlisting is granted selectively, based on specific customer requirements and use cases. This approach helps us maintain the highest standards of service quality and network security across all customers.
 -   We reserve the right to update our hosting infrastructure or modify IP addresses as needed. In such cases, affected customers will be notified well in advance to allow sufficient time for any required adjustments.
 
-If you have already allowlisted ScriptRunner IP addresses, please note that these IP addresses will change after 14th August 2026. We have notified you via email of the new list of IP addresses. If you believe you have not received this email, please get in touch with our Support team. Please ensure that your allowlists are updated in advance of 14th August 2026 to ensure ScriptRunner's continued functionality. If you requested the IP addresses on or after 1st April 2026, then you can disregard this message, as you should already have received the new IP addresses.
-
 ## ScriptRunner for Jira Cloud domain allow list 
 
 We advise all customers with a Cloud firewall to ensure that access to the `*.[connect.product.adaptavist.com](http://connect.product.adaptavist.com)` wildcard URL is permitted.
@@ -85,14 +83,6 @@ assert postToSlack : "Failed to create Slack message check the logs tab for more
 ```
 
 ## Behaviours and IP allow lists
-
-### Behaviours installation
-
-If you experience any issues whilst [installing](https://docs.adaptavist.com/sr4jc/latest/get-started/installation) the Behaviours App, please check if your Jira instance uses IP allowlists. 
-
-Before installing the ScriptRunner Behaviours app, you must include IP address ranges for outbound connections for Forge apps. The current IPs can be found in Atlassian’s [documentation](https://support.atlassian.com/organization-administration/docs/ip-addresses-and-domains-for-atlassian-cloud-products/#Outgoing-Connections). Whilst IP whitelisting is not required for [2LO apps](https://support.atlassian.com/security-and-access-policies/docs/specify-ip-addresses-for-product-access/#IP-allowlist-exceptions) such as ScriptRunner Behaviours, adding the outbound connection IPs to the allowlist is required due to ongoing Atlassian bugs, [ACCESS-1442](https://jira.atlassian.com/browse/ACCESS-1442) and [FRGE-634](https://ecosystem.atlassian.net/browse/FRGE-634).
-
-If the issue persists, or you do not have IP allowlists, please contact the [Adaptavist Support](https://the-adaptavist-group-support.atlassian.net/servicedesk/customer/portal/27) team.
 
 ### Using Behaviours
 

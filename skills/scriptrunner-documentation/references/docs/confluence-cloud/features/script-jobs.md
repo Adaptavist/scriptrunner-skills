@@ -29,24 +29,22 @@ For example you could use Script Jobs to archive pages after a certain amount of
 
 ## Use jobs
 
-1.  Select **Script Jobs**, under _ScriptRunner_ in _Confluence Administration.   
-    ![](/sr4cc/files/latest/107989528/361168992/1/1745428341000/script-jobs-nav.png)_ 
+1.  Navigate to _ScriptRunner_ and select **Script Jobs**.  
+    ![](/sr4cc/files/latest/107989528/588874138/1/1769187647000/script-jobs.png)
     
-2.  Select the **Create Script Job**.
+2.  Provide a **Name** for your script job.
     
-3.  Provide a **Name** for your script job.
+3.  Choose if you want it **Enabled** (or turned on).
     
-4.  Choose if you want it **Enabled** (or turned on).
-    
-5.  For **On This Schedule**, select the schedule that you want this script to run. 
+4.  For **On This Schedule**, select the schedule that you want this script to run. 
     
     The schedule editor lets you choose between running your script on several days during the week (like Monday, Wednesday, Friday) or running your script on particular days of the month (like the last day of the month or the second Tuesday of the month). 
     
     You can also select an hour interval where your script runs. 
     
-6.  For **Code To Run**, enter what you want the job to do.
+5.  For **Code To Run**, enter what you want the job to do.
     
-7.  You can select **Run Now** to see the script run or **Save**. 
+6.  You can select **Run Now** to see the script run or **Save**. 
     
     A _History_ section appears after the job runs once and logs each run.  
     ![](/sr4cc/files/latest/107989528/114204602/1/1623112401000/history.png)

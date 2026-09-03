@@ -10,9 +10,9 @@ Use _Script Logs_ to view the logs for your latest lambda executions.
 
 ## Navigation
 
-Navigate to _Script Logs_ using the _ScriptRunner_ menu in _Settings:_
+Navigate to **ScriptRunner**, select the ellipses (![](/sr4cc/files/latest/112151754/588874157/1/1769188613000/ellipses.png)), and then select **Script Logs**.
 
-_![](/sr4cc/files/latest/112151754/351174689/1/1743107509000/script-logs-nav.png)_
+![](/sr4cc/files/latest/112151754/351174688/2/1769188613000/script-logs.png)
 
 ## Use script logs
 
@@ -38,7 +38,7 @@ Once you navigate to the feature, you can search for the most recent logs gener
 
 The following image is how the Script Log form appears: 
 
-![](/sr4cc/files/latest/112151754/351174688/1/1743107509000/script-logs.png)
+![](/sr4cc/files/latest/112151754/351174688/2/1769188613000/script-logs.png)
 
 The following image is an example of the log results: 
 

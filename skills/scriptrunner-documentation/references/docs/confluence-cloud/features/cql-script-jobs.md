@@ -31,20 +31,17 @@ You could fix content that was mislabeled with _CQL Script Jobs_. A CQL query li
 
 ## Use CQL script jobs
 
-1.  Select **Confluence Administration** on the right side of the screen.
-2.  Select **CQL Script Jobs**, under _ScriptRunner_ on the left side of the screen.
+1.  Navigate to ScriptRunner and select **CQL Job**.  
+    ![](/sr4cc/files/latest/107989560/588874141/1/1769187817000/cql-script-jobs.png)
+2.  Provide a name for your CQL job in **The CQL Script Job Called**.
     
-3.  Select **Create CQL Script Job**.
+3.  Choose if you want it **Enabled** (or turned on).
     
-4.  Provide a name for your CQL job in **The CQL Script Job Called**.
-    
-5.  Choose if you want it **Enabled** (or turned on).
-    
-6.  Enter your CQL query in ****For the First 50 Results Returned By This Query.****
+4.  Enter your CQL query in ****For the First 50 Results Returned By This Query.****
     
     The maximum amount of content you can modify in any CQL script job is 50. 
     
-7.  For **On This Schedule**, select the schedule that you want this script to run. 
+5.  For **On This Schedule**, select the schedule that you want this script to run. 
     
     The schedule editor lets you choose between running your script on several days during the week (like Monday, Wednesday, Friday) or running your script on particular days of the month (like the last day of the month or the second Tuesday of the month). 
     
@@ -52,15 +49,15 @@ You could fix content that was mislabeled with _CQL Script Jobs_. A CQL query li
     
     The minimum interval between code executions is 1 hour. The scheduler is triggered every hour and gathers all the tasks to be executed within that hour. The task executions are queued and workers will consume them in no predefined order. That means that the execution time of the task can not be guaranteed to be the same every hour. As an example: if you configure a job to be run every hour, it might be run at 01:02 and then 02:24 and then 03:00 and then at 04:46 etc depending on how busy our systems are.
     
-8.  For **As This User**, select if you want to run this task as yourself or another user
+6.  For **As This User**, select if you want to run this task as yourself or another user
     
     For example, you run this task as a user named _Confluence Admin_, so that that changes can be easily tracked.
-9.  For **Code To Run**, enter what you want the job to do.
-10.  You can select **Run Now** to see the script run or **Save**. 
-     
-     A _History_ section appears after the job runs once and logs each run.  
-     ![](/sr4cc/files/latest/107989560/114204623/1/1623116056000/history.png)
-     
+7.  For **Code To Run**, enter what you want the job to do.
+8.  You can select **Run Now** to see the script run or **Save**. 
+    
+    A _History_ section appears after the job runs once and logs each run.  
+    ![](/sr4cc/files/latest/107989560/114204623/1/1623116056000/history.png)
+    
 
 ## Example
 

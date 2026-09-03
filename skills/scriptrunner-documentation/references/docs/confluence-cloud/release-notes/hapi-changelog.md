@@ -58,6 +58,12 @@ Read more about it in the [release notes](https://docs.adaptavist.com/sr4cc/lat
 
 3 December 2025
 
-You can now [set the body format](https://docs.adaptavist.com/sr4cc/latest/hapi/work-with-pages#set-the-body-format) when getting a page.
+You can now set the body format when getting a page.
 
-Check out the [release notes](https://docs.adaptavist.com/sr4cc/latest/release-notes/recent-release-notes) to learn more!
+Check out the [release notes](https://docs.adaptavist.com/sr4cc/latest/release-notes/recent-release-notes) to learn more! 
+
+5 December 2025
+
+You can now import blueprint templates and set the body of a page. 
+
+Find out more in the [release notes](https://docs.adaptavist.com/sr4cc/latest/release-notes/recent-release-notes)!

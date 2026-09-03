@@ -8,9 +8,58 @@
 
 Check out release notes for the current year here. For other release notes, visit [Older Release Notes](https://docs.adaptavist.com/sr4cc/latest/release-notes/older-release-notes).
 
-## 12 August 2026
+## 1 September 2026
 
-## August 2026
+ScriptRunner for Confluence Cloud is now on Forge!
+
+All of your data will remain unaffected and accessible. Other than the following updates, ScriptRunner for Confluence Cloud features function the same, and there is no removal of features. You may temporarily see the admin app in both locations. Changes made in either location will be saved.
+
+Action required: Update bookmarks
+
+Administration page URLs have changed since migration. Please update your bookmarks for any administration pages you have saved.
+
+### App navigation
+
+You can now access our app in two ways:
+
+-   Confluence Administration  
+    ![](/sr4cc/files/latest/117672039/550242284/1/1773945436000/CA-Apps.png)
+-   Your Apps  
+    ![](/sr4cc/files/latest/117672039/550242283/1/1773945474000/d5547f22a32f8c95cd2e828c7e83c048f3758c17-392x411.png)
+
+Navigation to ScriptRunner for Confluence Cloud features is now done through the top navigation:  
+![](/sr4cc/files/latest/117672039/550242282/1/1773945619000/topnav.png)
+
+Select **More** for the additional features:
+
+-   CQL Script Jobs
+-   Script Variables
+-   Script Fragments
+-   Execution History
+-   Script Logs
+-   Audit Logs
+-   Settings
+
+Learn more about how to navigate to and within the app [here](https://docs.adaptavist.com/sr4cc/latest/get-started/navigation).
+
+### Space administration built-in scripts navigation
+
+You can now access space administration built-in scripts in two ways:
+
+-   **Space** **Settings** > **Integrations** > **ScriptRunner  
+    ![](/sr4cc/files/latest/117672039/550242280/1/1773946188000/space-settings.png)  
+    **
+-   **Space Apps  
+    ![](/sr4cc/files/latest/117672039/550242281/1/1773945935000/2e21f1b5f04d6ee56acca9e05ebb472fe927af2c-296x482.png)  
+    **
+
+Once either of these are selected, the built-in scripts open.
+
+Learn more about space administration built-in scripts [here](https://docs.adaptavist.com/sr4cc/latest/features/built-in-scripts/space-administration-built-in-scripts).
+
+If you have any questions, please [contact support](https://the-adaptavist-group-support.atlassian.net/servicedesk/customer/portal/18).
+
+## 12 August 2026
 
 ### Script Manager enhancement
 

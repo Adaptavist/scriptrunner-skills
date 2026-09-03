@@ -47,3 +47,14 @@ NO_RETRIES + 10
 ```
     
     The result will be 510 (string concatenation), rather than 15.
+    
+
+## Use script variables
+
+Follow these steps to create a script variable: 
+
+1.  Navigate to _ScriptRunner_ and select **Script Variables**.   
+    ![](/sr4cc/files/latest/112151564/588874133/1/1769188099000/script-variables.png)
+2.  Enter a **Script Variable name**. 
+3.  Enter the **Script Variable value**. 
+4.  Select **Save**.

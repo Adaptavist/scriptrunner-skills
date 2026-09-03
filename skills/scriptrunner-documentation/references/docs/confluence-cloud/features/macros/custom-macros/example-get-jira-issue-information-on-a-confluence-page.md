@@ -10,14 +10,16 @@ You can create a macro to pull Jira issue information onto your Confluence page.
 
 ## Create the macro
 
-1.  Select **Create Custom Macro**. 
-2.  Enter a **Name** to identify the Macro, like _Jira_ _Issue Information_. 
-3.  Enter an optional **Description**, like _Get the issue ID and issue summary on your Confluence page_. 
-4.  Select **Enabled** to allow the macro to be added to pages. 
-5.  Select _None_ for **Body Type.** 
-6.  Pick _Block_ for **Output Type**.   
+1.  Select the **Settings** cog in the top right-hand corner of the screen. 
+2.  Select **Macros** under _ScriptRunner_. 
+3.  Select **Create Custom Macro**. 
+4.  Enter a **Name** to identify the Macro, like _Jira_ _Issue Information_.
+5.  Enter an optional **Description**, like _Get the issue ID and issue summary on your Confluence page_. 
+6.  Select **Enabled** to allow the macro to be added to pages. 
+7.  Select _None_ for **Body Type.** 
+8.  Pick _Block_ for **Output Type**.   
     ![](/sr4cc/files/latest/246187358/246187365/1/1710873661000/issue-information-macro.png)
-7.  Enter the following script into the **Script to Execute** field: 
+9.  Enter the following script into the **Script to Execute** field: 
     
     ```
 def issue = get("/rest/api/3/issue/${parameters.issueID}")
@@ -25,22 +27,36 @@ def issue = get("/rest/api/3/issue/${parameters.issueID}")
 .body
   
 String text = "<H1>project name "+issue.fields.project.name+"</H1><br>" +
-              "<H3>issue ID ${issue.key} </h2> <br>" +
-              "<H3>issue Summary : ${issue.fields.summary} </h2>"
+              "<H3>issue ID ${issue.key} </H3> <br>" +
+              "<H3>issue Summary : ${issue.fields.summary} </H3>"
   
 return text
 ```
     
-8.  Select **Add Parameter**. 
-    1.  When the window appears, fill out the following fields: 
-        1.  **Type**: _String_
-        2.  **Name**: _issueID_
-        3.  **Description ID**: _Issue ID_
-    2.  Check the box for **Required**.
-    3.  Click **Save**.  
-        ![](/sr4cc/files/latest/246187358/246187360/1/1711567840000/edit-macro-parameter.png)  
-        
-9.  Select **Save**.
+    Access custom field values
+    
+    If you want to access custom field values from a Jira issue and return the info back on a Confluence page, use the example code below:
+    
+    ```
+String text = "<H1>project name "+issue.fields.project.name+"</H1><br>" +
+"<H3>issue ID ${issue.key} </H3> <br>" +
+"<H3>issue Summary : ${issue.fields.summary} </H3>" +
+"<H3>Multi select custom field value : ${issue.fields.customfield_10073.value} </H3>" +
+"<H3>Single Line text custom field value : ${issue.fields.customfield_10082} </H3>"
+```
+    
+      
+    
+10.  Select **Add Parameter**. 
+     1.  When the window appears, fill out the following fields: 
+         1.  **Type**: _String_
+         2.  **Name**: _issueID_
+         3.  **Description ID**: _Issue ID_
+     2.  Check the box for **Required**.
+     3.  Click **Save**.  
+         ![](/sr4cc/files/latest/246187358/246187360/1/1711567840000/edit-macro-parameter.png)  
+         
+11.  Select **Save**.
 
 The macro immediately appears on the main _Macros_ page:
 

@@ -10,15 +10,10 @@ Confluence administrators can make changes globally with any of the built-in sc
 
 ## Navigation
 
-1.  On the main Confluence toolbar, select **Settings.  
-    ![](/sr4cc/files/latest/114204311/179608740/1/1685037828000/administration_button.png)  
-    **
+1.  Navigate to _ScriptRunner_ and select **Built-In Scripts**.   
+    ![](/sr4cc/files/latest/114204311/588874150/1/1769186537000/built-in-scripts.png)
     
-2.  Select **Built-in Scripts** under _ScriptRunner  
-    ![](/sr4cc/files/latest/114204311/179608739/1/1685037872000/built_in_scripts.png)  
-    _
-    
-3.  Choose the script you would like to use.  
+2.  Choose the script you would like to use.  
     
     -   [Bulk Add or Remove Labels on One or More Pages](https://docs.adaptavist.com/sr4cc/latest/features/built-in-scripts/confluence-administration-built-in-script/bulk-add-or-remove-labels-on-one-or-more-pages)
     -   [Bulk Delete Attachments](https://docs.adaptavist.com/sr4cc/latest/features/built-in-scripts/confluence-administration-built-in-script/bulk-delete-attachments)
@@ -29,13 +24,11 @@ Confluence administrators can make changes globally with any of the built-in sc
     -   [Delete Page Tree](https://docs.adaptavist.com/sr4cc/latest/features/built-in-scripts/confluence-administration-built-in-script/delete-page-tree)
     -   [Rename Labels](https://docs.adaptavist.com/sr4cc/latest/features/built-in-scripts/confluence-administration-built-in-script/rename-labels)
     
-      
-    
-4.  Complete the required fields.
+3.  Complete the required fields.
     
     Each script is different and has different fields to fill out.
     
-5.  Select **Run.**
+4.  Select **Run.**
     
 
 After you select **Run**, your results will appear.

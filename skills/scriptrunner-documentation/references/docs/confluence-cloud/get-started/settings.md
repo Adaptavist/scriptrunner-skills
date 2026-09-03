@@ -38,4 +38,4 @@ As described in the [Limitations](https://docs.adaptavist.com/sr4cc/latest/get-s
 
 We have an alternative solution which does not impose a limit on the amount of code you can store. However, your scripts will be stored externally from your Confluence instance in ScriptRunner Cloud Storage, and will no longer be part of any Confluence exports (so your scripts cannot be automatically migrated between Confluence instances). Additionally, it is not possible to migrate your scripts back into Confluence’s storage.
 
-If you require more storage, feel free to create a [support request](https://scriptrunner-docs.connect.adaptavist.com/confluencecloud/getting-help.html).
+If you require more storage, feel free to create a [support request](https://the-adaptavist-group-support.atlassian.net/servicedesk/customer/portal/18).

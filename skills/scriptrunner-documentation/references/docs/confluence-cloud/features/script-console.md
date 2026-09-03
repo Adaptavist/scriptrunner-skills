@@ -24,22 +24,14 @@ You can see autocomplete in the following screenshot: 
 
 ![](/sr4cc/files/latest/107988483/288523524/1/1725041408000/autocomplete-example.png)
 
-  
-
 ## Use the Script Console 
 
 To use the script console, follow these steps: 
 
-1.  Navigate to Confluence Administration by selecting the Cog button at the top right of the screen.   
-    ![](/sr4cc/files/latest/107988483/246186050/1/1710449796000/cog.png)
+1.  Navigate to _ScriptRunner_ and select **Script Console**.  
+    ![](/sr4cc/files/latest/107988483/588874148/1/1769186409000/script-console.png)
     
-      
-    
-2.  Select **Script Console**, under _ScriptRunner_.  
-    ![](/sr4cc/files/latest/107988483/246186049/1/1710449856000/script_console.png)  
-      
-    
-3.  Enter the script you want.
+2.  Enter the script you want.
     
     Tips for using the Script Console
     
@@ -47,8 +39,8 @@ To use the script console, follow these steps: 
     -   Use the Expand button (![](/sr4cc/files/latest/107988483/246186048/1/1710449980000/expand.png)) to have more room for scripting. 
     -   To exit the full screen, press **F11** or Esc twice when the cursor is in the editor. 
     
-4.  Choose the user you want to run the script for **Run As**. 
+3.  Choose the user you want to run the script for **Run As**. 
     
     Script console can make requests back to Confluence using either the ScriptRunner add-on user or the user that performed the action to cause the event to be fired. Therefore, you can choose whether the creator of a specific action is the current user or a generic ScriptRunner add-on user using the **Run As** field. 
     
-5.  Select **Run**.
+4.  Select **Run**.

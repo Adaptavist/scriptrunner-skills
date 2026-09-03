@@ -44,7 +44,7 @@ Follow these steps to create a custom button for your Confluence instance: 
     2.  _Page Button_ appears on the upper righthand toolbar:   
         ![](/sr4cc/files/latest/112151212/326079121/1/1739314419000/page-button.png)
     3.  _More Button Primary_, _More Button Secondary_, and _More Button Tertiary_ appear once you open the More (![](/sr4cc/files/latest/112151212/326079123/1/1739314227000/moremenu.png)) menu.  
-        ![](/sr4cc/files/latest/112151212/326079122/1/1739314391000/more-button-secondary.png)  
+        ![](/sr4cc/files/latest/112151212/588874152/1/1788195528000/sr-action-from-three-dot.png)  
         
 5.  Select the **Source**, either _Single URL_ or _Separate HTML, CSS, JS URLs_.  
     What option you select depends on how you do your web development. If you put your plain text, styling, and functionality in one code file, choose Single URL. If you have code for HTML for text, CSS for style, and JS for functionality, select _Separate HTML, CSS, JS URLs._   

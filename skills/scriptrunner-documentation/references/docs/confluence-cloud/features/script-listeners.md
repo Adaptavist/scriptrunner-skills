@@ -30,7 +30,7 @@ Example listeners include:
 -   Set a watcher for new blog posts
     
 -   Watch for frequently made mistakes and automatically flags them with an inline comment (helpful for a content editor)
--   Create a Jira project whenever a Confluence space is created
+-   Create a Jira space whenever a Confluence space is created
     
 -   Watch a specific user's content in a space
     
@@ -43,18 +43,14 @@ Example listeners include:
 
 ScriptRunner for Confluence enables you to write your own listeners in a script editor box using the script file and/or events you want. Additionally, below the editor box, several different examples of things you might want to do are provided (and automatically fill in the script when clicked.)
 
-1.  From the main Confluence left side menu, select **Settings.  
-    **
+1.  Navigate to _ScriptRunner_ and select **Script Listeners**.  
+    ![](/sr4cc/files/latest/107988516/588874136/1/1769187351000/script-listeners.png)
     
-2.  Select **Script Listeners**, under _ScriptRunner_.  
+2.  In **Script Listener Name**, enter a name for your listener.
     
-3.  Select **Create Script Listener**.
+3.  Choose if you want it **Enabled** (or turned on).
     
-4.  In **Script Listener Name**, enter a name for your listener.
-    
-5.  Choose if you want it **Enabled** (or turned on).
-    
-6.  Choose at least one event for **On These Events**.  
+4.  Choose at least one event for **On These Events**.  
     Remember, this is the event(s) that causes your listener to run. These are the available events:
     
     Type
@@ -109,9 +105,9 @@ ScriptRunner for Confluence enables you to write your own listeners in a script 
     
     Created, Deactivated, Followed, Reactivated, Removed
     
-7.  For **As This User**, select if you want the listener run as the _Current User_ or the _ScriptRunner Add-On User_.
+5.  For **As This User**, select if you want the listener run as the _Current User_ or the _ScriptRunner Add-On User_.
     
-8.  And finally, write or select the code you wish to run in **Code to Run**.
+6.  And finally, write or select the code you wish to run in **Code to Run**.
     
     Script contexts
     
@@ -128,7 +124,7 @@ ScriptRunner for Confluence enables you to write your own listeners in a script 
     -   `webhookEvent` - The webhook event type. Check out [Atlassian Connect Webhook Documentation](https://developer.atlassian.com/cloud/Confluence/platform/webhooks/) for more information.
         
     
-9.  Select **Save**. 
+7.  Select **Save**. 
 
 ## Script examples
 

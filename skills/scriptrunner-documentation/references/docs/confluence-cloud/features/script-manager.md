@@ -109,6 +109,14 @@ As an example, let's choose to create a new Script Job.
         3.  Click **Save as** and give the modified script a new name. This creates a new reusable script without overwriting the original.  
             
 
+Check where your scripts are used
+
+In Script Manager, you can view your saved script files and identify exactly where they are configured in your ScriptRunner for Jira Cloud instance. This includes details on the location and number of configurations where your scripts are loaded.
+
+For example, say you have a file that you set up to be loaded within the configuration of two Script Listeners, you can review that file's usage details. Click the **Script Usage** drop-down list, and a summary of all configurations loading that script displays. Scroll through the feature categories showing where that file is in use and choose the Script Listeners, as shown below:![](/sr4cc/files/latest/506007548/578291642/1/1786476881000/loaded+by+groovy+configs.jpg)
+
+  
+
 ### Reuse scripts by importing reusable Groovy code
 
 You can import reusable `.groovy` code into existing or new scripts, and you can create `.groovy` classes or scripts to organise shared logic. This allows you to structure your code into classes and packages, and to import scripts directly where needed.

@@ -6,13 +6,19 @@
 - Doc ID: doc-sr4cc-107986852
 - Source: https://docs.adaptavist.com/sr4cc/latest/release-notes/breaking-changes
 
+## Migration to Forge
+
+**Date of Change: 1 September 2026**
+
+We have migrated ScriptRunner for Confluence Cloud admin pages to Forge! For more information, please visit the [Recent Release Notes](https://docs.adaptavist.com/sr4cc/latest/release-notes/recent-release-notes)! 
+
 ## Groovy Version Upgrade
 
 **Date of Change: 4 October 2023**
 
 We updated ScriptRunner for Confluence Cloud to Groovy 4!
 
-We have identified breaking changes that could affect your scripts. [Adaptavist ScriptRunner Support](https://www.scriptrunnerhq.com/help/support) is available to you for these issues. 
+We have identified breaking changes that could affect your scripts. [ScriptRunner Support](https://the-adaptavist-group-support.atlassian.net/servicedesk/customer/portal/18/user/login?destination=portal%2F18)is available to you for these issues. 
 
 ### Groovy 4 breaking changes
 

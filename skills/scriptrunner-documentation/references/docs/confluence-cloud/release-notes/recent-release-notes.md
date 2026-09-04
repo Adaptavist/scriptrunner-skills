@@ -10,7 +10,7 @@ Check out release notes for the current year here. For other release notes, visi
 
 ## 1 September 2026
 
-ScriptRunner for Confluence Cloud is now on Forge!
+**We have migrated ScriptRunner for Confluence Cloud admin pages to Forge Remote!**
 
 All of your data will remain unaffected and accessible. Other than the following updates, ScriptRunner for Confluence Cloud features function the same, and there is no removal of features. You may temporarily see the admin app in both locations. Changes made in either location will be saved.
 

@@ -12,7 +12,7 @@ For in depth information about data privacy, please read our terms and condition
 -   [Adaptavist's DPA](https://trust.theadaptavistgroup.com/resources?s=aq4zoo2n8zxfvfj6883wo&name=data-processing-addendum-adaptavist-march-2024-.pdf) and [Privacy Policy](https://www.theadaptavistgroup.com/policy/privacy "https://www.theadaptavistgroup.com/policy/privacy")
 -   Specific addendums and supplementary terms which apply for this product:  
     -   [ScriptRunner Migration Suite EULA Addendum](https://www.theadaptavistgroup.com/policy/annexe-to-adaptavist-eula-for-scriptrunner-migration-suite-sms "https://www.theadaptavistgroup.com/policy/annexe-to-adaptavist-eula-for-scriptrunner-migration-suite-sms")
-    -   [ScriptRunner Migration Suite DPA Addendum](https://static.adaptavistassets.com/downloads/Supplement-to-DPA-for-ScriptRunner-Migration-Suite.pdf "https://static.adaptavistassets.com/downloads/Supplement-to-DPA-for-ScriptRunner-Migration-Suite.pdf")
+    -   [ScriptRunner Migration Suite DPA Addendum](https://cdn.sanity.io/files/qec1bdmb/production/e5febfa7e8e51ee4290e035ea3a382fc14a7e863.pdf)
 -   [Legal Notice](https://www.theadaptavistgroup.com/policy/legal-notice)
 
 ## AI models

@@ -3,10 +3,10 @@
 - Platform: migration-suite
 - Space: SMS
 - Hierarchy: scriptrunner-migration-suite-web-app > scriptrunner-migration-agent
-- Doc ID: doc-sms-448135894
+- Doc ID: doc-sms-566298781
 - Source: https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-agent/use-the-scriptrunner-migration-agent
 
-To start, open the [ScriptRunner Migration Agent](https://migrationpilot.scriptrunnerhq.com/ "https://migrationpilot.scriptrunnerhq.com/") and log in with your Atlassian ID or email.
+To start, open the ScriptRunner Migration Agent and log in with your Atlassian ID or email.
 
 ## Analyse a script
 
@@ -23,16 +23,29 @@ You can use the ScriptRunner Migration Agent to convert a Data Center to Cloud s
 
 Follow these steps to analyse a script:
 
-1.  Select **Analyse a single script**.  
-    ![](/sms/files/latest/448135894/484576431/1/1765483295000/analyse-a-script.png)
-2.  Copy the script you want to convert.
+1.  Select **Convert script to Cloud**.****  
+    ![](/sms/files/latest/566298781/566298779/1/1784147940000/agent-single-script.png)
+2.  Choose the **Feature** the script belongs in (like _Behaviour_ or _Workflow function_).
+3.  Select the **Project** you want to save the script to.  
     
-3.  Paste the script into the script analysis area.
+    Create a new project
     
-4.  Select **Analyse my script**.
-5.  If a script is produced for you, copy it into your Cloud instance and test to see if it works.
+    If you want to create a new project,
+    
+    1.  Select **Projects** on the left-hand navigation. 
+    2.  Select **Create Project**.   
+        ![](/sms/files/latest/566298781/566298780/1/1784147940000/create-project.png)
+    3.  Enter a **Project Name**. 
+    4.  Select the **Visibility** of the project.  
+        You can choose to _Share with organization_ or _Only me_.
+    5.  Select **Create Project**.
+    
+4.  Copy the script you want to convert and paste the script into the script analysis area.
+    
+5.  Select **Analyse script**.
+6.  If a script is produced for you, copy it into your Cloud instance and test to see if it works.
 
-You can come back to the Migration Agent to deal with any error handling.
+The script is saved in your Project it is assigned to. You can come back to the Migration Agent to deal with any error handling.
 
 This process will take time. ![alarm clock](/plugins/servlet/twitterEmojiRedirector?id=23f0 "alarm clock") 
 
@@ -51,17 +64,24 @@ You can use the **Chat** section of the Migration Agent to help convert Data Cen
 
 Follow these steps to ask the ScriptRunner Migration Agent a question:
 
-1.  Make sure you select the correct platform you wish to discuss with the Migration Agent.
+1.  Optional: Select the **Project** you want to save the chat to.
     
-    Currenly only Jira is supported.
+    Create a new project
     
-      
+    If you want to create a new project,
     
-2.  Enter your query into the chat dialog box and select **Send**.
+    1.  Select **Projects** on the left-hand navigation. 
+    2.  Select **Create Project**.   
+        ![](/sms/files/latest/566298781/566298780/1/1784147940000/create-project.png)
+    3.  Enter a **Project Name**. 
+    4.  Select the **Visibility** of the project.  
+        You can choose to _Share with organization_ or _Only me_.
+    5.  Select **Create Project**.
+    
+2.  Enter your query into the chat dialog box and press Enter.
     
     See [Best Practices](https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-agent/best-practices) for more details on how to write your query.
     
-3.  If a script is produced for you, copy it into your Cloud instance and test to see if it works.
 
 You can come back to the Migration Agent to address any error handling.
 
@@ -120,3 +140,8 @@ If you used the Migration Agent to answer multiple queries and create scripts, y
     4.  `Before vs After Comparison`
         
 7.  `Optional Enhancements`
+    
+
+Resources
+
+For in depth information about the agent visit the [FAQ](https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-agent/faq) and learn about [how ScriptRunner Migration Suite outperforms generic AI in Cloud migrations](https://www.scriptrunnerhq.com/inspiration/blog/how-scriptrunner-migration-suite-outperforms-generic-ai-in-cloud-migrations).

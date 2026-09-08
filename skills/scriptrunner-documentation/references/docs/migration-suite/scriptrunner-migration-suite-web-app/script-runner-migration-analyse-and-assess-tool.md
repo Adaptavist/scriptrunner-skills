@@ -3,10 +3,10 @@
 - Platform: migration-suite
 - Space: SMS
 - Hierarchy: scriptrunner-migration-suite-web-app
-- Doc ID: doc-sms-448135864
+- Doc ID: doc-sms-550633753
 - Source: https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-analyse-and-assess-tool
 
-Use [The ScriptRunner Migration Analyse and Assess](https://migrationpilot.scriptrunnerhq.com/analyse "https://migrationpilot.scriptrunnerhq.com/analyse") tool to review your ScriptRunner Data Center scripts and configurations for risks and cloud readiness. After your scripts and configurations are assessed and analyzed, you will be given guidance on how to convert scripts for Cloud.
+Use The ScriptRunner Migration Analyse and Assess tool to review your ScriptRunner Data Center scripts and configurations for risks and cloud readiness. After your scripts and configurations are assessed and analyzed, you will be given guidance on how to convert scripts for Cloud.
 
 This tool does not use AI.
 
@@ -21,13 +21,3 @@ If you are on a version older than 8.54 or 9.19, you only need to update to the�
 
 -   If you’re on version 8.x, update to the latest 8.x release.
 -   If you’re on version 9.x, update to the latest 9.x release.
-
-Watch a demo of the Analyse and Assess tool below! ![rocket](/plugins/servlet/twitterEmojiRedirector?id=1f680 "rocket") 
-
-## [![](/sms/files/latest/448135864/534479444/1/1776103872000/sr-icon-comments.png)](https://www.adaptavist.com/products/atlassian-apps/get-involved-scriptrunner?queryID=d51c44fdc2ca51c26341f63b3881b962)
-
-## Get involved
-
-Tell us how we can keep improving! Your feedback directly shapes the ScriptRunner product roadmaps and empowers others just like you.
-
-[Give feedback](https://docs.google.com/forms/d/e/1FAIpQLSdt-Ex1FbA3gKIjotLJBzGaSggypf4veyPCwxKl01zAC_YH9w/viewform)

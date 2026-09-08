@@ -3,10 +3,12 @@
 - Platform: migration-suite
 - Space: SMS
 - Hierarchy: n/a
-- Doc ID: doc-sms-448135909
+- Doc ID: doc-sms-578718826
 - Source: https://docs.adaptavist.com/sms/latest/scriptrunner-dev-and-deployment-tool
 
 Use the Dev and Deployment Tool to organise and deploy ScriptRunner Cloud scripts. It is focused on making it easier and faster for consultants and developers to migrate, test, and deploy scripts from ScriptRunner DC to Cloud.
+
+Right now, the Dev and Deployment Tool is only for ScriptRunner for Jira.
 
 ## How the tool works
 
@@ -37,7 +39,7 @@ Watch a demo of the Dev and Deployment tool below! ![rocket](/plugins/servlet/tw
 -   [Best Practices](https://docs.adaptavist.com/sms/latest/scriptrunner-dev-and-deployment-tool/best-practices)
 -   [Migrate to Cloud Using the ScriptRunner Migration Suite](https://docs.adaptavist.com/sms/latest/migrate-to-cloud-using-the-scriptrunner-migration-suite)
 
-## [![](/sms/files/latest/448135909/534479395/1/1776103632000/sr-icon-comments.png)](https://www.adaptavist.com/products/atlassian-apps/get-involved-scriptrunner?queryID=d51c44fdc2ca51c26341f63b3881b962)
+## [![](/sms/files/latest/578718826/578718824/1/1785868799000/sr-icon-comments.png)](https://www.adaptavist.com/products/atlassian-apps/get-involved-scriptrunner?queryID=d51c44fdc2ca51c26341f63b3881b962)
 
 ## Get involved
 

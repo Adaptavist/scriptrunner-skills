@@ -3,37 +3,54 @@
 - Platform: migration-suite
 - Space: SMS
 - Hierarchy: scriptrunner-migration-suite-web-app > scriptrunner-migration-analyse-and-assess-tool
-- Doc ID: doc-sms-448135870
+- Doc ID: doc-sms-550633803
 - Source: https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-analyse-and-assess-tool/use-the-analyse-and-assess-tool
 
 Check out the following sections to learn how to analyse an export of a Jira instance:
 
-## Upload an export to assess and analyse
+## Upload an export to analyse and assess
 
-Follow these steps to start using the Assess and Analyse tool: 
+Follow these steps to start using the Analyse and Assess tool: 
 
 1.  Create or get a script export from the Jira instance with ScriptRunner you want to work with.
     
     See the [Script Registry export from ScriptRunner for Jira Data Center](https://docs.adaptavist.com/sr4js/latest/features/script-registry#exporting-your-scripts) documentation for details on how to create a script export.
     
-2.  Open the [ScriptRunner Migration Suite](https://migrationpilot.scriptrunnerhq.com/analyse "https://migrationpilot.scriptrunnerhq.com/analyse"), and log in with your Atlassian ID or email.
+2.  Open the ScriptRunner Migration Suite, and log in with your Atlassian ID or email.
     
-3.  Navigate to the Assess and Analyse tool using the toggle or a tile.
+3.  Navigate to the Analyse and Assess tool using the tile or **Analyse** on the left-hand menu:  
+    ![](/sms/files/latest/550633803/585009421/1/1787598871000/analysis-nav.png)
     
-4.  Enter a name for **Name this analysis**.
+4.  Enter an **Instance Name** for the export.
     
-5.  Drag and drop or upload your script export zip file to the analyser.
+5.  Select a **Project**.  
     
-6.  Select **Upload and Analyse**.
+    Create a new project
+    
+    If you want to create a new project,
+    
+    1.  Select **Projects** on the left-hand navigation. 
+    2.  Select **Create Project**.   
+        ![](/sms/files/latest/550633803/550633797/1/1779483522000/create-project.png)
+    3.  Enter a **Project Name**. 
+    4.  Select the **Visibility** of the project.  
+        You can choose to _Share with organization_ or _Only me_.
+    5.  Select **Create Project**.
+    
+6.  Drag and drop or upload your script export zip file to the **File** field.
+    
+7.  Select **Analyse**.
     
 
-How you use the results depends on your processes. You can find guidance in the section below and recommendations on the [Best Practices](https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-analyse-and-assess-tool/best-practices) page.
+Your export uploads to the list. When it is finished, the **Status** changes to _Completed_. 
+
+![](/sms/files/latest/550633803/550633798/2/1779483522000/upload.png)
 
 ## Understand your results
 
-As you view your results, these definitions will be helpful: 
+Select See details on your analysis to view your results. These definitions will be helpful: 
 
--   **Observations**: Information that may be helpful to you in your migration.
+-   **Info**: Information that may be helpful to you in your migration.
 -   **Ready to Migrate**: These configurations are ready for migration. They may include informational messages about possible cloud limitations, but the configuration is otherwise complete. A rewrite will still be required, but all necessary components exist in ScriptRunner Cloud.
 -   **Review Recommended**: These are configurations with warnings that might not be blockers, but they do signal areas requiring script adjustments, testing, or acceptance of functional limitations in the Cloud environment.
 -   **Critical Findings**: These are configurations with at least one critical blocker. The next step is to decide whether the configuration needs to be migrated to Cloud, can be migrated, or replicated differently. Blockers occur when:
@@ -47,9 +64,11 @@ As you view your results, these definitions will be helpful: 
 
 When your results are ready and the _Overview_ tab is selected, you will see the _Migration Readiness_ and _Feature Breakdown_ sections.
 
-![](/sms/files/latest/448135870/537854775/1/1776702632000/analysis-overview.png)
+![](/sms/files/latest/550633803/585009423/1/1787599966000/results-1.png)
 
-### Migration Readiness
+For more information about the Export and Bulk Convert features, visit [Bulk Convert Your Scripts](https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-analyse-and-assess-tool/bulk-convert-your-scripts).
+
+### Migration readiness
 
 The following sections help you analyse your entire export as a whole:
 
@@ -57,68 +76,42 @@ The following sections help you analyse your entire export as a whole:
 -   _Script Breakdown_: Shows how many scripts are unique and duplicated.
 -   _Critical Findings_: Shows how many critical findings you have.
 
-### Feature Breakdown
+## Feature breakdown
 
 The second section you'll see on the _Overview_ tab is the _Feature Breakdown_: 
 
-![](/sms/files/latest/448135870/484576984/1/1765831183000/sms-assess-2.png)
+![](/sms/files/latest/550633803/585009424/1/1787599989000/results-2.png)
 
-You can select one of the feature categories from the tile or the left navigation to see more information. Once you select a feature, you'll see information focused on the migration readiness of that specific feature. 
+You can select one of the feature categories from **See details** to see more information. Once you select a feature, you'll see information focused on the migration readiness of that specific feature. 
 
-![](/sms/files/latest/448135870/484576398/1/1765484584000/features-breakdown.png)
+![](/sms/files/latest/550633803/566298753/1/1784147236000/listeners.png)
 
 You'll still see the same progress bar with the status of scripts.
 
-Then, for each configuration, you'll see where it is _Applied To_, and the number of _Observations_, _Critical_ findings, _Review_ items, and a _Status._ To see more information, select **See Details**.
+Then, for each configuration, you'll see the number of _Observations_, _Critical_ findings, _Review_ items, and a _Status._ To see more information, select **See details**.
 
-### Script Breakdown
-
-Select **Script Breakdown** in the left navigation to see data for all scripts.
-
-![](/sms/files/latest/448135870/484576397/1/1765484785000/script-breakdown.png)
-
-From here, you can see the _Script_, _Usages_, _Findings_ status, and _Duplication_ status of every script in your export. Click **View Script** to see where each script is used: 
-
-![](/sms/files/latest/448135870/484576402/1/1764796240000/script-usage.png)
-
-Click the links to see the analysis of the script.
-
-## Export as PDF report
-
-Select **Export as PDF Report** to get your assessment results in a PDF. You can access this feature on the _Overview_ page of the Assess and Analyse tool: 
-
-![](/sms/files/latest/448135870/537854774/1/1776702632000/export-as-pdf.png)
-
-The PDF includes your: 
-
--   _Your Cloud migration readiness assessment_ 
--   _Executive summary_, including main risks and script conversion tips
--   _Feature breakdown_, with quick wins and needs attention
--   _Findings_ that need redesigning and adapting
--   _Your Groovy codebase_ details, including script complexity and API conversion
--   Feature analysis, like _Behaviour details_ 
--   _Suggested approach_ for recommendations on a migration path
--   _Decisions to make_ before you start your migration 
-
-For example, this is what the _Executive summary_ looks like in the PDF: 
-
-![](/sms/files/latest/448135870/537854773/1/1776702631000/executive+summary.png)
-
-This PDF can be shared with stakeholders that do not have access to ScriptRunner Migration Suite to aid in your migration. 
-
-## Take next steps
+## Details
 
 Each script overview shows the number of information messages, things to review, and critical findings.
 
-![](/sms/files/latest/448135870/477865299/1/1766092705000/no-robot.png)
+![](/sms/files/latest/550633803/585009425/1/1787600267000/detailed-script-page.png)
 
 It also includes the following tabs:
 
--   **Analysis Findings**: Lists all messages for the configuration, along with next steps and more information.
+-   **Analysis findings**: Lists all messages for the configuration, along with next steps and more information.
 -   **Configuration**: An overview of the selected configuration.
     
--   **Script Analysis**: If applicable, it shows an inline review of the script for the selected configuration, displaying info, warning, and blocker messages.
+-   **Script analysis**: If applicable, it shows an inline review of the script for the selected configuration, displaying info, warning, and blocker messages.
     
+-   **Conversion output**: This is where your conversion data is stored. Descriptor fragments and files are stored here.
+
+These findings are tagged with an _Info_, _Review_, and _Critical_. 
+
+-   _Info_: Helpful information for your migration.
+-   _Review_: These are configurations with warnings that might not be blockers, but they do signal areas requiring script adjustments, testing, or acceptance of functional limitations in the Cloud environment.
+-   _Critical_: These are configurations with at least one critical blocker.
+
+  
 
 On the _Analysis Findings_ tab of the configuration, you'll have options for next steps:
 
@@ -127,20 +120,8 @@ On the _Analysis Findings_ tab of the configuration, you'll have options for nex
 
 Selecting **Explain the configuration** or **Convert this configuration** moves you into the [ScriptRunner Migration Agent](https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-agent).
 
-## Work with other exports
+## Export your results
 
-You can add more than one export to the tool. To add more or move between exports, follow these instructions:
+Use the **Export** button on the main analysis page to export your scripts to a PDF report or the [Dev and Deployment Tool](https://docs.adaptavist.com/sms/latest/scriptrunner-dev-and-deployment-tool).
 
-### Analyse another zip file
-
-To analyse a different zip file, select **New analysis** on the left of the screen: 
-
-![](/sms/files/latest/448135870/454395288/1/1761771777000/new-analysis.png)
-
-### Retrieve previous results
-
-Results from analysing a zip file are stored in your browser. You can view previous results in the panel on the left: 
-
-![](/sms/files/latest/448135870/458653776/1/1761880187000/old-export.png)
-
-This tool only stores results in the browser. If you log in elsewhere, you must reupload your data. Additionally, the data is stored per user. If another member of your team logs in, they will not be able to see your old exports. They will also have to upload.
+![](/sms/files/latest/550633803/585009426/2/1787604489000/export.png)

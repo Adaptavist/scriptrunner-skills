@@ -3,20 +3,20 @@
 - Platform: migration-suite
 - Space: SMS
 - Hierarchy: n/a
-- Doc ID: doc-sms-524223369
+- Doc ID: doc-sms-585009487
 - Source: https://docs.adaptavist.com/sms/latest/migrate-to-cloud-using-the-scriptrunner-migration-suite
 
 This page will help you plan and accomplish your migration from Data Center to Cloud, using the [ScriptRunner Migration Suite](https://docs.adaptavist.com/sms/latest). The following steps of a migration plan are outlined for you, including links to resources from Atlassian and ScriptRunner: 
 
--   [Before you start](#id-.BestPracticesfortheScriptRunnerMigrationSuitevCurrent-review)
--   [Install ScriptRunner for Jira Cloud](#id-.BestPracticesfortheScriptRunnerMigrationSuitevCurrent-install)
--   [Prepare your instance](#id-.BestPracticesfortheScriptRunnerMigrationSuitevCurrent-prepare)
--   [Rewrite your scripts](#id-.BestPracticesfortheScriptRunnerMigrationSuitevCurrent-rewrite)
--   [Migrate your data](#id-.BestPracticesfortheScriptRunnerMigrationSuitevCurrent-migrate)
--   [Test your data](#id-.BestPracticesfortheScriptRunnerMigrationSuitevCurrent-test)
--   [Train your team](#id-.BestPracticesfortheScriptRunnerMigrationSuitevCurrent-train)
--   [Go live](#id-.BestPracticesfortheScriptRunnerMigrationSuitevCurrent-live)
--   [Need help?](#id-.BestPracticesfortheScriptRunnerMigrationSuitevCurrent-help)
+-   [Before you start](#id-.BestPracticesfortheScriptRunnerMigrationSuitev2.0-review)
+-   [Install ScriptRunner for Jira Cloud](#id-.BestPracticesfortheScriptRunnerMigrationSuitev2.0-install)
+-   [Prepare your instance](#id-.BestPracticesfortheScriptRunnerMigrationSuitev2.0-prepare)
+-   [Rewrite your scripts](#id-.BestPracticesfortheScriptRunnerMigrationSuitev2.0-rewrite)
+-   [Migrate your data](#id-.BestPracticesfortheScriptRunnerMigrationSuitev2.0-migrate)
+-   [Test your data](#id-.BestPracticesfortheScriptRunnerMigrationSuitev2.0-test)
+-   [Train your team](#id-.BestPracticesfortheScriptRunnerMigrationSuitev2.0-train)
+-   [Go live](#id-.BestPracticesfortheScriptRunnerMigrationSuitev2.0-live)
+-   [Need help?](#id-.BestPracticesfortheScriptRunnerMigrationSuitev2.0-help)
 
 More resources
 
@@ -155,7 +155,7 @@ Paste this into the [ScriptRunner Migration Agent](https://docs.adaptavist.com/s
 
 ## Rewrite your scripts
 
-Migration from Scriptrunner for Jira DC to ScriptRunner for Jira Cloud requires your scripts to be rewritten because the APIs and programming models differ significantly between Jira Data Center and Jira Cloud. The ScriptRunner Migration Suite is built for this! Before you get started, make sure you have that export using Script Registry [that you created after auditing your instance](#id-.BestPracticesfortheScriptRunnerMigrationSuitevCurrent-scriptregistry).
+Migration from Scriptrunner for Jira DC to ScriptRunner for Jira Cloud requires your scripts to be rewritten because the APIs and programming models differ significantly between Jira Data Center and Jira Cloud. The ScriptRunner Migration Suite is built for this! Before you get started, make sure you have that export using Script Registry [that you created after auditing your instance](#id-.BestPracticesfortheScriptRunnerMigrationSuitev2.0-scriptregistry).
 
 ScriptRunner for Jira documentation
 
@@ -167,6 +167,10 @@ Follow the steps on the [Use the Analyse and Assess Tool](https://docs.adaptavi
 
 -   **A readiness report**: Scripts and configurations are grouped by features (listeners, workflows, etc.) and individual configurations.
 -   **Cloud pointers**: When there is no parity for Cloud, you can see what alternatives exist, including links and identifiers for Cloud options (like HAPI or REST endpoints). Using these pointers, you can start rewriting with concrete next steps.
+
+###  ![rocket](/plugins/servlet/twitterEmojiRedirector?id=1f680 "rocket") Bulk convert your scripts to Cloud scripts
+
+Use [Bulk Convert Your Scripts](https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-analyse-and-assess-tool/bulk-convert-your-scripts) for the [ScriptRunner Migration Analyse and Assess Tool](https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-analyse-and-assess-tool) to convert your scripts to Cloud scripts, with actionable steps for you to finish the rewrite. You can then export these to the [ScriptRunner Dev and Deployment Tool](https://docs.adaptavist.com/sms/latest/scriptrunner-dev-and-deployment-tool).
 
 ### ![rocket](/plugins/servlet/twitterEmojiRedirector?id=1f680 "rocket") Analyze a specific script
 
@@ -190,15 +194,11 @@ Consult the [Platform Differences between ScriptRunner for Jira Server/DC and J
 
 ScriptRunner Migration Suite adds a third option for you with the [Dev and Deployment Tool](https://docs.adaptavist.com/sms/latest/scriptrunner-dev-and-deployment-tool)! [Use this tool](https://docs.adaptavist.com/sms/latest/scriptrunner-dev-and-deployment-tool/use-the-dev-and-deployment-tool) to organize and deploy ScriptRunner Cloud scripts. It is focused on making it easier and faster for consultants and developers to migrate, test, and deploy scripts from ScriptRunner DC to Cloud. This approach is best for larger instances or teams who want repeatable, version-controlled deployments.
 
-  
-
 Need another reason to use the Dev and Deployment Tool?
 
 A good reason to use the Dev and Deployment Tool is that you can deploy to a test instance first to test the scripts. 
 
-The Dev and Deployment Tool gives you a place to save your script code and their configurations _and_ a way to deploy that code to ScriptRunner in your Atlassian Cloud site without having to manually point-and-click through the UI. This is helpful if you have a lot of scripts, particularly if you want to test them in a separate instance before deploying them to production.
-
-  
+The Dev and Deployment Tool gives you a place to save your script code and their configurations _and_ a way to deploy that code to ScriptRunner in your Atlassian Cloud site without having to manually point-and-click through the UI. This is helpful if you have a lot of scripts, particularly if you want to test them in a separate instance before deploying them to production.
 
 Please visit [Use the Dev and Deployment Tool](https://docs.adaptavist.com/sms/latest/scriptrunner-dev-and-deployment-tool/use-the-dev-and-deployment-tool) to learn how to clone the [public repository](https://bitbucket.org/adaptavistlabs/migration-example-project/src/main/) and follow the README to configure and run the tooling.
 

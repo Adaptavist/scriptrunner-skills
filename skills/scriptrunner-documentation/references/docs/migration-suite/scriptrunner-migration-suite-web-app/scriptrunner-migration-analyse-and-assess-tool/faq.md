@@ -3,7 +3,7 @@
 - Platform: migration-suite
 - Space: SMS
 - Hierarchy: scriptrunner-migration-suite-web-app > scriptrunner-migration-analyse-and-assess-tool
-- Doc ID: doc-sms-448135881
+- Doc ID: doc-sms-578290149
 - Source: https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-analyse-and-assess-tool/faq
 
 Check out the answers to frequently asked questions: 
@@ -22,7 +22,8 @@ A: Yes, we are aiming to create simple abstractions so additional analysers can 
 
 **Q: How can the ScriptRunner Migration Suite help you?**
 
--   Accelerates migration projects:
+-   Analysing and assessing scripts and configurations for Cloud readiness.
+-   Simplifies and speeds up every stage of the ScriptRunner migration process:
     -   Makes script rewriting a lot faster.
     -   Less time = more projects = increased revenue.  
         
@@ -42,3 +43,15 @@ A: Select **EULA & Terms** in the left navigation to access the _Terms of Servic
 **Q: Why can’t I access or use the ScriptRunner Migration Suite on my phone or tablet?**
 
 A: The ScriptRunner Migration Suite is a web application specifically designed and optimised for desktop browsers (Windows, macOS, Linux). It’s not optimised for mobile devices (smartphones or tablets). To experience the intended functionality and full capabilities, please ensure you’re accessing it on a desktop browser and not a mobile device.
+
+**Q: Can ScriptRunner Migration Suite give a migration time estimate?**
+
+A: Every migration is different - the level of effort depends on your team, their experience, and your specific usage of ScriptRunner - so ScriptRunner Migration Suite doesn’t yet provide a fixed time estimate. That said, we’re currently running trials on real migrations, and in future this data may help surface high-level predictions.  
+  
+What ScriptRunner Migration Suite does provide is data to feed into your own estimation process, whether you’re working with an Atlassian partner or planning independently. A migration involves more than just converting and rewriting scripts, so our aim is to give you the information you need to plan with confidence from the start.  
+  
+ScriptRunner Migration Suite uses a migration readiness grading system. Each configuration or script is classified into one of three categories:
+
+-   -   Critical findings - these scripts or configurations likely have no direct feature parity in Cloud, or may need a significantly different approach. They typically require the highest relative investment to migrate.
+    -   Review findings - these are highly likely to be replicable in Cloud, but may need minor tweaks and verification, particularly around areas like permission management. These require relatively more effort than Info findings, but should transfer to Cloud with the same functionality.
+    -   Info findings (no warning/critical) - these should transfer to Cloud without any change in functionality or behaviour. They’ll still need converting, and the Migration Agent - using ScriptRunner Intelligence, purpose-built for ScriptRunner and Jira Cloud APIs - can support that conversion.

@@ -3,7 +3,7 @@
 - Platform: migration-suite
 - Space: SMS
 - Hierarchy: scriptrunner-migration-suite-web-app
-- Doc ID: doc-sms-524228818
+- Doc ID: doc-sms-566298987
 - Source: https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/ai-training-and-usage
 
 For in depth information about data privacy, please read our terms and conditions. By using this tool, you agree to the terms of:
@@ -12,15 +12,15 @@ For in depth information about data privacy, please read our terms and condition
 -   [Adaptavist's DPA](https://trust.theadaptavistgroup.com/resources?s=aq4zoo2n8zxfvfj6883wo&name=data-processing-addendum-adaptavist-march-2024-.pdf) and [Privacy Policy](https://www.theadaptavistgroup.com/policy/privacy "https://www.theadaptavistgroup.com/policy/privacy")
 -   Specific addendums and supplementary terms which apply for this product:  
     -   [ScriptRunner Migration Suite EULA Addendum](https://www.theadaptavistgroup.com/policy/annexe-to-adaptavist-eula-for-scriptrunner-migration-suite-sms "https://www.theadaptavistgroup.com/policy/annexe-to-adaptavist-eula-for-scriptrunner-migration-suite-sms")
-    -   [ScriptRunner Migration Suite DPA Addendum](https://cdn.sanity.io/files/qec1bdmb/production/e5febfa7e8e51ee4290e035ea3a382fc14a7e863.pdf)
+    -   [ScriptRunner Migration Suite DPA Addendum](https://cdn.sanity.io/files/qec1bdmb/production/3e3d033a8e85d13a5294d3385967494d0e31c73b.pdf)
 -   [Legal Notice](https://www.theadaptavistgroup.com/policy/legal-notice)
 
 ## AI models
 
-We _do not_ train custom AI models with your use of the tool or your data. ScriptRunner Migration Suite is powered by models provided by third parties. Currently, it is powered by Claude 4.6 Sonnet from Anthropic. View more about Anthropic [below](#id-.AITraining,Ownership,andProcessingvCurrent-anthropi).
+We _do not_ train custom AI models with your use of the tool or your data. ScriptRunner Migration Suite is powered by models provided by third parties. Currently, it is powered by Claude 4.6 Sonnet from Anthropic. View more about Anthropic [below](#id-.AITraining,Ownership,andProcessingv2.0-anthropi).
 
 -   **Assess and Analyse Tool**: This tool does not use AI. It’s deterministic software. The output is designed to feed AI agents if/when you want them, but no AI is baked into this tool.
--   **ScriptRunner Migration Agent**: We do not train custom AI models for the Migration Agent. We do not use your prompts or scripts to train or fine tune the underlying model powering the Migration Agent. Inputs are used to generate results for your session only. OpenAI is used for generating chat titles and to power searches of ScriptRunner documentation and other sources via the OpenAI embeddings API.
+-   **ScriptRunner Migration Agent**: We do not train custom AI models for the Migration Agent. We do not use your prompts or scripts to train or fine tune the underlying model powering the Migration Agent. Inputs are used to generate results for your session only. 
 
 ScriptRunner Migration Suite does not automatically integrate with ScriptRunner or Jira. Jira issue data, product data, and ScriptRunner scripts will not be shared with our AI provider(s) unless you actively upload or import this information into ScriptRunner Migration Suite.
 

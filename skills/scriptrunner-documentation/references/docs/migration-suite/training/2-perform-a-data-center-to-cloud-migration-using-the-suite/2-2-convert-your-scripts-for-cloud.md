@@ -3,7 +3,7 @@
 - Platform: migration-suite
 - Space: SMS
 - Hierarchy: training > 2-perform-a-data-center-to-cloud-migration-using-the-suite
-- Doc ID: doc-sms-477864787
+- Doc ID: doc-sms-486670746
 - Source: https://docs.adaptavist.com/sms/latest/training/2-perform-a-data-center-to-cloud-migration-using-the-suite/2-2-convert-your-scripts-for-cloud
 
 In the previous module, while scoping our migration, we identified migration blockers and warnings that need to be addressed. So, what’s the next step?  
@@ -13,9 +13,9 @@ In this video, we'll use the **Migration Agent** to help us:
 
 1.  Deepen our understanding of the findings from our migration analysis.
     
-2.  Identify custom solutions for our specific migration scenarios, such as achieving feature parity.
+2.  Process ready-to-migrate scripts at scale using automated bulk conversions.
     
-3.  Convert Data Center scripts to resolve our migration blockers.
+3.  Convert individual scripts and get guidance on general ScriptRunner migration questions.
     
 
 Note:

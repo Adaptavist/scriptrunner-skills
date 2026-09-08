@@ -3,7 +3,7 @@
 - Platform: migration-suite
 - Space: SMS
 - Hierarchy: n/a
-- Doc ID: doc-sms-454393884
+- Doc ID: doc-sms-578718873
 - Source: https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-changelog
 
 Find the latest updates and enhancements to [ScriptRunner Migration Agent](https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-agent), [ScriptRunner Migration Analyse and Assess Tool](https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-analyse-and-assess-tool), and [ScriptRunner Dev and Deployment Tool](https://docs.adaptavist.com/sms/latest/scriptrunner-dev-and-deployment-tool) on this page.
@@ -13,6 +13,17 @@ Date
 Details
 
 Documentation Link
+
+8 September 2026
+
+**The new ScriptRunner Migration Suite (Version 2) has arrived.**
+
+ScriptRunner Migration Suite has been rebuilt for teams. We have a newly designed, more robust and scalable version of the ScriptRunner Migration Suite Web App! You can now store your chats and analysis in a project, share your projects amongst your organization, run bulk conversions, and create and manage API keys from within the app. Additionally, the Web App has been redesigned and navigation has been enhanced. Check out the [ScriptRunner Migration Suite Version 2 Release Notes](https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-version-2-release-notes) to find out what's new.
+
+To start your move to version 2, follow the steps on [Migrate from version 1 to version 2](https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/migrate-from-version-1-to-version-2)! 
+
+-   [Release Notes](https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-version-2-release-notes)
+-   [Migrate from version 1 to version 2](https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/migrate-from-version-1-to-version-2)
 
 17 August 2026
 
@@ -137,7 +148,7 @@ You can now use **Jira Space Keys** (like `ECO`, `CONFCLOUD`) and **Work Item Ty
 
 To see this change, update your migration-settings plugin to version 0.2.0 in [the example project's settings.gradle](https://bitbucket.org/adaptavistlabs/migration-example-project/src/main/settings.gradle), as shown on line 28 in the image below. 
 
-![](/sms/files/latest/454393884/533463075/1/1775667699000/0.2.0.png)
+![](/sms/files/latest/578718873/578718870/1/1785872367000/0.2.0.png)
 
 Your old configuration will still work, so you do not need to update if you like the Behaviour configuration numbers.
 
@@ -160,7 +171,7 @@ The error usually occurs when the unique identifier used by the workflow functio
 
 If you have post functions that won’t load in the workflow editor UI (shown below), the easiest workaround is to delete them from your workflow and redeploy from the Dev and Deployment Tool with the latest update.  
 
-![](/sms/files/latest/454393884/533463042/1/1775590223000/summary.png)![](/sms/files/latest/454393884/533463041/1/1775590264000/edit.png)
+![](/sms/files/latest/578718873/578718872/1/1785872367000/summary.png)![](/sms/files/latest/578718873/578718871/1/1785872367000/edit.png)
 
 -   [Use the Dev and Deployment Tool](https://docs.adaptavist.com/sms/latest/scriptrunner-dev-and-deployment-tool/use-the-dev-and-deployment-tool)  
     
@@ -288,7 +299,7 @@ Early Access Program opens! ![rocket](/plugins/servlet/twitterEmojiRedirector?id
 
 -   [ScriptRunner Migration Suite Documentation](https://docs.adaptavist.com/sms/latest)
 
-## [![](/sms/files/latest/454393884/534479351/1/1775853330000/sr-icon-comments.png)](https://www.adaptavist.com/products/atlassian-apps/get-involved-scriptrunner?queryID=d51c44fdc2ca51c26341f63b3881b962)Get involved
+## [![](/sms/files/latest/578718873/578718868/1/1785872367000/sr-icon-comments.png)](https://www.adaptavist.com/products/atlassian-apps/get-involved-scriptrunner?queryID=d51c44fdc2ca51c26341f63b3881b962)Get involved
 
 Tell us how we can keep improving! Your feedback directly shapes the ScriptRunner product roadmaps and empowers others just like you.
 

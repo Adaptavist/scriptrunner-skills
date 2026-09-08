@@ -3,13 +3,13 @@
 - Platform: migration-suite
 - Space: SMS
 - Hierarchy: scriptrunner-migration-suite-web-app
-- Doc ID: doc-sms-484576458
+- Doc ID: doc-sms-566298806
 - Source: https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/data-residency-and-privacy
 
 There are two main sections of this page:
 
--   [Data residency](#id-.DataResidencyvCurrent-res): Visit this section to learn about how data is stored and pinned. 
--   [Security and privacy](#id-.DataResidencyvCurrent-security): Visit this section to learn about The Adaptavist Group's commitment to security and privacy. 
+-   [Data residency](#id-.DataResidencyv2.0-res): Visit this section to learn about how data is stored and pinned. 
+-   [Security and privacy](#id-.DataResidencyv2.0-security): Visit this section to learn about The Adaptavist Group's commitment to security and privacy. 
 
 ## Data Residency 
 
@@ -21,16 +21,14 @@ If you work in a regulated industry like finance, government, or healthcare, dat
 
 You can select your preferred data residency region when you first sign in:
 
-![](/sms/files/latest/484576458/484576462/1/1765317667000/region.png)
-
 -   **Global**: Choose _Global_ for all Cloudfare Data Centers worldwide. By default, ScriptRunner Migration Suite operates in the Global region, which includes all Cloudflare Data Centers worldwide. For these users, we dynamically determine where data is located and optimise performance by placing data close to where it is accessed.
 -   **European Union**: Choose _European Union_ for Cloudcare Data Centers within the EU juridsiction. If you require your in-scope data to stay within the European Union, you can select the European Union region. When this option is selected, ScriptRunner Migration Suite uses Cloudflare's jurisdiction restrictions to ensure that in-scope data only runs and persists within EU data centers.
 
 ### Change where your data is stored
 
-Region selection is per-user. You can switch regions instantly at any time using the region selector in the top navigation:
+Region selection is per-user. You can switch regions instantly at any time using the region selector. To navigate to the region selector, select ![](/sms/files/latest/566298806/574522443/1/1785263461000/settings-button.png) next to your username, and then select **Switch Region**.
 
-![](/sms/files/latest/484576458/484576459/1/1765478635000/region-selector.png)
+![](/sms/files/latest/566298806/574522441/1/1785263417000/switch-region.png)
 
 When you switch regions:
 
@@ -93,9 +91,9 @@ Migration Analyser results will soon be stored server-side and managed in the sa
 
 ### How does data residency work for ScriptRunner Intelligence?
 
-ScriptRunner Intelligence-powered features, such as the Migration Agent, use [Anthropic](https://www.anthropic.com/) as our third-party AI provider. [OpenAI](https://openai.com/about/) is used for generating chat titles and to power searches of ScriptRunner documentation and other sources via the OpenAI embeddings API. Your data is never used to train AI models. Both Anthropic and OpenAI are discussed in the [Adaptavist Data Processing Amendum](https://www.theadaptavistgroup.com/policy/dpa).
+ScriptRunner Intelligence-powered features, such as the Migration Agent, use [Anthropic](https://www.anthropic.com/) as our third-party AI provider. Your data is never used to train AI models. Anthropic is discussed in the [Adaptavist Data Processing Amendum](https://www.theadaptavistgroup.com/policy/dpa).
 
-However, data processing for AI interactions may occur in any global region where Anthropic and OpenAI operate. Pinning is not possible for in-flight interactions with AI-powered features. Once responses are received, they are stored as part of your chat history in accordance with your selected data residency region.
+However, data processing for AI interactions may occur in any global region where Anthropic operates. Pinning is not possible for in-flight interactions with AI-powered features. Once responses are received, they are stored as part of your chat history in accordance with your selected data residency region.
 
 ## Our commitment to security and privacy 
 

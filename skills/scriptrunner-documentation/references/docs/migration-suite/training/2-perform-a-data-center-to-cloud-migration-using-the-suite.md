@@ -3,14 +3,14 @@
 - Platform: migration-suite
 - Space: SMS
 - Hierarchy: training
-- Doc ID: doc-sms-477864771
+- Doc ID: doc-sms-486670718
 - Source: https://docs.adaptavist.com/sms/latest/training/2-perform-a-data-center-to-cloud-migration-using-the-suite
 
 In this section, we'll guide you through an **end-to-end migration** using the ScriptRunner Migration Suite. This is just one route for using the suite of tools to complete a migration. Each tool can be used independently at any stage in your team's migration journey.
 
 By the end of this section, you’ll be able to:
 
--   Scope and plan a migration using the **Analyse and Assess** tool.
+-   Scope and plan a migration using the **Analyse** tool.
 -   Convert Data Center scripts to Cloud and troubleshoot errors using the **Migration Agent**, and, when ready,
 -   Deploy converted scripts and configurations to a Cloud instance using the **Dev and Deployment** tool.
 

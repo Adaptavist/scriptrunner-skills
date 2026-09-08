@@ -1,6 +1,6 @@
 # ScriptRunner Migration Suite Documentation Index
 
-Total pages: 34
+Total pages: 40
 
 | Title | Path | Source |
 | --- | --- | --- |
@@ -12,9 +12,11 @@ Total pages: 34
 | 2.2 Convert your scripts for Cloud | references/docs/migration-suite/training/2-perform-a-data-center-to-cloud-migration-using-the-suite/2-2-convert-your-scripts-for-cloud.md | https://docs.adaptavist.com/sms/latest/training/2-perform-a-data-center-to-cloud-migration-using-the-suite/2-2-convert-your-scripts-for-cloud |
 | 2.3 Deploy your scripts for testing | references/docs/migration-suite/training/2-perform-a-data-center-to-cloud-migration-using-the-suite/2-3-deploy-your-scripts-for-testing.md | https://docs.adaptavist.com/sms/latest/training/2-perform-a-data-center-to-cloud-migration-using-the-suite/2-3-deploy-your-scripts-for-testing |
 | AI Training and Usage | references/docs/migration-suite/scriptrunner-migration-suite-web-app/ai-training-and-usage.md | https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/ai-training-and-usage |
+| API Keys | references/docs/migration-suite/scriptrunner-migration-suite-web-app/api-keys.md | https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/api-keys |
 | Best Practices | references/docs/migration-suite/scriptrunner-migration-suite-web-app/scriptrunner-migration-analyse-and-assess-tool/best-practices.md | https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-analyse-and-assess-tool/best-practices |
 | Best Practices | references/docs/migration-suite/scriptrunner-migration-suite-web-app/scriptrunner-migration-agent/best-practices.md | https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-agent/best-practices |
 | Best Practices | references/docs/migration-suite/scriptrunner-dev-and-deployment-tool/best-practices.md | https://docs.adaptavist.com/sms/latest/scriptrunner-dev-and-deployment-tool/best-practices |
+| Bulk Convert Your Scripts | references/docs/migration-suite/scriptrunner-migration-suite-web-app/scriptrunner-migration-analyse-and-assess-tool/bulk-convert-your-scripts.md | https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-analyse-and-assess-tool/bulk-convert-your-scripts |
 | Contact Us | references/docs/migration-suite/scriptrunner-migration-suite-web-app/scriptrunner-migration-analyse-and-assess-tool/contact-us.md | https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-analyse-and-assess-tool/contact-us |
 | Contact Us | references/docs/migration-suite/scriptrunner-migration-suite-web-app/scriptrunner-migration-agent/contact-us.md | https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-agent/contact-us |
 | Contact Us | references/docs/migration-suite/scriptrunner-dev-and-deployment-tool/contact-us.md | https://docs.adaptavist.com/sms/latest/scriptrunner-dev-and-deployment-tool/contact-us |
@@ -23,12 +25,15 @@ Total pages: 34
 | FAQ | references/docs/migration-suite/scriptrunner-migration-suite-web-app/scriptrunner-migration-analyse-and-assess-tool/faq.md | https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-analyse-and-assess-tool/faq |
 | FAQ | references/docs/migration-suite/scriptrunner-migration-suite-web-app/scriptrunner-migration-agent/faq.md | https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-agent/faq |
 | FAQ: Migration and ScriptRunner Migration Suite | references/docs/migration-suite/migrate-to-cloud-using-the-scriptrunner-migration-suite/faq-migration-and-script-runner-migration-suite.md | https://docs.adaptavist.com/sms/latest/migrate-to-cloud-using-the-scriptrunner-migration-suite/faq-migration-and-scriptrunner-migration-suite |
+| Migrate from version 1 to version 2 | references/docs/migration-suite/scriptrunner-migration-suite-web-app/migrate-from-version-1-to-version-2.md | https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/migrate-from-version-1-to-version-2 |
 | Migrate to Cloud Using the ScriptRunner Migration Suite | references/docs/migration-suite/uncategorized/m/migrate-to-cloud-using-the-script-runner-migration-suite.md | https://docs.adaptavist.com/sms/latest/migrate-to-cloud-using-the-scriptrunner-migration-suite |
+| Projects | references/docs/migration-suite/scriptrunner-migration-suite-web-app/projects.md | https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/projects |
 | ScriptRunner Dev and Deployment Tool | references/docs/migration-suite/uncategorized/s/script-runner-dev-and-deployment-tool.md | https://docs.adaptavist.com/sms/latest/scriptrunner-dev-and-deployment-tool |
 | ScriptRunner Migration Agent | references/docs/migration-suite/scriptrunner-migration-suite-web-app/script-runner-migration-agent.md | https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-agent |
 | ScriptRunner Migration Analyse and Assess Tool | references/docs/migration-suite/scriptrunner-migration-suite-web-app/script-runner-migration-analyse-and-assess-tool.md | https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-analyse-and-assess-tool |
 | ScriptRunner Migration Suite | references/docs/migration-suite/uncategorized/s/script-runner-migration-suite.md | https://docs.adaptavist.com/sms/latest |
 | ScriptRunner Migration Suite Changelog | references/docs/migration-suite/uncategorized/s/script-runner-migration-suite-changelog.md | https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-changelog |
+| ScriptRunner Migration Suite Version 2 Release Notes | references/docs/migration-suite/uncategorized/s/script-runner-migration-suite-version-2-release-notes.md | https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-version-2-release-notes |
 | ScriptRunner Migration Suite Web App | references/docs/migration-suite/uncategorized/s/script-runner-migration-suite-web-app.md | https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app |
 | Summary | references/docs/migration-suite/training/2-perform-a-data-center-to-cloud-migration-using-the-suite/summary.md | https://docs.adaptavist.com/sms/latest/training/2-perform-a-data-center-to-cloud-migration-using-the-suite/summary |
 | Supported Features and Limitations | references/docs/migration-suite/scriptrunner-migration-suite-web-app/scriptrunner-migration-analyse-and-assess-tool/supported-features-and-limitations.md | https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-analyse-and-assess-tool/supported-features-and-limitations |
@@ -38,5 +43,6 @@ Total pages: 34
 | Use the Analyse and Assess Tool | references/docs/migration-suite/scriptrunner-migration-suite-web-app/scriptrunner-migration-analyse-and-assess-tool/use-the-analyse-and-assess-tool.md | https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-analyse-and-assess-tool/use-the-analyse-and-assess-tool |
 | Use the Dev and Deployment Tool | references/docs/migration-suite/scriptrunner-dev-and-deployment-tool/use-the-dev-and-deployment-tool.md | https://docs.adaptavist.com/sms/latest/scriptrunner-dev-and-deployment-tool/use-the-dev-and-deployment-tool |
 | Use the ScriptRunner Migration Agent | references/docs/migration-suite/scriptrunner-migration-suite-web-app/scriptrunner-migration-agent/use-the-script-runner-migration-agent.md | https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-agent/use-the-scriptrunner-migration-agent |
+| Web App Navigation | references/docs/migration-suite/scriptrunner-migration-suite-web-app/web-app-navigation.md | https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/web-app-navigation |
 
 Load only the smallest set of pages needed.

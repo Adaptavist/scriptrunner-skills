@@ -3,31 +3,50 @@
 - Platform: migration-suite
 - Space: SMS
 - Hierarchy: n/a
-- Doc ID: doc-sms-448005810
+- Doc ID: doc-sms-550633631
 - Source: https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app
 
 The ScriptRunner Migration Suite is a suite of tools that helps you plan, analyse, convert and deploy scripts with confidence, significantly reducing the manual migration effort. It supports (not replaces) your expertise.The ScriptRunner Migration Suite web app is made up of: 
 
 -   [ScriptRunner Migration Analyse and Assess Tool](https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-analyse-and-assess-tool): This tool helps you assess and analyse ScriptRunner Data Center scripts and configurations for risks and cloud readiness, and provide guidance on rewriting scripts for the cloud.
--   [ScriptRunner Migration Agent](https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-agent): The ScriptRunner Migration Agent is a specialised AI chat agent. You can use the agent to help you create, convert, and optimise scripts, or you can use it to answer a variety of different questions about ScriptRunner. Whether you're migrating from Data Center, building new Cloud implementations, or troubleshooting existing code, the migration agent provides comprehensive guidance using current API documentation and best practices.
+-   [The ScriptRunner Migration Agent](https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-agent): A specialised AI chat agent that uses ScriptRunner Intelligence. You can use the agent to help you create, convert, and optimise scripts, or you can use it to answer a variety of different questions about ScriptRunner. Whether you're migrating from Data Center, building new Cloud implementations, or troubleshooting existing code, the migration agent provides comprehensive guidance using current API documentation and best practices.
 
-You can access the different tools by toggling back and forth between **Home**, **Analyse**_,_ and **Agent**:
+## Home
 
-![](/sms/files/latest/448005810/448005815/4/1776103766000/toggle.png)
+Selecting **Home** takes you to the Web App Home Screen. Here, you can use the left-hand toolbar or tiles to navigate around the app.
 
-In addition to using the toggles, you can select one of the three main tiles: 
+![](/sms/files/latest/550633631/585009400/1/1787595426000/release-notes-1.png)
 
--   **Curious about your migration readiness?** Selecting this tile brings you to the [Assess and Analyse](https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-analyse-and-assess-tool) home page, where you can receive help with Cloud readiness.
--   **Chat with ScriptRunner Intelligence**: Selecting this tile brings you to the main [Migration Agent](https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-agent) page, where you can chat to receive help.
--   **Understand a singe script**: Selecting this tile brings you to a page of the [Migration Agent](https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-agent) where you will be guided in converting a Data Center script to a Cloud script.
-    
-      
-    
+### The tiles
 
-## [![](/sms/files/latest/448005810/534479436/1/1776103765000/sr-icon-comments.png)](https://www.adaptavist.com/products/atlassian-apps/get-involved-scriptrunner?queryID=d51c44fdc2ca51c26341f63b3881b962)
+-   **Assess migration readiness**: Takes you to ScriptRunner Migration Assess and Analyse Tool.
+-   **Chat with specialized agent**: Takes you to ScriptRunner Migration Agent.
+-   **Rewrite a script for Cloud**: Takes you to ScriptRunner Migration Agent.
 
-## Get involved
+## Projects
 
-Tell us how we can keep improving! Your feedback directly shapes the ScriptRunner product roadmaps and empowers others just like you.
+Selecting the **Projects** tab in the left-hand navigation, opens a page that sorts all of your migration projects.
 
-[Give feedback](https://docs.google.com/forms/d/e/1FAIpQLSdt-Ex1FbA3gKIjotLJBzGaSggypf4veyPCwxKl01zAC_YH9w/viewform)
+![](/sms/files/latest/550633631/585009403/1/1787595799000/projects-home-with-with-nav.png)
+
+[Projects](https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/projects) contain all chats and analysis that you assign to them. You can share Projects within your organization or keep them private to you.
+
+## Analyse
+
+Select **Analyse** in the left-hand navigation to switch to the [ScriptRunner Migration Analyse and Assess Tool](https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-analyse-and-assess-tool). 
+
+![](/sms/files/latest/550633631/566298706/1/1784141112000/analyse.png)
+
+Here, you can upload an export to analyze an instance or work with existing projects by selecting a **See Details**. To learn more about how to upload an export to analyze, visit [Use the Analyse and Assess Tool](https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-analyse-and-assess-tool/use-the-analyse-and-assess-tool). 
+
+## Agent
+
+When you select Agent on the left-hand navigation, the [ScriptRunner Migration Agent](https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-agent) opens.
+
+![](/sms/files/latest/550633631/566298708/1/1784141392000/agent.png)
+
+Here, you can access previous chats or create a new task. You can also convert a single script using **Convert scripts to Cloud**.
+
+## Deploy
+
+Selecting Deploy on the left-hand navigation opens the [ScriptRunner Dev and Deployment Tool](https://docs.adaptavist.com/sms/latest/scriptrunner-dev-and-deployment-tool) documentation.

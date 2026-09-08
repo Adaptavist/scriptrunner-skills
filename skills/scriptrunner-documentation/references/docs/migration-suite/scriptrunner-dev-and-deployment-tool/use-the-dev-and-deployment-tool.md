@@ -13,7 +13,7 @@ Check out this page to set up the tool and start adding repositories. 
 To use the Dev and Deployment Tool, we assume you can do a few fairly technical things:
 
 1.  Use git, at least a little, to manage code. It's totally fine if you use tools like SourceTree or your IDE to make this easier for you.
-2.  Run commands using an IDE like IntelliJ IDEA or via a terminal or command line. We'll tell you which [commands](#id-.UsetheDevandDevelopmentToolvCurrent-com).
+2.  Run commands using an IDE like IntelliJ IDEA or via a terminal or command line. We'll tell you which [commands](#id-.UsetheDevandDevelopmentToolv1.0-com).
 
 The Dev and Deployment Tool works by running Gradle tasks to send your scripts' code and configuration to ScriptRunner Cloud. You don't need to know anything about Gradle or how it works to use the tool, as long as you can run the commands described in the documentation here.
 
@@ -51,7 +51,7 @@ Browser-based authentication for the [Dev and Deployment Tool](https://docs.ada
 
 #### Recommended workaround
 
-[Use API token authentication](#id-.UsetheDevandDevelopmentToolvCurrent-token)
+[Use API token authentication](#id-.UsetheDevandDevelopmentToolv1.0-token)
 
 #### Alternative workarounds
 

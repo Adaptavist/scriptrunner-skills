@@ -14,7 +14,7 @@ We have a newly designed, more robust and scalable version of the ScriptRunner M
 
 To access new features and improvements across the toolset, **you need to log in from a new URL, but your existing login details remain the same**. You can migrate any active projects to the new version using the instructions below.
 
-![](/sms/files/latest/574522244/589234289/1/1788786316341/SR_brand_icon-light-bulb.png)
+![](/sms/files/latest/574522244/589234289/1/1788786316000/SR_brand_icon-light-bulb.png)
 
 Access the latest version of the ScriptRunner Migration Suite web app to manage your migrations.
 

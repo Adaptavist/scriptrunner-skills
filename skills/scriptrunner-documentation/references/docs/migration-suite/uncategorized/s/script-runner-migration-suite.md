@@ -18,6 +18,6 @@ Version latest (2.0) 1.0
 
 [**ScriptRunner Dev and Deployment Tool** - Use the Dev and Deployment Tool to organise and deploy ScriptRunner Cloud scripts. It is focused on making it easier and faster for consultants and developers to migrate, test, and deploy scripts from ScriptRunner DC to Cloud.](https://docs.adaptavist.com/sms/latest/scriptrunner-dev-and-deployment-tool "ScriptRunner Dev and Deployment Tool")
 
-[**Training** - Watch ScriptRunner Migration Suite (SMS) videos and interactive training.](https://docs.adaptavist.com/sms/latest/training "Training")
+[**Training** - Watch ScriptRunner Migration Suite videos and interactive training.](https://docs.adaptavist.com/sms/latest/training "Training")
 
 [**Migrate to Cloud Using the ScriptRunner Migration Suite** - This page will help you plan and accomplish your ScriptRunner migration from Data Center to Cloud, using the ScriptRunner Migration Suite.](https://docs.adaptavist.com/sms/latest/migrate-to-cloud-using-the-scriptrunner-migration-suite "Migrate to Cloud Using the ScriptRunner Migration Suite")

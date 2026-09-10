@@ -10,6 +10,29 @@
     "title": "Release Notes"
   },
   {
+    "docId": "doc-sr4jc-448135193",
+    "hierarchy": [
+      "release-notes",
+      "breaking-changes"
+    ],
+    "pageId": "448135193",
+    "platform": "cloud",
+    "relativePath": "references/docs/cloud/release-notes/breaking-changes/atlassians-transition-to-forge-events-and-missing-event-properties.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/release-notes/breaking-changes/atlassian-s-transition-to-forge-events-and-missing-event-properties",
+    "spaceKey": "SR4JC",
+    "title": "Atlassian's Transition to Forge Events and Missing Event Properties"
+  },
+  {
+    "docId": "doc-sr4jc-101629098",
+    "hierarchy": [],
+    "pageId": "101629098",
+    "platform": "cloud",
+    "relativePath": "references/docs/cloud/uncategorized/s/script-runner-for-jira-cloud.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest",
+    "spaceKey": "SR4JC",
+    "title": "ScriptRunner for Jira Cloud"
+  },
+  {
     "docId": "doc-sr4jc-375193781",
     "hierarchy": [
       "release-notes",
@@ -49,29 +72,6 @@
     "title": "Compatibility of Atlassian's New Transition Experience with Jira Expressions"
   },
   {
-    "docId": "doc-sr4jc-101629098",
-    "hierarchy": [],
-    "pageId": "101629098",
-    "platform": "cloud",
-    "relativePath": "references/docs/cloud/uncategorized/s/script-runner-for-jira-cloud.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest",
-    "spaceKey": "SR4JC",
-    "title": "ScriptRunner for Jira Cloud"
-  },
-  {
-    "docId": "doc-sr4jc-448135193",
-    "hierarchy": [
-      "release-notes",
-      "breaking-changes"
-    ],
-    "pageId": "448135193",
-    "platform": "cloud",
-    "relativePath": "references/docs/cloud/release-notes/breaking-changes/atlassians-transition-to-forge-events-and-missing-event-properties.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/release-notes/breaking-changes/atlassian-s-transition-to-forge-events-and-missing-event-properties",
-    "spaceKey": "SR4JC",
-    "title": "Atlassian's Transition to Forge Events and Missing Event Properties"
-  },
-  {
     "docId": "doc-sr4jc-517020525",
     "hierarchy": [
       "release-notes",
@@ -85,17 +85,17 @@
     "title": "Enhanced Search Migration to Forge"
   },
   {
-    "docId": "doc-sr4jc-375194049",
+    "docId": "doc-sr4jc-343671495",
     "hierarchy": [
       "release-notes",
-      "deprecation-notices-overview"
+      "breaking-changes"
     ],
-    "pageId": "375194049",
+    "pageId": "343671495",
     "platform": "cloud",
-    "relativePath": "references/docs/cloud/release-notes/deprecation-notices-overview/deprecation-reports.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/release-notes/deprecation-notices-overview/deprecation-reports",
+    "relativePath": "references/docs/cloud/release-notes/breaking-changes/atlassian-rest-api-search-endpoints-deprecation.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/release-notes/breaking-changes/atlassian-rest-api-search-endpoints-deprecation",
     "spaceKey": "SR4JC",
-    "title": "Deprecation Reports"
+    "title": "Atlassian REST API Search Endpoints Deprecation"
   },
   {
     "docId": "doc-sr4jc-101629021",
@@ -108,6 +108,19 @@
     "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/release-notes/breaking-changes",
     "spaceKey": "SR4JC",
     "title": "Breaking Changes"
+  },
+  {
+    "docId": "doc-sr4jc-375194049",
+    "hierarchy": [
+      "release-notes",
+      "deprecation-notices-overview"
+    ],
+    "pageId": "375194049",
+    "platform": "cloud",
+    "relativePath": "references/docs/cloud/release-notes/deprecation-notices-overview/deprecation-reports.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/release-notes/deprecation-notices-overview/deprecation-reports",
+    "spaceKey": "SR4JC",
+    "title": "Deprecation Reports"
   },
   {
     "docId": "doc-sr4jc-121907657",
@@ -134,44 +147,6 @@
     "title": "Navigation"
   },
   {
-    "docId": "doc-sr4jc-343671495",
-    "hierarchy": [
-      "release-notes",
-      "breaking-changes"
-    ],
-    "pageId": "343671495",
-    "platform": "cloud",
-    "relativePath": "references/docs/cloud/release-notes/breaking-changes/atlassian-rest-api-search-endpoints-deprecation.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/release-notes/breaking-changes/atlassian-rest-api-search-endpoints-deprecation",
-    "spaceKey": "SR4JC",
-    "title": "Atlassian REST API Search Endpoints Deprecation"
-  },
-  {
-    "docId": "doc-sr4jc-566298279",
-    "hierarchy": [
-      "get-started",
-      "scripting-in-scriptrunner-for-jira-cloud"
-    ],
-    "pageId": "566298279",
-    "platform": "cloud",
-    "relativePath": "references/docs/cloud/get-started/scripting-in-scriptrunner-for-jira-cloud/extend-jira-automation-with-script-runner.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/get-started/scripting-in-scriptrunner-for-jira-cloud/extend-jira-automation-with-scriptrunner",
-    "spaceKey": "SR4JC",
-    "title": "Extend Jira Automation with ScriptRunner"
-  },
-  {
-    "docId": "doc-sr4jc-253198892",
-    "hierarchy": [
-      "get-started"
-    ],
-    "pageId": "253198892",
-    "platform": "cloud",
-    "relativePath": "references/docs/cloud/get-started/technical-background.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/get-started/technical-background",
-    "spaceKey": "SR4JC",
-    "title": "Technical Background"
-  },
-  {
     "docId": "doc-sr4jc-171279615",
     "hierarchy": [
       "get-started"
@@ -194,6 +169,18 @@
     "title": "Get Started"
   },
   {
+    "docId": "doc-sr4jc-253198892",
+    "hierarchy": [
+      "get-started"
+    ],
+    "pageId": "253198892",
+    "platform": "cloud",
+    "relativePath": "references/docs/cloud/get-started/technical-background.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/get-started/technical-background",
+    "spaceKey": "SR4JC",
+    "title": "Technical Background"
+  },
+  {
     "docId": "doc-sr4jc-371033527",
     "hierarchy": [
       "release-notes"
@@ -206,6 +193,31 @@
     "title": "Deprecation Notices Overview"
   },
   {
+    "docId": "doc-sr4jc-566298279",
+    "hierarchy": [
+      "get-started",
+      "scripting-in-scriptrunner-for-jira-cloud"
+    ],
+    "pageId": "566298279",
+    "platform": "cloud",
+    "relativePath": "references/docs/cloud/get-started/scripting-in-scriptrunner-for-jira-cloud/extend-jira-automation-with-script-runner.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/get-started/scripting-in-scriptrunner-for-jira-cloud/extend-jira-automation-with-scriptrunner",
+    "spaceKey": "SR4JC",
+    "title": "Extend Jira Automation with ScriptRunner"
+  },
+  {
+    "docId": "doc-sr4jc-114212365",
+    "hierarchy": [
+      "get-started"
+    ],
+    "pageId": "114212365",
+    "platform": "cloud",
+    "relativePath": "references/docs/cloud/get-started/data-residency.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/get-started/data-residency",
+    "spaceKey": "SR4JC",
+    "title": "Data Residency"
+  },
+  {
     "docId": "doc-sr4jc-101629575",
     "hierarchy": [
       "get-started"
@@ -216,18 +228,6 @@
     "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/get-started/settings",
     "spaceKey": "SR4JC",
     "title": "Settings"
-  },
-  {
-    "docId": "doc-sr4jc-101629578",
-    "hierarchy": [
-      "get-started"
-    ],
-    "pageId": "101629578",
-    "platform": "cloud",
-    "relativePath": "references/docs/cloud/get-started/limitations.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/get-started/limitations",
-    "spaceKey": "SR4JC",
-    "title": "Limitations"
   },
   {
     "docId": "doc-sr4jc-115709161",
@@ -243,16 +243,16 @@
     "title": "Region-to-Region Data Migration"
   },
   {
-    "docId": "doc-sr4jc-114212365",
+    "docId": "doc-sr4jc-101629578",
     "hierarchy": [
       "get-started"
     ],
-    "pageId": "114212365",
+    "pageId": "101629578",
     "platform": "cloud",
-    "relativePath": "references/docs/cloud/get-started/data-residency.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/get-started/data-residency",
+    "relativePath": "references/docs/cloud/get-started/limitations.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/get-started/limitations",
     "spaceKey": "SR4JC",
-    "title": "Data Residency"
+    "title": "Limitations"
   },
   {
     "docId": "doc-sr4jc-121903323",
@@ -278,17 +278,16 @@
     "title": "1.1 Module: Introduction to ScriptRunner for Jira Cloud"
   },
   {
-    "docId": "doc-sr4jc-121903380",
+    "docId": "doc-sr4jc-121903335",
     "hierarchy": [
-      "training",
-      "course-scriptrunner-for-jira-cloud-for-beginners"
+      "training"
     ],
-    "pageId": "121903380",
+    "pageId": "121903335",
     "platform": "cloud",
-    "relativePath": "references/docs/cloud/training/course-scriptrunner-for-jira-cloud-for-beginners/1-3-module-scripted-workflow-extensions.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/training/course-scriptrunner-for-jira-cloud-for-beginners/1-3-module-scripted-workflow-extensions",
+    "relativePath": "references/docs/cloud/training/course-script-runner-for-jira-cloud-for-beginners.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/training/course-scriptrunner-for-jira-cloud-for-beginners",
     "spaceKey": "SR4JC",
-    "title": "1.3 Module: Scripted Workflow Extensions"
+    "title": "Course: ScriptRunner for Jira Cloud for Beginners"
   },
   {
     "docId": "doc-sr4jc-121903359",
@@ -304,29 +303,17 @@
     "title": "1.2 Module: ScriptRunner for Jira Cloud Automation Capabilities"
   },
   {
-    "docId": "doc-sr4jc-121903335",
-    "hierarchy": [
-      "training"
-    ],
-    "pageId": "121903335",
-    "platform": "cloud",
-    "relativePath": "references/docs/cloud/training/course-script-runner-for-jira-cloud-for-beginners.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/training/course-scriptrunner-for-jira-cloud-for-beginners",
-    "spaceKey": "SR4JC",
-    "title": "Course: ScriptRunner for Jira Cloud for Beginners"
-  },
-  {
-    "docId": "doc-sr4jc-121903392",
+    "docId": "doc-sr4jc-121903380",
     "hierarchy": [
       "training",
       "course-scriptrunner-for-jira-cloud-for-beginners"
     ],
-    "pageId": "121903392",
+    "pageId": "121903380",
     "platform": "cloud",
-    "relativePath": "references/docs/cloud/training/course-scriptrunner-for-jira-cloud-for-beginners/1-4-module-enhanced-search.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/training/course-scriptrunner-for-jira-cloud-for-beginners/1-4-module-enhanced-search",
+    "relativePath": "references/docs/cloud/training/course-scriptrunner-for-jira-cloud-for-beginners/1-3-module-scripted-workflow-extensions.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/training/course-scriptrunner-for-jira-cloud-for-beginners/1-3-module-scripted-workflow-extensions",
     "spaceKey": "SR4JC",
-    "title": "1.4 Module: Enhanced Search"
+    "title": "1.3 Module: Scripted Workflow Extensions"
   },
   {
     "docId": "doc-sr4jc-121903404",
@@ -339,19 +326,6 @@
     "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/training/course-scriptrunner-for-jira-cloud-for-intermediate-users",
     "spaceKey": "SR4JC",
     "title": "Course: ScriptRunner for Jira Cloud for Intermediate Users"
-  },
-  {
-    "docId": "doc-sr4jc-121903416",
-    "hierarchy": [
-      "training",
-      "course-scriptrunner-for-jira-cloud-for-intermediate-users"
-    ],
-    "pageId": "121903416",
-    "platform": "cloud",
-    "relativePath": "references/docs/cloud/training/course-scriptrunner-for-jira-cloud-for-intermediate-users/2-1-module-introduction-to-jira-expressions.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/training/course-scriptrunner-for-jira-cloud-for-intermediate-users/2-1-module-introduction-to-jira-expressions",
-    "spaceKey": "SR4JC",
-    "title": "2.1 Module: Introduction to Jira Expressions"
   },
   {
     "docId": "doc-sr4jc-121903428",
@@ -367,6 +341,19 @@
     "title": "2.2 Module: Introduction to REST API"
   },
   {
+    "docId": "doc-sr4jc-121903392",
+    "hierarchy": [
+      "training",
+      "course-scriptrunner-for-jira-cloud-for-beginners"
+    ],
+    "pageId": "121903392",
+    "platform": "cloud",
+    "relativePath": "references/docs/cloud/training/course-scriptrunner-for-jira-cloud-for-beginners/1-4-module-enhanced-search.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/training/course-scriptrunner-for-jira-cloud-for-beginners/1-4-module-enhanced-search",
+    "spaceKey": "SR4JC",
+    "title": "1.4 Module: Enhanced Search"
+  },
+  {
     "docId": "doc-sr4jc-106338456",
     "hierarchy": [
       "get-started"
@@ -377,6 +364,19 @@
     "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/get-started/scripting-in-scriptrunner-for-jira-cloud",
     "spaceKey": "SR4JC",
     "title": "Scripting in ScriptRunner for Jira Cloud"
+  },
+  {
+    "docId": "doc-sr4jc-121903416",
+    "hierarchy": [
+      "training",
+      "course-scriptrunner-for-jira-cloud-for-intermediate-users"
+    ],
+    "pageId": "121903416",
+    "platform": "cloud",
+    "relativePath": "references/docs/cloud/training/course-scriptrunner-for-jira-cloud-for-intermediate-users/2-1-module-introduction-to-jira-expressions.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/training/course-scriptrunner-for-jira-cloud-for-intermediate-users/2-1-module-introduction-to-jira-expressions",
+    "spaceKey": "SR4JC",
+    "title": "2.1 Module: Introduction to Jira Expressions"
   },
   {
     "docId": "doc-sr4jc-369983576",
@@ -405,17 +405,16 @@
     "title": "2.3 Module: Introduction to Groovy for ScriptRunner Cloud"
   },
   {
-    "docId": "doc-sr4jc-369983570",
+    "docId": "doc-sr4jc-404227315",
     "hierarchy": [
-      "training",
-      "video-playlist-scriptrunner-for-jira-cloud-demo"
+      "training"
     ],
-    "pageId": "369983570",
+    "pageId": "404227315",
     "platform": "cloud",
-    "relativePath": "references/docs/cloud/training/video-playlist-scriptrunner-for-jira-cloud-demo/behaviours-dynamic-field-control-and-customization.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/training/video-playlist-scriptrunner-for-jira-cloud-demo/behaviours-dynamic-field-control-customization",
+    "relativePath": "references/docs/cloud/training/step-by-step-tutorials.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/training/step-by-step-tutorials",
     "spaceKey": "SR4JC",
-    "title": "Behaviours: Dynamic Field Control & Customization"
+    "title": "Step-By-Step Tutorials"
   },
   {
     "docId": "doc-sr4jc-121903452",
@@ -431,42 +430,17 @@
     "title": "2.4 Module: Modifying Existing Scripts"
   },
   {
-    "docId": "doc-sr4jc-404227315",
-    "hierarchy": [
-      "training"
-    ],
-    "pageId": "404227315",
-    "platform": "cloud",
-    "relativePath": "references/docs/cloud/training/step-by-step-tutorials.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/training/step-by-step-tutorials",
-    "spaceKey": "SR4JC",
-    "title": "Step-By-Step Tutorials"
-  },
-  {
-    "docId": "doc-sr4jc-369983573",
+    "docId": "doc-sr4jc-369983570",
     "hierarchy": [
       "training",
       "video-playlist-scriptrunner-for-jira-cloud-demo"
     ],
-    "pageId": "369983573",
+    "pageId": "369983570",
     "platform": "cloud",
-    "relativePath": "references/docs/cloud/training/video-playlist-scriptrunner-for-jira-cloud-demo/hapi-a-more-intuitive-scripting-experience.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/training/video-playlist-scriptrunner-for-jira-cloud-demo/hapi-a-more-intuitive-scripting-experience",
+    "relativePath": "references/docs/cloud/training/video-playlist-scriptrunner-for-jira-cloud-demo/behaviours-dynamic-field-control-and-customization.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/training/video-playlist-scriptrunner-for-jira-cloud-demo/behaviours-dynamic-field-control-customization",
     "spaceKey": "SR4JC",
-    "title": "HAPI: A More Intuitive Scripting Experience"
-  },
-  {
-    "docId": "doc-sr4jc-369983567",
-    "hierarchy": [
-      "training",
-      "video-playlist-scriptrunner-for-jira-cloud-demo"
-    ],
-    "pageId": "369983567",
-    "platform": "cloud",
-    "relativePath": "references/docs/cloud/training/video-playlist-scriptrunner-for-jira-cloud-demo/enhanced-search-jql-functions-and-subqueries.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/training/video-playlist-scriptrunner-for-jira-cloud-demo/enhanced-search-jql-functions-subqueries",
-    "spaceKey": "SR4JC",
-    "title": "Enhanced Search: JQL Functions & Subqueries"
+    "title": "Behaviours: Dynamic Field Control & Customization"
   },
   {
     "docId": "doc-sr4jc-369983564",
@@ -489,6 +463,32 @@
     "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/hapi",
     "spaceKey": "SR4JC",
     "title": "HAPI"
+  },
+  {
+    "docId": "doc-sr4jc-369983567",
+    "hierarchy": [
+      "training",
+      "video-playlist-scriptrunner-for-jira-cloud-demo"
+    ],
+    "pageId": "369983567",
+    "platform": "cloud",
+    "relativePath": "references/docs/cloud/training/video-playlist-scriptrunner-for-jira-cloud-demo/enhanced-search-jql-functions-and-subqueries.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/training/video-playlist-scriptrunner-for-jira-cloud-demo/enhanced-search-jql-functions-subqueries",
+    "spaceKey": "SR4JC",
+    "title": "Enhanced Search: JQL Functions & Subqueries"
+  },
+  {
+    "docId": "doc-sr4jc-369983573",
+    "hierarchy": [
+      "training",
+      "video-playlist-scriptrunner-for-jira-cloud-demo"
+    ],
+    "pageId": "369983573",
+    "platform": "cloud",
+    "relativePath": "references/docs/cloud/training/video-playlist-scriptrunner-for-jira-cloud-demo/hapi-a-more-intuitive-scripting-experience.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/training/video-playlist-scriptrunner-for-jira-cloud-demo/hapi-a-more-intuitive-scripting-experience",
+    "spaceKey": "SR4JC",
+    "title": "HAPI: A More Intuitive Scripting Experience"
   },
   {
     "docId": "doc-sr4jc-339512234",
@@ -515,6 +515,30 @@
     "title": "Rewrite Scripts with HAPI"
   },
   {
+    "docId": "doc-sr4jc-306811124",
+    "hierarchy": [
+      "hapi"
+    ],
+    "pageId": "306811124",
+    "platform": "cloud",
+    "relativePath": "references/docs/cloud/hapi/automatic-imports-and-extension-methods.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/hapi/automatic-imports-and-extension-methods",
+    "spaceKey": "SR4JC",
+    "title": "Automatic Imports and Extension Methods"
+  },
+  {
+    "docId": "doc-sr4jc-288524096",
+    "hierarchy": [
+      "hapi"
+    ],
+    "pageId": "288524096",
+    "platform": "cloud",
+    "relativePath": "references/docs/cloud/hapi/work-with-spaces.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/hapi/work-with-spaces",
+    "spaceKey": "SR4JC",
+    "title": "Work with Spaces"
+  },
+  {
     "docId": "doc-sr4jc-288524081",
     "hierarchy": [
       "hapi"
@@ -539,18 +563,6 @@
     "title": "Work with Users"
   },
   {
-    "docId": "doc-sr4jc-306811124",
-    "hierarchy": [
-      "hapi"
-    ],
-    "pageId": "306811124",
-    "platform": "cloud",
-    "relativePath": "references/docs/cloud/hapi/automatic-imports-and-extension-methods.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/hapi/automatic-imports-and-extension-methods",
-    "spaceKey": "SR4JC",
-    "title": "Automatic Imports and Extension Methods"
-  },
-  {
     "docId": "doc-sr4jc-288524078",
     "hierarchy": [
       "hapi"
@@ -561,18 +573,6 @@
     "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/hapi/work-with-comments",
     "spaceKey": "SR4JC",
     "title": "Work with Comments"
-  },
-  {
-    "docId": "doc-sr4jc-288524096",
-    "hierarchy": [
-      "hapi"
-    ],
-    "pageId": "288524096",
-    "platform": "cloud",
-    "relativePath": "references/docs/cloud/hapi/work-with-spaces.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/hapi/work-with-spaces",
-    "spaceKey": "SR4JC",
-    "title": "Work with Spaces"
   },
   {
     "docId": "doc-sr4jc-306811114",
@@ -611,6 +611,16 @@
     "title": "Update Fields"
   },
   {
+    "docId": "doc-sr4jc-101629085",
+    "hierarchy": [],
+    "pageId": "101629085",
+    "platform": "cloud",
+    "relativePath": "references/docs/cloud/uncategorized/f/features.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features",
+    "spaceKey": "SR4JC",
+    "title": "Features"
+  },
+  {
     "docId": "doc-sr4jc-298091458",
     "hierarchy": [
       "features",
@@ -623,6 +633,44 @@
     "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/scriptrunner-enhanced-search-jql-queries/saved-filters",
     "spaceKey": "SR4JC",
     "title": "Saved Filters"
+  },
+  {
+    "docId": "doc-sr4jc-339512207",
+    "hierarchy": [
+      "hapi"
+    ],
+    "pageId": "339512207",
+    "platform": "cloud",
+    "relativePath": "references/docs/cloud/hapi/work-with-entity-properties.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/hapi/work-with-entity-properties",
+    "spaceKey": "SR4JC",
+    "title": "Work with Entity Properties"
+  },
+  {
+    "docId": "doc-sr4jc-138938371",
+    "hierarchy": [
+      "features",
+      "scriptrunner-enhanced-search"
+    ],
+    "pageId": "138938371",
+    "platform": "cloud",
+    "relativePath": "references/docs/cloud/features/scriptrunner-enhanced-search/jql-sync-status-and-add-on-user-permissions.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/jql-sync-status-and-add-on-user-permissions",
+    "spaceKey": "SR4JC",
+    "title": "JQL Sync Status and Add-on User Permissions"
+  },
+  {
+    "docId": "doc-sr4jc-103678131",
+    "hierarchy": [
+      "features",
+      "scriptrunner-enhanced-search"
+    ],
+    "pageId": "103678131",
+    "platform": "cloud",
+    "relativePath": "references/docs/cloud/features/scriptrunner-enhanced-search/script-runner-enhanced-search-jql-keywords-synchronization.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/scriptrunner-enhanced-search-jql-keywords-synchronization",
+    "spaceKey": "SR4JC",
+    "title": "ScriptRunner Enhanced Search JQL Keywords Synchronization"
   },
   {
     "docId": "doc-sr4jc-313196608",
@@ -665,46 +713,6 @@
     "title": "ScriptRunner Enhanced Search JQL Queries"
   },
   {
-    "docId": "doc-sr4jc-103678317",
-    "hierarchy": [
-      "features"
-    ],
-    "pageId": "103678317",
-    "platform": "cloud",
-    "relativePath": "references/docs/cloud/features/script-runner-enhanced-search.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search",
-    "spaceKey": "SR4JC",
-    "title": "ScriptRunner Enhanced Search"
-  },
-  {
-    "docId": "doc-sr4jc-313196618",
-    "hierarchy": [
-      "features",
-      "scriptrunner-enhanced-search",
-      "scriptrunner-enhanced-search-jql-functions"
-    ],
-    "pageId": "313196618",
-    "platform": "cloud",
-    "relativePath": "references/docs/cloud/features/scriptrunner-enhanced-search/scriptrunner-enhanced-search-jql-functions/agile-and-sprint-management.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/scriptrunner-enhanced-search-jql-functions/agile-and-sprint-management",
-    "spaceKey": "SR4JC",
-    "title": "Agile and Sprint Management"
-  },
-  {
-    "docId": "doc-sr4jc-313196623",
-    "hierarchy": [
-      "features",
-      "scriptrunner-enhanced-search",
-      "scriptrunner-enhanced-search-jql-functions"
-    ],
-    "pageId": "313196623",
-    "platform": "cloud",
-    "relativePath": "references/docs/cloud/features/scriptrunner-enhanced-search/scriptrunner-enhanced-search-jql-functions/match-functions.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/scriptrunner-enhanced-search-jql-functions/match-functions",
-    "spaceKey": "SR4JC",
-    "title": "Match Functions"
-  },
-  {
     "docId": "doc-sr4jc-313196614",
     "hierarchy": [
       "features",
@@ -717,81 +725,6 @@
     "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/scriptrunner-enhanced-search-jql-functions/links-and-relationships",
     "spaceKey": "SR4JC",
     "title": "Links and Relationships"
-  },
-  {
-    "docId": "doc-sr4jc-313196630",
-    "hierarchy": [
-      "features",
-      "scriptrunner-enhanced-search",
-      "scriptrunner-enhanced-search-jql-keywords"
-    ],
-    "pageId": "313196630",
-    "platform": "cloud",
-    "relativePath": "references/docs/cloud/features/scriptrunner-enhanced-search/scriptrunner-enhanced-search-jql-keywords/issue-management.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/scriptrunner-enhanced-search-jql-keywords/issue-management",
-    "spaceKey": "SR4JC",
-    "title": "Issue Management"
-  },
-  {
-    "docId": "doc-sr4jc-101629085",
-    "hierarchy": [],
-    "pageId": "101629085",
-    "platform": "cloud",
-    "relativePath": "references/docs/cloud/uncategorized/f/features.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features",
-    "spaceKey": "SR4JC",
-    "title": "Features"
-  },
-  {
-    "docId": "doc-sr4jc-138938371",
-    "hierarchy": [
-      "features",
-      "scriptrunner-enhanced-search"
-    ],
-    "pageId": "138938371",
-    "platform": "cloud",
-    "relativePath": "references/docs/cloud/features/scriptrunner-enhanced-search/jql-sync-status-and-add-on-user-permissions.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/jql-sync-status-and-add-on-user-permissions",
-    "spaceKey": "SR4JC",
-    "title": "JQL Sync Status and Add-on User Permissions"
-  },
-  {
-    "docId": "doc-sr4jc-103678131",
-    "hierarchy": [
-      "features",
-      "scriptrunner-enhanced-search"
-    ],
-    "pageId": "103678131",
-    "platform": "cloud",
-    "relativePath": "references/docs/cloud/features/scriptrunner-enhanced-search/script-runner-enhanced-search-jql-keywords-synchronization.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/scriptrunner-enhanced-search-jql-keywords-synchronization",
-    "spaceKey": "SR4JC",
-    "title": "ScriptRunner Enhanced Search JQL Keywords Synchronization"
-  },
-  {
-    "docId": "doc-sr4jc-339512207",
-    "hierarchy": [
-      "hapi"
-    ],
-    "pageId": "339512207",
-    "platform": "cloud",
-    "relativePath": "references/docs/cloud/hapi/work-with-entity-properties.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/hapi/work-with-entity-properties",
-    "spaceKey": "SR4JC",
-    "title": "Work with Entity Properties"
-  },
-  {
-    "docId": "doc-sr4jc-313196599",
-    "hierarchy": [
-      "features",
-      "scriptrunner-enhanced-search"
-    ],
-    "pageId": "313196599",
-    "platform": "cloud",
-    "relativePath": "references/docs/cloud/features/scriptrunner-enhanced-search/script-runner-enhanced-search-technical-background.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/scriptrunner-enhanced-search-technical-background",
-    "spaceKey": "SR4JC",
-    "title": "ScriptRunner Enhanced Search Technical Background"
   },
   {
     "docId": "doc-sr4jc-313196626",
@@ -808,6 +741,20 @@
     "title": "Date and Time Management"
   },
   {
+    "docId": "doc-sr4jc-313196623",
+    "hierarchy": [
+      "features",
+      "scriptrunner-enhanced-search",
+      "scriptrunner-enhanced-search-jql-functions"
+    ],
+    "pageId": "313196623",
+    "platform": "cloud",
+    "relativePath": "references/docs/cloud/features/scriptrunner-enhanced-search/scriptrunner-enhanced-search-jql-functions/match-functions.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/scriptrunner-enhanced-search-jql-functions/match-functions",
+    "spaceKey": "SR4JC",
+    "title": "Match Functions"
+  },
+  {
     "docId": "doc-sr4jc-103678152",
     "hierarchy": [
       "features",
@@ -819,6 +766,32 @@
     "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/scriptrunner-enhanced-search-jql-keywords",
     "spaceKey": "SR4JC",
     "title": "ScriptRunner Enhanced Search JQL Keywords"
+  },
+  {
+    "docId": "doc-sr4jc-313196630",
+    "hierarchy": [
+      "features",
+      "scriptrunner-enhanced-search",
+      "scriptrunner-enhanced-search-jql-keywords"
+    ],
+    "pageId": "313196630",
+    "platform": "cloud",
+    "relativePath": "references/docs/cloud/features/scriptrunner-enhanced-search/scriptrunner-enhanced-search-jql-keywords/issue-management.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/scriptrunner-enhanced-search-jql-keywords/issue-management",
+    "spaceKey": "SR4JC",
+    "title": "Issue Management"
+  },
+  {
+    "docId": "doc-sr4jc-101629570",
+    "hierarchy": [
+      "release-notes"
+    ],
+    "pageId": "101629570",
+    "platform": "cloud",
+    "relativePath": "references/docs/cloud/release-notes/release-notes.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/release-notes/release-notes",
+    "spaceKey": "SR4JC",
+    "title": "Release Notes"
   },
   {
     "docId": "doc-sr4jc-313196636",
@@ -836,16 +809,18 @@
     "title": "Date Functions"
   },
   {
-    "docId": "doc-sr4jc-101629570",
+    "docId": "doc-sr4jc-313196618",
     "hierarchy": [
-      "release-notes"
+      "features",
+      "scriptrunner-enhanced-search",
+      "scriptrunner-enhanced-search-jql-functions"
     ],
-    "pageId": "101629570",
+    "pageId": "313196618",
     "platform": "cloud",
-    "relativePath": "references/docs/cloud/release-notes/release-notes.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/release-notes/release-notes",
+    "relativePath": "references/docs/cloud/features/scriptrunner-enhanced-search/scriptrunner-enhanced-search-jql-functions/agile-and-sprint-management.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/scriptrunner-enhanced-search-jql-functions/agile-and-sprint-management",
     "spaceKey": "SR4JC",
-    "title": "Release Notes"
+    "title": "Agile and Sprint Management"
   },
   {
     "docId": "doc-sr4jc-313196633",
@@ -875,31 +850,29 @@
     "title": "Build Efficient Queries"
   },
   {
-    "docId": "doc-sr4jc-313196639",
+    "docId": "doc-sr4jc-313196599",
     "hierarchy": [
       "features",
       "scriptrunner-enhanced-search"
     ],
-    "pageId": "313196639",
+    "pageId": "313196599",
     "platform": "cloud",
-    "relativePath": "references/docs/cloud/features/scriptrunner-enhanced-search/troubleshoot-script-runner-enhanced-search.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/troubleshoot-scriptrunner-enhanced-search",
+    "relativePath": "references/docs/cloud/features/scriptrunner-enhanced-search/script-runner-enhanced-search-technical-background.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/scriptrunner-enhanced-search-technical-background",
     "spaceKey": "SR4JC",
-    "title": "Troubleshoot ScriptRunner Enhanced Search"
+    "title": "ScriptRunner Enhanced Search Technical Background"
   },
   {
-    "docId": "doc-sr4jc-513345621",
+    "docId": "doc-sr4jc-103678317",
     "hierarchy": [
-      "features",
-      "scriptrunner-enhanced-search",
-      "troubleshoot-scriptrunner-enhanced-search"
+      "features"
     ],
-    "pageId": "513345621",
+    "pageId": "103678317",
     "platform": "cloud",
-    "relativePath": "references/docs/cloud/features/scriptrunner-enhanced-search/troubleshoot-scriptrunner-enhanced-search/initial-synchronization-issues.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/troubleshoot-scriptrunner-enhanced-search/initial-synchronization-issues",
+    "relativePath": "references/docs/cloud/features/script-runner-enhanced-search.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search",
     "spaceKey": "SR4JC",
-    "title": "Initial Synchronization Issues"
+    "title": "ScriptRunner Enhanced Search"
   },
   {
     "docId": "doc-sr4jc-513345627",
@@ -916,59 +889,18 @@
     "title": "Empty or Missing Results"
   },
   {
-    "docId": "doc-sr4jc-103678012",
-    "hierarchy": [
-      "features",
-      "scriptrunner-enhanced-search"
-    ],
-    "pageId": "103678012",
-    "platform": "cloud",
-    "relativePath": "references/docs/cloud/features/scriptrunner-enhanced-search/comparison-with-script-runner-for-jira-server.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/comparison-with-scriptrunner-for-jira-server",
-    "spaceKey": "SR4JC",
-    "title": "Comparison with ScriptRunner for Jira Server"
-  },
-  {
-    "docId": "doc-sr4jc-513345633",
+    "docId": "doc-sr4jc-513345630",
     "hierarchy": [
       "features",
       "scriptrunner-enhanced-search",
       "troubleshoot-scriptrunner-enhanced-search"
     ],
-    "pageId": "513345633",
+    "pageId": "513345630",
     "platform": "cloud",
-    "relativePath": "references/docs/cloud/features/scriptrunner-enhanced-search/troubleshoot-scriptrunner-enhanced-search/errors.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/troubleshoot-scriptrunner-enhanced-search/errors",
+    "relativePath": "references/docs/cloud/features/scriptrunner-enhanced-search/troubleshoot-scriptrunner-enhanced-search/query-writing-recommendations.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/troubleshoot-scriptrunner-enhanced-search/query-writing-recommendations",
     "spaceKey": "SR4JC",
-    "title": "Errors"
-  },
-  {
-    "docId": "doc-sr4jc-550633909",
-    "hierarchy": [
-      "features",
-      "scriptrunner-enhanced-search",
-      "troubleshoot-scriptrunner-enhanced-search"
-    ],
-    "pageId": "550633909",
-    "platform": "cloud",
-    "relativePath": "references/docs/cloud/features/scriptrunner-enhanced-search/troubleshoot-scriptrunner-enhanced-search/incorrect-functions-causing-board-errors.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/troubleshoot-scriptrunner-enhanced-search/incorrect-functions-causing-board-errors",
-    "spaceKey": "SR4JC",
-    "title": "Incorrect Functions Causing Board Errors"
-  },
-  {
-    "docId": "doc-sr4jc-566298273",
-    "hierarchy": [
-      "features",
-      "scriptrunner-enhanced-search",
-      "troubleshoot-scriptrunner-enhanced-search"
-    ],
-    "pageId": "566298273",
-    "platform": "cloud",
-    "relativePath": "references/docs/cloud/features/scriptrunner-enhanced-search/troubleshoot-scriptrunner-enhanced-search/use-current-user-jql-function.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/troubleshoot-scriptrunner-enhanced-search/use-currentuser-jql-function",
-    "spaceKey": "SR4JC",
-    "title": "Use currentUser JQL Function"
+    "title": "Query Writing Recommendations"
   },
   {
     "docId": "doc-sr4jc-513345637",
@@ -985,18 +917,87 @@
     "title": "Rate Limits"
   },
   {
-    "docId": "doc-sr4jc-513345630",
+    "docId": "doc-sr4jc-513345621",
     "hierarchy": [
       "features",
       "scriptrunner-enhanced-search",
       "troubleshoot-scriptrunner-enhanced-search"
     ],
-    "pageId": "513345630",
+    "pageId": "513345621",
     "platform": "cloud",
-    "relativePath": "references/docs/cloud/features/scriptrunner-enhanced-search/troubleshoot-scriptrunner-enhanced-search/query-writing-recommendations.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/troubleshoot-scriptrunner-enhanced-search/query-writing-recommendations",
+    "relativePath": "references/docs/cloud/features/scriptrunner-enhanced-search/troubleshoot-scriptrunner-enhanced-search/initial-synchronization-issues.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/troubleshoot-scriptrunner-enhanced-search/initial-synchronization-issues",
     "spaceKey": "SR4JC",
-    "title": "Query Writing Recommendations"
+    "title": "Initial Synchronization Issues"
+  },
+  {
+    "docId": "doc-sr4jc-313196639",
+    "hierarchy": [
+      "features",
+      "scriptrunner-enhanced-search"
+    ],
+    "pageId": "313196639",
+    "platform": "cloud",
+    "relativePath": "references/docs/cloud/features/scriptrunner-enhanced-search/troubleshoot-script-runner-enhanced-search.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/troubleshoot-scriptrunner-enhanced-search",
+    "spaceKey": "SR4JC",
+    "title": "Troubleshoot ScriptRunner Enhanced Search"
+  },
+  {
+    "docId": "doc-sr4jc-566298273",
+    "hierarchy": [
+      "features",
+      "scriptrunner-enhanced-search",
+      "troubleshoot-scriptrunner-enhanced-search"
+    ],
+    "pageId": "566298273",
+    "platform": "cloud",
+    "relativePath": "references/docs/cloud/features/scriptrunner-enhanced-search/troubleshoot-scriptrunner-enhanced-search/use-current-user-jql-function.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/troubleshoot-scriptrunner-enhanced-search/use-currentuser-jql-function",
+    "spaceKey": "SR4JC",
+    "title": "Use currentUser JQL Function"
+  },
+  {
+    "docId": "doc-sr4jc-513345624",
+    "hierarchy": [
+      "features",
+      "scriptrunner-enhanced-search",
+      "troubleshoot-scriptrunner-enhanced-search"
+    ],
+    "pageId": "513345624",
+    "platform": "cloud",
+    "relativePath": "references/docs/cloud/features/scriptrunner-enhanced-search/troubleshoot-scriptrunner-enhanced-search/timeouts-and-performance.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/troubleshoot-scriptrunner-enhanced-search/timeouts-and-performance",
+    "spaceKey": "SR4JC",
+    "title": "Timeouts and Performance"
+  },
+  {
+    "docId": "doc-sr4jc-550633909",
+    "hierarchy": [
+      "features",
+      "scriptrunner-enhanced-search",
+      "troubleshoot-scriptrunner-enhanced-search"
+    ],
+    "pageId": "550633909",
+    "platform": "cloud",
+    "relativePath": "references/docs/cloud/features/scriptrunner-enhanced-search/troubleshoot-scriptrunner-enhanced-search/incorrect-functions-causing-board-errors.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/troubleshoot-scriptrunner-enhanced-search/incorrect-functions-causing-board-errors",
+    "spaceKey": "SR4JC",
+    "title": "Incorrect Functions Causing Board Errors"
+  },
+  {
+    "docId": "doc-sr4jc-513345633",
+    "hierarchy": [
+      "features",
+      "scriptrunner-enhanced-search",
+      "troubleshoot-scriptrunner-enhanced-search"
+    ],
+    "pageId": "513345633",
+    "platform": "cloud",
+    "relativePath": "references/docs/cloud/features/scriptrunner-enhanced-search/troubleshoot-scriptrunner-enhanced-search/errors.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/troubleshoot-scriptrunner-enhanced-search/errors",
+    "spaceKey": "SR4JC",
+    "title": "Errors"
   },
   {
     "docId": "doc-sr4jc-335381031",
@@ -1026,18 +1027,30 @@
     "title": "Forge Filter Errors"
   },
   {
-    "docId": "doc-sr4jc-513345624",
+    "docId": "doc-sr4jc-101628965",
     "hierarchy": [
       "features",
-      "scriptrunner-enhanced-search",
-      "troubleshoot-scriptrunner-enhanced-search"
+      "built-in-scripts"
     ],
-    "pageId": "513345624",
+    "pageId": "101628965",
     "platform": "cloud",
-    "relativePath": "references/docs/cloud/features/scriptrunner-enhanced-search/troubleshoot-scriptrunner-enhanced-search/timeouts-and-performance.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/troubleshoot-scriptrunner-enhanced-search/timeouts-and-performance",
+    "relativePath": "references/docs/cloud/features/built-in-scripts/bulk-clone-work-items.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/built-in-scripts/bulk-clone-work-items",
     "spaceKey": "SR4JC",
-    "title": "Timeouts and Performance"
+    "title": "Bulk Clone Work Items"
+  },
+  {
+    "docId": "doc-sr4jc-103678193",
+    "hierarchy": [
+      "features",
+      "script-console"
+    ],
+    "pageId": "103678193",
+    "platform": "cloud",
+    "relativePath": "references/docs/cloud/features/script-console/example-scripts.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/script-console/example-scripts",
+    "spaceKey": "SR4JC",
+    "title": "Example Scripts"
   },
   {
     "docId": "doc-sr4jc-101628964",
@@ -1065,31 +1078,6 @@
     "title": "Built-In Scripts"
   },
   {
-    "docId": "doc-sr4jc-101629019",
-    "hierarchy": [
-      "features"
-    ],
-    "pageId": "101629019",
-    "platform": "cloud",
-    "relativePath": "references/docs/cloud/features/script-console.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/script-console",
-    "spaceKey": "SR4JC",
-    "title": "Script Console"
-  },
-  {
-    "docId": "doc-sr4jc-101628965",
-    "hierarchy": [
-      "features",
-      "built-in-scripts"
-    ],
-    "pageId": "101628965",
-    "platform": "cloud",
-    "relativePath": "references/docs/cloud/features/built-in-scripts/bulk-clone-work-items.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/built-in-scripts/bulk-clone-work-items",
-    "spaceKey": "SR4JC",
-    "title": "Bulk Clone Work Items"
-  },
-  {
     "docId": "doc-sr4jc-101629279",
     "hierarchy": [
       "features",
@@ -1103,55 +1091,29 @@
     "title": "Copy Custom Field Values to Another Field"
   },
   {
-    "docId": "doc-sr4jc-459571685",
-    "hierarchy": [
-      "features",
-      "script-listeners"
-    ],
-    "pageId": "459571685",
-    "platform": "cloud",
-    "relativePath": "references/docs/cloud/features/script-listeners/example-script-listeners.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/script-listeners/example-script-listeners",
-    "spaceKey": "SR4JC",
-    "title": "Example Script Listeners"
-  },
-  {
-    "docId": "doc-sr4jc-103678193",
-    "hierarchy": [
-      "features",
-      "script-console"
-    ],
-    "pageId": "103678193",
-    "platform": "cloud",
-    "relativePath": "references/docs/cloud/features/script-console/example-scripts.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/script-console/example-scripts",
-    "spaceKey": "SR4JC",
-    "title": "Example Scripts"
-  },
-  {
-    "docId": "doc-sr4jc-101629504",
+    "docId": "doc-sr4jc-101629019",
     "hierarchy": [
       "features"
     ],
-    "pageId": "101629504",
+    "pageId": "101629019",
     "platform": "cloud",
-    "relativePath": "references/docs/cloud/features/scheduled-jobs.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/scheduled-jobs",
+    "relativePath": "references/docs/cloud/features/script-console.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/script-console",
     "spaceKey": "SR4JC",
-    "title": "Scheduled Jobs"
+    "title": "Script Console"
   },
   {
-    "docId": "doc-sr4jc-101629101",
+    "docId": "doc-sr4jc-103678012",
     "hierarchy": [
       "features",
-      "workflow-rules"
+      "scriptrunner-enhanced-search"
     ],
-    "pageId": "101629101",
+    "pageId": "103678012",
     "platform": "cloud",
-    "relativePath": "references/docs/cloud/features/workflow-rules/perform-actions.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/perform-actions",
+    "relativePath": "references/docs/cloud/features/scriptrunner-enhanced-search/comparison-with-script-runner-for-jira-server.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/comparison-with-scriptrunner-for-jira-server",
     "spaceKey": "SR4JC",
-    "title": "Perform Actions"
+    "title": "Comparison with ScriptRunner for Jira Server"
   },
   {
     "docId": "doc-sr4jc-459571682",
@@ -1167,81 +1129,42 @@
     "title": "Bindings and Parameters"
   },
   {
-    "docId": "doc-sr4jc-107999441",
+    "docId": "doc-sr4jc-101629101",
     "hierarchy": [
       "features",
       "workflow-rules"
     ],
-    "pageId": "107999441",
+    "pageId": "101629101",
     "platform": "cloud",
-    "relativePath": "references/docs/cloud/features/workflow-rules/example-workflow-rules.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/example-workflow-rules",
+    "relativePath": "references/docs/cloud/features/workflow-rules/perform-actions.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/perform-actions",
     "spaceKey": "SR4JC",
-    "title": "Example Workflow Rules"
+    "title": "Perform Actions"
   },
   {
-    "docId": "doc-sr4jc-101629020",
+    "docId": "doc-sr4jc-459571685",
     "hierarchy": [
       "features",
-      "workflow-rules"
+      "script-listeners"
     ],
-    "pageId": "101629020",
+    "pageId": "459571685",
     "platform": "cloud",
-    "relativePath": "references/docs/cloud/features/workflow-rules/restrict-transitions.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/restrict-transitions",
+    "relativePath": "references/docs/cloud/features/script-listeners/example-script-listeners.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/script-listeners/example-script-listeners",
     "spaceKey": "SR4JC",
-    "title": "Restrict Transitions"
+    "title": "Example Script Listeners"
   },
   {
-    "docId": "doc-sr4jc-104376096",
-    "hierarchy": [
-      "features",
-      "workflow-rules",
-      "perform-actions"
-    ],
-    "pageId": "104376096",
-    "platform": "cloud",
-    "relativePath": "references/docs/cloud/features/workflow-rules/perform-actions/fields.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/perform-actions/fields",
-    "spaceKey": "SR4JC",
-    "title": "Fields"
-  },
-  {
-    "docId": "doc-sr4jc-104373072",
-    "hierarchy": [
-      "features",
-      "workflow-rules"
-    ],
-    "pageId": "104373072",
-    "platform": "cloud",
-    "relativePath": "references/docs/cloud/features/workflow-rules/validate-details.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/validate-details",
-    "spaceKey": "SR4JC",
-    "title": "Validate Details"
-  },
-  {
-    "docId": "doc-sr4jc-101629014",
+    "docId": "doc-sr4jc-101629504",
     "hierarchy": [
       "features"
     ],
-    "pageId": "101629014",
+    "pageId": "101629504",
     "platform": "cloud",
-    "relativePath": "references/docs/cloud/features/script-listeners.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/script-listeners",
+    "relativePath": "references/docs/cloud/features/scheduled-jobs.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/scheduled-jobs",
     "spaceKey": "SR4JC",
-    "title": "Script Listeners"
-  },
-  {
-    "docId": "doc-sr4jc-101629502",
-    "hierarchy": [
-      "features"
-    ],
-    "pageId": "101629502",
-    "platform": "cloud",
-    "relativePath": "references/docs/cloud/features/workflow-rules.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules",
-    "spaceKey": "SR4JC",
-    "title": "Workflow Rules"
+    "title": "Scheduled Jobs"
   },
   {
     "docId": "doc-sr4jc-104376138",
@@ -1258,17 +1181,68 @@
     "title": "Example Custom Scripts"
   },
   {
-    "docId": "doc-sr4jc-151629802",
+    "docId": "doc-sr4jc-101629502",
+    "hierarchy": [
+      "features"
+    ],
+    "pageId": "101629502",
+    "platform": "cloud",
+    "relativePath": "references/docs/cloud/features/workflow-rules.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules",
+    "spaceKey": "SR4JC",
+    "title": "Workflow Rules"
+  },
+  {
+    "docId": "doc-sr4jc-104376096",
     "hierarchy": [
       "features",
-      "behaviours"
+      "workflow-rules",
+      "perform-actions"
     ],
-    "pageId": "151629802",
+    "pageId": "104376096",
     "platform": "cloud",
-    "relativePath": "references/docs/cloud/features/behaviours/example-behaviour.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/behaviours/example-behaviour",
+    "relativePath": "references/docs/cloud/features/workflow-rules/perform-actions/fields.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/perform-actions/fields",
     "spaceKey": "SR4JC",
-    "title": "Example Behaviour"
+    "title": "Fields"
+  },
+  {
+    "docId": "doc-sr4jc-101629014",
+    "hierarchy": [
+      "features"
+    ],
+    "pageId": "101629014",
+    "platform": "cloud",
+    "relativePath": "references/docs/cloud/features/script-listeners.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/script-listeners",
+    "spaceKey": "SR4JC",
+    "title": "Script Listeners"
+  },
+  {
+    "docId": "doc-sr4jc-101629020",
+    "hierarchy": [
+      "features",
+      "workflow-rules"
+    ],
+    "pageId": "101629020",
+    "platform": "cloud",
+    "relativePath": "references/docs/cloud/features/workflow-rules/restrict-transitions.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/restrict-transitions",
+    "spaceKey": "SR4JC",
+    "title": "Restrict Transitions"
+  },
+  {
+    "docId": "doc-sr4jc-107999441",
+    "hierarchy": [
+      "features",
+      "workflow-rules"
+    ],
+    "pageId": "107999441",
+    "platform": "cloud",
+    "relativePath": "references/docs/cloud/features/workflow-rules/example-workflow-rules.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/example-workflow-rules",
+    "spaceKey": "SR4JC",
+    "title": "Example Workflow Rules"
   },
   {
     "docId": "doc-sr4jc-409798226",
@@ -1284,44 +1258,30 @@
     "title": "Troubleshoot Workflow Rules"
   },
   {
-    "docId": "doc-sr4jc-151629763",
-    "hierarchy": [
-      "features"
-    ],
-    "pageId": "151629763",
-    "platform": "cloud",
-    "relativePath": "references/docs/cloud/features/behaviours.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/behaviours",
-    "spaceKey": "SR4JC",
-    "title": "Behaviours"
-  },
-  {
-    "docId": "doc-sr4jc-104376159",
+    "docId": "doc-sr4jc-104373072",
     "hierarchy": [
       "features",
-      "workflow-rules",
-      "perform-actions"
+      "workflow-rules"
     ],
-    "pageId": "104376159",
+    "pageId": "104373072",
     "platform": "cloud",
-    "relativePath": "references/docs/cloud/features/workflow-rules/perform-actions/built-in-workflow-actions.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/perform-actions/built-in-workflow-actions",
+    "relativePath": "references/docs/cloud/features/workflow-rules/validate-details.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/validate-details",
     "spaceKey": "SR4JC",
-    "title": "Built-in Workflow Actions"
+    "title": "Validate Details"
   },
   {
-    "docId": "doc-sr4jc-578720756",
+    "docId": "doc-sr4jc-151629802",
     "hierarchy": [
       "features",
-      "behaviours",
-      "example-behaviour"
+      "behaviours"
     ],
-    "pageId": "578720756",
+    "pageId": "151629802",
     "platform": "cloud",
-    "relativePath": "references/docs/cloud/features/behaviours/example-behaviour/show-warning-or-restrict-options-based-on-fields-for-jsm-example.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/behaviours/example-behaviour/show-warning-or-restrict-options-based-on-fields-for-jsm-example",
+    "relativePath": "references/docs/cloud/features/behaviours/example-behaviour.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/behaviours/example-behaviour",
     "spaceKey": "SR4JC",
-    "title": "Show Warning or Restrict Options Based on Fields for JSM Example"
+    "title": "Example Behaviour"
   },
   {
     "docId": "doc-sr4jc-187992432",
@@ -1351,6 +1311,18 @@
     "title": "Restrict Field Option Based on Group for JSM Example"
   },
   {
+    "docId": "doc-sr4jc-151629763",
+    "hierarchy": [
+      "features"
+    ],
+    "pageId": "151629763",
+    "platform": "cloud",
+    "relativePath": "references/docs/cloud/features/behaviours.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/behaviours",
+    "spaceKey": "SR4JC",
+    "title": "Behaviours"
+  },
+  {
     "docId": "doc-sr4jc-578720452",
     "hierarchy": [
       "features",
@@ -1365,18 +1337,18 @@
     "title": "Dynamically Update Priority for Incidents Based on Summary for JSM Example"
   },
   {
-    "docId": "doc-sr4jc-414318819",
+    "docId": "doc-sr4jc-578720756",
     "hierarchy": [
       "features",
       "behaviours",
       "example-behaviour"
     ],
-    "pageId": "414318819",
+    "pageId": "578720756",
     "platform": "cloud",
-    "relativePath": "references/docs/cloud/features/behaviours/example-behaviour/auto-assign-high-priority-work-items-example.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/behaviours/example-behaviour/auto-assign-high-priority-work-items-example",
+    "relativePath": "references/docs/cloud/features/behaviours/example-behaviour/show-warning-or-restrict-options-based-on-fields-for-jsm-example.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/behaviours/example-behaviour/show-warning-or-restrict-options-based-on-fields-for-jsm-example",
     "spaceKey": "SR4JC",
-    "title": "Auto-assign High Priority Work Items Example"
+    "title": "Show Warning or Restrict Options Based on Fields for JSM Example"
   },
   {
     "docId": "doc-sr4jc-578720445",
@@ -1393,18 +1365,18 @@
     "title": "Pre-fill Fields with User Information and Dates for JSM Example"
   },
   {
-    "docId": "doc-sr4jc-414318834",
+    "docId": "doc-sr4jc-414318819",
     "hierarchy": [
       "features",
       "behaviours",
       "example-behaviour"
     ],
-    "pageId": "414318834",
+    "pageId": "414318819",
     "platform": "cloud",
-    "relativePath": "references/docs/cloud/features/behaviours/example-behaviour/make-fields-editable-based-on-role-example.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/behaviours/example-behaviour/make-fields-editable-based-on-role-example",
+    "relativePath": "references/docs/cloud/features/behaviours/example-behaviour/auto-assign-high-priority-work-items-example.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/behaviours/example-behaviour/auto-assign-high-priority-work-items-example",
     "spaceKey": "SR4JC",
-    "title": "Make Fields Editable Based on Role Example"
+    "title": "Auto-assign High Priority Work Items Example"
   },
   {
     "docId": "doc-sr4jc-469401614",
@@ -1419,6 +1391,33 @@
     "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/behaviours/example-behaviour/example-behaviour-scripts",
     "spaceKey": "SR4JC",
     "title": "Example Behaviour Scripts"
+  },
+  {
+    "docId": "doc-sr4jc-414318834",
+    "hierarchy": [
+      "features",
+      "behaviours",
+      "example-behaviour"
+    ],
+    "pageId": "414318834",
+    "platform": "cloud",
+    "relativePath": "references/docs/cloud/features/behaviours/example-behaviour/make-fields-editable-based-on-role-example.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/behaviours/example-behaviour/make-fields-editable-based-on-role-example",
+    "spaceKey": "SR4JC",
+    "title": "Make Fields Editable Based on Role Example"
+  },
+  {
+    "docId": "doc-sr4jc-537427969",
+    "hierarchy": [
+      "features",
+      "behaviours"
+    ],
+    "pageId": "537427969",
+    "platform": "cloud",
+    "relativePath": "references/docs/cloud/features/behaviours/behaviours-terminology.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/behaviours/behaviours-terminology",
+    "spaceKey": "SR4JC",
+    "title": "Behaviours Terminology"
   },
   {
     "docId": "doc-sr4jc-414318811",
@@ -1449,19 +1448,6 @@
     "title": "Example Videos of Behaviours"
   },
   {
-    "docId": "doc-sr4jc-480379487",
-    "hierarchy": [
-      "features",
-      "behaviours"
-    ],
-    "pageId": "480379487",
-    "platform": "cloud",
-    "relativePath": "references/docs/cloud/features/behaviours/behaviours-bot.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/behaviours/behaviours-bot",
-    "spaceKey": "SR4JC",
-    "title": "Behaviours Bot"
-  },
-  {
     "docId": "doc-sr4jc-574260442",
     "hierarchy": [
       "features",
@@ -1473,32 +1459,6 @@
     "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/behaviours/create-and-modify-jsm-behaviours",
     "spaceKey": "SR4JC",
     "title": "Create and Modify JSM Behaviours"
-  },
-  {
-    "docId": "doc-sr4jc-537427969",
-    "hierarchy": [
-      "features",
-      "behaviours"
-    ],
-    "pageId": "537427969",
-    "platform": "cloud",
-    "relativePath": "references/docs/cloud/features/behaviours/behaviours-terminology.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/behaviours/behaviours-terminology",
-    "spaceKey": "SR4JC",
-    "title": "Behaviours Terminology"
-  },
-  {
-    "docId": "doc-sr4jc-355468353",
-    "hierarchy": [
-      "features",
-      "behaviours"
-    ],
-    "pageId": "355468353",
-    "platform": "cloud",
-    "relativePath": "references/docs/cloud/features/behaviours/behaviours-limitations.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/behaviours/behaviours-limitations",
-    "spaceKey": "SR4JC",
-    "title": "Behaviours Limitations"
   },
   {
     "docId": "doc-sr4jc-__sr4jc__latest__features__escalation-service__example-escalation-code",
@@ -1514,17 +1474,18 @@
     "title": "Example Escalation Code"
   },
   {
-    "docId": "doc-sr4jc-266699303",
+    "docId": "doc-sr4jc-104376159",
     "hierarchy": [
       "features",
-      "behaviours"
+      "workflow-rules",
+      "perform-actions"
     ],
-    "pageId": "266699303",
+    "pageId": "104376159",
     "platform": "cloud",
-    "relativePath": "references/docs/cloud/features/behaviours/troubleshoot-behaviours.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/behaviours/troubleshoot-behaviours",
+    "relativePath": "references/docs/cloud/features/workflow-rules/perform-actions/built-in-workflow-actions.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/perform-actions/built-in-workflow-actions",
     "spaceKey": "SR4JC",
-    "title": "Troubleshoot Behaviours"
+    "title": "Built-in Workflow Actions"
   },
   {
     "docId": "doc-sr4jc-272761656",
@@ -1538,6 +1499,71 @@
     "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/behaviours/create-and-modify-jira-behaviours",
     "spaceKey": "SR4JC",
     "title": "Create and Modify Jira Behaviours"
+  },
+  {
+    "docId": "doc-sr4jc-355468353",
+    "hierarchy": [
+      "features",
+      "behaviours"
+    ],
+    "pageId": "355468353",
+    "platform": "cloud",
+    "relativePath": "references/docs/cloud/features/behaviours/behaviours-limitations.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/behaviours/behaviours-limitations",
+    "spaceKey": "SR4JC",
+    "title": "Behaviours Limitations"
+  },
+  {
+    "docId": "doc-sr4jc-480379487",
+    "hierarchy": [
+      "features",
+      "behaviours"
+    ],
+    "pageId": "480379487",
+    "platform": "cloud",
+    "relativePath": "references/docs/cloud/features/behaviours/behaviours-bot.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/behaviours/behaviours-bot",
+    "spaceKey": "SR4JC",
+    "title": "Behaviours Bot"
+  },
+  {
+    "docId": "doc-sr4jc-115708698",
+    "hierarchy": [
+      "features",
+      "script-fragments"
+    ],
+    "pageId": "115708698",
+    "platform": "cloud",
+    "relativePath": "references/docs/cloud/features/script-fragments/adaptavist-bridge.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/script-fragments/adaptavist-bridge",
+    "spaceKey": "SR4JC",
+    "title": "Adaptavist Bridge"
+  },
+  {
+    "docId": "doc-sr4jc-151629829",
+    "hierarchy": [
+      "features",
+      "behaviours"
+    ],
+    "pageId": "151629829",
+    "platform": "cloud",
+    "relativePath": "references/docs/cloud/features/behaviours/behaviours-api.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/behaviours/behaviours-api",
+    "spaceKey": "SR4JC",
+    "title": "Behaviours API"
+  },
+  {
+    "docId": "doc-sr4jc-244384040",
+    "hierarchy": [
+      "features",
+      "behaviours"
+    ],
+    "pageId": "244384040",
+    "platform": "cloud",
+    "relativePath": "references/docs/cloud/features/behaviours/behaviours-supported-fields-and-products.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/behaviours/behaviours-supported-fields-and-products",
+    "spaceKey": "SR4JC",
+    "title": "Behaviours Supported Fields and Products"
   },
   {
     "docId": "doc-sr4jc-103678285",
@@ -1564,31 +1590,6 @@
     "title": "Script Fragments"
   },
   {
-    "docId": "doc-sr4jc-103678296",
-    "hierarchy": [
-      "features"
-    ],
-    "pageId": "103678296",
-    "platform": "cloud",
-    "relativePath": "references/docs/cloud/features/script-variables.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/script-variables",
-    "spaceKey": "SR4JC",
-    "title": "Script Variables"
-  },
-  {
-    "docId": "doc-sr4jc-115708698",
-    "hierarchy": [
-      "features",
-      "script-fragments"
-    ],
-    "pageId": "115708698",
-    "platform": "cloud",
-    "relativePath": "references/docs/cloud/features/script-fragments/adaptavist-bridge.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/script-fragments/adaptavist-bridge",
-    "spaceKey": "SR4JC",
-    "title": "Adaptavist Bridge"
-  },
-  {
     "docId": "doc-sr4jc-__sr4jc__latest__features__scripted-fields__example-scripted-fields",
     "hierarchy": [
       "features",
@@ -1600,6 +1601,31 @@
     "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/scripted-fields/example-scripted-fields",
     "spaceKey": "SR4JC",
     "title": "Example Scripted Fields"
+  },
+  {
+    "docId": "doc-sr4jc-266699303",
+    "hierarchy": [
+      "features",
+      "behaviours"
+    ],
+    "pageId": "266699303",
+    "platform": "cloud",
+    "relativePath": "references/docs/cloud/features/behaviours/troubleshoot-behaviours.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/behaviours/troubleshoot-behaviours",
+    "spaceKey": "SR4JC",
+    "title": "Troubleshoot Behaviours"
+  },
+  {
+    "docId": "doc-sr4jc-103678296",
+    "hierarchy": [
+      "features"
+    ],
+    "pageId": "103678296",
+    "platform": "cloud",
+    "relativePath": "references/docs/cloud/features/script-variables.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/script-variables",
+    "spaceKey": "SR4JC",
+    "title": "Script Variables"
   },
   {
     "docId": "doc-sr4jc-101629523",
@@ -1625,19 +1651,6 @@
     "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/script-variables/example-script-variables",
     "spaceKey": "SR4JC",
     "title": "Example Script Variables"
-  },
-  {
-    "docId": "doc-sr4jc-244384040",
-    "hierarchy": [
-      "features",
-      "behaviours"
-    ],
-    "pageId": "244384040",
-    "platform": "cloud",
-    "relativePath": "references/docs/cloud/features/behaviours/behaviours-supported-fields-and-products.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/behaviours/behaviours-supported-fields-and-products",
-    "spaceKey": "SR4JC",
-    "title": "Behaviours Supported Fields and Products"
   },
   {
     "docId": "doc-sr4jc-517020958",
@@ -1679,29 +1692,6 @@
     "title": "Script Manager Naming Rules"
   },
   {
-    "docId": "doc-sr4jc-151629829",
-    "hierarchy": [
-      "features",
-      "behaviours"
-    ],
-    "pageId": "151629829",
-    "platform": "cloud",
-    "relativePath": "references/docs/cloud/features/behaviours/behaviours-api.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/behaviours/behaviours-api",
-    "spaceKey": "SR4JC",
-    "title": "Behaviours API"
-  },
-  {
-    "docId": "doc-sr4jc-119970726",
-    "hierarchy": [],
-    "pageId": "119970726",
-    "platform": "cloud",
-    "relativePath": "references/docs/cloud/uncategorized/m/manage-app.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/manage-app",
-    "spaceKey": "SR4JC",
-    "title": "Manage App"
-  },
-  {
     "docId": "doc-sr4jc-480378914",
     "hierarchy": [
       "features",
@@ -1715,16 +1705,26 @@
     "title": "Troubleshoot Script Manager"
   },
   {
-    "docId": "doc-sr4jc-138939792",
+    "docId": "doc-sr4jc-355468162",
     "hierarchy": [
       "manage-app"
     ],
-    "pageId": "138939792",
+    "pageId": "355468162",
     "platform": "cloud",
-    "relativePath": "references/docs/cloud/manage-app/execution-history.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/manage-app/execution-history",
+    "relativePath": "references/docs/cloud/manage-app/use-ip-addresses.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/manage-app/use-ip-addresses",
     "spaceKey": "SR4JC",
-    "title": "Execution History"
+    "title": "Use IP Addresses"
+  },
+  {
+    "docId": "doc-sr4jc-119970726",
+    "hierarchy": [],
+    "pageId": "119970726",
+    "platform": "cloud",
+    "relativePath": "references/docs/cloud/uncategorized/m/manage-app.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/manage-app",
+    "spaceKey": "SR4JC",
+    "title": "Manage App"
   },
   {
     "docId": "doc-sr4jc-138939786",
@@ -1751,42 +1751,6 @@
     "title": "Connected Apps"
   },
   {
-    "docId": "doc-sr4jc-355468953",
-    "hierarchy": [
-      "manage-app"
-    ],
-    "pageId": "355468953",
-    "platform": "cloud",
-    "relativePath": "references/docs/cloud/manage-app/use-reports.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/manage-app/use-reports",
-    "spaceKey": "SR4JC",
-    "title": "Use Reports"
-  },
-  {
-    "docId": "doc-sr4jc-355468162",
-    "hierarchy": [
-      "manage-app"
-    ],
-    "pageId": "355468162",
-    "platform": "cloud",
-    "relativePath": "references/docs/cloud/manage-app/use-ip-addresses.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/manage-app/use-ip-addresses",
-    "spaceKey": "SR4JC",
-    "title": "Use IP Addresses"
-  },
-  {
-    "docId": "doc-sr4jc-433029520",
-    "hierarchy": [
-      "features"
-    ],
-    "pageId": "433029520",
-    "platform": "cloud",
-    "relativePath": "references/docs/cloud/features/script-manager.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/script-manager",
-    "spaceKey": "SR4JC",
-    "title": "Script Manager"
-  },
-  {
     "docId": "doc-sr4jc-101629271",
     "hierarchy": [
       "scriptrunner-migration-to-cloud"
@@ -1799,14 +1763,28 @@
     "title": "Platform Differences between ScriptRunner for Jira Server/DC and Jira Cloud"
   },
   {
-    "docId": "doc-sr4jc-101629535",
-    "hierarchy": [],
-    "pageId": "101629535",
+    "docId": "doc-sr4jc-355468953",
+    "hierarchy": [
+      "manage-app"
+    ],
+    "pageId": "355468953",
     "platform": "cloud",
-    "relativePath": "references/docs/cloud/uncategorized/s/script-runner-migration-to-cloud.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/scriptrunner-migration-to-cloud",
+    "relativePath": "references/docs/cloud/manage-app/use-reports.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/manage-app/use-reports",
     "spaceKey": "SR4JC",
-    "title": "ScriptRunner Migration to Cloud"
+    "title": "Use Reports"
+  },
+  {
+    "docId": "doc-sr4jc-138939792",
+    "hierarchy": [
+      "manage-app"
+    ],
+    "pageId": "138939792",
+    "platform": "cloud",
+    "relativePath": "references/docs/cloud/manage-app/execution-history.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/manage-app/execution-history",
+    "spaceKey": "SR4JC",
+    "title": "Execution History"
   },
   {
     "docId": "doc-sr4jc-101629534",
@@ -1820,6 +1798,26 @@
     "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/scriptrunner-migration-to-cloud/rewrite-scripts-for-cloud-hints-and-tips/unirest-library",
     "spaceKey": "SR4JC",
     "title": "Unirest Library"
+  },
+  {
+    "docId": "doc-sr4jc-101629535",
+    "hierarchy": [],
+    "pageId": "101629535",
+    "platform": "cloud",
+    "relativePath": "references/docs/cloud/uncategorized/s/script-runner-migration-to-cloud.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/scriptrunner-migration-to-cloud",
+    "spaceKey": "SR4JC",
+    "title": "ScriptRunner Migration to Cloud"
+  },
+  {
+    "docId": "doc-sr4jc-149693767",
+    "hierarchy": [],
+    "pageId": "149693767",
+    "platform": "cloud",
+    "relativePath": "references/docs/cloud/uncategorized/g/get-involved.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/get-involved",
+    "spaceKey": "SR4JC",
+    "title": "Get Involved"
   },
   {
     "docId": "doc-sr4jc-101629046",
@@ -1844,14 +1842,28 @@
     "title": "GDPR Migration"
   },
   {
-    "docId": "doc-sr4jc-149693767",
-    "hierarchy": [],
-    "pageId": "149693767",
+    "docId": "doc-sr4jc-433029520",
+    "hierarchy": [
+      "features"
+    ],
+    "pageId": "433029520",
     "platform": "cloud",
-    "relativePath": "references/docs/cloud/uncategorized/g/get-involved.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/get-involved",
+    "relativePath": "references/docs/cloud/features/script-manager.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/features/script-manager",
     "spaceKey": "SR4JC",
-    "title": "Get Involved"
+    "title": "Script Manager"
+  },
+  {
+    "docId": "doc-sr4jc-130917247",
+    "hierarchy": [
+      "scriptrunner-migration-to-cloud"
+    ],
+    "pageId": "130917247",
+    "platform": "cloud",
+    "relativePath": "references/docs/cloud/scriptrunner-migration-to-cloud/rewrite-scripts-for-cloud-hints-and-tips.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/scriptrunner-migration-to-cloud/rewrite-scripts-for-cloud-hints-and-tips",
+    "spaceKey": "SR4JC",
+    "title": "Rewrite Scripts for Cloud Hints and Tips"
   },
   {
     "docId": "doc-sr4jc-101629528",
@@ -1876,18 +1888,6 @@
     "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/scriptrunner-migration-to-cloud/troubleshoot-scriptrunner-migration",
     "spaceKey": "SR4JC",
     "title": "Troubleshoot ScriptRunner Migration"
-  },
-  {
-    "docId": "doc-sr4jc-130917247",
-    "hierarchy": [
-      "scriptrunner-migration-to-cloud"
-    ],
-    "pageId": "130917247",
-    "platform": "cloud",
-    "relativePath": "references/docs/cloud/scriptrunner-migration-to-cloud/rewrite-scripts-for-cloud-hints-and-tips.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4jc/latest/scriptrunner-migration-to-cloud/rewrite-scripts-for-cloud-hints-and-tips",
-    "spaceKey": "SR4JC",
-    "title": "Rewrite Scripts for Cloud Hints and Tips"
   },
   {
     "docId": "doc-sr4jc-101629509",
@@ -1915,18 +1915,6 @@
     "title": "2023 Release Notes"
   },
   {
-    "docId": "doc-sr4cc-107986852",
-    "hierarchy": [
-      "release-notes"
-    ],
-    "pageId": "107986852",
-    "platform": "confluence-cloud",
-    "relativePath": "references/docs/confluence-cloud/release-notes/breaking-changes.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/release-notes/breaking-changes",
-    "spaceKey": "SR4CC",
-    "title": "Breaking Changes"
-  },
-  {
     "docId": "doc-sr4cc-117672072",
     "hierarchy": [
       "release-notes",
@@ -1940,14 +1928,16 @@
     "title": "Initial Release"
   },
   {
-    "docId": "doc-sr4cc-104376066",
-    "hierarchy": [],
-    "pageId": "104376066",
+    "docId": "doc-sr4cc-107986852",
+    "hierarchy": [
+      "release-notes"
+    ],
+    "pageId": "107986852",
     "platform": "confluence-cloud",
-    "relativePath": "references/docs/confluence-cloud/uncategorized/s/script-runner-for-confluence-cloud.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest",
+    "relativePath": "references/docs/confluence-cloud/release-notes/breaking-changes.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/release-notes/breaking-changes",
     "spaceKey": "SR4CC",
-    "title": "ScriptRunner for Confluence Cloud"
+    "title": "Breaking Changes"
   },
   {
     "docId": "doc-sr4cc-112138140",
@@ -1960,16 +1950,14 @@
     "title": "Release Notes"
   },
   {
-    "docId": "doc-sr4cc-454394448",
-    "hierarchy": [
-      "release-notes"
-    ],
-    "pageId": "454394448",
+    "docId": "doc-sr4cc-104376066",
+    "hierarchy": [],
+    "pageId": "104376066",
     "platform": "confluence-cloud",
-    "relativePath": "references/docs/confluence-cloud/release-notes/older-release-notes.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/release-notes/older-release-notes",
+    "relativePath": "references/docs/confluence-cloud/uncategorized/s/script-runner-for-confluence-cloud.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest",
     "spaceKey": "SR4CC",
-    "title": "Older Release Notes"
+    "title": "ScriptRunner for Confluence Cloud"
   },
   {
     "docId": "doc-sr4cc-454394498",
@@ -1995,6 +1983,18 @@
     "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/get-started/installation",
     "spaceKey": "SR4CC",
     "title": "Installation"
+  },
+  {
+    "docId": "doc-sr4cc-454394448",
+    "hierarchy": [
+      "release-notes"
+    ],
+    "pageId": "454394448",
+    "platform": "confluence-cloud",
+    "relativePath": "references/docs/confluence-cloud/release-notes/older-release-notes.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/release-notes/older-release-notes",
+    "spaceKey": "SR4CC",
+    "title": "Older Release Notes"
   },
   {
     "docId": "doc-sr4cc-454394464",
@@ -2098,16 +2098,6 @@
     "title": "Limitations"
   },
   {
-    "docId": "doc-sr4cc-416678049",
-    "hierarchy": [],
-    "pageId": "416678049",
-    "platform": "confluence-cloud",
-    "relativePath": "references/docs/confluence-cloud/uncategorized/h/hapi.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/hapi",
-    "spaceKey": "SR4CC",
-    "title": "HAPI"
-  },
-  {
     "docId": "doc-sr4cc-112138409",
     "hierarchy": [
       "get-started"
@@ -2132,19 +2122,6 @@
     "title": "Navigation"
   },
   {
-    "docId": "doc-sr4cc-445219737",
-    "hierarchy": [
-      "get-started",
-      "navigation"
-    ],
-    "pageId": "445219737",
-    "platform": "confluence-cloud",
-    "relativePath": "references/docs/confluence-cloud/get-started/navigation/script-runner-home.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/get-started/navigation/scriptrunner-home",
-    "spaceKey": "SR4CC",
-    "title": "ScriptRunner Home"
-  },
-  {
     "docId": "doc-sr4cc-114205382",
     "hierarchy": [
       "get-started",
@@ -2158,6 +2135,16 @@
     "title": "Quick Scripting"
   },
   {
+    "docId": "doc-sr4cc-416678049",
+    "hierarchy": [],
+    "pageId": "416678049",
+    "platform": "confluence-cloud",
+    "relativePath": "references/docs/confluence-cloud/uncategorized/h/hapi.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/hapi",
+    "spaceKey": "SR4CC",
+    "title": "HAPI"
+  },
+  {
     "docId": "doc-sr4cc-107996193",
     "hierarchy": [
       "get-started"
@@ -2168,6 +2155,19 @@
     "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/get-started/general-information",
     "spaceKey": "SR4CC",
     "title": "General Information"
+  },
+  {
+    "docId": "doc-sr4cc-445219737",
+    "hierarchy": [
+      "get-started",
+      "navigation"
+    ],
+    "pageId": "445219737",
+    "platform": "confluence-cloud",
+    "relativePath": "references/docs/confluence-cloud/get-started/navigation/script-runner-home.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/get-started/navigation/scriptrunner-home",
+    "spaceKey": "SR4CC",
+    "title": "ScriptRunner Home"
   },
   {
     "docId": "doc-sr4cc-416678102",
@@ -2194,18 +2194,6 @@
     "title": "Work with Page Components"
   },
   {
-    "docId": "doc-sr4cc-477865065",
-    "hierarchy": [
-      "hapi"
-    ],
-    "pageId": "477865065",
-    "platform": "confluence-cloud",
-    "relativePath": "references/docs/confluence-cloud/hapi/work-with-templates.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/hapi/work-with-templates",
-    "spaceKey": "SR4CC",
-    "title": "Work with Templates"
-  },
-  {
     "docId": "doc-sr4cc-416678065",
     "hierarchy": [
       "hapi"
@@ -2216,6 +2204,18 @@
     "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/hapi/work-with-pages",
     "spaceKey": "SR4CC",
     "title": "Work with Pages"
+  },
+  {
+    "docId": "doc-sr4cc-477865065",
+    "hierarchy": [
+      "hapi"
+    ],
+    "pageId": "477865065",
+    "platform": "confluence-cloud",
+    "relativePath": "references/docs/confluence-cloud/hapi/work-with-templates.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/hapi/work-with-templates",
+    "spaceKey": "SR4CC",
+    "title": "Work with Templates"
   },
   {
     "docId": "doc-sr4cc-107988483",
@@ -2254,20 +2254,6 @@
     "title": "Work with Spaces"
   },
   {
-    "docId": "doc-sr4cc-114204164",
-    "hierarchy": [
-      "features",
-      "built-in-scripts",
-      "confluence-administration-built-in-script"
-    ],
-    "pageId": "114204164",
-    "platform": "confluence-cloud",
-    "relativePath": "references/docs/confluence-cloud/features/built-in-scripts/confluence-administration-built-in-script/bulk-delete-attachments.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/built-in-scripts/confluence-administration-built-in-script/bulk-delete-attachments",
-    "spaceKey": "SR4CC",
-    "title": "Bulk Delete Attachments"
-  },
-  {
     "docId": "doc-sr4cc-114204143",
     "hierarchy": [
       "features",
@@ -2282,40 +2268,18 @@
     "title": "Bulk Add or Remove Labels on One or More Pages"
   },
   {
-    "docId": "doc-sr4cc-114204206",
+    "docId": "doc-sr4cc-114204164",
     "hierarchy": [
       "features",
       "built-in-scripts",
       "confluence-administration-built-in-script"
     ],
-    "pageId": "114204206",
+    "pageId": "114204164",
     "platform": "confluence-cloud",
-    "relativePath": "references/docs/confluence-cloud/features/built-in-scripts/confluence-administration-built-in-script/bulk-purge-trash.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/built-in-scripts/confluence-administration-built-in-script/bulk-purge-trash",
+    "relativePath": "references/docs/confluence-cloud/features/built-in-scripts/confluence-administration-built-in-script/bulk-delete-attachments.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/built-in-scripts/confluence-administration-built-in-script/bulk-delete-attachments",
     "spaceKey": "SR4CC",
-    "title": "Bulk Purge Trash"
-  },
-  {
-    "docId": "doc-sr4cc-112139294",
-    "hierarchy": [],
-    "pageId": "112139294",
-    "platform": "confluence-cloud",
-    "relativePath": "references/docs/confluence-cloud/uncategorized/f/features.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features",
-    "spaceKey": "SR4CC",
-    "title": "Features"
-  },
-  {
-    "docId": "doc-sr4cc-171278734",
-    "hierarchy": [
-      "get-started"
-    ],
-    "pageId": "171278734",
-    "platform": "confluence-cloud",
-    "relativePath": "references/docs/confluence-cloud/get-started/permissions.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/get-started/permissions",
-    "spaceKey": "SR4CC",
-    "title": "Permissions"
+    "title": "Bulk Delete Attachments"
   },
   {
     "docId": "doc-sr4cc-114204185",
@@ -2332,43 +2296,40 @@
     "title": "Bulk Delete Comments from One or More Pages"
   },
   {
-    "docId": "doc-sr4cc-114204311",
-    "hierarchy": [
-      "features",
-      "built-in-scripts"
-    ],
-    "pageId": "114204311",
+    "docId": "doc-sr4cc-112139294",
+    "hierarchy": [],
+    "pageId": "112139294",
     "platform": "confluence-cloud",
-    "relativePath": "references/docs/confluence-cloud/features/built-in-scripts/confluence-administration-built-in-script.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/built-in-scripts/confluence-administration-built-in-script",
+    "relativePath": "references/docs/confluence-cloud/uncategorized/f/features.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features",
     "spaceKey": "SR4CC",
-    "title": "Confluence Administration Built-In Script"
+    "title": "Features"
   },
   {
-    "docId": "doc-sr4cc-117672039",
-    "hierarchy": [
-      "release-notes"
-    ],
-    "pageId": "117672039",
-    "platform": "confluence-cloud",
-    "relativePath": "references/docs/confluence-cloud/release-notes/recent-release-notes.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/release-notes/recent-release-notes",
-    "spaceKey": "SR4CC",
-    "title": "Recent Release Notes"
-  },
-  {
-    "docId": "doc-sr4cc-114204248",
+    "docId": "doc-sr4cc-114204206",
     "hierarchy": [
       "features",
       "built-in-scripts",
       "confluence-administration-built-in-script"
     ],
-    "pageId": "114204248",
+    "pageId": "114204206",
     "platform": "confluence-cloud",
-    "relativePath": "references/docs/confluence-cloud/features/built-in-scripts/confluence-administration-built-in-script/copy-space.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/built-in-scripts/confluence-administration-built-in-script/copy-space",
+    "relativePath": "references/docs/confluence-cloud/features/built-in-scripts/confluence-administration-built-in-script/bulk-purge-trash.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/built-in-scripts/confluence-administration-built-in-script/bulk-purge-trash",
     "spaceKey": "SR4CC",
-    "title": "Copy Space"
+    "title": "Bulk Purge Trash"
+  },
+  {
+    "docId": "doc-sr4cc-171278734",
+    "hierarchy": [
+      "get-started"
+    ],
+    "pageId": "171278734",
+    "platform": "confluence-cloud",
+    "relativePath": "references/docs/confluence-cloud/get-started/permissions.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/get-started/permissions",
+    "spaceKey": "SR4CC",
+    "title": "Permissions"
   },
   {
     "docId": "doc-sr4cc-114204227",
@@ -2385,59 +2346,31 @@
     "title": "Copy Page Tree"
   },
   {
-    "docId": "doc-sr4cc-114204422",
-    "hierarchy": [
-      "features",
-      "built-in-scripts",
-      "space-administration-built-in-scripts"
-    ],
-    "pageId": "114204422",
-    "platform": "confluence-cloud",
-    "relativePath": "references/docs/confluence-cloud/features/built-in-scripts/space-administration-built-in-scripts/bulk-purge-trash.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/built-in-scripts/space-administration-built-in-scripts/bulk-purge-trash",
-    "spaceKey": "SR4CC",
-    "title": "Bulk Purge Trash"
-  },
-  {
-    "docId": "doc-sr4cc-114204378",
-    "hierarchy": [
-      "features",
-      "built-in-scripts",
-      "space-administration-built-in-scripts"
-    ],
-    "pageId": "114204378",
-    "platform": "confluence-cloud",
-    "relativePath": "references/docs/confluence-cloud/features/built-in-scripts/space-administration-built-in-scripts/bulk-delete-attachments.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/built-in-scripts/space-administration-built-in-scripts/bulk-delete-attachments",
-    "spaceKey": "SR4CC",
-    "title": "Bulk Delete Attachments"
-  },
-  {
-    "docId": "doc-sr4cc-114204356",
-    "hierarchy": [
-      "features",
-      "built-in-scripts",
-      "space-administration-built-in-scripts"
-    ],
-    "pageId": "114204356",
-    "platform": "confluence-cloud",
-    "relativePath": "references/docs/confluence-cloud/features/built-in-scripts/space-administration-built-in-scripts/bulk-add-remove-labels-on-one-or-more-pages.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/built-in-scripts/space-administration-built-in-scripts/bulk-add-remove-labels-on-one-or-more-pages",
-    "spaceKey": "SR4CC",
-    "title": "Bulk Add/Remove Labels on One or More Pages"
-  },
-  {
-    "docId": "doc-sr4cc-114204332",
+    "docId": "doc-sr4cc-114204311",
     "hierarchy": [
       "features",
       "built-in-scripts"
     ],
-    "pageId": "114204332",
+    "pageId": "114204311",
     "platform": "confluence-cloud",
-    "relativePath": "references/docs/confluence-cloud/features/built-in-scripts/space-administration-built-in-scripts.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/built-in-scripts/space-administration-built-in-scripts",
+    "relativePath": "references/docs/confluence-cloud/features/built-in-scripts/confluence-administration-built-in-script.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/built-in-scripts/confluence-administration-built-in-script",
     "spaceKey": "SR4CC",
-    "title": "Space Administration Built-In Scripts"
+    "title": "Confluence Administration Built-In Script"
+  },
+  {
+    "docId": "doc-sr4cc-114204248",
+    "hierarchy": [
+      "features",
+      "built-in-scripts",
+      "confluence-administration-built-in-script"
+    ],
+    "pageId": "114204248",
+    "platform": "confluence-cloud",
+    "relativePath": "references/docs/confluence-cloud/features/built-in-scripts/confluence-administration-built-in-script/copy-space.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/built-in-scripts/confluence-administration-built-in-script/copy-space",
+    "spaceKey": "SR4CC",
+    "title": "Copy Space"
   },
   {
     "docId": "doc-sr4cc-114204269",
@@ -2454,6 +2387,19 @@
     "title": "Delete Page Tree"
   },
   {
+    "docId": "doc-sr4cc-114204332",
+    "hierarchy": [
+      "features",
+      "built-in-scripts"
+    ],
+    "pageId": "114204332",
+    "platform": "confluence-cloud",
+    "relativePath": "references/docs/confluence-cloud/features/built-in-scripts/space-administration-built-in-scripts.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/built-in-scripts/space-administration-built-in-scripts",
+    "spaceKey": "SR4CC",
+    "title": "Space Administration Built-In Scripts"
+  },
+  {
     "docId": "doc-sr4cc-114204290",
     "hierarchy": [
       "features",
@@ -2468,6 +2414,60 @@
     "title": "Rename Labels"
   },
   {
+    "docId": "doc-sr4cc-117672039",
+    "hierarchy": [
+      "release-notes"
+    ],
+    "pageId": "117672039",
+    "platform": "confluence-cloud",
+    "relativePath": "references/docs/confluence-cloud/release-notes/recent-release-notes.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/release-notes/recent-release-notes",
+    "spaceKey": "SR4CC",
+    "title": "Recent Release Notes"
+  },
+  {
+    "docId": "doc-sr4cc-114204356",
+    "hierarchy": [
+      "features",
+      "built-in-scripts",
+      "space-administration-built-in-scripts"
+    ],
+    "pageId": "114204356",
+    "platform": "confluence-cloud",
+    "relativePath": "references/docs/confluence-cloud/features/built-in-scripts/space-administration-built-in-scripts/bulk-add-remove-labels-on-one-or-more-pages.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/built-in-scripts/space-administration-built-in-scripts/bulk-add-remove-labels-on-one-or-more-pages",
+    "spaceKey": "SR4CC",
+    "title": "Bulk Add/Remove Labels on One or More Pages"
+  },
+  {
+    "docId": "doc-sr4cc-114204378",
+    "hierarchy": [
+      "features",
+      "built-in-scripts",
+      "space-administration-built-in-scripts"
+    ],
+    "pageId": "114204378",
+    "platform": "confluence-cloud",
+    "relativePath": "references/docs/confluence-cloud/features/built-in-scripts/space-administration-built-in-scripts/bulk-delete-attachments.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/built-in-scripts/space-administration-built-in-scripts/bulk-delete-attachments",
+    "spaceKey": "SR4CC",
+    "title": "Bulk Delete Attachments"
+  },
+  {
+    "docId": "doc-sr4cc-114204422",
+    "hierarchy": [
+      "features",
+      "built-in-scripts",
+      "space-administration-built-in-scripts"
+    ],
+    "pageId": "114204422",
+    "platform": "confluence-cloud",
+    "relativePath": "references/docs/confluence-cloud/features/built-in-scripts/space-administration-built-in-scripts/bulk-purge-trash.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/built-in-scripts/space-administration-built-in-scripts/bulk-purge-trash",
+    "spaceKey": "SR4CC",
+    "title": "Bulk Purge Trash"
+  },
+  {
     "docId": "doc-sr4cc-114204400",
     "hierarchy": [
       "features",
@@ -2480,6 +2480,20 @@
     "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/built-in-scripts/space-administration-built-in-scripts/bulk-delete-comments-from-one-or-more-pages",
     "spaceKey": "SR4CC",
     "title": "Bulk Delete Comments From One or More Pages"
+  },
+  {
+    "docId": "doc-sr4cc-114204444",
+    "hierarchy": [
+      "features",
+      "built-in-scripts",
+      "space-administration-built-in-scripts"
+    ],
+    "pageId": "114204444",
+    "platform": "confluence-cloud",
+    "relativePath": "references/docs/confluence-cloud/features/built-in-scripts/space-administration-built-in-scripts/copy-page-tree.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/built-in-scripts/space-administration-built-in-scripts/copy-page-tree",
+    "spaceKey": "SR4CC",
+    "title": "Copy Page Tree"
   },
   {
     "docId": "doc-sr4cc-114204466",
@@ -2508,18 +2522,30 @@
     "title": "Script Listeners"
   },
   {
-    "docId": "doc-sr4cc-114204444",
+    "docId": "doc-sr4cc-114204488",
     "hierarchy": [
       "features",
       "built-in-scripts",
       "space-administration-built-in-scripts"
     ],
-    "pageId": "114204444",
+    "pageId": "114204488",
     "platform": "confluence-cloud",
-    "relativePath": "references/docs/confluence-cloud/features/built-in-scripts/space-administration-built-in-scripts/copy-page-tree.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/built-in-scripts/space-administration-built-in-scripts/copy-page-tree",
+    "relativePath": "references/docs/confluence-cloud/features/built-in-scripts/space-administration-built-in-scripts/delete-page-tree.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/built-in-scripts/space-administration-built-in-scripts/delete-page-tree",
     "spaceKey": "SR4CC",
-    "title": "Copy Page Tree"
+    "title": "Delete Page Tree"
+  },
+  {
+    "docId": "doc-sr4cc-107989560",
+    "hierarchy": [
+      "features"
+    ],
+    "pageId": "107989560",
+    "platform": "confluence-cloud",
+    "relativePath": "references/docs/confluence-cloud/features/cql-script-jobs.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/cql-script-jobs",
+    "spaceKey": "SR4CC",
+    "title": "CQL Script Jobs"
   },
   {
     "docId": "doc-sr4cc-114204510",
@@ -2536,30 +2562,17 @@
     "title": "Rename Labels"
   },
   {
-    "docId": "doc-sr4cc-107989560",
-    "hierarchy": [
-      "features"
-    ],
-    "pageId": "107989560",
-    "platform": "confluence-cloud",
-    "relativePath": "references/docs/confluence-cloud/features/cql-script-jobs.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/cql-script-jobs",
-    "spaceKey": "SR4CC",
-    "title": "CQL Script Jobs"
-  },
-  {
-    "docId": "doc-sr4cc-114204488",
+    "docId": "doc-sr4cc-272762768",
     "hierarchy": [
       "features",
-      "built-in-scripts",
-      "space-administration-built-in-scripts"
+      "cql-script-jobs"
     ],
-    "pageId": "114204488",
+    "pageId": "272762768",
     "platform": "confluence-cloud",
-    "relativePath": "references/docs/confluence-cloud/features/built-in-scripts/space-administration-built-in-scripts/delete-page-tree.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/built-in-scripts/space-administration-built-in-scripts/delete-page-tree",
+    "relativePath": "references/docs/confluence-cloud/features/cql-script-jobs/cql-guide.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/cql-script-jobs/cql-guide",
     "spaceKey": "SR4CC",
-    "title": "Delete Page Tree"
+    "title": "CQL Guide"
   },
   {
     "docId": "doc-sr4cc-107989528",
@@ -2574,6 +2587,19 @@
     "title": "Script Jobs"
   },
   {
+    "docId": "doc-sr4cc-343605319",
+    "hierarchy": [
+      "features",
+      "script-fragments"
+    ],
+    "pageId": "343605319",
+    "platform": "confluence-cloud",
+    "relativePath": "references/docs/confluence-cloud/features/script-fragments/adaptavist-bridge.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/script-fragments/adaptavist-bridge",
+    "spaceKey": "SR4CC",
+    "title": "Adaptavist Bridge"
+  },
+  {
     "docId": "doc-sr4cc-112151564",
     "hierarchy": [
       "features"
@@ -2584,19 +2610,6 @@
     "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/script-variables",
     "spaceKey": "SR4CC",
     "title": "Script Variables"
-  },
-  {
-    "docId": "doc-sr4cc-272762768",
-    "hierarchy": [
-      "features",
-      "cql-script-jobs"
-    ],
-    "pageId": "272762768",
-    "platform": "confluence-cloud",
-    "relativePath": "references/docs/confluence-cloud/features/cql-script-jobs/cql-guide.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/cql-script-jobs/cql-guide",
-    "spaceKey": "SR4CC",
-    "title": "CQL Guide"
   },
   {
     "docId": "doc-sr4cc-112151212",
@@ -2623,31 +2636,18 @@
     "title": "Macros"
   },
   {
-    "docId": "doc-sr4cc-114204716",
+    "docId": "doc-sr4cc-585009656",
     "hierarchy": [
       "features",
       "macros",
       "built-in-macros"
     ],
-    "pageId": "114204716",
+    "pageId": "585009656",
     "platform": "confluence-cloud",
-    "relativePath": "references/docs/confluence-cloud/features/macros/built-in-macros/page-info.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/macros/built-in-macros/page-info",
+    "relativePath": "references/docs/confluence-cloud/features/macros/built-in-macros/create-page.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/macros/built-in-macros/create-page",
     "spaceKey": "SR4CC",
-    "title": "Page Info"
-  },
-  {
-    "docId": "doc-sr4cc-343605319",
-    "hierarchy": [
-      "features",
-      "script-fragments"
-    ],
-    "pageId": "343605319",
-    "platform": "confluence-cloud",
-    "relativePath": "references/docs/confluence-cloud/features/script-fragments/adaptavist-bridge.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/script-fragments/adaptavist-bridge",
-    "spaceKey": "SR4CC",
-    "title": "Adaptavist Bridge"
+    "title": "Create Page"
   },
   {
     "docId": "doc-sr4cc-114204664",
@@ -2678,59 +2678,18 @@
     "title": "Choose Label"
   },
   {
-    "docId": "doc-sr4cc-585009656",
+    "docId": "doc-sr4cc-114204716",
     "hierarchy": [
       "features",
       "macros",
       "built-in-macros"
     ],
-    "pageId": "585009656",
+    "pageId": "114204716",
     "platform": "confluence-cloud",
-    "relativePath": "references/docs/confluence-cloud/features/macros/built-in-macros/create-page.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/macros/built-in-macros/create-page",
+    "relativePath": "references/docs/confluence-cloud/features/macros/built-in-macros/page-info.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/macros/built-in-macros/page-info",
     "spaceKey": "SR4CC",
-    "title": "Create Page"
-  },
-  {
-    "docId": "doc-sr4cc-246187400",
-    "hierarchy": [
-      "features",
-      "macros",
-      "custom-macros"
-    ],
-    "pageId": "246187400",
-    "platform": "confluence-cloud",
-    "relativePath": "references/docs/confluence-cloud/features/macros/custom-macros/example-return-page-information.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/macros/custom-macros/example-return-page-information",
-    "spaceKey": "SR4CC",
-    "title": "Example: Return Page Information"
-  },
-  {
-    "docId": "doc-sr4cc-182723115",
-    "hierarchy": [
-      "features",
-      "macros",
-      "custom-macros"
-    ],
-    "pageId": "182723115",
-    "platform": "confluence-cloud",
-    "relativePath": "references/docs/confluence-cloud/features/macros/custom-macros/example-return-the-page-id.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/macros/custom-macros/example-return-the-page-id",
-    "spaceKey": "SR4CC",
-    "title": "Example: Return the Page ID"
-  },
-  {
-    "docId": "doc-sr4cc-123736486",
-    "hierarchy": [
-      "features",
-      "macros"
-    ],
-    "pageId": "123736486",
-    "platform": "confluence-cloud",
-    "relativePath": "references/docs/confluence-cloud/features/macros/built-in-macros.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/macros/built-in-macros",
-    "spaceKey": "SR4CC",
-    "title": "Built-In Macros"
+    "title": "Page Info"
   },
   {
     "docId": "doc-sr4cc-574521570",
@@ -2747,20 +2706,6 @@
     "title": "Markdown"
   },
   {
-    "docId": "doc-sr4cc-246187302",
-    "hierarchy": [
-      "features",
-      "macros",
-      "custom-macros"
-    ],
-    "pageId": "246187302",
-    "platform": "confluence-cloud",
-    "relativePath": "references/docs/confluence-cloud/features/macros/custom-macros/macro-parameters.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/macros/custom-macros/macro-parameters",
-    "spaceKey": "SR4CC",
-    "title": "Macro Parameters"
-  },
-  {
     "docId": "doc-sr4cc-246187358",
     "hierarchy": [
       "features",
@@ -2775,6 +2720,74 @@
     "title": "Example: Get Jira Issue Information on a Confluence Page"
   },
   {
+    "docId": "doc-sr4cc-182723115",
+    "hierarchy": [
+      "features",
+      "macros",
+      "custom-macros"
+    ],
+    "pageId": "182723115",
+    "platform": "confluence-cloud",
+    "relativePath": "references/docs/confluence-cloud/features/macros/custom-macros/example-return-the-page-id.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/macros/custom-macros/example-return-the-page-id",
+    "spaceKey": "SR4CC",
+    "title": "Example: Return the Page ID"
+  },
+  {
+    "docId": "doc-sr4cc-246187400",
+    "hierarchy": [
+      "features",
+      "macros",
+      "custom-macros"
+    ],
+    "pageId": "246187400",
+    "platform": "confluence-cloud",
+    "relativePath": "references/docs/confluence-cloud/features/macros/custom-macros/example-return-page-information.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/macros/custom-macros/example-return-page-information",
+    "spaceKey": "SR4CC",
+    "title": "Example: Return Page Information"
+  },
+  {
+    "docId": "doc-sr4cc-123736486",
+    "hierarchy": [
+      "features",
+      "macros"
+    ],
+    "pageId": "123736486",
+    "platform": "confluence-cloud",
+    "relativePath": "references/docs/confluence-cloud/features/macros/built-in-macros.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/macros/built-in-macros",
+    "spaceKey": "SR4CC",
+    "title": "Built-In Macros"
+  },
+  {
+    "docId": "doc-sr4cc-246187302",
+    "hierarchy": [
+      "features",
+      "macros",
+      "custom-macros"
+    ],
+    "pageId": "246187302",
+    "platform": "confluence-cloud",
+    "relativePath": "references/docs/confluence-cloud/features/macros/custom-macros/macro-parameters.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/macros/custom-macros/macro-parameters",
+    "spaceKey": "SR4CC",
+    "title": "Macro Parameters"
+  },
+  {
+    "docId": "doc-sr4cc-506007569",
+    "hierarchy": [
+      "features",
+      "script-manager"
+    ],
+    "pageId": "506007569",
+    "platform": "confluence-cloud",
+    "relativePath": "references/docs/confluence-cloud/features/script-manager/script-manager-naming-rules.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/script-manager/script-manager-naming-rules",
+    "spaceKey": "SR4CC",
+    "title": "Script Manager Naming Rules"
+  },
+  {
     "docId": "doc-sr4cc-125502789",
     "hierarchy": [
       "features",
@@ -2786,33 +2799,6 @@
     "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/macros/custom-macros",
     "spaceKey": "SR4CC",
     "title": "Custom Macros"
-  },
-  {
-    "docId": "doc-sr4cc-125502822",
-    "hierarchy": [
-      "features",
-      "macros",
-      "custom-macros"
-    ],
-    "pageId": "125502822",
-    "platform": "confluence-cloud",
-    "relativePath": "references/docs/confluence-cloud/features/macros/custom-macros/example-stock-exchange-price.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/macros/custom-macros/example-stock-exchange-price",
-    "spaceKey": "SR4CC",
-    "title": "Example: Stock Exchange Price"
-  },
-  {
-    "docId": "doc-sr4cc-506007585",
-    "hierarchy": [
-      "features",
-      "script-manager"
-    ],
-    "pageId": "506007585",
-    "platform": "confluence-cloud",
-    "relativePath": "references/docs/confluence-cloud/features/script-manager/troubleshooting-script-manager.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/script-manager/troubleshooting-script-manager",
-    "spaceKey": "SR4CC",
-    "title": "Troubleshooting Script Manager"
   },
   {
     "docId": "doc-sr4cc-408289564",
@@ -2829,6 +2815,20 @@
     "title": "Example: CQL Function - Search all pages that contain a specific label"
   },
   {
+    "docId": "doc-sr4cc-125502822",
+    "hierarchy": [
+      "features",
+      "macros",
+      "custom-macros"
+    ],
+    "pageId": "125502822",
+    "platform": "confluence-cloud",
+    "relativePath": "references/docs/confluence-cloud/features/macros/custom-macros/example-stock-exchange-price.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/macros/custom-macros/example-stock-exchange-price",
+    "spaceKey": "SR4CC",
+    "title": "Example: Stock Exchange Price"
+  },
+  {
     "docId": "doc-sr4cc-112152052",
     "hierarchy": [
       "features",
@@ -2842,17 +2842,17 @@
     "title": "Audit Logs"
   },
   {
-    "docId": "doc-sr4cc-506007569",
+    "docId": "doc-sr4cc-506007585",
     "hierarchy": [
       "features",
       "script-manager"
     ],
-    "pageId": "506007569",
+    "pageId": "506007585",
     "platform": "confluence-cloud",
-    "relativePath": "references/docs/confluence-cloud/features/script-manager/script-manager-naming-rules.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/script-manager/script-manager-naming-rules",
+    "relativePath": "references/docs/confluence-cloud/features/script-manager/troubleshooting-script-manager.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/script-manager/troubleshooting-script-manager",
     "spaceKey": "SR4CC",
-    "title": "Script Manager Naming Rules"
+    "title": "Troubleshooting Script Manager"
   },
   {
     "docId": "doc-sr4cc-112152177",
@@ -2866,6 +2866,18 @@
     "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/logging/execution-history",
     "spaceKey": "SR4CC",
     "title": "Execution History"
+  },
+  {
+    "docId": "doc-sr4cc-114205340",
+    "hierarchy": [
+      "scripting-resources"
+    ],
+    "pageId": "114205340",
+    "platform": "confluence-cloud",
+    "relativePath": "references/docs/confluence-cloud/scripting-resources/coding-questions.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/scripting-resources/coding-questions",
+    "spaceKey": "SR4CC",
+    "title": "Coding Questions"
   },
   {
     "docId": "doc-sr4cc-114205166",
@@ -2893,16 +2905,16 @@
     "title": "Script Logs"
   },
   {
-    "docId": "doc-sr4cc-269811863",
+    "docId": "doc-sr4cc-288523505",
     "hierarchy": [
       "scripting-resources"
     ],
-    "pageId": "269811863",
+    "pageId": "288523505",
     "platform": "confluence-cloud",
-    "relativePath": "references/docs/confluence-cloud/scripting-resources/introduction-to-groovy.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/scripting-resources/introduction-to-groovy",
+    "relativePath": "references/docs/confluence-cloud/scripting-resources/example-scripts.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/scripting-resources/example-scripts",
     "spaceKey": "SR4CC",
-    "title": "Introduction to Groovy"
+    "title": "Example Scripts"
   },
   {
     "docId": "doc-sr4cc-506007548",
@@ -2917,40 +2929,6 @@
     "title": "Script Manager"
   },
   {
-    "docId": "doc-sr4cc-114205340",
-    "hierarchy": [
-      "scripting-resources"
-    ],
-    "pageId": "114205340",
-    "platform": "confluence-cloud",
-    "relativePath": "references/docs/confluence-cloud/scripting-resources/coding-questions.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/scripting-resources/coding-questions",
-    "spaceKey": "SR4CC",
-    "title": "Coding Questions"
-  },
-  {
-    "docId": "doc-sr4cc-288523505",
-    "hierarchy": [
-      "scripting-resources"
-    ],
-    "pageId": "288523505",
-    "platform": "confluence-cloud",
-    "relativePath": "references/docs/confluence-cloud/scripting-resources/example-scripts.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/scripting-resources/example-scripts",
-    "spaceKey": "SR4CC",
-    "title": "Example Scripts"
-  },
-  {
-    "docId": "doc-sr4cc-266700829",
-    "hierarchy": [],
-    "pageId": "266700829",
-    "platform": "confluence-cloud",
-    "relativePath": "references/docs/confluence-cloud/uncategorized/s/scripting-resources.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/scripting-resources",
-    "spaceKey": "SR4CC",
-    "title": "Scripting Resources"
-  },
-  {
     "docId": "doc-sr4cc-246186023",
     "hierarchy": [
       "scripting-resources"
@@ -2961,6 +2939,28 @@
     "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/scripting-resources/code-editor",
     "spaceKey": "SR4CC",
     "title": "Code Editor"
+  },
+  {
+    "docId": "doc-sr4cc-269811863",
+    "hierarchy": [
+      "scripting-resources"
+    ],
+    "pageId": "269811863",
+    "platform": "confluence-cloud",
+    "relativePath": "references/docs/confluence-cloud/scripting-resources/introduction-to-groovy.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/scripting-resources/introduction-to-groovy",
+    "spaceKey": "SR4CC",
+    "title": "Introduction to Groovy"
+  },
+  {
+    "docId": "doc-sr4cc-266700829",
+    "hierarchy": [],
+    "pageId": "266700829",
+    "platform": "confluence-cloud",
+    "relativePath": "references/docs/confluence-cloud/uncategorized/s/scripting-resources.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/scripting-resources",
+    "spaceKey": "SR4CC",
+    "title": "Scripting Resources"
   },
   {
     "docId": "doc-sr4cc-114205361",
@@ -2987,18 +2987,6 @@
     "title": "Use IP Addresses"
   },
   {
-    "docId": "doc-sr4cc-269812113",
-    "hierarchy": [
-      "scripting-resources"
-    ],
-    "pageId": "269812113",
-    "platform": "confluence-cloud",
-    "relativePath": "references/docs/confluence-cloud/scripting-resources/send-an-email-with-a-script.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/scripting-resources/send-an-email-with-a-script",
-    "spaceKey": "SR4CC",
-    "title": "Send an Email with a Script"
-  },
-  {
     "docId": "doc-sr4cc-355469318",
     "hierarchy": [],
     "pageId": "355469318",
@@ -3007,6 +2995,18 @@
     "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/manage-app",
     "spaceKey": "SR4CC",
     "title": "Manage App"
+  },
+  {
+    "docId": "doc-sr4cc-174833668",
+    "hierarchy": [
+      "manage-app"
+    ],
+    "pageId": "174833668",
+    "platform": "confluence-cloud",
+    "relativePath": "references/docs/confluence-cloud/manage-app/vulnerabilities-and-securities.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/manage-app/vulnerabilities-and-securities",
+    "spaceKey": "SR4CC",
+    "title": "Vulnerabilities and Securities"
   },
   {
     "docId": "doc-sr4cc-114205208",
@@ -3021,16 +3021,41 @@
     "title": "Platform Differences"
   },
   {
-    "docId": "doc-sr4cc-174833668",
+    "docId": "doc-sr4cc-269812113",
     "hierarchy": [
-      "manage-app"
+      "scripting-resources"
     ],
-    "pageId": "174833668",
+    "pageId": "269812113",
     "platform": "confluence-cloud",
-    "relativePath": "references/docs/confluence-cloud/manage-app/vulnerabilities-and-securities.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/manage-app/vulnerabilities-and-securities",
+    "relativePath": "references/docs/confluence-cloud/scripting-resources/send-an-email-with-a-script.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/scripting-resources/send-an-email-with-a-script",
     "spaceKey": "SR4CC",
-    "title": "Vulnerabilities and Securities"
+    "title": "Send an Email with a Script"
+  },
+  {
+    "docId": "doc-sr4cc-419662196",
+    "hierarchy": [
+      "migration"
+    ],
+    "pageId": "419662196",
+    "platform": "confluence-cloud",
+    "relativePath": "references/docs/confluence-cloud/migration/rewrite-scripts-for-cloud-guide.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/migration/rewrite-scripts-for-cloud-guide",
+    "spaceKey": "SR4CC",
+    "title": "Rewrite Scripts for Cloud Guide"
+  },
+  {
+    "docId": "doc-sr4cc-419662212",
+    "hierarchy": [
+      "migration",
+      "rewrite-scripts-for-cloud-guide"
+    ],
+    "pageId": "419662212",
+    "platform": "confluence-cloud",
+    "relativePath": "references/docs/confluence-cloud/migration/rewrite-scripts-for-cloud-guide/prepare-to-migrate-scripts.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/migration/rewrite-scripts-for-cloud-guide/prepare-to-migrate-scripts",
+    "spaceKey": "SR4CC",
+    "title": "Prepare to Migrate Scripts"
   },
   {
     "docId": "doc-sr4cc-107972700",
@@ -3056,18 +3081,6 @@
     "title": "Macro Migration Tips"
   },
   {
-    "docId": "doc-sr4cc-386535732",
-    "hierarchy": [
-      "migration"
-    ],
-    "pageId": "386535732",
-    "platform": "confluence-cloud",
-    "relativePath": "references/docs/confluence-cloud/migration/migration-checklist.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/migration/migration-checklist",
-    "spaceKey": "SR4CC",
-    "title": "Migration Checklist"
-  },
-  {
     "docId": "doc-sr4cc-361169376",
     "hierarchy": [
       "migration",
@@ -3079,68 +3092,6 @@
     "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/migration/feature-parity/confluence-events-parity",
     "spaceKey": "SR4CC",
     "title": "Confluence Events Parity"
-  },
-  {
-    "docId": "doc-sr4cc-419662196",
-    "hierarchy": [
-      "migration"
-    ],
-    "pageId": "419662196",
-    "platform": "confluence-cloud",
-    "relativePath": "references/docs/confluence-cloud/migration/rewrite-scripts-for-cloud-guide.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/migration/rewrite-scripts-for-cloud-guide",
-    "spaceKey": "SR4CC",
-    "title": "Rewrite Scripts for Cloud Guide"
-  },
-  {
-    "docId": "doc-sr4cc-419662228",
-    "hierarchy": [
-      "migration",
-      "rewrite-scripts-for-cloud-guide"
-    ],
-    "pageId": "419662228",
-    "platform": "confluence-cloud",
-    "relativePath": "references/docs/confluence-cloud/migration/rewrite-scripts-for-cloud-guide/adapt-scripts-for-confluence-cloud.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/migration/rewrite-scripts-for-cloud-guide/adapt-scripts-for-confluence-cloud",
-    "spaceKey": "SR4CC",
-    "title": "Adapt Scripts for Confluence Cloud"
-  },
-  {
-    "docId": "doc-sr4cc-419662212",
-    "hierarchy": [
-      "migration",
-      "rewrite-scripts-for-cloud-guide"
-    ],
-    "pageId": "419662212",
-    "platform": "confluence-cloud",
-    "relativePath": "references/docs/confluence-cloud/migration/rewrite-scripts-for-cloud-guide/prepare-to-migrate-scripts.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/migration/rewrite-scripts-for-cloud-guide/prepare-to-migrate-scripts",
-    "spaceKey": "SR4CC",
-    "title": "Prepare to Migrate Scripts"
-  },
-  {
-    "docId": "doc-sr4cc-114205271",
-    "hierarchy": [
-      "migration"
-    ],
-    "pageId": "114205271",
-    "platform": "confluence-cloud",
-    "relativePath": "references/docs/confluence-cloud/migration/migrate-from-script-runner-for-confluence-cloud-to-server.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/migration/migrate-from-scriptrunner-for-confluence-cloud-to-server",
-    "spaceKey": "SR4CC",
-    "title": "Migrate from ScriptRunner for Confluence Cloud to Server"
-  },
-  {
-    "docId": "doc-sr4cc-114205250",
-    "hierarchy": [
-      "migration"
-    ],
-    "pageId": "114205250",
-    "platform": "confluence-cloud",
-    "relativePath": "references/docs/confluence-cloud/migration/migrate-from-script-runner-for-confluence-server-to-cloud.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/migration/migrate-from-scriptrunner-for-confluence-server-to-cloud",
-    "spaceKey": "SR4CC",
-    "title": "Migrate from ScriptRunner for Confluence Server to Cloud"
   },
   {
     "docId": "doc-sr4cc-419662244",
@@ -3156,6 +3107,55 @@
     "title": "Migration Best Practices and Supporting Technical Information"
   },
   {
+    "docId": "doc-sr4cc-114205250",
+    "hierarchy": [
+      "migration"
+    ],
+    "pageId": "114205250",
+    "platform": "confluence-cloud",
+    "relativePath": "references/docs/confluence-cloud/migration/migrate-from-script-runner-for-confluence-server-to-cloud.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/migration/migrate-from-scriptrunner-for-confluence-server-to-cloud",
+    "spaceKey": "SR4CC",
+    "title": "Migrate from ScriptRunner for Confluence Server to Cloud"
+  },
+  {
+    "docId": "doc-sr4cc-419662228",
+    "hierarchy": [
+      "migration",
+      "rewrite-scripts-for-cloud-guide"
+    ],
+    "pageId": "419662228",
+    "platform": "confluence-cloud",
+    "relativePath": "references/docs/confluence-cloud/migration/rewrite-scripts-for-cloud-guide/adapt-scripts-for-confluence-cloud.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/migration/rewrite-scripts-for-cloud-guide/adapt-scripts-for-confluence-cloud",
+    "spaceKey": "SR4CC",
+    "title": "Adapt Scripts for Confluence Cloud"
+  },
+  {
+    "docId": "doc-sr4cc-386535732",
+    "hierarchy": [
+      "migration"
+    ],
+    "pageId": "386535732",
+    "platform": "confluence-cloud",
+    "relativePath": "references/docs/confluence-cloud/migration/migration-checklist.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/migration/migration-checklist",
+    "spaceKey": "SR4CC",
+    "title": "Migration Checklist"
+  },
+  {
+    "docId": "doc-sr4cc-114205271",
+    "hierarchy": [
+      "migration"
+    ],
+    "pageId": "114205271",
+    "platform": "confluence-cloud",
+    "relativePath": "references/docs/confluence-cloud/migration/migrate-from-script-runner-for-confluence-cloud-to-server.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/migration/migrate-from-scriptrunner-for-confluence-cloud-to-server",
+    "spaceKey": "SR4CC",
+    "title": "Migrate from ScriptRunner for Confluence Cloud to Server"
+  },
+  {
     "docId": "doc-sr4cc-114204936",
     "hierarchy": [
       "get-help"
@@ -3166,6 +3166,16 @@
     "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/get-help/support",
     "spaceKey": "SR4CC",
     "title": "Support"
+  },
+  {
+    "docId": "doc-sr4cc-151625733",
+    "hierarchy": [],
+    "pageId": "151625733",
+    "platform": "confluence-cloud",
+    "relativePath": "references/docs/confluence-cloud/uncategorized/g/get-involved.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/get-involved",
+    "spaceKey": "SR4CC",
+    "title": "Get Involved"
   },
   {
     "docId": "doc-sr4cc-112159983",
@@ -3188,6 +3198,18 @@
     "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/get-help",
     "spaceKey": "SR4CC",
     "title": "Get Help"
+  },
+  {
+    "docId": "doc-sr4cc-114204915",
+    "hierarchy": [
+      "get-help"
+    ],
+    "pageId": "114204915",
+    "platform": "confluence-cloud",
+    "relativePath": "references/docs/confluence-cloud/get-help/troubleshoot.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/get-help/troubleshoot",
+    "spaceKey": "SR4CC",
+    "title": "Troubleshoot"
   },
   {
     "docId": "doc-sr4cc-114205229",
@@ -3215,36 +3237,40 @@
     "title": "Static Type Checking"
   },
   {
-    "docId": "doc-sr4cc-151625733",
-    "hierarchy": [],
-    "pageId": "151625733",
-    "platform": "confluence-cloud",
-    "relativePath": "references/docs/confluence-cloud/uncategorized/g/get-involved.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/get-involved",
-    "spaceKey": "SR4CC",
-    "title": "Get Involved"
-  },
-  {
-    "docId": "doc-sr4cc-114204915",
+    "docId": "doc-src-194675155",
     "hierarchy": [
-      "get-help"
+      "get-started"
     ],
-    "pageId": "114204915",
-    "platform": "confluence-cloud",
-    "relativePath": "references/docs/confluence-cloud/get-help/troubleshoot.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/get-help/troubleshoot",
-    "spaceKey": "SR4CC",
-    "title": "Troubleshoot"
+    "pageId": "194675155",
+    "platform": "connect",
+    "relativePath": "references/docs/connect/get-started/save-your-work.md",
+    "sourceUrl": "https://docs.adaptavist.com/src/latest/get-started/save-your-work",
+    "spaceKey": "SRC",
+    "title": "Save Your Work"
   },
   {
-    "docId": "doc-src-194675183",
-    "hierarchy": [],
-    "pageId": "194675183",
+    "docId": "doc-src-194512646",
+    "hierarchy": [
+      "get-started"
+    ],
+    "pageId": "194512646",
     "platform": "connect",
-    "relativePath": "references/docs/connect/uncategorized/w/workspaces.md",
-    "sourceUrl": "https://docs.adaptavist.com/src/latest/workspaces",
+    "relativePath": "references/docs/connect/get-started/working-principle.md",
+    "sourceUrl": "https://docs.adaptavist.com/src/latest/get-started/working-principle",
     "spaceKey": "SRC",
-    "title": "Workspaces"
+    "title": "Working Principle"
+  },
+  {
+    "docId": "doc-src-194675108",
+    "hierarchy": [
+      "get-started"
+    ],
+    "pageId": "194675108",
+    "platform": "connect",
+    "relativePath": "references/docs/connect/get-started/connect-to-services-behind-the-firewall.md",
+    "sourceUrl": "https://docs.adaptavist.com/src/latest/get-started/connect-to-services-behind-the-firewall",
+    "spaceKey": "SRC",
+    "title": "Connect to Services Behind the Firewall"
   },
   {
     "docId": "doc-src-194675082",
@@ -3269,40 +3295,26 @@
     "title": "Sign In"
   },
   {
-    "docId": "doc-src-194675155",
-    "hierarchy": [
-      "get-started"
-    ],
-    "pageId": "194675155",
+    "docId": "doc-src-194675183",
+    "hierarchy": [],
+    "pageId": "194675183",
     "platform": "connect",
-    "relativePath": "references/docs/connect/get-started/save-your-work.md",
-    "sourceUrl": "https://docs.adaptavist.com/src/latest/get-started/save-your-work",
+    "relativePath": "references/docs/connect/uncategorized/w/workspaces.md",
+    "sourceUrl": "https://docs.adaptavist.com/src/latest/workspaces",
     "spaceKey": "SRC",
-    "title": "Save Your Work"
+    "title": "Workspaces"
   },
   {
-    "docId": "doc-src-194675108",
+    "docId": "doc-src-288721929",
     "hierarchy": [
       "get-started"
     ],
-    "pageId": "194675108",
+    "pageId": "288721929",
     "platform": "connect",
-    "relativePath": "references/docs/connect/get-started/connect-to-services-behind-the-firewall.md",
-    "sourceUrl": "https://docs.adaptavist.com/src/latest/get-started/connect-to-services-behind-the-firewall",
+    "relativePath": "references/docs/connect/get-started/finding-objects-ids-in-monday-com.md",
+    "sourceUrl": "https://docs.adaptavist.com/src/latest/get-started/finding-objects-ids-in-monday-com",
     "spaceKey": "SRC",
-    "title": "Connect to Services Behind the Firewall"
-  },
-  {
-    "docId": "doc-src-194512646",
-    "hierarchy": [
-      "get-started"
-    ],
-    "pageId": "194512646",
-    "platform": "connect",
-    "relativePath": "references/docs/connect/get-started/working-principle.md",
-    "sourceUrl": "https://docs.adaptavist.com/src/latest/get-started/working-principle",
-    "spaceKey": "SRC",
-    "title": "Working Principle"
+    "title": "Finding Objects IDs in monday.com"
   },
   {
     "docId": "doc-src-194675206",
@@ -3315,18 +3327,6 @@
     "sourceUrl": "https://docs.adaptavist.com/src/latest/workspaces/deployments-and-environments",
     "spaceKey": "SRC",
     "title": "Deployments and Environments"
-  },
-  {
-    "docId": "doc-src-194675282",
-    "hierarchy": [
-      "workspaces"
-    ],
-    "pageId": "194675282",
-    "platform": "connect",
-    "relativePath": "references/docs/connect/workspaces/event-listeners.md",
-    "sourceUrl": "https://docs.adaptavist.com/src/latest/workspaces/event-listeners",
-    "spaceKey": "SRC",
-    "title": "Event Listeners"
   },
   {
     "docId": "doc-src-194675230",
@@ -3353,16 +3353,26 @@
     "title": "Scheduled Triggers"
   },
   {
-    "docId": "doc-src-288721929",
+    "docId": "doc-src-194675282",
     "hierarchy": [
-      "get-started"
+      "workspaces"
     ],
-    "pageId": "288721929",
+    "pageId": "194675282",
     "platform": "connect",
-    "relativePath": "references/docs/connect/get-started/finding-objects-ids-in-monday-com.md",
-    "sourceUrl": "https://docs.adaptavist.com/src/latest/get-started/finding-objects-ids-in-monday-com",
+    "relativePath": "references/docs/connect/workspaces/event-listeners.md",
+    "sourceUrl": "https://docs.adaptavist.com/src/latest/workspaces/event-listeners",
     "spaceKey": "SRC",
-    "title": "Finding Objects IDs in monday.com"
+    "title": "Event Listeners"
+  },
+  {
+    "docId": "doc-src-194675043",
+    "hierarchy": [],
+    "pageId": "194675043",
+    "platform": "connect",
+    "relativePath": "references/docs/connect/uncategorized/s/script-runner-connect.md",
+    "sourceUrl": "https://docs.adaptavist.com/src/latest",
+    "spaceKey": "SRC",
+    "title": "ScriptRunner Connect"
   },
   {
     "docId": "doc-src-194675305",
@@ -3390,16 +3400,6 @@
     "title": "Parameters"
   },
   {
-    "docId": "doc-src-194675043",
-    "hierarchy": [],
-    "pageId": "194675043",
-    "platform": "connect",
-    "relativePath": "references/docs/connect/uncategorized/s/script-runner-connect.md",
-    "sourceUrl": "https://docs.adaptavist.com/src/latest",
-    "spaceKey": "SRC",
-    "title": "ScriptRunner Connect"
-  },
-  {
     "docId": "doc-src-194675356",
     "hierarchy": [
       "workspaces"
@@ -3410,6 +3410,50 @@
     "sourceUrl": "https://docs.adaptavist.com/src/latest/workspaces/package-manager",
     "spaceKey": "SRC",
     "title": "Package Manager"
+  },
+  {
+    "docId": "doc-src-194675058",
+    "hierarchy": [],
+    "pageId": "194675058",
+    "platform": "connect",
+    "relativePath": "references/docs/connect/uncategorized/r/release-notes.md",
+    "sourceUrl": "https://docs.adaptavist.com/src/latest/release-notes",
+    "spaceKey": "SRC",
+    "title": "Release Notes"
+  },
+  {
+    "docId": "doc-src-237864777",
+    "hierarchy": [
+      "connectors"
+    ],
+    "pageId": "237864777",
+    "platform": "connect",
+    "relativePath": "references/docs/connect/connectors/delete-a-connector.md",
+    "sourceUrl": "https://docs.adaptavist.com/src/latest/connectors/delete-a-connector",
+    "spaceKey": "SRC",
+    "title": "Delete a Connector"
+  },
+  {
+    "docId": "doc-src-194675259",
+    "hierarchy": [
+      "connectors"
+    ],
+    "pageId": "194675259",
+    "platform": "connect",
+    "relativePath": "references/docs/connect/connectors/generic-connector.md",
+    "sourceUrl": "https://docs.adaptavist.com/src/latest/connectors/generic-connector",
+    "spaceKey": "SRC",
+    "title": "Generic Connector"
+  },
+  {
+    "docId": "doc-src-194675415",
+    "hierarchy": [],
+    "pageId": "194675415",
+    "platform": "connect",
+    "relativePath": "references/docs/connect/uncategorized/c/collaborate-with-teams.md",
+    "sourceUrl": "https://docs.adaptavist.com/src/latest/collaborate-with-teams",
+    "spaceKey": "SRC",
+    "title": "Collaborate with Teams"
   },
   {
     "docId": "doc-src-281116717",
@@ -3436,50 +3480,6 @@
     "title": "Event Queues"
   },
   {
-    "docId": "doc-src-194675462",
-    "hierarchy": [],
-    "pageId": "194675462",
-    "platform": "connect",
-    "relativePath": "references/docs/connect/uncategorized/t/templates.md",
-    "sourceUrl": "https://docs.adaptavist.com/src/latest/templates",
-    "spaceKey": "SRC",
-    "title": "Templates"
-  },
-  {
-    "docId": "doc-src-194675259",
-    "hierarchy": [
-      "connectors"
-    ],
-    "pageId": "194675259",
-    "platform": "connect",
-    "relativePath": "references/docs/connect/connectors/generic-connector.md",
-    "sourceUrl": "https://docs.adaptavist.com/src/latest/connectors/generic-connector",
-    "spaceKey": "SRC",
-    "title": "Generic Connector"
-  },
-  {
-    "docId": "doc-src-237864777",
-    "hierarchy": [
-      "connectors"
-    ],
-    "pageId": "237864777",
-    "platform": "connect",
-    "relativePath": "references/docs/connect/connectors/delete-a-connector.md",
-    "sourceUrl": "https://docs.adaptavist.com/src/latest/connectors/delete-a-connector",
-    "spaceKey": "SRC",
-    "title": "Delete a Connector"
-  },
-  {
-    "docId": "doc-src-194675058",
-    "hierarchy": [],
-    "pageId": "194675058",
-    "platform": "connect",
-    "relativePath": "references/docs/connect/uncategorized/r/release-notes.md",
-    "sourceUrl": "https://docs.adaptavist.com/src/latest/release-notes",
-    "spaceKey": "SRC",
-    "title": "Release Notes"
-  },
-  {
     "docId": "doc-src-194675438",
     "hierarchy": [
       "collaborate-with-teams"
@@ -3492,16 +3492,6 @@
     "title": "Plans and Billing"
   },
   {
-    "docId": "doc-src-194675415",
-    "hierarchy": [],
-    "pageId": "194675415",
-    "platform": "connect",
-    "relativePath": "references/docs/connect/uncategorized/c/collaborate-with-teams.md",
-    "sourceUrl": "https://docs.adaptavist.com/src/latest/collaborate-with-teams",
-    "spaceKey": "SRC",
-    "title": "Collaborate with Teams"
-  },
-  {
     "docId": "doc-src-194675388",
     "hierarchy": [],
     "pageId": "194675388",
@@ -3510,6 +3500,16 @@
     "sourceUrl": "https://docs.adaptavist.com/src/latest/connectors",
     "spaceKey": "SRC",
     "title": "Connectors"
+  },
+  {
+    "docId": "doc-src-194675462",
+    "hierarchy": [],
+    "pageId": "194675462",
+    "platform": "connect",
+    "relativePath": "references/docs/connect/uncategorized/t/templates.md",
+    "sourceUrl": "https://docs.adaptavist.com/src/latest/templates",
+    "spaceKey": "SRC",
+    "title": "Templates"
   },
   {
     "docId": "doc-src-237864751",
@@ -3546,6 +3546,18 @@
     "title": "Managed APIs"
   },
   {
+    "docId": "doc-src-194675629",
+    "hierarchy": [
+      "managed-apis"
+    ],
+    "pageId": "194675629",
+    "platform": "connect",
+    "relativePath": "references/docs/connect/managed-apis/managed-api-abstractions.md",
+    "sourceUrl": "https://docs.adaptavist.com/src/latest/managed-apis/managed-api-abstractions",
+    "spaceKey": "SRC",
+    "title": "Managed API Abstractions"
+  },
+  {
     "docId": "doc-src-194676098",
     "hierarchy": [
       "managed-apis"
@@ -3556,18 +3568,6 @@
     "sourceUrl": "https://docs.adaptavist.com/src/latest/managed-apis/advanced-managed-api-concepts",
     "spaceKey": "SRC",
     "title": "Advanced Managed API Concepts"
-  },
-  {
-    "docId": "doc-src-194675679",
-    "hierarchy": [
-      "managed-apis"
-    ],
-    "pageId": "194675679",
-    "platform": "connect",
-    "relativePath": "references/docs/connect/managed-apis/error-handling.md",
-    "sourceUrl": "https://docs.adaptavist.com/src/latest/managed-apis/error-handling",
-    "spaceKey": "SRC",
-    "title": "Error Handling"
   },
   {
     "docId": "doc-src-194675653",
@@ -3582,16 +3582,16 @@
     "title": "Managed API Structure"
   },
   {
-    "docId": "doc-src-194675629",
+    "docId": "doc-src-194675679",
     "hierarchy": [
       "managed-apis"
     ],
-    "pageId": "194675629",
+    "pageId": "194675679",
     "platform": "connect",
-    "relativePath": "references/docs/connect/managed-apis/managed-api-abstractions.md",
-    "sourceUrl": "https://docs.adaptavist.com/src/latest/managed-apis/managed-api-abstractions",
+    "relativePath": "references/docs/connect/managed-apis/error-handling.md",
+    "sourceUrl": "https://docs.adaptavist.com/src/latest/managed-apis/error-handling",
     "spaceKey": "SRC",
-    "title": "Managed API Abstractions"
+    "title": "Error Handling"
   },
   {
     "docId": "doc-src-194675536",
@@ -3606,18 +3606,6 @@
     "title": "Tutorial: Configure a Google Sheets Template"
   },
   {
-    "docId": "doc-src-194675500",
-    "hierarchy": [
-      "templates"
-    ],
-    "pageId": "194675500",
-    "platform": "connect",
-    "relativePath": "references/docs/connect/templates/tutorial-configure-a-confluence-cloud-template.md",
-    "sourceUrl": "https://docs.adaptavist.com/src/latest/templates/tutorial-configure-a-confluence-cloud-template",
-    "spaceKey": "SRC",
-    "title": "Tutorial: Configure a Confluence Cloud Template"
-  },
-  {
     "docId": "doc-src-194676293",
     "hierarchy": [],
     "pageId": "194676293",
@@ -3628,28 +3616,16 @@
     "title": "Scripting"
   },
   {
-    "docId": "doc-src-194676468",
+    "docId": "doc-src-194675500",
     "hierarchy": [
-      "scripting"
+      "templates"
     ],
-    "pageId": "194676468",
+    "pageId": "194675500",
     "platform": "connect",
-    "relativePath": "references/docs/connect/scripting/record-storage.md",
-    "sourceUrl": "https://docs.adaptavist.com/src/latest/scripting/record-storage",
+    "relativePath": "references/docs/connect/templates/tutorial-configure-a-confluence-cloud-template.md",
+    "sourceUrl": "https://docs.adaptavist.com/src/latest/templates/tutorial-configure-a-confluence-cloud-template",
     "spaceKey": "SRC",
-    "title": "Record Storage"
-  },
-  {
-    "docId": "doc-src-194676514",
-    "hierarchy": [
-      "scripting"
-    ],
-    "pageId": "194676514",
-    "platform": "connect",
-    "relativePath": "references/docs/connect/scripting/runtime.md",
-    "sourceUrl": "https://docs.adaptavist.com/src/latest/scripting/runtime",
-    "spaceKey": "SRC",
-    "title": "Runtime"
+    "title": "Tutorial: Configure a Confluence Cloud Template"
   },
   {
     "docId": "doc-src-194676491",
@@ -3664,6 +3640,30 @@
     "title": "Triggering Scripts"
   },
   {
+    "docId": "doc-src-194676514",
+    "hierarchy": [
+      "scripting"
+    ],
+    "pageId": "194676514",
+    "platform": "connect",
+    "relativePath": "references/docs/connect/scripting/runtime.md",
+    "sourceUrl": "https://docs.adaptavist.com/src/latest/scripting/runtime",
+    "spaceKey": "SRC",
+    "title": "Runtime"
+  },
+  {
+    "docId": "doc-src-194676468",
+    "hierarchy": [
+      "scripting"
+    ],
+    "pageId": "194676468",
+    "platform": "connect",
+    "relativePath": "references/docs/connect/scripting/record-storage.md",
+    "sourceUrl": "https://docs.adaptavist.com/src/latest/scripting/record-storage",
+    "spaceKey": "SRC",
+    "title": "Record Storage"
+  },
+  {
     "docId": "doc-src-194675578",
     "hierarchy": [
       "templates"
@@ -3674,6 +3674,18 @@
     "sourceUrl": "https://docs.adaptavist.com/src/latest/templates/tutorial-configure-a-slack-template",
     "spaceKey": "SRC",
     "title": "Tutorial: Configure a Slack Template"
+  },
+  {
+    "docId": "doc-src-288721919",
+    "hierarchy": [
+      "managed-apis"
+    ],
+    "pageId": "288721919",
+    "platform": "connect",
+    "relativePath": "references/docs/connect/managed-apis/managed-api-for-monday-com.md",
+    "sourceUrl": "https://docs.adaptavist.com/src/latest/managed-apis/managed-api-for-monday-com",
+    "spaceKey": "SRC",
+    "title": "Managed API for monday.com"
   },
   {
     "docId": "doc-src-194676560",
@@ -3689,30 +3701,6 @@
     "title": "Create an Issue in Jira Cloud"
   },
   {
-    "docId": "doc-src-194676537",
-    "hierarchy": [
-      "scripting"
-    ],
-    "pageId": "194676537",
-    "platform": "connect",
-    "relativePath": "references/docs/connect/scripting/code-snippets.md",
-    "sourceUrl": "https://docs.adaptavist.com/src/latest/scripting/code-snippets",
-    "spaceKey": "SRC",
-    "title": "Code Snippets"
-  },
-  {
-    "docId": "doc-src-223118008",
-    "hierarchy": [
-      "scripting"
-    ],
-    "pageId": "223118008",
-    "platform": "connect",
-    "relativePath": "references/docs/connect/scripting/fetch-api.md",
-    "sourceUrl": "https://docs.adaptavist.com/src/latest/scripting/fetch-api",
-    "spaceKey": "SRC",
-    "title": "Fetch API"
-  },
-  {
     "docId": "doc-src-223118006",
     "hierarchy": [
       "scripting",
@@ -3724,6 +3712,18 @@
     "sourceUrl": "https://docs.adaptavist.com/src/latest/scripting/code-snippets/perform-mutual-tls",
     "spaceKey": "SRC",
     "title": "Perform Mutual TLS"
+  },
+  {
+    "docId": "doc-src-194676340",
+    "hierarchy": [
+      "scripting"
+    ],
+    "pageId": "194676340",
+    "platform": "connect",
+    "relativePath": "references/docs/connect/scripting/editor.md",
+    "sourceUrl": "https://docs.adaptavist.com/src/latest/scripting/editor",
+    "spaceKey": "SRC",
+    "title": "Editor"
   },
   {
     "docId": "doc-src-227149275",
@@ -3739,16 +3739,28 @@
     "title": "Sign JWT Token with a Private Key"
   },
   {
-    "docId": "doc-src-194676340",
+    "docId": "doc-src-223118008",
     "hierarchy": [
       "scripting"
     ],
-    "pageId": "194676340",
+    "pageId": "223118008",
     "platform": "connect",
-    "relativePath": "references/docs/connect/scripting/editor.md",
-    "sourceUrl": "https://docs.adaptavist.com/src/latest/scripting/editor",
+    "relativePath": "references/docs/connect/scripting/fetch-api.md",
+    "sourceUrl": "https://docs.adaptavist.com/src/latest/scripting/fetch-api",
     "spaceKey": "SRC",
-    "title": "Editor"
+    "title": "Fetch API"
+  },
+  {
+    "docId": "doc-src-284099554",
+    "hierarchy": [
+      "observability"
+    ],
+    "pageId": "284099554",
+    "platform": "connect",
+    "relativePath": "references/docs/connect/observability/audit-logs.md",
+    "sourceUrl": "https://docs.adaptavist.com/src/latest/observability/audit-logs",
+    "spaceKey": "SRC",
+    "title": "Audit Logs"
   },
   {
     "docId": "doc-src-273485831",
@@ -3776,6 +3788,18 @@
     "title": "Working with Attachments"
   },
   {
+    "docId": "doc-src-194676537",
+    "hierarchy": [
+      "scripting"
+    ],
+    "pageId": "194676537",
+    "platform": "connect",
+    "relativePath": "references/docs/connect/scripting/code-snippets.md",
+    "sourceUrl": "https://docs.adaptavist.com/src/latest/scripting/code-snippets",
+    "spaceKey": "SRC",
+    "title": "Code Snippets"
+  },
+  {
     "docId": "doc-src-194676679",
     "hierarchy": [
       "observability"
@@ -3798,30 +3822,6 @@
     "sourceUrl": "https://docs.adaptavist.com/src/latest/observability/script-failure-notifications",
     "spaceKey": "SRC",
     "title": "Script Failure Notifications"
-  },
-  {
-    "docId": "doc-src-288721919",
-    "hierarchy": [
-      "managed-apis"
-    ],
-    "pageId": "288721919",
-    "platform": "connect",
-    "relativePath": "references/docs/connect/managed-apis/managed-api-for-monday-com.md",
-    "sourceUrl": "https://docs.adaptavist.com/src/latest/managed-apis/managed-api-for-monday-com",
-    "spaceKey": "SRC",
-    "title": "Managed API for monday.com"
-  },
-  {
-    "docId": "doc-src-284099554",
-    "hierarchy": [
-      "observability"
-    ],
-    "pageId": "284099554",
-    "platform": "connect",
-    "relativePath": "references/docs/connect/observability/audit-logs.md",
-    "sourceUrl": "https://docs.adaptavist.com/src/latest/observability/audit-logs",
-    "spaceKey": "SRC",
-    "title": "Audit Logs"
   },
   {
     "docId": "doc-src-194676632",
@@ -3847,27 +3847,14 @@
     "title": "Working with Fetch API"
   },
   {
-    "docId": "doc-src-194676702",
+    "docId": "doc-src-284099549",
     "hierarchy": [],
-    "pageId": "194676702",
+    "pageId": "284099549",
     "platform": "connect",
-    "relativePath": "references/docs/connect/uncategorized/s/security.md",
-    "sourceUrl": "https://docs.adaptavist.com/src/latest/security",
+    "relativePath": "references/docs/connect/uncategorized/o/observability.md",
+    "sourceUrl": "https://docs.adaptavist.com/src/latest/observability",
     "spaceKey": "SRC",
-    "title": "Security"
-  },
-  {
-    "docId": "doc-src-227149270",
-    "hierarchy": [
-      "observability",
-      "script-invocation-logs"
-    ],
-    "pageId": "227149270",
-    "platform": "connect",
-    "relativePath": "references/docs/connect/observability/script-invocation-logs/replay-script-invocations.md",
-    "sourceUrl": "https://docs.adaptavist.com/src/latest/observability/script-invocation-logs/replay-script-invocations",
-    "spaceKey": "SRC",
-    "title": "Replay Script Invocations"
+    "title": "Observability"
   },
   {
     "docId": "doc-src-284099551",
@@ -3882,6 +3869,16 @@
     "title": "Script Invocation Logs"
   },
   {
+    "docId": "doc-src-194676702",
+    "hierarchy": [],
+    "pageId": "194676702",
+    "platform": "connect",
+    "relativePath": "references/docs/connect/uncategorized/s/security.md",
+    "sourceUrl": "https://docs.adaptavist.com/src/latest/security",
+    "spaceKey": "SRC",
+    "title": "Security"
+  },
+  {
     "docId": "doc-src-194676716",
     "hierarchy": [],
     "pageId": "194676716",
@@ -3892,16 +3889,6 @@
     "title": "Get Help"
   },
   {
-    "docId": "doc-src-284099549",
-    "hierarchy": [],
-    "pageId": "284099549",
-    "platform": "connect",
-    "relativePath": "references/docs/connect/uncategorized/o/observability.md",
-    "sourceUrl": "https://docs.adaptavist.com/src/latest/observability",
-    "spaceKey": "SRC",
-    "title": "Observability"
-  },
-  {
     "docId": "doc-src-326370518",
     "hierarchy": [],
     "pageId": "326370518",
@@ -3910,6 +3897,19 @@
     "sourceUrl": "https://docs.adaptavist.com/src/latest/rest-api",
     "spaceKey": "SRC",
     "title": "REST API"
+  },
+  {
+    "docId": "doc-src-227149270",
+    "hierarchy": [
+      "observability",
+      "script-invocation-logs"
+    ],
+    "pageId": "227149270",
+    "platform": "connect",
+    "relativePath": "references/docs/connect/observability/script-invocation-logs/replay-script-invocations.md",
+    "sourceUrl": "https://docs.adaptavist.com/src/latest/observability/script-invocation-logs/replay-script-invocations",
+    "spaceKey": "SRC",
+    "title": "Replay Script Invocations"
   },
   {
     "docId": "doc-src-322832818",
@@ -3960,18 +3960,6 @@
     "title": "Test and Run Scripts Locally"
   },
   {
-    "docId": "doc-src-432570719",
-    "hierarchy": [
-      "external-coding"
-    ],
-    "pageId": "432570719",
-    "platform": "connect",
-    "relativePath": "references/docs/connect/external-coding/working-with-ai-agents.md",
-    "sourceUrl": "https://docs.adaptavist.com/src/latest/external-coding/working-with-ai-agents",
-    "spaceKey": "SRC",
-    "title": "Working with AI agents"
-  },
-  {
     "docId": "doc-src-339510612",
     "hierarchy": [],
     "pageId": "339510612",
@@ -3992,39 +3980,26 @@
     "title": "External Coding"
   },
   {
-    "docId": "doc-sms-550633753",
+    "docId": "doc-src-432570719",
     "hierarchy": [
-      "scriptrunner-migration-suite-web-app"
+      "external-coding"
     ],
-    "pageId": "550633753",
-    "platform": "migration-suite",
-    "relativePath": "references/docs/migration-suite/scriptrunner-migration-suite-web-app/script-runner-migration-analyse-and-assess-tool.md",
-    "sourceUrl": "https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-analyse-and-assess-tool",
-    "spaceKey": "SMS",
-    "title": "ScriptRunner Migration Analyse and Assess Tool"
+    "pageId": "432570719",
+    "platform": "connect",
+    "relativePath": "references/docs/connect/external-coding/working-with-ai-agents.md",
+    "sourceUrl": "https://docs.adaptavist.com/src/latest/external-coding/working-with-ai-agents",
+    "spaceKey": "SRC",
+    "title": "Working with AI agents"
   },
   {
-    "docId": "doc-sms-448004293",
+    "docId": "doc-sms-550633631",
     "hierarchy": [],
-    "pageId": "448004293",
+    "pageId": "550633631",
     "platform": "migration-suite",
-    "relativePath": "references/docs/migration-suite/uncategorized/s/script-runner-migration-suite.md",
-    "sourceUrl": "https://docs.adaptavist.com/sms/latest",
+    "relativePath": "references/docs/migration-suite/uncategorized/s/script-runner-migration-suite-web-app.md",
+    "sourceUrl": "https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app",
     "spaceKey": "SMS",
-    "title": "ScriptRunner Migration Suite"
-  },
-  {
-    "docId": "doc-sms-448135867",
-    "hierarchy": [
-      "scriptrunner-migration-suite-web-app",
-      "scriptrunner-migration-analyse-and-assess-tool"
-    ],
-    "pageId": "448135867",
-    "platform": "migration-suite",
-    "relativePath": "references/docs/migration-suite/scriptrunner-migration-suite-web-app/scriptrunner-migration-analyse-and-assess-tool/supported-features-and-limitations.md",
-    "sourceUrl": "https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-analyse-and-assess-tool/supported-features-and-limitations",
-    "spaceKey": "SMS",
-    "title": "Supported Features and Limitations"
+    "title": "ScriptRunner Migration Suite Web App"
   },
   {
     "docId": "doc-sms-566298718",
@@ -4051,14 +4026,26 @@
     "title": "Web App Navigation"
   },
   {
-    "docId": "doc-sms-550633631",
+    "docId": "doc-sms-448004293",
     "hierarchy": [],
-    "pageId": "550633631",
+    "pageId": "448004293",
     "platform": "migration-suite",
-    "relativePath": "references/docs/migration-suite/uncategorized/s/script-runner-migration-suite-web-app.md",
-    "sourceUrl": "https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app",
+    "relativePath": "references/docs/migration-suite/uncategorized/s/script-runner-migration-suite.md",
+    "sourceUrl": "https://docs.adaptavist.com/sms/latest",
     "spaceKey": "SMS",
-    "title": "ScriptRunner Migration Suite Web App"
+    "title": "ScriptRunner Migration Suite"
+  },
+  {
+    "docId": "doc-sms-550633753",
+    "hierarchy": [
+      "scriptrunner-migration-suite-web-app"
+    ],
+    "pageId": "550633753",
+    "platform": "migration-suite",
+    "relativePath": "references/docs/migration-suite/scriptrunner-migration-suite-web-app/script-runner-migration-analyse-and-assess-tool.md",
+    "sourceUrl": "https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-analyse-and-assess-tool",
+    "spaceKey": "SMS",
+    "title": "ScriptRunner Migration Analyse and Assess Tool"
   },
   {
     "docId": "doc-sms-585009436",
@@ -4072,6 +4059,19 @@
     "sourceUrl": "https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-analyse-and-assess-tool/bulk-convert-your-scripts",
     "spaceKey": "SMS",
     "title": "Bulk Convert Your Scripts"
+  },
+  {
+    "docId": "doc-sms-448135867",
+    "hierarchy": [
+      "scriptrunner-migration-suite-web-app",
+      "scriptrunner-migration-analyse-and-assess-tool"
+    ],
+    "pageId": "448135867",
+    "platform": "migration-suite",
+    "relativePath": "references/docs/migration-suite/scriptrunner-migration-suite-web-app/scriptrunner-migration-analyse-and-assess-tool/supported-features-and-limitations.md",
+    "sourceUrl": "https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-analyse-and-assess-tool/supported-features-and-limitations",
+    "spaceKey": "SMS",
+    "title": "Supported Features and Limitations"
   },
   {
     "docId": "doc-sms-550633803",
@@ -4112,17 +4112,14 @@
     "title": "ScriptRunner Migration Agent"
   },
   {
-    "docId": "doc-sms-578290149",
-    "hierarchy": [
-      "scriptrunner-migration-suite-web-app",
-      "scriptrunner-migration-analyse-and-assess-tool"
-    ],
-    "pageId": "578290149",
+    "docId": "doc-sms-574522244",
+    "hierarchy": [],
+    "pageId": "574522244",
     "platform": "migration-suite",
-    "relativePath": "references/docs/migration-suite/scriptrunner-migration-suite-web-app/scriptrunner-migration-analyse-and-assess-tool/faq.md",
-    "sourceUrl": "https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-analyse-and-assess-tool/faq",
+    "relativePath": "references/docs/migration-suite/uncategorized/s/script-runner-migration-suite-version-2-release-notes.md",
+    "sourceUrl": "https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-version-2-release-notes",
     "spaceKey": "SMS",
-    "title": "FAQ"
+    "title": "ScriptRunner Migration Suite Version 2 Release Notes"
   },
   {
     "docId": "doc-sms-454393881",
@@ -4138,25 +4135,15 @@
     "title": "Contact Us"
   },
   {
-    "docId": "doc-sms-574522244",
-    "hierarchy": [],
-    "pageId": "574522244",
-    "platform": "migration-suite",
-    "relativePath": "references/docs/migration-suite/uncategorized/s/script-runner-migration-suite-version-2-release-notes.md",
-    "sourceUrl": "https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-version-2-release-notes",
-    "spaceKey": "SMS",
-    "title": "ScriptRunner Migration Suite Version 2 Release Notes"
-  },
-  {
-    "docId": "doc-sms-448135901",
+    "docId": "doc-sms-578290149",
     "hierarchy": [
       "scriptrunner-migration-suite-web-app",
-      "scriptrunner-migration-agent"
+      "scriptrunner-migration-analyse-and-assess-tool"
     ],
-    "pageId": "448135901",
+    "pageId": "578290149",
     "platform": "migration-suite",
-    "relativePath": "references/docs/migration-suite/scriptrunner-migration-suite-web-app/scriptrunner-migration-agent/faq.md",
-    "sourceUrl": "https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-agent/faq",
+    "relativePath": "references/docs/migration-suite/scriptrunner-migration-suite-web-app/scriptrunner-migration-analyse-and-assess-tool/faq.md",
+    "sourceUrl": "https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-analyse-and-assess-tool/faq",
     "spaceKey": "SMS",
     "title": "FAQ"
   },
@@ -4174,6 +4161,19 @@
     "title": "Supported Features and Limitations"
   },
   {
+    "docId": "doc-sms-448135901",
+    "hierarchy": [
+      "scriptrunner-migration-suite-web-app",
+      "scriptrunner-migration-agent"
+    ],
+    "pageId": "448135901",
+    "platform": "migration-suite",
+    "relativePath": "references/docs/migration-suite/scriptrunner-migration-suite-web-app/scriptrunner-migration-agent/faq.md",
+    "sourceUrl": "https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-agent/faq",
+    "spaceKey": "SMS",
+    "title": "FAQ"
+  },
+  {
     "docId": "doc-sms-448135905",
     "hierarchy": [
       "scriptrunner-migration-suite-web-app",
@@ -4185,6 +4185,19 @@
     "sourceUrl": "https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-agent/best-practices",
     "spaceKey": "SMS",
     "title": "Best Practices"
+  },
+  {
+    "docId": "doc-sms-566298781",
+    "hierarchy": [
+      "scriptrunner-migration-suite-web-app",
+      "scriptrunner-migration-agent"
+    ],
+    "pageId": "566298781",
+    "platform": "migration-suite",
+    "relativePath": "references/docs/migration-suite/scriptrunner-migration-suite-web-app/scriptrunner-migration-agent/use-the-script-runner-migration-agent.md",
+    "sourceUrl": "https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-agent/use-the-scriptrunner-migration-agent",
+    "spaceKey": "SMS",
+    "title": "Use the ScriptRunner Migration Agent"
   },
   {
     "docId": "doc-sms-574522409",
@@ -4212,19 +4225,6 @@
     "title": "Contact Us"
   },
   {
-    "docId": "doc-sms-566298781",
-    "hierarchy": [
-      "scriptrunner-migration-suite-web-app",
-      "scriptrunner-migration-agent"
-    ],
-    "pageId": "566298781",
-    "platform": "migration-suite",
-    "relativePath": "references/docs/migration-suite/scriptrunner-migration-suite-web-app/scriptrunner-migration-agent/use-the-script-runner-migration-agent.md",
-    "sourceUrl": "https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-agent/use-the-scriptrunner-migration-agent",
-    "spaceKey": "SMS",
-    "title": "Use the ScriptRunner Migration Agent"
-  },
-  {
     "docId": "doc-sms-566298987",
     "hierarchy": [
       "scriptrunner-migration-suite-web-app"
@@ -4235,74 +4235,6 @@
     "sourceUrl": "https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/ai-training-and-usage",
     "spaceKey": "SMS",
     "title": "AI Training and Usage"
-  },
-  {
-    "docId": "doc-sms-534479471",
-    "hierarchy": [
-      "scriptrunner-dev-and-deployment-tool"
-    ],
-    "pageId": "534479471",
-    "platform": "migration-suite",
-    "relativePath": "references/docs/migration-suite/scriptrunner-dev-and-deployment-tool/supported-features-and-limitations.md",
-    "sourceUrl": "https://docs.adaptavist.com/sms/latest/scriptrunner-dev-and-deployment-tool/supported-features-and-limitations",
-    "spaceKey": "SMS",
-    "title": "Supported Features and Limitations"
-  },
-  {
-    "docId": "doc-sms-578718840",
-    "hierarchy": [
-      "scriptrunner-migration-suite-web-app"
-    ],
-    "pageId": "578718840",
-    "platform": "migration-suite",
-    "relativePath": "references/docs/migration-suite/scriptrunner-migration-suite-web-app/migrate-from-version-1-to-version-2.md",
-    "sourceUrl": "https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/migrate-from-version-1-to-version-2",
-    "spaceKey": "SMS",
-    "title": "Migrate from version 1 to version 2"
-  },
-  {
-    "docId": "doc-sms-578718826",
-    "hierarchy": [],
-    "pageId": "578718826",
-    "platform": "migration-suite",
-    "relativePath": "references/docs/migration-suite/uncategorized/s/script-runner-dev-and-deployment-tool.md",
-    "sourceUrl": "https://docs.adaptavist.com/sms/latest/scriptrunner-dev-and-deployment-tool",
-    "spaceKey": "SMS",
-    "title": "ScriptRunner Dev and Deployment Tool"
-  },
-  {
-    "docId": "doc-sms-448135884",
-    "hierarchy": [
-      "scriptrunner-dev-and-deployment-tool"
-    ],
-    "pageId": "448135884",
-    "platform": "migration-suite",
-    "relativePath": "references/docs/migration-suite/scriptrunner-dev-and-deployment-tool/contact-us.md",
-    "sourceUrl": "https://docs.adaptavist.com/sms/latest/scriptrunner-dev-and-deployment-tool/contact-us",
-    "spaceKey": "SMS",
-    "title": "Contact Us"
-  },
-  {
-    "docId": "doc-sms-566298806",
-    "hierarchy": [
-      "scriptrunner-migration-suite-web-app"
-    ],
-    "pageId": "566298806",
-    "platform": "migration-suite",
-    "relativePath": "references/docs/migration-suite/scriptrunner-migration-suite-web-app/data-residency-and-privacy.md",
-    "sourceUrl": "https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/data-residency-and-privacy",
-    "spaceKey": "SMS",
-    "title": "Data Residency and Privacy"
-  },
-  {
-    "docId": "doc-sms-477864754",
-    "hierarchy": [],
-    "pageId": "477864754",
-    "platform": "migration-suite",
-    "relativePath": "references/docs/migration-suite/uncategorized/t/training.md",
-    "sourceUrl": "https://docs.adaptavist.com/sms/latest/training",
-    "spaceKey": "SMS",
-    "title": "Training"
   },
   {
     "docId": "doc-sms-448135916",
@@ -4317,16 +4249,50 @@
     "title": "Best Practices"
   },
   {
-    "docId": "doc-sms-448135912",
+    "docId": "doc-sms-566298806",
+    "hierarchy": [
+      "scriptrunner-migration-suite-web-app"
+    ],
+    "pageId": "566298806",
+    "platform": "migration-suite",
+    "relativePath": "references/docs/migration-suite/scriptrunner-migration-suite-web-app/data-residency-and-privacy.md",
+    "sourceUrl": "https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/data-residency-and-privacy",
+    "spaceKey": "SMS",
+    "title": "Data Residency and Privacy"
+  },
+  {
+    "docId": "doc-sms-578718840",
+    "hierarchy": [
+      "scriptrunner-migration-suite-web-app"
+    ],
+    "pageId": "578718840",
+    "platform": "migration-suite",
+    "relativePath": "references/docs/migration-suite/scriptrunner-migration-suite-web-app/migrate-from-version-1-to-version-2.md",
+    "sourceUrl": "https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/migrate-from-version-1-to-version-2",
+    "spaceKey": "SMS",
+    "title": "Migrate from version 1 to version 2"
+  },
+  {
+    "docId": "doc-sms-534479471",
     "hierarchy": [
       "scriptrunner-dev-and-deployment-tool"
     ],
-    "pageId": "448135912",
+    "pageId": "534479471",
     "platform": "migration-suite",
-    "relativePath": "references/docs/migration-suite/scriptrunner-dev-and-deployment-tool/use-the-dev-and-deployment-tool.md",
-    "sourceUrl": "https://docs.adaptavist.com/sms/latest/scriptrunner-dev-and-deployment-tool/use-the-dev-and-deployment-tool",
+    "relativePath": "references/docs/migration-suite/scriptrunner-dev-and-deployment-tool/supported-features-and-limitations.md",
+    "sourceUrl": "https://docs.adaptavist.com/sms/latest/scriptrunner-dev-and-deployment-tool/supported-features-and-limitations",
     "spaceKey": "SMS",
-    "title": "Use the Dev and Deployment Tool"
+    "title": "Supported Features and Limitations"
+  },
+  {
+    "docId": "doc-sms-477864754",
+    "hierarchy": [],
+    "pageId": "477864754",
+    "platform": "migration-suite",
+    "relativePath": "references/docs/migration-suite/uncategorized/t/training.md",
+    "sourceUrl": "https://docs.adaptavist.com/sms/latest/training",
+    "spaceKey": "SMS",
+    "title": "Training"
   },
   {
     "docId": "doc-sms-486670676",
@@ -4341,16 +4307,38 @@
     "title": "1.1 Meet the ScriptRunner Migration Suite"
   },
   {
-    "docId": "doc-sms-486670704",
+    "docId": "doc-sms-448135884",
     "hierarchy": [
-      "training"
+      "scriptrunner-dev-and-deployment-tool"
     ],
-    "pageId": "486670704",
+    "pageId": "448135884",
     "platform": "migration-suite",
-    "relativePath": "references/docs/migration-suite/training/1-3-recap.md",
-    "sourceUrl": "https://docs.adaptavist.com/sms/latest/training/1-3-recap",
+    "relativePath": "references/docs/migration-suite/scriptrunner-dev-and-deployment-tool/contact-us.md",
+    "sourceUrl": "https://docs.adaptavist.com/sms/latest/scriptrunner-dev-and-deployment-tool/contact-us",
     "spaceKey": "SMS",
-    "title": "1.3 Recap"
+    "title": "Contact Us"
+  },
+  {
+    "docId": "doc-sms-578718826",
+    "hierarchy": [],
+    "pageId": "578718826",
+    "platform": "migration-suite",
+    "relativePath": "references/docs/migration-suite/uncategorized/s/script-runner-dev-and-deployment-tool.md",
+    "sourceUrl": "https://docs.adaptavist.com/sms/latest/scriptrunner-dev-and-deployment-tool",
+    "spaceKey": "SMS",
+    "title": "ScriptRunner Dev and Deployment Tool"
+  },
+  {
+    "docId": "doc-sms-448135912",
+    "hierarchy": [
+      "scriptrunner-dev-and-deployment-tool"
+    ],
+    "pageId": "448135912",
+    "platform": "migration-suite",
+    "relativePath": "references/docs/migration-suite/scriptrunner-dev-and-deployment-tool/use-the-dev-and-deployment-tool.md",
+    "sourceUrl": "https://docs.adaptavist.com/sms/latest/scriptrunner-dev-and-deployment-tool/use-the-dev-and-deployment-tool",
+    "spaceKey": "SMS",
+    "title": "Use the Dev and Deployment Tool"
   },
   {
     "docId": "doc-sms-486670688",
@@ -4363,6 +4351,18 @@
     "sourceUrl": "https://docs.adaptavist.com/sms/latest/training/1-2-a-tour-of-the-scriptrunner-migration-suite",
     "spaceKey": "SMS",
     "title": "1.2 A tour of the ScriptRunner Migration Suite"
+  },
+  {
+    "docId": "doc-sms-486670704",
+    "hierarchy": [
+      "training"
+    ],
+    "pageId": "486670704",
+    "platform": "migration-suite",
+    "relativePath": "references/docs/migration-suite/training/1-3-recap.md",
+    "sourceUrl": "https://docs.adaptavist.com/sms/latest/training/1-3-recap",
+    "spaceKey": "SMS",
+    "title": "1.3 Recap"
   },
   {
     "docId": "doc-sms-486670718",
@@ -4388,6 +4388,19 @@
     "sourceUrl": "https://docs.adaptavist.com/sms/latest/training/2-perform-a-data-center-to-cloud-migration-using-the-suite/2-1-scope-and-plan-your-migration",
     "spaceKey": "SMS",
     "title": "2.1 Scope and plan your migration"
+  },
+  {
+    "docId": "doc-sms-477864938",
+    "hierarchy": [
+      "training",
+      "2-perform-a-data-center-to-cloud-migration-using-the-suite"
+    ],
+    "pageId": "477864938",
+    "platform": "migration-suite",
+    "relativePath": "references/docs/migration-suite/training/2-perform-a-data-center-to-cloud-migration-using-the-suite/contact-us.md",
+    "sourceUrl": "https://docs.adaptavist.com/sms/latest/training/2-perform-a-data-center-to-cloud-migration-using-the-suite/contact-us",
+    "spaceKey": "SMS",
+    "title": "Contact Us"
   },
   {
     "docId": "doc-sms-486670746",
@@ -4429,17 +4442,14 @@
     "title": "Summary"
   },
   {
-    "docId": "doc-sms-477864938",
-    "hierarchy": [
-      "training",
-      "2-perform-a-data-center-to-cloud-migration-using-the-suite"
-    ],
-    "pageId": "477864938",
+    "docId": "doc-sms-578718873",
+    "hierarchy": [],
+    "pageId": "578718873",
     "platform": "migration-suite",
-    "relativePath": "references/docs/migration-suite/training/2-perform-a-data-center-to-cloud-migration-using-the-suite/contact-us.md",
-    "sourceUrl": "https://docs.adaptavist.com/sms/latest/training/2-perform-a-data-center-to-cloud-migration-using-the-suite/contact-us",
+    "relativePath": "references/docs/migration-suite/uncategorized/s/script-runner-migration-suite-changelog.md",
+    "sourceUrl": "https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-changelog",
     "spaceKey": "SMS",
-    "title": "Contact Us"
+    "title": "ScriptRunner Migration Suite Changelog"
   },
   {
     "docId": "doc-sms-524223387",
@@ -4452,16 +4462,6 @@
     "sourceUrl": "https://docs.adaptavist.com/sms/latest/migrate-to-cloud-using-the-scriptrunner-migration-suite/faq-migration-and-scriptrunner-migration-suite",
     "spaceKey": "SMS",
     "title": "FAQ: Migration and ScriptRunner Migration Suite"
-  },
-  {
-    "docId": "doc-sms-578718873",
-    "hierarchy": [],
-    "pageId": "578718873",
-    "platform": "migration-suite",
-    "relativePath": "references/docs/migration-suite/uncategorized/s/script-runner-migration-suite-changelog.md",
-    "sourceUrl": "https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-changelog",
-    "spaceKey": "SMS",
-    "title": "ScriptRunner Migration Suite Changelog"
   },
   {
     "docId": "doc-sms-585009487",

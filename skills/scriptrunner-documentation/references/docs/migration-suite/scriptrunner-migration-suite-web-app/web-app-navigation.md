@@ -43,7 +43,7 @@ Use the bottom left-hand navigation to find support tools and resources:
 
 To navigate to settings, select ![](/sms/files/latest/574522372/574522370/1/1785259869000/settings-button.png) next to your username: 
 
-![](/sms/files/latest/574522372/585009410/2/1788958815187/nav-3.png)
+![](/sms/files/latest/574522372/585009410/2/1788958815000/nav-3.png)
 
 From there, you can: 
 

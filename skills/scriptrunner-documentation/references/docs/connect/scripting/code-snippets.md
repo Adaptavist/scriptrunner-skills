@@ -2,13 +2,13 @@
 
 - Platform: connect
 - Space: SRC
-- Hierarchy: scripting
-- Doc ID: doc-src-194676537
-- Source: https://docs.adaptavist.com/src/latest/scripting/code-snippets
+- Hierarchy: Scripting
+- Doc ID: doc-src-ee0c36e5-27a6-4438-8553-f13f6303aabf-040e4a7f628cc939
+- Source: https://docs.adaptavist.com/src/latest/scripting#code-snippets--en
 
 Snippets are code examples that you can copy and paste into your workspace.
 
-Compared to full [templates](https://docs.adaptavist.com/src/latest/templates), code snippets usually do only one thing at a time. Like templates, you will most likely need to modify the code to make it work for you.
+Compared to full [templates](../uncategorized/t/templates.md), code snippets usually do only one thing at a time. Like templates, you will most likely need to modify the code to make it work for you.
 
 Here is the current list of code snippets that you can use:
 

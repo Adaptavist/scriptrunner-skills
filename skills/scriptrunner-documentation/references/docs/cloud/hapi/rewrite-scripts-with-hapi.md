@@ -2,9 +2,9 @@
 
 - Platform: cloud
 - Space: SR4JC
-- Hierarchy: hapi
-- Doc ID: doc-sr4jc-288524093
-- Source: https://docs.adaptavist.com/sr4jc/latest/hapi/rewrite-scripts-with-hapi
+- Hierarchy: HAPI
+- Doc ID: doc-sr4jc-cec53ab6-b67e-497f-864a-e6f49417d8c2-1873bce9a831f7dc
+- Source: https://docs.adaptavist.com/sr4jc/latest/hapi#rewrite-scripts-with-hapi--en
 
 Here you'll find useful information on how you can simplify your current scripts with HAPI, and learn some helpful tips too.
 
@@ -15,12 +15,14 @@ There are many reasons you should simplify your scripts with HAPI:
 -   It significantly reduces script length, making it easier to read.
 -   HAPI scripts are easier to maintain, reducing the time spent troubleshooting when scripts stop working.
 -   Your HAPI functions will not break when Atlassian updates its underlying API, as we maintain the functions.
--   We maintain HAPI functions, ensuring they remain unaffected when Atlassian updates its underlying API. 
--   Scripts that are 100% HAPI will not need modifying during the [migration process](https://docs.adaptavist.com/sr4jc/latest/scriptrunner-migration-to-cloud/migration-checklist). In fact, scripts built with HAPI are easier to migrate when moving to Jira Cloud. HAPI in ScriptRunner for Jira Cloud works the same as in Data Center, making migration smoother. Scripts fully written with HAPI **require no modifications during migration**, while those partially using HAPI are still easier to migrate compared to scripts without HAPI.
+-   We maintain HAPI functions, ensuring they remain unaffected when Atlassian updates its underlying API.
+-   Scripts that are 100% HAPI will not need modifying during the [migration process](../script-runner-migration-to-cloud/migration-checklist.md). In fact, scripts built with HAPI are easier to migrate when moving to Jira Cloud. HAPI in ScriptRunner for Jira Cloud works the same as in Data Center, making migration smoother. Scripts fully written with HAPI require no modifications during migration, while those partially using HAPI are still easier to migrate compared to scripts without HAPI.
 
 ## How to simplify scripts using HAPI examples
 
-This script automates the copying of every label from a work item to all work items linked to it, specifically targeting those with an outward link.
+This script automates the copying of every label from a work item to all work items linked to it, specifically targeting those with an outward link. You can compare the Non-HAPI and HAPI versions examples outlined below.
+
+[Non-HAPI](https://docs.adaptavist.com/sr4jc/latest/hapi/rewrite-scripts-with-hapi#how-to-simplify-scripts-using-hapi-examples--en__codeblock-13044)
 
 ```
 // Specify the Work Item's key
@@ -41,13 +43,13 @@ def linkedWorkItems = fields.issuelinks as List<Map>
 
 // Loop over each linked work item
 def successStatusByWorkItemKey = linkedWorkItems.collectEntries { Map linkedWorkItem ->
-    if (!linkedWorkItem.outwardIssue) {
-        def inwardWorkItem = linkedWorkItem.inwardIssue as Map
-        return [(inwardWorkItem.key): "Link is not outward for linked work item ${inwardWorkItem.key}"]
+ if (!linkedWorkItem.outwardIssue) {
+ def inwardWorkItem = linkedWorkItem.inwardIssue as Map
+ return [(inwardWorkItem.key): "Link is not outward for linked work item ${inwardWorkItem.key}"]
     }
-    // Update each linked work item to set the labels using the key for each linked work item
-    def outwardWorkItem = linkedWorkItem.outwardIssue as Map
-    def updateLinkedWorkItem = put("/rest/api/2/issue/${outwardWorkItem.key}")
+ // Update each linked work item to set the labels using the key for each linked work item
+ def outwardWorkItem = linkedWorkItem.outwardIssue as Map
+ def updateLinkedWorkItem = put("/rest/api/2/issue/${outwardWorkItem.key}")
         .header('Content-Type', 'application/json')
         .body([
             fields: [
@@ -55,11 +57,11 @@ def successStatusByWorkItemKey = linkedWorkItems.collectEntries { Map linkedWork
             ]
         ])
         .asString()
-    if (updateLinkedWorkItem.status == 204) {
-        // Print to the log tabs what iteration the loop is on and the key of the work item that was updated
+ if (updateLinkedWorkItem.status == 204) {
+ // Print to the log tabs what iteration the loop is on and the key of the work item that was updated
         logger.info("Labels on ${outwardWorkItem.key} work item has been set.")
     } else {
-        // Print to the log tabs what iteration the loop is on and the key of the work item that was not updated
+ // Print to the log tabs what iteration the loop is on and the key of the work item that was not updated
         logger.error("Labels on ${outwardWorkItem.key} work item has not been set.")
     }
     [(outwardWorkItem.key): (updateLinkedWorkItem.status == 204)]
@@ -68,6 +70,8 @@ def successStatusByWorkItemKey = linkedWorkItems.collectEntries { Map linkedWork
 """Status by work item key (labels copied?): ${successStatusByWorkItemKey}.
 Please see the 'Logs' tab for more information on what work items were updated."""
 ```
+
+[HAPI](https://docs.adaptavist.com/sr4jc/latest/hapi/rewrite-scripts-with-hapi#how-to-simplify-scripts-using-hapi-examples--en__codeblock-13045)
 
 ```
 // Specify the Work Item by key
@@ -87,6 +91,8 @@ Please see the 'Logs' tab for more information on what work items were updated."
 ```
 
 This script enables you to select work items that match criteria specified in a JQL query and set the _impediment_ flag on each of them.
+
+[Non-HAPI](https://docs.adaptavist.com/sr4jc/latest/hapi/rewrite-scripts-with-hapi#how-to-simplify-scripts-using-hapi-examples--en__section-13071)
 
 ```
 // Define a JQL query to search for the work items on which you want to set the impediment flag
@@ -114,15 +120,15 @@ Map searchResult = searchReq.body
 
 // Iterate through the search results and set the Impediment flag for each work item returned
 searchResult.issues.each { Map workItem ->
-    def result = put("/rest/api/2/issue/${workItem.key}")
+ def result = put("/rest/api/2/issue/${workItem.key}")
             .queryString("overrideScreenSecurity", Boolean.TRUE)
             .header("Content-Type", "application/json")
             .body([
             fields:[
-                    // The format below specifies the Array format for the flagged field
-                    // More information on flagging an issue can be found in the documentation at:
-                    // https://confluence.atlassian.com/jirasoftwarecloud/flagging-an-issue-777002748.html
-                    // Initialise the Array
+ // The format below specifies the Array format for the flagged field
+ // More information on flagging an issue can be found in the documentation at:
+ // https://confluence.atlassian.com/jirasoftwarecloud/flagging-an-issue-777002748.html
+ // Initialise the Array
                     (flaggedCustomField.id): [
                                                   [ // set the component value
                                                     value: "Impediment",
@@ -133,8 +139,8 @@ searchResult.issues.each { Map workItem ->
     ])
             .asString()
 
-    // Log out the work items updated or which failed to update
-    if (result.status == 204) {
+ // Log out the work items updated or which failed to update
+ if (result.status == 204) {
         logger.info("The ${workItem.key} work item was flagged as an Impediment.")
     } else {
         logger.warn("Failed to set the Impediment flag on the ${workItem.key} work item. ${result.status}: ${result.body}")
@@ -143,6 +149,8 @@ searchResult.issues.each { Map workItem ->
 
 "Script Completed - Check the Logs tab for information on which work items were updated."
 ```
+
+[HAPI](https://docs.adaptavist.com/sr4jc/latest/hapi/rewrite-scripts-with-hapi#how-to-simplify-scripts-using-hapi-examples--en__codeblock-13049)
 
 ```
 // Define a JQL query to search for the work items on which you want to set the impediment flag
@@ -160,6 +168,8 @@ WorkItems.search(query).each { workItem ->
 ```
 
 This script adds all the values of a custom field from all the work items and subtasks contained in an epic, and sets the sum as the value of the same custom field in the epic work item.
+
+[Non-HAPI](https://docs.adaptavist.com/sr4jc/latest/hapi/rewrite-scripts-with-hapi#how-to-simplify-scripts-using-hapi-examples--en__codeblock-13052)
 
 ```
 //Epic Link Custom Field ID
@@ -191,13 +201,13 @@ def workItemParent = workItemFields.find { it.key == 'parent' }?.value as Map
 def epicKey = workItemFields.find { it.key == epicLinkCf.id }?.value
 logger.info("workItemParent: ${workItemParent}, epicKey: ${epicKey}")
 if (!epicKey && !workItemParent) {
-    return
+ return
 }
 
 logger.info("work item: ${workItem}")
 //If the work item is sub-task, Epic Key is obtained from the parent work item
 if (workItem.fields.issuetype.subtask) {
-    def parentWorkItemField = get("/rest/api/2/issue/$workItemParent.key")
+ def parentWorkItemField = get("/rest/api/2/issue/$workItemParent.key")
             .asObject(Map)
             .body
             .fields as Map
@@ -217,12 +227,12 @@ def sum = 0
 def workItems = allChildWorkItems.findAll { it.key != epicKey }
 
 worktItems.each {
-    def fields = get("/rest/api/2/issue/$it.key")
+ def fields = get("/rest/api/2/issue/$it.key")
             .header('Content-Type', 'application/json')
             .asObject(Map)
             .body
             .fields as Map
-    def numberCfValue = fields[numberCf.id] ?: 0
+ def numberCfValue = fields[numberCf.id] ?: 0
     sum += numberCfValue as Integer
 }
 
@@ -235,7 +245,7 @@ put("/rest/api/2/issue/$epicKey")
         ]).asString()
 ```
 
- 
+[HAPI](https://docs.adaptavist.com/sr4jc/latest/hapi/rewrite-scripts-with-hapi#how-to-simplify-scripts-using-hapi-examples--en__codeblock-13053)
 
 ```
 //the name of the custom field. This code will work just as well with the custom field ID instead i.e. 10124L
@@ -246,7 +256,7 @@ def eventWorkItem = WorkItems.getByKey(workItem.key as String)
 def epicKey = eventWorkItem.getParentObject()?.key ?: null
 
 if(!epicKey) {
-    // Checks the 'Epic Link' custom field
+ // Checks the 'Epic Link' custom field
     epicKey = eventWorkItem.getEpic()?.key ?: null
 }
 
@@ -256,17 +266,17 @@ if (!epicKey && eventWorkItem.issueType.subtask) {
 
 if (!epicKey) {
     logger.info("We did not find an Epic in the hierarchy of this work item. Exiting.")
-    return
+ return
 }
 
 //find all work items linked to the epic, taking care to exclude the epic itself as we sum over this list
 def epicWorkItem
 def sum = WorkItems.search("linkedissue = ${epicKey}").sum { workItem ->
-    if (workItem.key == epicKey) {
+ if (workItem.key == epicKey) {
         epicWorkItem = workItem // Store the epic work item
-        return 0 // Exclude the epic work item from the sum
+ return 0 // Exclude the epic work item from the sum
     }
-    return workItem.getCustomFieldValue(sumCustomFieldName) ?: 0 // Safely sum non-epic values
+ return workItem.getCustomFieldValue(sumCustomFieldName) ?: 0 // Safely sum non-epic values
 }
 
 epicWorkItem.update {
@@ -274,8 +284,8 @@ epicWorkItem.update {
 }
 ```
 
-Once the code has been updated, you might not need some imports - hover over them to see if they’re still required in your script.
+Once the code has been updated, you might not need some imports - hover over them to see if they're still required in your script.
 
 ## How to rewrite existing scripts video demo
 
-&amp;amp;amp;lt;p&amp;amp;amp;gt;&amp;amp;amp;lt;br/&amp;amp;amp;gt;&amp;amp;amp;lt;/p&amp;amp;amp;gt;
+Watch the video demonstration: [How to rewrite existing scripts](https://www.youtube.com/watch?v=lXq6W18Ccos)

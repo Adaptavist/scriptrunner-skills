@@ -2,9 +2,9 @@
 
 - Platform: connect
 - Space: SRC
-- Hierarchy: workspaces
-- Doc ID: doc-src-194675329
-- Source: https://docs.adaptavist.com/src/latest/workspaces/scheduled-triggers
+- Hierarchy: Workspaces
+- Doc ID: doc-src-cc9176a3-00f3-4063-8ee6-8fd9220c9214-1148bf626c43b96b
+- Source: https://docs.adaptavist.com/src/latest/workspaces#scheduled-triggers--en
 
 Scheduled triggers enable you to execute scripts at a specific time.
 
@@ -14,9 +14,7 @@ When you create a new scheduled trigger, you'll be asked to provide a schedule i
 
 ## Supported CRON expressions
 
-ScriptRunner Connect currently supports the following six CRON expression segments (image courtesy of [npm](https://www.npmjs.com/package/cron-parser)):
-
-![Cron job syntax diagram showing six fields with asterisks, each labeled: second, minute, hour, day of month, month, day of week.](/src/files/latest/194675329/194675328/1/1695208515000/cron-format-nps.png)
+ScriptRunner Connect currently supports the following six CRON expression segments (image courtesy of [npm](https://www.npmjs.com/package/cron-parser)):
 
 ## Timezones
 
@@ -26,9 +24,9 @@ Scripts trigger via the UTC (GMT+0) timezone—something you want to consider wh
 
 The minimum trigger interval allowed by ScriptRunner Connect is 15 minutes. While you can construct triggers to execute more frequently, the app adjusts so intervals remain, at a minimum, 15 minutes apart.
 
-**A known issue with the scheduler**
+Note: A known issue with the scheduler
 
-When constructing minute-based intervals, we recommend using multiples of 15 minutes, such as every 15 minutes, 30 minutes, 60 minutes, and so on. Departing from these recommendations may lead to the scheduler defaulting to the minimum interval of 15 minutes. 
+When constructing minute-based intervals, we recommend using multiples of 15 minutes, such as every 15 minutes, 30 minutes, 60 minutes, and so on. Departing from these recommendations may lead to the scheduler defaulting to the minimum interval of 15 minutes.
 
 ## Environments
 
@@ -36,4 +34,4 @@ You are allowed to define a different schedule for each of your environments. Wh
 
 ## Deploying scheduled triggers
 
-New scheduled triggers won't be activated until the environment in which it was created is redeployed.
+New scheduled triggers won't be activated until the environment in which it was created is redeployed.

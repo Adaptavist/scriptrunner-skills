@@ -2,30 +2,30 @@
 
 - Platform: cloud
 - Space: SR4JC
-- Hierarchy: get-started
-- Doc ID: doc-sr4jc-101629578
+- Hierarchy: Get Started
+- Doc ID: doc-sr4jc-636eaa64-2678-4eef-b803-4b4b051badf1-ee5ab2b1d4bbd552
 - Source: https://docs.adaptavist.com/sr4jc/latest/get-started/limitations
 
-Several limitations are applied to scripts when they run, as detailed below. The limits should be more than sufficient for most scripts and are designed to catch erroneous scripts. 
+Several limitations are applied to scripts when they run, as detailed below. The limits should be more than sufficient for most scripts and are designed to catch erroneous scripts.
 
 ## Timeouts
 
-There is a limit of 240 seconds for script executions. After running for 240 seconds, the logs will be collected, and the code will be terminated. Any logs from the first 240 seconds of execution will be logged on the [Script Logs](https://docs.adaptavist.com/sr4jc/latest/manage-app/review-logs#id-.ReviewLogsvCurrent-scriptlogs) page.
+There is a limit of 240 seconds for script executions. After running for 240 seconds, the logs will be collected, and the code will be terminated. Any logs from the first 240 seconds of execution will be logged on the [Script Logs](../manage-app/review-logs.md) page.
 
 There is a limit of 30 seconds for each call made to the API. We impose these timeouts to prevent scripts/API calls from running for a long time period and impacting the performance of the Jira Cloud infrastructure provided by Atlassian. We cannot change the timeout for each API call.
 
 ### ScriptRunner Enhanced Search timeouts
 
-ScriptRunner Enhanced Search is moving to Atlassian’s native Forge platform this year. As part of this transition, there are two new limits: 
+ScriptRunner Enhanced Search is moving to Atlassian's native Forge platform this year. As part of this transition, there are two new limits:
 
 -   Result limit of 1,000 issues
 -   Timeout limit of 25 seconds
 
-Both of these limits are per precomputation. A precomputation is an individual use of an ScriptRunner Enhanced Search function. Filters can contain multiple precomputations, and each one can return up to 1,000 issues and run for 25 seconds. 
+Both of these limits are per precomputation. A precomputation is an individual use of an ScriptRunner Enhanced Search function. Filters can contain multiple precomputations, and each one can return up to 1,000 issues and run for 25 seconds.
 
-**Example**: `issueFunction` in `linkedIssuesOf("project = test")` and `issueFunction` in `addedAfterSprintStart(1)`. Each use of a function, or precomputation, can return 1000 issues, so the entire filter could return 2,000 issues since there are two. For timeout limits, each function, or precomputation, can take 25-seconds to process. They will run at the same time. 
+Example: `issueFunction` in `linkedIssuesOf("project = test")` and `issueFunction` in `addedAfterSprintStart(1)`. Each use of a function, or precomputation, can return 1000 issues, so the entire filter could return 2,000 issues since there are two. For timeout limits, each function, or precomputation, can take 25-seconds to process. They will run at the same time.
 
-For more information about the new limits, please visit [Timeouts and Performance for ScriptRunner Enhanced Search](https://docs.adaptavist.com/sr4jc/current/features/scriptrunner-enhanced-search/troubleshoot-scriptrunner-enhanced-search/timeouts-and-performance). For more information about the Forge migration, please visit [Enhanced Search Migration to Forge Breaking Changes](https://docs.adaptavist.com/sr4jc/latest/release-notes/breaking-changes/enhanced-search-migration-to-forge). 
+For more information about the new limits, please visit [Timeouts and Performance for ScriptRunner Enhanced Search](https://docs.adaptavist.com/sr4jc/latest/get-started/limitations#scriptrunner-enhanced-search-timeouts--en). For more information about the Forge migration, please visit [Enhanced Search Migration to Forge Breaking Changes](https://docs.adaptavist.com/sr4jc/latest/release-notes/breaking-changes/enhanced-search-migration-to-forge).
 
 ## Data limit
 
@@ -39,11 +39,11 @@ There is a JVM limitation that relates to the size of methods within scripts. Th
 
 ## Scripts in ScriptRunner Cloud Storage
 
-Our scripts are stored externally from your Jira instance in ScriptRunner Cloud Storage. The scripts are not part of any Jira exports, meaning that they cannot be automatically migrated between Jira Cloud instances. Currently, it is not possible to migrate your scripts back into Jira Cloud’s storage. 
+Our scripts are stored externally from your Jira instance in ScriptRunner Cloud Storage. The scripts are not part of any Jira exports, meaning that they cannot be automatically migrated between Jira Cloud instances. Currently, it is not possible to migrate your scripts back into Jira Cloud's storage.
 
-Please note that we store [Behaviours](https://docs.adaptavist.com/sr4jc/latest/features/behaviours#id-.BehavioursvCurrent-behaviourscripts) using the [UI Modifications API](https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-ui-modifications--apps-/#api-rest-api-3-uimodifications-get:~:text=Each%20app%20can%20define%20up%20to%203000%20UI%20modifications.%20Each%20UI%20modification%20can%20define%20up%20to%201000%20contexts.%20The%20same%20context%20can%20be%20assigned%20to%20maximum%20100%20UI%20modifications), so at a maximum, you can create 3000 Behaviours. However, a context (combination of space, work item type and view that the behaviour is executed on) can only be used for 100 behaviours. Find out more details in our [Behaviours Limitations](https://docs.adaptavist.com/sr4jc/latest/features/behaviours/behaviours-limitations) section.
+Please note that we store [Behaviours](../features/behaviours.md) using the [UI Modifications API](https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-ui-modifications--apps-/#api-rest-api-3-uimodifications-get:~:text=Each%20app%20can%20define%20up%20to%203000%20UI%20modifications.%20Each%20UI%20modification%20can%20define%20up%20to%201000%20contexts.%20The%20same%20context%20can%20be%20assigned%20to%20maximum%20100%20UI%20modifications), so at a maximum, you can create 3000 Behaviours. However, a context (combination of space, work item type and view that the behaviour is executed on) can only be used for 100 behaviours. Find out more details in our [Behaviours Limitations](https://docs.adaptavist.com/sr4jc/latest/features/behaviours/behaviours-limitations) section.
 
-Jira back-ups and ScriptRunner data
+Note: Jira back-ups and ScriptRunner data
 
 As scripts are stored in our AWS hosting infrastructure and NOT stored within Jira (with the exception of [Workflow Perform Actions](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/perform-actions)), then you should be aware that if a Jira backup is performed, you are not backing up any links to the ScriptRunner Cloud data.
 
@@ -51,7 +51,7 @@ Unfortunately, the instance URL is irrelevant. Therefore, performing a site impo
 
 ## Package imports
 
-You cannot import external libraries as this is not supported. Whilst you can import packages into your scripts in the [Script Console](https://docs.adaptavist.com/sr4jc/latest/features/script-console), Script Events and [Perform Actions](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/perform-actions), you can only import from the standard Java 17 classes and the following libraries:
+You cannot import external libraries as this is not supported. Whilst you can import packages into your scripts in the [Script Console](../features/script-console.md), Script Events and [Perform Actions](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/perform-actions), you can only import from the standard Java 17 classes and the following libraries:
 
 -   org.apache.groovy:groovy:4.0.28
     

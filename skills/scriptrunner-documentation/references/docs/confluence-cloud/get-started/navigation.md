@@ -2,26 +2,24 @@
 
 - Platform: confluence-cloud
 - Space: SR4CC
-- Hierarchy: get-started
-- Doc ID: doc-sr4cc-114204892
+- Hierarchy: Get Started
+- Doc ID: doc-sr4cc-3cd06d04-274f-41d2-9329-e86c5230755c-6588244b67389a8e
 - Source: https://docs.adaptavist.com/sr4cc/latest/get-started/navigation
+
+Learn how to get to the various functions within the ScriptRunner for Confluence Cloud app.
 
 ## Navigate to the app
 
-You can access ScriptRunner for Confluence Cloud in two ways: 
+You can access ScriptRunner for Confluence Cloud in two ways:
 
--   _Confluence Administration_ > **Apps**:   
-    ![](/sr4cc/files/latest/114204892/578291634/1/1773944460000/CA-Apps.png)
--   Under Your Apps on the Confluence global navigation sidebar:   
-    ![](/sr4cc/files/latest/114204892/578291633/1/1773944525000/d5547f22a32f8c95cd2e828c7e83c048f3758c17-392x411.png)
+-   Confluence Administration > Apps:
+-   Under Your Apps on the Confluence global navigation sidebar:
 
-## Navigate to features
+## Feature navigation
 
-All features are accessible from the top navigation: 
+All features are accessible from the top navigation:
 
-![](/sr4cc/files/latest/114204892/578291631/1/1773944672000/topnav.png)
-
-Open the More tab for additional features: 
+Tip: Open the More tab for additional features:
 
 -   CQL Script Jobs
 -   Script Variables
@@ -31,11 +29,9 @@ Open the More tab for additional features: 
 -   Audit Logs
 -   Settings
 
-  
+## Additional navigation
 
-## Additional Navigation
+For more information about navigating ScriptRunner for Confluence Cloud, check out these topics:
 
-For more information about navigating ScriptRunner for Confluence Cloud, check out these topics: 
-
--   [ScriptRunner Home](https://docs.adaptavist.com/sr4cc/latest/get-started/navigation/scriptrunner-home)
--   [Quick Scripting](https://docs.adaptavist.com/sr4cc/latest/get-started/navigation/quick-scripting)
+-   [ScriptRunner Home](navigation/script-runner-home.md)
+-   [Quick Scripting](navigation/quick-scripting.md)

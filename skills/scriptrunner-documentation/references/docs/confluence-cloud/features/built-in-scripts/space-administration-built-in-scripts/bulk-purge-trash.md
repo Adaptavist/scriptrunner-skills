@@ -2,27 +2,24 @@
 
 - Platform: confluence-cloud
 - Space: SR4CC
-- Hierarchy: features > built-in-scripts > space-administration-built-in-scripts
-- Doc ID: doc-sr4cc-114204422
+- Hierarchy: Features > Built-In Scripts > Space Administration Built-In Scripts
+- Doc ID: doc-sr4cc-ae19e607-c4cf-4108-ad01-4f913e345f44-1c416d408bdf960e
 - Source: https://docs.adaptavist.com/sr4cc/latest/features/built-in-scripts/space-administration-built-in-scripts/bulk-purge-trash
 
-Using _Bulk Purge Trash_, you can purge trash from one or more selected spaces or from all spaces.
+Instructions for using the Bulk Purge Trash built-in script.
 
-This is a permanent action. Once you’ve emptied the trash, the content won't be recoverable.
+Using _Bulk Purge Trash_, you can remove trash from one or more selected spaces or from all spaces at once.
 
-## Run the script
+Warning: This is a permanent action. Once trash is emptied, it is unrecoverable.
 
-To run the script, follow these steps: 
+To run the script, follow these steps:
 
 1.  Decide if you want to work with all spaces or specific spaces.
-    -   If you want to work with all spaces, check the **All Spaces** checkbox.
-    -   If you want to work with specific spaces, select them in **Select One or More Spaces**.
-2.  Select **Run**.   
-    ![](/sr4cc/files/latest/114204206/128387453/3/1779824145000/image2021-12-14_13-3-6.png)
+    
+    -   If you want to work with all spaces, check the All Spaces checkbox.
+    -   If you want to work with specific spaces, select them in Select One or More Spaces.
+    
+2.  Select Run.
     
 
-### Result
-
-Once you select **Run**, results will appear. Results show how much trash was purged and how many spaces it was purged from. 
-
-![](/sr4cc/files/latest/114204206/179608766/1/1684779634000/bulk_purge_trash_results.png)
+Once you select Run, results will appear. Results show how much trash was purged and how many spaces it was purged from.

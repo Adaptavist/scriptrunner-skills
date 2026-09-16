@@ -2,14 +2,14 @@
 
 - Platform: connect
 - Space: SRC
-- Hierarchy: get-started
-- Doc ID: doc-src-194675155
-- Source: https://docs.adaptavist.com/src/latest/get-started/save-your-work
+- Hierarchy: Get Started
+- Doc ID: doc-src-0acf8127-6279-4094-9b49-58e353e46477-73a482458f4623b4
+- Source: https://docs.adaptavist.com/src/latest/get-started#save-your-work--en
 
-Saving your scripting work is important. No one likes to lose work. 
+Learn to how to save your work and never lose your progress in ScriptRunner Connect.
 
-Auto-save isn't available in ScriptRunner Connect yet, so if you make changes to a script, be sure to click **Save**.
+Saving your scripting work is important. No one likes to lose work.
 
-![An example scripting page with the ](/src/files/latest/194675155/448004696/1/1759517499000/2025-09-29_15-15-34.png)
+Auto-save isn't available in ScriptRunner Connect yet, so if you make changes to a script, be sure to click Save.
 
-The **Save** icon is inactive if there are no changes to save.
+The Save icon is inactive if there are no changes to save.

@@ -2,93 +2,30 @@
 
 - Platform: confluence-cloud
 - Space: SR4CC
-- Hierarchy: features > macros > built-in-macros
-- Doc ID: doc-sr4cc-114204692
+- Hierarchy: Features > Macros > Built-In Macros
+- Doc ID: doc-sr4cc-b44b6a8a-95fe-4f36-85ef-4e61ef4ed836-57329428a0123025
 - Source: https://docs.adaptavist.com/sr4cc/latest/features/macros/built-in-macros/choose-label
 
-View [Macro Migration Tips](https://docs.adaptavist.com/sr4cc/latest/migration/feature-parity/macro-migration-tips) for more information about this macro from Confluence Server or Data Center. 
+Instructions for the Choose Label macro.
 
-Using the _Choose Label_ macro, you can add labels and generate suggested labels to a page if they are not present.
+Tip: View [Macro Migration Tips](https://docs.adaptavist.com/sr4cc/latest/migration/feature-parity/macro-migration-tips) for more information about this macro from Confluence Server or Data Center.
+
+Using the _Choose Label_ macro, you can add labels and generate suggested labels to a page if they are not present.
 
 When you edit or create a page in Confluence Cloud, you can use ScriptRunner for Confluence Cloud to choose labels for a page:
 
-1.  Select **Insert**, and then search _Choose_.  
-    ![](/sr4cc/files/latest/114204692/563708411/1/1782315977000/insert_choose_labels.png)
+1.  Select Insert, and then search _Choose_.
     
-2.  Select the **Choose Label** macro from the provided list.
+2.  Select the Choose Label macro from the provided list.
+3.  Complete the following fields as needed:
     
-3.  Complete the following fields as needed:  
-    ![](/sr4cc/files/latest/114204692/563708410/1/1782315977000/fields_for_choose_labels_macro.png)  
+    <table class="table" id="choose-label--en__generated-table-id-1"><caption></caption><thead class="thead"><tr class="row"><th class="entry" id="choose-label--en__generated-table-id-1__entry__1">Field</th><th class="entry" id="choose-label--en__generated-table-id-1__entry__2">Description</th><th class="entry" id="choose-label--en__generated-table-id-1__entry__3">Type</th><th class="entry" id="choose-label--en__generated-table-id-1__entry__4">Default</th><th class="entry" id="choose-label--en__generated-table-id-1__entry__5">Required</th><th class="entry" id="choose-label--en__generated-table-id-1__entry__6">Tip</th></tr></thead><tbody class="tbody"><tr class="row"><td class="entry" headers="choose-label--en__generated-table-id-1__entry__1 choose-label--en__generated-table-id-1__entry__2 choose-label--en__generated-table-id-1__entry__3 choose-label--en__generated-table-id-1__entry__4 choose-label--en__generated-table-id-1__entry__5 choose-label--en__generated-table-id-1__entry__6 "> <span class="ph uicontrol">Title</span>&#10;                                    </td><td class="entry" headers="choose-label--en__generated-table-id-1__entry__1 choose-label--en__generated-table-id-1__entry__2 choose-label--en__generated-table-id-1__entry__3 choose-label--en__generated-table-id-1__entry__4 choose-label--en__generated-table-id-1__entry__5 choose-label--en__generated-table-id-1__entry__6 ">Specify a title for the macro which is displayed above the macro.</td><td class="entry" headers="choose-label--en__generated-table-id-1__entry__1 choose-label--en__generated-table-id-1__entry__2 choose-label--en__generated-table-id-1__entry__3 choose-label--en__generated-table-id-1__entry__4 choose-label--en__generated-table-id-1__entry__5 choose-label--en__generated-table-id-1__entry__6 ">string</td><td class="entry" headers="choose-label--en__generated-table-id-1__entry__1 choose-label--en__generated-table-id-1__entry__2 choose-label--en__generated-table-id-1__entry__3 choose-label--en__generated-table-id-1__entry__4 choose-label--en__generated-table-id-1__entry__5 choose-label--en__generated-table-id-1__entry__6 ">none</td><td class="entry" headers="choose-label--en__generated-table-id-1__entry__1 choose-label--en__generated-table-id-1__entry__2 choose-label--en__generated-table-id-1__entry__3 choose-label--en__generated-table-id-1__entry__4 choose-label--en__generated-table-id-1__entry__5 choose-label--en__generated-table-id-1__entry__6 ">no</td><td class="entry" headers="choose-label--en__generated-table-id-1__entry__1 choose-label--en__generated-table-id-1__entry__2 choose-label--en__generated-table-id-1__entry__3 choose-label--en__generated-table-id-1__entry__4 choose-label--en__generated-table-id-1__entry__5 choose-label--en__generated-table-id-1__entry__6 ">N/A</td></tr><tr class="row"><td class="entry" headers="choose-label--en__generated-table-id-1__entry__1 choose-label--en__generated-table-id-1__entry__2 choose-label--en__generated-table-id-1__entry__3 choose-label--en__generated-table-id-1__entry__4 choose-label--en__generated-table-id-1__entry__5 choose-label--en__generated-table-id-1__entry__6 "> <span class="ph uicontrol">Labels</span>&#10;                                    </td><td class="entry" headers="choose-label--en__generated-table-id-1__entry__1 choose-label--en__generated-table-id-1__entry__2 choose-label--en__generated-table-id-1__entry__3 choose-label--en__generated-table-id-1__entry__4 choose-label--en__generated-table-id-1__entry__5 choose-label--en__generated-table-id-1__entry__6 ">Specify the labels using a comma-separated list.</td><td class="entry" headers="choose-label--en__generated-table-id-1__entry__1 choose-label--en__generated-table-id-1__entry__2 choose-label--en__generated-table-id-1__entry__3 choose-label--en__generated-table-id-1__entry__4 choose-label--en__generated-table-id-1__entry__5 choose-label--en__generated-table-id-1__entry__6 ">string</td><td class="entry" headers="choose-label--en__generated-table-id-1__entry__1 choose-label--en__generated-table-id-1__entry__2 choose-label--en__generated-table-id-1__entry__3 choose-label--en__generated-table-id-1__entry__4 choose-label--en__generated-table-id-1__entry__5 choose-label--en__generated-table-id-1__entry__6 ">none</td><td class="entry" headers="choose-label--en__generated-table-id-1__entry__1 choose-label--en__generated-table-id-1__entry__2 choose-label--en__generated-table-id-1__entry__3 choose-label--en__generated-table-id-1__entry__4 choose-label--en__generated-table-id-1__entry__5 choose-label--en__generated-table-id-1__entry__6 ">yes</td><td class="entry" headers="choose-label--en__generated-table-id-1__entry__1 choose-label--en__generated-table-id-1__entry__2 choose-label--en__generated-table-id-1__entry__3 choose-label--en__generated-table-id-1__entry__4 choose-label--en__generated-table-id-1__entry__5 choose-label--en__generated-table-id-1__entry__6 ">&#10;                                        <ul class="ul"><li class="li">Labels must obey naming restrictions imposed by Atlassian. Certain characters (:, ;, ., ,, ?, &amp;, [, ], (, ), #, ^, *, @, !, ', `, spaces) are not allowed.</li><li class="li">Some restricted characters are modified when possible to allow successful application of labels.</li></ul>&#10;                                    </td></tr><tr class="row"><td class="entry" headers="choose-label--en__generated-table-id-1__entry__1 choose-label--en__generated-table-id-1__entry__2 choose-label--en__generated-table-id-1__entry__3 choose-label--en__generated-table-id-1__entry__4 choose-label--en__generated-table-id-1__entry__5 choose-label--en__generated-table-id-1__entry__6 "><span class="ph uicontrol">Descriptions</span>&#10;                                    </td><td class="entry" headers="choose-label--en__generated-table-id-1__entry__1 choose-label--en__generated-table-id-1__entry__2 choose-label--en__generated-table-id-1__entry__3 choose-label--en__generated-table-id-1__entry__4 choose-label--en__generated-table-id-1__entry__5 choose-label--en__generated-table-id-1__entry__6 ">Specify label descriptions using a comma-separated list. If this field is left empty, the description of each label is the same as the label. If populated, the length of the description and label field must match.</td><td class="entry" headers="choose-label--en__generated-table-id-1__entry__1 choose-label--en__generated-table-id-1__entry__2 choose-label--en__generated-table-id-1__entry__3 choose-label--en__generated-table-id-1__entry__4 choose-label--en__generated-table-id-1__entry__5 choose-label--en__generated-table-id-1__entry__6 ">string</td><td class="entry" headers="choose-label--en__generated-table-id-1__entry__1 choose-label--en__generated-table-id-1__entry__2 choose-label--en__generated-table-id-1__entry__3 choose-label--en__generated-table-id-1__entry__4 choose-label--en__generated-table-id-1__entry__5 choose-label--en__generated-table-id-1__entry__6 ">none</td><td class="entry" headers="choose-label--en__generated-table-id-1__entry__1 choose-label--en__generated-table-id-1__entry__2 choose-label--en__generated-table-id-1__entry__3 choose-label--en__generated-table-id-1__entry__4 choose-label--en__generated-table-id-1__entry__5 choose-label--en__generated-table-id-1__entry__6 ">no</td><td class="entry" headers="choose-label--en__generated-table-id-1__entry__1 choose-label--en__generated-table-id-1__entry__2 choose-label--en__generated-table-id-1__entry__3 choose-label--en__generated-table-id-1__entry__4 choose-label--en__generated-table-id-1__entry__5 choose-label--en__generated-table-id-1__entry__6 ">None</td></tr><tr class="row"><td class="entry" headers="choose-label--en__generated-table-id-1__entry__1 choose-label--en__generated-table-id-1__entry__2 choose-label--en__generated-table-id-1__entry__3 choose-label--en__generated-table-id-1__entry__4 choose-label--en__generated-table-id-1__entry__5 choose-label--en__generated-table-id-1__entry__6 "><span class="ph uicontrol">Button Text</span>&#10;                                    </td><td class="entry" headers="choose-label--en__generated-table-id-1__entry__1 choose-label--en__generated-table-id-1__entry__2 choose-label--en__generated-table-id-1__entry__3 choose-label--en__generated-table-id-1__entry__4 choose-label--en__generated-table-id-1__entry__5 choose-label--en__generated-table-id-1__entry__6 ">Specify custom text for the <span class="ph uicontrol">Add Label</span> button.</td><td class="entry" headers="choose-label--en__generated-table-id-1__entry__1 choose-label--en__generated-table-id-1__entry__2 choose-label--en__generated-table-id-1__entry__3 choose-label--en__generated-table-id-1__entry__4 choose-label--en__generated-table-id-1__entry__5 choose-label--en__generated-table-id-1__entry__6 ">string</td><td class="entry" headers="choose-label--en__generated-table-id-1__entry__1 choose-label--en__generated-table-id-1__entry__2 choose-label--en__generated-table-id-1__entry__3 choose-label--en__generated-table-id-1__entry__4 choose-label--en__generated-table-id-1__entry__5 choose-label--en__generated-table-id-1__entry__6 "> <em class="ph i">Add Label</em>&#10;                                    </td><td class="entry" headers="choose-label--en__generated-table-id-1__entry__1 choose-label--en__generated-table-id-1__entry__2 choose-label--en__generated-table-id-1__entry__3 choose-label--en__generated-table-id-1__entry__4 choose-label--en__generated-table-id-1__entry__5 choose-label--en__generated-table-id-1__entry__6 ">no</td><td class="entry" headers="choose-label--en__generated-table-id-1__entry__1 choose-label--en__generated-table-id-1__entry__2 choose-label--en__generated-table-id-1__entry__3 choose-label--en__generated-table-id-1__entry__4 choose-label--en__generated-table-id-1__entry__5 choose-label--en__generated-table-id-1__entry__6 ">N/A</td></tr></tbody></table>
     
-    Field
+    Warning: Mixing languages on a Confluence page results in undefined label suggestion behavior.
     
-    Description
-    
-    Type
-    
-    Default
-    
-    Required
-    
-    Tip
-    
-    **Title**
-    
-    Specify a title for the macro that is displayed above it.
-    
-    string
-    
-    none
-    
-    no
-    
-    N/A
-    
-    **Labels**
-    
-    Specify the labels using a comma-separated list.
-    
-    string
-    
-    none
-    
-    yes
-    
-    -   Labels must obey naming restrictions imposed by Atlassian. Certain characters (:, ;, ., ,, ?, &, \[, \], (, ), #, ^, \*, @, !, ', \`, spaces) are not allowed.
-        
-    -   Some restricted characters are modified when possible to allow successful application of labels.
-        
-    
-    **Descriptions**
-    
-    Specify label descriptions using a comma-separated list. If this field is left empty, the description of each label is the same as the label. If populated, the length of the description and label field must match.
-    
-    string
-    
-    none
-    
-    no
-    
-    None
-    
-    **Button Text**
-    
-    Specify custom text for the **Add Label** button.
-    
-    string
-    
-    _Add Label_
-    
-    no
-    
-    N/A
-    
-    Mixing languages on a Confluence page results in undefined label suggestion behavior.
-    
-    4\. Click **Publish** (or **Update**), and the macro appears on the page.  
-    ![](/sr4cc/files/latest/114204692/563708409/1/1782315977000/choose_labels_placeholder_macro.png)  
+4.  Click Publish, and the macro appears on the page.
     
 
-When the page where the macro is located is opened, the _Choose Label_ macro is shown and only the applicable labels are shown. If all the provided labels are already present on the page, the macro is not shown.
+When the page where the macro is located is opened, the _Choose Label_ macro is shown and only the applicable labels are shown. If all the provided labels are already present on the page, the macro is not shown.
 
-You will see the page labels appear once the page is refreshed.
+Note: You will see the page labels appear once the page is refreshed.

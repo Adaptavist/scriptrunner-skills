@@ -3,14 +3,14 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: n/a
-- Doc ID: doc-sr4jc-101629076
+- Doc ID: doc-sr4jc-507a44da-6b1f-465c-8581-4e399bb191a4-841d7d3a3168825c
 - Source: https://docs.adaptavist.com/sr4jc/latest/release-notes
 
-Use ScriptRunner for Jira Cloud Release Notes to get information on the latest bug fixes, updates to features, and any breaking changes. 
+Use ScriptRunner for Jira Cloud Release Notes to get information on the latest bug fixes, updates to features, and any breaking changes.
 
--   [Breaking Changes](https://docs.adaptavist.com/sr4jc/latest/release-notes/breaking-changes)
--   [Release Notes](https://docs.adaptavist.com/sr4jc/latest/release-notes/release-notes)
--   [Deprecation Notices Overview](https://docs.adaptavist.com/sr4jc/latest/release-notes/deprecation-notices-overview)
+-   [Breaking Changes](../../release-notes/breaking-changes.md)
+-   [Release Notes](release-notes.md)
+-   [Deprecation Notices Overview](../../release-notes/deprecation-notices-overview.md)
 
 Product updates hub
 

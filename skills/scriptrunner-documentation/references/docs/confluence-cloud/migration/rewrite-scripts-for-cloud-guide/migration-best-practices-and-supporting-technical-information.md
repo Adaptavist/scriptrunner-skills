@@ -2,15 +2,17 @@
 
 - Platform: confluence-cloud
 - Space: SR4CC
-- Hierarchy: migration > rewrite-scripts-for-cloud-guide
-- Doc ID: doc-sr4cc-419662244
-- Source: https://docs.adaptavist.com/sr4cc/latest/migration/rewrite-scripts-for-cloud-guide/migration-best-practices-and-supporting-technical-information
+- Hierarchy: Migration > Rewrite Scripts for Cloud Guide
+- Doc ID: doc-sr4cc-436754da-191e-401c-8b58-43a50b27c621-303e8bd8e0977d55
+- Source: https://docs.adaptavist.com/sr4cc/latest/migration/rewrite-scripts-for-cloud-guide#migration-best-practices-and-supporting-technical-information--en
+
+Details on our reccomendations when migrating between ScriptRunner for Confluence Server/DC and Cloud.
 
 ## Best practices and tips for migrating to ScriptRunner for Confluence Cloud
 
 When migrating to or working with ScriptRunner for Confluence Cloud, keep these best practices and tips in mind. They apply to various use cases and can help streamline your scripting process.
 
-### Understand REST API responses
+### Understand REST API responses
 
 To understand how space values are represented in REST responses create a test space and run the following script with your new space key.
 
@@ -34,103 +36,40 @@ In Confluence Cloud, scripts generally cannot be executed as another user, excep
 
 You do not need to manually define REST request authentication headers in ScriptRunner for Confluence Cloud scripts. These headers are automatically configured. Scripts will execute as the user who triggers the script or as the ScriptRunner add-on user. This execution context is easily controlled through a drop-down menu within the ScriptRunner script configuration UI.
 
-## Commonly used Atlassian Java API endpoints and their Cloud equivalents 
+## Commonly used Atlassian Java API endpoints and their Cloud equivalents
 
 This table maps some of the most commonly used Atlassian Java APIs (in ScriptRunner for Confluence Server/Data Center) to the closest Atlassian REST API endpoints (ScriptRunner for Confluence Cloud) to guide you in script conversions.
 
--   The latest version of the Confluence Cloud platform REST API is [version 2](https://developer.atlassian.com/cloud/confluence/rest/v2/intro/#about). [Version 1](https://developer.atlassian.com/cloud/confluence/rest/v1/intro/#auth) and 2 of the API offer the same collection of operations. However, version 2 provides support for the [Atlassian Document Format](https://developer.atlassian.com/cloud/jira/platform/apis/document/structure/)(ADF) and is continuously being enhanced. 
+Note:
+
+-   The latest version of the Confluence Cloud platform REST API is [version 2](https://developer.atlassian.com/cloud/confluence/rest/v2/intro/#about). [Version 1](https://developer.atlassian.com/cloud/confluence/rest/v1/intro/#auth) and 2 of the API offer the same collection of operations. However, version 2 provides support for the [Atlassian Document Format](https://developer.atlassian.com/cloud/jira/platform/apis/document/structure/) (ADF) and is continuously being enhanced.
 -   The REST API may not provide direct equivalents for all Java API functionalities. In such cases, consider using a combination of available endpoints or re-evaluating the script's logic to fit within the cloud's constraints.
 -   Always refer to the official [Confluence Cloud REST API documentation](https://developer.atlassian.com/cloud/confluence/rest/v2/intro/#about) for the most up-to-date information on available endpoints and their usage.
 
-  
-
-Functionality
-
-Java API (Data Center)
-
-REST API (Cloud)
-
-**Add Attachment**
-
-`AttachmentManager` (e.g., `addAttachment(Page page, Attachment attachment)`)
-
-Check out the REST API for [add attachment here](https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-content---attachments/#api-wiki-rest-api-content-id-child-attachment-post).
-
-**Add Comment**
-
-`CommentManager` (e.g., `addComment(Comment comment)`)
-
-Check out the REST API for [add comment here](https://developer.atlassian.com/cloud/confluence/rest/v2/api-group-comment/#api-inline-comments-post).
-
-**Add Labels**
-
-`LabelManager` (e.g., `addLabel(ContentEntity entity, Label label)`)
-
-Check out the REST API for [add label here](https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-content-labels/#api-wiki-rest-api-content-id-label-post).
-
-**Create Page**
-
-`PageManager` (e.g., `saveContentEntity(ContentEntity)`)
-
-Check out the REST API for [create page here](https://developer.atlassian.com/cloud/confluence/rest/v2/api-group-page/#api-pages-post).
-
-**Create Space**
-
-`SpaceManager` (e.g., `saveSpace(Space space)`)
-
-Check out the REST API for [create space here](https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-space/#api-wiki-rest-api-space-post).
-
-**Delete Page**
-
-`PageManager` (e.g., `removePage(Page page)`)
-
-Check out the REST API for [delete page here](https://developer.atlassian.com/cloud/confluence/rest/v2/api-group-page/#api-pages-id-delete).
-
-**Retrieve Attachments**
-
-`AttachmentManager` (e.g., `getAttachments(Page page)`)
-
-Check out the REST API for [retrieve attachments here](https://developer.atlassian.com/cloud/confluence/rest/v2/api-group-attachment/#api-pages-id-attachments-get).
-
-**Retrieve Comments**
-
-`CommentManager` (e.g., `getComments(Page page)`)
-
-Check out the REST API for [retrieve comments here](https://developer.atlassian.com/cloud/confluence/rest/v2/api-group-comment/#api-pages-id-inline-comments-get).
-
-**Retrieve Labels**
-
-`LabelManager` (e.g., `getLabels(ContentEntity entity)`)
-
-Check out the REST API for [retrieve labels here](https://developer.atlassian.com/cloud/confluence/rest/v2/api-group-label/#api-pages-id-labels-get).
-
-**Retrieve Page Content**
-
-`PageManager` (e.g., `getPage(long pageId)`)
-
-Check out the REST API for [retrieve page content here](https://developer.atlassian.com/cloud/confluence/rest/v2/api-group-page/#api-pages-id-get).
-
-**Retrieve Space Information**
-
-`SpaceManager` (e.g., `getSpace(String spaceKey)`)
-
-Check out the REST API for [retrieve space information here](https://developer.atlassian.com/cloud/confluence/rest/v2/api-group-space/#api-spaces-id-get).
-
-**Update Page**
-
-`PageManager` (e.g., `saveContentEntity(ContentEntity)`)
-
-Check out the REST API for [update page here](https://developer.atlassian.com/cloud/confluence/rest/v2/api-group-page/#api-pages-id-put).
+| Functionality | Java API (Data Center) | REST API (Cloud) |
+| --- | --- | --- |
+| Add Attachment | `AttachmentManager` (e.g., `addAttachment(Page page, Attachment attachment)`) | Check out the REST API for [add attachment here](https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-content---attachments/#api-wiki-rest-api-content-id-child-attachment-post). |
+| Add Comment | `CommentManager` (e.g., `addComment(Comment comment)`) | Check out the REST API for [add comment here](https://developer.atlassian.com/cloud/confluence/rest/v2/api-group-comment/#api-inline-comments-post). |
+| Add Labels | `LabelManager` (e.g., `addLabel(ContentEntity entity, Label label)`) | Check out the REST API for [add label here](https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-content-labels/#api-wiki-rest-api-content-id-label-post). |
+| Create Page | `PageManager` (e.g., `saveContentEntity(ContentEntity)`) | Check out the REST API for [create page here](https://developer.atlassian.com/cloud/confluence/rest/v2/api-group-page/#api-pages-post). |
+| Create Space | `SpaceManager` (e.g., `saveSpace(Space space)`) | Check out the REST API for [create space here](https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-space/#api-wiki-rest-api-space-post). |
+| Delete Page | `PageManager` (e.g., `removePage(Page page)`) | Check out the REST API for [delete page here](https://developer.atlassian.com/cloud/confluence/rest/v2/api-group-page/#api-pages-id-delete). |
+| Retrieve Attachments | `AttachmentManager` (e.g., `getAttachments(Page page)`) | Check out the REST API for [retrieve attachments here](https://developer.atlassian.com/cloud/confluence/rest/v2/api-group-attachment/#api-pages-id-attachments-get). |
+| Retrieve Comments | `CommentManager` (e.g., `getComments(Page page)`) | Check out the REST API for [retrieve comments here](https://developer.atlassian.com/cloud/confluence/rest/v2/api-group-comment/#api-pages-id-inline-comments-get). |
+| Retrieve Labels | `LabelManager` (e.g., `getLabels(ContentEntity entity)`) | Check out the REST API for [retrieve labels here](https://developer.atlassian.com/cloud/confluence/rest/v2/api-group-label/#api-pages-id-labels-get). |
+| Retrieve Page Content | `PageManager` (e.g., `getPage(long pageId)`) | Check out the REST API for [retrieve page content here](https://developer.atlassian.com/cloud/confluence/rest/v2/api-group-page/#api-pages-id-get). |
+| Retrieve Space Information | `SpaceManager` (e.g., `getSpace(String spaceKey)`) | Check out the REST API for [retrieve space information here](https://developer.atlassian.com/cloud/confluence/rest/v2/api-group-space/#api-spaces-id-get). |
+| Update Page | `PageManager` (e.g., `saveContentEntity(ContentEntity)`) | Check out the REST API for [update page here](https://developer.atlassian.com/cloud/confluence/rest/v2/api-group-page/#api-pages-id-put). |
 
 ## Common listener events availability
 
-Check out the [Event Listener Parity](https://docs.adaptavist.com/sr4cc/latest/migration/feature-parity/confluence-events-parity) documentation so you can learn about events in ScriptRunner for Confluence Server/Data Center and their availability in Cloud. More detail on what ScriptRunner can do with the supported Cloud events can be found on our [Script Listeners](https://docs.adaptavist.com/display/_PK/SR4CC/script-listeners) page.
+Check out the [Event Listener Parity](https://docs.adaptavist.com/sr4cc/latest/migration/feature-parity/confluence-events-parity) documentation so you can learn about events in ScriptRunner for Confluence Server/Data Center and their availability in Cloud. More detail on what ScriptRunner can do with the supported Cloud events can be found on our [Script Listeners](../../features/script-listeners.md) page.
 
 ## Common operations
 
-Here we have listed some common operations required in ScriptRunner for Confluence Cloud scripts. Switch between the tabs to show the Cloud or Server/Data Center scripts. These operations can be used for many use cases. 
+Here we have listed some common operations required in ScriptRunner for Confluence Cloud scripts. Switch between the tabs to show the Cloud or Server/Data Center scripts. These operations can be used for many use cases.
 
-#### **Update page content**
+### Update page content
 
 ```
 import com.atlassian.confluence.pages.PageManager
@@ -164,6 +103,8 @@ if (page) {
 }
 ```
 
+ 
+
 ```
 // Define the page ID and the new content
 def pageId = 256475137 // Replace with the actual page ID
@@ -171,7 +112,6 @@ def newContent = """
     <h1>Updated Content</h1>
     <p>This is the new content for the page.</p>
 """
-
 
 // Retrieve the existing page to get the current version
 def page = get("/wiki/api/v2/pages/${pageId}").asObject(Map)
@@ -206,7 +146,7 @@ if (updateResponse.status == 200) {
 }
 ```
 
-#### **Create a new page**
+### Create a new page
 
 ```
 import com.atlassian.confluence.pages.Page
@@ -244,6 +184,8 @@ if (space) {
 }
 ```
 
+ 
+
 ```
 def space = Spaces.getByKey("your space key") // Replace with the actual space key
 def pageTitle = 'New Page Title'
@@ -277,7 +219,7 @@ if (createdPage.status == 200) {
 }
 ```
 
-#### **Add labels to a page**
+### Add labels to a page
 
 ```
 import com.atlassian.confluence.labels.LabelManager
@@ -308,6 +250,8 @@ if (page) {
 }
 ```
 
+ 
+
 ```
 def page = Pages.getById(196721) //replace with your actual page id
 page.addLabels("label-here1", "label-here2")
@@ -315,8 +259,8 @@ page.addLabels("label-here1", "label-here2")
 
 ## Other resources
 
--   [Rewriting Scripts](https://docs.adaptavist.com/sr4cc/latest/migration/rewrite-scripts-for-cloud-guide)
--   [Prepare to Migrate Script](https://docs.adaptavist.com/sr4cc/latest/migration/rewrite-scripts-for-cloud-guide/prepare-to-migrate-scripts)
+-   [Rewriting Scripts](../rewrite-scripts-for-cloud-guide.md)
+-   [Prepare to Migrate Script](https://docs.adaptavist.com/sr4cc/latest/migration/migration-checklist#migration-checklist-rewrite-your-scripts--en)
 -   [Adapt scripts for Confluence Cloud](https://docs.adaptavist.com/sr4cc/latest/migration/rewrite-scripts-for-cloud-guide/adapt-scripts-for-confluence-cloud)
--   [Feature Parity](https://docs.adaptavist.com/sr4cc/latest/migration/feature-parity)
--   [Event Listener Parity](https://docs.adaptavist.com/sr4cc/latest/migration/feature-parity/confluence-events-parity)
+-   [Feature Parity](../feature-parity.md)
+-   [Event Listener Parity](https://docs.adaptavist.com/sr4cc/latest/migration/feature-parity#feature-parity-listeners--en)

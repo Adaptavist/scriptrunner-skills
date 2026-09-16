@@ -1,14 +1,16 @@
-# Script Variables
+# Script variables
 
 - Platform: confluence-cloud
 - Space: SR4CC
-- Hierarchy: features
-- Doc ID: doc-sr4cc-112151564
+- Hierarchy: Features
+- Doc ID: doc-sr4cc-3273acc8-af8a-445b-937b-bcfa93e1a179-538b14cacd50d4cd
 - Source: https://docs.adaptavist.com/sr4cc/latest/features/script-variables
 
-Using script variables, you can specify variables that can be injected into your scripts. Those variables are encrypted and stored in your Confluence Cloud instance. You can use them to share common variables between your scripts or to store sensitive data like passwords that require encryption rather than hardcoding them in scripts directly.
+Script variables allow you can specify variables that can be injected into your scripts.
 
-Remember that variable value has a type `String`, even if the value is a number.
+Script Variables are encrypted and stored in your Confluence Cloud instance. You can use them to share common variables between your scripts or to store sensitive data like passwords that require encryption rather than hardcoding them in scripts directly.
+
+Tip: Remember that variable value has a type `String`, even if the value is a number.
 
 Variable names must follow these rules:
 
@@ -28,33 +30,32 @@ Length limit for variable:
 
 ## Examples
 
--   To define a script variable with the name `MY_FIRST_SHARED_VAR` with the value `'testValue'`, run the following code: 
+-   To define a script variable with the name `MY_FIRST_SHARED_VAR` with the value `'testValue'`, run the following code:
     
     ```
-logger.info("My variable has a value: " + MY_FIRST_SHARED_VAR)
-```
+    logger.info("My variable has a value: "+ MY_FIRST_SHARED_VAR)
+    ```
     
-    You should see the log with the following content:  
+    You should see the log with the following content:
     
     ```
-INFO - My variable has a value: testValue
-```
+    INFO - My variable has a value: testValue
+    ```
     
--   To define a variable with the name NO\_RETRIES with a value of '5', run the following code: 
+-   To define a variable with the name NO\_RETRIES with a value of '5', run the following code:
     
     ```
-NO_RETRIES + 10
-```
+    NO_RETRIES + 10
+    ```
     
     The result will be 510 (string concatenation), rather than 15.
     
 
 ## Use script variables
 
-Follow these steps to create a script variable: 
+Follow these steps to create a script variable:
 
-1.  Navigate to _ScriptRunner_ and select **Script Variables**.   
-    ![](/sr4cc/files/latest/112151564/588874133/1/1769188099000/script-variables.png)
-2.  Enter a **Script Variable name**. 
-3.  Enter the **Script Variable value**. 
-4.  Select **Save**.
+1.  Navigate to _ScriptRunner_ and select Script Variables.
+2.  Enter a Script Variable name.
+3.  Enter the Script Variable value.
+4.  Select Save.

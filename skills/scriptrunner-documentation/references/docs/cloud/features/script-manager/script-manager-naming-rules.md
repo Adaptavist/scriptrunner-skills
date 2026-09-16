@@ -2,126 +2,19 @@
 
 - Platform: cloud
 - Space: SR4JC
-- Hierarchy: features > script-manager
-- Doc ID: doc-sr4jc-480378911
-- Source: https://docs.adaptavist.com/sr4jc/latest/features/script-manager/script-manager-naming-rules
+- Hierarchy: Features > Script Manager
+- Doc ID: doc-sr4jc-ee5a4685-1958-4f9e-9f21-a4e613fd5f4e-3ae24ef24952cea9
+- Source: https://docs.adaptavist.com/sr4jc/latest/features/script-manager#script-manager-naming-rules--en
 
 When creating scripts and folders in Script Manager, you must follow specific naming rules to ensure your scripts function correctly. These rules are enforced by the frontend validation system. As you type the name, spaces are automatically replaced with underscores, and invalid characters are rejected. If a character is rejected, an explanatory notification appears in the top-right corner of your screen.
 
 ## Script names
 
-Category
-
-Rules
-
-Examples
-
-![(tick)](/s/xoimh2/9116/3an53u/_/images/icons/emoticons/check.svg) Allowed
-
-**Start with**: A letter only (a-z, A-Z)
-
-**Use anywhere**: Letters, numbers, underscores, and hyphens
-
-**Maximum length**: 248 characters (the `.groovy` extension is added automatically, making the total 255 characters).
-
--   `test`
--   `myScript`
--   `script_123`
--   `MyClass`
--   `test-file`
--   `test1`
--   `myScript2File`
--   `VeryLongFileNameThatIsStillValidAsLongAsItDoesNot   Exceed248CharactersIncludingTheGroovyExtensionWhich   IsAddedAutomatically`
-
-![(error)](/s/xoimh2/9116/3an53u/_/images/icons/emoticons/error.svg) Not allowed
-
--   Dots anywhere in the name (e.g., `test.script`)
--   Names starting with a: 
-    
-    -   number (e.g., `123test`)
-    -   underscore (e.g., `_test`)
-    -   dollar sign (e.g., `$test`)
-    -   dot (e.g., `.hidden`)
--   Dollar signs anywhere in the name (e.g., `test$script`)
--   Spaces anywhere in the name (e.g., `test script`)
--   Special characters like `!`, `@`, `#`, `%`, `&`, `*`, etc.
--   Slashes in file names (e.g., `folder/file`)
--   Names longer than 248 characters
--   Empty names
-
--   `123test` - Cannot start with a number
--   `_test` - Cannot start with an underscore
--   `.hidden` - Cannot start with a dot
--   `$test` - Cannot start with a dollar sign
--   `test.script` - Cannot contain dots
--   `test$script` - Cannot contain dollar signs
--   `test script` - Cannot contain spaces (
--   `test!` - Contains invalid character (!)
--   `test/file` - Cannot contain slashes
--   `test@script` - Contains invalid character (@)
--   Empty string - Cannot be empty
+<table class="table" id="script-manager-naming-rules-script-names--en__generated-table-id-1"><caption></caption><thead class="thead"><tr class="row"><th class="entry" id="script-manager-naming-rules-script-names--en__generated-table-id-1__entry__1">Category</th><th class="entry" id="script-manager-naming-rules-script-names--en__generated-table-id-1__entry__2">Rules</th><th class="entry" id="script-manager-naming-rules-script-names--en__generated-table-id-1__entry__3">Examples</th></tr></thead><tbody class="tbody"><tr class="row"><td class="entry" headers="script-manager-naming-rules-script-names--en__generated-table-id-1__entry__1 script-manager-naming-rules-script-names--en__generated-table-id-1__entry__2 script-manager-naming-rules-script-names--en__generated-table-id-1__entry__3 "> Allowed </td><td class="entry" headers="script-manager-naming-rules-script-names--en__generated-table-id-1__entry__1 script-manager-naming-rules-script-names--en__generated-table-id-1__entry__2 script-manager-naming-rules-script-names--en__generated-table-id-1__entry__3 ">&#10;                                <p class="p"><span class="ph b">Start with</span>: A letter only (a-z, A-Z) <span class="ph b">Use anywhere</span>: Letters, numbers, underscores, and hyphens <span class="ph b">Maximum length</span>: 248 characters (the <code class="ph codeph">.groovy</code> extension is added automatically, making the total 255 characters).</p>&#10;                            </td><td class="entry" headers="script-manager-naming-rules-script-names--en__generated-table-id-1__entry__1 script-manager-naming-rules-script-names--en__generated-table-id-1__entry__2 script-manager-naming-rules-script-names--en__generated-table-id-1__entry__3 ">&#10;                                <ul class="ul"><li class="li"><code class="ph codeph">test</code></li><li class="li"><code class="ph codeph">myScript</code></li><li class="li"><code class="ph codeph">script_123</code></li><li class="li"><code class="ph codeph">MyClass</code></li><li class="li"><code class="ph codeph">test-file</code></li><li class="li"><code class="ph codeph">test1</code></li><li class="li"><code class="ph codeph">myScript2File</code></li><li class="li"><code class="ph codeph">VeryLongFileNameThatIsStillValidAsLongAsItDoesNot Exceed248CharactersIncludingTheGroovyExtensionWhich IsAddedAutomatically</code></li></ul>&#10;                            </td></tr><tr class="row"><td class="entry" headers="script-manager-naming-rules-script-names--en__generated-table-id-1__entry__1 script-manager-naming-rules-script-names--en__generated-table-id-1__entry__2 script-manager-naming-rules-script-names--en__generated-table-id-1__entry__3 "> Not allowed </td><td class="entry" headers="script-manager-naming-rules-script-names--en__generated-table-id-1__entry__1 script-manager-naming-rules-script-names--en__generated-table-id-1__entry__2 script-manager-naming-rules-script-names--en__generated-table-id-1__entry__3 ">&#10;                                <ul class="ul"><li class="li">Dots anywhere in the name (e.g., <code class="ph codeph">test.script</code>)</li><li class="li">Names starting with a: <ul class="ul"><li class="li">number (e.g., <code class="ph codeph">123test</code>)</li><li class="li">underscore (e.g., <code class="ph codeph">_test</code>)</li><li class="li">dollar sign (e.g., <code class="ph codeph">$test</code>)</li><li class="li">dot (e.g., <code class="ph codeph">.hidden</code>)</li></ul></li><li class="li">Dollar signs anywhere in the name (e.g., <code class="ph codeph">test$script</code>)</li><li class="li">Spaces anywhere in the name (e.g., <code class="ph codeph">test script</code>)</li><li class="li">Special characters like <code class="ph codeph">!</code>, <code class="ph codeph">@</code>, <code class="ph codeph">#</code>, <code class="ph codeph">%</code>, <code class="ph codeph">&amp;</code>, <code class="ph codeph">*</code>, etc.</li><li class="li">Slashes in file names (e.g., <code class="ph codeph">folder/file</code>)</li><li class="li">Names longer than 248 characters</li><li class="li">Empty names</li></ul>&#10;                            </td><td class="entry" headers="script-manager-naming-rules-script-names--en__generated-table-id-1__entry__1 script-manager-naming-rules-script-names--en__generated-table-id-1__entry__2 script-manager-naming-rules-script-names--en__generated-table-id-1__entry__3 ">&#10;                                <ul class="ul"><li class="li"><code class="ph codeph">123test</code> - Cannot start with a number</li><li class="li"><code class="ph codeph">_test</code> - Cannot start with an underscore</li><li class="li"><code class="ph codeph">.hidden</code> - Cannot start with a dot</li><li class="li"><code class="ph codeph">$test</code> - Cannot start with a dollar sign</li><li class="li"><code class="ph codeph">test.script</code> - Cannot contain dots</li><li class="li"><code class="ph codeph">test$script</code> - Cannot contain dollar signs</li><li class="li"><code class="ph codeph">test script</code> - Cannot contain spaces (</li><li class="li"><code class="ph codeph">test!</code> - Contains invalid character (!)</li><li class="li"><code class="ph codeph">test/file</code> - Cannot contain slashes</li><li class="li"><code class="ph codeph">test@script</code> - Contains invalid character (@)</li><li class="li">Empty string - Cannot be empty</li></ul>&#10;                            </td></tr></tbody></table>
 
 ## Folder names
 
-Category
-
-Rules
-
-Examples
-
-![(tick)](/s/xoimh2/9116/3an53u/_/images/icons/emoticons/check.svg) Allowed
-
-**Start with**: A letter only (a-z, A-Z)
-
-**Use anywhere**: Letters, numbers, underscores, and forward slashes (for nested folders)
-
-**Maximum folder name length**: 255 characters. Each folder in a path cannot exceed 255 characters.
-
-**Maximum path length**: 600 characters (includes all parent folder names + folder name), as long as each stays within the individual folder name limit.
-
--   `test`
--   `myFolder`
--   `folder_123`
--   `MyFolder`
--   `folder1test_ok`
--   `FolderOne/FolderTwo`
--   `FolderOne/AAAA/CCC`
--   `folderOne/subfolder`
--   `main/sub/directory`
--   `scripts/utils/helpers`
-
-![(error)](/s/xoimh2/9116/3an53u/_/images/icons/emoticons/error.svg) Not allowed
-
--   Dots anywhere in the name (e.g., `folder.test`)
--   Dashes (e.g. `test-folder)`
--   Names starting with a: 
-    
-    -   number (e.g., `123test`)
-    -   underscore (e.g., `_folder`)
-    -   dollar sign (e.g., `$folder`)
-    -   dot (e.g., `.hidden`)
--   Dollar signs anywhere in the name (e.g., `folder$test`)
--   Spaces anywhere in the name (e.g., `test folder`)
--   Special characters like `!`, `@`, `#`, `%`, `&`, `*`, etc.
--   Double slashes (e.g., `folder//sub` - use `folder/sub` instead)
--   Starting with a slash (e.g., `/folder`)
--   Ending with a slash (e.g., `folder/`)
--   Paths longer than 600 characters (including all parent folders)
--   Empty names
-
--   `123test` - Cannot start with a number
--   `_folder` - Cannot start with an underscore
--   `$folder` - Cannot start with a dollar sign
--   `.hidden` - Cannot start with a dot
--   `test folder` - Cannot contain spaces
--   `folder.test` - Cannot contain dots
--   `folder$test` - Cannot contain dollar signs
--   `test!` - Contains invalid character (!)
--   `/folder` - Cannot start with a slash
--   `folder/` - Cannot end with a slash
--   `folder//sub` - Cannot have double slashes (use `folder/sub` instead)
--   Empty string - Cannot be empty
--   `test-folder` - Cannot have a dash
+<table class="table" id="script-manager-naming-rules-folder-names--en__generated-table-id-1"><caption></caption><thead class="thead"><tr class="row"><th class="entry" id="script-manager-naming-rules-folder-names--en__generated-table-id-1__entry__1">Category</th><th class="entry" id="script-manager-naming-rules-folder-names--en__generated-table-id-1__entry__2">Rules</th><th class="entry" id="script-manager-naming-rules-folder-names--en__generated-table-id-1__entry__3">Examples</th></tr></thead><tbody class="tbody"><tr class="row"><td class="entry" headers="script-manager-naming-rules-folder-names--en__generated-table-id-1__entry__1 script-manager-naming-rules-folder-names--en__generated-table-id-1__entry__2 script-manager-naming-rules-folder-names--en__generated-table-id-1__entry__3 "> Allowed </td><td class="entry" headers="script-manager-naming-rules-folder-names--en__generated-table-id-1__entry__1 script-manager-naming-rules-folder-names--en__generated-table-id-1__entry__2 script-manager-naming-rules-folder-names--en__generated-table-id-1__entry__3 ">&#10;                                <p class="p"><span class="ph b">Start with</span>: A letter only (a-z, A-Z) <span class="ph b">Use anywhere</span>: Letters, numbers, underscores, hyphens, and forward slashes (for nested folders) <span class="ph b">Maximum folder name length</span>: 255 characters. Each folder in a path cannot exceed 255 characters. <span class="ph b">Maximum path length</span>: 600 characters (includes all parent folder names + folder name), as long as each stays within the individual folder name limit.</p>&#10;                            </td><td class="entry" headers="script-manager-naming-rules-folder-names--en__generated-table-id-1__entry__1 script-manager-naming-rules-folder-names--en__generated-table-id-1__entry__2 script-manager-naming-rules-folder-names--en__generated-table-id-1__entry__3 ">&#10;                                <ul class="ul"><li class="li"><code class="ph codeph">test</code></li><li class="li"><code class="ph codeph">myFolder</code></li><li class="li"><code class="ph codeph">folder_123</code></li><li class="li"><code class="ph codeph">MyFolder</code></li><li class="li"><code class="ph codeph">folder1test_ok</code></li><li class="li"><code class="ph codeph">FolderOne/FolderTwo</code></li><li class="li"><code class="ph codeph">FolderOne/AAAA/CCC</code></li><li class="li"><code class="ph codeph">folderOne/subfolder</code></li><li class="li"><code class="ph codeph">main/sub/directory</code></li><li class="li"><code class="ph codeph">scripts/utils/helpers</code></li></ul>&#10;                            </td></tr><tr class="row"><td class="entry" headers="script-manager-naming-rules-folder-names--en__generated-table-id-1__entry__1 script-manager-naming-rules-folder-names--en__generated-table-id-1__entry__2 script-manager-naming-rules-folder-names--en__generated-table-id-1__entry__3 "> Not allowed </td><td class="entry" headers="script-manager-naming-rules-folder-names--en__generated-table-id-1__entry__1 script-manager-naming-rules-folder-names--en__generated-table-id-1__entry__2 script-manager-naming-rules-folder-names--en__generated-table-id-1__entry__3 ">&#10;                                <ul class="ul"><li class="li">Dots anywhere in the name (e.g., <code class="ph codeph">folder.test</code>)</li><li class="li">Dashes (e.g. <code class="ph codeph">test-folder)</code></li><li class="li">Names starting with a: <ul class="ul"><li class="li">number (e.g., <code class="ph codeph">123test</code>)</li><li class="li">underscore (e.g., <code class="ph codeph">_folder</code>)</li><li class="li">dollar sign (e.g., <code class="ph codeph">$folder</code>)</li><li class="li">dot (e.g., <code class="ph codeph">.hidden</code>)</li></ul></li><li class="li">Dollar signs anywhere in the name (e.g., <code class="ph codeph">folder$test</code>)</li><li class="li">Spaces anywhere in the name (e.g., <code class="ph codeph">test folder</code>)</li><li class="li">Special characters like <code class="ph codeph">!</code>, <code class="ph codeph">@</code>, <code class="ph codeph">#</code>, <code class="ph codeph">%</code>, <code class="ph codeph">&amp;</code>, <code class="ph codeph">*</code>, etc.</li><li class="li">Double slashes (e.g., <code class="ph codeph">folder//sub</code> - use <code class="ph codeph">folder/sub</code> instead)</li><li class="li">Starting with a slash (e.g., <code class="ph codeph">/folder</code>)</li><li class="li">Ending with a slash (e.g., <code class="ph codeph">folder/</code>)</li><li class="li">Paths longer than 600 characters (including all parent folders)</li><li class="li">Empty names</li></ul>&#10;                            </td><td class="entry" headers="script-manager-naming-rules-folder-names--en__generated-table-id-1__entry__1 script-manager-naming-rules-folder-names--en__generated-table-id-1__entry__2 script-manager-naming-rules-folder-names--en__generated-table-id-1__entry__3 ">&#10;                                <ul class="ul"><li class="li"><code class="ph codeph">123test</code> - Cannot start with a number</li><li class="li"><code class="ph codeph">_folder</code> - Cannot start with an underscore</li><li class="li"><code class="ph codeph">$folder</code> - Cannot start with a dollar sign</li><li class="li"><code class="ph codeph">.hidden</code> - Cannot start with a dot</li><li class="li"><code class="ph codeph">test folder</code> - Cannot contain spaces</li><li class="li"><code class="ph codeph">folder.test</code> - Cannot contain dots</li><li class="li"><code class="ph codeph">folder$test</code> - Cannot contain dollar signs</li><li class="li"><code class="ph codeph">test!</code> - Contains invalid character (!)</li><li class="li"><code class="ph codeph">/folder</code> - Cannot start with a slash</li><li class="li"><code class="ph codeph">folder/</code> - Cannot end with a slash</li><li class="li"><code class="ph codeph">folder//sub</code> - Cannot have double slashes (use <code class="ph codeph">folder/sub</code> instead)</li><li class="li">Empty string - Cannot be empty</li><li class="li"><code class="ph codeph">test-folder</code> - Cannot have a dash</li></ul>&#10;                            </td></tr></tbody></table>
 
 ## Total path length validation
 
@@ -131,7 +24,7 @@ The total path length (including all parent folders and the script folder name) 
 
 If you have a folder path: `very/long/path/structure/that/goes/deep/into/the/hierarchy`
 
-And you try to create a script file: `anotherVeryLongFileNameThatWouldMakeTheTotalPathExceed600Characters.groovy`
+And you try to create a script file: `anotherVeryLongFileNameThatWouldMakeTheTotalPathExceed600Characters.groovy`
 
 The validation will fail if the combined length exceeds 600 characters.
 
@@ -139,25 +32,25 @@ The validation will fail if the combined length exceeds 600 characters.
 
 Script Manager automatically fixes some common issues as you type:
 
--   **Spaces:** Automatically replaced with underscores (`_`).
--   **Invalid starting characters:** Automatically removed (e.g., typing `123test` becomes `test`).
--   **Invalid characters:** Automatically removed (e.g., typing `test@script` becomes `testscript`).
--   **Slashes in file names:** Automatically removed.
--   **File names exceeding 248 characters:** Automatically truncated.
+-   Spaces: Automatically replaced with underscores ( `_`).
+-   Invalid starting characters: Automatically removed (e.g., typing `123test` becomes `test`).
+-   Invalid characters: Automatically removed (e.g., typing `test@script` becomes `testscript`).
+-   Slashes in file names: Automatically removed.
+-   File names exceeding 248 characters: Automatically truncated.
 
 When these auto-fixes occur, you'll see confirmation messages.
 
 ## Duplicate name detection
 
-Script Manager prevents you from creating scripts or folders with the same name in the same location. The comparison is case-insensitive, so `MyScript` and `myscript` are considered duplicates.
+Script Manager prevents you from creating scripts or folders with the same name in the same location. The comparison is case-insensitive, so `MyScript` and `myscript` are considered duplicates.
 
 ## Best practices
 
--   **Use descriptive names**: Choose names that clearly indicate the script's purpose.
--   **Use camelCase or kebab-case**: `myScript` or `my-script` are both valid.
--   **Avoid special characters**: Stick to letters, numbers, underscores, and hyphens.
--   **Keep names concise**: While you can use up to 248 characters, shorter names are easier to work with.
--   **Organize with folders**: Use nested folders to organize related scripts (e.g., `utils/helpers`, `workflows/validators`).
+-   Use descriptive names: Choose names that clearly indicate the script's purpose.
+-   Use camelCase or kebab-case: `myScript` or `my-script` are both valid.
+-   Avoid special characters: Stick to letters, numbers, underscores, and hyphens.
+-   Keep names concise: While you can use up to 248 characters, shorter names are easier to work with.
+-   Organize with folders: Use nested folders to organize related scripts (e.g., `utils/helpers`, `workflows/validators`).
 
 ## Technical notes
 
@@ -165,4 +58,4 @@ Script Manager prevents you from creating scripts or folders with the same name 
 -   Folder structures should be reflected in the package definition of scripts and classes.
 -   Validation happens in real-time as you type.
 -   The validation rules are enforced on the frontend before saving to the backend.
--   These rules ensure compatibility with Groovy and Jira Expression file system conventions.
+-   These rules ensure compatibility with Groovy file system conventions.

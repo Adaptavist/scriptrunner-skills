@@ -2,37 +2,42 @@
 
 - Platform: connect
 - Space: SRC
-- Hierarchy: scripting
-- Doc ID: doc-src-223118008
-- Source: https://docs.adaptavist.com/src/latest/scripting/fetch-api
+- Hierarchy: Scripting
+- Doc ID: doc-src-fe2952dd-218e-4b02-b97c-0cb9b5427740-d883e4552b32209d
+- Source: https://docs.adaptavist.com/src/latest/scripting#fetch-api--en
 
-ScriptRunner Connect offers [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) as the lowest level API for making API calls over HTTP. While we recommend using [Managed APIs](https://docs.adaptavist.com/src/latest/managed-apis) if available, Fetch API is a valid alternative if you cannot use Managed APIs for whatever reason. Managed APIs also offer [Managed Fetch API](https://docs.adaptavist.com/src/latest/managed-apis/managed-api-abstractions#managed-fetch-api), which can be combined with the [generic connector](https://docs.adaptavist.com/src/latest/connectors/generic-connector) to great effect.
+Learn about Fetch API, a JavaScript interface used for making asynchronous HTTP requests across a network.
 
-**Compliance**  
+ScriptRunner Connect offers [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) as the lowest level API for making API calls over HTTP. While we recommend using [Managed APIs](https://docs.adaptavist.com/src/latest/workspaces/package-manager#managed-apis--en) if available, Fetch API is a valid alternative if you cannot use Managed APIs for whatever reason. Managed APIs also offer [Managed Fetch API](https://docs.adaptavist.com/src/latest/managed-apis/managed-api-abstractions#managed-fetch-api--en), which can be combined with the [generic connector](https://docs.adaptavist.com/src/latest/connectors/generic-connector) to great effect.
+
+Note: Compliance
+
 ScriptRunner Connect's Fetch API implementation is not fully compliant with the specification because the Fetch API was originally designed to work in a browser and not in server-side JavaScript runtime, which is where ScriptRunner Connect code is executed.
 
-# Demo
+## Demo
 
-# Fetch options
+[Fetch API demo](https://demo.arcade.software/pyCkn5uNI91DnQPc3Aqj?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true)
+
+## Fetch options
 
 ```
 {
-	method?: string; // Method for the Fetch call
-	headers?: Headers | Record<string, string>; // Headers to be passed along
-	body?: Blob | ArrayBuffer | FormData | string | null; // Body to be passed along
-	agent?: {
-		rejectUnauthorized?: boolean; // Whether to reject invalid HTTPS connection, defaults to true
-		ca?: string | ArrayBuffer | (string | ArrayBuffer)[]; // CA certificate to be used with HTTPS connection (must be in PEM format)
-		cert: string | ArrayBuffer | (string | ArrayBuffer)[]; // Certificate to be used with HTTPS connection (must be in PEM format)
-		key? string | ArrayBuffer | (string | ArrayBuffer)[]; // Private key to be used with HTTPS connection (must be in PEM format)
-		passphrase?: string; // Use to decrypt certificates, if certificates are not encrypted, don't specify it
-	}
+    method?: string; // Method for the Fetch call
+    headers?: Headers | Record<string, string>; // Headers to be passed along
+    body?: Blob | ArrayBuffer | FormData | string | null; // Body to be passed along
+    agent?: {
+        rejectUnauthorized?: boolean; // Whether to reject invalid HTTPS connection, defaults to true
+        ca?: string | ArrayBuffer | (string | ArrayBuffer)[]; // CA certificate to be used with HTTPS connection (must be in PEM format)
+        cert: string | ArrayBuffer | (string | ArrayBuffer)[]; // Certificate to be used with HTTPS connection (must be in PEM format)
+        key? string | ArrayBuffer | (string | ArrayBuffer)[]; // Private key to be used with HTTPS connection (must be in PEM format)
+        passphrase?: string; // Use to decrypt certificates, if certificates are not encrypted, don't specify it
+    }
 }
 ```
 
-# Web API-supported classes
+## Web API-supported classes
 
-The following classes may not be fully compliant per specification. [Contact our team](https://docs.adaptavist.com/src/latest/get-help) if you notice an error or would like to submit a feature request.
+The following classes may not be fully compliant per specification. [Contact our team](https://the-adaptavist-group-support.atlassian.net/servicedesk/customer/portal/20) if you notice an error or would like to submit a feature request.
 
 -   [Request](https://developer.mozilla.org/en-US/docs/Web/API/Request)
 -   [Response](https://developer.mozilla.org/en-US/docs/Web/API/Response)
@@ -44,25 +49,32 @@ The following classes may not be fully compliant per specification. [Contact ou
 -   [TextEncoder](https://developer.mozilla.org/en-US/docs/Web/API/TextEncoder)
 -   [TextDecoder](https://developer.mozilla.org/en-US/docs/Web/API/TextDecoder)
 
-# Custom headers
+## Custom headers
 
-ScriptRunner Connect exposes many custom headers with the `x-stitch`  prefix.
+ScriptRunner Connect exposes many custom headers with the `x-stitch` prefix.
 
-## Request headers
+### Request headers
 
--   `**x-stitch-connection-id**`  
+-   x-stitch-connection-id
+    
     Used internally by Managed APIs to pass along the API connection used with the Managed API call. This value is the UID of the API connection.
--   `**x-stitch-ignore-ssl-check**`  
+    
+-   x-stitch-ignore-ssl-check
+    
     Disables check for invalid HTTPS connection and does the same thing as `rejectUnauthorized` when passed along with the `agent` option.
+    
 
-## Response headers
+### Response headers
 
--   **x-stitch-time**  
+-   x-stitch-time
+    
     Time in milliseconds it took to perform the actual HTTP call, which is more accurate than measuring how long it took to perform the HTTP call from the code.
+    
 
-# Mutual TLS
+## Mutual TLS
 
-You can perform [mutual TLS](https://www.cloudflare.com/en-gb/learning/access-management/what-is-mutual-tls/) by passing `ca` , `` cert, `key` `` and ``` `` `passphrase` `` ``` options with the agent option in the fetch call.
+You can perform [mutual TLS](https://www.cloudflare.com/en-gb/learning/access-management/what-is-mutual-tls/) by passing `ca`, `cert`, `key` and `passphrase` options with the agent option in the fetch call.
 
-**An example  👀**  
+Note: An example 👀
+
 [Click here](https://docs.adaptavist.com/src/latest/scripting/code-snippets/perform-mutual-tls) for an example of how to perform mTLS with Fetch API.

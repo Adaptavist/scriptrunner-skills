@@ -2,18 +2,19 @@
 
 - Platform: connect
 - Space: SRC
-- Hierarchy: connectors
-- Doc ID: doc-src-237864777
-- Source: https://docs.adaptavist.com/src/latest/connectors/delete-a-connector
+- Hierarchy: Connectors
+- Doc ID: doc-src-0e89dee1-cad7-4c63-ae68-88bc962a93dc-6fc643d72ac65a5d
+- Source: https://docs.adaptavist.com/src/latest/connectors#delete-a-connector--en
 
-Delete connectors via the **Connectors** page. 
+Follow these instructions to remove a connector from your instance.
 
-## To delete a connector:
+Delete connectors via the _Connectors_ page.
 
-1.  Click the **Trash** icon.  
-    ![The ](/src/files/latest/237864777/426968102/1/1756151963000/click-trash-icon.png)  
-      
+To delete a connector:
+
+1.  Click the Trash icon.
     
-2.  Confirm selection by clicking **Delete Connector**.  
-    ![The Delete Confirmation screen with the ](/src/files/latest/237864777/426968101/1/1756151973000/confirm-delete.png)
-3.  A success message appears confirming the connector is deleted.
+2.  Confirm the selection by clicking Delete Connector.
+    
+
+A success message appears confirming the connector is deleted.

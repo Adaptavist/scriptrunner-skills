@@ -2,17 +2,17 @@
 
 - Platform: confluence-cloud
 - Space: SR4CC
-- Hierarchy: features > script-fragments
-- Doc ID: doc-sr4cc-343605319
-- Source: https://docs.adaptavist.com/sr4cc/latest/features/script-fragments/adaptavist-bridge
+- Hierarchy: Features > Script Fragments
+- Doc ID: doc-sr4cc-e2688664-82b8-48b4-81ee-bcdbd38d8d79-33e13bfa1ed1b89e
+- Source: https://docs.adaptavist.com/sr4cc/latest/features/script-fragments#adaptavist-bridge--en
 
-The Adaptavist bridge is a Javascript library that allows your [Script Fragments](https://docs.adaptavist.com/sr4cc/latest/features/script-fragments) to get Confluence information. The Adaptavist bridge also allows the script to use Confluence [REST APIs](https://developer.atlassian.com/cloud/confluence/rest/v2/intro/#about). The bridge serves as a wrapper for the [Confluence AP module](https://developer.atlassian.com/cloud/confluence/jsapi/request/) and allows your scripts to communicate with Confluence.
+The Adaptavist Bridge allows your scripts to communicate with Confluence.
 
-How the Adaptavist Bridge is injected into your script is determined by what you select for your **Source** on the Script Fragments form:
+The Adaptavist bridge is a Javascript library that allows your [Script Fragments](../script-fragments.md) to get Confluence information. The Adaptavist bridge also allows the script to use Confluence [REST APIs](https://developer.atlassian.com/cloud/confluence/rest/v2/intro/#about). The bridge serves as a wrapper for the [Confluence AP module](https://developer.atlassian.com/cloud/confluence/jsapi/request/) and allows your scripts to communicate with Confluence.
 
-![](/sr4cc/files/latest/343605319/343605321/1/1741119123000/source-bridge.png)
+How the Adaptavist Bridge is injected into your script is determined by what you select for your Source on the Script Fragments form:
 
-You can choose either a [Separate HTML, CSS, and Javascript URL](#id-.AdaptavistBridgevCurrent-separate) or a [Single URL](#id-.AdaptavistBridgevCurrent-single) for the **Source**.
+You can choose either a [Separate HTML, CSS, and Javascript URL](https://docs.adaptavist.com/sr4cc/latest/features/script-fragments#separate-html-css-and-javascript-url-source--en) or a [Single URL](https://docs.adaptavist.com/sr4cc/latest/features/script-fragments#single-url-source--en) for the Source.
 
 ## Separate HTML, CSS, and Javascript URL source
 
@@ -20,25 +20,25 @@ The bridge is automatically injected, and you can call it in your script.
 
 ## Single URL source
 
-If you are hosting your own site, you must include a script tag for our `bridge.js`. You can find the bridge by referencing `window.AdaptavistBridge` in your Javascript. This contains a context object, which provides more information on the current environment.
+If you are hosting your own site, you must include a script tag for our `bridge.js`. You can find the bridge by referencing `window.AdaptavistBridge` in your Javascript. This contains a context object, which provides more information on the current environment.
 
-The bridge is injected into the page as a global variable, which can be accessed via `window.AdaptavistBridge` and `window.AdaptavistBridgeContext`. The bridge can be loaded from [https://assets.hydrogen.sagittarius.connect.product.adaptavist.com/public/js/bridge.js](https://assets.hydrogen.sagittarius.connect.product.adaptavist.com/public/js/bridge.js?_ga=2.124797770.1741109699.1627303464-966992592.1626337931).
+The bridge is injected into the page as a global variable, which can be accessed via `window.AdaptavistBridge` and `window.AdaptavistBridgeContext`. The bridge can be loaded from [https://assets.hydrogen.sagittarius.connect.product.adaptavist.com/public/js/bridge.js](https://assets.hydrogen.sagittarius.connect.product.adaptavist.com/public/js/bridge.js).
 
-The `AdaptavistBridge` object provides access to the `request` property for making HTTP AJAX requests. The `AdaptavistBridgeContext` object provides a `context` property. The two properties, [Request](#id-.AdaptavistBridgevCurrent-request) and [Context](#id-.AdaptavistBridgevCurrent-context), are broken down in this section.
+The `AdaptavistBridge` object provides access to the `request` property for making HTTP AJAX requests. The `AdaptavistBridgeContext` object provides a `context` property. The two properties, [Request](https://docs.adaptavist.com/sr4cc/latest/features/script-fragments/adaptavist-bridge#request-property--en) and [Context](https://docs.adaptavist.com/sr4cc/latest/features/script-fragments/adaptavist-bridge#context-property--en), are broken down in this section.
 
 ### Request property
 
-The `[request](https://developer.atlassian.com/cloud/confluence/jsapi/request/)` property on `AdaptavistBridge` is a function. This function takes an object as an argument that includes the following properties:
+The [`request`](https://developer.atlassian.com/cloud/confluence/jsapi/request/) property on `AdaptavistBridge` is a function. This function takes an object as an argument that includes the following properties:
 
--   `url:` This property should be a relative URL to a Confluence REST API. 
--   `type`: This property should be one of the following HTTP methods: 
+-   `url:` This property should be a relative URL to a Confluence REST API.
+-   `type`: This property should be one of the following HTTP methods:
     -   `GET`
     -   `POST`
     -   `PUT`
     -   `DELETE`
 -   Any of the other options from Confluence's AP Request options
 
-An example of the script with the [`request`](https://developer.atlassian.com/cloud/confluence/jsapi/request/) property: 
+An example of the script with the [`request`](https://developer.atlassian.com/cloud/confluence/jsapi/request/) property:
 
 ```
 requestOptions = {
@@ -61,25 +61,25 @@ The `context` property on `AdaptavistBridgeContext` is an object that can have t
 -   `contentType`
 -   `contentPlugin`
 
-These properties allow accessing the Confluence APIs.  Here is an example of what the `context` object might contain:
+These properties allow accessing the Confluence APIs. Here is an example of what the `context` object might contain:
 
 ```
-AdaptavistBridgeContext.context = { 		
-	"entityKey":"SPACE",
-	"location":"atl.general0",
-	"pageId":"125132",
-	"spaceId":"56732934",
-	"pageVersion":"6",
-	"contentId":"125132",
-	"contentVersion":"6",
-	"contentType":"page",
-	"contentPlugin":""
+AdaptavistBridgeContext.context = {         
+ "entityKey":"SPACE",
+ "location":"atl.general0",
+ "pageId":"125132",
+ "spaceId":"56732934",
+ "pageVersion":"6",
+ "contentId":"125132",
+ "contentVersion":"6",
+ "contentType":"page",
+ "contentPlugin":""
 };
 ```
 
-## Example 
+## Example
 
-The bridge will make a request to the [Confluence REST APIs](https://developer.atlassian.com/cloud/confluence/rest/v2/intro/#auth) with space data taken from the context object:
+The bridge will make a request to the [Confluence REST APIs](https://developer.atlassian.com/cloud/confluence/rest/v2/intro/#auth) with space data taken from the context object:
 
 ```
 AdaptavistBridge.request({
@@ -91,7 +91,7 @@ AdaptavistBridge.request({
     });
 ```
 
-To receive one type of data, like the space name, use a script like this: 
+To receive one type of data, like the space name, use a script like this:
 
 ```
 AdaptavistBridge.request({
@@ -103,7 +103,7 @@ AdaptavistBridge.request({
     });
 ```
 
-Here is sample code written in HTML: 
+Here is sample code written in HTML: 
 
 ```
 <!DOCTYPE html>

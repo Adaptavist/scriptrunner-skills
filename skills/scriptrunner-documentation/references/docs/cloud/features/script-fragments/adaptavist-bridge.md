@@ -2,21 +2,21 @@
 
 - Platform: cloud
 - Space: SR4JC
-- Hierarchy: features > script-fragments
-- Doc ID: doc-sr4jc-115708698
-- Source: https://docs.adaptavist.com/sr4jc/latest/features/script-fragments/adaptavist-bridge
+- Hierarchy: Features > Script Fragments
+- Doc ID: doc-sr4jc-e3772b3c-b069-4ac1-8378-df06087e6057-2e40d1dddcff7b7d
+- Source: https://docs.adaptavist.com/sr4jc/latest/features/script-fragments#adaptavist-bridge--en
 
 ## Additional functionality with the Adaptavist bridge
 
 We provide some functionality, so your web panel can communicate with the Jira instance. If you are using the Separate HTML CSS Javascript source, then this feature is available to you by default.
 
-If you are hosting your own site, you need to include a script tag to our `bridge.js`, as outlined below. You can find the bridge by referencing `window.AdaptavistBridge` in your Javascript. This contains a context object, which provides more information of the current environment. Eg. If the panel is displayed inside a work item, the context will contain the issueKey. You can also make calls to the Jira REST API, with the context.request function. You can find more information about the [endpoint](https://developer.atlassian.com/cloud/jira/platform/rest/v2/), and the [usage](https://developer.atlassian.com/cloud/jira/platform/jsapi/request/) here.
+If you are hosting your own site, you need to include a script tag to our `bridge.js`, as outlined below. You can find the bridge by referencing `window.AdaptavistBridge` in your Javascript. This contains a context object, which provides more information of the current environment. Eg. If the panel is displayed inside a work item, the context will contain the issueKey. You can also make calls to the Jira REST API, with the context.request function. You can find more information about the [endpoint](https://developer.atlassian.com/cloud/jira/platform/rest/v2/), and the [usage](https://developer.atlassian.com/cloud/jira/platform/jsapi/request/) here.
 
 ## Include a script tag
 
 The bridge is a Javascript library that allows your scripts in the "web panel" feature of ScriptRunner to obtain information about the work item that users are viewing and also to use the Jira REST APIs.
 
-The bridge can be loaded from [https://assets.hydrogen.sagittarius.connect.product.adaptavist.com/public/js/bridge.js](https://assets.hydrogen.sagittarius.connect.product.adaptavist.com/public/js/bridge.js?_ga=2.124797770.1741109699.1627303464-966992592.1626337931)
+The bridge can be loaded from [https://assets.hydrogen.sagittarius.connect.product.adaptavist.com/public/js/bridge.js](https://assets.hydrogen.sagittarius.connect.product.adaptavist.com/public/js/bridge.js)
 
 If a script provides HTML/CSS/JS URLs, then the bridge is automatically injected, but it will need to be manually injected for single URL Web Panels.
 
@@ -32,7 +32,7 @@ The `AdaptavistBridge` object provides access to the `request` property for maki
 
 The `request` property on `AdaptavistBridge` is a function.
 
-This function takes an object as an argument that includes `url` and `type` properties, plus any of the other options from Jira’s AP Request options, for example:
+This function takes an object as an argument that includes `url` and `type` properties, plus any of the other options from Jira's AP Request options, for example:
 
 ```
 requestOptions = {
@@ -96,7 +96,7 @@ This request will receive all the data for this issue (work item).
 <p id="issueType"></p>
 <script>
 console.log(AdaptavistBridgeContext.context);
-
+ 
 AdaptavistBridge.request({
     url: `/rest/api/2/issue/${AdaptavistBridgeContext.context.issueKey}`,
     type: 'GET'

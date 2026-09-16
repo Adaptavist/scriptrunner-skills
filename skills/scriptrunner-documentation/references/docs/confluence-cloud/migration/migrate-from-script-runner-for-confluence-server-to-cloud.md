@@ -2,11 +2,11 @@
 
 - Platform: confluence-cloud
 - Space: SR4CC
-- Hierarchy: migration
-- Doc ID: doc-sr4cc-114205250
+- Hierarchy: Migration
+- Doc ID: doc-sr4cc-3872d17b-9902-45ea-b397-d0850d80603e-0b4fd6ae70135eac
 - Source: https://docs.adaptavist.com/sr4cc/latest/migration/migrate-from-scriptrunner-for-confluence-server-to-cloud
 
-If you have any custom scripts, they will have to be rewritten in the migration.
+Warning: If you have any custom scripts, they will have to be rewritten in the migration.
 
 The general approach to migrating a script from Server to Cloud is to analyze the purpose of the script, find the equivalent feature in Cloud (we have named them the same where possible), and rewrite the script. Interactions with APIs need to be replaced with calls to the appropriate REST APIs, and it is possible that alternatives may need to be found for dependencies that are not available for ScriptRunner Cloud.
 
@@ -16,7 +16,9 @@ For a concrete example, see the following two scripts which could be run from th
 
 You can see that both need to create a new object to represent the page. In the DC script, this is a [Page](https://docs.atlassian.com/ConfluenceServer/javadoc/7.12.0/com/atlassian/confluence/pages/Page.html) object. In the Cloud script, this is a List of [Map](https://docs.oracle.com/javase/8/docs/api/java/util/Map.html) objects that matches the Cloud REST API data specification for pages.
 
-Likewise, both need to make a call to save the new page. In the DC script, this is a call to the [PageManager#saveContentEntity](https://docs.atlassian.com/ConfluenceServer/javadoc/7.12.0/com/atlassian/confluence/core/ContentEntityManager.html#saveContentEntity-com.atlassian.confluence.core.ContentEntityObject-com.atlassian.confluence.core.ContentEntityObject-com.atlassian.confluence.core.SaveContext-) method. In the Cloud script, this is a call to the `post`  method, specifying the path to the [Content REST API](https://developer.atlassian.com/cloud/confluence/rest/api-group-content/#api-api-content-post).
+Likewise, both need to make a call to save the new page. In the DC script, this is a call to the [PageManager#saveContentEntity](https://docs.atlassian.com/ConfluenceServer/javadoc/7.12.0/com/atlassian/confluence/core/ContentEntityManager.html#saveContentEntity-com.atlassian.confluence.core.ContentEntityObject-com.atlassian.confluence.core.ContentEntityObject-com.atlassian.confluence.core.SaveContext-) method. In the Cloud script, this is a call to the `post` method, specifying the path to the [Content REST API](https://developer.atlassian.com/cloud/confluence/rest/api-group-content/#api-api-content-post).
+
+Server/DC Script
 
 ```
 import com.atlassian.confluence.core.DefaultSaveContext
@@ -56,6 +58,8 @@ pageManager.saveContentEntity(page, DefaultSaveContext.DEFAULT)
 return "New page ${page.title} created with id ${page.id}"
 ```
 
+Cloud Script
+
 ```
 // Specify all the required parameters
 def sourcePageId = "<SourcePageIDHere>"
@@ -90,23 +94,23 @@ def createPageResult = post("/wiki/rest/api/content")
 assert createPageResult.status == 200
 ```
 
-Notice in the Cloud script you don't use Service or Manager classes, but the REST API. Check out the [Cloud](https://developer.atlassian.com/cloud/confluence/rest/#api-content-post) and [Server](https://docs.atlassian.com/ConfluenceServer/javadoc/7.9.1/com/atlassian/confluence/core/ContentEntityManager.html?_ga=2.247268487.2062596853.1626098560-742945084.1620663288&_gac=1.79689190.1624649510.Cj0KCQjw_dWGBhDAARIsAMcYuJxr5FogI1q0GxtIV4snOyGMlYZkd15mW2DBp-4ZiQ51B6aYrNhqPaYaAsYZEALw_wcB#saveContentEntity-com.atlassian.confluence.core.ContentEntityObject-com.atlassian.confluence.core.ContentEntityObject-com.atlassian.confluence.core.SaveContext-) documentation for more information.
+Notice in the Cloud script you don't use Service or Manager classes, but the REST API. Check out the [Cloud](https://developer.atlassian.com/cloud/confluence/rest/#api-content-post) and [Server](https://docs.atlassian.com/ConfluenceServer/javadoc/7.9.1/com/atlassian/confluence/core/ContentEntityManager.html?_ga=2.247268487.2062596853.1626098560-742945084.1620663288&_gac=1.79689190.1624649510.Cj0KCQjw_dWGBhDAARIsAMcYuJxr5FogI1q0GxtIV4snOyGMlYZkd15mW2DBp-4ZiQ51B6aYrNhqPaYaAsYZEALw_wcB#saveContentEntity-com.atlassian.confluence.core.ContentEntityObject-com.atlassian.confluence.core.ContentEntityObject-com.atlassian.confluence.core.SaveContext-) documentation for more information.
 
-Assertions for response codes print out the response body and relevant information. A good pattern is to use `assert resp.status == 200` (replace 200 with the correct response code). Successful APIs call may respond with 204, others with 200, 201, or 303 depending on the API in use.
+Tip: Assertions for response codes print out the response body and relevant information. A good pattern is to use `assert resp.status == 200` (replace 200 with the correct response code). Successful APIs call may respond with 204, others with 200, 201, or 303 depending on the API in use.
 
 ## Logging
 
-Logging in scripts is very helpful when debugging. In Cloud scripts, anything printed to `stdout` using `println`, or using a `[logger.info](http://logger.info)('message')` call will be available in the [Script Logs](https://docs.adaptavist.com/sr4cc/latest/features/logging/script-logs) page, and in the execution history of script listeners and script jobs. As noted above, usage of assertions can also help debugging and diagnosing the behaviour of scripts.
+Logging in scripts is very helpful when debugging. In Cloud scripts, anything printed to `stdout` using `println`, or using a [logger.info](http://logger.info/) ( `'message'`) call will be available in the [Script Logs](../features/logging/script-logs.md) page, and in the execution history of script listeners and script jobs. As noted above, usage of assertions can also help debugging and diagnosing the behaviour of scripts.
 
 ## Migration approach
 
-Migration has three stages:  
+Migration has three stages:
 
 1.  Analysis of the functionality of the existing scripts.
 2.  Analysis of the APIs and ScriptRunner features that should be created
 3.  The implementation of the new scripts
 
-Each interaction with Confluence should be compared against the REST API docs and the ScriptRunner features. Some features of ScriptRunner for Confluence have not yet been implemented in the Cloud edition. Feature requests and suggestions are welcome in the [ScriptRunner Cloud support portal](https://productsupport.adaptavist.com/servicedesk/customer/portal/40).
+Each interaction with Confluence should be compared against the REST API docs and the ScriptRunner features. Some features of ScriptRunner for Confluence have not yet been implemented in the Cloud edition. Feature requests and suggestions are welcome in the [ScriptRunner Cloud support portal](https://the-adaptavist-group-support.atlassian.net/servicedesk/customer/portal/18).
 
 The final task is to re-implement the relevant scripts using ScriptRunner for Confluence Cloud.
 

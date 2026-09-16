@@ -2,61 +2,22 @@
 
 - Platform: confluence-cloud
 - Space: SR4CC
-- Hierarchy: migration
-- Doc ID: doc-sr4cc-114205208
+- Hierarchy: Migration
+- Doc ID: doc-sr4cc-47dfa549-cf66-4a6d-a7e3-042fd6b8e7ce-19264317e8b4ec97
 - Source: https://docs.adaptavist.com/sr4cc/latest/migration/platform-differences
 
-Due to the differences in the programming model and APIs, no automatic migration between Server and Cloud exists. The process of migration involves analyzing the desired functionality and translating that into the target platform. Confluence Cloud uses the [Atlassian Connect](https://developer.atlassian.com/cloud/confluence/about-confluence-cloud/) framework to allow apps like ScriptRunner to provide additional functionality whereas Confluence Server (and Data Center) uses the [Atlassian Plugins](https://developer.atlassian.com/docs/) framework, known as Plugins v2 or P2.
+Find tables describing the differences between ScriptRunner for Confluence Server/DC and Cloud to aid in rewriting scripts for migration.
+
+Due to the differences in the programming model and APIs, no automatic migration between Server and Cloud exists. The process of migration involves analyzing the desired functionality and translating that into the target platform. Confluence Cloud uses the [Atlassian Connect](https://developer.atlassian.com/cloud/confluence/about-confluence-cloud/) framework to allow apps like ScriptRunner to provide additional functionality, whereas Confluence Server (and Data Center) uses the [Atlassian Plugins](https://developer.atlassian.com/docs/) framework, known as Plugins v2 or P2.
 
 There are fundamental differences between Connect and P2 that directly impact ScriptRunner functionality and script writing. Some of the differences are:
 
-  
-
-  
-
-P2
-
-Connect
-
-API
-
-Java API.
-
-It is possible to call almost any of the Host application code directly. Plugins are running in the same JVM as the host application.
-
-[REST APIs](https://developer.atlassian.com/cloud/confluence/rest/) are available to interact with the host application.
-
-Connect has access to a limited set of REST APIs. This means that connect add-ons can only do things officially supported by the APIs, but it also means that APIs are less likely to change and add-ons are less likely to break as a result.
-
-UI
-
-Any part of the UI can be customized.
-
-Javascript runs as on the page in the same context and frame as the host application. Host application code can be manipulated and broken by add-ons and add-on code can easily be broken by host code (or its dependent libraries) updates.
-
-Specific areas can be cusomised.
-
-Each add-on runs in its own iframe and JavaScript Sandbox. Interaction with the host page is via a [JavaScript API](https://developer.atlassian.com/cloud/jira/platform/about-the-javascript-api/).
-
-Programming Model
-
-In the same JVM as the host application.
-
-Events can be vetoed and code runs synchronously. A bug in add-on code can seriously affect application stability or performance.
-
-Asynchronous. Runs as a completely separate service.
-
-No code runs in the same JVM as the host. Events are processed as [webhooks](https://developer.atlassian.com/cloud/confluence/modules/webhook/) that fired from the host and processed asynchronously by the add-on, so there's no waiting for events to be processed. A failing add-on does not impact the performance of an Atlassian application (although functionality may be missing).
-
-Authentication and Authorization
-
-Code can run as any user in the system including as no user (which is not the same as anonymous).
-
-Authentication and authorisation can be bypassed.
-
-Add-ons make requests as the add-on user or the user that initiated the interaction.
-
-It is not possible to bypass authorisation or authentication
+|  | P2 | Connect |
+| --- | --- | --- |
+| API | Java API.It is possible to call almost any of the Host application code directly. Plugins are running in the same JVM as the host application. | [REST APIs](https://developer.atlassian.com/cloud/confluence/rest/) are available to interact with the host application.Connect has access to a limited set of REST APIs. This means that connect add-ons can only do things officially supported by the APIs, but it also means that APIs are less likely to change and add-ons are less likely to break as a result. |
+| UI | Any part of the UI can be customized.Javascript runs as on the page in the same context and frame as the host application. Host application code can be manipulated and broken by add-ons and add-on code can easily be broken by host code (or its dependent libraries) updates. | Specific areas can be cusomised.Each add-on runs in its own iframe and JavaScript Sandbox. Interaction with the host page is via a [JavaScript API](https://developer.atlassian.com/cloud/jira/platform/about-the-javascript-api/). |
+| Programming Model | In the same JVM as the host application.Events can be vetoed and code runs synchronously. A bug in add-on code can seriously affect application stability or performance. | Asynchronous. Runs as a completely separate service.No code runs in the same JVM as the host. Events are processed as [webhooks](https://developer.atlassian.com/cloud/confluence/modules/webhook/) that fired from the host and processed asynchronously by the add-on, so there's no waiting for events to be processed. A failing add-on does not impact the performance of an Atlassian application (although functionality may be missing). |
+| Authentication and Authorization | Code can run as any user in the system including as no user (which is not the same as anonymous).Authentication and authorisation can be bypassed. | Add-ons make requests as the add-on user or the user that initiated the interaction.It is not possible to bypass authorisation or authentication |
 
 There are significant differences between the Connect and P2 frameworks, and it is necessary to re-think how ScriptRunner scripts execute and interact with the host application when moving from Server to Cloud or Cloud to Server.
 

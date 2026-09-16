@@ -2,11 +2,13 @@
 
 - Platform: confluence-cloud
 - Space: SR4CC
-- Hierarchy: hapi
-- Doc ID: doc-sr4cc-477865065
+- Hierarchy: HAPI
+- Doc ID: doc-sr4cc-f1067caa-9e87-4e36-805d-faa07db6810f-7b968235fd52cde0
 - Source: https://docs.adaptavist.com/sr4cc/latest/hapi/work-with-templates
 
-You can fetch [blueprint templates](https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-template/#api-wiki-rest-api-template-blueprint-get) inside your Confluence instance with a script like this: 
+Learn about using HAPI to complete tasks related to templates.
+
+You can fetch [blueprint templates](https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-template/#api-wiki-rest-api-template-blueprint-get) inside your Confluence instance with a script like this:
 
 ```
 def template = Templates.getBlueprintTemplates();
@@ -16,13 +18,11 @@ template.each(t ->{
 })
 ```
 
-In the Log, you can see that blueprint templates were imported. Here is an example: 
+In the Log, you can see that blueprint templates were imported. Here is an example:
 
-![](/sr4cc/files/latest/477865065/477865067/1/1765461512000/blueprint.png)
+Tip: Fetching blueprint templates is also available as an [Example Script](https://docs.adaptavist.com/sr4cc/latest/scripting-resources/example-scripts)!
 
-Fetching blueprint templates is also available as an [Example Script](https://docs.adaptavist.com/sr4cc/latest/scripting-resources/example-scripts)! 
-
-The blueprint template properties you can work with are: 
+The blueprint template properties you can work with are:
 
 -   `templateId`
 -   `name`
@@ -30,4 +30,4 @@ The blueprint template properties you can work with are: 
 -   `templateType`
 -   `space`
 
-For more information about blueprint templates, check out the [Atlassian documentation](https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-template/#api-wiki-rest-api-template-blueprint-get).
+Tip: For more information about blueprint templates, check out the [Atlassian documentation](https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-template/#api-wiki-rest-api-template-blueprint-get).

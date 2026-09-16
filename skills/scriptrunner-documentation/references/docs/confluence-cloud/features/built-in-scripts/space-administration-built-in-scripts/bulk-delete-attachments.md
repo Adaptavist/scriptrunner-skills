@@ -2,46 +2,32 @@
 
 - Platform: confluence-cloud
 - Space: SR4CC
-- Hierarchy: features > built-in-scripts > space-administration-built-in-scripts
-- Doc ID: doc-sr4cc-114204378
+- Hierarchy: Features > Built-In Scripts > Space Administration Built-In Scripts
+- Doc ID: doc-sr4cc-f9f2a225-5a9c-4cc5-af38-1a5cd2a9b588-6293d6e27f1680df
 - Source: https://docs.adaptavist.com/sr4cc/latest/features/built-in-scripts/space-administration-built-in-scripts/bulk-delete-attachments
 
-Use _Bulk Delete Attachments_ to delete all attachments associated with a page or pages.
+Instructions for using the Bulk Delete Attachments built-in script.
 
-This feature will delete the attachment on all versions of the page or pages.
+Use _Bulk Delete Attachments_ to delete all attachments associated with one or more pages.
 
-## Run the script
+Warning: This feature will delete the attachment on all versions of the page(s).
 
-To run this script, follow these steps: 
+To run this script, follow these steps:
 
-1.  Select the **Space**.
-    
-2.  Select the parent or child pages you want to update for **Select a Space**. 
-    
-3.  Select **Run.  
-    ![](/sr4cc/files/latest/114204164/128387448/2/1686597762000/image2021-12-14_12-56-21.png)  
-    **
+1.  Select the Space.
+2.  Select the parent or child pages you want to update for Select a Space.
+3.  Select Run.
     
 
-### Result
+Once you select Run, your results appear. You will be notified how many attachments were deleted, how many pages they were deleted from, and what type of attachments (attachment or image) was deleted.
 
-Once you select **Run**, your results appear. You will be notified how many attachments were deleted, how many pages they were deleted from, and what type of attachments (attachment or image) was deleted. 
+## Remove all attachments from a space
 
-![](/sr4cc/files/latest/114204164/179608752/1/1684776975000/result.png)
+To remove all attachments from a space, follow these steps:
 
-## Example
+1.  Enter _HR_ for Space to select the _Internal HR Information_ space.
+2.  Select the entire space for Select a Space.
+3.  Select Run.
+    
 
-### Remove all attachments from a space
-
-To remove all attachments from a space, follow these steps: 
-
-1.  Enter _HR_ for **Space** to select the _Internal HR Information_ space. 
-2.  Select the entire space for **Select a Space**. 
-3.  Select **Run**.   
-    ![](/sr4cc/files/latest/114204164/179608754/1/1684776721000/bulk_delete_attachments_example.png)
-
-#### Results
-
-Once you select **Run**, your results will appear: 
-
-![](/sr4cc/files/latest/114204164/179608753/1/1684776721000/bulk_delete_attachment_result.png)
+Once you select Run, your results will appear:

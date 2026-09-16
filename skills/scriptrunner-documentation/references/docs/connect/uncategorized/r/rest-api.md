@@ -3,22 +3,20 @@
 - Platform: connect
 - Space: SRC
 - Hierarchy: n/a
-- Doc ID: doc-src-326370518
+- Doc ID: doc-src-2963623d-0a05-4e57-9a02-dde15a45d339-1a378fe187f2c162
 - Source: https://docs.adaptavist.com/src/latest/rest-api
 
 ScriptRunner Connect offers a RESTful API to help you accomplish more with the app.
 
-You can create new API keys and access existing ones from the app by clicking your name at the bottom-left corner of the screen and then clicking **API Keys**. 
+You can create new API keys and access existing ones from the app by clicking your name at the bottom-left corner of the screen and then clicking API Keys.
 
-![](/src/files/latest/326370518/326370519/1/1738876168000/API-Keys.png)
+Note: Base URL ℹ️
 
-**Base URL  ℹ️**
+The base URLs are [https://api.scriptrunnerconnect.com](https://api.scriptrunnerconnect.com/) for the EU region and [https://api.us.scriptrunnerconnect.com](https://api.us.scriptrunnerconnect.com/) for the US region.
 
-The base URLs are https://api.scriptrunnerconnect.com for the EU region and https://api.us.scriptrunnerconnect.com for the US region.
+Note: Limited API coverage 🚧
 
-**Limited API coverage  🚧**
-
-API coverage is currently limited, but it is expected to grow over time. Feel free to [contact our support](https://the-adaptavist-group-support.atlassian.net/servicedesk/customer/portal/20/user/login) to request more capabilities.
+API coverage is currently limited, but it is expected to grow over time. Feel free to [contact our support](https://the-adaptavist-group-support.atlassian.net/servicedesk/customer/portal/20/user/login) to request more capabilities.
 
 ## Browse the API
 
@@ -27,15 +25,15 @@ API coverage is currently limited, but it is expected to grow over time. Feel fr
 
 ## Authentication
 
-ScriptRunner Connect API utilizes [basic authentication](https://en.wikipedia.org/wiki/Basic_access_authentication) where the user's email address is the `username` and the API key is the `passwordz`. To generate an API key, click on your name in the bottom left area of the screen, then select **API Keys.** From there, you can generate a new API key.
+ScriptRunner Connect API utilizes [basic authentication](https://en.wikipedia.org/wiki/Basic_access_authentication) where the user's email address is the `username` and the API key is the `passwordz`. To generate an API key, click on your name in the bottom left area of the screen, then select API Keys. From there, you can generate a new API key.
 
-Once you have the API key, send it along with the `Authorization` header as follows: `Basic base64Encoded(UserName:ApiKey)`. When you generate the API Key, you will also receive the base64 encoded `Authorization` header value, which you can use directly.
+Once you have the API key, send it along with the `Authorization` header as follows: `Basic base64Encoded(UserName:ApiKey)`. When you generate the API Key, you will also receive the base64 encoded `Authorization` header value, which you can use directly.
 
-**Single key per activity  ☝🏽**
+Tip: Single key per activity ☝🏽
 
 We recommend generating a new key for each activity. This makes it easier to deactivate the activity by deleting the associated API key.
 
-**API keys are not retrievable  💾**
+Note: API keys are not retrievable 💾
 
 Once the key is generated, make a copy and store it securely. Once you have closed the window that exposed the API key, you won't be able to retrieve it again.
 
@@ -45,4 +43,4 @@ Although we currently don't offer a connector or a managed API for our own API, 
 
 ## Rate limits
 
-API endpoints are rate-limited; see [Limits and Quotas](https://docs.adaptavist.com/src/latest/limits-and-quotas) to review the exact limits. If throttled, you'll see a `429` HTTP status code; retry the API call at a later time.
+API endpoints are rate-limited; see [Limits and Quotas](../l/limits-and-quotas.md) to review the exact limits. If throttled, you'll see a `429` HTTP status code; retry the API call at a later time.

@@ -2,19 +2,21 @@
 
 - Platform: confluence-cloud
 - Space: SR4CC
-- Hierarchy: release-notes
-- Doc ID: doc-sr4cc-117672039
+- Hierarchy: Release Notes
+- Doc ID: doc-sr4cc-2fe7725c-fa57-45d9-ab82-09fb7bc7fb9a-b9976606a608a231
 - Source: https://docs.adaptavist.com/sr4cc/latest/release-notes/recent-release-notes
 
-Check out release notes for the current year here. For other release notes, visit [Older Release Notes](https://docs.adaptavist.com/sr4cc/latest/release-notes/older-release-notes).
+Notes on our latest versions of the app.
+
+Check out release notes for the current year here. For other release notes, visit [Older Release Notes](older-release-notes.md).
 
 ## 1 September 2026
 
-**We have migrated ScriptRunner for Confluence Cloud admin pages to Forge Remote!**
+We have migrated ScriptRunner for Confluence Cloud admin pages to Forge Remote!
 
 All of your data will remain unaffected and accessible. Other than the following updates, ScriptRunner for Confluence Cloud features function the same, and there is no removal of features. You may temporarily see the admin app in both locations. Changes made in either location will be saved.
 
-Action required: Update bookmarks
+Warning: Action required: Update bookmarks
 
 Administration page URLs have changed since migration. Please update your bookmarks for any administration pages you have saved.
 
@@ -22,15 +24,12 @@ Administration page URLs have changed since migration. Please update your bookma
 
 You can now access our app in two ways:
 
--   Confluence Administration  
-    ![](/sr4cc/files/latest/117672039/550242284/1/1773945436000/CA-Apps.png)
--   Your Apps  
-    ![](/sr4cc/files/latest/117672039/550242283/1/1773945474000/d5547f22a32f8c95cd2e828c7e83c048f3758c17-392x411.png)
+-   Confluence Administration
+-   Your Apps
 
-Navigation to ScriptRunner for Confluence Cloud features is now done through the top navigation:  
-![](/sr4cc/files/latest/117672039/550242282/1/1773945619000/topnav.png)
+Navigation to ScriptRunner for Confluence Cloud features is now done through the top navigation:
 
-Select **More** for the additional features:
+Select More for the additional features:
 
 -   CQL Script Jobs
 -   Script Variables
@@ -40,22 +39,20 @@ Select **More** for the additional features:
 -   Audit Logs
 -   Settings
 
-Learn more about how to navigate to and within the app [here](https://docs.adaptavist.com/sr4cc/latest/get-started/navigation).
+Tip:
 
-### Space administration built-in scripts navigation
+Learn more about how to navigate to and within the app [here](../get-started/navigation.md).
 
 You can now access space administration built-in scripts in two ways:
 
--   **Space** **Settings** > **Integrations** > **ScriptRunner  
-    ![](/sr4cc/files/latest/117672039/550242280/1/1773946188000/space-settings.png)  
-    **
--   **Space Apps  
-    ![](/sr4cc/files/latest/117672039/550242281/1/1773945935000/2e21f1b5f04d6ee56acca9e05ebb472fe927af2c-296x482.png)  
-    **
+-   Space Settings > Administration > ScriptRunner
+-   Space Apps
 
 Once either of these are selected, the built-in scripts open.
 
-Learn more about space administration built-in scripts [here](https://docs.adaptavist.com/sr4cc/latest/features/built-in-scripts/space-administration-built-in-scripts).
+Tip:
+
+Learn more about space administration built-in scripts [here](../features/built-in-scripts/space-administration-built-in-scripts.md).
 
 If you have any questions, please [contact support](https://the-adaptavist-group-support.atlassian.net/servicedesk/customer/portal/18).
 
@@ -63,21 +60,19 @@ If you have any questions, please [contact support](https://the-adaptavist-group
 
 ### Script Manager enhancement
 
-New script usage functionality has been added to the [Script Manager](https://docs.adaptavist.com/sr4cc/latest/features/script-manager) feature that enables you to check where your saved scripts are used in your ScriptRunner for Confluence Cloud instance. It allows you to review details on the location and number of configurations where your scripts are loaded.
+New script usage functionality has been added to the [Script Manager](../features/script-manager.md) feature that enables you to check where your saved scripts are used in your ScriptRunner for Confluence Cloud instance. It allows you to review details on the location and number of configurations where your scripts are loaded.
 
 ## 21 July 2026
 
 ### Markdown Macro now available
 
-We've added a Markdown macro to the Built-in Macros section of ScriptRunner for Confluence Cloud!   
-The _Markdown_ macro lets you use Markdown to format Confluence pages. You can use this macro to insert your own markdown inline tags or to render them from a URL.  
-The Markdown macro supports migrated content from ScriptRunner for Confluence DC to our Cloud-based app.
+We've added a Markdown macro to the Built-in Macros section of ScriptRunner for Confluence Cloud! The _Markdown_ macro lets you use Markdown to format Confluence pages. You can use this macro to insert your own markdown inline tags or to render them from a URL. The Markdown macro supports migrated content from ScriptRunner for Confluence DC to our Cloud-based app.
 
-Check out the [Markdown Macro](https://docs.adaptavist.com/sr4cc/latest/features/macros/built-in-macros/markdown) now! 
+Check out the [Markdown Macro](../features/macros/built-in-macros/markdown.md) now!
 
 ## 26 February 2026
 
-### Advanced notice for platform change
+### Advance notice for platform change
 
 ScriptRunner for Confluence Cloud is migrating to Forge for our app platform! The upcoming changes are minimal to you and do not require a migration on your end, and all of your data will remain unaffected and accessible. A few updates are coming, including:
 
@@ -85,11 +80,11 @@ ScriptRunner for Confluence Cloud is migrating to Forge for our app platform! Th
 -   Navigation to features within ScriptRunner for Confluence Cloud
 -   The order of features within ScriptRunner for Confluence Cloud
 
-We will update this page with more information closer to when the changes will go live. In the meantime, you might take note of your current bookmarks to ScriptRunner because they will need to be updated once the change is live. ![rocket](/plugins/servlet/twitterEmojiRedirector?id=1f680 "rocket") 
+We will update this page with more information closer to when the changes will go live. In the meantime, you might take note of your current bookmarks to ScriptRunner because they will need to be updated once the change is live.
 
 ### Example Scripts HAPI update
 
-The following [Example Scripts](https://docs.adaptavist.com/sr4cc/latest/scripting-resources/example-scripts) have been updated to include HAPI: 
+The following [Example Scripts](https://docs.adaptavist.com/sr4cc/latest/scripting-resources/example-scripts) have been updated to include HAPI:
 
 -   Find and replace text across space
 
@@ -102,24 +97,24 @@ The following [Example Scripts](https://docs.adaptavist.com/sr4cc/latest/scripti
 
 ### New HAPI method
 
-You can now get all pages in a space, set the body format of each page, and fetch the body of each page using one HAPI script. Check out [Get all pages and their body format](https://docs.adaptavist.com/sr4cc/latest/hapi/work-with-spaces) in a space for more information!
+You can now get all pages in a space, set the body format of each page, and fetch the body of each page using one HAPI script. Check out [Get all pages and their body format](../hapi/work-with-spaces.md) in a space for more information!
 
 ### Bugs fixed
 
--   HAPI autocomplete for [Work with Templates](https://docs.adaptavist.com/sr4cc/latest/hapi/work-with-templates) has been fixed. 
--   An error with [Quick Scripting](https://docs.adaptavist.com/sr4cc/latest/get-started/navigation/quick-scripting) search and categorization has been fixed. 
+-   HAPI autocomplete for [Work with Templates](../hapi/work-with-templates.md) has been fixed.
+-   An error with [Quick Scripting](../get-started/navigation/quick-scripting.md) search and categorization has been fixed.
 
 ## 5 February 2026
 
-### Script Manager is now available! 
+### Script Manager is now available!
 
-[Script Manager](https://docs.adaptavist.com/sr4cc/latest/features/script-manager) allows you to manage saved `.groovy` scripts and folders directly from the ScriptRunner front-end. It enables you to create, edit, save, delete, and rename scripts and folders within your instance without relying on FTP services or server administrators. [Check it out](https://docs.adaptavist.com/sr4cc/latest/features/script-manager) now! ![rocket](/plugins/servlet/twitterEmojiRedirector?id=1f680 "rocket")  
+[Script Manager](../features/script-manager.md) allows you to manage saved `.groovy` scripts and folders directly from the ScriptRunner front-end. It enables you to create, edit, save, delete, and rename scripts and folders within your instance without relying on FTP services or server administrators. [Check it out](../features/script-manager.md) now!
 
 ## 23 January 2026
 
 ### Bugs fixed
 
-Minor bug fixes in Script Jobs and Built-In Scripts were fixed. 
+Minor bug fixes in Script Jobs and Built-In Scripts were fixed.
 
 ## 9 January 2026
 
@@ -131,23 +126,23 @@ We made minor UI refinements to improve visual consistency and clarity. These up
 
 ### New HAPI methods
 
--   [Work with Templates](https://docs.adaptavist.com/sr4cc/latest/hapi/work-with-templates): You can now fetch blueprint templates from inside your Confluence instance. 
--   [Work with Pages](https://docs.adaptavist.com/sr4cc/latest/hapi/work-with-pages): You can now [update your body text of a page](https://docs.adaptavist.com/sr4cc/latest/hapi/work-with-pages#update-the-body-text-of-a-page). 
+-   [Work with Templates](../hapi/work-with-templates.md): You can now fetch blueprint templates from inside your Confluence instance.
+-   [Work with Pages](../hapi/work-with-pages.md): You can now update the body of a page.
 
-Fetching blueprint templates is also available as an [Example Script](https://docs.adaptavist.com/sr4cc/latest/scripting-resources/example-scripts)! 
+Tip: Fetching blueprint templates is also available as an [Example Script](https://docs.adaptavist.com/sr4cc/latest/scripting-resources/example-scripts)!
 
 ## 5 December 2025
 
 ### Bugs fixed
 
--   A deprecated endpoint was causing errors when migrating macros from Data Center to Cloud. This issue has been resolved. 
+-   A deprecated endpoint was causing errors when migrating macros from Data Center to Cloud. This issue has been resolved.
 -   A bug that affected the Workflow page was fixed.
 
 ## 3 December 2025
 
-### New HAPI method ![rocket](/plugins/servlet/twitterEmojiRedirector?id=1f680 "rocket")
+### New HAPI method
 
-A new [HAPI](https://docs.adaptavist.com/sr4cc/latest/hapi) method is now available! You can now [set the body format](https://docs.adaptavist.com/sr4cc/latest/hapi/work-with-pages#set-the-body-format) when getting a page.
+A new [HAPI](../uncategorized/h/hapi.md) method is now available! You can now [set the body format](../hapi/work-with-pages.md) when getting a page.
 
 ## 20 November 2025
 
@@ -157,15 +152,15 @@ A bug that affected scripting relative URL requests with `basicAuth` was fixed.
 
 ## 17 November 2025
 
-### New HAPI methods are live! ![rocket](/plugins/servlet/twitterEmojiRedirector?id=1f680 "rocket")
+### New HAPI methods are live!
 
-There are new [HAPI](https://docs.adaptavist.com/sr4cc/latest/hapi) methods available! You can now update the name and the status of a [space](https://docs.adaptavist.com/sr4cc/latest/hapi/work-with-spaces).
+There are new [HAPI](../uncategorized/h/hapi.md) methods available! You can now update the name and the status of a [space](../hapi/work-with-spaces.md).
 
 ## 7 November 2025
 
 ### Bugs fixed
 
-A bug that affected page counts on the [Bulk Add or Remove Labels on One or More Pages](https://docs.adaptavist.com/sr4cc/latest/features/built-in-scripts/confluence-administration-built-in-script/bulk-add-or-remove-labels-on-one-or-more-pages) built-in script was fixed.
+A bug that affected page counts on the [Bulk Add or Remove Labels on One or More Pages](https://docs.adaptavist.com/sr4cc/latest/features/built-in-scripts/confluence-administration-built-in-scripts/bulk-add-or-remove-labels-on-one-or-more-pages) built-in script was fixed.
 
 ## 24 October 2025
 
@@ -178,11 +173,11 @@ A bug that affected page counts on the [Bulk Add or Remove Labels on One or More
 
 ### Example Scripts HAPI update
 
-The following [Example Scripts](https://docs.adaptavist.com/sr4cc/latest/scripting-resources/example-scripts) have been updated to include HAPI: 
+The following [Example Scripts](https://docs.adaptavist.com/sr4cc/latest/scripting-resources/example-scripts) have been updated to include HAPI:
 
 -   Add comment on a page
 -   Add label to outdated pages job
--   Perform a CQL search in ScriptRunner for Confluence Cloud
+-   Perform a CQL search in ScriptRunner for Confluence Cloud.
 
 ## 9 October 2025
 
@@ -194,55 +189,51 @@ A bug that affected HAPI autocomplete was fixed.
 
 ### New ScriptRunner Home and Quick Scripting pages
 
-We have introduced two new pages in the ScriptRunner for Confluence Cloud app! These updates make ScriptRunner easier to use and navigate. Meet the [ScriptRunner Home](https://docs.adaptavist.com/sr4cc/latest/get-started/navigation/scriptrunner-home) and reimagined [Quick Scripting](https://docs.adaptavist.com/sr4cc/latest/get-started/navigation/quick-scripting) pages!
+We have introduced two new pages in the ScriptRunner for Confluence Cloud app! These updates make ScriptRunner easier to use and navigate. Meet the [ScriptRunner Home](../get-started/navigation/script-runner-home.md) and reimagined [Quick Scripting](../get-started/navigation/quick-scripting.md) pages!
 
-[ScriptRunner Home](https://docs.adaptavist.com/sr4cc/latest/get-started/navigation/scriptrunner-home) provides a snapshot of your Confluence instance's capabilities, highlights current activity within your instance, and directs you to help resources and [Example Scripts](https://docs.adaptavist.com/sr4cc/latest/scripting-resources/example-scripts). Check it out below! 
+[ScriptRunner Home](../get-started/navigation/script-runner-home.md) provides a snapshot of your Confluence instance's capabilities, highlights current activity within your instance, and directs you to help resources and [Example Scripts](https://docs.adaptavist.com/sr4cc/latest/scripting-resources/example-scripts). Check it out below!
 
-![](/sr4cc/files/latest/117672039/445218837/1/1759333166000/home.png)
-
-Formerly known as the homepage, the new [Quick Scripting](https://docs.adaptavist.com/sr4cc/latest/get-started/navigation/quick-scripting) page can be used to search and discover ScriptRunner functionality, including scripts and macros. Check it out below! 
-
-![](/sr4cc/files/latest/117672039/445218835/1/1759333166000/quick-scripting-2.png)
+Formerly known as the homepage, the new [Quick Scripting](../get-started/navigation/quick-scripting.md) page can be used to search and discover ScriptRunner functionality, including scripts and macros. Check it out below!
 
 ## 1 October 2025
 
-### New HAPI methods are live! ![rocket](/plugins/servlet/twitterEmojiRedirector?id=1f680 "rocket") 
+### New HAPI methods are live!
 
-There are new [HAPI](https://docs.adaptavist.com/sr4cc/latest/hapi) methods available: 
+There are new [HAPI](../uncategorized/h/hapi.md) methods available:
 
--   [Pages](https://docs.adaptavist.com/sr4cc/latest/hapi/work-with-pages): You can now move a page to a different space. 
--   [Page Components](https://docs.adaptavist.com/sr4cc/latest/hapi/work-with-page-components): You can now add a footer comment to a page.
--   [Spaces](https://docs.adaptavist.com/sr4cc/latest/hapi/work-with-spaces): You can delete all pages with a certain status from a space.
+-   [Pages](../hapi/work-with-pages.md): You can now move a page to a different space.
+-   [Page Components](../hapi/work-with-page-components.md): You can now add a footer comment to a page.
+-   [Spaces](../hapi/work-with-spaces.md): You can delete all pages with a certain status from a space.
 
 ### HAPI documentation update
 
-As our [HAPI](https://docs.adaptavist.com/sr4cc/latest/hapi) methods list grows, we've improved the documentation organization to get you the information you need faster. You can now find HAPI methods in four sections: 
+As our [HAPI](../uncategorized/h/hapi.md) methods list grows, we've improved the documentation organization to get you the information you need faster. You can now find HAPI methods in four sections:
 
--   [Search for Pages](https://docs.adaptavist.com/sr4cc/latest/hapi/search-for-pages): Find everything you need to search your instance for pages. 
--   [Work with Labels](https://docs.adaptavist.com/sr4cc/latest/hapi/work-with-labels): Find what you need to work with HAPI methods for labels.
--   [Work with Pages](https://docs.adaptavist.com/sr4cc/latest/hapi/work-with-pages): Find what you need to create, delete, move, and update pages using HAPI. 
--   [Work with Spaces](https://docs.adaptavist.com/sr4cc/latest/hapi/work-with-spaces): Find what you need to create, delete, get space information (including permissions), and search for spaces.
+-   [Search for Pages](../hapi/search-for-pages.md): Find everything you need to search pages in your instance.
+-   [Work with Labels](../hapi/work-with-labels.md): Find what you need to work with HAPI methods for labels.
+-   [Work with Pages](../hapi/work-with-pages.md): Find what you need to create, delete, move, and update pages using HAPI.
+-   [Work with Spaces](../hapi/work-with-spaces.md): Find what you need to create, delete, get space information (including permissions), and search for spaces.
 
 ## 26 September 2025
 
 ### Example Scripts HAPI update
 
-The following [Example Scripts](https://docs.adaptavist.com/sr4cc/latest/scripting-resources/example-scripts) have been updated to include HAPI: 
+The following [Example Script](https://docs.adaptavist.com/sr4cc/latest/scripting-resources/example-scripts) has been updated to include HAPI:
 
 -   Delete space
 
 ## 19 September 2025
 
-### New HAPI methods are live! ![rocket](/plugins/servlet/twitterEmojiRedirector?id=1f680 "rocket") 
+### New HAPI methods are live!
 
-There are new [HAPI](https://docs.adaptavist.com/sr4cc/latest/hapi) methods available: 
+There are new [HAPI](../uncategorized/h/hapi.md) methods available:
 
--   [Pages](https://docs.adaptavist.com/sr4cc/latest/hapi/work-with-pages): You can now get all attachments of a page and and search for pages using titles and CQL! 
--   [Spaces](https://docs.adaptavist.com/sr4cc/latest/hapi/work-with-spaces): You can now delete a space, get all pages in a space, and get space permissions! 
+-   [Pages](../hapi/work-with-pages.md): You can now get all attachments of a page and search for pages using titles and CQL!
+-   [Spaces](../hapi/work-with-spaces.md): You can now delete a space, get all pages in a space, and get space permissions!
 
 ## 13 September 2025
 
-### Bugs fixed
+### Bug fixed
 
 A bug affecting built-in scripts that returned archived pages was fixed.
 
@@ -250,76 +241,76 @@ A bug affecting built-in scripts that returned archived pages was fixed.
 
 ### Example Scripts HAPI update
 
-The following [Example Scripts](https://docs.adaptavist.com/sr4cc/latest/scripting-resources/example-scripts) have been updated to include HAPI: 
+The following [Example Scripts](https://docs.adaptavist.com/sr4cc/latest/scripting-resources/example-scripts) have been updated to include HAPI:
 
 -   Create space
 -   Get all spaces
 -   Create page in space
 
-![](/sr4cc/files/latest/117672039/423166408/1/1755277546000/example-scripts-rn.png)
-
-### Bugs fixed
+### Bug fixed
 
 A bug affecting custom macros that returned an error for specific parameters (like a `string` parameter, for example) was fixed.
 
 ### Documentation updates
 
--   The [Feature Parity](https://docs.adaptavist.com/sr4cc/latest/migration/feature-parity) page has been updated with information about Custom REST Endpoints.
--   The new [Rewrite Scripts for Cloud Guide](https://docs.adaptavist.com/sr4cc/latest/migration/rewrite-scripts-for-cloud-guide) is there to help you rewrite ScriptRunner for Confluence scripts for your migration from Data Center to Cloud! 
+-   The [Feature Parity](../migration/feature-parity.md) page has been updated with information about Custom REST Endpoints.
+-   The new [Rewrite Scripts for Cloud Guide](../migration/rewrite-scripts-for-cloud-guide.md) is there to help you rewrite ScriptRunner for Confluence scripts for your migration from Data Center to Cloud!
 
 ## 1 August 2025
 
-### HAPI is live! ![rocket](/plugins/servlet/twitterEmojiRedirector?id=1f680 "rocket") 
+### HAPI is live!
 
-Our major scripting innovation is now available to use in ScriptRunner for Confluence Cloud. [HAPI](https://docs.adaptavist.com/sr4cc/latest/hapi) is an API optimized for Confluence automations and integrated within the code editor. HAPI is not a new programming language. It's essentially plain Groovy, but it gives you a simpler alternative to Confluence's regular API. You can even mix and match HAPI calls with the Confluence API.
+Our major scripting innovation is now available to use in ScriptRunner for Confluence Cloud.
 
-HAPI enables you to create automations and customizations faster than ever. We've simplified the following component APIs with HAPI: 
+[HAPI](../uncategorized/h/hapi.md) is an API optimized for Confluence automations and integrated within the code editor. HAPI is not a new programming language. It's essentially plain Groovy, but it gives you a simpler alternative to Confluence's regular API. You can even mix and match HAPI calls with the Confluence API.
 
--   [Pages](https://docs.adaptavist.com/sr4cc/latest/hapi/work-with-pages): Using HAPI, you can now create new pages, delete pages, get, and update pages by their IDs using simple lines of code. 
--   [Labels](https://docs.adaptavist.com/sr4cc/latest/hapi/work-with-labels): HAPI makes it easier for you to add and find labels! 
--   [Spaces](https://docs.adaptavist.com/sr4cc/latest/hapi/work-with-spaces): We've made it easy for you to create a new space, retrieve spaces, and search for spaces with CQL!
+HAPI enables you to create automations and customizations faster than ever. We've simplified the following component APIs with HAPI:
 
-Take a look at our [HAPI documentation](https://docs.adaptavist.com/sr4cc/latest/hapi) and the HAPI [Javadocs](https://adaptavist-api-docs-prod.s3.us-east-1.amazonaws.com/api/javadoc/cloud/scriptrunner/latest/hapi/confluence/groovydoc/index.html) to learn more. 
+-   [Pages](../hapi/work-with-pages.md): Using HAPI, you can now create new pages, delete pages, get, and update pages by their IDs using simple lines of code.
+-   [Labels](../hapi/work-with-labels.md): HAPI makes it easier to add and find labels!
+-   [Spaces](../hapi/work-with-spaces.md):
 
-Autocompletions
+Note: Autocompletions
 
-3When using HAPI in the code editor you'll notice helpful completions with available methods within the context of your operation. If you need to display completions after they have disappeared, press the keyboard shortcut **Control + Space.**
+When using HAPI in the code editor you'll notice helpful completions with available methods within the context of your operation. If you need to display completions after they have disappeared, press the keyboard shortcut Control + Space.
 
-Keep an eye on these release notes and the [HAPI Changelog](https://docs.adaptavist.com/sr4cc/latest/release-notes/hapi-changelog) for updates.
+Keep an eye on these release notes and the [HAPI Changelog](hapi-changelog.md) for updates.
 
 ### Documentation updates
 
--   The [Feature Parity](https://docs.adaptavist.com/sr4cc/latest/migration/feature-parity) page has been updated with information about Custom REST Endpoints.
+The [Feature Parity](../migration/feature-parity.md) page has been upated with information about Custom REST Endpoints.
 
 ## July 2025
 
-We are changing how we create release notes! We will communicate more changes with you, including small updates and bug fixes. Have feedback for us? [Raise a support ticket here](https://the-adaptavist-group-support.atlassian.net/servicedesk/customer/user/login?destination=portals). 
+We are changing how we create release notes! We will communicate more changes with you, including small updates and bug fixes. Have feedback for us? [Raise a support ticket here](https://the-adaptavist-group-support.atlassian.net/servicedesk/customer/user/login?destination=portals).
 
 ### Bug fixes
 
--   We fixed an issue in the Custom Macro that caused non-ASCII characters (such as ç, ã, etc.) to be rendered incorrectly. Previously, text containing these characters was displayed as question marks. With this fix, the macro now accurately displays non-ASCII text as intended.
+We fixed an issue in the Custom Macro that caused non-ASCII characters (such as ç, ã, etc.) to be rendered incorrectly. Previously Previously, text containing these characters was displayed as question marks. With this fix, the macro now accurately displays non-ASCII text as intended.
 
 ### Documentation updates
 
--   The [Feature Parity](https://docs.adaptavist.com/sr4cc/latest/migration/feature-parity) page has been updated with information about Script Fragments and CQL Functions. 
--   There's a new use case, [Example: Search all pages that contain a specific label](https://docs.adaptavist.com/sr4cc/latest/features/macros/custom-macros/example-cql-function-search-all-pages-that-contain-a-specific-label), to assist in your Data Center to Cloud migration.
+-   The [Feature Parity](../migration/feature-parity.md) page has been updated with information about Script Fragments and CQL Functions.
+-   There's a new use case, [Example: Search all pages that contain a specific label](https://docs.adaptavist.com/sr4cc/latest/features/macros/custom-macros/example-cql-function-search-all-pages-that-contain-a-specific-label), to assist in your Data Center to Cloud migration.
+
+### Feature parity documentation update
+
+The [Feature Parity](../migration/feature-parity.md) documentation page has been updated with Cloud parity information for built-in scripts and macros.
 
 ## May 2025
 
 ### New script fragment type
 
-There is a new type of script fragment called [General Page](https://docs.adaptavist.com/sr4cc/latest/features/script-fragments) fragment to help you customize your Confluence instance. You can use this fragment type to open a web page in your Confluence instance, which will look like this: 
+There is a new type of script fragment called [General Page](../features/script-fragments.md) fragment to help you customize your Confluence instance. You can use this fragment type to open a web page in your Confluence instance, which will look like this:
 
-![](/sr4cc/files/latest/117672039/371032159/1/1746639620000/general-page.png)
-
-Check out the documentation [here](https://docs.adaptavist.com/sr4cc/latest/features/script-fragments).
+Check out the documentation [here](../features/script-fragments.md).
 
 ### Feature parity documentation update
 
-The [Feature Parity](https://docs.adaptavist.com/sr4cc/latest/migration/feature-parity) documentation page has been updated with Cloud parity information for built-in scripts and macros.
+The [Feature Parity](../migration/feature-parity.md) documentation page has been updated with Cloud parity information for built-in scripts and macros.
 
 ## March 2025
 
-### **Adaptavist bridge for Fragments**
+### Adaptavist bridge for Fragments
 
-The new [Adaptavist bridge](https://docs.adaptavist.com/sr4cc/latest/features/script-fragments/adaptavist-bridge) is a Javascript library that allows your [Script Fragments](https://docs.adaptavist.com/sr4cc/latest/features/script-fragments) to get Confluence information. The Adaptavist bridge also allows the script to use Confluence REST APIs. Check out the documentation [here](https://docs.adaptavist.com/sr4cc/latest/features/script-fragments/adaptavist-bridge).
+The new [Adaptavist bridge](https://docs.adaptavist.com/sr4cc/latest/features/script-fragments/adaptavist-bridge) is a JavaScript library that allows your [Script Fragments](../features/script-fragments.md) to get Confluence information. The Adaptavist bridge also allows the script to use Confluence REST APIs. Check out the documentation [here](https://docs.adaptavist.com/sr4cc/latest/features/script-fragments/adaptavist-bridge).

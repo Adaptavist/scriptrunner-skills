@@ -3,18 +3,20 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: n/a
-- Doc ID: doc-sr4cc-112139294
+- Doc ID: doc-sr4cc-61d3f192-d9d6-4027-8dc4-bd550d4b980f-afdcd7ac9995dd31
 - Source: https://docs.adaptavist.com/sr4cc/latest/features
 
-Learn about all the main features of ScriptRunner:
+Learn about all the main features of ScriptRunner.
 
--   [Script Console](https://docs.adaptavist.com/sr4cc/latest/features/script-console)
--   [Built-In Scripts](https://docs.adaptavist.com/sr4cc/latest/features/built-in-scripts)
--   [Script Listeners](https://docs.adaptavist.com/sr4cc/latest/features/script-listeners)
--   [Script Jobs](https://docs.adaptavist.com/sr4cc/latest/features/script-jobs)
--   [CQL Script Jobs](https://docs.adaptavist.com/sr4cc/latest/features/cql-script-jobs)
--   [Script Fragments](https://docs.adaptavist.com/sr4cc/latest/features/script-fragments)
--   [Script Variables](https://docs.adaptavist.com/sr4cc/latest/features/script-variables)
--   [Macros](https://docs.adaptavist.com/sr4cc/latest/features/macros)
--   [Script Manager](https://docs.adaptavist.com/sr4cc/latest/features/script-manager)
--   [Logging](https://docs.adaptavist.com/sr4cc/latest/features/logging)
+Quick links to feature topics:
+
+-   [Script Console](../../features/script-console.md)
+-   [Built-In Scripts](../../features/built-in-scripts.md)
+-   [Script Listeners](../../features/script-listeners.md)
+-   [Script Jobs](../../features/script-jobs.md)
+-   [CQL Script Jobs](../../features/cql-script-jobs.md)
+-   [Script Fragments](../../features/script-fragments.md)
+-   [Script Variables](../../features/script-variables.md)
+-   [Macros](../../features/macros.md)
+-   [Script Manager](../../features/script-manager.md)
+-   [Logging](../../features/logging.md)

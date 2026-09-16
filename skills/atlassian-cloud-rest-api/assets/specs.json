@@ -29,9 +29,9 @@
   {
     "description": "Jira Cloud platform REST API v3 for core Jira resources such as issues, projects, users, workflows, fields, permissions, and dashboards.",
     "fileName": "jira-cloud-platform-v3-openapi.json",
-    "operationCount": 617,
+    "operationCount": 619,
     "pathPrefix": "/rest/api/3/",
-    "schemaCount": 971,
+    "schemaCount": 975,
     "sourceUrl": "https://dac-static.atlassian.com/cloud/jira/platform/swagger-v3.v3.json",
     "title": "Jira Cloud platform REST API v3"
   },

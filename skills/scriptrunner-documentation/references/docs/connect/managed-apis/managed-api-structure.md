@@ -2,9 +2,11 @@
 
 - Platform: connect
 - Space: SRC
-- Hierarchy: managed-apis
-- Doc ID: doc-src-194675653
-- Source: https://docs.adaptavist.com/src/latest/managed-apis/managed-api-structure
+- Hierarchy: Managed APIs
+- Doc ID: doc-src-f654867b-c921-4046-b69b-bfde4dd758db-5ed76816fe8c23fa
+- Source: https://docs.adaptavist.com/src/latest/managed-apis#managed-api-structure--en
+
+Learn about the grouping and parameters of our managed API structure.
 
 ## Grouping
 
@@ -14,17 +16,15 @@ Managed APIs are structured into logical hierarchical groups (groups containing 
 
 In this example, we can see how the word "issue" reveals all available functions that include the word "issue":
 
-![Code editor showing JavaScript with comments, async function fetching a Jira issue. Autocomplete list offers methods, highlighting ](/src/files/latest/194675653/194675652/1/1695217401000/Screenshot+2022-08-09+at+18.19.08.png)
-
 It makes no difference in how you access functions, whether you'll drill down into logical groups or access the functions from the All group. The primary purpose of the grouping is to increase discoverability.
 
 ## Parameters
 
 All Managed API functions that facilitate calling third-party APIs always accept a single parameter for _options_.
 
-Parameters are handled in two parts. If the parameter is originally part of the URL path or query parameters, then parameters will be directly assignable in the root level of the options. However, if parameters are part of the body, they must enter the **body** field.
+Parameters are handled in two parts. If the parameter is originally part of the URL path or query parameters, then parameters will be directly assignable in the root level of the options. However, if parameters are part of the body, they must enter the body field.
 
-Sometimes, official (vendor-level) documentation simply refers to "parameters" without explicitly stating which type of parameters they are. If you cannot find the parameters you are looking for in the root level, check the **body** field.
+Sometimes, official (vendor-level) documentation simply refers to "parameters" without explicitly stating which type of parameters they are. If you cannot find the parameters you are looking for in the root level, check the body field.
 
 Here is an example of how parameters can be assigned:
 
@@ -37,4 +37,4 @@ await JiraCloud.Issue.updateIssue({
 });
 ```
 
-Sometimes the options parameter is optional if all the fields inside the options object are also optional.
+Note: Sometimes the options parameter is optional if all the fields inside the options object are also optional.

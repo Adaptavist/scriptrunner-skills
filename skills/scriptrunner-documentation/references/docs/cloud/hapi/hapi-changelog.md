@@ -2,47 +2,10 @@
 
 - Platform: cloud
 - Space: SR4JC
-- Hierarchy: hapi
-- Doc ID: doc-sr4jc-339512234
-- Source: https://docs.adaptavist.com/sr4jc/latest/hapi/hapi-changelog
+- Hierarchy: HAPI
+- Doc ID: doc-sr4jc-6322cc03-52ff-4ba1-b602-a0f24c52014c-e784e2c308051d6f
+- Source: https://docs.adaptavist.com/sr4jc/latest/hapi#hapi-changelog--en
 
 You can find the latest updates and enhancements to HAPI on this page.
 
-Date
-
-Summary
-
-Details
-
-July 2025
-
-Enhanced completions for non-HAPI scripts
-
-We added automatic completions for calls to Atlassian's REST API. See the [Script Console documentation](https://docs.adaptavist.com/sr4jc/latest/features/script-console#autocompletions-for-atlassians-rest-api) for more detail.
-
-June 2025
-
-Enhanced completions 
-
-We’ve expanded the HAPI code autocompletions in the code editor, making the most of HAPI’s simplicity. Check out our example video in the [Autocompletions](https://docs.adaptavist.com/sr4jc/latest/hapi#autocompletions) section.
-
-May 2025
-
-Method removal notice 
-
-The following [HAPI methods](https://adaptavist-api-docs-prod.s3.amazonaws.com/api/javadoc/cloud/scriptrunner/latest/hapi/jira/groovydoc/com/adaptavist/hapi/cloud/jira/groups/Group.html#add\(java.lang.String\)) are scheduled to be removed on **August 1st, 2025** as they are only available in [HAPI for ScriptRunner DC.](https://docs.adaptavist.com/sr4c/latest/hapi)
-
--   `Groups.getByName("administrators").add(String accountId)`
--   `Groups.getByName("administrators").add(User accountId)`
-
-March 2025
-
-EntityProperties
-
-You can now work with entity properties using HAPI. Check out the [Work with Entity Properties](https://docs.adaptavist.com/sr4jc/latest/hapi/work-with-entity-properties) page for more information. 
-
-January 2025
-
-HAPI is released!
-
-[Read all about it](https://docs.adaptavist.com/sr4jc/latest/hapi).
+<table class="table" id="hapi-changelog--en__generated-table-id-1"><caption></caption><thead class="thead"><tr class="row"><th class="entry" id="hapi-changelog--en__generated-table-id-1__entry__1">Date</th><th class="entry" id="hapi-changelog--en__generated-table-id-1__entry__2">Summary</th><th class="entry" id="hapi-changelog--en__generated-table-id-1__entry__3">Details</th></tr></thead><tbody class="tbody"><tr class="row"><td class="entry" headers="hapi-changelog--en__generated-table-id-1__entry__1 hapi-changelog--en__generated-table-id-1__entry__2 hapi-changelog--en__generated-table-id-1__entry__3 ">July 2025</td><td class="entry" headers="hapi-changelog--en__generated-table-id-1__entry__1 hapi-changelog--en__generated-table-id-1__entry__2 hapi-changelog--en__generated-table-id-1__entry__3 ">Enhanced completions for non-HAPI scripts</td><td class="entry" headers="hapi-changelog--en__generated-table-id-1__entry__1 hapi-changelog--en__generated-table-id-1__entry__2 hapi-changelog--en__generated-table-id-1__entry__3 ">We added automatic completions for calls to Atlassian's REST API. See the <a class="xref" href="https://docs.adaptavist.com/sr4jc/latest/features/script-console#autocompletions-for-atlassians-rest-api--en">Script Console documentation</a> for more detail.&#10;              </td></tr><tr class="row"><td class="entry" headers="hapi-changelog--en__generated-table-id-1__entry__1 hapi-changelog--en__generated-table-id-1__entry__2 hapi-changelog--en__generated-table-id-1__entry__3 ">June 2025</td><td class="entry" headers="hapi-changelog--en__generated-table-id-1__entry__1 hapi-changelog--en__generated-table-id-1__entry__2 hapi-changelog--en__generated-table-id-1__entry__3 ">Enhanced completions</td><td class="entry" headers="hapi-changelog--en__generated-table-id-1__entry__1 hapi-changelog--en__generated-table-id-1__entry__2 hapi-changelog--en__generated-table-id-1__entry__3 ">We've expanded the HAPI code autocompletions in the code editor, making the most of HAPI's simplicity. Check out our example video in the <a class="xref" href="https://docs.adaptavist.com/sr4jc/latest/hapi#autocompletions--en">Autocompletions</a> section.&#10;              </td></tr><tr class="row"><td class="entry" headers="hapi-changelog--en__generated-table-id-1__entry__1 hapi-changelog--en__generated-table-id-1__entry__2 hapi-changelog--en__generated-table-id-1__entry__3 ">May 2025</td><td class="entry" headers="hapi-changelog--en__generated-table-id-1__entry__1 hapi-changelog--en__generated-table-id-1__entry__2 hapi-changelog--en__generated-table-id-1__entry__3 ">Method removal notice</td><td class="entry" headers="hapi-changelog--en__generated-table-id-1__entry__1 hapi-changelog--en__generated-table-id-1__entry__2 hapi-changelog--en__generated-table-id-1__entry__3 ">&#10;                <p class="p">The following <a class="xref j-external-link" href="https://adaptavist-api-docs-prod.s3.amazonaws.com/api/javadoc/cloud/scriptrunner/latest/hapi/jira/groovydoc/com/adaptavist/hapi/cloud/jira/groups/Group.html#add(java.lang.String)" target="_blank">HAPI methods</a> are scheduled to be removed on <span class="ph b">August 1st, 2025</span> as they are only available in HAPI for ScriptRunner DC.</p>&#10;                <ul class="ul"><li class="li"><code class="ph codeph">Groups.getByName("administrators").add(String accountId)</code></li><li class="li"><code class="ph codeph">Groups.getByName("administrators").add(User accountId)</code></li></ul>&#10;              </td></tr><tr class="row"><td class="entry" headers="hapi-changelog--en__generated-table-id-1__entry__1 hapi-changelog--en__generated-table-id-1__entry__2 hapi-changelog--en__generated-table-id-1__entry__3 ">March 2025</td><td class="entry" headers="hapi-changelog--en__generated-table-id-1__entry__1 hapi-changelog--en__generated-table-id-1__entry__2 hapi-changelog--en__generated-table-id-1__entry__3 ">EntityProperties</td><td class="entry" headers="hapi-changelog--en__generated-table-id-1__entry__1 hapi-changelog--en__generated-table-id-1__entry__2 hapi-changelog--en__generated-table-id-1__entry__3 ">You can now work with entity properties using HAPI. Check out the <a class="xref" href="https://docs.adaptavist.com/sr4jc/latest/hapi/work-with-entity-properties">Work with Entity Properties</a> page for more information.&#10;              </td></tr><tr class="row"><td class="entry" headers="hapi-changelog--en__generated-table-id-1__entry__1 hapi-changelog--en__generated-table-id-1__entry__2 hapi-changelog--en__generated-table-id-1__entry__3 ">January 2025</td><td class="entry" headers="hapi-changelog--en__generated-table-id-1__entry__1 hapi-changelog--en__generated-table-id-1__entry__2 hapi-changelog--en__generated-table-id-1__entry__3 ">HAPI is released!</td><td class="entry" headers="hapi-changelog--en__generated-table-id-1__entry__1 hapi-changelog--en__generated-table-id-1__entry__2 hapi-changelog--en__generated-table-id-1__entry__3 ">&#10;                <a class="xref" href="../uncategorized/h/hapi.md">Read all about it</a>.&#10;              </td></tr></tbody></table>

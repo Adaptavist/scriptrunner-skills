@@ -1,0 +1,13 @@
+{
+  "provider": "heretto",
+  "deploymentId": "CC6h8n5HQQdnY9nA5Ruo",
+  "deploymentType": "MANUAL",
+  "snapshotId": "9PEMrDOHTptGoOahJull",
+  "locale": "en",
+  "audience": null,
+  "version": "latest",
+  "partial": false,
+  "pageCount": 697,
+  "emptyTopics": [],
+  "skippedTopics": []
+}

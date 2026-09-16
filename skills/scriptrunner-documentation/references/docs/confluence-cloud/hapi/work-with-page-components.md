@@ -2,9 +2,11 @@
 
 - Platform: confluence-cloud
 - Space: SR4CC
-- Hierarchy: hapi
-- Doc ID: doc-sr4cc-445218890
+- Hierarchy: HAPI
+- Doc ID: doc-sr4cc-c577b68e-034c-4135-8131-dfcff56c7122-36f2a818514e7655
 - Source: https://docs.adaptavist.com/sr4cc/latest/hapi/work-with-page-components
+
+Learn about using HAPI to complete tasks associated with page components.
 
 Use HAPI to easily work with Confluence content like attachments and comments!
 
@@ -18,15 +20,13 @@ You can get all attachments of a page using a script like this:
 def attachmentIterator = Pages.getById(16252929).getAttachments()
 def attachments = []
 while (attachmentIterator.hasNext()) {
-    def nextAttachment = attachmentIterator.next()
+ def nextAttachment = attachmentIterator.next()
     attachments.add(nextAttachment.title)
 }
 attachments
 ```
 
-The results look like this: 
-
-![](/sr4cc/files/latest/445218890/445218893/1/1759346970000/all-attachments.png)
+The results look like this:
 
 You can customize this script by replacing the page ID.
 
@@ -41,7 +41,5 @@ Pages.getById(123).addComment("Please review this page.")
 ```
 
 Your comment should look like this:
-
-![](/sr4cc/files/latest/445218890/445218892/1/1759349451000/comment.png)
 
 You can customize this script by replacing the page ID and comment text.

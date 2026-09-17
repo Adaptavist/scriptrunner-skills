@@ -41,9 +41,10 @@ Use `--instance us` or `--instance <baseUrl>` as appropriate. The login asks whe
 
 ## Harness branches
 
-Three steps differ by what you can do. Decide once at the start of the session and apply the same answer each time.
+Four things differ by what you can do. Decide once at the start of the session and apply the same answer each time.
 
 - You can drive a browser: offer to log in, to authorize a connector and to register a webhook with the user watching. Ask which browser or profile to drive, since the one where they are already signed in to the platform and the vendor saves a login and a consent screen. They still sign in and hold the permissions. For a connector, warn first that the consent window is closed after 100 seconds and that Jira Cloud, Jira Service Management Cloud and Confluence Cloud end with a site confirmation in the tab that started the flow; see Connector setup.
+- Your shell does not outlive one command, which is the case in Claude Code and most agent harnesses: the CLI's session record dies with each shell, so a lock it took is forgotten by the next call. Test it rather than assume it, with the two-take check under The lock, and when the shell forgets, carry the lock ID yourself through `SR_CONNECT_CLI_LOCK_ID`.
 - You cannot: hand the user the exact command or URL and wait. For a connector that is `authorizationUrl` in the document `connector create` and `connector get` return; for an event listener it is `setupUrl` with instructions and `webhookUrl` to register.
 
 ## Feedback
@@ -83,11 +84,22 @@ npx @sr-connect/cli workspace-lock take -w <workspaceId> --agent --raw
 npx @sr-connect/cli workspace-lock release -w <workspaceId> --agent --raw
 ```
 
+The CLI remembers the lock in a session record keyed to the shell that took it, and every later write in that shell renews it. That record is gone when each command runs in a fresh shell, which is how Claude Code's Bash tool and most agent harnesses work. The next write then finds no lock, takes one of its own, and the API refuses it with `WORKSPACE_LOCKED` and a hint that the holder is another session of yours, taken through the API. That is you colliding with yourself, not a stale lock.
+
+Find out which case you are in with the first lock of the session. `workspace-lock take --raw` answers with `lockId`, and no read reports it later, so capture it from that one document. Then, as a separate tool call, run the same `workspace-lock take` again. Exit 0 means the shell remembered the lock and renewed it: state persists, and nothing below applies. Exit 1 `WORKSPACE_LOCKED` naming another session of yours means the shell forgot: keep the ID yourself for the rest of the session. Put it in front of every later call, renewals and the release included:
+
+```sh
+SR_CONNECT_CLI_LOCK_ID=<lockId> npx @sr-connect/cli script update -w <workspaceId> ... --agent --raw
+SR_CONNECT_CLI_LOCK_ID=<lockId> npx @sr-connect/cli workspace-lock release -w <workspaceId> --agent --raw
+```
+
+`--lock-id <lockId>` on the call does the same. Keep the ID in your scratchpad notes for the session, never in the clone or the user's repository, and do not print it in the closing summary. A lock belongs to the account that took it, so the ID is useless to anyone else and there is nothing to hand over. If you lose it, take the lock again with `--force`, which the next rule allows when the holder is you, and capture the new `lockId`.
+
 Rules:
 
 - At the start, run `workspace-lock check -w <workspaceId>`. Nobody holding it is exit 4 `NO_WORKSPACE_LOCK`, which is the answer you want. A holder is exit 0 with their name and how they took it; if it is not you, name them and ask the user whether it is safe to take the lock with `--force`.
 - Mid-session, if a write is refused with `WORKSPACE_LOCKED` and the holder is someone else, stop and ask before forcing.
-- If the holder is you, which the refusal states as another session of yours, take it back with `--force` without asking.
+- If the holder is you, which the refusal states as another session of yours, first check whether you dropped the ID: present the `lockId` you captured and retry. Only when you have no ID take it back with `--force`, without asking, and capture the new one.
 - After re-taking a lock while working from a clone, run `local-workspace clone --force` in the clone directory before touching files. Update mode rewrites workspace content and keeps your scaffolding. Something may have changed while you did not hold the lock. `--force` is for a directory that is already a clone of the same workspace; a directory holding a clone of another workspace keeps that workspace's scripts and would push them into this one, so delete it and clone fresh.
 - `--no-lock` writes past whoever holds the lock. Never use it to get around a conflict.
 
@@ -342,7 +354,7 @@ Index, one file per app that has listener types. The file name is the app's `app
 
 ## Refusals decoded
 
-- `WORKSPACE_LOCKED`: someone holds the lock. Read the hint; it says whether the holder is you, your browser tab, or someone else. See The lock.
+- `WORKSPACE_LOCKED`: someone holds the lock. Read the hint; it says whether the holder is you, your browser tab, or someone else. Another session of yours, taken through the API, right after your own `workspace-lock take`, means the shell forgot the lock and you need `SR_CONNECT_CLI_LOCK_ID`. See The lock.
 - `RELEASED_ENVIRONMENT` on a push, or a 400 on an update in a non-HEAD environment: you targeted an environment running a release. Switch `-e` to the HEAD environment, or move the environment with `environment target-release --head` only if the user wants that.
 - A 403 naming `features.eventQueues`: the plan has no event queues.
 - Exit 4 with a warning naming `workspace.json` or a session default: the scope came from a stale clone or a stale session default. Re-clone or pass the flags.
@@ -388,13 +400,13 @@ Start:
 2. `auth status`, `cli settings --raw`, `team list`.
 3. Decide the harness branch. Open the feedback notes file if allowed.
 4. Identify the ask type and the target environment.
-5. Decide where the clone lives, `workspace-lock take`, then `local-workspace clone`.
+5. Decide where the clone lives, `workspace-lock take` and capture `lockId` when the shell does not persist, then `local-workspace clone`.
 
 End:
 
 1. Throwaway scripts and probe payloads deleted, in the workspace and in the clone; triggers in the intended state; README updated.
 2. Release offered where there is more than one environment.
-3. `workspace-lock release`.
+3. `workspace-lock release`, with the captured `lockId` when the shell does not persist; without it the release finds no lock to let go of.
 4. `feedback post` with whatever accumulated since the last post, plus the two scores, then delete the file.
 5. One-off job: `workspace delete <ws> --team <teamId> --yes` after confirmation.
 6. The closing summary, in the conversation, ending with the link to any workspace the work created.

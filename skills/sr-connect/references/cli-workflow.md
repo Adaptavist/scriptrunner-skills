@@ -211,7 +211,7 @@ Definition of done for a change:
 - The README, written with `readme update`, describes setup and usage for an end user; it never mentions the CLI, local copies or the agent.
 - Packages are at the versions the user agreed to.
 - Additional environments, if any, are created and parametrized.
-- Release: when the workspace has more than one environment, ask whether to `release create` and deploy to the staging or production environment. Never deploy without asking.
+- Release: when the workspace has more than one environment, ask whether to cut a release and deploy it to the staging or production environment. Never deploy without asking. Once they say yes, the normal path is one call: `release create -w <ws> -e <targetEnv>` cuts the release and deploys it into that environment, and `-e` repeats for several. Here `-e` is the deploy target, not the scope it is on every other verb, so do not pass the HEAD environment. `environment target-release` is for moving an environment onto a release that already exists, or back to `--head`; it is not a second step after `release create -e`. Standing in a clone of an environment deployed into, re-clone afterwards.
 - The lock is released.
 
 ### Ad-hoc, one-off task
@@ -426,7 +426,7 @@ End:
 | Scripts and runs       | `script create/update/list/get/delete/trigger/replay-invocation/abort-invocation`                                                                                    |
 | Local copy             | `local-workspace clone/push`                                                                                                                                         |
 | Packages               | `package list/get/add/update/remove/list-npm-versions`                                                                                                               |
-| Releases               | `release list/create`                                                                                                                                                |
+| Releases               | `release list/create`; `create -e <env>` cuts and deploys in one call, `environment target-release` only re-points an environment                                   |
 | Locks                  | `workspace-lock check/take/release`                                                                                                                                  |
 | Logs                   | `log list-audit-logs/list-invocation-logs/get-invocation-payload/list-console-logs/list-http-logs/get-large-log-message`                                             |
 | Feedback               | `feedback post/post-crash-report`                                                                                                                                    |

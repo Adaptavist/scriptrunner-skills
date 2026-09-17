@@ -95,7 +95,7 @@ Glossary, docs word first, CLI group second:
 | CRON-driven run                                                      | scheduled trigger   | `scheduled-trigger`                     |
 | FIFO processing for a listener's events                              | event queue         | `event-queue`                           |
 | Editable working version of a workspace                              | HEAD                | an environment with no `release` field  |
-| Immutable snapshot                                                   | release, deployment | `release`, `environment target-release` |
+| Immutable snapshot                                                   | release, deployment | `release create -e <env>`, one call     |
 | Space an environment's config lives in, targets HEAD or a release    | environment         | `environment`                           |
 | Editing lock, shared with the web app                                | none                | `workspace-lock`                        |
 
@@ -105,7 +105,7 @@ Glossary, docs word first, CLI group second:
 
 A workspace holds scripts, API connections, event listeners, scheduled triggers, packages, parameters and a README. It belongs to at most one team; visibility is private, meaning team admins and you, or public, meaning every team member. Language is js, ts or ts-strict. Always use ts-strict.
 
-HEAD is the working version and is always editable. A release is a snapshot of HEAD, scripts, README and the release-level configuration of listeners, API connections and triggers, and it cannot change afterwards. Versions are semver and must increase. An environment targets HEAD or a single release and holds its own environment-specific configuration: the connector on each API connection, the connector and setup state on each event listener, a generic listener's URL path, each scheduled trigger's CRON and enabled state, each queue's enabled state, and parameter values. That configuration stays editable in a released environment; everything else is read-only there, and a resource created after the release is out of scope until a release containing it is deployed.
+HEAD is the working version and is always editable. A release is a snapshot of HEAD, scripts, README and the release-level configuration of listeners, API connections and triggers, and it cannot change afterwards. Versions are semver and must increase. `release create -e <env>` cuts the release and deploys it into the environment in one call; `environment target-release` only moves an environment onto an existing release or back to HEAD. An environment targets HEAD or a single release and holds its own environment-specific configuration: the connector on each API connection, the connector and setup state on each event listener, a generic listener's URL path, each scheduled trigger's CRON and enabled state, each queue's enabled state, and parameter values. That configuration stays editable in a released environment; everything else is read-only there, and a resource created after the release is out of scope until a release containing it is deployed.
 
 Every workspace starts with a single environment named Default on HEAD. Keep exactly one environment on HEAD and develop there; fix forward with a new release rather than editing an old one. Rolling back means pointing the environment at an older release or back at HEAD. Scripts read `context.environment.name`; `context.deployment` is undefined on HEAD.
 

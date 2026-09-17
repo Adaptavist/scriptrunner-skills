@@ -348,7 +348,7 @@ import { convertBase64ToText } from '@sr-connect/convert'
 
 export default async function (event: HttpEventRequest, context: Context<EV>): Promise<HttpEventResponse> {
 	if (event.headers['x-shared-secret'] !== context.environment.vars.WEBHOOK_SECRET) {
-		return buildJSONResponse(401, { error: 'unauthorized' })
+		return { ...buildJSONResponse({ error: 'unauthorized' }), status: 401 }
 	}
 	if (isJSON<Payload>(event)) {
 		// event.body is Payload
@@ -357,11 +357,11 @@ export default async function (event: HttpEventRequest, context: Context<EV>): P
 	} else if (isBase64(event)) {
 		const text = convertBase64ToText(event.body)
 	}
-	return buildJSONResponse(200, { ok: true })
+	return buildJSONResponse({ ok: true })
 }
 ```
 
-Request shape: `method`, `path`, `queryString`, `queryStringParams`, `headers`, `bodyType?: 'base64' | 'text' | 'json'`, `body?`, `sourceIp`. JSON content types parse to an object, text types to a string, everything else to base64. Response shape: `status`, `headers?`, `body?`, `isBase64?`. Helpers: `isJSON<T>`, `isText`, `isBase64`, `buildJSONResponse`, `buildPlainTextResponse`, `buildHTMLResponse`. Do not modify an existing generic-listener script unless the intent is clear; you cannot see what calls it.
+Request shape: `method`, `path`, `queryString`, `queryStringParams`, `headers`, `bodyType?: 'base64' | 'text' | 'json'`, `body?`, `sourceIp`. JSON content types parse to an object, text types to a string, everything else to base64. Response shape: `status`, `headers?`, `body?`, `isBase64?`. Helpers: `isJSON<T>`, `isText`, `isBase64`, `buildJSONResponse`, `buildPlainTextResponse`, `buildHTMLResponse`. Each builder takes one argument, the body, and returns status 200 with the matching `Content-Type` header; none takes a status. For any other status, spread the builder's result and override `status`, as the 401 above does, or write the response object by hand. Do not modify an existing generic-listener script unless the intent is clear; you cannot see what calls it.
 
 ## Scheduled triggers in code
 

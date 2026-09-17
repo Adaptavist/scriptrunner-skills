@@ -210,7 +210,7 @@ try {
 }
 ```
 
-`errorStrategy` in the options handles an error before it is thrown; a handler's return value becomes the method's return value. Handlers from most to least specific: `handleHttp400Error`, `401`, `403`, `404`, `429`, `handleHttp5xxError`, `handleAnyHttpError`, `handleUnexpectedError`, `handleAnyError`. A handler must return a value; `null` is fine, `undefined` is not. Two special returns: `retry(delayMs?)` and `continuePropagation(skipStrategy?)`. Widen the return type so the fallback is typed:
+`errorStrategy` in the options handles an error before it is thrown; a handler's return value becomes the method's return value. Handlers from most to least specific: `handleHttp400Error`, `401`, `403`, `404`, `429`, `handleHttp5xxError`, `handleHttpAnyError`, `handleUnexpectedError`, `handleAnyError`. The names are the members of `BaseErrorStrategyHandlers` in `node_modules/@managed-api/commons-core/index.d.ts`; read them there before writing one, since a misspelt member is a TS2353 listing the whole union. A handler must return a value; `null` is fine, `undefined` is not. Two special returns: `retry(delayMs?)` and `continuePropagation(skipStrategy?)`. Widen the return type so the fallback is typed:
 
 ```ts
 import { continuePropagation, getRetryErrorHandler, retry } from '@managed-api/commons-core'

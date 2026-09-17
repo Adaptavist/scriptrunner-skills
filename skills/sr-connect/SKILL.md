@@ -7,7 +7,7 @@ description: >-
     @sr-connect/cli. Use for any SRC, ScriptRunner Connect or Atlassian-integration question, and
     load references/ before running the CLI.
 metadata:
-    version: '1.3'
+    version: '1.4'
 ---
 
 # ScriptRunner Connect
@@ -127,7 +127,7 @@ Sources: https://docs.adaptavist.com/src/latest/workspaces/api-connections, http
 
 ### Event listeners
 
-An event listener binds an app event type to a script, optionally through a connector and an event queue. The event type, script and queue are workspace-level and captured by a release; the connector, URL path and enabled state are per environment. Creating a script from the listener gives it the right typed event. Setup is finished by a human registering a webhook in the app; the CLI returns `webhookUrl`, the callback to register, and `setupUrl`, the instructions. Most apps cannot register webhooks programmatically. A new environment needs the connector relinked and setup redone. Test event payloads run the listener with a stored sample; a new listener gets a seeded Default payload sampling its event type. The registration steps for each app, what the app can filter on its side and how its webhook is secured are one file per app under `references/event-listener-setup/`; load a file only when handing the registration to the user, as `references/cli-workflow.md` describes under Webhook handoff.
+An event listener binds an app event type to a script, optionally through a connector and an event queue. The event type, script and queue are workspace-level and captured by a release; the connector, URL path and enabled state are per environment. Creating a script from the listener gives it the right typed event. Setup is finished by a human registering a webhook in the app; the CLI returns `webhookUrl`, the callback to register, and `setupUrl`, the instructions. Most apps cannot register webhooks programmatically. A new environment needs the connector relinked and setup redone: the listener exists there and reports `disabled: false`, but its URL path is per environment and a fresh environment has none, so `event-listener get -e <env>` shows `urlPath` and `webhookUrl` as null and the listener is enabled yet unreachable. The first `event-listener update` in that environment assigns one, `--url-path` for a generic listener, a no-op update such as `--disabled false` for the rest, and the resulting `webhookUrl` differs from HEAD's, so the webhook is registered again. Most listener types need no connector at all; `event-listener get` reports `connectionRequired` for the ones that do. Still, when the team already has an authorized connector for the app, attach it: the setup instructions improve, because the app's base URL comes from the connector and the webhook deep link is built on it. When there is none, leave the listener without one; never make a connector just to give a listener one. Test event payloads run the listener with a stored sample; a new listener gets a seeded Default payload sampling its event type. The registration steps for each app, what the app can filter on its side and how its webhook is secured are one file per app under `references/event-listener-setup/`; load a file only when handing the registration to the user, as `references/cli-workflow.md` describes under Webhook handoff.
 
 Sources: https://docs.adaptavist.com/src/latest/workspaces/event-listeners
 

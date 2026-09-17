@@ -7,7 +7,7 @@ description: >-
     @sr-connect/cli. Use for any SRC, ScriptRunner Connect or Atlassian-integration question, and
     load references/ before running the CLI.
 metadata:
-    version: '1.1'
+    version: '1.2'
 ---
 
 # ScriptRunner Connect
@@ -33,7 +33,7 @@ The `command` field is the upgrade line derived from how this copy was installed
 | Volta                                        | `volta install @sr-connect/cli@latest`                                |
 | npx, or Yarn 2+, which has no global install | nothing to upgrade; run the next call as `npx @sr-connect/cli@latest` |
 
-When the user runs it, hand them the one line and wait. When you run it, run that same line and re-run `cli check-updates` to confirm the new version answered.
+When the user runs it, hand them the one line, without `--agent` or `--raw`, and wait. When you run it, run that same line and re-run `cli check-updates` to confirm the new version answered.
 
 The snapshots in this file, the connector table, limits, plans and package list, are dated 2026-09-12 and carry their source URL. Re-fetch the source when an answer hinges on the number.
 

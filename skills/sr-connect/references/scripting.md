@@ -632,6 +632,8 @@ Where to look: the invocation log for the thrown error and console output; the H
 
 Write it for the person who sets up and runs the integration in the product, not for a developer. No implementation detail, no local tooling, no mention of the CLI or of an agent. Script names without `scripts/` and without `.ts`, the way the product shows them. Keep an existing README's structure and add missing sections. Add the changelog only on a later significant change.
 
+Pinned packages is the one section a later reader cross-references against `package list`. Every package held below latest goes in it with the version and the reason, whether the verified table above pins it or the user asked for it. Omit the section when nothing is pinned.
+
 ```markdown
 # Integration name
 
@@ -668,6 +670,10 @@ How to trigger it, how to verify it worked, how to test.
 ## Considerations
 
 Rate limits, data volume, security, known limitations. Omit if empty.
+
+### Pinned packages
+
+Each package held at a version other than latest, the version, and why. Omit if none.
 
 ## Troubleshooting
 

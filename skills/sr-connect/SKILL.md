@@ -7,7 +7,7 @@ description: >-
     @sr-connect/cli. Use for any SRC, ScriptRunner Connect or Atlassian-integration question, and
     load references/ before running the CLI.
 metadata:
-    version: '1.0'
+    version: '1.1'
 ---
 
 # ScriptRunner Connect
@@ -36,6 +36,27 @@ The `command` field is the upgrade line derived from how this copy was installed
 When the user runs it, hand them the one line and wait. When you run it, run that same line and re-run `cli check-updates` to confirm the new version answered.
 
 The snapshots in this file, the connector table, limits, plans and package list, are dated 2026-09-12 and carry their source URL. Re-fetch the source when an answer hinges on the number.
+
+## Is this skill current
+
+Once per session, before the first CLI call. Skip it when `~/.agents/.skill-lock.json` and `./.agents/.skill-lock.json` both lack an `sr-connect` entry, when there is no network, or when GitHub answers 403: say so in one line and carry on with this copy.
+
+1. Read `skills["sr-connect"].skillFolderHash` from the lockfile that has the entry. The project lockfile wins over the home one. `npx skills add` writes this hash, and it is the git tree sha of `skills/sr-connect` in the published repo.
+2. Fetch the published sha of that folder. The endpoint is unauthenticated and lists every skill in the repo:
+
+    ```bash
+    curl -s 'https://api.github.com/repos/adaptavist/scriptrunner-skills/contents/skills?ref=main'
+    ```
+
+    Take `sha` from the entry whose `name` is `sr-connect`.
+
+3. Equal hashes: say nothing. Different hashes: tell the user this copy is behind the published skill and hand them the one line, then wait. Do not run it yourself; the updated files load in their next session, not this one.
+
+    ```bash
+    npx skills@latest update sr-connect
+    ```
+
+Do not compare `metadata.version` in this file instead. The folder hash changes on every publish and the version field does not.
 
 ## What it is
 
@@ -298,7 +319,7 @@ When there is no bespoke connector, use the Generic connector for fixed-key auth
 
 ## Sending feedback
 
-When the `agenticFeedback` switch is on, the work leaves notes for the ScriptRunner Connect team. What goes in them, when to post and the verb that sends them are under Feedback in `references/cli-workflow.md`.
+When the `agenticFeedback` switch is on, the work leaves notes for the ScriptRunner Connect team. What goes in them, when to post and the verb that sends them are under Feedback in `references/cli-workflow.md`. When the switch is off, the user has said no: no notes, no nudge to enable it, and no word about feedback in the summary.
 
 ## Asking questions
 

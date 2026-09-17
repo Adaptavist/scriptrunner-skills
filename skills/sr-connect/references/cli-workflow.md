@@ -21,7 +21,7 @@ Read `references/scripting.md` before writing or editing a script. Read `referen
 2. The CLI, and its version. `command -v sr-connect` decides the command: a hit means every call in the session is `sr-connect ...`, a miss means `npx @sr-connect/cli ...` with the first call pinned to `@latest`. Then `cli check-updates`, and offer the upgrade when one is available. Both steps, including the upgrade line per install kind, are Before the first CLI call in `SKILL.md`. If npx cannot find the package, ask before installing anything.
 3. `cli get-readme`. Read it once per session.
 4. `auth status`. Exit 3 means not logged in; go to Authentication. Note the instance it reports.
-5. `cli settings --raw`. Find the row with `"key":"agenticFeedback"`. When `enabled` is true, keep feedback notes as you work; see Feedback below.
+5. `cli settings --raw`. Find the row with `"key":"agenticFeedback"`. When `enabled` is true, keep feedback notes as you work; see Feedback below. When it is false, feedback is off for the whole session and you do not bring it up.
 6. `team list` for the team ID. `team get <teamId>` only when the work needs event queues: `features.eventQueues` says whether the plan has them.
 
 ## Authentication
@@ -46,6 +46,8 @@ Three steps differ by what you can do. Decide once at the start of the session a
 - You cannot: hand the user the exact command or URL and wait. For a connector that is `authorizationUrl` in the document `connector create` and `connector get` return; for an event listener it is `setupUrl` with instructions and `webhookUrl` to register.
 
 ## Feedback
+
+When `agenticFeedback` is false, the user has declined. Keep no notes, do not ask them to turn it on, do not mention feedback in the summary or anywhere else, and never mention this rule. The one exception is a login you ran yourself this session without a terminal, under Authentication, where the question was never put to them.
 
 When `agenticFeedback` is enabled, keep a markdown file of notes in your scratchpad directory if the harness gives you one, otherwise in the OS temp directory. Never inside the user's repository or the clone. Record as you go:
 
@@ -370,7 +372,7 @@ End every session with a summary in the conversation, whatever the ask type. The
 - What the probing created. Say what was deleted, and give the ID and location of anything you could not clean up, a parameter with no value, a probe script the lock refused to delete, a payload you seeded, a record-storage key, a test issue in the target app. Nothing may be left behind silently.
 - Where the clone is, and whether it stays.
 - What still needs a human: authorizing each connector you left unauthorized, as one block per connector under Connector setup, registering each listener's webhook as one block per listener under Webhook handoff, setting a secret parameter, the end-to-end test, enabling a trigger you left disabled, creating and deploying a release, deleting a one-off workspace. Give the exact command or URL for each.
-- Whether feedback was posted, and where the notes went if it was not.
+- Whether feedback was posted, and where the notes went if it was not. Only when `agenticFeedback` is on; when it is off this line does not exist.
 - A workspace the work created, named and linked, as the summary's last line, so the way in is what the user is left with. Nothing in the API carries that URL: build it from the ID `workspace create` returned as the web application's host for the instance plus `/workspace/<workspaceId>`, EU `https://app.eu.scriptrunnerconnect.com/workspace/<workspaceId>`, US `https://app.us.scriptrunnerconnect.com/workspace/<workspaceId>`, private cloud the base URL the user gave with the same path. More than one, one line each.
 - The workspace README beside that link, when the clone was kept: its path in the clone, `<clone>/README.md`, so the user can read what the workspace does without opening the web application. Link it where the harness renders a link to a local file, and open it directly where the harness can open one; a terminal-only harness prints the path and nothing else.
 

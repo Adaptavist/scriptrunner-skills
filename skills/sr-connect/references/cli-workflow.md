@@ -198,7 +198,9 @@ Scripts beyond the listener entry points: `script create`, `script update --name
 Iteration:
 
 1. Edit under `scripts/` in the clone. Read `references/scripting.md` first.
-2. `local-workspace push`. It sends every changed script at once; do not use `script update` for content. TypeScript diagnostics are reported and do not fail the push.
+2. `local-workspace push`. It sends every changed script at once; do not use `script update` for content. TypeScript diagnostics are reported and do not fail the push. The default mode compiles and bundles inside the request, which the API cuts off at 25 seconds: a push that runs past it is exit 1 `PUSH_OUTCOME_UNKNOWN` with the checksums untouched. `--async` moves the compile to a background job the CLI polls for, giving up after 16 minutes.
+    Switch to `--async` when a normal push is creeping toward 20 seconds, and from the first push when the workspace is large or pulls in many third-party packages; one big package alone can carry bundling past 20 seconds. Time the pushes as you go so you see the creep.
+    Do not judge by the first push. Cold starts make it several times slower than the ones after it, so a slow first push is not a reason to switch. A first push that times out outright is.
 3. `script trigger --stream-logs`, or with `--test-payload-id` or `--payload-file`. The stream prints on stderr; stdout carries only the invocation document, so capture both. When the order of two lines matters read `log list-console-logs` after the run; the live stream can print two rows swapped. Without a run permission, ask the user to fire the event and read `log list-console-logs`.
 4. Repeat until the user is happy.
 
@@ -424,7 +426,7 @@ End:
 | Listeners and payloads | `event-listener list/get/create/update/delete`, `event-listener-test-payload list/get/create/update/set-default/delete`, `event-queue list/get/create/update/delete` |
 | Schedules              | `scheduled-trigger create/list/get/update/delete`                                                                                                                    |
 | Scripts and runs       | `script create/update/list/get/delete/trigger/replay-invocation/abort-invocation`                                                                                    |
-| Local copy             | `local-workspace clone/push`                                                                                                                                         |
+| Local copy             | `local-workspace clone/push`; `push --async` when the compile will not fit in the request's 25 seconds                                                                |
 | Packages               | `package list/get/add/update/remove/list-npm-versions`                                                                                                               |
 | Releases               | `release list/create`; `create -e <env>` cuts and deploys in one call, `environment target-release` only re-points an environment                                   |
 | Locks                  | `workspace-lock check/take/release`                                                                                                                                  |

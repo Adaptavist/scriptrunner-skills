@@ -7,7 +7,7 @@ description: >-
     @sr-connect/cli. Use for any SRC, ScriptRunner Connect or Atlassian-integration question, and
     load references/ before running the CLI.
 metadata:
-    version: '1.4'
+    version: '1.0'
 ---
 
 # ScriptRunner Connect
@@ -50,7 +50,7 @@ Once per session, before the first CLI call. Skip it when `~/.agents/.skill-lock
 
     Take `sha` from the entry whose `name` is `sr-connect`.
 
-3. Equal hashes: say nothing. Different hashes: tell the user this copy is behind the published skill and hand them the one line, then wait. Do not run it yourself; the updated files load in their next session, not this one.
+3. Equal hashes: say nothing. Different hashes: tell the user this copy is behind the published skill and recommend updating, strongly, since the newer copy holds guidance this one lacks. Offer to run the update for them, or to hand them the line to run themselves, and say that either way the new files load from their next session, not this one, so the current session carries on with this copy. Wait for their answer. Do not run it without one.
 
     ```bash
     npx skills@latest update sr-connect
@@ -324,6 +324,8 @@ When the `agenticFeedback` switch is on, the work leaves notes for the ScriptRun
 ## Asking questions
 
 Front-load them. Before the first change, gather everything the work will turn on: which apps and which environments, what counts as production, whether you may probe and whether a probe may mutate, whether you may run a simulation loop with test payloads, which package upgrades are wanted, how the result will be tested end to end. One round of questions up front is cheaper for the user than a question every ten minutes, and it is what lets you go away, build in the simulation loop for as long as the user allowed, and come back once with something to test.
+
+VERY IMPORTANT: a request for a plan does not skip that round. A plan for an integration written without knowing which environments exist, what counts as production, or whether you may probe is a guess dressed as a plan. Whatever mechanism your harness has for putting questions to the user, plan mode included, use it for these questions before writing the plan. The plan depends on what the workspace and the target apps hold, so probing belongs before the plan and not after it, but only once the user has consented to probing. No consent means no probe: write the plan from the reads the CLI allows and what the user told you, and mark each place a probe would have settled.
 
 Front-loading is not a licence to assume. When the work raises a question the answers did not cover, or a probe shows something that contradicts what you were told, stop and ask. A wrong assumption in an integration costs a round of debugging against a live system; a question costs a minute. Probe when probing would answer it; ask when only the user can. Never skip either to keep momentum.
 

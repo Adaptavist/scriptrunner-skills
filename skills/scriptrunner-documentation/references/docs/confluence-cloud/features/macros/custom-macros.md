@@ -22,7 +22,7 @@ To see examples of custom macros, check out these pages:
     
     1.  Macro Name: Enter a name to identify your macro for you and your users.
     2.  Description: Explain what your macro accomplishes.
-    3.  Enabled (radio button): Control if your macro can be made available to your users.
+    3.  Enabled (radio button): Control wheather your macro can be made available to your users.
     4.  Body Type: Set the body type of the macro.
         
         -   _Rich Text_: The macro allows Rich Text content, which can be formatted, to be inserted.
@@ -35,7 +35,7 @@ To see examples of custom macros, check out these pages:
         
         Note: Different macro editing experiences.
         
-        The Body Type you select for your custom macro determains how a user can edit the macro when they apply it to a page.
+        The Body Type you select for your custom macro determines how a user can edit the macro when they apply it to a page.
         
         -   If you select Rich Text, your user can edit the body of the macro directly on the page.
         -   If you select Plain Text, your user is directed to macro editor to enter their body of the macro.

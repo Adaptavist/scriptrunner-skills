@@ -18,7 +18,7 @@ This playlist covers:
 
 [Back to Behaviours: Dynamic Field Control & Customisation](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/behaviours_dynamic_field_control_customization.dita)
 
-[Watch Next: Enhanced Search: JQL Functions & Subqueries](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/enhanced_search_jql_functions_subqueries.dita)
+[Watch Next: Enhanced Search: JQL Functions & Subqueries](enhanced-search-jql-functions-and-subqueries.md)
 
 ## Related Content
 

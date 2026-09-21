@@ -336,7 +336,7 @@ Note: A background reindex of Jira is not sufficient. You must select the option
 
 ### New Features
 
--   Manage your .groovy script files using the new ScriptRunner [_Script Editor_](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Data_Center_SR4JS/topics/script_editor.dita).
+-   Manage your .groovy script files using the new ScriptRunner [Script Editor](https://docs.adaptavist.com/sr4js/latest/features/script-editor).
 -   SRJIRA-3782 - Database Picker options display automatically.
 
 ### Bug Fixes

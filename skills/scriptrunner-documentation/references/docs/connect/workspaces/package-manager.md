@@ -12,15 +12,13 @@ ScriptRunner Connect workspaces consist of several JavaScript packages hosted on
 
 ## Demo
 
-[Package Manager demo](https://demo.arcade.software/zretMBlRAuZXaGf6gx9I?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true).
-
 ## Categories
 
 Packages are sorted into the following three categories:
 
--   Core packages
+-   [Core packages](https://docs.adaptavist.com/src/latest/workspaces/package-manager#core-packages--en)
 -   [Managed APIs](https://docs.adaptavist.com/src/latest/workspaces/package-manager#managed-apis--en)
--   Third-party packages
+-   [Third-party packages](https://docs.adaptavist.com/src/latest/workspaces/package-manager#third-party-packages--en)
 
 Some packages cannot be unselected. These are the packages that are pulled in automatically in response to how you have set up your workspace; however, you can change the version of these packages. Core packages and managed APIs default to `latest` version, which means that your workspace will always pull in the latest available version. We recommend keeping it that way, as we'll be making continuous improvements to event types and managed APIs. We want to ensure that your workspace receives the most up-to-date information regarding third-party services. The only time you should take manual control over these package versions is if we decide to release a major version that could introduce some breaking changes. While we will try to avoid such an outcome and will only do it as a last resort, in that situation, you will have the option to downgrade a package to an older version that your workspace was built to work with if you can't immediately upgrade.
 

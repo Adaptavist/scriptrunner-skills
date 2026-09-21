@@ -12,8 +12,6 @@ It is based on the same technology that is powering the extremely popular [VS Co
 
 ## Demos
 
-[Script Editor shortcuts demo](https://demo.arcade.software/P6bmJxFyQfnGAN1HEC2e?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true)
-
 Here's a ten-minute overview of the ScriptRunner Connect editor's features, including some tips and tricks. The UI has been updated since the creation of the video, but the content is still relevant.
 
 ## Toggle auto-complete suggestions

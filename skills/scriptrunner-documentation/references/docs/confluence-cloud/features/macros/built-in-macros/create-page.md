@@ -34,7 +34,7 @@ When you are editing or creating a page in Confluence Cloud, you can use ScriptR
     5.  _Button text:_ the words shown on the button that will create new pages when clicked.
     6.  _Open in new tab_: specifies whether the newly created page will open in a new browser tab.
     7.  _Labels:_ specify labels that will be attached to the newly created page.
-5.  Click Save.The macro saves and appears on the page in _Edit_ mode.
+5.  Click Save. The macro saves and appears on the page in _Edit_ mode.
 6.  Update the page to see the macro as it will appear to others.
 
 ## Edit the Create Page Macro

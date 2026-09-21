@@ -6,6 +6,8 @@
 - Doc ID: doc-sr4js-5072640d-f220-4f4b-bb98-962b2799b240-757876a1e3fc5dc0
 - Source: https://docs.adaptavist.com/sr4js/latest/release-notes/breaking-changes#jira-11-search-api-upgrade-guide--en
 
+Understand Jira Data Center version 10.4 OpenSearch-based Search API and what it means for ScriptRunner scripts that use Lucene-based methods.
+
 In Jira Data Center version 10.4, Atlassian has introduced a new Search API, marking a significant overhaul of the search functionality by transitioning from Lucene to OpenSearch. This update includes the deprecation of certain methods, reflecting a shift in the underlying search mechanism to enhance performance and scalability. Lucene will be removed from public APIs in Jira 11. [Atlassian documents](https://confluence.atlassian.com/adminjiraserver/search-api-upgrade-guide-1488594607.html) Lucene-specific API and components that have been deprecated in favor of the platform-agnostic search API.
 
 ## What does it mean?

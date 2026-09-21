@@ -15,3 +15,5 @@ Click Workspaces in the navigation panel to get started.
 ## Create your first workspace
 
 This is a helpful video on creating workspaces.
+
+[Media](https://www.youtube.com/watch?v=8gc6z-NtP2U)

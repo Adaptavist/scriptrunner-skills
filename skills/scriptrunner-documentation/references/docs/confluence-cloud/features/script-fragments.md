@@ -116,7 +116,7 @@ Your custom web panel is now in the spaces you specified.
 
 ## Host URLs for script fragments
 
-The HTML, CSS and Javascript need to be hosted somewhere that Confluence Cloud servers can access with no authentication. We recommend using [CodePen](https://codepen.io/) for the hosting. It's also important to note that the hosting must serve up the matching content-type header for each file.
+The HTML, CSS and JavaScript need to be hosted somewhere that Confluence Cloud servers can access with no authentication. We recommend using [CodePen](https://codepen.io/) for the hosting. It's also important to note that the hosting must serve the correct content-type header for each file.
 
 You should be aware that you may need to purchase the Pro version of CodePen in order to use this as a host. As a workaround, you could use [codesandbox](https://codesandbox.io/) and create a static template. From there, create the JS, CSS and HTML files, access Script Fragments and complete the corresponding text boxes by using the [codesandbox](https://codesandbox.io/) URL followed by `/fileName.js` (JS) `/fileName.css` (CSS) `/fileName.html` (HTML).
 
@@ -124,7 +124,7 @@ Warning: There is a known issue with using [codesandbox.io](http://codesandbox.i
 
 ## Adaptavist Bridge
 
-The Adaptavist bridge is a Javascript library that allows the script to do two things:
+The Adaptavist bridge is a JavaScript library that allows the script to do two things:
 
 -   Get space and page information
 -   Use [Confluence REST APIs](https://developer.atlassian.com/cloud/confluence/rest/v2/intro/#about)

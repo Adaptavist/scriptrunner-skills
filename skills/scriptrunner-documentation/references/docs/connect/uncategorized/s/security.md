@@ -48,7 +48,7 @@ You may want to be notified if a script execution fails. We've made this simple 
 
 To enable email notifications:
 
-1.  Click your user profile icon at the bottom of the _left-hand menu_.A list of related options appears.
+1.  Click your user profile icon at the bottom of the _left-hand menu_. A list of related options appears.
 2.  Click Profile settings.
 3.  Scroll down to the _Email notifications_ section.
 4.  Toggle _Script failure_ to On.
@@ -56,7 +56,7 @@ To enable email notifications:
 
 Note: Custom filtering
 
-If you'd like to customize this process, we offer a public REST API that includes access to the invocation logs. This allows you to filter the information you'd like to receive.For more info, see the [REST API](../r/rest-api.md) section of the documentation.
+If you'd like to customize this process, we offer a public REST API that includes access to the invocation logs. This allows you to filter the information you'd like to receive. For more info, see the [REST API](../r/rest-api.md) section of the documentation.
 
 ## Compliance
 

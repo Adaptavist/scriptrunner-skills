@@ -20,8 +20,6 @@ Don't have the time or capacity to write scripts in-house? Our on-demand [script
 
 ## Demo
 
-[Scripting and emulating external events demo](https://app.arcade.software/share/FLng31ysQCQqyMaFmc8e?ref=share-link)
-
 ## Scripting language options
 
 ScriptRunner Connect allows the choice of three different language options that control various features on the editor level: JavaScript, TypeScript, and TypeScript Strict. The primary features controlled by these three options are [auto-complete suggestions](https://docs.adaptavist.com/src/latest/scripting/editor), import suggestions, syntax checking, and [strict mode](https://www.typescriptlang.org/tsconfig#strict).

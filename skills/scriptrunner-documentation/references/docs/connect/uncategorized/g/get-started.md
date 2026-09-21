@@ -34,7 +34,7 @@ Here's a visual overview of [ScriptRunner Connect.](https://app.scriptrunnerconn
 
 ## Why we made the app
 
-Neither enterprise and bespoke solutions nor single-purpose integration tools meet the current needs of organizations trying to automate business processes around Atlassian and third-party apps, and none of these options are simple or efficient to manage.
+Neither enterprise nor bespoke solutions nor single-purpose integration tools meet the current needs of organizations trying to automate business processes around Atlassian and third-party apps, and none of these options is simple or efficient to manage.
 
 Using any of these alternatives often results in slow implementation times and a high number of resource and budget requests that may not be available to system administrators or Atlassian consultants.
 

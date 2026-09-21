@@ -41,7 +41,7 @@ To initiate your free trial in 3 easy steps:
 1.  Log in to ScriptRunner Connect and click Start free trial in the _Settings_ section of the left-hand menu.  
       
     
-2.  Follow the instructions in the dialog, which will walk you through raising a support ticket.
+2.  Follow the instructions in the dialog to raise a support ticket.
     
 3.  Once we approve your trial request, we'll send you a confirmation and let you know how to quickly start your trial.
 
@@ -51,14 +51,14 @@ To initiate your free trial in 3 easy steps:
 
 We have 2 important updates:
 
-Security 🔒
+### Security 🔒
 
 [Enhanced isolation mode](https://docs.adaptavist.com/src/latest/scripting/runtime) is now available for added security.
 
 -   This adds an extra layer of security against sandbox escape.
 -   This feature is available only for paid users.
 
-New runtime version 🆕
+### New runtime version 🆕
 
 An enhanced [runtime version](https://docs.adaptavist.com/src/latest/scripting/runtime) (V2) is now available.
 
@@ -102,8 +102,6 @@ Find more [information documented here](https://loop.scriptrunnerhq.com/c/integr
 
 We have a cool new feature to share:
 
-Duplicate parameters 👥
-
 To avoid the tedious task of recreating the same or similar parameters across environments in the workspace, we've created the ability to [duplicate parameters](https://docs.adaptavist.com/src/latest/workspaces/parameters). This feature is available in the _Parameters_ section of every environment.
 
 ## 03 November 2025
@@ -112,21 +110,21 @@ To avoid the tedious task of recreating the same or similar parameters across en
 
 We have 3 wonderful new features to tell you about:
 
-External coding update 🔑
+### External coding update 🔑
 
 External Coding features are now available to use without request.
 
 See the [External Coding](../e/external-coding.md) section of the documentation to learn more about customising your coding experience.
 
-Share a connector
+### Share a connector
 
 We released a new feature that allows you to share connectors with teammates.
 
 Read more about connector sharing on our [Connectors](../c/connectors.md) page.
 
-Customised notifications
+### Customized notifications
 
-[Customise script failure notifications](https://docs.adaptavist.com/src/latest/security#concept-5993--en) on a workspace level.
+[Customise script failure notifications](https://docs.adaptavist.com/src/latest/security#script-failure-notifications--en) on a workspace level.
 
 ## 09 June 2025
 
@@ -151,11 +149,11 @@ We made improvements to our Parameters feature for a better developer experience
 
 We have 2 new AI-related features to share!
 
-AI Explain Error 🔎
+### AI Explain Error 🔎
 
 A new feature has been added to help you resolve errors in the console. The AI Explain Error feature uses our AI assistant to help you understand the context and specific error message when one is displayed in the console. You'll be able to send or omit the relevant code with the error message when prompted to use this feature.
 
-AI Explain Code 📍
+### AI Explain Code 📍
 
 To have our AI assistant help you by explaining a section of code, simply highlight the relevant section with your cursor and select the AI Explain Code option after a right-click in the same area. This will open a new window where our AI Assistant will be prompted to give the proper context for your highlighted section of code.
 
@@ -163,7 +161,7 @@ To have our AI assistant help you by explaining a section of code, simply highli
 
 ### Update
 
-AI assistant chat history 🪄
+### AI assistant chat history 🪄
 
 The AI Assistant has been updated to include a _Chat history_ option. This option lets you see previous interactions with the AI Assistant across sessions, browsers, and users. Chat history will remain available when accessed via anonymous browsers and even when the system crashes. You may also delete your chat history manually if desired.
 
@@ -171,7 +169,7 @@ The AI Assistant has been updated to include a _Chat history_ option. This optio
 
 ### New feature
 
-Public REST API ⚡
+### Public REST API ⚡
 
 An initial set of [REST API](rest-api.md) endpoints were released that now allow query script invocation and audit logs from ScriptRunner Connect. If you want to store our logs longer than we are or would like to push logs to your third-party systems for analytical or monitoring and alerting purposes, you now have this option. To illustrate how to go about querying our logs, we have an accompanying [template](https://templates.scriptrunnerconnect.com/template/backup-sr-connect-logs-into-aws-s3) that periodically creates a backup of script invocation logs in AWS S3.
 
@@ -183,17 +181,17 @@ We updated the templates screen with two new filtering categories, _Use cases_ a
 
 ### New Features
 
-New connector! ⚡
+### New connector! ⚡
 
 We created a connector for AWS! 🤩 Fine details can be found on the [Connectors](../c/connectors.md) page.
 
-New templates!
+### New templates!
 
 We have 2 new templates to tell you about:
 
-We created a [new template for AWS S3](https://templates.scriptrunnerconnect.com/template/01JK8TYP5DBZQMV070EDF2Q6J7)!The template copies newly added Jira Cloud attachments to AWS S3.
+We created a [new template for AWS S3](https://templates.scriptrunnerconnect.com/template/01JK8TYP5DBZQMV070EDF2Q6J7)! The template copies newly added Jira Cloud attachments to AWS S3.
 
-We created a [new template for Azure DevOps](https://templates.scriptrunnerconnect.com/template/01JJ1TQ0P4WD95XNDPM9CKXA9K)!The template creates a work item in Azure DevOps when an issue is created in Jira Cloud.
+We created a [new template for Azure DevOps](https://templates.scriptrunnerconnect.com/template/01JJ1TQ0P4WD95XNDPM9CKXA9K)! The template creates a work item in Azure DevOps when an issue is created in Jira Cloud.
 
 ## 23 January 2025
 
@@ -201,7 +199,7 @@ We created a [new template for Azure DevOps](https://templates.scriptrunnerconne
 
 We have a cool new feature to share:
 
-AI assistant 🪄
+### AI assistant 🪄
 
 We created an AI assistant based on the ChatGPT 4o model to help you write scripts, learn cool things about the ScriptRunner Connect app, and find awesome templates for your use cases.
 
@@ -213,15 +211,7 @@ It's been a year since we launched ScriptRunner Connect, so we're rolling out so
 
 ### Updates
 
-New and improved navigation 🧭
-
-The new side-navigation design makes it faster to move around the platform to find exactly what you need. Useful information has been thoughtfully restructured to help you find team and personal settings more conveniently. Plus, you can now see the appropriate workspaces and connectors for the team you've selected. Pretty solid update!
-
-Setup guide 🌟
-
-A new setup guide has been implemented to assist you through a seven-step process that covers selecting apps to work with all the way to testing and running the integration.
-
-Usage-insights dashboard 📊
+### Usage-insights dashboard 📊
 
 Keep track of key usage stats at a glance! The new usage dashboard lets you
 
@@ -230,6 +220,14 @@ Keep track of key usage stats at a glance! The new usage dashboard lets you
 -   Watch tutorials to become an integration pro!
 
 To view the usage details, just visit the Home tab.
+
+### Setup guide 🌟
+
+A new setup guide has been implemented to assist you through a seven-step process that covers selecting apps to work with all the way to testing and running the integration.
+
+### New and improved navigation 🧭
+
+The new side-navigation design makes it faster to move around the platform to find exactly what you need. Useful information has been thoughtfully restructured to help you find team and personal settings more conveniently. Plus, you can now see the appropriate workspaces and connectors for the team you've selected. Pretty solid update!
 
 ### Coming soon! ⏰
 
@@ -248,15 +246,15 @@ To view the usage details, just visit the Home tab.
 
 We have 3 new features to tell you about!
 
-New connector! ⚡
-
-We created a new connector for [Azure DevOps](https://azure.microsoft.com/en-us/products/devops)! 🤩 Fine details can be found on the [Connectors](../c/connectors.md) page.
-
-New connector! ⚡
+### New connector! ⚡
 
 We created a new connector for [Zendesk](https://www.zendesk.com/)! 🤩 Fine details can be found on the [Connectors](../c/connectors.md) page.
 
-Audit logs are here! 🧾
+### New connector! ⚡
+
+We created a new connector for [Azure DevOps](https://azure.microsoft.com/en-us/products/devops)! 🤩 Fine details can be found on the [Connectors](../c/connectors.md) page.
+
+### Audit logs are here! 🧾
 
 We've introduced audit logs to provide visibility into user actions within ScriptRunner Connect. This new feature allows you to view historical actions for yourself and your teammates, provided you have the appropriate access.
 
@@ -280,9 +278,9 @@ See the [Generic Connector](https://docs.adaptavist.com/src/latest/connectors/ge
 
 We have a cool new feature to tell you about:
 
-### New features
+### New feature
 
-Console Log 🔍
+### Console Log 🔍
 
 When you perform an action in a workspace, run a script manually, or trigger a script through a scheduled or external event, the related logs will appear in the console log.
 
@@ -295,11 +293,11 @@ See [Console Log](https://docs.adaptavist.com/src/latest/workspaces/console-log)
 
 ## 27 June 2024
 
-### New features
+### New feature
 
 We have a cool new feature to tell you about:
 
-Multi-Factor Authentication (MFA) 🔒
+### Multi-Factor Authentication (MFA) 🔒
 
 After popular demand, we're happy to announce the addition of Multi-Factor Authentication (MFA) to enhance the security of ScriptRunner Connect! Next time you log in, you will receive a prompt asking whether you want to enable MFA.
 
@@ -317,11 +315,11 @@ We created a way for you to work more efficiently with large attachments when no
 
 We have 2 wonderful new features to tell you about:
 
-New connector! ⚡
+### New connector! ⚡
 
 We created a [new connector for NetSuite](https://www.npmjs.com/package/@managed-api/netsuite-v1-sr-connect)! 🤩 The fine details are on the [Connectors](../c/connectors.md) page.
 
-Vendor API versions for Confluence Cloud and monday.com connectors! ⚡
+### Vendor API versions for Confluence Cloud and monday.com connectors! ⚡
 
 Confluence Cloud and monday.com API connectors now include a Vendor API Version field, allowing you to choose which base API version you want to use with ScriptRunner Connect's Managed APIs. If needed, you can use multiple versions in your workspace by creating multiple API connections with different base versions.
 
@@ -337,25 +335,23 @@ Find this and all other templates on our [Templates](../t/templates.md) page! �
 
 ## 17 May 2024
 
-### New features
-
 We have 3 wonderful new features to tell you about:
 
-New template for Jira 💪🏾
+### New template for Jira 💪🏾
 
-We created a new template for Jira users, [Keep Jira On-Prem issues in sync with Jira Cloud](https://app.scriptrunnerconnect.com/template/01HNFNQMDF7G1N8Y34D2SDPDDD),
+We created a new template for Jira users, [Keep Jira On-Prem issues in sync with Jira Cloud](https://app.scriptrunnerconnect.com/template/01HNFNQMDF7G1N8Y34D2SDPDDD).
 
 Tip: Just Cloud? ☁
 
 If you want to sync data between multiple Jira Cloud instances, check out the [Keep Jira Cloud issues in sync](https://app.scriptrunnerconnect.com/template/01GYW8F8WHZ8SAFCNVBAQY16D8) template.
 
-Environment variables 🌱
+### Environment variables 🌱
 
 We are also excited to announce that [Environment variables are live](https://docs.adaptavist.com/src/latest/workspaces/parameters)!
 
 This new feature lets you securely manage and utilize environment-specific settings and configurations for more modular, secure, and easy-to-maintain code.
 
-Notifications for script failures 📨
+### Notifications for script failures 📨
 
 Finally, you can now receive email notifications when scripts fail. To opt-in, just make the following quick update to your ScriptRunner Connect profile:
 

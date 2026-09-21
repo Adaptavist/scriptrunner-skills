@@ -260,7 +260,7 @@ page.addLabels("label-here1", "label-here2")
 ## Other resources
 
 -   [Rewriting Scripts](../rewrite-scripts-for-cloud-guide.md)
--   [Prepare to Migrate Script](https://docs.adaptavist.com/sr4cc/latest/migration/migration-checklist#migration-checklist-rewrite-your-scripts--en)
+-   [Prepare to Migrate Script](https://docs.adaptavist.com/sr4cc/latest/migration/rewrite-scripts-for-cloud-guide/prepare-to-migrate-scripts)
 -   [Adapt scripts for Confluence Cloud](https://docs.adaptavist.com/sr4cc/latest/migration/rewrite-scripts-for-cloud-guide/adapt-scripts-for-confluence-cloud)
 -   [Feature Parity](../feature-parity.md)
 -   [Event Listener Parity](https://docs.adaptavist.com/sr4cc/latest/migration/feature-parity#feature-parity-listeners--en)

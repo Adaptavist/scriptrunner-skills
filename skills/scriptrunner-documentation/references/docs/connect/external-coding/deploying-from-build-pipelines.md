@@ -21,7 +21,7 @@ Disclaimer: Although this approach is safer, at this time, you must not change t
 Error scenarios:
 
 -   Cause: A new script was created, or the script name was changed. Effect: an error will be thrown when trying to create a release via temp space.
--   Cause: a script was deleted. Effect: the deleted scripts' content will continue to be used if the deleted script was a dependent script of another, but the deleted script(s) won't be displayed in the workspace resources of the release.
+-   Cause: A script was deleted. Effect: the deleted scripts' content will continue to be used if the deleted script was a dependent script of another, but the deleted script(s) won't be displayed in the workspace resources of the release.
 
 We plan to address this shortcoming in the future, so the build pipeline deployments will become 100% safe. Until then, we strongly recommend checking your VCS build pipelines against the workspace repository you intend to work on to find out if there are any pending or active deployments. If there are, proceed with caution; limit workspace changes in the `HEAD` version to changing safe content in the scripts. Any other structural change should be postponed until the build pipeline deployment has successfully completed.
 

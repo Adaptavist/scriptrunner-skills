@@ -6,7 +6,9 @@
 - Doc ID: doc-sr4js-4af8a84a-9b2c-4cd5-968b-78b9e99c0e72-b42c66cd1b7cfe0a
 - Source: https://docs.adaptavist.com/sr4js/latest/release-notes/breaking-changes#raw-xml-module-breaking-change-for-jira-10--en
 
-The raw XML format for `condition class` and `provider class` has changed with [Jira 10.0](https://docs.adaptavist.com/sr4js/latest/get-started/update-scriptrunner/compatibility-with-jira). The formats previously generated from the _Preview_ button for each of these built-in fragment scripts are no longer valid:
+Understand the raw XML format changes for `condition` and `provider class` scripts introduced in [Jira 10.0](https://docs.adaptavist.com/sr4js/latest/get-started/update-scriptrunner/compatibility-with-jira) and how to update your configuration.
+
+The formats previously generated from the _Preview_ button for each of these built-in fragment scripts are no longer valid:
 
 -   [Web Item](https://docs.adaptavist.com/sr4js/latest/features/fragments/web-item)
 -   [Web Panel](https://docs.adaptavist.com/sr4js/latest/features/fragments/web-panel)

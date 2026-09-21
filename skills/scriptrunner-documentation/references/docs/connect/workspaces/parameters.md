@@ -20,7 +20,9 @@ Instant application 🚀
 
 You don't need to release and deploy to update parameters. Any changes you make are applied instantly to the environment where you made them.
 
-Watch the video below to learn more about parameters.
+## Parameters tutorials
+
+Watch the video and interactive demo below to learn more about parameters.
 
 ## The basics
 
@@ -190,7 +192,7 @@ The overwriting process involves deleting all of the parameter data in the targe
     
     The rest of the fields in the duplicated parameter, _Description_, _Required_, etc., are automatically included in the duplicate.
     
-    If the duplicated parameter identifies type, _single choice_ or _multiple choice_, the available choices will be copied over in the duplicate, if either _Value_ or _Default value_ is selected in the _Duplicate parameter_ dialogue options.
+    If the duplicated parameter identifies type, _single choice_ or _multiple choice_, the available choices will be copied over in the duplicate if either _Value_ or _Default value_ is selected in the _Duplicate parameter_ dialogue options.
     
 4.  Select desired environment(s) to copy the duplicate into.
 5.  Click Duplicate.

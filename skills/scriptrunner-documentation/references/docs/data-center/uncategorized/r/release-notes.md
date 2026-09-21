@@ -6,7 +6,7 @@
 - Doc ID: doc-sr4js-2c42ac22-75c7-48b0-8f3a-a36bfb925502-8a642d0348ea6a02
 - Source: https://docs.adaptavist.com/sr4js/latest/release-notes
 
-Discover recent breaking changes, fixes, and feature updates.
+Find recent breaking changes, bug fixes, and feature updates across all ScriptRunner for Jira Data Center releases.
 
 -   [Critical Vulnerability Notification: SRJIRA-8436](../../release-notes/critical-vulnerability-notification-srjira-8436.md)
 -   [Breaking Changes](../../release-notes/breaking-changes.md)

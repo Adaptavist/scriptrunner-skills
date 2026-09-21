@@ -14,8 +14,6 @@ As hinted earlier, ScriptRunner Connect aims to implement industry-standard rele
 
 ## Demo
 
-[Environments, Releases, and Deployments demo](https://demo.arcade.software/bguOwse6O7Dt5ZOGq6Y3?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true).
-
 ## Terminology
 
 Release
@@ -68,7 +66,7 @@ Creating a new environment is easy:
 
 When you create a new environment, the environment-specific configuration is not copied over from the _default_ environment. Instead, you are expected to reconfigure the setup in the new environment. The new environment also targets the HEAD version by default. You can change this by clicking on the ellipsis menu (three dots) in the workspace header and selecting Deployment Manager, which allows you to change which environment targets which release, including the environment you just created.
 
-We do not recommend having a HEAD version targeted by more than a single environment, as making a change in the HEAD version would immediately apply these changes to other environments that target the HEAD version, which can lead to unexpected behavior (unless it is intentional).
+We do not recommend having a HEAD version targeted by more than one environment, because a change to the HEAD version would immediately apply these changes to other environments that target it, which can lead to unexpected behavior (unless it is intentional).
 
 Creating a new environment without re-targeting to use a non-HEAD version looks as follows:
 

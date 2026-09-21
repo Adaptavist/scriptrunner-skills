@@ -14,7 +14,7 @@ This page summarises the main features of ScriptRunner for Jira Data Center and 
 
 Note: ScriptRunner Migration
 
-If you are migrating from ScriptRunner for Jira Data Center to Cloud, everything you need to know about how features will work is detailed in [ScriptRunner Migration](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Data_Center_SR4JS/topics/scriptrunner_migration.dita).
+If you are migrating from ScriptRunner for Jira Data Center to Cloud, everything you need to know about how features will work is detailed in [ScriptRunner Migration](../script-runner-migration/script-runner-migration-to-cloud.md).
 
 ## Main ScriptRunner features
 

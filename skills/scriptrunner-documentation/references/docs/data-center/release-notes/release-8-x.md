@@ -1241,7 +1241,7 @@ Bugs Fixed
 
 ### HAPI update
 
-You can now update comments using HAPI. Check out the [Work with Comments](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Data_Center_SR4JS/topics/work_with_comments.dita) page to learn more about what you can do with comments.
+You can now update comments using HAPI. Check out the [Work with Comments](https://docs.adaptavist.com/sr4js/latest/hapi/work-with-comments) page to learn more about what you can do with comments.
 
 ### Snippets are now available for a custom script field
 

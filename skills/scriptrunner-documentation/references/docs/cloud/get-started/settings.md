@@ -46,7 +46,7 @@ ScriptRunner checks for updates on the work items made by any other users for a 
 
 ## Enhanced Search feature
 
-You can enable the use of the [ScriptRunner Enhanced Search](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/scriptrunner_enhanced_search.dita) feature by activating this option. This provides you with search capabilities in Jira Cloud using advanced [JQL functions](https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/scriptrunner-enhanced-search-jql-functions) that are not available by default in Jira Cloud.
+You can enable the use of the [ScriptRunner Enhanced Search](../features/script-runner-enhanced-search.md) feature by activating this option. This provides you with search capabilities in Jira Cloud using advanced [JQL functions](https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/scriptrunner-enhanced-search-jql-functions) that are not available by default in Jira Cloud.
 
 Using ScriptRunner JQL functions removes the need to learn the Atlassian SDK and provides you with a simple method for writing your own JQL functions.
 

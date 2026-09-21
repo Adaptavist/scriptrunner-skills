@@ -13,7 +13,7 @@ There are two main sections of this page:
 
 ## Data Residency
 
-Data residency gives you control over where your in-scope data for the ScriptRunner Migration Suite is hosted. It allows you to choose whether it's globally distributed or held in place in a defined geographic location, such as the European Union (EU).
+Data residency gives you control over where your in-scope data for the ScriptRunner Migration Suite is hosted. It allows you to choose where it is held, either the European Union (EU) or the United States (US). However, the Migration Agent workloads will be processed by Anthropic in their datacenters in various regions.
 
 If you work in a regulated industry like finance, government, or healthcare, data residency may be a necessity for operating in a cloud environment. More generally, it can also help you meet company data management requirements.
 
@@ -21,12 +21,17 @@ If you work in a regulated industry like finance, government, or healthcare, dat
 
 You can select your preferred data residency region when you first sign in:
 
--   Global: Choose _Global_ for all Cloudfare Data Centers worldwide. By default, ScriptRunner Migration Suite operates in the Global region, which includes all Cloudflare Data Centers worldwide. For these users, we dynamically determine where data is located and optimise performance by placing data close to where it is accessed.
--   European Union: Choose _European Union_ for Cloudcare Data Centers within the EU juridsiction. If you require your in-scope data to stay within the European Union, you can select the European Union region. When this option is selected, ScriptRunner Migration Suite uses Cloudflare's jurisdiction restrictions to ensure that in-scope data only runs and persists within EU data centers.
+-   European Union: Choose _European Union_ for AWS Data Centers within the EU juridsiction. If you require your in-scope data to stay within the European Union, you can select the European Union region. When this option is selected, your data is held in Frankfurt, Germany. The Migration Agent workloads are processed by Anthropic in their own regions and data centers.
+-   United States: Choose _United States_ for AWS Data Centers in the United States. When this option is selected, your data is held in Oregon. The Migration Agent workloads are processed by Anthropic in their own regions and data centers.
+    
 
 ### Change where your data is stored
 
-Region selection is per-user. You can switch regions instantly at any time using the region selector. To navigate to the region selector, select next to your username, and then select Switch Region.
+Region selection is per-user. You can switch regions instantly at any time using the region selector. To navigate to the region selector, select the icon next to your username, and then select Switch Region.  
+  
+
+The Switch region dialog box appears, where you can choose:  
+  
 
 When you switch regions:
 
@@ -34,6 +39,7 @@ When you switch regions:
 -   No data is transferred between regions.
 -   You will only see data created in the selected region.
 -   Data created in other regions remains accessible by switching back.
+-   Log in credentials won't be carried over between regions.
 
 This design allows users who work with data across multiple regions to easily switch context as needed.
 
@@ -45,27 +51,22 @@ This table lists in-scope data types that can be pinned and out-of-scope data th
 
 | ✓ Can be pinned | ✗ Cannot be pinned |
 | --- | --- |
-| [ScriptRunner Migration Agent](script-runner-migration-agent.md) chat history | User account information |
-| [ScriptRunner Migration Agent](script-runner-migration-agent.md) conversation context | Migration Analyser data |
-| AI response data | AI data in transit |
-|  | Operational logs |
-|  | User analytics |
+| [ScriptRunner Migration Agent](script-runner-migration-agent.md) chat history | AI data in transit |
+| [ScriptRunner Migration Agent](script-runner-migration-agent.md) conversation context | User analytics |
+| AI response data |  |
+| User account information |  |
+| Migration Analyser data |  |
+| Operational logs |  |
 
 #### User account information
 
-ScriptRunner Migration Suite uses [Clerk](https://clerk.com/legal/privacy) as our identity provider. User account information, including name, email address, and avatar, is stored and managed by Clerk's central identity service. ScriptRunner Migration Suite does not store any personally identifiable information (PII) directly. We only reference masked unique identifiers which we use to resolve user details from Clerk on demand.
-
-For information on where and how Clerk stores user data, visit [Clerk's Privacy Policy](https://clerk.com/legal/privacy) and [Data Processing Addendum](https://clerk.com/legal/dpa).
+ScriptRunner Migration Suite stores the usernames and email as personally identifiable information (PII) directly.
 
 #### Migration Analyser data
 
-The [ScriptRunner Migration Analyse and Assess Tool](script-runner-migration-analyse-and-assess-tool.md) processes ScriptRunner configuration exports to assess migration readiness. Processing occurs in AWS us-east-1, but no data is retained server-side. All analysis results are stored locally in your browser using IndexedDB. Since this data never persists on our servers, data residency pinning does not apply.
+The [ScriptRunner Migration Analyse and Assess Tool](script-runner-migration-analyse-and-assess-tool.md) results are stored server-side and managed in the same way as chat history, with full data residency pinning available based on your selected region.
 
 The Migration Analyser does not utilise any AI or ScriptRunner Intelligence powered services.
-
-Note: Coming soon
-
-Migration Analyser results will soon be stored server-side and managed in the same way as chat history, with full data residency pinning available based on your selected region.
 
 ### How does data residency work for ScriptRunner Intelligence?
 
@@ -81,24 +82,13 @@ For more information about our security practices and compliance certifications,
 
 All data stored in the ScriptRunner Migration Suite is encrypted at rest using AES-256, a widely tested, highly performant, and industry-standard encryption algorithm. Encryption and decryption are automatic and do not require user configuration.
 
-### Data security: Encryption in transit
-
-All data transfer within ScriptRunner Migration Suite is secured using Transport Layer Security (TLS/SSL), which includes:
-
--   Data transfer between your browser and ScriptRunner Migration Suite
--   Data transfer between Cloudflare Workers and Durable Objects
--   API access and all network communications
-
 ### Data retention
 
 Chat history and conversation data is retained indefinitely until you choose to delete it.
 
 ### Delete your data
 
-You can delete your data in the following ways:
-
--   Delete individual chats: Remove specific conversations from the chat interface.
--   Delete your account: Self-serve account deletion is available by clicking your user profile icon in the top navigation.
+You can delete individual chats from the chat interface.
 
 ## Future enhancements
 
@@ -109,8 +99,7 @@ We will explore additional regions and enhance our data residency capabilities o
 | Term | Definition |
 | --- | --- |
 | Chat history | Conversation data from interactions with the Migration Agent, including user messages and AI responses. |
-| Cloudflare Durable Objects | Cloudflare's serverless stateful storage used by ScriptRunner Migration Suite for persistent data. |
-| Jurisdiction restriction | A Cloudflare feature that ensures Durable Objects only store and process data within a specified geographic region. |
+| Jurisdiction restriction | AWS resources are only stored in the judicial region that you have selected, including backups which are stored in an AWS account in another region, but still in the same judiciary. |
 | [Migration Agent](script-runner-migration-agent.md) | ScriptRunner Migration Suite's AI-powered assistant that helps with ScriptRunner migration questions and script conversion. |
 | [Migration Analyser](script-runner-migration-analyse-and-assess-tool.md) | A tool that processes ScriptRunner configuration exports to assess migration readiness. |
 | Operational logs | System logs used for operational maintenance and diagnostic purposes. |

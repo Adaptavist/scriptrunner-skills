@@ -3,8 +3,8 @@
 - Platform: connect
 - Space: SRC
 - Hierarchy: Managed APIs
-- Doc ID: doc-src-b27f30e7-ddca-438f-a1f0-61cf476ddcbe-70ef24608cb2e4a9
-- Source: https://docs.adaptavist.com/src/latest/managed-apis#managed-api-for-monday-com--en
+- Doc ID: doc-src-b27f30e7-ddca-438f-a1f0-61cf476ddcbe-2872fb11abab1f51
+- Source: https://docs.adaptavist.com/src/latest/managed-apis#managed-api-for-monday.com--en
 
 Learn about the specifics of using a managed API to interface with monday.com
 
@@ -28,7 +28,7 @@ Fields returned with the response are automatically inferred from the fields you
 
 For example, let's try to get the boards from monday.com.
 
-When we start typing out the fields, we can get the list of all supported fields and see which kind of value type the field supports. (You may need to press CTRL + Space to open the tooltip overlay to check the value types). In the case of the communication field, we can see that it accepts a `boolean` value type, which means that it is not a nested field, and we can simply ask it to be returned if we pass the `true` value to that field.
+When we start typing out the fields, we can see the list of all supported fields and the value types the field supports. (You may need to press CTRL + Space to open the tooltip overlay to check the value types). In the case of the communication field, we can see that it accepts a `boolean` value type, which means that it is not a nested field, and we can simply ask it to be returned if we pass the `true` value to that field.
 
 However, when looking at the `creator` field, we can see the value type to be an object which has an inner `fields` object, which means that the field is nested (comes with sub-fields).
 

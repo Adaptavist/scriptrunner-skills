@@ -6,7 +6,7 @@
 - Doc ID: doc-sr4js-1cfcca4d-b667-4a95-8f3f-6aa92a003eee-ec687037bb7b7d74
 - Source: https://docs.adaptavist.com/sr4js/latest/release-notes/breaking-changes#groovy-4-breaking-change-for-grab-annotations--en
 
-There has been a breaking change in Groovy 4 for users using [@Grab](http://docs.groovy-lang.org/latest/html/documentation/grape.html) to import certain libraries. This page describes the error that occurs, the symptoms, and the solutions you can implement.
+Learn about the Groovy 4 breaking change affecting [@Grab](http://docs.groovy-lang.org/latest/html/documentation/grape.html) annotations, the errors it causes, and how to fix your scripts.
 
 ## Summary of the problem
 

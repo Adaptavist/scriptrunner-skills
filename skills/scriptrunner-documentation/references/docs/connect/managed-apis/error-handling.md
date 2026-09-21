@@ -8,7 +8,9 @@
 
 Learn about how errors are handled with a managed API.
 
-[Managed API Error Handling demo](https://demo.arcade.software/vGQcpdooMVaNgH7r8CB8?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true)
+## Demo
+
+[Media](https://demo.arcade.software/vGQcpdooMVaNgH7r8CB8?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true)
 
 ## Reactive error handling
 
@@ -266,9 +268,9 @@ export default async function(event: any, context: Context) {
 }
 ```
 
-## Global Settings
+### Global Settings
 
-To avoid having to specify common error strategy logic on each function call individually, you can leverage a global error strategy where you can specify common behavior on the Managed API instance level, where all functions that are invoked via the same instance will inherit the error strategy you specified on the global level. For example, it is useful to specify global behavior for handling re-trying logic when API requests are being rate-limited.
+To avoid having to specify common error strategy logic on each function call individually, you can leverage a global error strategy where you can specify common behavior on the Managed API instance level, where all functions that are invoked via the same instance will inherit the error strategy you specified at the global level. For example, it is useful to specify global behavior for handling retry logic when API requests are being rate-limited.
 
 For example:
 
@@ -326,9 +328,9 @@ export default async function(event: any, context: Context) {
 }
 ```
 
-Note: You also have the option to overwrite specific error strategy behavior on the function level. However it will only overwrite a specific error handler callback function but will still inherit other behaviors from the global level. For example, if you have a global behavior specified to re-try on HTTP 429 and then you specify local (function level) behavior to return something else when HTTP 404 is returned, then re-try logic is still applied from the global level.
+Note: You also have the option to overwrite specific error strategy behavior on the function level. However, it will only overwrite a specific error handler callback function but will still inherit other behaviors from the global level. For example, if you have a global behavior specified to retry on HTTP 429 and then you specify local (function-level) behavior to return something else when HTTP 404 is returned, then retry logic is still applied from the global level.
 
-Tip: By default, Managed APIs come with sensible default options for re-trying requests so you don't have to specify that logic explicitly, but you can optionally disable any default behaviors by specifying global error strategy as either null or undefined. Also, when specifying your global error strategy, you will be overwriting default behavior, so keep in mind to provide re-try logic explicitly if needed.
+Tip: By default, Managed APIs come with sensible default options for retrying requests so you don't have to specify that logic explicitly, but you can optionally disable any default behaviors by specifying global error strategy as either null or undefined. Also, when specifying your global error strategy, you will be overwriting default behavior, so keep in mind to provide retry logic explicitly if needed.
 
 For example, you can disable the default global settings as follows:
 

@@ -162,7 +162,7 @@ Follow the steps below to create the behaviour:
     
     You will see the _Create Behaviour_ screen displayed:
     
-2.  Choose the Jira Behaviour option.
+2.  Choose Jira Behaviour.
 3.  Enter a name and description for the behaviour. It's good practice to make these as descriptive as possible.
 4.  Scroll down to the _Behaviour Mapping_ section and select the relevant space to which this behaviour will be mapped from the _Spaces_ drop-down. For this example, choose the Docs space.
 5.  Select the work type that will be associated with the behaviour from the _Work Types_ drop-down. For this example, choose the Task work item type.
@@ -325,9 +325,7 @@ Follow the steps below to create this behaviour:
     2.  Select the request type to which the behaviour will be applied from the list of available Request Types
     3.  Select the view type to which the behaviour will be applied from the list of available View Types.
     
-    Tip:
-    
-    JSM is currently supported in Portal view only. Due to an Atlassian limitation, Agent view is not supported at this time, but will be available soon.
+    Tip: JSM is supported on Portal view only. Due to an Atlassian limitation, Agent view is not supported at this time, but will be available soon.
     
 6.  Determine when the behaviour script will run by choosing the trigger that controls when the script executes from the Step 2: Trigger options. For this example, choose the On change trigger event so that the script runs when the specified change occurs
 7.  Scroll to the script editor of the Step 3: Rules section, as required. Note that you can open the [API documentation](https://docs.adaptavist.com/sr4jc/latest/features/behaviours/behaviours-api) directly from here.
@@ -370,9 +368,7 @@ Follow the steps below to create this behaviour:
     2.  Select the request type to which the behaviour will be applied from the list of available Request Types
     3.  Select the view type to which the behaviour will be applied from the list of available View Types.
     
-    Tip:
-    
-    JSM is currently supported in Portal view only. Due to an Atlassian limitation, Agent view is not supported at this time, but will be available soon.
+    Tip: JSM is supported on Portal view only. Due to an Atlassian limitation, Agent view is not supported at this time, but will be available soon.
     
 6.  Determine when the behaviour script will run by choosing the trigger that controls when the script executes from the Step 2: Trigger options. For this example, choose the On change trigger event so that the script runs when the specified change occurs
 7.  Scroll to the script editor of the Step 3: Rules section, as required. Note that you can open the [API documentation](https://docs.adaptavist.com/sr4jc/latest/features/behaviours/behaviours-api) directly from here.
@@ -414,10 +410,8 @@ Follow the steps below to create this behaviour:
     1.  Select the spaces to which the behaviour will be applied from the list of available Spaces.
     2.  Select the request type to which the behaviour will be applied from the list of available Request Types
     3.  Select the view type to which the behaviour will be applied from the list of available View Types.
-    
-    Tip:
-    
-    JSM is currently supported in Portal view only. Due to an Atlassian limitation, Agent view is not supported at this time, but will be available soon.
+    4.  Tip: JSM is supported on Portal view only. Due to an Atlassian limitation, Agent view is not supported at this time, but will be available soon.
+        
     
 6.  Determine when the behaviour script will run by choosing the trigger that controls when the script executes from the Step 2: Trigger options. For this example, choose the On change trigger event so that the script runs when the specified change occurs
 7.  Scroll to the script editor of the Step 3: Rules section, as required. Note that you can open the [API documentation](https://docs.adaptavist.com/sr4jc/latest/features/behaviours/behaviours-api) directly from here.

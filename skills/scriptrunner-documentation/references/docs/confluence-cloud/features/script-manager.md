@@ -30,7 +30,7 @@ For example, if you had the same conditional code across multiple scripts and ne
     
     You can reference the newly created script when using any of the code editors provided within many ScriptRunner for Confluence Cloud features.
     
-    See [How to reuse scripts](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Confluence_Cloud_SR4CC/topics/script_manager_how_to_reuse_scripts.dita) for details on reusing saved scripts.
+    See [How to reuse scripts](https://docs.adaptavist.com/sr4cc/latest/features/script-manager#how-to-reuse-scripts--en) for details on reusing saved scripts.
     
     It's also possible to rename a script or saved folder within Script Manager.
     

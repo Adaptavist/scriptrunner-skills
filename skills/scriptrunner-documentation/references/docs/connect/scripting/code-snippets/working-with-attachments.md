@@ -159,7 +159,7 @@ export default async function(event: any, context: Context): Promise<void> {
 
 ## Working with very large attachments (100MB+)
 
-While the `convertArrayBufferToFormDataBuffer` utility function helps you transmit larger attachments by being more memory efficient, you may still run out of memory at some point. As a rule of thumb, attachments larger than 100MB will fail to be processed in memory, even with the aforementioned memory optimization. To work around this limitation, ScriptRunner Connect offers a feature that circumvents the memory limitation by not loading the attachment into runtime memory, but instead streaming it in the background, allowing it to process very large files.
+While the `convertArrayBufferToFormDataBuffer` utility function helps you transmit larger attachments by being more memory-efficient, however, you may still run out of memory at some point. As a rule of thumb, attachments larger than 100MB will not be processed in memory, even with the aforementioned memory optimization. To work around this limitation, ScriptRunner Connect offers a feature that circumvents the memory limitation by not loading the attachment into runtime memory, but instead streaming it in the background, allowing it to process very large files.
 
 Note: Theoretical limit 🤓
 
@@ -263,7 +263,7 @@ export default async function (event: any, context: Context): Promise<void> {
 
 ### Using base64 upload
 
-To use the base64 streaming, you first have to specify the `x-stitch-transform-stored-body='embedded-base64'` header with the fetch call. Then, you can simply specify the `x-stitch-stored-body-id` header and include the `[storedBodyBase64]` marker somewhere in the body, where the transformed base64 output will be injected. Please use only one marker.
+To use base64 streaming, you first have to specify the `x-stitch-transform-stored-body='embedded-base64'` header with the fetch call. Then, you can specify the `x-stitch-stored-body-id` header and include the `[storedBodyBase64]` marker somewhere in the body, where the transformed base64 output will be injected. Please use only one marker.
 
 An example
 

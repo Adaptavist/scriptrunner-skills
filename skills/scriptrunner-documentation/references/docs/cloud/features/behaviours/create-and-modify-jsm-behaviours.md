@@ -8,10 +8,6 @@
 
 ## Create a JSM Behaviour
 
-Note:
-
-JSM is currently supported in Portal view only. Due to an Atlassian limitation, Agent view is not supported at this time, but will be available soon.
-
 The steps below describe how you can create a new JSM behaviour:
 
 1.  Navigate to ScriptRunner > Behaviours.
@@ -33,9 +29,9 @@ The steps below describe how you can create a new JSM behaviour:
     2.  Select the request type to which the behaviour will be applied from the list of available Request Types
     3.  Select the view type to which the behaviour will be applied from the list of available View Types.
     
-    Tip:
+    Tip: JSM is supported on Portal view only. Due to an Atlassian limitation, Agent view is not supported at this time, but will be available soon.
     
-    At least one option must be selected from each category, and you have the option to choose _Select all_if required.
+    Tip: At least one option must be selected from each category, and you have the option to choose _Select all_if required.
     
 5.  Determine when the behaviour script will run by choosing the trigger that controls when the script executes from either On load or On change (or both) from the Step 2: Trigger options.
     
@@ -97,7 +93,7 @@ Follow the steps below to make changes to existing behaviours in ScriptRunner fo
         
     -   changes to the selections previously made when creating this behaviour in Step 1 and/or Step 2
         
-    -   editing the code. JSM Behaviours support only one script per Behaviour. If you need to use multiple scripts, you can create a separate Behaviour for each one.
+    -   edits to the code. JSM Behaviours support only one script per Behaviour. If you need to use multiple scripts, you can create a separate Behaviour for each one.
         
     
     Note:

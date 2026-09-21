@@ -47,7 +47,7 @@ export default async function(event: any, context: Context): Promise<void> {
 
 Note: Naming convention
 
-The naming convention for Managed API packages is @managed-api/${PRODUCT\_ID}-${PLATFORM}. core in the platform name indicates the platform/runtime agnostic version.
+The naming convention for Managed API packages is @managed-api/${PRODUCT\_ID}-${PLATFORM}. core in the platform name indicates the platform/runtime-agnostic version.
 
 ## Port ScriptRunner Connect code onto other platforms/runtimes
 

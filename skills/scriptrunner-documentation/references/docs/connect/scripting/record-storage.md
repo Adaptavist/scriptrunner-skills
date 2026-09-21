@@ -178,7 +178,7 @@ export default async function(event: any, context: Context): Promise<void> {
         keys.push(...response.keys); // Push existing keys to keys list
  
  if (response.lastEvaluatedKey) {
-            lastEvaluatedKey = response.lastEvaluatedKey; // If 'lastEvaluatedKey' is present then store it and repeate the operation
+            lastEvaluatedKey = response.lastEvaluatedKey; // If 'lastEvaluatedKey' is present then store it and repeat the operation
         } else {
  break; // If not then break the loop
         }

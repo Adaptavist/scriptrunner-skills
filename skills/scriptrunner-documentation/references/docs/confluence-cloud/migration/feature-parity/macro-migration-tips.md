@@ -8,11 +8,13 @@
 
 Useful information about macros to learn before migrating between ScriptRunner for Confluence Sever/DC and Cloud.
 
-When you migrate from ScriptRunner for Confluence Server or Data Center to ScriptRunner for Confluence Cloud, most built-in macros are unsupported and need to be replaced with a custom Cloud macro to perform the same tasks. There are currently three built-in macros that ScriptRunner for Confluence Cloud supports. These built-in macros are:
+When you migrate from ScriptRunner for Confluence Server or Data Center to ScriptRunner for Confluence Cloud, most built-in macros are unsupported and need to be replaced with a custom Cloud macro to perform the same tasks. There are currently several built-in macros that ScriptRunner for Confluence Cloud supports. These built-in macros are:
 
 -   [Add Label](../../features/macros/built-in-macros/add-label.md)
 -   [Choose Label](../../features/macros/built-in-macros/choose-label.md)
 -   [Page Info](../../features/macros/built-in-macros/page-info.md)
+-   [Choose Label](../../features/macros/built-in-macros/choose-label.md)
+-   [Markdown](../../features/macros/built-in-macros/markdown.md)
 
 Note: Is there a macro that you would like to see supported in Cloud? Do you have an idea for a new macro? We want to hear from you! Please forward your requests and ideas via our [customer support portal](https://the-adaptavist-group-support.atlassian.net/servicedesk/customer/portal/18).
 

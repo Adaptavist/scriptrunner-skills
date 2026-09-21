@@ -20,6 +20,8 @@ This tutorial focuses on the standard version of VS Code, but AI-powered forks l
 
 ## Demo
 
+[Media](https://demo.arcade.software/3bSk7MTH5OFfO0u3Yvgn?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true)
+
 [Remote workspace file system demo](https://demo.arcade.software/3bSk7MTH5OFfO0u3Yvgn?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true)
 
 ## Setup

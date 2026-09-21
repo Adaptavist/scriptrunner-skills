@@ -26,7 +26,7 @@ Some of your scripts may fail if you upgrade without modifications. The major ar
 
 There are some key breaking changes you should be aware of when upgrading to Jira 11:
 
--   `TrustedRequestFactory` removed in Jira 11: `com.atlassian.sal.api.net.TrustedRequestFactory` has been removed and will no longer work. Instead, use the HAPI class `com.adaptavist.hapi.platform.oauth.OAuthRequestSigner` to construct HTTP requests. See our [Work with OAuthRequestSigner](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Data_Center_SR4JS/topics/work_with_oauthrequestsigner.dita) HAPI documentation for examples.
+-   `TrustedRequestFactory` removed in Jira 11: `com.atlassian.sal.api.net.TrustedRequestFactory` has been removed and will no longer work. Instead, use the HAPI class `com.adaptavist.hapi.platform.oauth.OAuthRequestSigner` to construct HTTP requests. See our [Work with OAuthRequestSigner](https://docs.adaptavist.com/sr4js/latest/hapi/work-with-oauthrequestsigner) HAPI documentation for examples.
 -   Search API upgrade: Several methods from the current API have been removed.
 -   Spring and Jakarta update: Jira has upgraded to Spring 6.x and Jakarta EE 10.
 -   jQuery update: Jira has upgraded to jQuery 3 from version 2.

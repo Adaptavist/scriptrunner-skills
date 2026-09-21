@@ -96,4 +96,4 @@ Note: Selecting Explain the configuration or Convert this configuration moves yo
 
 ## Export your results
 
-Use the Export button on the main analysis page to export your scripts to a PDF report or the [Dev and Deployment Tool](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_Migration_Suite_SMS/topics/scriptrunner_dev_and_deployment_tool.dita).
+Use the Export button on the main analysis page to export your scripts to a PDF report or the [Dev and Deployment Tool](../../uncategorized/s/script-runner-dev-and-deployment-tool.md).

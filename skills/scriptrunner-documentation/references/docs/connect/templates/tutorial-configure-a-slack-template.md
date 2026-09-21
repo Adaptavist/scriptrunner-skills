@@ -8,7 +8,7 @@
 
 Follow the steps to configure the _Create Jira Cloud issue from Slack using a simple Slack command_ template and trigger the resulting script.
 
-1.  Click Templates in the left-hand navigation options or start your journey from [here](https://templates.scriptrunnerconnect.com/template/01GAV2EZ71F465PD6T49XHFHPA) (click on Setup Template and then skip to step 5 if you select the advanced view, setup guide instructions are not covered here).
+1.  Click Templates in the left-hand navigation options or start your journey from [here](https://templates.scriptrunnerconnect.com/template/01GAV2EZ71F465PD6T49XHFHPA) (click on Setup Template and then skip to step 5 if you select the advanced view; setup guide instructions are not covered here).
 2.  Click Slack.
     
     All templates for Slack filter down and appear on the ScriptRunner Connect screen.

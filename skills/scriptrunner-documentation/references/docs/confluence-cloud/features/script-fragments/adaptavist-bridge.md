@@ -14,7 +14,7 @@ How the Adaptavist Bridge is injected into your script is determined by what you
 
 You can choose either a [Separate HTML, CSS, and Javascript URL](https://docs.adaptavist.com/sr4cc/latest/features/script-fragments#separate-html-css-and-javascript-url-source--en) or a [Single URL](https://docs.adaptavist.com/sr4cc/latest/features/script-fragments#single-url-source--en) for the Source.
 
-## Separate HTML, CSS, and Javascript URL source
+## Separate HTML, CSS, and JavaScript URL source
 
 The bridge is automatically injected, and you can call it in your script.
 

@@ -56,17 +56,19 @@ If you would prefer to install from inside your Confluence instance, follow [the
 
 When you migrate from ScriptRunner for Confluence Server or Data Center to ScriptRunner for Confluence Cloud, most built-in macros are unsupported and need to be replaced with a custom Cloud macro to perform the same tasks. Check out the [Custom Macros documentation](../features/macros/custom-macros.md) for SciptRunner for Confluence Cloud to learn more.
 
-There are currently three built-in macros that ScriptRunner for Confluence Cloud supports. These built-in macros are:
+There are currently several built-in macros that ScriptRunner for Confluence Cloud supports. These built-in macros are:
 
 -   [Add Label](../features/macros/built-in-macros/add-label.md)
 -   [Choose Label](../features/macros/built-in-macros/choose-label.md)
 -   [Page Info](../features/macros/built-in-macros/page-info.md)
+-   [Create Page](../features/macros/built-in-macros/create-page.md)
+-   [Markdown](../features/macros/built-in-macros/markdown.md)
 
-For tips on migrating these macros to ScriptRunner for Confluence Cloud, [check this out](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Confluence_Cloud_SR4CC/topics/macro_migration.dita).
+For tips on migrating these macros to ScriptRunner for Confluence Cloud, [check this out](https://docs.adaptavist.com/sr4cc/latest/migration/feature-parity/macro-migration-tips).
 
 ## ✅ Rewrite your scripts
 
-Migration from Scriptrunner for Confluence Server/Data Center to ScriptRunner for Confluence Cloud will require your scripts to be rewritten. This is because the APIs and programming models differ significantly between Confluence Server/Data Center and Confluence Cloud.
+Migrating from ScriptRunner for Confluence Server/Data Center to ScriptRunner for Confluence Cloud requires rewriting your scripts. This is because the APIs and programming models differ significantly between Confluence Server/Data Center and Confluence Cloud.
 
 Check out this [Rewrite Scripts for ScriptRunner for Confluence Cloud Guide](rewrite-scripts-for-cloud-guide.md) and [ScriptRunner HQ](https://www.scriptrunnerhq.com/inspiration/blog/rewriting-scriptrunner-scripts-for-migration) to start.
 

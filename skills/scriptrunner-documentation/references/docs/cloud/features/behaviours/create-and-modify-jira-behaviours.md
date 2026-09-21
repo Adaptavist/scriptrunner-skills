@@ -162,4 +162,8 @@ Follow the steps below to make changes to existing behaviours in ScriptRunner fo
     }
     ```
     
+    Note:
+    
+    It is not possible to convert a Jira Behaviour to a JSM Behaviour when making edits.
+    
 5.  Click Save to confirm the configurations for your behaviour.

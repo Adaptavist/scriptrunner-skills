@@ -15,8 +15,6 @@ When it comes to connecting to third-party services, two prerequisites must be f
 
 ## Demo
 
-[Fetch API demo](https://demo.arcade.software/pyCkn5uNI91DnQPc3Aqj?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true)
-
 ## Fetch API
 
 On the lowest level, we have [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API), a general-purpose HTTP Client that can be used to talk to any service as long as the two prerequisites are fulfilled.

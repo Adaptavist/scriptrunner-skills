@@ -24,7 +24,7 @@ Warning: You won't be able to inspect ScriptRunner script configuration changes 
 
 To disable the audit logging, follow these steps:
 
-Log in as an administrator and go to [BASE-URL/secure/SiteDarkFeatures!default.jspa](https://docs.adaptavist.com/sr4js/latest/best-practices/BASE-URL/secure/SiteDarkFeatures!default.jspa)
+Log in as an administrator and go to `BASE-URL/secure/SiteDarkFeatures!default.jspa`
 
 1.  In the Enable Dark Feature text field, add scriptrunner.audit.log.disabled.
     

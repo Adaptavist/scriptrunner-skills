@@ -23,7 +23,7 @@ Now that you've seen CQL in use in ScriptRunner for Confluence Cloud, let's lear
 -   [Function](https://developer.atlassian.com/cloud/confluence/cql-functions/): The value you want to search for.
     -   If it is a system-defined value like RecentlyViewedSpace, it does not need quotation marks.
     -   If it is a user-defined value, like the name of a space or label, you need quotation marks (eg. "demonstration space").
-    -   If it is an Atlassian reserved [character](https://developer.atlassian.com/cloud/confluence/cql-functions/#reserved-characters) or [word](https://developer.atlassian.com/cloud/confluence/cql-functions/#reserved-words), it needs quotation marks (eg. "$", "before", "having").
+    -   If it is an Atlassian reserved [character](https://developer.atlassian.com/cloud/confluence/cql-functions/#reserved-characters) or [word](https://developer.atlassian.com/cloud/confluence/cql-functions/#reserved-words), it needs quotation marks (e.g., "$", "before", "having").
     -   You can add () onto the end of a function to determine specifics about the function, like `endOfDay("-1d"``)`.
 
 Note: CQL queries return all types of Confluence Cloud content including pages, blog posts, comments, and attachments.

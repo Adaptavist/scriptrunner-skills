@@ -53,7 +53,7 @@ Tip: You can use the Load button to browse the code base in Script Manager and r
 
 If there are too many scripts, you should simplify.
 
-We have built Script Manager to handle hundreds of scripts, even thousands. However, Cloud environments can have drawbacks when operating at such scales and various limiting conditions can occur depending on variations like scripts size, scripts count, names length and other. We recommend that if you use large numbers of saved scripts then it should only be considered as an extreme case and efforts should be made to prevent the code base from reaching such extents.
+We have built Script Manager to handle hundreds of scripts, even thousands. However, Cloud environments can have drawbacks when operating at such scales and various limiting conditions can occur depending on variations like scripts size, scripts count, names length and other. We recommend that if you use large numbers of saved scripts then it should only be considered as an extreme case and efforts should be made to prevent the codebase from reaching such extents.
 
 ## Other limitations
 

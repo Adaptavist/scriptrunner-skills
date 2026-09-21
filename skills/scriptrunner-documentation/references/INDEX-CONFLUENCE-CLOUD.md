@@ -75,7 +75,7 @@ Total pages: 107
 | Page Info | references/docs/confluence-cloud/features/macros/built-in-macros/page-info.md | https://docs.adaptavist.com/sr4cc/latest/features/macros/built-in-macros/page-info |
 | Permissions | references/docs/confluence-cloud/get-started/permissions.md | https://docs.adaptavist.com/sr4cc/latest/get-started/permissions |
 | Platform Differences | references/docs/confluence-cloud/migration/platform-differences.md | https://docs.adaptavist.com/sr4cc/latest/migration/platform-differences |
-| Prepare to Migrate Scripts | references/docs/confluence-cloud/migration/rewrite-scripts-for-cloud-guide/prepare-to-migrate-scripts.md | https://docs.adaptavist.com/sr4cc/latest/migration/rewrite-scripts-for-cloud-guide#TH_ID__2_prepare-to-migrate-scripts |
+| Prepare to Migrate Scripts | references/docs/confluence-cloud/migration/rewrite-scripts-for-cloud-guide/prepare-to-migrate-scripts.md | https://docs.adaptavist.com/sr4cc/latest/migration/rewrite-scripts-for-cloud-guide#prepare-to-migrate-scripts--en |
 | Quick Scripting | references/docs/confluence-cloud/get-started/navigation/quick-scripting.md | https://docs.adaptavist.com/sr4cc/latest/get-started/navigation/quick-scripting |
 | Recent Release Notes | references/docs/confluence-cloud/release-notes/recent-release-notes.md | https://docs.adaptavist.com/sr4cc/latest/release-notes/recent-release-notes |
 | Region-to-Region Data Migration | references/docs/confluence-cloud/get-started/general-information/data-residency/region-to-region-data-migration.md | https://docs.adaptavist.com/sr4cc/latest/get-started/general-information/data-residency#region-to-region-data-migration--en |

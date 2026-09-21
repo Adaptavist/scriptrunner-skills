@@ -50,11 +50,11 @@ Note: Access the API playground by navigating toAccount > Developers > API Playg
 
 ## Boards
 
-To see the board ID, click on the board and check the browser URL. For example, the board URL should look like `https://youraccount.monday.com/boards/123456789`. The `123456789` part is the ID.
+To see the board ID, click on the board and check the browser URL. For example, the board URL should look like: `https://youraccount.monday.com/boards/123456789`. The `123456789` part is the ID.
 
 ## Board views
 
-To find the board view URL, click on a board view and check the browser URL. The board view URL should look like `https://youraccount.monday.com/boards/123456789/views/987654321`. The board view URL is the last sequence of numbers in the URL, `987654321`.
+To find the board view URL, click on a board view and check the browser URL. The board view URL should look like: `https://youraccount.monday.com/boards/123456789/views/987654321`. The board view URL is the last sequence of numbers in the URL, `987654321`.
 
 ## Column
 
@@ -123,7 +123,7 @@ A third way to find the document block ID is as follows:
 
 ## File (asset)
 
-To find a file ID, click on a file to open the asset screen. The URL should look like `https://youraccount.monday.com/boards/1321359671/pulses/132135968C?asset_id=30284600`. The file ID is the sequence of numbers at the end of the URL, `30284600`.
+To find a file ID, click on a file to open the asset screen. The URL should look like: `https://youraccount.monday.com/boards/1321359671/pulses/132135968C?asset_id=30284600`. The file ID is the sequence of numbers at the end of the URL, `30284600`.
 
 ## Folder
 
@@ -178,7 +178,7 @@ Promise<void> {
 
 ## Item/subitem
 
-To find an item or subitem ID, click on it and check the browser URL. The URL should look like `https://youraccount.monday.com/boards/123456789/pulses/987987987`. The item ID is the last number sequence in the URL, which in this case is `987987987`.
+To find an item or subitem ID, click on it and check the browser URL. The URL should look like: `https://youraccount.monday.com/boards/123456789/pulses/987987987`. The item ID is the last number sequence in the URL, which in this case is `987987987`.
 
 Alternatively, you can add the column type _Item ID_, which allows you to copy an item ID to your clipboard by clicking on a value in the column.
 
@@ -242,4 +242,4 @@ To find the webhook ID, find your webhook in the board automations. There, you'l
 
 To find the workspace ID, click on the workspace and check the browser URL.
 
-The URL should look like `https://youraccount.monday.com/workspaces/123456`. The workspace ID is the last number sequence in the URL, `123456`.
+The URL should look like: `https://youraccount.monday.com/workspaces/123456`. The workspace ID is the last number sequence in the URL, `123456`.

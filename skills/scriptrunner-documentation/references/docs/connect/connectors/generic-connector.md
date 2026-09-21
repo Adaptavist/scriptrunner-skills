@@ -8,7 +8,7 @@
 
 Create a generic connector to connect to any third-party APIs you need.
 
-Out of the box, ScriptRunner Connect offers many connectors that make it easy to call third-party APIs. However, sometimes you may need to connect to something ScriptRunner Connect does not support. ScriptRunner Connect can connect to anything as long as the following prerequisites are fulfilled:
+Out-of-the-box, ScriptRunner Connect offers many connectors that make it easy to call third-party APIs. However, sometimes you may need to connect to something ScriptRunner Connect does not support. ScriptRunner Connect can connect to anything as long as the following prerequisites are fulfilled:
 
 -   Connection to the third-party service can be established. Behind the firewall, services may need to be configured to let the connection from the ScriptRunner Connect side through by either allowlisting our static IP or setting up a reverse proxy in a less restricted network.
 -   Third-party service has an HTTP-based API that can be called.

@@ -30,7 +30,7 @@ Note: You can technically configure more than one event listener to trigger the 
 
 ## Environments
 
-When you create a new [environment](https://docs.adaptavist.com/src/latest/workspaces/deployments-and-environments), you'll be asked to relink the connector and re-run the setup instructions (if required) to register the event listener within the context of your new environment.
+When you create a new [environment](https://docs.adaptavist.com/src/latest/workspaces/deployments-and-environments), you'll be asked to relink the connector and rerun the setup instructions (if required) to register the event listener within the context of your new environment.
 
 Note: You cannot create a new deployment and have it deployed to the (new) environment until that environment has all the event listeners gone through a setup.
 

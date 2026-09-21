@@ -10,7 +10,7 @@ Learn the basics of Groovy, the programming language that is used by ScriptRunne
 
 ScriptRunner allows you to create custom scripts using the [Apache Groovy](https://groovy-lang.org/) language. Apache Groovy is both a dynamic and static language; it has been created for the Java platform, meaning seamless integration with Confluence.
 
-Apache Groovy is a programming and scripting language, and therefore you do not need to define a class to be able to run code. With its powerful features, the use of Apache Groovy in ScriptRunner allows for a high level of customization.
+Apache Groovy is a programming and scripting language, so you do not need to define a class to be able to run code. With its powerful features, Apache Groovy in ScriptRunner enables a high level of customization.
 
 ## Learning Apache Groovy
 

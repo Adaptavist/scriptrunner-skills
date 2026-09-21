@@ -2856,19 +2856,6 @@
     "title": "Rewrite Scripts for Cloud Guide"
   },
   {
-    "docId": "doc-sr4cc-topic-f59e35000e5dd0c0",
-    "hierarchy": [
-      "Migration",
-      "Rewrite Scripts for Cloud Guide"
-    ],
-    "pageId": "topic-f59e35000e5dd0c0",
-    "platform": "confluence-cloud",
-    "relativePath": "references/docs/confluence-cloud/migration/rewrite-scripts-for-cloud-guide/prepare-to-migrate-scripts.md",
-    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/migration/rewrite-scripts-for-cloud-guide#TH_ID__2_prepare-to-migrate-scripts",
-    "spaceKey": "SR4CC",
-    "title": "Prepare to Migrate Scripts"
-  },
-  {
     "docId": "doc-sr4cc-5880ced0-6963-4a8b-9db6-076a3a1f1723-657ee35f35b47674",
     "hierarchy": [
       "Migration",
@@ -2893,6 +2880,19 @@
     "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/migration/rewrite-scripts-for-cloud-guide#migration-best-practices-and-supporting-technical-information--en",
     "spaceKey": "SR4CC",
     "title": "Migration Best Practices and Supporting Technical Information"
+  },
+  {
+    "docId": "doc-sr4cc-b716d259-1552-4252-94ac-a3c9991e50f4-07023eb6799b82bb",
+    "hierarchy": [
+      "Migration",
+      "Rewrite Scripts for Cloud Guide"
+    ],
+    "pageId": "b716d259-1552-4252-94ac-a3c9991e50f4-07023eb6799b82bb",
+    "platform": "confluence-cloud",
+    "relativePath": "references/docs/confluence-cloud/migration/rewrite-scripts-for-cloud-guide/prepare-to-migrate-scripts.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/migration/rewrite-scripts-for-cloud-guide#prepare-to-migrate-scripts--en",
+    "spaceKey": "SR4CC",
+    "title": "Prepare to Migrate Scripts"
   },
   {
     "docId": "doc-sr4cc-b24742d9-75b4-4991-b90f-9404768aec25-29a27a9dbf3bdb50",
@@ -3371,14 +3371,14 @@
     "title": "Managed API Abstractions"
   },
   {
-    "docId": "doc-src-b27f30e7-ddca-438f-a1f0-61cf476ddcbe-70ef24608cb2e4a9",
+    "docId": "doc-src-b27f30e7-ddca-438f-a1f0-61cf476ddcbe-2872fb11abab1f51",
     "hierarchy": [
       "Managed APIs"
     ],
-    "pageId": "b27f30e7-ddca-438f-a1f0-61cf476ddcbe-70ef24608cb2e4a9",
+    "pageId": "b27f30e7-ddca-438f-a1f0-61cf476ddcbe-2872fb11abab1f51",
     "platform": "connect",
     "relativePath": "references/docs/connect/managed-apis/managed-api-for-monday-com.md",
-    "sourceUrl": "https://docs.adaptavist.com/src/latest/managed-apis#managed-api-for-monday-com--en",
+    "sourceUrl": "https://docs.adaptavist.com/src/latest/managed-apis#managed-api-for-monday.com--en",
     "spaceKey": "SRC",
     "title": "Managed API for monday.com"
   },

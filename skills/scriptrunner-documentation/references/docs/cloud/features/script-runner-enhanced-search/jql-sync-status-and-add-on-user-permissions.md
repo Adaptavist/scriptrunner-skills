@@ -21,7 +21,7 @@ The _JQL Sync Status_, which is always visible from the Enhanced Search editor, 
 | FULLY SYNCED | The information used by Enhanced Search to run enhanced queries has been updated for all projects. |
 | SYNC IN PROGRESS | An administrator has triggered syncing of all issues. |
 | NOT SYNCED | Syncing of issues is disabled, or Enhanced Search has just been installed and a sync has not yet been started. An administrator needs to turn on syncing to ensure the Enhanced Search functions have the information they need. |
-| PARTIALLY SYNCED | This indicates that there are some projects that Enhanced Search cannot synchronise, which is due to missing privileges required to read and write issues. See [below](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/partially_synced_status.dita) for further details. |
+| PARTIALLY SYNCED | This indicates that there are some projects that Enhanced Search cannot synchronise, which is due to missing privileges required to read and write issues. See [below](https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search#jql-sync-status-and-add-on-user-permissions--en__section-4324) for further details. |
 | LOADING | The information required to display the status is being fetched. This may take a few minutes if you have many projects. |
 
 Note: There may be a delay in the correct display of the PARTIALLY SYNCED / FULLY SYNCED status on the Enhanced Search page in the event of changes to the project privilege settings. This is due to the caching of the privilege data.
@@ -44,7 +44,7 @@ The table below lists permission warnings that may be shown, along with details 
 
 The add-on user is the user created for the add-on (ie ScriptRunner or Enhanced Search), which has the permissions granted for the add-on. The add-on user should have the same account ID for all instances.
 
--   For [Enhanced Search for Jira Cloud](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner-Enhanced_Search_for_Jira_Cloud/Enhanced_Search_For_Jira_Cloud_ES.ditamap), the ID is "5d51aee1dbb98c0d9c22cfe3".
+-   For [Enhanced Search for Jira Cloud](https://docs.adaptavist.com/enhanced-search-for-jira-cloud/latest/get-started), the ID is "5d51aee1dbb98c0d9c22cfe3".
 -   For [ScriptRunner for Jira Cloud's Enhanced Search](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/scriptrunner_enhanced_search.dita) feature, the ID is "557058:d2e5bd5c-dc49-41eb-a6f0-5e01093666c1".
 
 ## Related content

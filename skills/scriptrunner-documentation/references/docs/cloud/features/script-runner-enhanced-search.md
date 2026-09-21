@@ -63,9 +63,9 @@ JQL Keywords can be used in both the Enhanced Search screen under Apps > ScriptR
 
 Below are just some examples of how you can use ScriptRunner JQL Keywords:
 
--   Use [numberOfAttachments](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/numberofattachments.dita) to find issues that have a specified number of file attachments.
--   Use [numberOfSubtasks](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/numberofsubtasks.dita) to search for issues that have a specified number of subtasks.
--   Use [commentedOn](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/commentedon.dita) to find issues that have had a comment made on them on a specified date.
+-   Use [numberOfAttachments](https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/scriptrunner-enhanced-search-jql-keywords/issue-management#issue-management--en__numberOfAttachments) to find issues that have a specified number of file attachments.
+-   Use [numberOfSubtasks](https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/scriptrunner-enhanced-search-jql-keywords/issue-management#issue-management--en__numberOfSubtasks) to search for issues that have a specified number of subtasks.
+-   Use [commentedOn](https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/scriptrunner-enhanced-search-jql-keywords/time-tracking#time-tracking--en__commentedOn) to find issues that have had a comment made on them on a specified date.
 
 ## Related content
 

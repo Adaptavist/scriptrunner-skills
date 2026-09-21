@@ -6,7 +6,7 @@
 - Doc ID: doc-sr4js-33f197ed-d563-4a73-b620-24b050230ba5-7c7bc050373f5d77
 - Source: https://docs.adaptavist.com/sr4js/latest/release-notes/breaking-changes
 
-This page details any breaking changes that could cause parts of your ScriptRunner instance to fail when upgrading.
+Discover all breaking changes that could stop scripts or features working on upgrade, including Jira 10 and Jira 11 API changes.
 
 ## Version 10.0.0+
 

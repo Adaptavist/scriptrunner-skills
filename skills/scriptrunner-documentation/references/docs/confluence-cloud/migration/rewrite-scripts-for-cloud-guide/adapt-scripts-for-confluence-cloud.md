@@ -49,7 +49,7 @@ It's important to understand the basic operations in Confluence Cloud's API befo
 
 ### Create a page
 
-There are two scripts in this section, one is for Data Center and the other is for Cloud. Both scripts could be run from the Script Console in each product, and they both create a page in Confluence by copying the content of an existing page.
+There are two scripts in this section; one is for Data Center and the other for Cloud. Both scripts could be run from the Script Console in each product, and they both create a page in Confluence by copying the content of an existing page.
 
 You can see that both need to create a new object to represent the page. In the DC script, this is a [Page](https://docs.atlassian.com/ConfluenceServer/javadoc/7.12.0/com/atlassian/confluence/pages/Page.html) object. In the Cloud script, this is a list of [Map](https://docs.oracle.com/javase/8/docs/api/java/util/Map.html) objects that matches the Cloud REST API data specification for pages.
 
@@ -169,5 +169,5 @@ This is a manual process, so each script must be copied manually from the test e
 
 -   [Feature Parity](../feature-parity.md)
 -   [Rewriting Scripts](../rewrite-scripts-for-cloud-guide.md)
--   [Prepare to Migrate Scripts](https://docs.adaptavist.com/sr4cc/latest/migration/rewrite-scripts-for-cloud-guide/prepare-to-migrate-scripts#prepare-to-migrate-scripts-create-a-test-environment--en)
+-   [Prepare to Migrate Scripts](https://docs.adaptavist.com/sr4cc/latest/migration/rewrite-scripts-for-cloud-guide/prepare-to-migrate-scripts)
 -   [Migration Best Practices and Supporting Technical Information](https://docs.adaptavist.com/sr4cc/latest/migration/rewrite-scripts-for-cloud-guide/migration-best-practices-and-supporting-technical-information)

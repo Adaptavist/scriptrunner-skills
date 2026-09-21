@@ -16,8 +16,6 @@ ScriptRunner Connect's Fetch API implementation is not fully compliant with the 
 
 ## Demo
 
-[Fetch API demo](https://demo.arcade.software/pyCkn5uNI91DnQPc3Aqj?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true)
-
 ## Fetch options
 
 ```

@@ -40,7 +40,7 @@ Use [Behaviours](../../features/behaviours.md) to define how fields behave for w
 
 ## Escalation Service
 
-The [Escalation Service](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/escalation_service.dita) allows you to define a process for modifying work items after a certain amount of time has elapsed. This is useful for business procedures that require tasks to be completed within a certain time-frame (service level agreement). Escalation Services can be used if, for example, a task has been opened but not assigned for 7 days. You could automatically move it to a "Prioritize" status, or add a comment, which will cause an email to be sent.
+The [Escalation Service](../../features/escalation-service.md) allows you to define a process for modifying work items after a certain amount of time has elapsed. This is useful for business procedures that require tasks to be completed within a certain time-frame (service level agreement). Escalation Services can be used if, for example, a task has been opened but not assigned for 7 days. You could automatically move it to a "Prioritize" status, or add a comment, which will cause an email to be sent.
 
 ## Script Variables
 

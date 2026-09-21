@@ -62,7 +62,7 @@ Use the equality operator `=` to find issues that have been resolved on the same
 issueFunction in dateCompare("project = DEMO", "resolutiondate = customfield_10500")
 ```
 
-If your date contains time, equality operator won't be useful. Use the [Date Functions](https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/scriptrunner-enhanced-search-jql-functions/date-and-time-management/date-functions) method described below.
+If your date contains time, equality operator won't be useful. Use the Date Functions method described below.
 
 ### Greater than or equal to operator
 

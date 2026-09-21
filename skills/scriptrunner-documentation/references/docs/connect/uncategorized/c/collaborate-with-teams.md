@@ -46,7 +46,7 @@ Use caution when making changes to API connections or event listeners that have 
 
 Note: Future consideration 💡 🤔
 
-We're considering adding a feature that allows explicit connector sharing so other team members can use, edit, and reauthorize shared connectors in any of their workspaces within the same team without the aforementioned limitations.
+We're considering adding a feature that allows explicit connector sharing so other team members can use, edit, and reauthorize shared connectors in any of their workspaces within the same team, without the aforementioned limitations.
 
 Like this idea? [Let us know!](https://scriptrunnerconnect.nolt.io/top)
 

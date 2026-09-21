@@ -18,9 +18,9 @@ This playlist covers:
 
 [Watch Entire Playlist](https://www.youtube.com/playlist?list=PLnsCytbU4bI5pkzNYGxI_8e4YQErz693f)
 
-[Back to Introduction to ScriptRunner](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/introduction_to_scriptrunner_for_jira_cloud.dita)
+[Back to Introduction to ScriptRunner](introduction-to-script-runner-for-jira-cloud.md)
 
-[Watch next: HAPI: A More Intuitive Scripting Experience](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/hapi_a_more_intuitive_scripting_experience.dita)
+[Watch next: HAPI: A More Intuitive Scripting Experience](hapi-a-more-intuitive-scripting-experience.md)
 
 ## Related Content
 

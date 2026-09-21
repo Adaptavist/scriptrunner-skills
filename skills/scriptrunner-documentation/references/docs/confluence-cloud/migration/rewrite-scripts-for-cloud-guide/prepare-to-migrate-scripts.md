@@ -3,14 +3,12 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: Migration > Rewrite Scripts for Cloud Guide
-- Doc ID: doc-sr4cc-topic-f59e35000e5dd0c0
-- Source: https://docs.adaptavist.com/sr4cc/latest/migration/rewrite-scripts-for-cloud-guide#TH_ID__2_prepare-to-migrate-scripts
-
-## Prepare to Migrate Scripts
+- Doc ID: doc-sr4cc-b716d259-1552-4252-94ac-a3c9991e50f4-07023eb6799b82bb
+- Source: https://docs.adaptavist.com/sr4cc/latest/migration/rewrite-scripts-for-cloud-guide#prepare-to-migrate-scripts--en
 
 Our best practices before completing a migration between ScriptRunner for Server/DC and Cloud.
 
-### Create a test environment
+## Create a test environment
 
 A test environment is crucial in the migration process from Confluence Server/Data Center to Confluence Cloud. It allows you to experiment, test, and refine your scripts in a controlled setting before deploying them to your production environment. Below we provide details on how to set-up and use a test environment.
 
@@ -46,7 +44,7 @@ We recommend you use the script console to do the following:
 
 ## Analyze existing code in Server/Data Center
 
-Before you start your migration of ScriptRunner code from Confluence Server/Data Center (DC) to Confluence Cloud, we recommend you conduct a thorough analysis of your existing codebase. This will help you streamline the migration process and ensure a smoother transition. Below we list the steps you should follow to analyze your existing code and prepare your scripts for migration.
+Before you start your migration of ScriptRunner code from Confluence Server/Data Center (DC) to Confluence Cloud, we recommend you conduct a thorough analysis of your existing codebase. This will help you streamline the migration process and ensure a smoother transition. Below, we list the steps you should follow to analyze your existing code and prepare your scripts for migration.
 
 ### Step one: Understand your Server/Data Center scripts
 
@@ -105,7 +103,7 @@ For effective migration, evaluate each script individually and assign it to one 
 | --- | --- | --- |
 |  | The script can be migrated | There is complete parity and the script will work in ScriptRunner for Confluence Cloud. |
 | ◐ | The script cannot be migrated but a workaround exists | There is partial parity and you can perform the same function using an alternative solution. |
-|  | The script cannot be migrated and there's no workaround | The process or way of working should be changed. |
+|  | The script cannot be migrated, and there's no workaround | The process or way of working should be changed. |
 
 ## Next step
 
@@ -115,4 +113,4 @@ Check out the [Adapt scripts for Confluence Cloud](https://docs.adaptavist.com/s
 
 -   [Feature Parity](../feature-parity.md)
 -   [Rewriting Scripts](../rewrite-scripts-for-cloud-guide.md)
--   [Best Practices and Supporting Technical Information](https://docs.adaptavist.com/sr4cc/latest/migration/rewrite-scripts-for-cloud-guide/migration-best-practices-and-supporting-technical-information)
+-   [Migration Best Practices and Supporting Technical Information](https://docs.adaptavist.com/sr4cc/latest/migration/rewrite-scripts-for-cloud-guide/migration-best-practices-and-supporting-technical-information)

@@ -6,13 +6,15 @@
 - Doc ID: doc-sr4cc-4166b451-1dca-44cd-bd4d-bcaf3c6452d9-24da930fe9c77d65
 - Source: https://docs.adaptavist.com/sr4cc/latest/features/macros/built-in-macros/cql-search
 
+Instructions for the CQL Search macro.
+
 Add the CQL Search macro to a Confluence page. If you provide the CQL query, the macro executes the search and returns the results as links to pages. This macro is useful for showing the results of complex queries on pages, labels, and other Confluence content.
 
 Tip: For more information about using CQL, check out the [CQL guide](../../cql-script-jobs/cql-guide.md).
 
 To use this macro, follow these steps:
 
-1.  Open the Confluence page you want to work with an dog into edit mode.
+1.  Open the Confluence page you want to use in edit mode.
     
 2.  Select Insert and then Other Macros.
     

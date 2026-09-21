@@ -18,4 +18,4 @@ This playlist covers:
 
 [Watch Entire Playlist](https://www.youtube.com/playlist?list=PLnsCytbU4bI5pkzNYGxI_8e4YQErz693f)
 
-[Watch next: Behaviours: Dynamic Field Control & Customisation](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/behaviours_dynamic_field_control_customization.dita)
+[Watch next: Behaviours: Dynamic Field Control & Customisation](behaviours-dynamic-field-control-and-customization.md)

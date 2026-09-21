@@ -34,7 +34,7 @@ For example you could use Script Jobs to archive pages after a certain amount of
 1.  Navigate to ScriptRunner and select Script Jobs.
 2.  Provide a Name for your script job.
 3.  Choose if you want it Enabled (or turned on).
-4.  For On This Schedule, select the schedule that you want this script to run.
+4.  For On This Schedule, select the schedule on which you want this script to run.
     
     Note: The schedule editor lets you choose between running your script on several days during the week (like Monday, Wednesday, Friday) or running your script on particular days of the month (like the last day of the month or the second Tuesday of the month).
     

@@ -74,6 +74,12 @@ The Markdown macro does not support:
 -   URLs that only work when viewed in a browser session
 -   Repository webpage URLs that return HTML instead of raw Markdown.
 
+Note: Character limit
+
+The character limit for a Markdown macro is 9000 characters. If more characters are entered, the macro configuration will not save.
+
+As a workaround, you can use multiple macros to contain your desired content.
+
 ## Edit the Markdown Macro
 
 To edit the Markdown macro:

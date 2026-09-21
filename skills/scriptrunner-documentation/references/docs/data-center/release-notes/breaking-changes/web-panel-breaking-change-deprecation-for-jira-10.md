@@ -6,7 +6,7 @@
 - Doc ID: doc-sr4js-e384569c-b498-4ad6-add3-ac0c903b0f21-9e369225be52cfa1
 - Source: https://docs.adaptavist.com/sr4js/latest/release-notes/breaking-changes#web-panel-breaking-change-deprecation-for-jira-10--en
 
-The way you can add a `provider class/script` for [web panels](https://docs.adaptavist.com/sr4js/latest/features/fragments/web-panel) is different after [upgrading to Jira 10.0](https://docs.adaptavist.com/sr4js/latest/get-started/update-scriptrunner/compatibility-with-jira).
+Understand how [web panel](https://docs.adaptavist.com/sr4js/latest/features/fragments/web-panel) provider class behaviour changes after [upgrading to Jira 10.0](https://docs.adaptavist.com/sr4js/latest/get-started/update-scriptrunner/compatibility-with-jira) and what you need to update if you used the Atlassian WebPanel interface.
 
 Tip: Most simple scripts, like `writer.write("some HTML``")`, will continue to work correctly.
 

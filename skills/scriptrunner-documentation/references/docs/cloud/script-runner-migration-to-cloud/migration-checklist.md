@@ -87,7 +87,7 @@ Install ScriptRunner for Jira Cloud as described on our [Installation](../get-st
 
 Migration from Scriptrunner for Jira DC to ScriptRunner for Jira Cloud will require your scripts to be rewritten. This is because the APIs and programming models differ significantly between Jira Data Center and Jira Cloud.
 
-See our detailed guide on [Rewriting Scripts for Cloud](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Data_Center_SR4JS/topics/rewriting_scripts_for_cloud_hints_and_tips.dita).
+See our detailed guide on [Rewriting Scripts for Cloud](rewrite-scripts-for-cloud-hints-and-tips.md).
 
 ## ✅ Rewrite your saved ScriptRunner JQL query filters
 
@@ -109,7 +109,7 @@ To rewrite your ScriptRunner JQL query filters:
     Tip: See the following documentation to help you rewrite your saved JQL query filters:
     
     -   [JQL Functions Feature Parity](https://docs.adaptavist.com/sr4jc/latest/scriptrunner-migration-to-cloud/feature-parity-and-script-alternatives#jql-functions--en)
-    -   [JQL Query Comparison](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/jql_query_comparison.dita)
+    -   [JQL Query Comparison](https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/comparison-with-scriptrunner-for-jira-server#comparison-with-scriptrunner-for-jira-server--en__jql-query-comparison)
     -   [Enhanced Search Training](../training/course-script-runner-for-jira-cloud-for-beginners/1-4-module-enhanced-search.md)
     
 4.  Prepare versions of your filters to work with the Enhanced Search feature in ScriptRunner for Jira Cloud.

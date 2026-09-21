@@ -81,7 +81,7 @@ If the AI-generated code doesn't work as expected or returns an error, inform th
 
 ### Linting
 
-The AI is instructed to run the [linter](https://eslint.org/) at the end of every request, which it usually does, but sometimes forgets to do so. If this happens, instruct the AI to run the linter, as it provides valuable feedback that the AI can then iterate on if any issues are found. Some models may attempt to resolve linting issues without running the linter, but can become stuck in a loop of perpetual refinement. If this happens, stop the AI and run the command manually by running `npm run lint:fix`, or when following our [recommended setup](https://docs.adaptavist.com/src/latest/external-coding/recommended-setup), simply press COMMAND/CTRL+K+C in VS Code or COMMAND/CTRL+R+C in Cursor on the files that need re-formatting. This won't resolve any compilation issues, but it's a quick way to reformat the file.
+The AI is instructed to run the [linter](https://eslint.org/) at the end of every request, which it usually does, but sometimes forgets to do so. If this happens, instruct the AI to run the linter, as it provides valuable feedback that the AI can then iterate on if any issues are found. Some models may attempt to resolve linting issues without running the linter, but can become stuck in a loop of perpetual refinement. If this happens, stop the AI and run the command manually by running `npm run lint:fix`, or when following our [recommended setup](https://docs.adaptavist.com/src/latest/external-coding/recommended-setup), simply press COMMAND/CTRL+K+C in VS Code or COMMAND/CTRL+R+C in Cursor on the files that need reformatting. This won't resolve any compilation issues, but it's a quick way to reformat the file.
 
 ### Testing
 

@@ -56,7 +56,7 @@ ScriptRunner for Confluence enables you to write your own listeners in a script 
     | Label | Added, Created, Deleted, Removed |
     | Login | Login Event, Login Failed |
     | Logout | Logout Event |
-    | Page | Children Reordered, Created, Moved, Removed, Restored,Trashed, Updated, Viewed |
+    | Page | Children Reordered, Created, Moved, Removed, Restored, Trashed, Updated, Viewed |
     | Relation | Created, Deleted |
     | Space | Created, Logo Updated, Permissions Updated, Removed, Updated |
     | User | Created, Deactivated, Followed, Reactivated, Removed |
@@ -70,7 +70,7 @@ ScriptRunner for Confluence enables you to write your own listeners in a script 
     
     Common parameters in the Script Context for all the events are:
     
-    -   `baseUrl` - Base url to make API requests against. This is the URL used for relative request paths e.g. if you make a request to `/rest/api/2/issue` we use the baseUrl to create a full request path.
+    -   `baseUrl` - Base url to make API requests against. This is the URL used for relative request paths e.g. if you make a request to `/rest/api/2/issue` we use the baseURL to create a full request path.
     -   `logger` - Logger to use for debugging purposes. Check the methods available: [org.slf4j.Logger](https://www.slf4j.org/apidocs/org/slf4j/Logger.html).
     -   `timestamp` - The timestamp of the event in milliseconds, e.g. 1491562297883.
     -   `webhookEvent` - The webhook event type. Check out [Atlassian Connect Webhook Documentation](https://developer.atlassian.com/cloud/confluence/using-webhooks/) for more information.
@@ -90,6 +90,6 @@ ScriptRunner has a number of [Example Scripts](https://docs.adaptavist.com/sr4cc
 -   Set a Watcher For New Blog Posts
     -   _Set a Watcher For New Blog Posts_ automatically sets a watcher for new blog posts. It is useful because it allows a user to be always following new blog posts from a certain user.
 -   Company Language Checker
-    -   _Company Language Checker_ checks if a forbidden/incorrect word is used in a page and adds a comment if it is. For example, it could catch JIRA because it should be Jira. It is useful because instead of checking manually for words, a user can automate this and ensure that mistakes aren't made.
+    -   _Company Language Checker_ checks if a forbidden/incorrect word is used on a page and adds a comment if it is. For example, it could catch JIRA because it should be Jira. It is useful because instead of checking manually for words, a user can automate this and ensure that mistakes aren't made.
 
 Tip: Once you have filled in the example code, you may have to do some editing to make the code work as you want it to. For example, you have to add the terminology that is a problem in your instance.

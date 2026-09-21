@@ -35,7 +35,7 @@ Total pages: 64
 | HTTP Logs | references/docs/connect/observability/http-logs.md | https://docs.adaptavist.com/src/latest/observability/http-logs |
 | Limits and Quotas | references/docs/connect/uncategorized/l/limits-and-quotas.md | https://docs.adaptavist.com/src/latest/limits-and-quotas |
 | Managed API Abstractions | references/docs/connect/managed-apis/managed-api-abstractions.md | https://docs.adaptavist.com/src/latest/managed-apis#managed-api-abstractions--en |
-| Managed API for monday.com | references/docs/connect/managed-apis/managed-api-for-monday-com.md | https://docs.adaptavist.com/src/latest/managed-apis#managed-api-for-monday-com--en |
+| Managed API for monday.com | references/docs/connect/managed-apis/managed-api-for-monday-com.md | https://docs.adaptavist.com/src/latest/managed-apis#managed-api-for-monday.com--en |
 | Managed API Structure | references/docs/connect/managed-apis/managed-api-structure.md | https://docs.adaptavist.com/src/latest/managed-apis#managed-api-structure--en |
 | Managed APIs | references/docs/connect/uncategorized/m/managed-apis.md | https://docs.adaptavist.com/src/latest/managed-apis |
 | Observability | references/docs/connect/uncategorized/o/observability.md | https://docs.adaptavist.com/src/latest/observability |

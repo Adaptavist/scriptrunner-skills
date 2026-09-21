@@ -10,13 +10,13 @@ External coding enables you to edit ScriptRunner Connect scripts locally using y
 
 Note: Feature availability
 
-This feature is available only for paid users on non-legacy plans. If you would like to try this feature, you can [request a free trial](https://docs.adaptavist.com/src/latest/release-notes#m_24-february-2026--en) from within the app that will grant you access to all restricted features.
+This feature is available only for paid users on non-legacy plans. If you would like to try this feature, you can [request a free trial](https://docs.adaptavist.com/src/latest/release-notes#m_24-february-2026--en__update) from within the app that will grant you access to all restricted features.
 
 ## Table of contents
 
 -   [Overview](https://docs.adaptavist.com/src/latest/external-coding#overview--en)
--   [Demo](https://docs.adaptavist.com/src/latest/external-coding#external-coding-demo--en)
--   [Setup](https://docs.adaptavist.com/src/latest/external-coding/recommended-setup#concept-4318--en)
+-   [Demo](https://docs.adaptavist.com/src/latest/external-coding#demo--en)
+-   [Setup](https://docs.adaptavist.com/src/latest/external-coding/recommended-setup#setup--en)
 -   [Local development](https://docs.adaptavist.com/src/latest/external-coding#local-development--en)
 -   [Use a version control system](https://docs.adaptavist.com/src/latest/external-coding#use-a-version-control-system--en)
 -   [Turn off the SFTP server](https://docs.adaptavist.com/src/latest/external-coding#turn-off-the-sftp-server--en)
@@ -120,7 +120,7 @@ Unlike the web-based app, the remote file system does not have a locking mechani
 
 ### Batteries included 🔋
 
-When you enable the remote workspace, you get a ready-to-go Node project, recognized by most IDEs as a TypeScript-powered Node setup.
+When you enable the remote workspace, you get a ready-to-go Node project that most IDEs recongnize as a TypeScript-powered Node setup.
 
 What's included:
 
@@ -160,8 +160,6 @@ We recommend storing your master copy in a version control system (VCS) like Git
 
 ### Remote file system structure 🗂️
 
-Click here to see how the remote file system is organized.
-
 The remote file system is a ready-to-use TypeScript powered Node project. It requires no manual changes; just open it in a compatible IDE. Here's how the remote file system is organized:
 
 -   `.vscode:` Folder for [VS Code](https://code.visualstudio.com/) specific configurations, our recommended code editor.
@@ -182,7 +180,7 @@ The remote file system is a ready-to-use TypeScript powered Node project. It req
     -   `{scriptName}.ts:` Workspace script(s).
 -   `.prettierrc:` Prettier configuration file.
 -   : .
--   : Extended instructions for AI agents how to go about building test suite.
+-   : Extended instructions for AI agents on how to go about building a test suite.
 -   : Extended instructions for AI agents that you can add on top of baseline instructions or overwrite baseline instructions. This file by default does not exist, you're expected to create it if you need to include additional instructions.
 -   `eslint.config.json:` ESLint configuration file.
 -   `ev_params.ts:` TypeScript types generated for configured [parameters](https://docs.adaptavist.com/src/latest/workspaces/parameters) (environment variables).

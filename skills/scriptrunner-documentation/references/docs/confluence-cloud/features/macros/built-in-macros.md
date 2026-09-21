@@ -10,6 +10,7 @@ Learn about built-in macros, which are macros that are included in ScriptRunner 
 
 -   [Add Label](built-in-macros/add-label.md)
 -   [Choose Label](built-in-macros/choose-label.md)
+-   [CQL Search](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Confluence_Cloud_SR4CC/topics/cql_search_macro.dita)
 -   [Create Page](built-in-macros/create-page.md)
 -   [Markdown](built-in-macros/markdown.md)
 -   [Page Info](built-in-macros/page-info.md)

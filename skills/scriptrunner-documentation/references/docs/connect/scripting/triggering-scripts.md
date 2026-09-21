@@ -8,8 +8,6 @@
 
 Learn the rules and how to trigger scripts manually.
 
-[Triggering scripts manually demo](https://demo.arcade.software/iybFVsoCUhXH6wOjQUdI?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true)
-
 ## Triggering scripts programatically
 
 In addition to manually triggering scripts via the UI, you can programmatically trigger scripts from another script within the same workspace.

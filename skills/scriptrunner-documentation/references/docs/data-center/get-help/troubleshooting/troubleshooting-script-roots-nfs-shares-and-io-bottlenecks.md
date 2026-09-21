@@ -61,7 +61,7 @@ You can try storing your scripts in a [Script Plugin](https://docs.adaptavist.co
 
 ### Move to cloud
 
-If all of this seems like a lot to manage yourself, we offer solutions to help alleviate the burden. If you've encountered these scaling limits and cannot resolve them on your own, you should consider [migrating to Atlassian Cloud](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Data_Center_SR4JS/topics/migrating_to_cloud.dita).
+If all of this seems like a lot to manage yourself, we offer solutions to help alleviate the burden. If you've encountered these scaling limits and cannot resolve them on your own, you should consider [migrating to Atlassian Cloud](../../script-runner-migration/script-runner-migration-to-cloud.md).
 
 #### Not ready for cloud?
 

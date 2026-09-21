@@ -30,7 +30,7 @@ Some other points worth noting about Behaviour scripts:
 -   You can apply Behaviours to the Create, Issue, and Transition views (Create, View/Edit, Transition view types) of a Jira work item. For details, refer to [Behaviours Supported Fields and Products](https://docs.adaptavist.com/sr4jc/latest/features/behaviours/behaviours-supported-fields-and-products).
 -   Behaviours may be applied to certain supported fields only. Not all fields are currently supported in all available views. Refer to our [documentation](https://docs.adaptavist.com/sr4jc/latest/features/behaviours/behaviours-supported-fields-and-products) to discover which fields are supported on each supported view.
 -   Both company-managed and team-managed Jira spaces support Behaviours; however, business spaces (a subset of team-managed or JWM spaces) support the Global Issue Create (GIC) or Create view type only. Refer to [Behaviours Supported Fields and Products](https://docs.adaptavist.com/sr4jc/latest/features/behaviours/behaviours-supported-fields-and-products) for details.
--   You cannot select all spaces and all work types simultaneously.
+-   Behaviours are supported on JSM for the Portal view only.
 -   In Behaviours, some Jira-native system fields can be custom field types. An example of this is the Labels field, which is a Jira-native system field. Only Jira-native system fields are supported, so your Behaviours may not function correctly if you have created a custom field of _type_ Labels.
 
 Note: As more capabilities become available in the UI Modifications API, more functionality can be built in ScriptRunner's Behaviours feature. We are actively enhancing this feature by integrating new capabilities as Atlassian releases them.

@@ -8,7 +8,7 @@
 
 Event queues are designed to let you queue incoming (external) events that must be processed sequentially, rather than concurrently, which is the default behavior.
 
-Note: This feature is available only for paid users on non-legacy plans. If you would like to try this feature, you can [request a free trial](https://docs.adaptavist.com/src/latest/release-notes#m_24-february-2026--en) from within the app that will grant you access to all restricted features.
+Note: This feature is available only for paid users on non-legacy plans. If you would like to try this feature, you can [request a free trial](https://docs.adaptavist.com/src/latest/release-notes#m_24-february-2026--en__update) from within the app that will grant you access to all restricted features.
 
 You may want to consider using event queues when your integrated applications tend to emit events at close intervals, and the scripts that process those events tend to take longer than the arrival time of the next event, potentially causing race conditions. Event queues work on the [FIFO](https://en.wikipedia.org/wiki/FIFO_\(computing_and_electronics\)) (first-in, first-out) principle.
 
@@ -46,7 +46,7 @@ We strongly recommend using grouping to increase the throughput of your queues. 
 
 Once you have configured the queue, you can associate a queue with each event listener you need. You may not need to configure the queue for each event listener, only for the event listeners that process events affecting the same entity type and are likely to be processed in close intervals, thus are susceptible to causing race conditions. When associating a queue with an event listener, you can also optionally specify the grouping logic for each event listener.
 
-Grouping allows you to specify which events should be grouped together and thus will be processed in sequence. Events that don't share a group, but are still pushed to the same _queue_, will be processed concurrently (effectively only sharing the eviction policy). Grouping logic uses the incoming event payload field values to determine which events should be grouped. You can specify up to 10 field paths to make up the composite ID for the group. Usually, a single field is sufficient, but we do allow composition for more complex use cases.
+Grouping allows you to specify which events should be grouped together and thus will be processed in sequence. Events that don't share a group, but are still pushed to the same _queue_, will be processed concurrently (effectively sharing only the eviction policy). Grouping logic uses the incoming event payload field values to determine which events should be grouped. You can specify up to 10 field paths to make up the composite ID for the group. Usually, a single field is sufficient, but we do allow composition for more complex use cases.
 
 Grouping configuration uses dot-notation to specify field paths and only works with event payloads that arrive in JSON format.
 

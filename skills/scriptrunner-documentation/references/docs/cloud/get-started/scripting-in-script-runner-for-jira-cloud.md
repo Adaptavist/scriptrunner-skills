@@ -22,7 +22,7 @@ Outlined below are the various programming languages used for scripting and thei
 | [Built-in Scripts](../features/built-in-scripts.md) |  |  |  |  |  |  |
 | [Enhanced Search](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/scriptrunner_enhanced_search.dita) |  |  |  |  |  |  |
 | [Scheduled Jobs](../features/scheduled-jobs.md) |  |  |  |  |  |  |
-| [Script Console](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/scriptrunner_enhanced_search.dita) |  |  |  |  |  |  |
+| [Script Console](../features/script-console.md) |  |  |  |  |  |  |
 | [Script Listeners](../features/script-listeners.md) |  |  |  |  |  |  |
 | [Script Fragments](../features/script-fragments.md) |  |  |  |  |  |  |
 | [Scripted Fields](../features/scripted-fields.md) |  |  |  |  |  |  |

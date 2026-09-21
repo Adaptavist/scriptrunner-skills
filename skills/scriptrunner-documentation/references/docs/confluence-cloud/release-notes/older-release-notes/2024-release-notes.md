@@ -42,7 +42,7 @@ This editor has autocomplete for the following code:
 
 Update to Copy Space built-in script
 
-Previously, you could choose to copy the permissions of a space if you had a paid version of Confluence Cloud when working with [Copy Space](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Confluence_Cloud_SR4CC/topics/copy_space.dita). This is no longer supported, so we removed the option to copy permissions. When you copy a space, default permissions are always applied.
+Previously, you could choose to copy the permissions of a space if you had a paid version of Confluence Cloud when working with [Copy Space](../../features/built-in-scripts/space-administration-built-in-scripts/copy-space.md). This is no longer supported, so we removed the option to copy permissions. When you copy a space, default permissions are always applied.
 
 This change applies to both the Confluence Administration built-in script and Space Administration built-in script.
 

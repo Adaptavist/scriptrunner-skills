@@ -16,6 +16,10 @@
 
 [Media](https://demo.arcade.software/1fcFWinIxLAzQxUto7HH?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true)
 
+### Connectors tutorial video
+
+[Media](https://www.youtube.com/watch?v=Ahs3J3AxLw0)
+
 ### Template setup guide
 
 #### Triggers
@@ -122,7 +126,7 @@ Learn more about [working with AI agents](https://docs.adaptavist.com/src/latest
 
 ## Templates
 
-Tempo cloud worklogs migration
+### Tempo cloud worklogs migration
 
 [Media](https://www.youtube.com/watch?v=k04uyZzHpoc)
 

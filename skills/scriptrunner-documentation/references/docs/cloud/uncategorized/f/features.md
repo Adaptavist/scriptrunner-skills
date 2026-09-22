@@ -6,6 +6,10 @@
 - Doc ID: doc-sr4jc-9ef51eba-4fc8-4ad2-9946-2a21cc1b8398-fc04aba8e3321fc9
 - Source: https://docs.adaptavist.com/sr4jc/latest/features
 
+This page summarises the main features of ScriptRunner for Jira Cloud and describes additional features we have developed to optimize your scripting experience.
+
+Tip: Not confident with scripting?Many ScriptRunner features include built-in scripts that require minimal scripting experience. Our documentation offers practical examples, and you can use example scripts in the code editors of several features or explore more on our [ScriptRunner HQ website](https://www.scriptrunnerhq.com/help/example-scripts?ScriptRunner%5BrefinementList%5D%5Bapp%5D%5B0%5D=script-runner-jira). Check out our [Scripting in ScriptRunner for Jira Cloud](../../get-started/scripting-in-script-runner-for-jira-cloud.md) overview too!
+
 |  |  |
 | --- | --- |
 |  | Migrating from ScriptRunner for Jira Server/DC to Cloud? Check out our [ScriptRunner Migration to Cloud](../s/script-runner-migration-to-cloud.md) section. |
@@ -61,7 +65,3 @@ Use [Script Manager](../../features/script-manager.md) to manage saved .groovy a
 ## HAPI
 
 HAPI is an API developed to carry out common tasks in Jira, including managing work items, searching for work items, updating fields and much more! HAPI is a simple alternative to Jira's regular API and can be used in your Groovy scripts. See the [HAPI](../h/hapi.md) page for more details on this feature and to find examples of how to use HAPI.
-
-## Not confident with scripting?
-
-Many ScriptRunner features include built-in scripts that require minimal scripting experience. Our documentation offers practical examples, and you can use example scripts in the code editors of several features or explore more on our [ScriptRunner HQ website](https://www.scriptrunnerhq.com/help/example-scripts?ScriptRunner%5BrefinementList%5D%5Bapp%5D%5B0%5D=script-runner-jira). Check out our [Scripting in ScriptRunner for Jira Cloud](../../get-started/scripting-in-script-runner-for-jira-cloud.md) overview too!

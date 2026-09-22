@@ -6,6 +6,8 @@
 - Doc ID: doc-sr4jc-b473e34c-cd57-484d-9e98-467a6c9be29c-f9b2d452107b6036
 - Source: https://docs.adaptavist.com/sr4jc/latest/get-started/scripting-in-scriptrunner-for-jira-cloud#extend-jira-automation-with-scriptrunner--en
 
+Learn when to use ScriptRunner for Jira Cloud versus Jira Automation, and compare their capabilities for advanced, code-based automation.
+
 ScriptRunner for Jira Cloud complements Jira Automation by enabling code-based automation, advanced workflow logic, API integrations, data transformation, reusable scripts, and admin-level automation. ScriptRunner is best suited to advanced automation scenarios where you need greater flexibility.
 
 ## When to use ScriptRunner or Jira Automation

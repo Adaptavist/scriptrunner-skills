@@ -20,7 +20,7 @@ There are many reasons you should simplify your scripts with HAPI:
 
 ## How to simplify scripts using HAPI examples
 
-This script automates the copying of every label from a work item to all work items linked to it, specifically targeting those with an outward link. You can compare the Non-HAPI and HAPI versions examples outlined below.
+This script automates the copying of every label from a work item to all work items linked to it, specifically targeting those with an outward link. You can compare the Non-HAPI and HAPI versions. See the examples outlined below.
 
 [Non-HAPI](https://docs.adaptavist.com/sr4jc/latest/hapi/rewrite-scripts-with-hapi#how-to-simplify-scripts-using-hapi-examples--en__codeblock-13044)
 
@@ -285,6 +285,10 @@ epicWorkItem.update {
 ```
 
 Once the code has been updated, you might not need some imports - hover over them to see if they're still required in your script.
+
+### Non-HAPI and HAPI script examples
+
+Review the following Non-HAPI and HAPI script examples to understand how HAPI simplifies common automation tasks.
 
 ## How to rewrite existing scripts video demo
 

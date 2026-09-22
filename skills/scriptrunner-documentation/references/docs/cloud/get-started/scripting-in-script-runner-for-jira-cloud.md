@@ -62,6 +62,8 @@ HAPI does not require you to [rewrite existing scripts](https://docs.adaptavist.
 
 ## Code editor
 
+Use the code editor to write and manage scripts in ScriptRunner with intelligent editing features and code completions.
+
 Use the code editor to write scripts in ScriptRunner. The code editors use an intelligent code editor. The browser-based code editor provides code completions, inline Javadoc lookups, inline find and replace, and error line indication. This editor has autocomplete for the following code:
 
 -   Groovy

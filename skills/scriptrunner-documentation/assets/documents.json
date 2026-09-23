@@ -2181,6 +2181,35 @@
     "title": "Page Info"
   },
   {
+    "docId": "doc-sr4cc-96e12a0e-ee79-47f2-af80-d8b60378dc3f-ddf76f7db2a54793",
+    "hierarchy": [
+      "Features",
+      "Macros",
+      "Built-In Macros"
+    ],
+    "pageId": "96e12a0e-ee79-47f2-af80-d8b60378dc3f-ddf76f7db2a54793",
+    "platform": "confluence-cloud",
+    "relativePath": "references/docs/confluence-cloud/features/macros/built-in-macros/version-history-macro.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/macros/built-in-macros/version-history-macro",
+    "spaceKey": "SR4CC",
+    "title": "Version History Macro"
+  },
+  {
+    "docId": "doc-sr4cc-a24f8d3c-cfdc-4ad2-ab40-569fbe52f652-ef4a27d5e56c8b4f",
+    "hierarchy": [
+      "Features",
+      "Macros",
+      "Built-In Macros",
+      "Version History Macro"
+    ],
+    "pageId": "a24f8d3c-cfdc-4ad2-ab40-569fbe52f652-ef4a27d5e56c8b4f",
+    "platform": "confluence-cloud",
+    "relativePath": "references/docs/confluence-cloud/features/macros/built-in-macros/version-history-macro/use-the-version-history-macro.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4cc/latest/features/macros/built-in-macros/version-history-macro/use-the-version-history-macro",
+    "spaceKey": "SR4CC",
+    "title": "Use the Version History macro"
+  },
+  {
     "docId": "doc-sr4cc-86975b16-3900-4adf-aa52-8c5c196eddb7-e3498d94697c182a",
     "hierarchy": [
       "Features",

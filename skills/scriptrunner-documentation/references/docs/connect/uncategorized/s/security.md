@@ -8,9 +8,7 @@
 
 Learn about the security measures in place for our app.
 
-ScriptRunner Connect, developed by Adaptavist, is a cloud-based, Atlassian-focused, code-first integration Platform as a Service (iPaaS) product. Designed to connect to third-party systems, ScriptRunner Connect enables users to focus on writing business logic in JavaScript or TypeScript, while the ScriptRunner Connect team handles the complexities of infrastructure and security. A key aspect of ScriptRunner Connect's mission is the emphasis on rigorous security standards and privacy protections.
-
-While ScriptRunner Connect is an independent product and does not directly integrate with Atlassian, our security policies align with [Adaptavist's trust, security, and privacy policies](https://www.adaptavist.com/trust).
+ScriptRunner Connect, developed by The Adaptavist Group, is a cloud-based, Atlassian-focused, code-first integration Platform as a Service (iPaaS) product. Designed to connect to third-party systems, ScriptRunner Connect enables users to focus on writing business logic in JavaScript or TypeScript, while the ScriptRunner Connect team handles the complexities of infrastructure and security. A key aspect of ScriptRunner Connect's mission is the emphasis on rigorous security standards and privacy protections. To learn more, please visit our [Trust Center.](https://trust.theadaptavistgroup.com/)
 
 ## Security measures
 
@@ -64,7 +62,7 @@ ScriptRunner Connect is GDPR compliant and [ISO 27001](https://www.iso.org/stand
 
 While we aim to reduce the PII (Personally Identifiable Information) data in our logs, we may occasionally temporarily increase our logging levels, which could contain PII data, for troubleshooting.
 
-For further information, you may refer to the following related compliance documents: [AWS](https://aws.amazon.com/compliance/), [Adaptavist Terms and Conditions](https://www.adaptavist.com/terms-and-conditions), [Privacy Policy](https://www.adaptavist.com/privacy-policy), and the [Data Processing Addendum](https://www.adaptavist.com/dpa).
+For further information, you may refer to the following related compliance documents: [AWS](https://aws.amazon.com/compliance/), [The Adaptavist Group Terms and Conditions](https://www.theadaptavistgroup.com/policy/terms), [The Adaptavist Group Privacy Policy](https://www.theadaptavistgroup.com/policy/privacy), and the [The Adaptavist Group Data Processing Addendum](https://www.theadaptavistgroup.com/policy/dpa).
 
 ## AI features
 

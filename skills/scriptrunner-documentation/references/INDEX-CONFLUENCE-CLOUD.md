@@ -1,6 +1,6 @@
 # Confluence Cloud Documentation Index
 
-Total pages: 107
+Total pages: 109
 
 | Title | Path | Source |
 | --- | --- | --- |
@@ -105,6 +105,8 @@ Total pages: 107
 | Troubleshoot | references/docs/confluence-cloud/get-help/troubleshoot.md | https://docs.adaptavist.com/sr4cc/latest/get-help/troubleshoot |
 | Troubleshooting Script Manager | references/docs/confluence-cloud/features/script-manager/troubleshooting-script-manager.md | https://docs.adaptavist.com/sr4cc/latest/features/script-manager#troubleshooting-script-manager--en |
 | Use IP Addresses | references/docs/confluence-cloud/manage-app/use-ip-addresses.md | https://docs.adaptavist.com/sr4cc/latest/manage-app/use-ip-addresses |
+| Use the Version History macro | references/docs/confluence-cloud/features/macros/built-in-macros/version-history-macro/use-the-version-history-macro.md | https://docs.adaptavist.com/sr4cc/latest/features/macros/built-in-macros/version-history-macro/use-the-version-history-macro |
+| Version History Macro | references/docs/confluence-cloud/features/macros/built-in-macros/version-history-macro.md | https://docs.adaptavist.com/sr4cc/latest/features/macros/built-in-macros/version-history-macro |
 | Vulnerabilities and Securities | references/docs/confluence-cloud/manage-app/vulnerabilities-and-securities.md | https://docs.adaptavist.com/sr4cc/latest/manage-app/vulnerabilities-and-securities |
 | Work with Labels | references/docs/confluence-cloud/hapi/work-with-labels.md | https://docs.adaptavist.com/sr4cc/latest/hapi/work-with-labels |
 | Work with Page Components | references/docs/confluence-cloud/hapi/work-with-page-components.md | https://docs.adaptavist.com/sr4cc/latest/hapi/work-with-page-components |

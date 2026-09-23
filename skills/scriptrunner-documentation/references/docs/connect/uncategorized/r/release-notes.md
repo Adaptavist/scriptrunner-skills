@@ -14,6 +14,22 @@ Here are the changes we document in the Release Notes:
 -   Updates: Changes we've made, large and small, that we want you to be aware of.
 -   Bug Fixes: Issues we've resolved to make ScriptRunner Connect work as intended.
 
+## 21 September 2026
+
+### Public API now covers most of the app's functionality.
+
+As part of this expansion, a few bugs with existing API endpoints were fixed, which may result in breaking changes in some cases. Most of the changes are related to response status code which shouldn't constitute a breaking change as long as you were checked at whether the response is OK (200-299 range) or not.
+
+Pay attention to the following changes which may break your existing behaviour:
+
+-   `/v1/team/{teamId}/invocationLogs`:
+    -   `dropped` filed was renamed to `dropReason`.
+    -   `orderBy` query param now only accepts: `workspace`, `environment`, `duration`, `consoleLogs`, `httpLogs` and `startTime`, in a case-sensitive manner.
+    -   Unrecognised `executionStatuses` or `triggerTypes` now error out, rather than being silently ignored.
+    -   `pageSize` must now be a numeric value; previously coercion was used (same applies to `/v1/team/{teamId}/auditLogs endpoint`)
+
+• `/v1/invocation/{id}/consoleLogs`, `…/httpLogs`, and `…/largeLogMessage/{msgId}:` previously, this endpoint returned 200 even when there were no logs saved, now it returns 404 when invocation has no logs, which usually means the invocation hasn't finished running or something else happened to it. It also now returns a successful response even with an empty content when the invocation didn't emit any logs (previously it return 200 for no logs scenario but the provided URL failed to be downloaded)
+
 ## 20 July 2026
 
 ### Update

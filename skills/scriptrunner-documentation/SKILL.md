@@ -4,9 +4,9 @@ description: Local ScriptRunner documentation bundle for Jira Cloud, Confluence 
 metadata:
     author: sms-core
     version: '1.0'
-    generated-doc-count: '697'
+    generated-doc-count: '699'
     generated-cloud-doc-count: '137'
-    generated-confluence-cloud-doc-count: '107'
+    generated-confluence-cloud-doc-count: '109'
     generated-connect-doc-count: '64'
     generated-data-center-doc-count: '350'
     generated-migration-suite-doc-count: '39'

@@ -7,7 +7,7 @@ description: >-
     @sr-connect/cli. Use for any SRC, ScriptRunner Connect or Atlassian-integration question, and
     load references/ before running the CLI.
 metadata:
-    version: '1.1'
+    version: '1.2'
 ---
 
 # ScriptRunner Connect
@@ -116,6 +116,8 @@ Source: https://docs.adaptavist.com/src/latest/workspaces/deployments-and-enviro
 Typed, per-environment values a script reads from `context.environment.vars`, one level of folders allowed. Eleven types, from TEXT and NUMBER to LIST, MAP and FOLDER; the type cannot be changed later. A default value seeds new environments and workspace copies, but the value itself is not copied and a default is not read at runtime. A required parameter blocks saving in the web app until it has a value; the CLI does not enforce it, so a required parameter can still be unset. For that reason `ev-params.ts` declares every parameter optional, required or not, and a script checks a value is present before using it; a required one is marked `Required: yes` in its JSDoc there.
 
 A PASSWORD never reaches the script. The code sees a placeholder and so do the logs, and the real value is substituted only into an outbound HTTP call. So a password cannot be hashed, signed or base64-encoded in code; anything needing runtime handling goes in a TEXT parameter created with `--masked`. The full type table, the content types the substitution covers and the `ev-params.ts` consequences are in `references/scripting.md`.
+
+**Never read parameter values without the user's explicit permission.** `environment-parameter list` returns them, and TEXT, MULTILINE_TEXT and MAP parameters can hold secrets that are not typed PASSWORD, masked TEXT among them. To see what exists, clone the workspace and read `ev-params.ts`: every parameter with its description, type and requiredness, and no values. `references/cli-workflow.md` has the rule under Posture.
 
 Source: https://docs.adaptavist.com/src/latest/workspaces/parameters
 

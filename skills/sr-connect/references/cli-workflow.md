@@ -10,6 +10,7 @@ Read `references/scripting.md` before writing or editing a script. Read `referen
 - Those two flags are for your own calls only. A command you hand the user to run themselves carries neither `--agent` nor `--raw`, so the CLI can ask them questions and print for a person. Strip them from every example in this skill before quoting it, including the `auth login` line, and never tell them to export the two environment variables.
 - Read the exit code before the output. 0 ok. 1 the API or the run failed. 2 usage or a missing value. 3 not authenticated. 4 not found or an empty lookup. 130 cancelled.
 - Run `--explain` on a verb before the first call to it. A body key is often a flag under another spelling and the rules say which.
+- **Never read environment parameter values.** `environment-parameter list` returns them, and a parameter that is not a PASSWORD can still hold a secret: a TEXT created with `--masked`, a token in a MULTILINE_TEXT, a key inside a MAP. You have no business seeing those, and a secret you read once is in the transcript for good. To learn what parameters exist, clone the workspace and read `ev-params.ts`. It lists every parameter with its description, type and whether it is required, and no values. That is enough to write and debug scripts. If a task truly cannot go ahead without a value, ask the user for explicit permission first, name the parameter and say why you need it, and read nothing until they say yes. Permission covers that request only; it does not carry over to other parameters or later calls.
 - Credentials never ride in argv. `auth login --credentials-stdin`, or `SR_CONNECT_CLI_USERNAME` and `SR_CONNECT_CLI_PASSWORD`. Never print a key into a log, a message or a file you keep.
 - Destructive verbs need `--yes`. Before passing it, confirm the intent with the user unless the ask left no room for doubt.
 - Scope is `--team`, `-w`, `-e`, or the env vars `SR_CONNECT_CLI_TEAM`, `SR_CONNECT_CLI_WORKSPACE`, `SR_CONNECT_CLI_ENVIRONMENT`. Inside a cloned workspace directory, `workspace.json` supplies all three. Session defaults from `cli set-session` are read too.
@@ -375,6 +376,7 @@ Index, one file per app that has listener types. The file name is the app's `app
 - Create, rename or delete a script with a push. Use `script create`, `script update --name`, `script delete`.
 - Change the user's default test payload.
 - Hardcode a credential or configuration a parameter could hold.
+- Run `environment-parameter list`, or read parameter values any other way, without the user's explicit permission for that request. Read `ev-params.ts` in the clone instead.
 - Leave a scheduled trigger enabled on unfinished code.
 - Pass a credential on argv or paste one into the conversation.
 - Pass `--force` on a lock someone else holds, or `--no-lock`, without the user's say-so.

@@ -163,7 +163,7 @@ if (!response.ok) {
 const issue = await response.json()
 ```
 
-Global `fetch`, full URL, your own headers. Only when no connector exists, and even then prefer a Generic connector so the credential stays out of code.
+Global `fetch`, full URL, your own headers. Only when no connector exists, and even then prefer a Generic connector so the credential stays out of code. Every host it reaches needs its own Fetch API destination on the team's Egress Firewall, which a connector's entry does not cover; see Egress Firewall in `cli-workflow.md`.
 
 Before dropping a tier, look harder: read `node_modules/@managed-api/<service>-core/` and its README, try sibling groups such as `Issue`, `IssueAttachment` and `IssueComment`, the verb variants `get`, `create`, `update`, `delete`, `list`, `search`, and the `All` group that holds every method.
 

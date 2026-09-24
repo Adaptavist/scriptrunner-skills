@@ -1,12 +1,13 @@
 ---
 name: scriptrunner-documentation
-description: Local ScriptRunner documentation bundle for Jira Cloud, Confluence Cloud, ScriptRunner Connect, Jira Data Center, and ScriptRunner Migration Suite. Use when users ask about ScriptRunner capabilities, setup, migrations, Migration Suite workflows, Dev and Deployment Tool guidance, REST integrations, listeners, macros, behaviours, jobs, or platform-specific constraints.
+description: Local ScriptRunner documentation bundle for Jira Cloud, Confluence Cloud, ScriptRunner Connect, Jira Data Center, Confluence Data Center, and ScriptRunner Migration Suite. Use when users ask about ScriptRunner capabilities, setup, migrations, Migration Suite workflows, Dev and Deployment Tool guidance, REST integrations, listeners, macros, behaviours, jobs, or platform-specific constraints.
 metadata:
     author: sms-core
     version: '1.0'
-    generated-doc-count: '699'
+    generated-doc-count: '914'
     generated-cloud-doc-count: '137'
     generated-confluence-cloud-doc-count: '109'
+    generated-confluence-data-center-doc-count: '215'
     generated-connect-doc-count: '64'
     generated-data-center-doc-count: '350'
     generated-migration-suite-doc-count: '39'
@@ -28,6 +29,7 @@ Use this skill for bundled local documentation. Prefer it over remote documentat
 2. Read the relevant platform index:
     - `references/INDEX-CLOUD.md`
     - `references/INDEX-CONFLUENCE-CLOUD.md`
+    - `references/INDEX-CONFLUENCE-DATA-CENTER.md`
     - `references/INDEX-CONNECT.md`
     - `references/INDEX-DATA-CENTER.md`
     - `references/INDEX-MIGRATION-SUITE.md`
@@ -40,8 +42,9 @@ Use this skill for bundled local documentation. Prefer it over remote documentat
 - `references/ROUTING.md` - first-pass routing guidance.
 - `references/INDEX-CLOUD.md` - Cloud page inventory.
 - `references/INDEX-CONFLUENCE-CLOUD.md` - ScriptRunner for Confluence Cloud page inventory.
+- `references/INDEX-CONFLUENCE-DATA-CENTER.md` - ScriptRunner for Confluence Data Center page inventory.
 - `references/INDEX-CONNECT.md` - ScriptRunner Connect page inventory.
-- `references/INDEX-DATA-CENTER.md` - Data Center page inventory.
+- `references/INDEX-DATA-CENTER.md` - ScriptRunner for Jira Data Center page inventory.
 - `references/INDEX-MIGRATION-SUITE.md` - ScriptRunner Migration Suite and Dev and Deployment Tool page inventory.
 - `references/docs/...` - extracted page-level documentation.
 - `assets/documents.json` - machine-readable manifest.

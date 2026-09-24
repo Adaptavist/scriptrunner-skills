@@ -24,4 +24,4 @@ Please have a look at the [Groovy 4 Release Notes](https://groovy-lang.org/relea
 
 CAUTION: Breaking changes that could affect your scripts
 
-Visit [Breaking Changes](https://docs.adaptavist.com/scriptrunner-for-confluence-data-center/latest/release-notes/breaking-changes) to learn how Groovy 4 could affect and break your scripts.
+Visit [Breaking Changes](../../../confluence-data-center/release-notes/breaking-changes.md) to learn how Groovy 4 could affect and break your scripts.

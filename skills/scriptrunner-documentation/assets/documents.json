@@ -8883,5 +8883,2781 @@
     "sourceUrl": "https://docs.adaptavist.com/sms/latest/training/contact-us",
     "spaceKey": "SMS",
     "title": "Contact Us"
+  },
+  {
+    "docId": "doc-sr4c-345c7ce5-1654-4255-96d7-bc98879dcc7e-86c67a08421e492c",
+    "hierarchy": [],
+    "pageId": "345c7ce5-1654-4255-96d7-bc98879dcc7e-86c67a08421e492c",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/uncategorized/b/best-practices-and-app-management.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/best-practices-and-app-management",
+    "spaceKey": "SR4C",
+    "title": "Best Practices and App Management"
+  },
+  {
+    "docId": "doc-sr4c-6cafd050-1fd9-4d1d-90df-1acbb0d62e75-442dc64905a01c8e",
+    "hierarchy": [
+      "Best Practices and App Management"
+    ],
+    "pageId": "6cafd050-1fd9-4d1d-90df-1acbb0d62e75-442dc64905a01c8e",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/best-practices-and-app-management/advanced-logging.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/best-practices-and-app-management#advanced-logging--en",
+    "spaceKey": "SR4C",
+    "title": "Advanced Logging"
+  },
+  {
+    "docId": "doc-sr4c-9837e8f0-6fbc-405d-b134-c51279d0b943-f44640c25e3b64e2",
+    "hierarchy": [
+      "Best Practices and App Management"
+    ],
+    "pageId": "9837e8f0-6fbc-405d-b134-c51279d0b943-f44640c25e3b64e2",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/best-practices-and-app-management/audit-logging.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/best-practices-and-app-management#audit-logging--en",
+    "spaceKey": "SR4C",
+    "title": "Audit Logging"
+  },
+  {
+    "docId": "doc-sr4c-0ce0082d-edd9-46e6-9729-99c1a72f3713-fbbd1449a84a17d8",
+    "hierarchy": [
+      "Best Practices and App Management"
+    ],
+    "pageId": "0ce0082d-edd9-46e6-9729-99c1a72f3713-fbbd1449a84a17d8",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/best-practices-and-app-management/code-editor.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/best-practices-and-app-management#code-editor--en",
+    "spaceKey": "SR4C",
+    "title": "Code Editor"
+  },
+  {
+    "docId": "doc-sr4c-d731a48e-a225-4ce6-a23d-1ee83d7fac14-8d64cc372e64511b",
+    "hierarchy": [
+      "Best Practices and App Management"
+    ],
+    "pageId": "d731a48e-a225-4ce6-a23d-1ee83d7fac14-8d64cc372e64511b",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/best-practices-and-app-management/dynamic-forms.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/best-practices-and-app-management#dynamic-forms--en",
+    "spaceKey": "SR4C",
+    "title": "Dynamic Forms"
+  },
+  {
+    "docId": "doc-sr4c-8aea4b27-1a27-4e84-81b0-3d507dcffdd0-97d16923e98519a5",
+    "hierarchy": [
+      "Best Practices and App Management"
+    ],
+    "pageId": "8aea4b27-1a27-4e84-81b0-3d507dcffdd0-97d16923e98519a5",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/best-practices-and-app-management/execution-history.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/best-practices-and-app-management#execution-history--en",
+    "spaceKey": "SR4C",
+    "title": "Execution History"
+  },
+  {
+    "docId": "doc-sr4c-1bb938f0-a04f-45bd-92f2-94505896248c-dc11634450e7e71e",
+    "hierarchy": [
+      "Best Practices and App Management"
+    ],
+    "pageId": "1bb938f0-a04f-45bd-92f2-94505896248c-dc11634450e7e71e",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/best-practices-and-app-management/introduction-to-groovy.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/best-practices-and-app-management#introduction-to-groovy--en",
+    "spaceKey": "SR4C",
+    "title": "Introduction to Groovy"
+  },
+  {
+    "docId": "doc-sr4c-ebb2eba7-5341-4137-954c-05b015384b0c-5289a1c1f902a931",
+    "hierarchy": [
+      "Best Practices and App Management"
+    ],
+    "pageId": "ebb2eba7-5341-4137-954c-05b015384b0c-5289a1c1f902a931",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/best-practices-and-app-management/script-plugins.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/best-practices-and-app-management#script-plugins--en",
+    "spaceKey": "SR4C",
+    "title": "Script Plugins"
+  },
+  {
+    "docId": "doc-sr4c-8247d10b-2f84-4f44-acb8-3f2fda70f687-fc45ddb7122c8e42",
+    "hierarchy": [
+      "Best Practices and App Management"
+    ],
+    "pageId": "8247d10b-2f84-4f44-acb8-3f2fda70f687-fc45ddb7122c8e42",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/best-practices-and-app-management/script-roots.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/best-practices-and-app-management#script-roots--en",
+    "spaceKey": "SR4C",
+    "title": "Script Roots"
+  },
+  {
+    "docId": "doc-sr4c-def96c92-e35a-447c-b34d-44275df16d99-02051a8951d9532b",
+    "hierarchy": [
+      "Best Practices and App Management"
+    ],
+    "pageId": "def96c92-e35a-447c-b34d-44275df16d99-02051a8951d9532b",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/best-practices-and-app-management/set-up-a-dev-environment.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/best-practices-and-app-management#set-up-a-dev-environment--en",
+    "spaceKey": "SR4C",
+    "title": "Set Up a Dev Environment"
+  },
+  {
+    "docId": "doc-sr4c-afcef6c7-7ef5-4438-84a1-c529db450ccb-c147f9d993239d5e",
+    "hierarchy": [
+      "Best Practices and App Management"
+    ],
+    "pageId": "afcef6c7-7ef5-4438-84a1-c529db450ccb-c147f9d993239d5e",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/best-practices-and-app-management/static-type-checking.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/best-practices-and-app-management#static-type-checking--en",
+    "spaceKey": "SR4C",
+    "title": "Static Type Checking"
+  },
+  {
+    "docId": "doc-sr4c-87d8a7c8-6e57-4511-80c4-40dc52c65644-ea35f1b1d8b345d4",
+    "hierarchy": [
+      "Best Practices and App Management"
+    ],
+    "pageId": "87d8a7c8-6e57-4511-80c4-40dc52c65644-ea35f1b1d8b345d4",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/best-practices-and-app-management/store-all-environment-specific-variables.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/best-practices-and-app-management#store-all-environment-specific-variables--en",
+    "spaceKey": "SR4C",
+    "title": "Store all Environment Specific Variables"
+  },
+  {
+    "docId": "doc-sr4c-08227397-9a7f-4e31-8d7d-6474a4b764cd-91ba59ad53051a82",
+    "hierarchy": [
+      "Best Practices and App Management"
+    ],
+    "pageId": "08227397-9a7f-4e31-8d7d-6474a4b764cd-91ba59ad53051a82",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/best-practices-and-app-management/test-your-code.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/best-practices-and-app-management#test-your-code--en",
+    "spaceKey": "SR4C",
+    "title": "Test Your Code"
+  },
+  {
+    "docId": "doc-sr4c-52a792f5-ffc9-46fd-8f1c-8a4bc9a043fd-fb3b3cc63614b1a3",
+    "hierarchy": [
+      "Best Practices and App Management"
+    ],
+    "pageId": "52a792f5-ffc9-46fd-8f1c-8a4bc9a043fd-fb3b3cc63614b1a3",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/best-practices-and-app-management/update-staging-environment.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/best-practices-and-app-management#update-staging-environment--en",
+    "spaceKey": "SR4C",
+    "title": "Update Staging Environment"
+  },
+  {
+    "docId": "doc-sr4c-1b5b8533-99c8-4697-a08b-87414247493a-267da7670dd4cda1",
+    "hierarchy": [
+      "Best Practices and App Management"
+    ],
+    "pageId": "1b5b8533-99c8-4697-a08b-87414247493a-267da7670dd4cda1",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/best-practices-and-app-management/using-g-string-templates.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/best-practices-and-app-management#using-gstring-templates--en",
+    "spaceKey": "SR4C",
+    "title": "Using GString Templates"
+  },
+  {
+    "docId": "doc-sr4c-fb25884d-6288-423b-905d-7145d025aa1b-8d3d7474c4f22f39",
+    "hierarchy": [
+      "Best Practices and App Management"
+    ],
+    "pageId": "fb25884d-6288-423b-905d-7145d025aa1b-8d3d7474c4f22f39",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/best-practices-and-app-management/version-control.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/best-practices-and-app-management#version-control--en",
+    "spaceKey": "SR4C",
+    "title": "Version Control"
+  },
+  {
+    "docId": "doc-sr4c-a551c0cc-a5a2-40c7-abdd-e984d72de87c-d4a593b49e1c1807",
+    "hierarchy": [],
+    "pageId": "a551c0cc-a5a2-40c7-abdd-e984d72de87c-d4a593b49e1c1807",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/uncategorized/f/features.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features",
+    "spaceKey": "SR4C",
+    "title": "Features"
+  },
+  {
+    "docId": "doc-sr4c-992bf2d0-4cf5-424f-a96a-cafb3b42fd85-9ce8b387a0ce2a7e",
+    "hierarchy": [
+      "Features"
+    ],
+    "pageId": "992bf2d0-4cf5-424f-a96a-cafb3b42fd85-9ce8b387a0ce2a7e",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/built-in-scripts.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en",
+    "spaceKey": "SR4C",
+    "title": "Built-In Scripts"
+  },
+  {
+    "docId": "doc-sr4c-d45e09dd-068b-41fc-9657-42109d150b84-b6cd630f00520ae4",
+    "hierarchy": [
+      "Features",
+      "Built-In Scripts"
+    ],
+    "pageId": "d45e09dd-068b-41fc-9657-42109d150b84-b6cd630f00520ae4",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/built-in-scripts/confluence-administration-built-in-scripts.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#confluence-administration-built-in-scripts--en",
+    "spaceKey": "SR4C",
+    "title": "Confluence Administration Built-In Scripts"
+  },
+  {
+    "docId": "doc-sr4c-c4032f50-6f9a-422c-9823-80aa6eeec694-c71e92416d2652f0",
+    "hierarchy": [
+      "Features",
+      "Built-In Scripts",
+      "Confluence Administration Built-In Scripts"
+    ],
+    "pageId": "c4032f50-6f9a-422c-9823-80aa6eeec694-c71e92416d2652f0",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/built-in-scripts/confluence-administration-built-in-scripts/add-or-remove-watchers.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#confluence-administration-built-in-scripts--en#add-or-remove-watchers--en",
+    "spaceKey": "SR4C",
+    "title": "Add or Remove Watchers"
+  },
+  {
+    "docId": "doc-sr4c-a2d61646-b7fb-439b-a99b-d447c3286809-e7dd5703aabb18a4",
+    "hierarchy": [
+      "Features",
+      "Built-In Scripts",
+      "Confluence Administration Built-In Scripts"
+    ],
+    "pageId": "a2d61646-b7fb-439b-a99b-d447c3286809-e7dd5703aabb18a4",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/built-in-scripts/confluence-administration-built-in-scripts/bulk-delete-attachment-versions.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#confluence-administration-built-in-scripts--en#bulk-delete-attachment-versions--en",
+    "spaceKey": "SR4C",
+    "title": "Bulk Delete Attachment Versions"
+  },
+  {
+    "docId": "doc-sr4c-3efeefb1-6c30-4941-9660-cba44e8106ac-bf776d3a8447caa0",
+    "hierarchy": [
+      "Features",
+      "Built-In Scripts",
+      "Confluence Administration Built-In Scripts"
+    ],
+    "pageId": "3efeefb1-6c30-4941-9660-cba44e8106ac-bf776d3a8447caa0",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/built-in-scripts/confluence-administration-built-in-scripts/bulk-delete-attachments.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#confluence-administration-built-in-scripts--en#bulk-delete-attachments--en",
+    "spaceKey": "SR4C",
+    "title": "Bulk Delete Attachments"
+  },
+  {
+    "docId": "doc-sr4c-55f4188f-e9ff-41cb-90b2-a7aedc2c3c84-5b0acba159e559a7",
+    "hierarchy": [
+      "Features",
+      "Built-In Scripts",
+      "Confluence Administration Built-In Scripts"
+    ],
+    "pageId": "55f4188f-e9ff-41cb-90b2-a7aedc2c3c84-5b0acba159e559a7",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/built-in-scripts/confluence-administration-built-in-scripts/bulk-delete-comments.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#confluence-administration-built-in-scripts--en#bulk-delete-comments--en",
+    "spaceKey": "SR4C",
+    "title": "Bulk Delete Comments"
+  },
+  {
+    "docId": "doc-sr4c-aa18c359-212a-4b07-8d7f-348edcbc4831-e7607d9a5e5b31d5",
+    "hierarchy": [
+      "Features",
+      "Built-In Scripts",
+      "Confluence Administration Built-In Scripts"
+    ],
+    "pageId": "aa18c359-212a-4b07-8d7f-348edcbc4831-e7607d9a5e5b31d5",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/built-in-scripts/confluence-administration-built-in-scripts/bulk-purge-trash.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#confluence-administration-built-in-scripts--en#bulk-purge-trash--en",
+    "spaceKey": "SR4C",
+    "title": "Bulk Purge Trash"
+  },
+  {
+    "docId": "doc-sr4c-bb0f783d-6224-4133-be58-03b36240d331-7bb0b7258dc09141",
+    "hierarchy": [
+      "Features",
+      "Built-In Scripts",
+      "Confluence Administration Built-In Scripts"
+    ],
+    "pageId": "bb0f783d-6224-4133-be58-03b36240d331-7bb0b7258dc09141",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/built-in-scripts/confluence-administration-built-in-scripts/change-content-author.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#confluence-administration-built-in-scripts--en#change-content-author--en",
+    "spaceKey": "SR4C",
+    "title": "Change Content Author"
+  },
+  {
+    "docId": "doc-sr4c-d18c2edc-cefa-49d1-aaec-d137cc843bd6-065266822170e060",
+    "hierarchy": [
+      "Features",
+      "Built-In Scripts",
+      "Confluence Administration Built-In Scripts"
+    ],
+    "pageId": "d18c2edc-cefa-49d1-aaec-d137cc843bd6-065266822170e060",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/built-in-scripts/confluence-administration-built-in-scripts/clear-groovy-class-loader.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#confluence-administration-built-in-scripts--en#clear-groovy-class-loader--en",
+    "spaceKey": "SR4C",
+    "title": "Clear Groovy Class Loader"
+  },
+  {
+    "docId": "doc-sr4c-b662b517-6d43-4457-aeb1-d06822aaaa2e-f72f9a220a9bfa5e",
+    "hierarchy": [
+      "Features",
+      "Built-In Scripts",
+      "Confluence Administration Built-In Scripts"
+    ],
+    "pageId": "b662b517-6d43-4457-aeb1-d06822aaaa2e-f72f9a220a9bfa5e",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/built-in-scripts/confluence-administration-built-in-scripts/configuration-exporter.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#confluence-administration-built-in-scripts--en#configuration-exporter--en",
+    "spaceKey": "SR4C",
+    "title": "Configuration Exporter"
+  },
+  {
+    "docId": "doc-sr4c-ffa53655-1512-4fd8-8096-0d4a1364f77c-0ba4631f3fdae7c2",
+    "hierarchy": [
+      "Features",
+      "Built-In Scripts",
+      "Confluence Administration Built-In Scripts"
+    ],
+    "pageId": "ffa53655-1512-4fd8-8096-0d4a1364f77c-0ba4631f3fdae7c2",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/built-in-scripts/confluence-administration-built-in-scripts/convert-absolute-links-to-confluence-links.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#confluence-administration-built-in-scripts--en#convert-absolute-links-to-confluence-links--en",
+    "spaceKey": "SR4C",
+    "title": "Convert Absolute Links to Confluence Links"
+  },
+  {
+    "docId": "doc-sr4c-831e5a99-3671-4b36-a020-97d5d0e891a4-22f4b4b28286f882",
+    "hierarchy": [
+      "Features",
+      "Built-In Scripts",
+      "Confluence Administration Built-In Scripts"
+    ],
+    "pageId": "831e5a99-3671-4b36-a020-97d5d0e891a4-22f4b4b28286f882",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/built-in-scripts/confluence-administration-built-in-scripts/copy-pages.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#confluence-administration-built-in-scripts--en#copy-pages--en",
+    "spaceKey": "SR4C",
+    "title": "Copy Pages"
+  },
+  {
+    "docId": "doc-sr4c-538d8578-9a8c-46e2-99cd-1b9d909915c3-b4c723f3a0085b3e",
+    "hierarchy": [
+      "Features",
+      "Built-In Scripts",
+      "Confluence Administration Built-In Scripts"
+    ],
+    "pageId": "538d8578-9a8c-46e2-99cd-1b9d909915c3-b4c723f3a0085b3e",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/built-in-scripts/confluence-administration-built-in-scripts/copy-space.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#confluence-administration-built-in-scripts--en#copy-space--en",
+    "spaceKey": "SR4C",
+    "title": "Copy Space"
+  },
+  {
+    "docId": "doc-sr4c-22132555-f9dd-424d-b516-238484d0f36f-11d46f6e590d3368",
+    "hierarchy": [
+      "Features",
+      "Built-In Scripts",
+      "Confluence Administration Built-In Scripts"
+    ],
+    "pageId": "22132555-f9dd-424d-b516-238484d0f36f-11d46f6e590d3368",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/built-in-scripts/confluence-administration-built-in-scripts/delete-pages.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#confluence-administration-built-in-scripts--en#delete-pages--en",
+    "spaceKey": "SR4C",
+    "title": "Delete Pages"
+  },
+  {
+    "docId": "doc-sr4c-ff32f766-2d43-45b9-a855-95a4e47aebdc-99fd049e3eb1b419",
+    "hierarchy": [
+      "Features",
+      "Built-In Scripts",
+      "Confluence Administration Built-In Scripts"
+    ],
+    "pageId": "ff32f766-2d43-45b9-a855-95a4e47aebdc-99fd049e3eb1b419",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/built-in-scripts/confluence-administration-built-in-scripts/list-scheduled-jobs.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#confluence-administration-built-in-scripts--en#list-scheduled-jobs--en",
+    "spaceKey": "SR4C",
+    "title": "List Scheduled Jobs"
+  },
+  {
+    "docId": "doc-sr4c-4f319fb5-58aa-45de-b33c-1dd2302a4630-b752695be0a87017",
+    "hierarchy": [
+      "Features",
+      "Built-In Scripts",
+      "Confluence Administration Built-In Scripts"
+    ],
+    "pageId": "4f319fb5-58aa-45de-b33c-1dd2302a4630-b752695be0a87017",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/built-in-scripts/confluence-administration-built-in-scripts/manage-labels.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#confluence-administration-built-in-scripts--en#manage-labels--en",
+    "spaceKey": "SR4C",
+    "title": "Manage Labels"
+  },
+  {
+    "docId": "doc-sr4c-c5753b72-88fe-40f3-b9b8-6e17cc410697-cf6001a25d40231e",
+    "hierarchy": [
+      "Features",
+      "Built-In Scripts",
+      "Confluence Administration Built-In Scripts"
+    ],
+    "pageId": "c5753b72-88fe-40f3-b9b8-6e17cc410697-cf6001a25d40231e",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/built-in-scripts/confluence-administration-built-in-scripts/rename-pages.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#confluence-administration-built-in-scripts--en#rename-pages--en",
+    "spaceKey": "SR4C",
+    "title": "Rename Pages"
+  },
+  {
+    "docId": "doc-sr4c-5030ab75-dbb4-479a-a72e-3a1a293aae37-8fba1f07d4a38c63",
+    "hierarchy": [
+      "Features",
+      "Built-In Scripts",
+      "Confluence Administration Built-In Scripts"
+    ],
+    "pageId": "5030ab75-dbb4-479a-a72e-3a1a293aae37-8fba1f07d4a38c63",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/built-in-scripts/confluence-administration-built-in-scripts/script-registry.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#confluence-administration-built-in-scripts--en#script-registry--en",
+    "spaceKey": "SR4C",
+    "title": "Script Registry"
+  },
+  {
+    "docId": "doc-sr4c-07a07be1-12cf-48a1-945c-c5eb786cd690-2cd1659c7b722980",
+    "hierarchy": [
+      "Features",
+      "Built-In Scripts",
+      "Confluence Administration Built-In Scripts"
+    ],
+    "pageId": "07a07be1-12cf-48a1-945c-c5eb786cd690-2cd1659c7b722980",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/built-in-scripts/confluence-administration-built-in-scripts/space-statistics.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#confluence-administration-built-in-scripts--en#space-statistics--en",
+    "spaceKey": "SR4C",
+    "title": "Space Statistics"
+  },
+  {
+    "docId": "doc-sr4c-0b096083-4426-4fd0-8c5c-72c1ae1da306-e74c48598610f287",
+    "hierarchy": [
+      "Features",
+      "Built-In Scripts",
+      "Confluence Administration Built-In Scripts"
+    ],
+    "pageId": "0b096083-4426-4fd0-8c5c-72c1ae1da306-e74c48598610f287",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/built-in-scripts/confluence-administration-built-in-scripts/switch-to-a-different-user.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#confluence-administration-built-in-scripts--en#switch-to-a-different-user--en",
+    "spaceKey": "SR4C",
+    "title": "Switch to a Different User"
+  },
+  {
+    "docId": "doc-sr4c-e52cbdcf-0f80-429c-8345-c4ca525cd669-feaba4e4aad4b92d",
+    "hierarchy": [
+      "Features",
+      "Built-In Scripts",
+      "Confluence Administration Built-In Scripts"
+    ],
+    "pageId": "e52cbdcf-0f80-429c-8345-c4ca525cd669-feaba4e4aad4b92d",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/built-in-scripts/confluence-administration-built-in-scripts/test-runner.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#confluence-administration-built-in-scripts--en#test-runner--en",
+    "spaceKey": "SR4C",
+    "title": "Test Runner"
+  },
+  {
+    "docId": "doc-sr4c-31ac9b15-e74b-4d85-9352-06a5cccc3a22-6cfc96ad22d8222e",
+    "hierarchy": [
+      "Features",
+      "Built-In Scripts",
+      "Confluence Administration Built-In Scripts"
+    ],
+    "pageId": "31ac9b15-e74b-4d85-9352-06a5cccc3a22-6cfc96ad22d8222e",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/built-in-scripts/confluence-administration-built-in-scripts/update-macro.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#confluence-administration-built-in-scripts--en#update-macro--en",
+    "spaceKey": "SR4C",
+    "title": "Update Macro"
+  },
+  {
+    "docId": "doc-sr4c-15b32b29-7fe4-4236-aad9-aae1358d37a7-c3b517860cab679f",
+    "hierarchy": [
+      "Features",
+      "Built-In Scripts",
+      "Confluence Administration Built-In Scripts",
+      "Update Macro"
+    ],
+    "pageId": "15b32b29-7fe4-4236-aad9-aae1358d37a7-c3b517860cab679f",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/built-in-scripts/confluence-administration-built-in-scripts/update-macro/update-macro-performance.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#confluence-administration-built-in-scripts--en#update-macro--en#update-macro-performance--en",
+    "spaceKey": "SR4C",
+    "title": "Update Macro Performance"
+  },
+  {
+    "docId": "doc-sr4c-7bb6b4bf-87d3-415d-9913-21539ab1cad5-1454a31cdd600cc4",
+    "hierarchy": [
+      "Features",
+      "Built-In Scripts",
+      "Confluence Administration Built-In Scripts"
+    ],
+    "pageId": "7bb6b4bf-87d3-415d-9913-21539ab1cad5-1454a31cdd600cc4",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/built-in-scripts/confluence-administration-built-in-scripts/update-page-restrictions.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#confluence-administration-built-in-scripts--en#update-page-restrictions--en",
+    "spaceKey": "SR4C",
+    "title": "Update Page Restrictions"
+  },
+  {
+    "docId": "doc-sr4c-b9650f58-312b-4d30-90a1-0e676a1e833d-01a5bb55b9250ab9",
+    "hierarchy": [
+      "Features",
+      "Built-In Scripts",
+      "Confluence Administration Built-In Scripts"
+    ],
+    "pageId": "b9650f58-312b-4d30-90a1-0e676a1e833d-01a5bb55b9250ab9",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/built-in-scripts/confluence-administration-built-in-scripts/view-server-log-files.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#confluence-administration-built-in-scripts--en#view-server-log-files--en",
+    "spaceKey": "SR4C",
+    "title": "View Server Log Files"
+  },
+  {
+    "docId": "doc-sr4c-993ad002-b023-4b10-b6f6-0a3ddd756aeb-fe9de112ee0eb3aa",
+    "hierarchy": [
+      "Features",
+      "Built-In Scripts",
+      "Confluence Administration Built-In Scripts"
+    ],
+    "pageId": "993ad002-b023-4b10-b6f6-0a3ddd756aeb-fe9de112ee0eb3aa",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/built-in-scripts/confluence-administration-built-in-scripts/x-path-search-in-pages.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#confluence-administration-built-in-scripts--en#xpath-search-in-pages--en",
+    "spaceKey": "SR4C",
+    "title": "XPath Search in Pages"
+  },
+  {
+    "docId": "doc-sr4c-b8dafde0-7a1e-4079-bee6-3cea1746f5ee-c6b33816609cef85",
+    "hierarchy": [
+      "Features",
+      "Built-In Scripts"
+    ],
+    "pageId": "b8dafde0-7a1e-4079-bee6-3cea1746f5ee-c6b33816609cef85",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/built-in-scripts/space-administration-built-in-scripts.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#space-administration-built-in-scripts--en",
+    "spaceKey": "SR4C",
+    "title": "Space Administration Built-In Scripts"
+  },
+  {
+    "docId": "doc-sr4c-c4032f50-6f9a-422c-9823-80aa6eeec694-15e2350e0feb5289",
+    "hierarchy": [
+      "Features",
+      "Built-In Scripts",
+      "Space Administration Built-In Scripts"
+    ],
+    "pageId": "c4032f50-6f9a-422c-9823-80aa6eeec694-15e2350e0feb5289",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/built-in-scripts/space-administration-built-in-scripts/add-or-remove-watchers.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#space-administration-built-in-scripts--en#add-or-remove-watchers--en",
+    "spaceKey": "SR4C",
+    "title": "Add or Remove Watchers"
+  },
+  {
+    "docId": "doc-sr4c-8bdc2794-71b3-4c29-a275-262481c0ecc0-c6db87ddd5f5e00c",
+    "hierarchy": [
+      "Features",
+      "Built-In Scripts",
+      "Space Administration Built-In Scripts"
+    ],
+    "pageId": "8bdc2794-71b3-4c29-a275-262481c0ecc0-c6db87ddd5f5e00c",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/built-in-scripts/space-administration-built-in-scripts/bulk-delete-attachment-versions.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#space-administration-built-in-scripts--en#bulk-delete-attachment-versions--en",
+    "spaceKey": "SR4C",
+    "title": "Bulk Delete Attachment Versions"
+  },
+  {
+    "docId": "doc-sr4c-3efeefb1-6c30-4941-9660-cba44e8106ac-3c754704cf1f9b38",
+    "hierarchy": [
+      "Features",
+      "Built-In Scripts",
+      "Space Administration Built-In Scripts"
+    ],
+    "pageId": "3efeefb1-6c30-4941-9660-cba44e8106ac-3c754704cf1f9b38",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/built-in-scripts/space-administration-built-in-scripts/bulk-delete-attachments.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#space-administration-built-in-scripts--en#bulk-delete-attachments--en",
+    "spaceKey": "SR4C",
+    "title": "Bulk Delete Attachments"
+  },
+  {
+    "docId": "doc-sr4c-a0022d2d-d76c-476b-b79e-772e73d78a1f-1651a67d5e97b065",
+    "hierarchy": [
+      "Features",
+      "Built-In Scripts",
+      "Space Administration Built-In Scripts"
+    ],
+    "pageId": "a0022d2d-d76c-476b-b79e-772e73d78a1f-1651a67d5e97b065",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/built-in-scripts/space-administration-built-in-scripts/bulk-delete-comments.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#space-administration-built-in-scripts--en#bulk-delete-comments--en",
+    "spaceKey": "SR4C",
+    "title": "Bulk Delete Comments"
+  },
+  {
+    "docId": "doc-sr4c-139659d9-e676-4360-a9ca-d75859ed759f-7a2b68de059e4ccb",
+    "hierarchy": [
+      "Features",
+      "Built-In Scripts",
+      "Space Administration Built-In Scripts"
+    ],
+    "pageId": "139659d9-e676-4360-a9ca-d75859ed759f-7a2b68de059e4ccb",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/built-in-scripts/space-administration-built-in-scripts/bulk-purge-trash.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#space-administration-built-in-scripts--en#bulk-purge-trash--en",
+    "spaceKey": "SR4C",
+    "title": "Bulk Purge Trash"
+  },
+  {
+    "docId": "doc-sr4c-bb0f783d-6224-4133-be58-03b36240d331-81e0f22bc52a1a84",
+    "hierarchy": [
+      "Features",
+      "Built-In Scripts",
+      "Space Administration Built-In Scripts"
+    ],
+    "pageId": "bb0f783d-6224-4133-be58-03b36240d331-81e0f22bc52a1a84",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/built-in-scripts/space-administration-built-in-scripts/change-content-author.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#space-administration-built-in-scripts--en#change-content-author--en",
+    "spaceKey": "SR4C",
+    "title": "Change Content Author"
+  },
+  {
+    "docId": "doc-sr4c-831e5a99-3671-4b36-a020-97d5d0e891a4-17daa98a4800340c",
+    "hierarchy": [
+      "Features",
+      "Built-In Scripts",
+      "Space Administration Built-In Scripts"
+    ],
+    "pageId": "831e5a99-3671-4b36-a020-97d5d0e891a4-17daa98a4800340c",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/built-in-scripts/space-administration-built-in-scripts/copy-pages.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#space-administration-built-in-scripts--en#copy-pages--en",
+    "spaceKey": "SR4C",
+    "title": "Copy Pages"
+  },
+  {
+    "docId": "doc-sr4c-0ab4f4ed-0cf3-47e0-bfcd-2421e8e247f2-cf41175359a13371",
+    "hierarchy": [
+      "Features",
+      "Built-In Scripts",
+      "Space Administration Built-In Scripts"
+    ],
+    "pageId": "0ab4f4ed-0cf3-47e0-bfcd-2421e8e247f2-cf41175359a13371",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/built-in-scripts/space-administration-built-in-scripts/copy-space.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#space-administration-built-in-scripts--en#copy-space--en",
+    "spaceKey": "SR4C",
+    "title": "Copy Space"
+  },
+  {
+    "docId": "doc-sr4c-22132555-f9dd-424d-b516-238484d0f36f-954940cbb709704a",
+    "hierarchy": [
+      "Features",
+      "Built-In Scripts",
+      "Space Administration Built-In Scripts"
+    ],
+    "pageId": "22132555-f9dd-424d-b516-238484d0f36f-954940cbb709704a",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/built-in-scripts/space-administration-built-in-scripts/delete-pages.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#space-administration-built-in-scripts--en#delete-pages--en",
+    "spaceKey": "SR4C",
+    "title": "Delete Pages"
+  },
+  {
+    "docId": "doc-sr4c-68a0af10-0b03-4937-98cd-68e00ee6ce38-fdb4ff9107ad5622",
+    "hierarchy": [
+      "Features",
+      "Built-In Scripts",
+      "Space Administration Built-In Scripts"
+    ],
+    "pageId": "68a0af10-0b03-4937-98cd-68e00ee6ce38-fdb4ff9107ad5622",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/built-in-scripts/space-administration-built-in-scripts/manage-labels.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#space-administration-built-in-scripts--en#manage-labels--en",
+    "spaceKey": "SR4C",
+    "title": "Manage Labels"
+  },
+  {
+    "docId": "doc-sr4c-ac5d9158-89eb-4854-8121-c177f28d0077-51b21488debc83ab",
+    "hierarchy": [
+      "Features",
+      "Built-In Scripts",
+      "Space Administration Built-In Scripts"
+    ],
+    "pageId": "ac5d9158-89eb-4854-8121-c177f28d0077-51b21488debc83ab",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/built-in-scripts/space-administration-built-in-scripts/rename-pages.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#space-administration-built-in-scripts--en#rename-pages--en",
+    "spaceKey": "SR4C",
+    "title": "Rename Pages"
+  },
+  {
+    "docId": "doc-sr4c-c0ecb669-9fce-4177-ac9c-e7fafacdecfd-da63aeffa8aa9e72",
+    "hierarchy": [
+      "Features",
+      "Built-In Scripts",
+      "Space Administration Built-In Scripts"
+    ],
+    "pageId": "c0ecb669-9fce-4177-ac9c-e7fafacdecfd-da63aeffa8aa9e72",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/built-in-scripts/space-administration-built-in-scripts/space-statistics.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#space-administration-built-in-scripts--en#space-statistics--en",
+    "spaceKey": "SR4C",
+    "title": "Space Statistics"
+  },
+  {
+    "docId": "doc-sr4c-7bb6b4bf-87d3-415d-9913-21539ab1cad5-a7c524dc0b2d9753",
+    "hierarchy": [
+      "Features",
+      "Built-In Scripts",
+      "Space Administration Built-In Scripts"
+    ],
+    "pageId": "7bb6b4bf-87d3-415d-9913-21539ab1cad5-a7c524dc0b2d9753",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/built-in-scripts/space-administration-built-in-scripts/update-page-restrictions.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#space-administration-built-in-scripts--en#update-page-restrictions--en",
+    "spaceKey": "SR4C",
+    "title": "Update Page Restrictions"
+  },
+  {
+    "docId": "doc-sr4c-d39ecf52-8161-4542-9023-1f4c5ad39471-fcb4678e46324c1a",
+    "hierarchy": [
+      "Features"
+    ],
+    "pageId": "d39ecf52-8161-4542-9023-1f4c5ad39471-fcb4678e46324c1a",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/cql-functions.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#cql-functions--en",
+    "spaceKey": "SR4C",
+    "title": "CQL Functions"
+  },
+  {
+    "docId": "doc-sr4c-78505bea-6a3b-4d69-9a66-d87680ab1ab8-a2193bafbe3cc82d",
+    "hierarchy": [
+      "Features",
+      "CQL Functions"
+    ],
+    "pageId": "78505bea-6a3b-4d69-9a66-d87680ab1ab8-a2193bafbe3cc82d",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/cql-functions/custom-cql-functions.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#cql-functions--en#custom-cql-functions--en",
+    "spaceKey": "SR4C",
+    "title": "Custom CQL Functions"
+  },
+  {
+    "docId": "doc-sr4c-a467afca-0c88-48d6-b3ff-0a74ba653590-5067a7c500e63440",
+    "hierarchy": [
+      "Features"
+    ],
+    "pageId": "a467afca-0c88-48d6-b3ff-0a74ba653590-5067a7c500e63440",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/custom-search-fields.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#custom-search-fields--en",
+    "spaceKey": "SR4C",
+    "title": "Custom Search Fields"
+  },
+  {
+    "docId": "doc-sr4c-8f74d75e-1c64-44d2-919e-f9f0a5653a2e-2f649e0c0f764777",
+    "hierarchy": [
+      "Features",
+      "Custom Search Fields"
+    ],
+    "pageId": "8f74d75e-1c64-44d2-919e-f9f0a5653a2e-2f649e0c0f764777",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/custom-search-fields/custom-search-field-examples.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#custom-search-fields--en#custom-search-field-examples--en",
+    "spaceKey": "SR4C",
+    "title": "Custom Search Field Examples"
+  },
+  {
+    "docId": "doc-sr4c-c44511c5-0717-4f31-b71e-fd6bda296c1b-fb4fa43c80df535b",
+    "hierarchy": [
+      "Features"
+    ],
+    "pageId": "c44511c5-0717-4f31-b71e-fd6bda296c1b-fb4fa43c80df535b",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/enhanced-search.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#enhanced-search--en",
+    "spaceKey": "SR4C",
+    "title": "Enhanced Search"
+  },
+  {
+    "docId": "doc-sr4c-6f061b4d-072e-476e-9927-ac17974c044d-894ebcf5f033b3ee",
+    "hierarchy": [
+      "Features"
+    ],
+    "pageId": "6f061b4d-072e-476e-9927-ac17974c044d-894ebcf5f033b3ee",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/event-listeners.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#event-listeners--en",
+    "spaceKey": "SR4C",
+    "title": "Event Listeners"
+  },
+  {
+    "docId": "doc-sr4c-8e234d83-cde5-4e14-b840-76d099d2618b-fe9d6173706a2a89",
+    "hierarchy": [
+      "Features",
+      "Event Listeners"
+    ],
+    "pageId": "8e234d83-cde5-4e14-b840-76d099d2618b-fe9d6173706a2a89",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/event-listeners/built-in-listeners.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#event-listeners--en#built-in-listeners--en",
+    "spaceKey": "SR4C",
+    "title": "Built-In Listeners"
+  },
+  {
+    "docId": "doc-sr4c-75cbbac5-dfb5-48d6-bfac-195d2c3ced12-76b5942d60be747d",
+    "hierarchy": [
+      "Features",
+      "Event Listeners",
+      "Built-In Listeners"
+    ],
+    "pageId": "75cbbac5-dfb5-48d6-bfac-195d2c3ced12-76b5942d60be747d",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/event-listeners/built-in-listeners/add-or-remove-watchers-listener.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#event-listeners--en#built-in-listeners--en#add-or-remove-watchers-listener--en",
+    "spaceKey": "SR4C",
+    "title": "Add or Remove Watchers Listener"
+  },
+  {
+    "docId": "doc-sr4c-883d1aea-f0eb-4819-8e28-f229d9dad827-6a49967adbf1fdc5",
+    "hierarchy": [
+      "Features",
+      "Event Listeners",
+      "Built-In Listeners"
+    ],
+    "pageId": "883d1aea-f0eb-4819-8e28-f229d9dad827-6a49967adbf1fdc5",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/event-listeners/built-in-listeners/inherit-parent-permissions-for-new-pages-listener.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#event-listeners--en#built-in-listeners--en#inherit-parent-permissions-for-new-pages-listener--en",
+    "spaceKey": "SR4C",
+    "title": "Inherit Parent Permissions For New Pages Listener"
+  },
+  {
+    "docId": "doc-sr4c-aa8295f0-2011-44fd-8f07-3bcfc5c017f0-ba6613a6893bdc26",
+    "hierarchy": [
+      "Features",
+      "Event Listeners",
+      "Built-In Listeners"
+    ],
+    "pageId": "aa8295f0-2011-44fd-8f07-3bcfc5c017f0-ba6613a6893bdc26",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/event-listeners/built-in-listeners/manage-labels-listener.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#event-listeners--en#built-in-listeners--en#manage-labels-listener--en",
+    "spaceKey": "SR4C",
+    "title": "Manage Labels Listener"
+  },
+  {
+    "docId": "doc-sr4c-59b8abfe-c211-4e7d-9f26-35a20984f93a-d31d26cdb0142f0a",
+    "hierarchy": [
+      "Features",
+      "Event Listeners",
+      "Built-In Listeners"
+    ],
+    "pageId": "59b8abfe-c211-4e7d-9f26-35a20984f93a-d31d26cdb0142f0a",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/event-listeners/built-in-listeners/send-custom-email.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#event-listeners--en#built-in-listeners--en#send-custom-email--en",
+    "spaceKey": "SR4C",
+    "title": "Send Custom Email"
+  },
+  {
+    "docId": "doc-sr4c-9e632d10-dd84-4940-b70b-7cdf836f99a4-be830e93d20da75a",
+    "hierarchy": [
+      "Features",
+      "Event Listeners",
+      "Built-In Listeners"
+    ],
+    "pageId": "9e632d10-dd84-4940-b70b-7cdf836f99a4-be830e93d20da75a",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/event-listeners/built-in-listeners/update-page-restrictions-listener.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#event-listeners--en#built-in-listeners--en#update-page-restrictions-listener--en",
+    "spaceKey": "SR4C",
+    "title": "Update Page Restrictions Listener"
+  },
+  {
+    "docId": "doc-sr4c-e26e9558-9d94-4e11-9304-d73748404ffb-5035604515cb6f15",
+    "hierarchy": [
+      "Features",
+      "Event Listeners"
+    ],
+    "pageId": "e26e9558-9d94-4e11-9304-d73748404ffb-5035604515cb6f15",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/event-listeners/custom-event-listener.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#event-listeners--en#custom-event-listener--en",
+    "spaceKey": "SR4C",
+    "title": "Custom Event Listener"
+  },
+  {
+    "docId": "doc-sr4c-43f9fead-67e5-4f20-9e93-871ea80bf38c-b220596f5d5e7de5",
+    "hierarchy": [
+      "Features",
+      "Event Listeners"
+    ],
+    "pageId": "43f9fead-67e5-4f20-9e93-871ea80bf38c-b220596f5d5e7de5",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/event-listeners/listeners-with-product-integrations.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#event-listeners--en#listeners-with-product-integrations--en",
+    "spaceKey": "SR4C",
+    "title": "Listeners with Product Integrations"
+  },
+  {
+    "docId": "doc-sr4c-dc928e07-a128-4841-aff5-b6bd51dfcede-553b7aad7a1e12e3",
+    "hierarchy": [
+      "Features"
+    ],
+    "pageId": "dc928e07-a128-4841-aff5-b6bd51dfcede-553b7aad7a1e12e3",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/fragments.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#fragments--en",
+    "spaceKey": "SR4C",
+    "title": "Fragments"
+  },
+  {
+    "docId": "doc-sr4c-da957a1d-9d1a-478f-b682-b26c353567e8-30aa327cfc435bdc",
+    "hierarchy": [
+      "Features",
+      "Fragments"
+    ],
+    "pageId": "da957a1d-9d1a-478f-b682-b26c353567e8-30aa327cfc435bdc",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/fragments/hide-ui-element-built-in-script.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#fragments--en#hide-ui-element-built-in-script--en",
+    "spaceKey": "SR4C",
+    "title": "Hide UI Element Built-In Script"
+  },
+  {
+    "docId": "doc-sr4c-333d8adb-db16-42aa-bf31-45f8a0af977d-9ee579dc07f51034",
+    "hierarchy": [
+      "Features",
+      "Fragments"
+    ],
+    "pageId": "333d8adb-db16-42aa-bf31-45f8a0af977d-9ee579dc07f51034",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/fragments/raw-xml-module-built-in-script.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#fragments--en#raw-xml-module-built-in-script--en",
+    "spaceKey": "SR4C",
+    "title": "Raw XML Module Built-In Script"
+  },
+  {
+    "docId": "doc-sr4c-903b85e4-f9cf-468c-bfff-2346960d6813-1ec273fba667388b",
+    "hierarchy": [
+      "Features",
+      "Fragments"
+    ],
+    "pageId": "903b85e4-f9cf-468c-bfff-2346960d6813-1ec273fba667388b",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/fragments/web-item.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#fragments--en#web-item--en",
+    "spaceKey": "SR4C",
+    "title": "Web Item"
+  },
+  {
+    "docId": "doc-sr4c-b289e83b-8636-4a52-80e6-3ccce8c95716-6b0869f64bb26b49",
+    "hierarchy": [
+      "Features",
+      "Fragments"
+    ],
+    "pageId": "b289e83b-8636-4a52-80e6-3ccce8c95716-6b0869f64bb26b49",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/fragments/web-panel.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#fragments--en#web-panel--en",
+    "spaceKey": "SR4C",
+    "title": "Web Panel"
+  },
+  {
+    "docId": "doc-sr4c-12b6f0a7-d06f-41cd-9b87-abc42072a4c7-fc9fc87119c23c6b",
+    "hierarchy": [
+      "Features",
+      "Fragments"
+    ],
+    "pageId": "12b6f0a7-d06f-41cd-9b87-abc42072a4c7-fc9fc87119c23c6b",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/fragments/web-resource.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#fragments--en#web-resource--en",
+    "spaceKey": "SR4C",
+    "title": "Web Resource"
+  },
+  {
+    "docId": "doc-sr4c-0f95c797-05ac-4a59-84c3-e06f01c14ee9-50acb66eca700b47",
+    "hierarchy": [
+      "Features",
+      "Fragments"
+    ],
+    "pageId": "0f95c797-05ac-4a59-84c3-e06f01c14ee9-50acb66eca700b47",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/fragments/web-section.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#fragments--en#web-section--en",
+    "spaceKey": "SR4C",
+    "title": "Web Section"
+  },
+  {
+    "docId": "doc-sr4c-3dc65442-a33a-4068-b1f9-a6d50f7a440b-8d95235b75bfa197",
+    "hierarchy": [
+      "Features",
+      "Fragments",
+      "Web Section"
+    ],
+    "pageId": "3dc65442-a33a-4068-b1f9-a6d50f7a440b-8d95235b75bfa197",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/fragments/web-section/create-a-confluence-toolbar-dropdown-option.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#fragments--en#web-section--en#create-a-confluence-toolbar-dropdown-option--en",
+    "spaceKey": "SR4C",
+    "title": "Create a Confluence Toolbar Dropdown Option"
+  },
+  {
+    "docId": "doc-sr4c-bfce13fb-de29-4613-ad5b-f11b6967485b-f5b17123728c5cde",
+    "hierarchy": [
+      "Features"
+    ],
+    "pageId": "bfce13fb-de29-4613-ad5b-f11b6967485b-f5b17123728c5cde",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/jobs.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#jobs--en",
+    "spaceKey": "SR4C",
+    "title": "Jobs"
+  },
+  {
+    "docId": "doc-sr4c-d1d29702-760d-4aa6-b48a-f2a5f5917143-5f5e6f8daf0a3a05",
+    "hierarchy": [
+      "Features",
+      "Jobs"
+    ],
+    "pageId": "d1d29702-760d-4aa6-b48a-f2a5f5917143-5f5e6f8daf0a3a05",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/jobs/built-in-jobs.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#jobs--en#built-in-jobs--en",
+    "spaceKey": "SR4C",
+    "title": "Built-In Jobs"
+  },
+  {
+    "docId": "doc-sr4c-e5e5474b-a594-4d8e-87b7-ab5ed6d13a67-f8a441574e49de34",
+    "hierarchy": [
+      "Features",
+      "Jobs",
+      "Built-In Jobs"
+    ],
+    "pageId": "e5e5474b-a594-4d8e-87b7-ab5ed6d13a67-f8a441574e49de34",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/jobs/built-in-jobs/bulk-delete-attachments-job.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#jobs--en#built-in-jobs--en#bulk-delete-attachments-job--en",
+    "spaceKey": "SR4C",
+    "title": "Bulk Delete Attachments Job"
+  },
+  {
+    "docId": "doc-sr4c-a1f5ea51-6f29-4552-befe-89939864fc89-4489cfd1cab78ecf",
+    "hierarchy": [
+      "Features",
+      "Jobs",
+      "Built-In Jobs"
+    ],
+    "pageId": "a1f5ea51-6f29-4552-befe-89939864fc89-4489cfd1cab78ecf",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/jobs/built-in-jobs/bulk-purge-trash-job.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#jobs--en#built-in-jobs--en#bulk-purge-trash-job--en",
+    "spaceKey": "SR4C",
+    "title": "Bulk Purge Trash Job"
+  },
+  {
+    "docId": "doc-sr4c-2be10575-9daa-416b-a374-9ae0894cabab-06641160244a9bbc",
+    "hierarchy": [
+      "Features",
+      "Jobs",
+      "Built-In Jobs"
+    ],
+    "pageId": "2be10575-9daa-416b-a374-9ae0894cabab-06641160244a9bbc",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/jobs/built-in-jobs/cql-escalation-services.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#jobs--en#built-in-jobs--en#cql-escalation-services--en",
+    "spaceKey": "SR4C",
+    "title": "CQL Escalation Services"
+  },
+  {
+    "docId": "doc-sr4c-e8717dd8-31ca-4aae-949e-e44a1cbea3fc-c7de869cf7d19ef8",
+    "hierarchy": [
+      "Features",
+      "Jobs",
+      "Built-In Jobs"
+    ],
+    "pageId": "e8717dd8-31ca-4aae-949e-e44a1cbea3fc-c7de869cf7d19ef8",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/jobs/built-in-jobs/manage-labels-job.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#jobs--en#built-in-jobs--en#manage-labels-job--en",
+    "spaceKey": "SR4C",
+    "title": "Manage Labels Job"
+  },
+  {
+    "docId": "doc-sr4c-b06c3803-52bf-42a2-b9f7-b95f94353930-528452b88c2afe4d",
+    "hierarchy": [
+      "Features",
+      "Jobs",
+      "Built-In Jobs"
+    ],
+    "pageId": "b06c3803-52bf-42a2-b9f7-b95f94353930-528452b88c2afe4d",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/jobs/built-in-jobs/old-content-notifier-job.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#jobs--en#built-in-jobs--en#old-content-notifier-job--en",
+    "spaceKey": "SR4C",
+    "title": "Old Content Notifier Job"
+  },
+  {
+    "docId": "doc-sr4c-c28e0c44-2c41-421e-84fc-622db6d56975-47ac48b83d0fdf51",
+    "hierarchy": [
+      "Features",
+      "Jobs",
+      "Built-In Jobs"
+    ],
+    "pageId": "c28e0c44-2c41-421e-84fc-622db6d56975-47ac48b83d0fdf51",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/jobs/built-in-jobs/prune-old-versions-job.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#jobs--en#built-in-jobs--en#prune-old-versions-job--en",
+    "spaceKey": "SR4C",
+    "title": "Prune Old Versions Job"
+  },
+  {
+    "docId": "doc-sr4c-c596b0d2-da1b-43b1-8eb5-e11704f90d5b-08e6a246dbecb7df",
+    "hierarchy": [
+      "Features",
+      "Jobs",
+      "Built-In Jobs"
+    ],
+    "pageId": "c596b0d2-da1b-43b1-8eb5-e11704f90d5b-08e6a246dbecb7df",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/jobs/built-in-jobs/update-page-restrictions-job.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#jobs--en#built-in-jobs--en#update-page-restrictions-job--en",
+    "spaceKey": "SR4C",
+    "title": "Update Page Restrictions Job"
+  },
+  {
+    "docId": "doc-sr4c-5616714e-edb7-4ac0-9bfe-780496d97a1f-9c2e1353c5a9e85b",
+    "hierarchy": [
+      "Features",
+      "Jobs"
+    ],
+    "pageId": "5616714e-edb7-4ac0-9bfe-780496d97a1f-9c2e1353c5a9e85b",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/jobs/custom-scheduled-jobs.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#jobs--en#custom-scheduled-jobs--en",
+    "spaceKey": "SR4C",
+    "title": "Custom Scheduled Jobs"
+  },
+  {
+    "docId": "doc-sr4c-79bed900-6403-47f3-b646-35650e476c86-e94031e4069ca624",
+    "hierarchy": [
+      "Features"
+    ],
+    "pageId": "79bed900-6403-47f3-b646-35650e476c86-e94031e4069ca624",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/macros.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#macros--en",
+    "spaceKey": "SR4C",
+    "title": "Macros"
+  },
+  {
+    "docId": "doc-sr4c-44e27574-d31a-48c6-aba8-b38a22c75b99-3bf27338970e12b9",
+    "hierarchy": [
+      "Features",
+      "Macros"
+    ],
+    "pageId": "44e27574-d31a-48c6-aba8-b38a22c75b99-3bf27338970e12b9",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/macros/built-in-macros.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#macros--en#built-in-macros--en",
+    "spaceKey": "SR4C",
+    "title": "Built-In Macros"
+  },
+  {
+    "docId": "doc-sr4c-e7a12892-ca71-43ff-98c6-4eeeefc8f1b8-4db464f8deaaa4d1",
+    "hierarchy": [
+      "Features",
+      "Macros",
+      "Built-In Macros"
+    ],
+    "pageId": "e7a12892-ca71-43ff-98c6-4eeeefc8f1b8-4db464f8deaaa4d1",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/macros/built-in-macros/add-label-macro.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#macros--en#built-in-macros--en#add-label-macro--en",
+    "spaceKey": "SR4C",
+    "title": "Add Label Macro"
+  },
+  {
+    "docId": "doc-sr4c-e6136f5a-b5f9-4ab4-adc0-9bc463063e31-3801c2ed8251a443",
+    "hierarchy": [
+      "Features",
+      "Macros",
+      "Built-In Macros"
+    ],
+    "pageId": "e6136f5a-b5f9-4ab4-adc0-9bc463063e31-3801c2ed8251a443",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/macros/built-in-macros/choose-label-macro.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#macros--en#built-in-macros--en#choose-label-macro--en",
+    "spaceKey": "SR4C",
+    "title": "Choose Label Macro"
+  },
+  {
+    "docId": "doc-sr4c-77195b44-1e7d-40cf-b916-836d10b6ee93-f9781a9713f61d20",
+    "hierarchy": [
+      "Features",
+      "Macros",
+      "Built-In Macros"
+    ],
+    "pageId": "77195b44-1e7d-40cf-b916-836d10b6ee93-f9781a9713f61d20",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/macros/built-in-macros/cql-search-macro.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#macros--en#built-in-macros--en#cql-search-macro--en",
+    "spaceKey": "SR4C",
+    "title": "CQL Search Macro"
+  },
+  {
+    "docId": "doc-sr4c-200d6654-7e0d-4349-97fd-ef9cddf6d606-4759b9e5f3ba7539",
+    "hierarchy": [
+      "Features",
+      "Macros",
+      "Built-In Macros"
+    ],
+    "pageId": "200d6654-7e0d-4349-97fd-ef9cddf6d606-4759b9e5f3ba7539",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/macros/built-in-macros/create-page-macro.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#macros--en#built-in-macros--en#create-page-macro--en",
+    "spaceKey": "SR4C",
+    "title": "Create Page Macro"
+  },
+  {
+    "docId": "doc-sr4c-645293b4-4bed-4830-a76d-7d9b265f4426-66442141133b5041",
+    "hierarchy": [
+      "Features",
+      "Macros",
+      "Built-In Macros"
+    ],
+    "pageId": "645293b4-4bed-4830-a76d-7d9b265f4426-66442141133b5041",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/macros/built-in-macros/include-macros.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#macros--en#built-in-macros--en#include-macros--en",
+    "spaceKey": "SR4C",
+    "title": "Include Macros"
+  },
+  {
+    "docId": "doc-sr4c-f4b166a6-604e-42ac-8a3b-9cfd1c032797-91c07f6546f7a1d7",
+    "hierarchy": [
+      "Features",
+      "Macros",
+      "Built-In Macros",
+      "Include Macros"
+    ],
+    "pageId": "f4b166a6-604e-42ac-8a3b-9cfd1c032797-91c07f6546f7a1d7",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/macros/built-in-macros/include-macros/converting-include-pages-macro-to-include-version.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#macros--en#built-in-macros--en#include-macros--en#converting-include-pages-macro-to-include-version--en",
+    "spaceKey": "SR4C",
+    "title": "Converting Include Pages Macro to Include Version"
+  },
+  {
+    "docId": "doc-sr4c-d6943d62-a17b-4cf3-8c38-afae61a33fab-b6fd41d3a1328db0",
+    "hierarchy": [
+      "Features",
+      "Macros",
+      "Built-In Macros",
+      "Include Macros"
+    ],
+    "pageId": "d6943d62-a17b-4cf3-8c38-afae61a33fab-b6fd41d3a1328db0",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/macros/built-in-macros/include-macros/include-reports.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#macros--en#built-in-macros--en#include-macros--en#include-reports--en",
+    "spaceKey": "SR4C",
+    "title": "Include Reports"
+  },
+  {
+    "docId": "doc-sr4c-8405ca1f-0982-4cdc-acb4-565ab00a1886-82d7d92b650f42d2",
+    "hierarchy": [
+      "Features",
+      "Macros",
+      "Built-In Macros",
+      "Include Macros"
+    ],
+    "pageId": "8405ca1f-0982-4cdc-acb4-565ab00a1886-82d7d92b650f42d2",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/macros/built-in-macros/include-macros/include-version.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#macros--en#built-in-macros--en#include-macros--en#include-version--en",
+    "spaceKey": "SR4C",
+    "title": "Include Version"
+  },
+  {
+    "docId": "doc-sr4c-3a0ee7ec-f123-4da7-b89e-16c63eca2a39-b3c650cc13785ff7",
+    "hierarchy": [
+      "Features",
+      "Macros",
+      "Built-In Macros"
+    ],
+    "pageId": "3a0ee7ec-f123-4da7-b89e-16c63eca2a39-b3c650cc13785ff7",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/macros/built-in-macros/markdown.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#macros--en#built-in-macros--en#markdown--en",
+    "spaceKey": "SR4C",
+    "title": "Markdown"
+  },
+  {
+    "docId": "doc-sr4c-06b5ea2e-93c3-4f8b-ba58-7995e5352afa-d1a09e7aeb2bc8a4",
+    "hierarchy": [
+      "Features",
+      "Macros",
+      "Built-In Macros"
+    ],
+    "pageId": "06b5ea2e-93c3-4f8b-ba58-7995e5352afa-d1a09e7aeb2bc8a4",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/macros/built-in-macros/mugshot-gallery-macro.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#macros--en#built-in-macros--en#mugshot-gallery-macro--en",
+    "spaceKey": "SR4C",
+    "title": "Mugshot Gallery Macro"
+  },
+  {
+    "docId": "doc-sr4c-e7b5afef-c3c4-42e4-a6c5-1a6e4d348c93-c9b922f13ad1b59a",
+    "hierarchy": [
+      "Features",
+      "Macros",
+      "Built-In Macros"
+    ],
+    "pageId": "e7b5afef-c3c4-42e4-a6c5-1a6e4d348c93-c9b922f13ad1b59a",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/macros/built-in-macros/page-info-macro.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#macros--en#built-in-macros--en#page-info-macro--en",
+    "spaceKey": "SR4C",
+    "title": "Page Info Macro"
+  },
+  {
+    "docId": "doc-sr4c-134a9e2e-f737-4c2a-b37d-c7d38290fd98-6df9df6b02756b65",
+    "hierarchy": [
+      "Features",
+      "Macros",
+      "Built-In Macros"
+    ],
+    "pageId": "134a9e2e-f737-4c2a-b37d-c7d38290fd98-6df9df6b02756b65",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/macros/built-in-macros/versions-history-macro.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#macros--en#built-in-macros--en#versions-history-macro--en",
+    "spaceKey": "SR4C",
+    "title": "Versions History Macro"
+  },
+  {
+    "docId": "doc-sr4c-4f195503-5b2d-4aa4-bf23-6ddd95672c76-588896f980f04929",
+    "hierarchy": [
+      "Features",
+      "Macros"
+    ],
+    "pageId": "4f195503-5b2d-4aa4-bf23-6ddd95672c76-588896f980f04929",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/macros/create-custom-macro.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#macros--en#create-custom-macro--en",
+    "spaceKey": "SR4C",
+    "title": "Create Custom Macro"
+  },
+  {
+    "docId": "doc-sr4c-0f8959a4-ad55-4754-a7c0-9e8cf7a6002f-1d46f5b6d9b4a616",
+    "hierarchy": [
+      "Features",
+      "Macros",
+      "Create Custom Macro"
+    ],
+    "pageId": "0f8959a4-ad55-4754-a7c0-9e8cf7a6002f-1d46f5b6d9b4a616",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/macros/create-custom-macro/cql-search-macro.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#macros--en#create-custom-macro--en#cql-search-macro--en",
+    "spaceKey": "SR4C",
+    "title": "CQL Search Macro"
+  },
+  {
+    "docId": "doc-sr4c-b8d442b5-3704-4995-8936-2bd67f748ed5-76f1228dd8847f21",
+    "hierarchy": [
+      "Features",
+      "Macros",
+      "Create Custom Macro"
+    ],
+    "pageId": "b8d442b5-3704-4995-8936-2bd67f748ed5-76f1228dd8847f21",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/macros/create-custom-macro/create-a-macro-with-parameters.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#macros--en#create-custom-macro--en#create-a-macro-with-parameters--en",
+    "spaceKey": "SR4C",
+    "title": "Create a Macro with Parameters"
+  },
+  {
+    "docId": "doc-sr4c-ed4d608e-07fd-4802-970d-fda793ad6a40-ed70c87eb0cdd3fd",
+    "hierarchy": [
+      "Features",
+      "Macros",
+      "Create Custom Macro",
+      "Create a Macro with Parameters"
+    ],
+    "pageId": "ed4d608e-07fd-4802-970d-fda793ad6a40-ed70c87eb0cdd3fd",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/macros/create-custom-macro/create-a-macro-with-parameters/example-aui-message-macro.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#macros--en#create-custom-macro--en#create-a-macro-with-parameters--en#example-aui-message-macro--en",
+    "spaceKey": "SR4C",
+    "title": "Example: AUI Message Macro"
+  },
+  {
+    "docId": "doc-sr4c-20bec853-8bb5-47da-9f56-975eb17705de-28a3b34f5d3e891c",
+    "hierarchy": [
+      "Features",
+      "Macros",
+      "Create Custom Macro"
+    ],
+    "pageId": "20bec853-8bb5-47da-9f56-975eb17705de-28a3b34f5d3e891c",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/macros/create-custom-macro/display-sql-results-from-an-external-database.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#macros--en#create-custom-macro--en#display-sql-results-from-an-external-database--en",
+    "spaceKey": "SR4C",
+    "title": "Display SQL Results from an External Database"
+  },
+  {
+    "docId": "doc-sr4c-96a95199-475b-4807-8142-3d3bcf3e67dc-733b1a54aea74a7c",
+    "hierarchy": [
+      "Features",
+      "Macros",
+      "Create Custom Macro"
+    ],
+    "pageId": "96a95199-475b-4807-8142-3d3bcf3e67dc-733b1a54aea74a7c",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/macros/create-custom-macro/macro-tips.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#macros--en#create-custom-macro--en#macro-tips--en",
+    "spaceKey": "SR4C",
+    "title": "Macro Tips"
+  },
+  {
+    "docId": "doc-sr4c-32f941c3-308b-462e-b5ea-9b6dc70a9994-c09b5cef6a7159af",
+    "hierarchy": [
+      "Features",
+      "Macros",
+      "Create Custom Macro"
+    ],
+    "pageId": "32f941c3-308b-462e-b5ea-9b6dc70a9994-c09b5cef6a7159af",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/macros/create-custom-macro/reuse-existing-macros.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#macros--en#create-custom-macro--en#reuse-existing-macros--en",
+    "spaceKey": "SR4C",
+    "title": "Reuse Existing Macros"
+  },
+  {
+    "docId": "doc-sr4c-7255ed2d-27f3-4f72-bb58-90209a6d5792-3ac4090f6e105f35",
+    "hierarchy": [
+      "Features",
+      "Macros",
+      "Create Custom Macro",
+      "Reuse Existing Macros"
+    ],
+    "pageId": "7255ed2d-27f3-4f72-bb58-90209a6d5792-3ac4090f6e105f35",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/macros/create-custom-macro/reuse-existing-macros/include-all-child-pages.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#macros--en#create-custom-macro--en#reuse-existing-macros--en#include-all-child-pages--en",
+    "spaceKey": "SR4C",
+    "title": "Include All Child Pages"
+  },
+  {
+    "docId": "doc-sr4c-c393abe6-9476-4ec9-9849-8906d1290cef-c83e344798fd7fce",
+    "hierarchy": [
+      "Features",
+      "Macros",
+      "Create Custom Macro"
+    ],
+    "pageId": "c393abe6-9476-4ec9-9849-8906d1290cef-c83e344798fd7fce",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/macros/create-custom-macro/security-and-best-practices.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#macros--en#create-custom-macro--en#security-and-best-practices--en",
+    "spaceKey": "SR4C",
+    "title": "Security and Best Practices"
+  },
+  {
+    "docId": "doc-sr4c-c4f1b337-c8ff-4195-b351-78085035c4e0-0074bea4802c7101",
+    "hierarchy": [
+      "Features"
+    ],
+    "pageId": "c4f1b337-c8ff-4195-b351-78085035c4e0-0074bea4802c7101",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/resources.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#resources--en",
+    "spaceKey": "SR4C",
+    "title": "Resources"
+  },
+  {
+    "docId": "doc-sr4c-d20922ac-823a-4a61-bf6f-f073e1671671-9bab11c99145c901",
+    "hierarchy": [
+      "Features",
+      "Resources"
+    ],
+    "pageId": "d20922ac-823a-4a61-bf6f-f073e1671671-9bab11c99145c901",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/resources/external-database-connection.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#resources--en#external-database-connection--en",
+    "spaceKey": "SR4C",
+    "title": "External Database Connection"
+  },
+  {
+    "docId": "doc-sr4c-744ddfb7-fdab-4c33-8843-ebef4f11edd6-7e9d8ae70d59b01f",
+    "hierarchy": [
+      "Features",
+      "Resources"
+    ],
+    "pageId": "744ddfb7-fdab-4c33-8843-ebef4f11edd6-7e9d8ae70d59b01f",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/resources/ldap-connection.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#resources--en#ldap-connection--en",
+    "spaceKey": "SR4C",
+    "title": "LDAP Connection"
+  },
+  {
+    "docId": "doc-sr4c-caa59634-6605-44b6-988c-c19b8943cdf9-19f9c13f6b5d8330",
+    "hierarchy": [
+      "Features",
+      "Resources"
+    ],
+    "pageId": "caa59634-6605-44b6-988c-c19b8943cdf9-19f9c13f6b5d8330",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/resources/local-database-connection.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#resources--en#local-database-connection--en",
+    "spaceKey": "SR4C",
+    "title": "Local Database Connection"
+  },
+  {
+    "docId": "doc-sr4c-2ec51da7-c35c-49f5-b649-3a72877924a8-9da035683cf35cb5",
+    "hierarchy": [
+      "Features",
+      "Resources"
+    ],
+    "pageId": "2ec51da7-c35c-49f5-b649-3a72877924a8-9da035683cf35cb5",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/resources/slack-connection.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#resources--en#slack-connection--en",
+    "spaceKey": "SR4C",
+    "title": "Slack Connection"
+  },
+  {
+    "docId": "doc-sr4c-6e7c84fb-9f37-4e27-85ff-8fb3463385d2-4d8d987052a0c43d",
+    "hierarchy": [
+      "Features"
+    ],
+    "pageId": "6e7c84fb-9f37-4e27-85ff-8fb3463385d2-4d8d987052a0c43d",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/rest-endpoints.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#rest-endpoints--en",
+    "spaceKey": "SR4C",
+    "title": "REST Endpoints"
+  },
+  {
+    "docId": "doc-sr4c-f2e4286c-6534-42b9-867d-5fd3bd29a3fc-66af0b32e65d008e",
+    "hierarchy": [
+      "Features",
+      "REST Endpoints"
+    ],
+    "pageId": "f2e4286c-6534-42b9-867d-5fd3bd29a3fc-66af0b32e65d008e",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/rest-endpoints/custom-endpoint.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#rest-endpoints--en#custom-endpoint--en",
+    "spaceKey": "SR4C",
+    "title": "Custom Endpoint"
+  },
+  {
+    "docId": "doc-sr4c-bbe29917-b68b-401a-8fa2-1cdeec5277c1-5f1cbf71fb61552d",
+    "hierarchy": [
+      "Features"
+    ],
+    "pageId": "bbe29917-b68b-401a-8fa2-1cdeec5277c1-5f1cbf71fb61552d",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/script-console.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#script-console--en",
+    "spaceKey": "SR4C",
+    "title": "Script Console"
+  },
+  {
+    "docId": "doc-sr4c-0f4ff452-cef5-4312-9c96-1f263cad2d95-4be714aab4d813a4",
+    "hierarchy": [
+      "Features"
+    ],
+    "pageId": "0f4ff452-cef5-4312-9c96-1f263cad2d95-4be714aab4d813a4",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/script-editor.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#script-editor--en",
+    "spaceKey": "SR4C",
+    "title": "Script Editor"
+  },
+  {
+    "docId": "doc-sr4c-5b79edc1-0b07-4d12-91e1-cd85404c2614-0d9d295eb639db52",
+    "hierarchy": [
+      "Features",
+      "Script Editor"
+    ],
+    "pageId": "5b79edc1-0b07-4d12-91e1-cd85404c2614-0d9d295eb639db52",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/script-editor/why-is-there-an-incorrect-package-declaration-message-in-the-script-editor.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#script-editor--en#why-is-there-an-incorrect-package-declaration-message-in-the-script-editor--en",
+    "spaceKey": "SR4C",
+    "title": "Why is there an Incorrect Package Declaration Message in the Script Editor?"
+  },
+  {
+    "docId": "doc-sr4c-c404153c-e5a8-444c-b7e8-60933d50df58-8a254c688a26e624",
+    "hierarchy": [
+      "Features"
+    ],
+    "pageId": "c404153c-e5a8-444c-b7e8-60933d50df58-8a254c688a26e624",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/script-registry.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#script-registry--en",
+    "spaceKey": "SR4C",
+    "title": "Script Registry"
+  },
+  {
+    "docId": "doc-sr4c-26fe36cb-eaeb-41dc-ace6-1ed253e0ff30-b2e658f230613cbe",
+    "hierarchy": [
+      "Features"
+    ],
+    "pageId": "26fe36cb-eaeb-41dc-ace6-1ed253e0ff30-b2e658f230613cbe",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/features/watch-descendants.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/features#watch-descendants--en",
+    "spaceKey": "SR4C",
+    "title": "Watch Descendants"
+  },
+  {
+    "docId": "doc-sr4c-ea941192-0a62-4dee-9db3-1c9370fe0935-ab2895076147b8f8",
+    "hierarchy": [],
+    "pageId": "ea941192-0a62-4dee-9db3-1c9370fe0935-ab2895076147b8f8",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/uncategorized/g/get-help.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/get-help",
+    "spaceKey": "SR4C",
+    "title": "Get Help"
+  },
+  {
+    "docId": "doc-sr4c-e0337d1d-c521-4a53-bae3-9fba1aa494ed-b88952933d69cc9a",
+    "hierarchy": [
+      "Get Help"
+    ],
+    "pageId": "e0337d1d-c521-4a53-bae3-9fba1aa494ed-b88952933d69cc9a",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/get-help/confluence-events-and-descriptions.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/get-help#confluence-events-and-descriptions--en",
+    "spaceKey": "SR4C",
+    "title": "Confluence Events and Descriptions"
+  },
+  {
+    "docId": "doc-sr4c-be804660-6575-447e-9d5e-0a4fbb897038-13422e584410e8ed",
+    "hierarchy": [
+      "Get Help"
+    ],
+    "pageId": "be804660-6575-447e-9d5e-0a4fbb897038-13422e584410e8ed",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/get-help/delete-a-rest-endpoint-that-broke-the-rest-endpoint-page.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/get-help#delete-a-rest-endpoint-that-broke-the-rest-endpoint-page--en",
+    "spaceKey": "SR4C",
+    "title": "Delete a REST Endpoint That Broke the REST Endpoint Page"
+  },
+  {
+    "docId": "doc-sr4c-8b4dc2cf-6cff-43ec-994e-466433358563-e351b8c3ac5f066b",
+    "hierarchy": [
+      "Get Help"
+    ],
+    "pageId": "8b4dc2cf-6cff-43ec-994e-466433358563-e351b8c3ac5f066b",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/get-help/disable-or-enable-features.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/get-help#disable-or-enable-features--en",
+    "spaceKey": "SR4C",
+    "title": "Disable or Enable Features"
+  },
+  {
+    "docId": "doc-sr4c-7d80ab82-d664-4522-bdd3-f2f501d2b519-29677c0d3b35bf12",
+    "hierarchy": [
+      "Get Help"
+    ],
+    "pageId": "7d80ab82-d664-4522-bdd3-f2f501d2b519-29677c0d3b35bf12",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/get-help/hapi-script-format-help.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/get-help#hapi-script-format-help--en",
+    "spaceKey": "SR4C",
+    "title": "HAPI Script Format Help"
+  },
+  {
+    "docId": "doc-sr4c-247c1a92-d12e-43bd-ba26-b1ae148005e5-70b659ec28c5a7a7",
+    "hierarchy": [
+      "Get Help"
+    ],
+    "pageId": "247c1a92-d12e-43bd-ba26-b1ae148005e5-70b659ec28c5a7a7",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/get-help/java-agents-and-script-runner.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/get-help#java-agents-and-scriptrunner--en",
+    "spaceKey": "SR4C",
+    "title": "Java Agents and ScriptRunner"
+  },
+  {
+    "docId": "doc-sr4c-dd9e9999-c371-467c-9f90-eb5d9ad6b72e-a2e68c1cb5b39f53",
+    "hierarchy": [
+      "Get Help"
+    ],
+    "pageId": "dd9e9999-c371-467c-9f90-eb5d9ad6b72e-a2e68c1cb5b39f53",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/get-help/licensing-faq.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/get-help#licensing-faq--en",
+    "spaceKey": "SR4C",
+    "title": "Licensing FAQ"
+  },
+  {
+    "docId": "doc-sr4c-42bf6eb1-0c0b-43f7-9676-001c6b27746a-0916b3a80670835f",
+    "hierarchy": [],
+    "pageId": "42bf6eb1-0c0b-43f7-9676-001c6b27746a-0916b3a80670835f",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/uncategorized/g/get-involved.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/get-involved",
+    "spaceKey": "SR4C",
+    "title": "Get Involved"
+  },
+  {
+    "docId": "doc-sr4c-48af98bf-9efb-4047-9b73-7182f8a6c5f1-29e7c822a2d33e6b",
+    "hierarchy": [],
+    "pageId": "48af98bf-9efb-4047-9b73-7182f8a6c5f1-29e7c822a2d33e6b",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/uncategorized/g/get-started.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/get-started",
+    "spaceKey": "SR4C",
+    "title": "Get Started"
+  },
+  {
+    "docId": "doc-sr4c-081c7cf1-879e-4a0e-8dbf-b7061a47baa2-cbf7440e22176dc7",
+    "hierarchy": [
+      "Get Started"
+    ],
+    "pageId": "081c7cf1-879e-4a0e-8dbf-b7061a47baa2-cbf7440e22176dc7",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/get-started/cql-guide.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/get-started#cql-guide--en",
+    "spaceKey": "SR4C",
+    "title": "CQL Guide"
+  },
+  {
+    "docId": "doc-sr4c-aa83e989-5e36-4322-9915-1c378c80012e-9a813c15d428c4b4",
+    "hierarchy": [
+      "Get Started"
+    ],
+    "pageId": "aa83e989-5e36-4322-9915-1c378c80012e-9a813c15d428c4b4",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/get-started/example-scripts.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/get-started#example-scripts--en",
+    "spaceKey": "SR4C",
+    "title": "Example Scripts"
+  },
+  {
+    "docId": "doc-sr4c-559a46de-49ca-46a6-b9cd-ed5704b8f0b5-7a0aea197965a7b6",
+    "hierarchy": [
+      "Get Started"
+    ],
+    "pageId": "559a46de-49ca-46a6-b9cd-ed5704b8f0b5-7a0aea197965a7b6",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/get-started/installation.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/get-started#installation--en",
+    "spaceKey": "SR4C",
+    "title": "Installation"
+  },
+  {
+    "docId": "doc-sr4c-230498a1-52e4-41cb-85ce-1b10043bd581-a1f37f56196b7701",
+    "hierarchy": [
+      "Get Started"
+    ],
+    "pageId": "230498a1-52e4-41cb-85ce-1b10043bd581-a1f37f56196b7701",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/get-started/navigation.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/get-started#navigation--en",
+    "spaceKey": "SR4C",
+    "title": "Navigation"
+  },
+  {
+    "docId": "doc-sr4c-a395ba85-5e65-4b5b-a16e-ee17039c26b5-b7786e83c80935c0",
+    "hierarchy": [
+      "Get Started"
+    ],
+    "pageId": "a395ba85-5e65-4b5b-a16e-ee17039c26b5-b7786e83c80935c0",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/get-started/permissions.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/get-started#permissions--en",
+    "spaceKey": "SR4C",
+    "title": "Permissions"
+  },
+  {
+    "docId": "doc-sr4c-1677e8b4-c22a-4535-adc4-01ca6c12e96d-1460f8fde58a2981",
+    "hierarchy": [
+      "Get Started"
+    ],
+    "pageId": "1677e8b4-c22a-4535-adc4-01ca6c12e96d-1460f8fde58a2981",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/get-started/scripting-resources.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/get-started#scripting-resources--en",
+    "spaceKey": "SR4C",
+    "title": "Scripting resources"
+  },
+  {
+    "docId": "doc-sr4c-2666748e-1775-4e70-a05c-b3465539eb8b-bbec293b025edb2c",
+    "hierarchy": [
+      "Get Started"
+    ],
+    "pageId": "2666748e-1775-4e70-a05c-b3465539eb8b-bbec293b025edb2c",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/get-started/settings.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/get-started#settings--en",
+    "spaceKey": "SR4C",
+    "title": "Settings"
+  },
+  {
+    "docId": "doc-sr4c-09915c23-2e21-4c4d-8fce-79987fd072b2-206b9250653a3d4e",
+    "hierarchy": [
+      "Get Started",
+      "Settings"
+    ],
+    "pageId": "09915c23-2e21-4c4d-8fce-79987fd072b2-206b9250653a3d4e",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/get-started/settings/anonymous-analytics.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/get-started#settings--en#anonymous-analytics--en",
+    "spaceKey": "SR4C",
+    "title": "Anonymous Analytics"
+  },
+  {
+    "docId": "doc-sr4c-0e945da5-60f3-4beb-9d80-ce8845121d1d-8ff1db4f976a511f",
+    "hierarchy": [
+      "Get Started",
+      "Settings"
+    ],
+    "pageId": "0e945da5-60f3-4beb-9d80-ce8845121d1d-8ff1db4f976a511f",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/get-started/settings/enable-custom-css-for-macros.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/get-started#settings--en#enable-custom-css-for-macros--en",
+    "spaceKey": "SR4C",
+    "title": "Enable Custom CSS for Macros"
+  },
+  {
+    "docId": "doc-sr4c-3c18837a-6e17-47b3-ba24-ba33672d0668-c3bd8458afb9331f",
+    "hierarchy": [
+      "Get Started",
+      "Settings"
+    ],
+    "pageId": "3c18837a-6e17-47b3-ba24-ba33672d0668-c3bd8458afb9331f",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/get-started/settings/in-app-communications.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/get-started#settings--en#in-app-communications--en",
+    "spaceKey": "SR4C",
+    "title": "In-App Communications"
+  },
+  {
+    "docId": "doc-sr4c-6aa1609f-2165-4eca-a329-26b52801fd89-d0d46f44dbd37f2e",
+    "hierarchy": [
+      "Get Started",
+      "Settings"
+    ],
+    "pageId": "6aa1609f-2165-4eca-a329-26b52801fd89-d0d46f44dbd37f2e",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/get-started/settings/show-or-hide-enhanced-search-section-messages.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/get-started#settings--en#show-or-hide-enhanced-search-section-messages--en",
+    "spaceKey": "SR4C",
+    "title": "Show or Hide Enhanced Search Section Messages"
+  },
+  {
+    "docId": "doc-sr4c-cba54ba1-6a33-4a77-b011-0411d9fe2387-627b5102f89f44bd",
+    "hierarchy": [
+      "Get Started",
+      "Settings"
+    ],
+    "pageId": "cba54ba1-6a33-4a77-b011-0411d9fe2387-627b5102f89f44bd",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/get-started/settings/show-or-hide-the-enhanced-search-binocular-icon.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/get-started#settings--en#show-or-hide-the-enhanced-search-binocular-icon--en",
+    "spaceKey": "SR4C",
+    "title": "Show or Hide the Enhanced Search Binocular Icon"
+  },
+  {
+    "docId": "doc-sr4c-079ece0f-214a-412d-9cc7-0e7b4a6ba1b1-4f81addcc5fb893d",
+    "hierarchy": [
+      "Get Started",
+      "Settings"
+    ],
+    "pageId": "079ece0f-214a-412d-9cc7-0e7b4a6ba1b1-4f81addcc5fb893d",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/get-started/settings/space-admin-built-in-script-permissions.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/get-started#settings--en#space-admin-built-in-script-permissions--en",
+    "spaceKey": "SR4C",
+    "title": "Space Admin Built-in Script Permissions"
+  },
+  {
+    "docId": "doc-sr4c-4cd31c8e-3e75-478c-aa15-0ea284e3f6e9-8521230eea182fbb",
+    "hierarchy": [
+      "Get Started",
+      "Settings"
+    ],
+    "pageId": "4cd31c8e-3e75-478c-aa15-0ea284e3f6e9-8521230eea182fbb",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/get-started/settings/switch-user-function.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/get-started#settings--en#switch-user-function--en",
+    "spaceKey": "SR4C",
+    "title": "Switch User Function"
+  },
+  {
+    "docId": "doc-sr4c-9434a179-19dc-4306-8e00-b001454ce3a6-5de293e014e690d3",
+    "hierarchy": [
+      "Get Started",
+      "Settings"
+    ],
+    "pageId": "9434a179-19dc-4306-8e00-b001454ce3a6-5de293e014e690d3",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/get-started/settings/system-admin-only-script-edit-permission.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/get-started#settings--en#system-admin-only-script-edit-permission--en",
+    "spaceKey": "SR4C",
+    "title": "System Admin-Only Script Edit Permission"
+  },
+  {
+    "docId": "doc-sr4c-150845a1-8e89-4226-9673-ae75e3980e16-a4110ee7a474d93b",
+    "hierarchy": [
+      "Get Started",
+      "Settings"
+    ],
+    "pageId": "150845a1-8e89-4226-9673-ae75e3980e16-a4110ee7a474d93b",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/get-started/settings/user-editor-settings.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/get-started#settings--en#user-editor-settings--en",
+    "spaceKey": "SR4C",
+    "title": "User Editor Settings"
+  },
+  {
+    "docId": "doc-sr4c-7969f57c-a23e-4a36-9031-892cc8340f24-8461d8ecc44a96ae",
+    "hierarchy": [
+      "Get Started"
+    ],
+    "pageId": "7969f57c-a23e-4a36-9031-892cc8340f24-8461d8ecc44a96ae",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/get-started/update.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/get-started#update--en",
+    "spaceKey": "SR4C",
+    "title": "Update"
+  },
+  {
+    "docId": "doc-sr4c-87d31f1e-8617-4e94-af55-62345b488475-d30f01d45287bb07",
+    "hierarchy": [
+      "Get Started",
+      "Update"
+    ],
+    "pageId": "87d31f1e-8617-4e94-af55-62345b488475-d30f01d45287bb07",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/get-started/update/compatibility-with-confluence.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/get-started#update--en#compatibility-with-confluence--en",
+    "spaceKey": "SR4C",
+    "title": "Compatibility with Confluence"
+  },
+  {
+    "docId": "doc-sr4c-406f8820-ece0-482c-ab5f-f696172d54b1-97aa8d228183ee71",
+    "hierarchy": [
+      "Get Started"
+    ],
+    "pageId": "406f8820-ece0-482c-ab5f-f696172d54b1-97aa8d228183ee71",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/get-started/vulnerabilities-and-security.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/get-started#vulnerabilities-and-security--en",
+    "spaceKey": "SR4C",
+    "title": "Vulnerabilities and Security"
+  },
+  {
+    "docId": "doc-sr4c-58b0bb85-2789-4876-aad3-04cdf687a91c-63eba05dc097273d",
+    "hierarchy": [],
+    "pageId": "58b0bb85-2789-4876-aad3-04cdf687a91c-63eba05dc097273d",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/uncategorized/h/hapi.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/hapi",
+    "spaceKey": "SR4C",
+    "title": "HAPI"
+  },
+  {
+    "docId": "doc-sr4c-6779c822-ee7c-4aa0-af74-fa2013a1a1b7-5ae3bad76ecb9881",
+    "hierarchy": [
+      "HAPI"
+    ],
+    "pageId": "6779c822-ee7c-4aa0-af74-fa2013a1a1b7-5ae3bad76ecb9881",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/hapi/create-a-page.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/hapi#create-a-page--en",
+    "spaceKey": "SR4C",
+    "title": "Create a Page"
+  },
+  {
+    "docId": "doc-sr4c-f645b3c2-277a-4dbc-991c-7ead32dcc78c-c1dbbfaf2d3a3e50",
+    "hierarchy": [
+      "HAPI"
+    ],
+    "pageId": "f645b3c2-277a-4dbc-991c-7ead32dcc78c-c1dbbfaf2d3a3e50",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/hapi/run-scripts-as-other-users.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/hapi#run-scripts-as-other-users--en",
+    "spaceKey": "SR4C",
+    "title": "Run Scripts as Other Users"
+  },
+  {
+    "docId": "doc-sr4c-7ae8e822-59e0-48a7-9740-3c1f8492af0c-b0b3ac74dcea0359",
+    "hierarchy": [
+      "HAPI"
+    ],
+    "pageId": "7ae8e822-59e0-48a7-9740-3c1f8492af0c-b0b3ac74dcea0359",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/hapi/search-for-pages.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/hapi#search-for-pages--en",
+    "spaceKey": "SR4C",
+    "title": "Search for Pages"
+  },
+  {
+    "docId": "doc-sr4c-7235877d-da9e-4435-a0e7-ebd44564a0d9-27d012e99cd3fb8a",
+    "hierarchy": [
+      "HAPI"
+    ],
+    "pageId": "7235877d-da9e-4435-a0e7-ebd44564a0d9-27d012e99cd3fb8a",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/hapi/work-with-application-links.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/hapi#work-with-application-links--en",
+    "spaceKey": "SR4C",
+    "title": "Work with Application Links"
+  },
+  {
+    "docId": "doc-sr4c-f1d5e3a9-bf7d-43f8-9712-1de393439189-c028d73a804919b3",
+    "hierarchy": [
+      "HAPI"
+    ],
+    "pageId": "f1d5e3a9-bf7d-43f8-9712-1de393439189-c028d73a804919b3",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/hapi/work-with-labels.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/hapi#work-with-labels--en",
+    "spaceKey": "SR4C",
+    "title": "Work with Labels"
+  },
+  {
+    "docId": "doc-sr4c-9a1056c0-7dd8-4103-bd4a-5dcfeb023d9a-665fabbea399c984",
+    "hierarchy": [
+      "HAPI"
+    ],
+    "pageId": "9a1056c0-7dd8-4103-bd4a-5dcfeb023d9a-665fabbea399c984",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/hapi/work-with-o-auth-request-signer.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/hapi#work-with-oauthrequestsigner--en",
+    "spaceKey": "SR4C",
+    "title": "Work with OAuthRequestSigner"
+  },
+  {
+    "docId": "doc-sr4c-4de22a19-85c9-402b-937b-3864b0e9d6eb-e631bbfba656af44",
+    "hierarchy": [
+      "HAPI"
+    ],
+    "pageId": "4de22a19-85c9-402b-937b-3864b0e9d6eb-e631bbfba656af44",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/hapi/work-with-users.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/hapi#work-with-users--en",
+    "spaceKey": "SR4C",
+    "title": "Work with Users"
+  },
+  {
+    "docId": "doc-sr4c-2c6e9040-ca03-414a-a961-670fb4cd3df0-d2e1f1833a1110f1",
+    "hierarchy": [],
+    "pageId": "2c6e9040-ca03-414a-a961-670fb4cd3df0-d2e1f1833a1110f1",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/uncategorized/i/integrations.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/integrations",
+    "spaceKey": "SR4C",
+    "title": "Integrations"
+  },
+  {
+    "docId": "doc-sr4c-d0485e97-a670-4974-9af9-ec47629fc9a9-7314151bc672066c",
+    "hierarchy": [
+      "Integrations"
+    ],
+    "pageId": "d0485e97-a670-4974-9af9-ec47629fc9a9-7314151bc672066c",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/integrations/atlassian.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/integrations#atlassian--en",
+    "spaceKey": "SR4C",
+    "title": "Atlassian"
+  },
+  {
+    "docId": "doc-sr4c-50168de9-df23-473e-8b75-9bb8736669f1-f7a5059b59769027",
+    "hierarchy": [
+      "Integrations",
+      "Atlassian"
+    ],
+    "pageId": "50168de9-df23-473e-8b75-9bb8736669f1-f7a5059b59769027",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/integrations/atlassian/connect-to-atlassian-via-app-links.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/integrations#atlassian--en#connect-to-atlassian-via-app-links--en",
+    "spaceKey": "SR4C",
+    "title": "Connect to Atlassian Via App Links"
+  },
+  {
+    "docId": "doc-sr4c-1ba0f02d-ff3b-41af-87e9-4ce937e33ee7-36aea508725528b9",
+    "hierarchy": [
+      "Integrations",
+      "Atlassian"
+    ],
+    "pageId": "1ba0f02d-ff3b-41af-87e9-4ce937e33ee7-36aea508725528b9",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/integrations/atlassian/jira.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/integrations#atlassian--en#jira--en",
+    "spaceKey": "SR4C",
+    "title": "Jira"
+  },
+  {
+    "docId": "doc-sr4c-9c8a00c8-3899-43fc-af9b-f627b32c2609-9f9e505572eed969",
+    "hierarchy": [
+      "Integrations",
+      "Atlassian"
+    ],
+    "pageId": "9c8a00c8-3899-43fc-af9b-f627b32c2609-9f9e505572eed969",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/integrations/atlassian/remote-control.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/integrations#atlassian--en#remote-control--en",
+    "spaceKey": "SR4C",
+    "title": "Remote Control"
+  },
+  {
+    "docId": "doc-sr4c-8603370a-ff07-4bd5-bc39-fd490686bef2-8b7382a1501d2fef",
+    "hierarchy": [
+      "Integrations"
+    ],
+    "pageId": "8603370a-ff07-4bd5-bc39-fd490686bef2-8b7382a1501d2fef",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/integrations/connecting-to-databases.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/integrations#connecting-to-databases--en",
+    "spaceKey": "SR4C",
+    "title": "Connecting to Databases"
+  },
+  {
+    "docId": "doc-sr4c-5da137a5-9e88-4449-a261-ea7fdaf4ab2b-1385a86c6a540895",
+    "hierarchy": [],
+    "pageId": "5da137a5-9e88-4449-a261-ea7fdaf4ab2b-1385a86c6a540895",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/uncategorized/m/migration.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/migration",
+    "spaceKey": "SR4C",
+    "title": "Migration"
+  },
+  {
+    "docId": "doc-sr4c-5314ea5e-12a2-40ea-a495-3396768c8e11-853b259fd35cefc1",
+    "hierarchy": [
+      "Migration"
+    ],
+    "pageId": "5314ea5e-12a2-40ea-a495-3396768c8e11-853b259fd35cefc1",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/migration/migrating-to-data-center.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/migration#migrating-to-data-center--en",
+    "spaceKey": "SR4C",
+    "title": "Migrating to Data Center"
+  },
+  {
+    "docId": "doc-sr4c-db63c279-680a-4a08-b9d3-47a5fba0980c-7ff840136be52dc7",
+    "hierarchy": [
+      "Migration"
+    ],
+    "pageId": "db63c279-680a-4a08-b9d3-47a5fba0980c-7ff840136be52dc7",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/migration/migrating-to-or-from-cloud.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/migration#migrating-to-or-from-cloud--en",
+    "spaceKey": "SR4C",
+    "title": "Migrating to or from Cloud"
+  },
+  {
+    "docId": "doc-sr4c-01e0d5c8-6a24-4c02-a173-e868e150ce1e-e16fa58948e0a1f0",
+    "hierarchy": [
+      "Migration",
+      "Migrating to or from Cloud"
+    ],
+    "pageId": "01e0d5c8-6a24-4c02-a173-e868e150ce1e-e16fa58948e0a1f0",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/migration/migrating-to-or-from-cloud/feature-parity.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/migration#migrating-to-or-from-cloud--en#feature-parity--en",
+    "spaceKey": "SR4C",
+    "title": "Feature Parity"
+  },
+  {
+    "docId": "doc-sr4c-36bdbad2-6e63-4ad9-879e-4dc976ed227c-ed2429fb041515b4",
+    "hierarchy": [
+      "Migration",
+      "Migrating to or from Cloud",
+      "Feature Parity"
+    ],
+    "pageId": "36bdbad2-6e63-4ad9-879e-4dc976ed227c-ed2429fb041515b4",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/migration/migrating-to-or-from-cloud/feature-parity/confluence-events-parity.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/migration#migrating-to-or-from-cloud--en#feature-parity--en#confluence-events-parity--en",
+    "spaceKey": "SR4C",
+    "title": "Confluence Events Parity"
+  },
+  {
+    "docId": "doc-sr4c-9ac016be-8f0b-44b6-847d-b7a1f471fd22-e5c0d3ade8e8af1e",
+    "hierarchy": [
+      "Migration",
+      "Migrating to or from Cloud",
+      "Feature Parity"
+    ],
+    "pageId": "9ac016be-8f0b-44b6-847d-b7a1f471fd22-e5c0d3ade8e8af1e",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/migration/migrating-to-or-from-cloud/feature-parity/macro-migration-tips.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/migration#migrating-to-or-from-cloud--en#feature-parity--en#macro-migration-tips--en",
+    "spaceKey": "SR4C",
+    "title": "Macro Migration Tips"
+  },
+  {
+    "docId": "doc-sr4c-0462beb0-f8fa-493c-a735-527595aa8eb5-75777c5af684201f",
+    "hierarchy": [
+      "Migration",
+      "Migrating to or from Cloud"
+    ],
+    "pageId": "0462beb0-f8fa-493c-a735-527595aa8eb5-75777c5af684201f",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/migration/migrating-to-or-from-cloud/gdpr-migration.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/migration#migrating-to-or-from-cloud--en#gdpr-migration--en",
+    "spaceKey": "SR4C",
+    "title": "GDPR Migration"
+  },
+  {
+    "docId": "doc-sr4c-8b939fda-187d-4a35-b7f9-b2b1970c89a5-b640610c1d38bc25",
+    "hierarchy": [
+      "Migration",
+      "Migrating to or from Cloud"
+    ],
+    "pageId": "8b939fda-187d-4a35-b7f9-b2b1970c89a5-b640610c1d38bc25",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/migration/migrating-to-or-from-cloud/migrate-from-script-runner-for-confluence-cloud-to-server.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/migration#migrating-to-or-from-cloud--en#migrate-from-scriptrunner-for-confluence-cloud-to-server--en",
+    "spaceKey": "SR4C",
+    "title": "Migrate from ScriptRunner for Confluence Cloud to Server"
+  },
+  {
+    "docId": "doc-sr4c-c6e0e35a-b0dc-4067-a3b8-77e0b8070a1a-b2cf2c8044aa5d3c",
+    "hierarchy": [
+      "Migration",
+      "Migrating to or from Cloud"
+    ],
+    "pageId": "c6e0e35a-b0dc-4067-a3b8-77e0b8070a1a-b2cf2c8044aa5d3c",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/migration/migrating-to-or-from-cloud/migrate-from-script-runner-for-confluence-server-to-cloud.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/migration#migrating-to-or-from-cloud--en#migrate-from-scriptrunner-for-confluence-server-to-cloud--en",
+    "spaceKey": "SR4C",
+    "title": "Migrate from ScriptRunner for Confluence Server to Cloud"
+  },
+  {
+    "docId": "doc-sr4c-38afbad9-4976-419d-b90e-21778ee2411f-353fd908ab71c3c2",
+    "hierarchy": [
+      "Migration",
+      "Migrating to or from Cloud"
+    ],
+    "pageId": "38afbad9-4976-419d-b90e-21778ee2411f-353fd908ab71c3c2",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/migration/migrating-to-or-from-cloud/migration-checklist.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/migration#migrating-to-or-from-cloud--en#migration-checklist--en",
+    "spaceKey": "SR4C",
+    "title": "Migration Checklist"
+  },
+  {
+    "docId": "doc-sr4c-7eafe77c-081d-4e8f-9661-fb7a72f0f65f-1df7d53a4bdc5a6b",
+    "hierarchy": [
+      "Migration",
+      "Migrating to or from Cloud"
+    ],
+    "pageId": "7eafe77c-081d-4e8f-9661-fb7a72f0f65f-1df7d53a4bdc5a6b",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/migration/migrating-to-or-from-cloud/platform-differences.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/migration#migrating-to-or-from-cloud--en#platform-differences--en",
+    "spaceKey": "SR4C",
+    "title": "Platform Differences"
+  },
+  {
+    "docId": "doc-sr4c-56fd77d4-056d-4d37-98d5-e84d3b01c764-5e6a6bbb1db30df0",
+    "hierarchy": [
+      "Migration",
+      "Migrating to or from Cloud"
+    ],
+    "pageId": "56fd77d4-056d-4d37-98d5-e84d3b01c764-5e6a6bbb1db30df0",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/migration/migrating-to-or-from-cloud/rewrite-scripts-for-cloud.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/migration#migrating-to-or-from-cloud--en#rewrite-scripts-for-cloud--en",
+    "spaceKey": "SR4C",
+    "title": "Rewrite Scripts for Cloud"
+  },
+  {
+    "docId": "doc-sr4c-d1545989-b502-4ac2-b971-1dcb9e671723-76e7bd3ce445bca7",
+    "hierarchy": [
+      "Migration",
+      "Migrating to or from Cloud",
+      "Rewrite Scripts for Cloud"
+    ],
+    "pageId": "d1545989-b502-4ac2-b971-1dcb9e671723-76e7bd3ce445bca7",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/migration/migrating-to-or-from-cloud/rewrite-scripts-for-cloud/adapt-scripts-for-confluence-cloud.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/migration#migrating-to-or-from-cloud--en#rewrite-scripts-for-cloud--en#adapt-scripts-for-confluence-cloud--en",
+    "spaceKey": "SR4C",
+    "title": "Adapt Scripts for Confluence Cloud"
+  },
+  {
+    "docId": "doc-sr4c-66fc1875-f4cc-4385-811c-354f60d946cd-3bd072e5b155075a",
+    "hierarchy": [
+      "Migration",
+      "Migrating to or from Cloud",
+      "Rewrite Scripts for Cloud"
+    ],
+    "pageId": "66fc1875-f4cc-4385-811c-354f60d946cd-3bd072e5b155075a",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/migration/migrating-to-or-from-cloud/rewrite-scripts-for-cloud/migration-best-practices-and-supporting-technical-information.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/migration#migrating-to-or-from-cloud--en#rewrite-scripts-for-cloud--en#migration-best-practices-and-supporting-technical-information--en",
+    "spaceKey": "SR4C",
+    "title": "Migration Best Practices and Supporting Technical Information"
+  },
+  {
+    "docId": "doc-sr4c-1de4810c-469f-4a1b-a226-07f3e45a1b3e-8888915d46599bb6",
+    "hierarchy": [
+      "Migration",
+      "Migrating to or from Cloud",
+      "Rewrite Scripts for Cloud"
+    ],
+    "pageId": "1de4810c-469f-4a1b-a226-07f3e45a1b3e-8888915d46599bb6",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/migration/migrating-to-or-from-cloud/rewrite-scripts-for-cloud/prepare-to-migrate-scripts.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/migration#migrating-to-or-from-cloud--en#rewrite-scripts-for-cloud--en#prepare-to-migrate-scripts--en",
+    "spaceKey": "SR4C",
+    "title": "Prepare to Migrate Scripts"
+  },
+  {
+    "docId": "doc-sr4c-c1b962c7-a420-45b0-bddd-923b894bfd91-144a9a1db6914755",
+    "hierarchy": [],
+    "pageId": "c1b962c7-a420-45b0-bddd-923b894bfd91-144a9a1db6914755",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/uncategorized/r/release-notes.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/release-notes",
+    "spaceKey": "SR4C",
+    "title": "Release Notes"
+  },
+  {
+    "docId": "doc-sr4c-1a3e8c97-d70b-44d2-931a-601907491f0a-55a1116bc8bb778b",
+    "hierarchy": [
+      "Release Notes"
+    ],
+    "pageId": "1a3e8c97-d70b-44d2-931a-601907491f0a-55a1116bc8bb778b",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/release-notes/breaking-changes.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/release-notes/breaking-changes",
+    "spaceKey": "SR4C",
+    "title": "Breaking changes"
+  },
+  {
+    "docId": "doc-sr4c-e6ad8f10-410f-4ede-9d77-cea872e02abc-6504228c4ac54bdf",
+    "hierarchy": [
+      "Release Notes",
+      "Breaking changes"
+    ],
+    "pageId": "e6ad8f10-410f-4ede-9d77-cea872e02abc-6504228c4ac54bdf",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/release-notes/breaking-changes/groovy-4-breaking-change-for-grab-annotations.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/release-notes/breaking-changes#groovy-4-breaking-change-for-grab-annotations--en",
+    "spaceKey": "SR4C",
+    "title": "Groovy 4 Breaking Change for Grab Annotations"
+  },
+  {
+    "docId": "doc-sr4c-84fa3256-ecb4-4923-82bd-4ecaa8fdd643-29f62f81a1c8dbd1",
+    "hierarchy": [
+      "Release Notes",
+      "Breaking changes"
+    ],
+    "pageId": "84fa3256-ecb4-4923-82bd-4ecaa8fdd643-29f62f81a1c8dbd1",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/release-notes/breaking-changes/raw-xml-module-breaking-change-for-confluence-9.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/release-notes/breaking-changes#raw-xml-module-breaking-change-for-confluence-9--en",
+    "spaceKey": "SR4C",
+    "title": "Raw XML Module Breaking Change for Confluence 9"
+  },
+  {
+    "docId": "doc-sr4c-6f32b171-92dd-4eab-8801-64d28c438059-1970f1316de02c8b",
+    "hierarchy": [
+      "Release Notes",
+      "Breaking changes"
+    ],
+    "pageId": "6f32b171-92dd-4eab-8801-64d28c438059-1970f1316de02c8b",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/release-notes/breaking-changes/web-panel-breaking-change-deprecation-for-confluence-9.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/release-notes/breaking-changes#web-panel-breaking-change-deprecation-for-confluence-9--en",
+    "spaceKey": "SR4C",
+    "title": "Web Panel Breaking Change Deprecation for Confluence 9"
+  },
+  {
+    "docId": "doc-sr4c-c23aa90d-bb1b-41ea-9851-f1fcd475e8a5-09175c59bedabe8e",
+    "hierarchy": [
+      "Release Notes",
+      "Breaking changes"
+    ],
+    "pageId": "c23aa90d-bb1b-41ea-9851-f1fcd475e8a5-09175c59bedabe8e",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/release-notes/breaking-changes/web-resource-breaking-change-for-confluence-9.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/release-notes/breaking-changes#web-resource-breaking-change-for-confluence-9--en",
+    "spaceKey": "SR4C",
+    "title": "Web Resource Breaking Change for Confluence 9"
+  },
+  {
+    "docId": "doc-sr4c-dc82f9c3-75f5-45d7-83d3-0eb957c39a43-02a8720a6b0e14f5",
+    "hierarchy": [
+      "Release Notes"
+    ],
+    "pageId": "dc82f9c3-75f5-45d7-83d3-0eb957c39a43-02a8720a6b0e14f5",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/release-notes/ceasing-development-on-confluence-6.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/release-notes/ceasing-development-on-confluence-6",
+    "spaceKey": "SR4C",
+    "title": "Ceasing Development on Confluence 6"
+  },
+  {
+    "docId": "doc-sr4c-51ac07a4-92ec-4427-8370-46323581cd33-d03726c0a03ea94a",
+    "hierarchy": [
+      "Release Notes"
+    ],
+    "pageId": "51ac07a4-92ec-4427-8370-46323581cd33-d03726c0a03ea94a",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/release-notes/feature-release-summary.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/release-notes/feature-release-summary",
+    "spaceKey": "SR4C",
+    "title": "Feature Release Summary"
+  },
+  {
+    "docId": "doc-sr4c-5827de30-a89d-4a5a-b147-4b50c9914582-9aea9332a9d398d2",
+    "hierarchy": [
+      "Release Notes"
+    ],
+    "pageId": "5827de30-a89d-4a5a-b147-4b50c9914582-9aea9332a9d398d2",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/release-notes/hapi-changelog.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/release-notes/hapi-changelog",
+    "spaceKey": "SR4C",
+    "title": "HAPI Changelog"
+  },
+  {
+    "docId": "doc-sr4c-7e328ed1-a1a7-4a15-ad12-8e569f1e4fbe-ee39f1d964103323",
+    "hierarchy": [
+      "Release Notes"
+    ],
+    "pageId": "7e328ed1-a1a7-4a15-ad12-8e569f1e4fbe-ee39f1d964103323",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/release-notes/release-10-x.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/release-notes/release-10.x",
+    "spaceKey": "SR4C",
+    "title": "Release 10.x"
+  },
+  {
+    "docId": "doc-sr4c-2e66ccf4-bc9e-4281-8301-2ae68e60699f-f051829c2a5aafad",
+    "hierarchy": [
+      "Release Notes"
+    ],
+    "pageId": "2e66ccf4-bc9e-4281-8301-2ae68e60699f-f051829c2a5aafad",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/release-notes/release-4-x.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/release-notes/release-4.x",
+    "spaceKey": "SR4C",
+    "title": "Release 4.x"
+  },
+  {
+    "docId": "doc-sr4c-7ff4d1af-8fcc-4747-9d11-2cac1de1603c-12ffffaa9bc524ad",
+    "hierarchy": [
+      "Release Notes"
+    ],
+    "pageId": "7ff4d1af-8fcc-4747-9d11-2cac1de1603c-12ffffaa9bc524ad",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/release-notes/release-5-x.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/release-notes/release-5.x",
+    "spaceKey": "SR4C",
+    "title": "Release 5.x"
+  },
+  {
+    "docId": "doc-sr4c-1a9e173e-02e4-439e-b6d6-64e0de770a10-750216a9d24c4454",
+    "hierarchy": [
+      "Release Notes"
+    ],
+    "pageId": "1a9e173e-02e4-439e-b6d6-64e0de770a10-750216a9d24c4454",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/release-notes/release-6-x.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/release-notes/release-6.x",
+    "spaceKey": "SR4C",
+    "title": "Release 6.x"
+  },
+  {
+    "docId": "doc-sr4c-4a0293b1-b683-41a3-8411-2c36d5968e0a-a94cbb80bed06113",
+    "hierarchy": [
+      "Release Notes"
+    ],
+    "pageId": "4a0293b1-b683-41a3-8411-2c36d5968e0a-a94cbb80bed06113",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/release-notes/release-7-x.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/release-notes/release-7.x",
+    "spaceKey": "SR4C",
+    "title": "Release 7.x"
+  },
+  {
+    "docId": "doc-sr4c-4ef407ac-9d16-4801-9a73-d0f9e5ee15a3-b91a28e4b938cca4",
+    "hierarchy": [
+      "Release Notes"
+    ],
+    "pageId": "4ef407ac-9d16-4801-9a73-d0f9e5ee15a3-b91a28e4b938cca4",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/release-notes/release-8-x.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/release-notes/release-8.x",
+    "spaceKey": "SR4C",
+    "title": "Release 8.x"
+  },
+  {
+    "docId": "doc-sr4c-36d32d6c-d1b9-4e6d-9c32-5ff44a962cd0-b888ceac2415f444",
+    "hierarchy": [
+      "Release Notes"
+    ],
+    "pageId": "36d32d6c-d1b9-4e6d-9c32-5ff44a962cd0-b888ceac2415f444",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/release-notes/release-9-x.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/release-notes/release-9.x",
+    "spaceKey": "SR4C",
+    "title": "Release 9.x"
+  },
+  {
+    "docId": "doc-sr4c-641cd377-87e8-4685-b067-03f8bb32327f-59b24c461fe4a644",
+    "hierarchy": [],
+    "pageId": "641cd377-87e8-4685-b067-03f8bb32327f-59b24c461fe4a644",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/uncategorized/t/training.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/training",
+    "spaceKey": "SR4C",
+    "title": "Training"
+  },
+  {
+    "docId": "doc-sr4c-67903205-1cc3-420a-a2ae-0e45adc54a80-3fef777b9c32cdc1",
+    "hierarchy": [
+      "Training"
+    ],
+    "pageId": "67903205-1cc3-420a-a2ae-0e45adc54a80-3fef777b9c32cdc1",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/training/course-introduction-to-scripting-in-script-runner-for-confluence.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/training#course-introduction-to-scripting-in-scriptrunner-for-confluence--en",
+    "spaceKey": "SR4C",
+    "title": "Course: Introduction to Scripting in ScriptRunner for Confluence"
+  },
+  {
+    "docId": "doc-sr4c-7daf9ec4-c3eb-4770-b95a-4b4b73302a86-1a49037ef634aa33",
+    "hierarchy": [
+      "Training",
+      "Course: Introduction to Scripting in ScriptRunner for Confluence"
+    ],
+    "pageId": "7daf9ec4-c3eb-4770-b95a-4b4b73302a86-1a49037ef634aa33",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/training/course-introduction-to-scripting-in-script-runner-for-conflu/video-introduction-to-groovy-basics-for-confluence.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/training#course-introduction-to-scripting-in-scriptrunner-for-confluence--en#video-introduction-to-groovy-basics-for-confluence--en",
+    "spaceKey": "SR4C",
+    "title": "Video: Introduction to Groovy Basics for Confluence"
+  },
+  {
+    "docId": "doc-sr4c-a0eb62e2-1149-4785-9a0b-49c484185597-999452b2d3ec1654",
+    "hierarchy": [
+      "Training",
+      "Course: Introduction to Scripting in ScriptRunner for Confluence"
+    ],
+    "pageId": "a0eb62e2-1149-4785-9a0b-49c484185597-999452b2d3ec1654",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/training/course-introduction-to-scripting-in-script-runner-for-conflu/video-introduction-to-java-api-for-confluence.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/training#course-introduction-to-scripting-in-scriptrunner-for-confluence--en#video-introduction-to-java-api-for-confluence--en",
+    "spaceKey": "SR4C",
+    "title": "Video: Introduction to Java API for Confluence"
+  },
+  {
+    "docId": "doc-sr4c-fa77882e-36d0-4407-88f0-f71ee48d0c4a-ef0a7064b9e5dbaa",
+    "hierarchy": [
+      "Training",
+      "Course: Introduction to Scripting in ScriptRunner for Confluence"
+    ],
+    "pageId": "fa77882e-36d0-4407-88f0-f71ee48d0c4a-ef0a7064b9e5dbaa",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/training/course-introduction-to-scripting-in-script-runner-for-conflu/video-quick-and-easy-custom-scripts-for-confluence.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/training#course-introduction-to-scripting-in-scriptrunner-for-confluence--en#video-quick-and-easy-custom-scripts-for-confluence--en",
+    "spaceKey": "SR4C",
+    "title": "Video: Quick and Easy Custom Scripts for Confluence"
+  },
+  {
+    "docId": "doc-sr4c-04450b23-da92-40de-8546-ba06deaaa7c0-c4868aa38b4988e4",
+    "hierarchy": [
+      "Training"
+    ],
+    "pageId": "04450b23-da92-40de-8546-ba06deaaa7c0-c4868aa38b4988e4",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/training/course-introduction-to-script-runner-for-confluence-data-center.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/training#course-introduction-to-scriptrunner-for-confluence-data-center--en",
+    "spaceKey": "SR4C",
+    "title": "Course: Introduction to ScriptRunner for Confluence Data Center"
+  },
+  {
+    "docId": "doc-sr4c-3291a3aa-9e40-43c4-baf0-c5e7ab29c043-458085d81a6a6424",
+    "hierarchy": [
+      "Training",
+      "Course: Introduction to ScriptRunner for Confluence Data Center"
+    ],
+    "pageId": "3291a3aa-9e40-43c4-baf0-c5e7ab29c043-458085d81a6a6424",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/training/course-introduction-to-script-runner-for-confluence-data-cen/video-introduction-to-cql-for-confluence-administrators.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/training#course-introduction-to-scriptrunner-for-confluence-data-center--en#video-introduction-to-cql-for-confluence-administrators--en",
+    "spaceKey": "SR4C",
+    "title": "Video: Introduction to CQL for Confluence Administrators"
+  },
+  {
+    "docId": "doc-sr4c-da7567d1-9a7e-406f-a0de-ea814dc33c27-a234a51b53267f31",
+    "hierarchy": [
+      "Training",
+      "Course: Introduction to ScriptRunner for Confluence Data Center"
+    ],
+    "pageId": "da7567d1-9a7e-406f-a0de-ea814dc33c27-a234a51b53267f31",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/training/course-introduction-to-script-runner-for-confluence-data-cen/video-introduction-to-managing-your-confluence-instance-with-built-in-scripts.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/training#course-introduction-to-scriptrunner-for-confluence-data-center--en#video-introduction-to-managing-your-confluence-instance-with-built-in-scripts--en",
+    "spaceKey": "SR4C",
+    "title": "Video: Introduction to Managing Your Confluence Instance with Built-in Scripts"
+  },
+  {
+    "docId": "doc-sr4c-79bb7d4a-2c48-471e-bc59-d5fc55c5e6ba-9f6a40dcb390e480",
+    "hierarchy": [
+      "Training",
+      "Course: Introduction to ScriptRunner for Confluence Data Center"
+    ],
+    "pageId": "79bb7d4a-2c48-471e-bc59-d5fc55c5e6ba-9f6a40dcb390e480",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/training/course-introduction-to-script-runner-for-confluence-data-cen/video-introduction-to-script-runner-for-confluence-data-center.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/training#course-introduction-to-scriptrunner-for-confluence-data-center--en#video-introduction-to-scriptrunner-for-confluence-data-center--en",
+    "spaceKey": "SR4C",
+    "title": "Video: Introduction to ScriptRunner for Confluence Data Center"
+  },
+  {
+    "docId": "doc-sr4c-0f7f8bcd-76fb-4bb0-9fa4-b703146a6042-be5f4b6b7bb38413",
+    "hierarchy": [
+      "Training",
+      "Course: Introduction to ScriptRunner for Confluence Data Center"
+    ],
+    "pageId": "0f7f8bcd-76fb-4bb0-9fa4-b703146a6042-be5f4b6b7bb38413",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/training/course-introduction-to-script-runner-for-confluence-data-cen/video-script-runner-for-confluence-settings-and-permissions.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/training#course-introduction-to-scriptrunner-for-confluence-data-center--en#video-scriptrunner-for-confluence-settings-and-permissions--en",
+    "spaceKey": "SR4C",
+    "title": "Video: ScriptRunner for Confluence Settings and Permissions"
+  },
+  {
+    "docId": "doc-sr4c-e7d71d5f-09ab-406c-a969-bda1324ca4f1-2a2ae0784bbd4dc0",
+    "hierarchy": [
+      "Training"
+    ],
+    "pageId": "e7d71d5f-09ab-406c-a969-bda1324ca4f1-2a2ae0784bbd4dc0",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/training/course-introduction-to-script-runner-for-space-administrators.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/training#course-introduction-to-scriptrunner-for-space-administrators--en",
+    "spaceKey": "SR4C",
+    "title": "Course: Introduction to ScriptRunner for Space Administrators"
+  },
+  {
+    "docId": "doc-sr4c-500c2dc3-a95e-4661-87f1-67cff8e3a97d-7b1dfe545a578843",
+    "hierarchy": [
+      "Training",
+      "Course: Introduction to ScriptRunner for Space Administrators"
+    ],
+    "pageId": "500c2dc3-a95e-4661-87f1-67cff8e3a97d-7b1dfe545a578843",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/training/course-introduction-to-script-runner-for-space-administrator/video-advanced-search-with-confluence-query-language-cql.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/training#course-introduction-to-scriptrunner-for-space-administrators--en#video-advanced-search-with-confluence-query-language-cql--en",
+    "spaceKey": "SR4C",
+    "title": "Video: Advanced Search with Confluence Query Language (CQL)"
+  },
+  {
+    "docId": "doc-sr4c-a42242eb-4030-4484-9ede-7cc833fa2cad-791db7276937ec9e",
+    "hierarchy": [
+      "Training",
+      "Course: Introduction to ScriptRunner for Space Administrators"
+    ],
+    "pageId": "a42242eb-4030-4484-9ede-7cc833fa2cad-791db7276937ec9e",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/training/course-introduction-to-script-runner-for-space-administrator/video-introduction-to-advanced-space-functionality.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/training#course-introduction-to-scriptrunner-for-space-administrators--en#video-introduction-to-advanced-space-functionality--en",
+    "spaceKey": "SR4C",
+    "title": "Video: Introduction to Advanced Space Functionality"
+  },
+  {
+    "docId": "doc-sr4c-df436bfb-336c-4e3d-97bc-d6dca6f4ba8f-e91cff1d15ec4f34",
+    "hierarchy": [
+      "Training"
+    ],
+    "pageId": "df436bfb-336c-4e3d-97bc-d6dca6f4ba8f-e91cff1d15ec4f34",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/training/course-managing-your-confluence-space-with-script-runner.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/training#course-managing-your-confluence-space-with-scriptrunner--en",
+    "spaceKey": "SR4C",
+    "title": "Course: Managing Your Confluence Space with ScriptRunner"
+  },
+  {
+    "docId": "doc-sr4c-8d38fcd9-1f5b-4c81-ba9f-485dc5d36336-ed4d2d4bafe38c0a",
+    "hierarchy": [
+      "Training",
+      "Course: Managing Your Confluence Space with ScriptRunner"
+    ],
+    "pageId": "8d38fcd9-1f5b-4c81-ba9f-485dc5d36336-ed4d2d4bafe38c0a",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/training/course-managing-your-confluence-space-with-script-runner/video-automating-tasks-with-script-runner-for-confluence.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/training#course-managing-your-confluence-space-with-scriptrunner--en#video-automating-tasks-with-scriptrunner-for-confluence--en",
+    "spaceKey": "SR4C",
+    "title": "Video: Automating Tasks with ScriptRunner for Confluence"
+  },
+  {
+    "docId": "doc-sr4c-8e1c767c-f1c7-4925-add5-735aca4e70d5-bf2125f3811f9f61",
+    "hierarchy": [
+      "Training",
+      "Course: Managing Your Confluence Space with ScriptRunner"
+    ],
+    "pageId": "8e1c767c-f1c7-4925-add5-735aca4e70d5-bf2125f3811f9f61",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/training/course-managing-your-confluence-space-with-script-runner/video-customizing-your-instance-with-script-runner-for-confluence.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/training#course-managing-your-confluence-space-with-scriptrunner--en#video-customizing-your-instance-with-scriptrunner-for-confluence--en",
+    "spaceKey": "SR4C",
+    "title": "Video: Customizing Your Instance with ScriptRunner for Confluence"
+  },
+  {
+    "docId": "doc-sr4c-b2d74a53-3760-4d32-99cc-fb0a35a5f153-6999e09235374028",
+    "hierarchy": [
+      "Training",
+      "Course: Managing Your Confluence Space with ScriptRunner"
+    ],
+    "pageId": "b2d74a53-3760-4d32-99cc-fb0a35a5f153-6999e09235374028",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/training/course-managing-your-confluence-space-with-script-runner/video-managing-content-with-script-runner-for-confluence.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/training#course-managing-your-confluence-space-with-scriptrunner--en#video-managing-content-with-scriptrunner-for-confluence--en",
+    "spaceKey": "SR4C",
+    "title": "Video: Managing Content with ScriptRunner for Confluence"
+  },
+  {
+    "docId": "doc-sr4c-7489dcd6-a434-40d1-b00b-d3e4e9d1bb4c-88d685af89afddc6",
+    "hierarchy": [
+      "Training",
+      "Course: Managing Your Confluence Space with ScriptRunner"
+    ],
+    "pageId": "7489dcd6-a434-40d1-b00b-d3e4e9d1bb4c-88d685af89afddc6",
+    "platform": "confluence-data-center",
+    "relativePath": "references/docs/confluence-data-center/training/course-managing-your-confluence-space-with-script-runner/video-troubleshooting-issues-with-script-runner-for-confluence.md",
+    "sourceUrl": "https://docs.adaptavist.com/sr4c/latest/training#course-managing-your-confluence-space-with-scriptrunner--en#video-troubleshooting-issues-with-scriptrunner-for-confluence--en",
+    "spaceKey": "SR4C",
+    "title": "Video: Troubleshooting Issues with ScriptRunner for Confluence"
   }
 ]

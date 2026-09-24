@@ -1,0 +1,118 @@
+# Store all Environment Specific Variables
+
+- Platform: confluence-data-center
+- Space: SR4C
+- Hierarchy: Best Practices and App Management
+- Doc ID: doc-sr4c-87d8a7c8-6e57-4511-80c4-40dc52c65644-ea35f1b1d8b345d4
+- Source: https://docs.adaptavist.com/sr4c/latest/best-practices-and-app-management#store-all-environment-specific-variables--en
+
+Learn to write and test your ScriptRunner scripts on a test/development instance before migrating over to your production instance.
+
+Manually editing environment-specific variables in each custom script is time-consuming and prone to errors. We suggest you use names rather than IDs in scripts as the name of custom components do not typically change when migrating to a production instance.
+
+Sometimes, there can be multiple components (such as custom fields) with the same name. When this is the case, we suggest searching for the field name in the context of the issue you have.
+
+For example, in Jira, you could run the following:
+
+```
+import static com.atlassian.jira.component.ComponentAccessor.customFieldManager
+def customField = customFieldManager.getCustomFieldObjects(issue).findByName('Approvals')
+```
+
+## Storing Variables
+
+If you can't use names as suggested above, then you need to abstract the IDs to a centralised place to avoid hard-coding them in multiple scripts.
+
+Here we describe two ways of doing that - one using a simple java class that varies between environments, and the second one which reads configuration from a YAML file. Storing variables in the application home directory, or an environment-specific class, removes the need to edit custom scripts manually.
+
+### Java Class
+
+1.  The most simple method is to create a class like the following (add as many fields as required to this class):
+    
+    ```
+    package com.acme
+     
+    class Config {
+     public static final String APPROVALS_FIELD_ID = 'customfield_12345'
+     public static final String SOME_OTHER_FIELD_ID = 'customfield_12345'
+     public static final Integer SOME_NUMBER = 65_000
+    }
+    ```
+    
+    The package `com.acme` is used here, which can be replaced with something meaningful for your company. Because of the package, the class must be placed in a directory: `com/acme`, underneath the script root.
+    
+    Tip: You could use the Script Editor to create the class, or add to the file system directly.
+    
+2.  Then access one of the variables in your script (either inline or using a file):
+    
+    ```
+    import com.acme.Config
+     
+    Config.APPROVALS_FIELD_ID
+    ```
+    
+    The advantage of this method, besides the simplicity, is you won't need to cast the type to a _String_ or other class.
+    
+    The disadvantage is that this requires a different version of the _Config_ class in each environment. If using a version control system to manage your script root, this method would involve some manual copying and could be a maintenance burden.
+    
+
+### YAML File
+
+One way of storing environment-specific variables is to create a class which will read a YAML file. Below is an example YAML file but this method works with any valid YAML file:
+
+```
+Approvals: customfield_12345
+Long Custom Field Name: customfield_56789
+```
+
+1.  Place the YAML file at the root of the instance home directory (this can be changed if necessary).
+    
+    Warning: The _config_ file is loaded once to avoid multiple file system IO.
+    
+    ```
+    package com.acme
+     
+    import ...class CachedFileConfig {
+     
+     private static final ResettableLazyReference<Map> configRef = new ResettableLazyReference() {
+     protected Map create() {
+                loadConfig()
+            }
+        }
+     
+     static Map getConfig() {
+            configRef.get()
+        }
+     
+     static void reload() {
+            configRef.reset()
+        }
+     
+     static Map loadConfig() {
+     def clusterHomeLocatorService = ScriptRunnerImpl.scriptRunner.getBean(ClusterHomeLocatorService)
+     
+     // by default the config file is loaded from <platform.home.dir>/config.yaml. For DC instances, this is the shared home directory.
+     new File(clusterHomeLocatorService.sharedHomeDir, 'config.yaml').withReader { reader ->
+     def yaml = new Yaml()
+                yaml.load(reader) as Map
+            }
+        }
+    }
+    ```
+    
+2.  Run the following to retrieve a variable:
+    
+    ```
+    import com.acme.CachedFileConfig
+     
+    def config = CachedFileConfig.getConfig()
+    log.debug config['Approvals']
+    ```
+    
+    Warning: The configuration is cached. If you modify the .yaml file and want the scripts to pick up new values, you need to either disable then enable ScriptRunner(or restart your instance) or run the following console script:
+    
+    ```
+    import com.acme.CachedFileConfig
+     
+    CachedFileConfig.reload()
+    ```

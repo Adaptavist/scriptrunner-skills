@@ -24,8 +24,9 @@ Use this skill whenever you need ScriptRunner platform operating rules.
     - `references/cloud.md` for ScriptRunner for Jira Cloud.
     - `references/confluence-cloud.md` for ScriptRunner for Confluence Cloud.
     - `references/data-center.md` for ScriptRunner for Jira Data Center.
-4. For Data Center to Cloud migrations, read `references/data-center.md` and the target product's Cloud guidance before producing code: Data Center explains the source semantics, while the Jira or Confluence Cloud file explains the target constraints.
-5. Apply the guidance together with focused documentation, example, REST spec, and validator lookups.
+4. For Jira Data Center to Cloud migrations, read `references/data-center.md` and the target product's Cloud guidance before producing code: Data Center explains the source semantics, while the Jira or Confluence Cloud file explains the target constraints.
+5. For Confluence Data Center to Cloud migrations, take the source semantics from the `scriptrunner-documentation` skill's `references/INDEX-CONFLUENCE-DATA-CENTER.md` and the target constraints from `references/confluence-cloud.md` before producing code. Confluence Data Center has no guidance file here, and `references/data-center.md` describes Jira Data Center only, so never apply it to a Confluence source.
+6. Apply the guidance together with focused documentation, example, REST spec, and validator lookups.
 
 ## Notes
 

@@ -5,9 +5,10 @@ Use this file first to route to the smallest useful set of docs.
 ## Platform routing
 
 - For ScriptRunner for Jira Cloud, Jira Cloud HAPI, Forge, or Jira Cloud REST integrations, start with Cloud docs.
-- For ScriptRunner for Confluence Cloud, Confluence HAPI, Confluence listeners, CQL jobs, spaces, pages, or custom macros, start with Confluence Cloud docs.
+- For ScriptRunner for Confluence Cloud, Confluence Cloud HAPI, Confluence listeners, CQL jobs, spaces, pages, or custom macros, start with Confluence Cloud docs.
 - For ScriptRunner Connect apps, connectors, recipes, webhooks, or remote integrations, start with ScriptRunner Connect docs.
-- For Jira Data Center, Data Center HAPI, Atlassian Java APIs, or on-prem administration, start with Data Center docs.
+- For ScriptRunner for Jira Data Center, Jira Data Center HAPI, Jira Java APIs, or on-prem Jira administration, start with Jira Data Center docs.
+- For ScriptRunner for Confluence Data Center, Confluence Data Center HAPI, Confluence Java APIs, on-prem Confluence listeners, jobs, macros, CQL functions, or on-prem Confluence administration, start with Confluence Data Center docs.
 - For ScriptRunner Migration Suite web app, migration-agent, assess/analyse, or Dev and Deployment Tool questions, start with ScriptRunner Migration Suite docs.
 - If the platform or product is unclear, compare the relevant indexes before opening page content.
 

@@ -98,6 +98,7 @@ Glossary, docs word first, CLI group second:
 | Immutable snapshot                                                   | release, deployment | `release create -e <env>`, one call     |
 | Space an environment's config lives in, targets HEAD or a release    | environment         | `environment`                           |
 | Editing lock, shared with the web app                                | none                | `workspace-lock`                        |
+| Team allowlist of outbound destinations, connectors and hostnames    | Egress Firewall     | `egress-firewall`                       |
 
 ## Capabilities
 
@@ -183,6 +184,35 @@ The Generic connector reaches any HTTP API: base URL plus none, basic or custom 
 
 Sources: https://docs.adaptavist.com/src/latest/connectors, https://docs.adaptavist.com/src/latest/connectors/generic-connector
 
+### Egress Firewall
+
+A team-level allowlist of where scripts may send requests. A script's outbound call runs only when its destination has an approved entry, and the kinds of entry never cover each other:
+
+- A connector entry allows the requests a script makes through that connector: the Managed API, and managed `fetch` on the API connection.
+- A Fetch API destination entry allows raw global `fetch` calls to one hostname. `https://API.Example.com:8443/v2` is stored as `api.example.com`, subdomains are separate entries, and wildcards are refused.
+
+Allowing a Generic connector for `https://api.example.com` does not allow `fetch('https://api.example.com/...')`, and allowing the hostname does not allow the connector.
+
+An entry is either approved or waiting for approval. It is approved on the spot only when the person adding it has the Admin or Super Admin role in the team, the request did not opt out of auto-approval, and the team's connections allowance has room. Otherwise it is recorded as a request and the team admins are emailed. A full allowance is not an error: the entry is created and waits. The allowance is the plan's connector count, `connections` on `team get`, where `max` is null for an unlimited plan. Approved entries use it; waiting entries do not, and neither do the ScriptRunner Connect APIs themselves, which still have to be allowed like any other destination.
+
+Once an entry exists, nothing the public API accepts changes it. A waiting entry stays waiting when an admin adds it again with auto-approval, and when an API connection attaches the connector again. Approving, rejecting and removing happen in the web app only, under Team Settings, Egress Firewall. Deleting a connector removes its entry; a Fetch API destination can only be removed there.
+
+Attaching a connector to an API connection puts it on the allowlist in the same call, approved when the rules above allow it, and `api-connection create` and `update` report `egressFirewall.allowed` for the connector attached. A connector cannot be added on its own until an API connection in the team uses it.
+
+A blocked call fails the run with error code 11007. The messages, as the runtime writes them:
+
+```text
+Request blocked by the team's Egress Firewall.
+google.com is not on the allowed destinations list. A team admin can allow it under Team Settings → Egress Firewall. - ScriptRunner Connect Error code: 11007
+```
+
+```text
+Request blocked by the team's Egress Firewall.
+The "Jira Cloud" connector is not on the allowed connectors list. A team admin can allow it under Team Settings → Egress Firewall. - ScriptRunner Connect Error code: 11007
+```
+
+The firewall is always on in the public EU and US instances. A private cloud instance can run without it; there `egress-firewall list` is refused with `EGRESS_FIREWALL_DISABLED`, nothing is filtered, and nothing here applies. Assume it is on until that refusal says otherwise. How the agent asks about approval, adds entries and stops for a human is under Egress Firewall in `references/cli-workflow.md`.
+
 ### Teams
 
 Three roles. A Member sees workspaces shared with them, usage and the member list. An Admin also opens every team workspace, invites, edits roles below super admin, changes sharing settings and moves a workspace between teams they admin. A Super Admin also edits every role, the plan and billing, and can delete the team. One person edits a workspace at a time; others get a read-only copy and can take edit control. The CLI's workspace lock is that same control.
@@ -227,7 +257,7 @@ The web app has a built-in assistant. When working from outside, use your own ca
 | Pro        | unlimited  | unlimited               | yes          | shared AWS                        |
 | Enterprise | unlimited  | unlimited               | yes          | private AWS account, optional VPC |
 
-A plan belongs to a team and its limits are shared by every workspace in the team. SSO is a paid add-on below Enterprise. Free plan support is community only.
+A plan belongs to a team and its limits are shared by every workspace in the team. The Connectors column is the team's connections allowance, which approved Egress Firewall entries count against; see Egress Firewall. SSO is a paid add-on below Enterprise. Free plan support is community only.
 
 Source: https://www.scriptrunnerhq.com/atlassian-apps/jira/scriptrunner-connect-pricing
 
@@ -260,7 +290,7 @@ Source: https://docs.adaptavist.com/src/latest/limits-and-quotas and the pages a
 
 ## Runtime in one paragraph
 
-Not Node. A custom V8 runtime on a web-standards subset, ES2020 in syntax and standard library alike, ESM only: `fetch` with fully buffered bodies, `Request`/`Response`/`Headers`/`URL`/`FormData`/`Blob`, `TextEncoder`/`TextDecoder`, `btoa`/`atob`, timers, `console`, `crypto.getRandomValues` and `crypto.subtle` for keys, sign and verify only. No `Buffer`, no `process.env`, no `node:*`, no WebSocket, no streams, no `subtle.digest`, and no library method or option newer than ES2020 until a probe proves it, `Intl.DateTimeFormat`'s `timeStyle` being the known casualty. `@sr-connect/convert` replaces Buffer conversions; `jose-browser-runtime` signs JWTs. Full table and the coding rules in `references/scripting.md`.
+Not Node. A custom V8 runtime on a web-standards subset, ES2020 in syntax and standard library alike, ESM only: `fetch` with fully buffered bodies, `Request`/`Response`/`Headers`/`URL`/`FormData`/`Blob`, `TextEncoder`/`TextDecoder`, `btoa`/`atob`, timers, `console`, `crypto.getRandomValues` and `crypto.subtle` for keys, sign and verify only. Every outbound call needs an approved Egress Firewall entry for its connector or, for raw `fetch`, its hostname. No `Buffer`, no `process.env`, no `node:*`, no WebSocket, no streams, no `subtle.digest`, and no library method or option newer than ES2020 until a probe proves it, `Intl.DateTimeFormat`'s `timeStyle` being the known casualty. `@sr-connect/convert` replaces Buffer conversions; `jose-browser-runtime` signs JWTs. Full table and the coding rules in `references/scripting.md`.
 
 Source: https://docs.adaptavist.com/src/latest/scripting/runtime
 
@@ -315,6 +345,7 @@ Sample test payloads exist for most listener apps. Zoom, Azure DevOps, Microsoft
 | One-off job                                   | The short recipe in `cli-workflow.md`; ask whether it recurs, delete after if not                                                                                           | `cli-workflow.md`, `scripting.md`                  | yes        |
 | Register a webhook, or events never arrive    | Read the listener and its connector, then load the one app file; see Webhook handoff in `cli-workflow.md`                                                                   | `cli-workflow.md`, `event-listener-setup/<app>.md` | yes        |
 | Authorize a connector, or one stopped working | `connector list` and `connector get` first; load the one connector file only when a new or expired connector has to be authorized; see Connector setup in `cli-workflow.md` | `cli-workflow.md`, `connector-setup/<type>.md`     | yes        |
+| A run fails with error code 11007             | The Egress Firewall blocked a destination. `egress-firewall list` for its state; see Egress Firewall in `cli-workflow.md`                                                   | `cli-workflow.md`                                  | yes        |
 | Tests                                         | Only when asked                                                                                                                                                             | `testing.md`                                       | yes        |
 
 When there is no bespoke connector, use the Generic connector for fixed-key auth. For OAuth, set the flow up in the workspace instead; the recipe is in `references/scripting.md`. When there is a bespoke connector but the user refuses every method its wizard offers, the app's file under `references/connector-setup/` names the fixed-key alternative through a Generic connector, where the vendor has one.
@@ -325,7 +356,7 @@ When the `agenticFeedback` switch is on, the work leaves notes for the ScriptRun
 
 ## Asking questions
 
-Front-load them. Before the first change, gather everything the work will turn on: which apps and which environments, what counts as production, whether you may probe and whether a probe may mutate, whether you may run a simulation loop with test payloads, which package upgrades are wanted, how the result will be tested end to end. One round of questions up front is cheaper for the user than a question every ten minutes, and it is what lets you go away, build in the simulation loop for as long as the user allowed, and come back once with something to test.
+Front-load them. Before the first change, gather everything the work will turn on: which apps and which environments, what counts as production, whether you may probe and whether a probe may mutate, whether you may run a simulation loop with test payloads, whether you may auto-approve the Egress Firewall entries the work adds, which package upgrades are wanted, how the result will be tested end to end. One round of questions up front is cheaper for the user than a question every ten minutes, and it is what lets you go away, build in the simulation loop for as long as the user allowed, and come back once with something to test.
 
 VERY IMPORTANT: a request for a plan does not skip that round. A plan for an integration written without knowing which environments exist, what counts as production, or whether you may probe is a guess dressed as a plan. Whatever mechanism your harness has for putting questions to the user, plan mode included, use it for these questions before writing the plan. The plan depends on what the workspace and the target apps hold, so probing belongs before the plan and not after it, but only once the user has consented to probing. No consent means no probe: write the plan from the reads the CLI allows and what the user told you, and mark each place a probe would have settled.
 

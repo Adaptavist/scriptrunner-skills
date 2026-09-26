@@ -189,15 +189,15 @@ Sources: https://docs.adaptavist.com/src/latest/connectors, https://docs.adaptav
 A team-level allowlist of where scripts may send requests. A script's outbound call runs only when its destination has an approved entry, and the kinds of entry never cover each other:
 
 - A connector entry allows the requests a script makes through that connector: the Managed API, and managed `fetch` on the API connection.
-- A Fetch API destination entry allows raw global `fetch` calls to one hostname. `https://API.Example.com:8443/v2` is stored as `api.example.com`, subdomains are separate entries, and wildcards are refused.
+- A Fetch API destination entry allows raw global `fetch` calls to one hostname. `https://API.Example.com:8443/v2` is stored as `api.example.com`, subdomains are separate entries, and wildcards are refused. So are `localhost` and private, loopback and link-local addresses such as `10.0.0.1` or `192.168.1.1`, which scripts cannot reach whatever the list says; a hostname that resolves to one is accepted and still fails at run time.
 
 Allowing a Generic connector for `https://api.example.com` does not allow `fetch('https://api.example.com/...')`, and allowing the hostname does not allow the connector.
 
 An entry is either approved or waiting for approval. It is approved on the spot only when the person adding it has the Admin or Super Admin role in the team, the request did not opt out of auto-approval, and the team's connections allowance has room. Otherwise it is recorded as a request and the team admins are emailed. A full allowance is not an error: the entry is created and waits. The allowance is the plan's connector count, `connections` on `team get`, where `max` is null for an unlimited plan. Approved entries use it; waiting entries do not, and neither do the ScriptRunner Connect APIs themselves, which still have to be allowed like any other destination.
 
-Once an entry exists, nothing the public API accepts changes it. A waiting entry stays waiting when an admin adds it again with auto-approval, and when an API connection attaches the connector again. Approving, rejecting and removing happen in the web app only, under Team Settings, Egress Firewall. Deleting a connector removes its entry; a Fetch API destination can only be removed there.
+Once an entry exists, nothing the public API accepts changes it. A waiting entry stays waiting when an admin adds it again with auto-approval, and when an API connection attaches the connector again. Adding one again is safe: both kinds answer with the stored entry, unchanged. Approving, rejecting and removing happen in the web app only, under Team Settings, Egress Firewall. Deleting a connector removes its entry; a Fetch API destination can only be removed there.
 
-Attaching a connector to an API connection puts it on the allowlist in the same call, approved when the rules above allow it, and `api-connection create` and `update` report `egressFirewall.allowed` for the connector attached. A connector cannot be added on its own until an API connection in the team uses it.
+Attaching a connector to an API connection puts it on the allowlist in the same call, approved when the rules above allow it, and `api-connection create` and `update` report `egressFirewall.state` for the connector attached: approved, waiting, not listed, or no firewall on the deployment. A waiting entry also says what stands between it and approval for the caller, on every write and in the list: the allowance is full, in which case nobody can approve it until room is made; the caller is not a team admin; the call asked for approval; or nothing, and the caller can approve it themselves in the web app. A connector cannot be added on its own until an API connection in the team uses it.
 
 A blocked call fails the run with error code 11007. The messages, as the runtime writes them:
 
@@ -211,7 +211,9 @@ Request blocked by the team's Egress Firewall.
 The "Jira Cloud" connector is not on the allowed connectors list. A team admin can allow it under Team Settings → Egress Firewall. - ScriptRunner Connect Error code: 11007
 ```
 
-The firewall is always on in the public EU and US instances. A private cloud instance can run without it; there `egress-firewall list` is refused with `EGRESS_FIREWALL_DISABLED`, nothing is filtered, and nothing here applies. Assume it is on until that refusal says otherwise. How the agent asks about approval, adds entries and stops for a human is under Egress Firewall in `references/cli-workflow.md`.
+A different error means something else. `Connection not allowed for URL`, error code 10001, is the runtime refusing a hostname that does not resolve or an address scripts cannot reach, and it is checked before the firewall. Only 11007 with "Request blocked by the team's Egress Firewall" is the firewall; a 10001 is fixed in the URL or DNS, never in the allowlist.
+
+A deployment says whether it has a firewall. A private cloud instance can run without one; there `egress-firewall list` is refused with `EGRESS_FIREWALL_DISABLED`, nothing is filtered, and nothing here applies. A deployment that predates the feature answers the same read with `Path not found`, exit 4, and filters nothing either. Assume the firewall is on until one of those answers says otherwise. How the agent asks about approval, adds entries and stops for a human is under Egress Firewall in `references/cli-workflow.md`.
 
 ### Teams
 
@@ -346,6 +348,7 @@ Sample test payloads exist for most listener apps. Zoom, Azure DevOps, Microsoft
 | Register a webhook, or events never arrive    | Read the listener and its connector, then load the one app file; see Webhook handoff in `cli-workflow.md`                                                                   | `cli-workflow.md`, `event-listener-setup/<app>.md` | yes        |
 | Authorize a connector, or one stopped working | `connector list` and `connector get` first; load the one connector file only when a new or expired connector has to be authorized; see Connector setup in `cli-workflow.md` | `cli-workflow.md`, `connector-setup/<type>.md`     | yes        |
 | A run fails with error code 11007             | The Egress Firewall blocked a destination. `egress-firewall list` for its state; see Egress Firewall in `cli-workflow.md`                                                   | `cli-workflow.md`                                  | yes        |
+| A run fails with error code 10001, "Connection not allowed for URL" | Not the Egress Firewall: the hostname does not resolve, or its address is private. Check the URL and DNS; do not add an entry                  | `scripting.md`                                     | no         |
 | Tests                                         | Only when asked                                                                                                                                                             | `testing.md`                                       | yes        |
 
 When there is no bespoke connector, use the Generic connector for fixed-key auth. For OAuth, set the flow up in the workspace instead; the recipe is in `references/scripting.md`. When there is a bespoke connector but the user refuses every method its wizard offers, the app's file under `references/connector-setup/` names the fixed-key alternative through a Generic connector, where the vendor has one.

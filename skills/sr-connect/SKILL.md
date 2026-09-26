@@ -7,7 +7,7 @@ description: >-
     @sr-connect/cli. Use for any SRC, ScriptRunner Connect or Atlassian-integration question, and
     load references/ before running the CLI.
 metadata:
-    version: '1.2'
+    version: '1.3'
 ---
 
 # ScriptRunner Connect
@@ -197,7 +197,7 @@ An entry is either approved or waiting for approval. It is approved on the spot 
 
 Once an entry exists, nothing the public API accepts changes it. A waiting entry stays waiting when an admin adds it again with auto-approval, and when an API connection attaches the connector again. Adding one again is safe: both kinds answer with the stored entry, unchanged. Approving, rejecting and removing happen in the web app only, under Team Settings, Egress Firewall. Deleting a connector removes its entry and frees its place in the allowance; a Fetch API destination can only be removed there. Making room approves nothing: an entry that was waiting for room still waits, now for an admin to approve it.
 
-Attaching a connector to an API connection puts it on the allowlist in the same call, approved when the rules above allow it, and `api-connection create` and `update` report `egressFirewall.state` for the connector attached: approved, waiting, not listed, or no firewall on the deployment. A waiting entry also says what stands between it and approval for the caller, on every write and in the list: the allowance is full, in which case nobody can approve it until room is made; the caller is not a team admin; the call asked for approval; or nothing, and the caller can approve it themselves in the web app. A connector cannot be added on its own until an API connection in the team uses it.
+Attaching a connector to an API connection puts it on the allowlist in the same call, approved when the rules above allow it, and `api-connection create` and `update` report `egressFirewall.state` for the connector attached: approved, waiting, not listed, or no firewall on the deployment. A waiting entry also says what stands between it and approval for the caller, on every write and in the list: the allowance is full, in which case nobody can approve it until room is made; the caller is not a team admin; the call asked for approval; or nothing, and the caller can approve it themselves in the web app. `egress-firewall check-api-connections` reads the same for every API connection in one environment at once. A connector cannot be added on its own until an API connection in the team uses it.
 
 A blocked call fails the run with error code 11007. The messages, as the runtime writes them:
 
@@ -347,7 +347,7 @@ Sample test payloads exist for most listener apps. Zoom, Azure DevOps, Microsoft
 | One-off job                                   | The short recipe in `cli-workflow.md`; ask whether it recurs, delete after if not                                                                                           | `cli-workflow.md`, `scripting.md`                  | yes        |
 | Register a webhook, or events never arrive    | Read the listener and its connector, then load the one app file; see Webhook handoff in `cli-workflow.md`                                                                   | `cli-workflow.md`, `event-listener-setup/<app>.md` | yes        |
 | Authorize a connector, or one stopped working | `connector list` and `connector get` first; load the one connector file only when a new or expired connector has to be authorized; see Connector setup in `cli-workflow.md` | `cli-workflow.md`, `connector-setup/<type>.md`     | yes        |
-| A run fails with error code 11007             | The Egress Firewall blocked a destination. `egress-firewall list` for its state; see Egress Firewall in `cli-workflow.md`                                                   | `cli-workflow.md`                                  | yes        |
+| A run fails with error code 11007             | The Egress Firewall blocked a destination. `egress-firewall check-api-connections` maps a connector name to its ID, `egress-firewall list` shows a host; see Egress Firewall in `cli-workflow.md` | `cli-workflow.md`                                  | yes        |
 | A run fails with error code 10001, "Connection not allowed for URL" | Not the Egress Firewall: the hostname does not resolve, or its address is private. Check the URL and DNS; do not add an entry                  | `scripting.md`                                     | no         |
 | Tests                                         | Only when asked                                                                                                                                                             | `testing.md`                                       | yes        |
 

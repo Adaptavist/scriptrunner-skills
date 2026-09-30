@@ -27,15 +27,15 @@
 - `references/specs/jira-cloud-platform-v3-openapi.json`
   - Product: Jira Cloud platform REST API v3
   - Common paths: `/rest/api/3/...`
-  - Operations: 619
-  - Schemas: 975
+  - Operations: 620
+  - Schemas: 977
   - Source: https://dac-static.atlassian.com/cloud/jira/platform/swagger-v3.v3.json
   - Summary: Jira Cloud platform REST API v3 for core Jira resources such as issues, projects, users, workflows, fields, permissions, and dashboards.
 
 - `references/specs/jira-service-management-cloud-openapi.json`
   - Product: Jira Service Management Cloud REST API
   - Common paths: `/rest/servicedeskapi/...`
-  - Operations: 75
+  - Operations: 76
   - Schemas: 117
   - Source: https://dac-static.atlassian.com/cloud/jira/service-desk/swagger.v3.json
   - Summary: Jira Service Management Cloud REST APIs for service desks, requests, queues, approvals, SLAs, and organizations.

@@ -29,16 +29,16 @@
   {
     "description": "Jira Cloud platform REST API v3 for core Jira resources such as issues, projects, users, workflows, fields, permissions, and dashboards.",
     "fileName": "jira-cloud-platform-v3-openapi.json",
-    "operationCount": 619,
+    "operationCount": 620,
     "pathPrefix": "/rest/api/3/",
-    "schemaCount": 975,
+    "schemaCount": 977,
     "sourceUrl": "https://dac-static.atlassian.com/cloud/jira/platform/swagger-v3.v3.json",
     "title": "Jira Cloud platform REST API v3"
   },
   {
     "description": "Jira Service Management Cloud REST APIs for service desks, requests, queues, approvals, SLAs, and organizations.",
     "fileName": "jira-service-management-cloud-openapi.json",
-    "operationCount": 75,
+    "operationCount": 76,
     "pathPrefix": "/rest/servicedeskapi/",
     "schemaCount": 117,
     "sourceUrl": "https://dac-static.atlassian.com/cloud/jira/service-desk/swagger.v3.json",

@@ -24,7 +24,8 @@ Read `references/scripting.md` before writing or editing a script. Read `referen
 3. `cli get-readme`. Read it once per session.
 4. `auth status`. Exit 3 means not logged in; go to Authentication. Note the instance it reports.
 5. `cli settings --raw`. Find the row with `"key":"agenticFeedback"`. When `enabled` is true, keep feedback notes as you work; see Feedback below. When it is false, feedback is off for the whole session and you do not bring it up.
-6. `team list` for the team ID. `team get <teamId>` only when the work needs event queues: `features.eventQueues` says whether the plan has them.
+6. `team list` for the team ID. `team get <teamId>` when the work needs event queues, where `features.eventQueues` says whether the plan has them, and when it adds Egress Firewall entries, where `connections` says how much of the allowance is left.
+7. `egress-firewall list --team <teamId>` whenever the work will attach a connector or call raw `fetch`, which is nearly every build. The firewall is always on in the EU and US instances. Either of these answers means the deployment filters nothing, so skip Egress Firewall below for the session: exit 1 `EGRESS_FIREWALL_DISABLED`, a private cloud instance with the firewall off, and exit 4 `Path not found`, a deployment that predates the firewall. Assume it is on until one of them comes back. An unknown command means the CLI predates the firewall: offer the upgrade from step 2 before building anything that makes outbound calls. Otherwise note `canApprove`, which is the user's own role in the team. See Egress Firewall below for the question this feeds.
 
 ## Authentication
 
@@ -127,7 +128,7 @@ Find out what you are working against before changing anything.
 
 ### Probing
 
-Before building or changing, probe the systems you work against. A probe is a throwaway script that reads something back through an API connection, pushed, triggered, then deleted. Always ask before probing. Say plainly when a probe would mutate anything in the target app; mutation probes need a safe environment or explicit consent.
+Before building or changing, probe the systems you work against. A probe is a throwaway script that reads something back through an API connection, pushed, triggered, then deleted. Always ask before probing. Say plainly when a probe would mutate anything in the target app; mutation probes need a safe environment or explicit consent. A probe reaches the app through the Egress Firewall like any script, so its connector or host needs an approved entry first; see Egress Firewall.
 
 ```sh
 npx @sr-connect/cli script create -w <ws> -e <env> --name Probe --file ./probe.ts --agent --raw
@@ -147,6 +148,8 @@ Prefer running without a human in the loop. Event listener test payloads trigger
 - Do not change the user's default payload with `set-default`. You do not need it to trigger from the CLI.
 - Templates can be stale, and some apps, ServiceNow among them, let the sender define the payload, so the sample may be wrong. Zoom, Azure DevOps, Microsoft, NetSuite, Salesforce and ServiceNow ship no sample at all. When a payload contradicts what you know, ask the user to fire the real event once, log the incoming event in the script, and read it from `log list-console-logs`.
 
+- A destination that is not approved stops the loop: the run fails with error code 11007 before the script gets an answer. Stop and ask, as under Egress Firewall; do not change the script to get past it.
+
 When the loop has gone as far as simulation allows, ask the human to try it end to end. On a bad result read the logs, fix, repeat until they are satisfied.
 
 ## Strategies by ask
@@ -159,7 +162,7 @@ Whether something can be done. Answer from `SKILL.md`; the CLI is often not need
 
 Start with the logs. Ask what the user can give you: team, workspace, time span, script name. Then:
 
-1. `log list-invocation-logs` with filters. Statuses worth reading: Function Error, Timed out, Runtime Error, Malformed Payload Error, Denied.
+1. `log list-invocation-logs` with filters. Statuses worth reading: Function Error, Timed out, Runtime Error, Malformed Payload Error, Denied. A failure with error code 11007 is the Egress Firewall: `egress-firewall list` for the destination it names, then When a destination is not approved under Egress Firewall.
 2. For an invocation: `log list-console-logs`, `log list-http-logs`, `log get-invocation-payload`. A console line too large to store is `log get-large-log-message`.
 3. Read the script, `script get` for one or `local-workspace clone` when several are involved, and the workspace setup. Explain the cause.
 4. Offer to fix it in the affected workspace. A fix follows Building below. `script replay-invocation` re-runs an event-triggered invocation, optionally with an edited payload, once the fix is in; always ask the user before replaying.
@@ -177,7 +180,7 @@ Create the workspace:
 1. `workspace create --team <teamId> --name <name> --language ts-strict`. From a template: `template list`, then `--source-template-id`; the language is then inherited, so read it back with `workspace get` and fix it with `workspace update --language ts-strict`.
 2. Rename the default environment to match what it targets: `environment update`.
 3. Start from the safest environment. Add the others once the work is confirmed, unless the user asks for them up front. Each environment you add gets every listener with no URL: `event-listener get -e <newEnv> <id>` reports `urlPath` and `webhookUrl` as null while `disabled` is false, and `event-listener list` and `environment list` say nothing. Fix it per listener before calling the environment ready. A generic listener takes `event-listener update -e <env> <id> --url-path <path>`; `--url-path` is refused for any other type. For those, any update touching the listener in that environment generates a path when it had none, so a no-op such as `--disabled false` echoing the current state is enough. A connector is not part of that: most listener types take none, and `event-listener get` reports `connectionRequired` for the ones that do. Attach one all the same when the team already has an authorized connector for the app, `--connector-id` with the environment's connector, because the handoff block's deep link is built on that connector's `baseUrl` and the setup instructions are better for it. No connector for the app means no connector on the listener, not a new connector. The new `webhookUrl` is not HEAD's, so the app-side webhook is registered again; give a handoff block per listener per environment.
-4. Set up API connections: `api-connection create`, which is workspace-scoped, then attach the connector per environment with `api-connection update`.
+4. Set up API connections: `api-connection create`, which is workspace-scoped, then attach the connector per environment with `api-connection update`. Attaching adds the connector to the Egress Firewall; add `--request-approval` when the user declined auto-approval, and read `egressFirewall.state`. Add a Fetch API destination for every host a script calls with raw `fetch`. See Egress Firewall below.
 5. Parameters: `environment-parameter create`. Parametrize everything configurable. Never hardcode configuration, and never hardcode a credential. Mark values the user must supply as required. Requiredness is documentation and a web-app save check, not a runtime guarantee: every parameter is declared optional in `ev-params.ts`, `GREETING?: string`, so under ts-strict the code checks each one is present before using it. Default values seed new environments and copies; the value itself does not carry over. Secrets: recommend the user sets those values themselves and give them the exact `environment-parameter create` or `update` command with a placeholder where the value goes. If they insist you do it, take the value through `--input <file>`, never on argv, and delete the file after.
 6. Clone: `local-workspace clone <dir> --team <teamId> -w <ws> -e <env>`, into the working directory or a scratch directory as decided under Where the clone lives. Then install dependencies. Prefer pnpm when installed; ask whether to install it, and fall back to NPM if not allowed. Run the clone's `lint:fix`, then `lint` for what it could not fix, and `typecheck` before a push.
 7. Switch an existing workspace to `ts-strict` with `workspace update --language ts-strict`. Fix the errors the switch surfaces before adding anything.
@@ -245,6 +248,8 @@ Driving the browser: offer it, warn, never leave a half-authorized connector. Wh
 
 Credentials the CLI cannot store, and the ones it can. AWS, Jira Service Management Cloud Assets, NetSuite, Opsgenie, Slack, Statuspage and Trello take a key, a token or a certificate mapping rather than a consent screen, and every one of them is saved only in the web application; the public API has no field for them. The handoff is the same as for OAuth: `connector create`, then `authorizationUrl`, then the file's steps. For Opsgenie, Statuspage, Slack and Jira Service Management Cloud Assets, a Generic connector carrying the same key is something the CLI can create authorized; offer it second, after the web application path, with the costs the file names, and never for Slack when the workspace has or will have a Slack listener, because the Generic connector holds no signing secret. A Generic connector's credentials are its configuration. Prefer that the user configures it in the web application so no key passes through you; if they hand you one anyway, take it through `--input <file>` and the basic-auth password through `SR_CONNECT_CLI_BASIC_AUTH_PASSWORD`, never on argv, and delete the file afterwards.
 
+An authorized connector still needs an approved Egress Firewall entry before a script can use it. The entry comes with the API connection that attaches it; see Egress Firewall.
+
 Re-authorization is the same wizard. `connector get` reports `authorizationUrl` for every connector, authorized or not, and the button there reads "Reauthorize". Each file's Expiry section says what runs out and what a re-authorization invalidates: the on-premise Atlassian key pair and the NetSuite certificate are regenerated and have to be pasted into the vendor again, and AWS regenerates its trust policy.
 
 The block, one per connector left for a human, in the closing summary:
@@ -299,6 +304,43 @@ Index, one file per connector type. The file name is `connectionType.name` from 
 | Zoom                                      | `zoom.md`                                 | Own General app                                            | create only    |
 
 "Create only" means `connector create` works and the authorization is a browser session at `authorizationUrl`; "no" means the credentials are saved only in the web application, so the CLI creates the connector and the dialog at `authorizationUrl` does the rest.
+
+## Egress Firewall
+
+How the firewall works is under Egress Firewall in `SKILL.md`. This section is what you do about it. It applies on the EU and US instances always, and on a private cloud instance unless Preflight found the firewall off there.
+
+### The up-front question
+
+Every connector the work attaches and every hostname a script reaches with raw `fetch` needs an approved entry before a run can use it, so the work always adds some. Ask once, with the other up-front questions under Asking questions in `SKILL.md`:
+
+> May I auto-approve the Egress Firewall entries this work adds, where your role and the team's allowance allow it?
+
+Recommend yes, and say why: an entry waiting for approval blocks every run that reaches it, so the simulation loop stops at the first one until a human approves it. Put the facts from Preflight into the question. When `canApprove` is false the user is not a team admin, and auto-approval cannot happen whatever they answer: every entry goes to the admins as a request. When `team get` shows `used` at `max`, approval waits for room even for an admin. The room is `max` minus `used`, and each entry approved on the spot takes one, so once it runs out every further connector or host the work adds waits; say so when the work will add more entries than there is room for. Name the connectors and hosts you expect to add when you already know them.
+
+- Yes: add entries with the defaults. Each is approved on the spot where the rules allow, and recorded as a request otherwise.
+- No: add every entry as a request. Pass `--request-approval` to `api-connection create`, to `api-connection update` when it switches the connector, and to both `egress-firewall add-*` verbs. Build what does not need the entries, and stop where it does; see When a destination is not approved.
+
+Never pass `--skip-allowlist` unless the user asks for it. A connector off the allowlist is blocked for every script in the team, and nothing tells the next person why.
+
+### Adding entries
+
+- Connectors. The entry comes with the API connection write: `api-connection create` with a connector, or `api-connection update` switching to one. Read `egressFirewall.state` in the response. `APPROVED` is operational. `PENDING` waits, and `reason` says what stands between it and approval for the user, now: `ALLOWANCE_FULL`, which nobody can approve until room is made; `NOT_ADMIN`, which a team admin approves; `AUTO_APPROVE_FALSE`, waiting because the call asked; or `AWAITING_APPROVAL`, which the user can approve themselves in the web app. `NOT_LISTED` has no entry: `egress-firewall add-connector` adds one, with the `teamId` the response carries. `FIREWALL_DISABLED` filters nothing. The stderr warning says the same in words. `applied: false` on an update means the firewall choice sent was not acted on, because the connector was already attached.
+- A connector that already has an entry is left as it is. An approved one needs nothing. A waiting one cannot be moved by anything you send, auto-approval included, so adding it again is not a retry. Its `reason` can still change without a write, from `ALLOWANCE_FULL` to `AWAITING_APPROVAL` once room is made, and adding it again is how to read the current one.
+- Created or found: both add verbs answer with the same document either way. An entry that was already there, whoever added it, comes with `ℹ … already had an entry (…); nothing changed.` on stderr; a new one does not, and only a new one sent the admins a request. Read stderr to tell them apart. When an API connection write names a firewall choice the existing entry made moot, stderr says that too: `ℹ The connector already had an entry on the egress firewall, so --request-approval changed nothing.`
+- `egress-firewall add-connector <connectorId>` adds a connector an API connection in the team already uses but which has no entry: an existing workspace attached before the firewall, or an attachment made with the allowlist skipped. A 404 means no API connection in a workspace the user can see uses it; attach it first. For a team admin, a connector whose entry outlived its API connections comes back as that entry; for anyone else it is the same 404.
+- Fetch API destinations. For every host a script calls with raw global `fetch`, `egress-firewall add-fetch-destination <hostname>` before the first run that calls it. A full URL is accepted and reduced to its hostname, which the response echoes; read `state`, and `reason` as for connectors. Pass a hostname or an http or https URL, never an email address or a `mailto:` link: the part after `@` is what gets allowed. The CLI refuses a `mailto:` link with exit 2 but accepts a bare `support@vendor.com` and stores `vendor.com`, approved at once for an admin, so keeping addresses out is your job. A hostname the team already has answers with the stored entry and exits 0, whoever added it, so it is safe to send again; it is also how a user without the Admin role learns the state of a host somebody else added, which their `egress-firewall list` leaves out. That read can write: if the host is gone from the list by then, removed or rejected in the web app, the same call creates it again, and sends the admins a request when the user cannot approve it. `localhost` and private addresses are refused. A connector's host is not covered by its connector entry for raw `fetch`, and the reverse.
+- A Fetch API destination is removed only in the web app. There is no `egress-firewall approve`, `reject` or `remove`, and the CLI answers `not a command` if you try one, so do not look for them; hand the user the web app location instead. Ask before adding one only a probe needs, and name it in the closing summary either way. A connector entry is the one kind that cleans up after itself: deleting a probe's connector removes its entry and gives back its place in the allowance, so a probe that can reach its host through a Generic connector leaves nothing on the list.
+- Working in an existing workspace, check before the first trigger. `egress-firewall check-api-connections` per environment gives every API connection with its connector and where that connector stands, in one call; `egress-firewall list` covers the hosts the scripts `fetch`, which no record lists, so read them from the code. Add what is missing, following the user's answer.
+
+### When a destination is not approved
+
+Each of these gets the same response: `allowed: false` from an API connection write or an `egress-firewall add-*` verb; a run that fails with error code 11007, whose message names the hostname, or the connector by display name only; map that name to an ID with `egress-firewall check-api-connections` in the failing script's own workspace and environment, since connector names repeat across a team and a restricted `egress-firewall list` can leave the connector out; an entry `egress-firewall list` shows waiting, or a connector it lists with no entry.
+
+1. Keep building what does not need that destination: other scripts, parameters, listeners, the README. Stop at the first step that cannot go on without it, which is usually the first run that reaches it.
+2. Tell the user which destination is blocked, a connector by name and ID or a hostname, and why: the `reason` on the write, or on the entry in `egress-firewall list`, which carries it too. `AWAITING_APPROVAL` and `AUTO_APPROVE_FALSE`: ask them to approve it in the web app, under Team Settings, Egress Firewall. `NOT_ADMIN`: ask them to get a team admin to approve it there. `ALLOWANCE_FULL`: the team is at its connections limit, so nobody can approve it yet; ask them to remove an approved entry there or move to a plan with more connections, and approve it after. Name the approved entries `egress-firewall list` shows as candidates: first any connector with `usedByApiConnection: false`, which still takes a place though nothing uses it, then hosts no script calls. Never delete a connector yourself to make room; its API connections lose it in every environment. Making room does not approve the entry, so the approval is still theirs to do. Wait.
+3. When they say it is done, confirm `allowed: true` on that entry before running again: `egress-firewall check-api-connections` for a connector, `egress-firewall list` for a host, or, for a hostname the user did not add and cannot list, `egress-firewall add-fetch-destination` with it again, which answers with its current state. If the admin removed or rejected that host instead of approving it, the call adds it again as a new request; say so rather than reporting it as still waiting.
+
+Never route around a block: no raw `fetch` in place of a blocked connector, no connector in place of a blocked host, no other hostname, unless the user asks for exactly that.
 
 ## Webhook handoff
 
@@ -367,6 +409,11 @@ Index, one file per app that has listener types. The file name is the app's `app
 - `bundlingError` in a script response: the workspace has no bundle until any script is saved again. `compilationErrors` are diagnostics for a bundle that was written. A `bundlingError` after `package add` can also mean the bundler cannot handle that package; try another, and put both in the feedback notes, the ones that failed and the one you settled on.
 - `Cannot run deleted script`: the trigger targets a script that no longer exists.
 - A vendor 401 or 403 through a connector authorized with the platform's own OAuth app, on a call the same account can make in the vendor's UI: a scope the platform's app lacks. Swap to a self-managed connector, see the app's file under `references/connector-setup/`, re-attach it per environment, and tell the user why.
+- Error code 11007, "Request blocked by the team's Egress Firewall": the named connector or hostname has no approved entry. A connector is named by display name; `egress-firewall check-api-connections` in that workspace and environment gives its ID. See Egress Firewall.
+- `egressFirewall.allowed: false` after `api-connection create` or `update`: the attached connector is blocked. `state` and `reason` name the cause; see Adding entries. A response with `allowed` and no `state` comes from a deployment older than those fields: only `allowed` counts there, and `egress-firewall list` is where the cause is.
+- Error code 10001, "Connection not allowed for URL": not the Egress Firewall. The hostname does not resolve, or its address is private. Fix the URL or the DNS; adding an entry changes nothing. Another 10001 message on a connector call, `Error while performing HTTP call (Fetch API)`, does not say whether the firewall is involved: run `egress-firewall check-api-connections` in that workspace and environment. `APPROVED` means look at the vendor, the connector's base URL or the connection; any other state is an entry to fix, since it would block the call as well.
+- `EGRESS_FIREWALL_DISABLED`, exit 1: a private cloud deployment without the firewall. Nothing is filtered and nothing needs adding. `Path not found`, exit 4, from `egress-firewall list` means the same for a deployment that predates the firewall.
+- `Connector not found, or it is not used within this team` from `egress-firewall add-connector`: no API connection in a workspace the user can see uses that connector. Attach it through `api-connection update`, which adds the entry too.
 - Events never arrive: `event-listener get -e <env>` first. A listener with `disabled: true`, no `webhookUrl` in that environment, `connectionRequired: true` with no connector, or a Slack listener on an unauthorized connector receives nothing. Then the app's file under `references/event-listener-setup/`: its Verify list names what a registration gets wrong most often.
 
 ## Never
@@ -393,7 +440,25 @@ End every session with a summary in the conversation, whatever the ask type. The
 - Every resource created or changed, by name and ID: workspace, environments, parameters, connectors, API connections, event listeners, test payloads, event queues, scheduled triggers, scripts, packages, releases.
 - What the probing created. Say what was deleted, and give the ID and location of anything you could not clean up, a parameter with no value, a probe script the lock refused to delete, a payload you seeded, a record-storage key, a test issue in the target app. Nothing may be left behind silently.
 - Where the clone is, and whether it stays.
-- What still needs a human: authorizing each connector you left unauthorized, as one block per connector under Connector setup, registering each listener's webhook as one block per listener under Webhook handoff, setting a secret parameter, the end-to-end test, enabling a trigger you left disabled, creating and deploying a release, deleting a one-off workspace. Give the exact command or URL for each.
+- Every Egress Firewall entry the work added, in one block, and whether each is operational. "Added" means created by this work: keep each add's response as you go, and leave out the ones that came with `ℹ … already had an entry (…); nothing changed.` on stderr, which were there before. Read `egress-firewall list` just before writing it, since an admin may have approved something while you worked; each waiting entry's `reason` in that read sorts it into the last three lines, which you leave out when empty:
+
+    ```md
+    ### Egress Firewall · team <name>
+
+    Connectors
+    - <connector name> (<connectorId>): approved, operational
+    - <connector name> (<connectorId>): waiting for approval; requests through it are blocked
+    Fetch API destinations
+    - <hostname>: approved, operational
+    - <hostname>: waiting for approval; `fetch` calls to it are blocked
+    You can approve these now: <waiting entries whose reason is AWAITING_APPROVAL>
+    A team admin has to approve these: <waiting entries whose reason is NOT_ADMIN>
+    These need room in the allowance first (<used> of <max> used): <waiting entries whose reason is ALLOWANCE_FULL>
+    Approve at Team Settings → Egress Firewall in the web app (Admin or Super Admin role).
+    ```
+
+    Leave the section out only on a private cloud instance where the firewall is off. Name any entry added only for a probe, since only the web app removes a Fetch API destination.
+- What still needs a human: authorizing each connector you left unauthorized, as one block per connector under Connector setup, registering each listener's webhook as one block per listener under Webhook handoff, setting a secret parameter, each Egress Firewall entry left waiting, the end-to-end test, enabling a trigger you left disabled, creating and deploying a release, deleting a one-off workspace. Give the exact command or URL for each.
 - Whether feedback was posted, and where the notes went if it was not. Only when `agenticFeedback` is on; when it is off this line does not exist.
 - A workspace the work created, named and linked, as the summary's last line, so the way in is what the user is left with. Nothing in the API carries that URL: build it from the ID `workspace create` returned and the ID of the environment the work landed in, as the web application's host for the instance plus `/workspace/<workspaceId>/environment/<environmentId>`, EU `https://app.eu.scriptrunnerconnect.com/workspace/<workspaceId>/environment/<environmentId>`, US `https://app.us.scriptrunnerconnect.com/workspace/<workspaceId>/environment/<environmentId>`, private cloud the base URL the user gave with the same path. The environment segment is required: a link without it does not open the workspace. More than one, one line each.
 - The workspace README beside that link, when the clone was kept: its path in the clone, `<clone>/README.md`, so the user can read what the workspace does without opening the web application. Link it where the harness renders a link to a local file, and open it directly where the harness can open one; a terminal-only harness prints the path and nothing else.
@@ -403,8 +468,8 @@ End every session with a summary in the conversation, whatever the ask type. The
 Start:
 
 1. `node --version`, `npx @sr-connect/cli@latest cli get-readme`.
-2. `auth status`, `cli settings --raw`, `team list`.
-3. Decide the harness branch. Open the feedback notes file if allowed.
+2. `auth status`, `cli settings --raw`, `team list`, `egress-firewall list --team <teamId>`.
+3. Decide the harness branch. Open the feedback notes file if allowed. Ask the Egress Firewall approval question with the others.
 4. Identify the ask type and the target environment.
 5. Decide where the clone lives, `workspace-lock take` and capture `lockId` when the shell does not persist, then `local-workspace clone`.
 
@@ -412,10 +477,11 @@ End:
 
 1. Throwaway scripts and probe payloads deleted, in the workspace and in the clone; triggers in the intended state; README updated.
 2. Release offered where there is more than one environment.
-3. `workspace-lock release`, with the captured `lockId` when the shell does not persist; without it the release finds no lock to let go of.
-4. `feedback post` with whatever accumulated since the last post, plus the two scores, then delete the file.
-5. One-off job: `workspace delete <ws> --team <teamId> --yes` after confirmation.
-6. The closing summary, in the conversation, ending with the link to any workspace the work created.
+3. `egress-firewall list`, and `egress-firewall check-api-connections` per environment the work touched, read again for the summary's Egress Firewall block.
+4. `workspace-lock release`, with the captured `lockId` when the shell does not persist; without it the release finds no lock to let go of.
+5. `feedback post` with whatever accumulated since the last post, plus the two scores, then delete the file.
+6. One-off job: `workspace delete <ws> --team <teamId> --yes` after confirmation.
+7. The closing summary, in the conversation, ending with the link to any workspace the work created.
 
 ## Verb map
 
@@ -426,6 +492,7 @@ End:
 | Environments           | `environment list/create/get/update/delete/target-release`, `environment-parameter list/create/update/delete`                                                        |
 | Connectors             | `connector list/get/create/update/delete`, `connector-sharing list/get/set/remove/list-assignable-users`                                                             |
 | API connections        | `api-connection create/list/get/update/delete`                                                                                                                       |
+| Egress Firewall        | `egress-firewall list/add-connector/add-fetch-destination/check-api-connections`; approve, reject and remove are the web app's alone                                 |
 | Listeners and payloads | `event-listener list/get/create/update/delete`, `event-listener-test-payload list/get/create/update/set-default/delete`, `event-queue list/get/create/update/delete` |
 | Schedules              | `scheduled-trigger create/list/get/update/delete`                                                                                                                    |
 | Scripts and runs       | `script create/update/list/get/delete/trigger/replay-invocation/abort-invocation`                                                                                    |
@@ -437,4 +504,4 @@ End:
 | Feedback               | `feedback post/post-crash-report`                                                                                                                                    |
 | CLI state              | `cli set-session/clear-session/list-api-logs/clear-api-logs/list-crash-reports/get-crash-report/clear-crash-reports`                                                 |
 
-Group aliases: `ac`, `con`, `cs`, `env`, `ep`, `el`, `tp`, `eq`, `lw`, `st`, `wl`.
+Group aliases: `ac`, `con`, `cs`, `ef`, `env`, `ep`, `el`, `tp`, `eq`, `lw`, `st`, `wl`.

@@ -34,19 +34,20 @@ Each invocation reports its own limits: `context.timeout` in milliseconds and `c
 | `setTimeout`, `clearTimeout`, `setInterval`, `clearInterval`                               | The invocation stays alive until timers fire or are cleared. Clear an interval before returning or the run times out.                                                                                  |
 | `ServiceError`                                                                             | Global. Thrown by the runtime and by managed APIs when a service call fails. Fields `errorCode?: number`, `service?: string`.                                                                          |
 | `AbortProcess`                                                                             | Global `Error` subclass. Thrown from a script it is an ordinary uncaught error.                                                                                                                        |
+| `AbortController`, `AbortSignal`                                                           | Stubs, so libraries that build a controller per request (`@anthropic-ai/sdk`) run. `abort()` sets `aborted` and `reason` and calls listeners. It cancels nothing, since `fetch()` ignores `signal`.    |
 | `Context`                                                                                  | Global type of the second entry-point argument.                                                                                                                                                        |
 
 ### Missing
 
-| Missing                                                                                         | Consequence                                                                                                         |
-| ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| `Buffer`, `node:*`, `fs`, `http`, `require`                                                     | Packages that touch Node APIs do not run. Use `@sr-connect/convert` for encodings.                                  |
-| `crypto.subtle.digest`, `encrypt`, `decrypt`                                                    | Hashing and JWT signing need `jose-browser-runtime`, not `jsonwebtoken`.                                            |
-| `fetch` with a `Request` object, `signal`, `redirect`, `credentials`, `mode`, `cache`           | Pass a URL string and `method`, `headers`, `body`, `agent` only.                                                    |
-| Streaming bodies                                                                                | The whole response is buffered before the promise resolves.                                                         |
-| WebSocket, streams, `structuredClone`, `queueMicrotask`, `AbortController`, `crypto.randomUUID` | Not available. `ulid` from the verified list covers IDs.                                                            |
-| `Intl.DateTimeFormat` `timeStyle`, and library additions after ES2020 in general                | `TypeError: Invalid option : option`. Pass explicit date parts; probe before relying on anything newer than ES2020. |
-| Unhandled rejection capture                                                                     | A rejection on a promise you did not await is lost silently. Await everything or attach `catch`.                    |
+| Missing                                                                               | Consequence                                                                                                         |
+| ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| `Buffer`, `node:*`, `fs`, `http`, `require`                                           | Packages that touch Node APIs do not run. Use `@sr-connect/convert` for encodings.                                  |
+| `crypto.subtle.digest`, `encrypt`, `decrypt`                                          | Hashing and JWT signing need `jose-browser-runtime`, not `jsonwebtoken`.                                            |
+| `fetch` with a `Request` object, `signal`, `redirect`, `credentials`, `mode`, `cache` | Pass a URL string and `method`, `headers`, `body`, `agent` only.                                                    |
+| Streaming bodies                                                                      | The whole response is buffered before the promise resolves.                                                         |
+| WebSocket, streams, `structuredClone`, `queueMicrotask`, `crypto.randomUUID`          | Not available. `ulid` from the verified list covers IDs.                                                            |
+| `Intl.DateTimeFormat` `timeStyle`, and library additions after ES2020 in general      | `TypeError: Invalid option : option`. Pass explicit date parts; probe before relying on anything newer than ES2020. |
+| Unhandled rejection capture                                                           | A rejection on a promise you did not await is lost silently. Await everything or attach `catch`.                    |
 
 ### Runtime V2
 
@@ -163,7 +164,7 @@ if (!response.ok) {
 const issue = await response.json()
 ```
 
-Global `fetch`, full URL, your own headers. Only when no connector exists, and even then prefer a Generic connector so the credential stays out of code.
+Global `fetch`, full URL, your own headers. Only when no connector exists, and even then prefer a Generic connector so the credential stays out of code. Every host it reaches needs its own Fetch API destination on the team's Egress Firewall, which a connector's entry does not cover; see Egress Firewall in `cli-workflow.md`.
 
 Before dropping a tier, look harder: read `node_modules/@managed-api/<service>-core/` and its README, try sibling groups such as `Issue`, `IssueAttachment` and `IssueComment`, the verb variants `get`, `create`, `update`, `delete`, `list`, `search`, and the `All` group that holds every method.
 
@@ -454,7 +455,8 @@ Encodings default to `utf8`; `utf-16le` and `base64url` are among the options. `
 - A non-2xx status does not reject; check `response.ok`. A network failure rejects with `ServiceError` whose `service` is `Fetch`.
 - The body can be read once. `response.json<J>()` takes a type parameter.
 - `Response.redirected` is always false, `url` empty, `type` `default`.
-- `Headers` is case-sensitive and response headers are lower-case, so read `response.headers.get('content-type')`.
+- `Headers` matches names case-insensitively, so `get('Content-Type')` and `get('content-type')` are the same entry. Response headers come back lower-case.
+- `signal` is not an option. An `AbortController` exists but cannot cancel a request. For a hard time limit, read `context.timeout` and stop issuing calls before it runs out.
 - `URL` properties are snapshots; mutating `searchParams` does not update `href`. Build the string and construct again.
 
 Request headers the platform understands:

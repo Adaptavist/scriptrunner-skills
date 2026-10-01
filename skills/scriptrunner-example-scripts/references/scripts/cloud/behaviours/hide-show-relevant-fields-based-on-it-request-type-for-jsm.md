@@ -9,8 +9,8 @@
 
 ## Overview
 
-This script reads the Request Type field on a Jira Service Management portal and shows or hides relevant fields depending on the selected option.
-It also marks those fields as required and auto-populates the Summary with the current user's name and the selected values.
+This script retrieves the current Jira Service Management request type via the API and uses it to show or hide relevant fields on the portal form.
+It also marks those fields as required and auto-populates the Summary with the current user's name and the selected field values.
 
 ## Example
 
@@ -18,55 +18,63 @@ Show relevant fields and auto-fill the summary based on the selected IT request 
 
 ## Good to Know
 
+* This script gets the request type from the Jira Service Management API, not from a custom field.
 * Ensure the fields on which you want to apply this script are present on the screen.
 * Replace the custom field IDs in the script with the ones from your Jira instance.
+* If your logic depends on request type names, updating those names in Jira will require updating the script as well.
 
 ## Script
 
 ```typescript
 // Get IT Request Type
-const itRequestType = getFieldById("customfield_12732");
-const itRequestTypeValue = itRequestType.getValue().value;
+const context = await getContext()
+const serviceDeskId = context.extension.portal.id
+const reqTypeId = context.extension.request.typeId
 
-// Fields to hide, show or mark as required
-const newSoftwareNameVersion = getFieldById("customfield_12733");
-const hardwareProblemDescription = getFieldById("customfield_12734");
-const requestedNewSoftwareMultiSelect = getFieldById("customfield_12735");
-const systemsToAccessMultiSelect = getFieldById("customfield_12736");
+const response = await makeRequest(`/rest/servicedeskapi/servicedesk/${serviceDeskId}/requesttype/${reqTypeId}`);
 
-const isNewSoftwareRequest = itRequestTypeValue === 'New Software';
-const isHardwareRequest = itRequestTypeValue === 'Hardware Issue';
-const isAccessRequest = itRequestTypeValue === 'Access Request';
+if (!response || response.status !== 200 || !response.body?.name) {
+    logger.error(`Failed to retrieve request type. Status: ${response?.status}, Body: ${JSON.stringify(response?.body)}`);
+}
 
-logger.info(itRequestType + ' selected, filtering relevant fields');
+const itRequestTypeValue = response.body.name
 
-newSoftwareNameVersion.setVisible(isNewSoftwareRequest);
-newSoftwareNameVersion.setRequired(isNewSoftwareRequest);
-requestedNewSoftwareMultiSelect.setVisible(isNewSoftwareRequest);
-requestedNewSoftwareMultiSelect.setRequired(isNewSoftwareRequest);
+// Fields to hide, show or mark as required (fill in with your own custom fields)
+const affectedHardware = getFieldById("customfield_10083");
+const requestedNewSoftwareSingleSelect = getFieldById("customfield_10157");
+const systemsToAccessSingleSelect = getFieldById("customfield_10158");
 
-hardwareProblemDescription.setVisible(isHardwareRequest);
-hardwareProblemDescription.setRequired(isHardwareRequest);
-systemsToAccessMultiSelect.setVisible(isAccessRequest);
-systemsToAccessMultiSelect.setRequired(isAccessRequest);
+const isNewSoftwareRequest = itRequestTypeValue === 'Request new software';
+const isHardwareRequest = itRequestTypeValue === 'Report broken hardware';
+const isAccessRequest = itRequestTypeValue === 'Request admin access';
+
+logger.info(itRequestTypeValue + ' selected, filtering relevant fields');
+
+requestedNewSoftwareSingleSelect.setVisible(isNewSoftwareRequest);
+requestedNewSoftwareSingleSelect.setRequired(isNewSoftwareRequest);
+
+affectedHardware.setVisible(isHardwareRequest);
+affectedHardware.setRequired(isHardwareRequest);
+
+systemsToAccessSingleSelect.setVisible(isAccessRequest);
+systemsToAccessSingleSelect.setRequired(isAccessRequest);
 
 //Auto-populate the summary
 const summary = getFieldById("summary");
 const user = await makeRequest("/rest/api/2/myself");
 const { displayName } = user.body;
 
-if (isNewSoftwareRequest && newSoftwareNameVersion.getValue()) {
-    summary.setValue("New software request from " + displayName + " for " + newSoftwareNameVersion.getValue());
+if (isNewSoftwareRequest && requestedNewSoftwareSingleSelect.getValue()) {
+    summary.setValue("New software request from " + displayName + " for " + requestedNewSoftwareSingleSelect.getValue().value);
     summary.setReadOnly(true)
-} else if (isHardwareRequest && hardwareProblemDescription.getValue()) {
-    summary.setValue("Hardware issue reported by " + displayName + " for " + hardwareProblemDescription.getValue());
+} else if (isHardwareRequest && affectedHardware.getValue()) {
+    summary.setValue("Hardware issue reported by " + displayName + " for " + affectedHardware.getValue());
     summary.setReadOnly(true)
-} else if (isAccessRequest && systemsToAccessMultiSelect.getValue().length > 0) {
-    summary.setValue("Software access requested by " + displayName + " for " + systemsToAccessMultiSelect.getValue().map(i => i.value).join(","));
+} else if (isAccessRequest && systemsToAccessSingleSelect.getValue()) {
+    summary.setValue("Software access requested by " + displayName + " for " + systemsToAccessSingleSelect.getValue().value);
     summary.setReadOnly(true)
 } else {
     summary.setReadOnly(false)
-    summary.setValue("")
 }
 ```
 

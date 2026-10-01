@@ -31,7 +31,7 @@
     "fileName": "jira-cloud-platform-v3-openapi.json",
     "operationCount": 620,
     "pathPrefix": "/rest/api/3/",
-    "schemaCount": 977,
+    "schemaCount": 978,
     "sourceUrl": "https://dac-static.atlassian.com/cloud/jira/platform/swagger-v3.v3.json",
     "title": "Jira Cloud platform REST API v3"
   },

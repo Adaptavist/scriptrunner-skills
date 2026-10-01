@@ -28,7 +28,7 @@
   - Product: Jira Cloud platform REST API v3
   - Common paths: `/rest/api/3/...`
   - Operations: 620
-  - Schemas: 977
+  - Schemas: 978
   - Source: https://dac-static.atlassian.com/cloud/jira/platform/swagger-v3.v3.json
   - Summary: Jira Cloud platform REST API v3 for core Jira resources such as issues, projects, users, workflows, fields, permissions, and dashboards.
 

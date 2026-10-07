@@ -38,7 +38,7 @@
   {
     "description": "Jira Service Management Cloud REST APIs for service desks, requests, queues, approvals, SLAs, and organizations.",
     "fileName": "jira-service-management-cloud-openapi.json",
-    "operationCount": 76,
+    "operationCount": 75,
     "pathPrefix": "/rest/servicedeskapi/",
     "schemaCount": 117,
     "sourceUrl": "https://dac-static.atlassian.com/cloud/jira/service-desk/swagger.v3.json",

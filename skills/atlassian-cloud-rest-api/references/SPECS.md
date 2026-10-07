@@ -35,7 +35,7 @@
 - `references/specs/jira-service-management-cloud-openapi.json`
   - Product: Jira Service Management Cloud REST API
   - Common paths: `/rest/servicedeskapi/...`
-  - Operations: 76
+  - Operations: 75
   - Schemas: 117
   - Source: https://dac-static.atlassian.com/cloud/jira/service-desk/swagger.v3.json
   - Summary: Jira Service Management Cloud REST APIs for service desks, requests, queues, approvals, SLAs, and organizations.

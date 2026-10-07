@@ -1,6 +1,6 @@
 # Jira Cloud
 
-Authorized in a browser through OAuth 2.0, with a choice between the platform's own OAuth app and one the user creates. Snapshot 2026-09-15 from the web application's authorization wizard, cross-checked the same day against https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/ and https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/. Jira Service Management Cloud and Confluence Cloud use the same wizard and have their own files, which differ from this one in a few lines.
+Authorized in a browser through OAuth 2.0, with a choice between the platform's own OAuth app and one the user creates. Snapshot 2026-09-15 from the web application's authorization wizard, rechecked 2026-10-07 against the wizard's source after a change that aligned its steps with the Developer Console, and cross-checked on 2026-09-15 against https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/ and https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/. Jira Service Management Cloud and Confluence Cloud use the same wizard and have their own files, which differ from this one in a few lines.
 
 ## Before you hand over
 
@@ -10,9 +10,9 @@ Authorized in a browser through OAuth 2.0, with a choice between the platform's 
 
 The wizard is titled "Authorize connector". It asks about the account and the method before any credential.
 
-Account type: "My Atlassian account" or "Service user". A service user takes a "Service user email"; the wizard's help says "Service users distinguish authorised connectors from those using personal accounts." Recommend a service user for anything that will run in production, so the integration does not stop when a person leaves.
+Account type, under the sub-heading "Choose a default Atlassian account or a service user for security and access control.": "My Atlassian account" or "Service user". A service user takes a "Service user email"; the wizard's help says "Service users distinguish authorised connectors from those using personal accounts." Recommend a service user for anything that will run in production, so the integration does not stop when a person leaves.
 
-A service user here is an ordinary Jira Cloud user account that belongs to no particular person and outlives whoever set it up. It is **not** Atlassian's "service accounts" feature, which is a different thing managed in Atlassian Administration and cannot run this wizard; that one has its own route through a Generic connector, below. The wizard authorizes a service user exactly as it authorizes a personal account — somebody signs in as it.
+A service user here is an ordinary Jira Cloud user account that belongs to no particular person and outlives whoever set it up. The wizard says so itself: "Service users are regular Atlassian accounts. These are not Atlassian's service accounts", linking Atlassian's page on that feature. Atlassian's service accounts are managed in Atlassian Administration and cannot run this wizard; they have their own route through a Generic connector, below. The wizard authorizes a service user exactly as it authorizes a personal account, by somebody signing in as it. Its alert on the option says "Ensure you are logged into your service user before enabling this option", so tell the user to sign in to Atlassian as the service user in that browser before "Authorize app". The connector acts as whichever account signs in on Atlassian's consent window.
 
 Authorization method, one of:
 
@@ -35,18 +35,18 @@ Self-managed, when the user has no app yet. The wizard's sections are collapsibl
 
 1. "Visit the Atlassian Developer Console." https://developer.atlassian.com/console/myapps/
 2. "Click on the Create dropdown and select OAuth 2.0 integration."
-3. "Specify a name for your app and agree to Atlassian's developer terms."
+3. "Specify a name for your app, choose an access type and agree to Atlassian's developer terms." The wizard does not say which access type to pick.
 4. "Click Create."
 
 "Distribution", for an app other people in the site will authorize through:
 
-5. Open "Distribution" in the app's left menu, "Edit".
-6. Under "Distribution Status" select "Sharing".
+5. "On the left-hand side, click on Distribution."
+6. "Click Edit, then select Sharing under Distribution Status." "Sharing" is a radio button.
 7. "Complete the form and click Save changes."
 
 "Permissions":
 
-8. Open "Permissions", "Add" next to "Jira API" (and any other API the integration needs).
+8. "On the left-hand side, click on Permissions." There, "Add" next to "Jira API" and any other API the integration needs.
 9. "Add necessary scopes (max 41 scopes, avoid mixing classical and granular scopes)."
 
 "Authorization":
@@ -57,11 +57,15 @@ Self-managed, when the user has no app yet. The wizard's sections are collapsibl
 
 "Credentials":
 
-13. Still under "Authorization", find the "Authorization URL generator" and copy the "Jira Cloud API Authorization URL" into the wizard's "Authorization URL".
-14. Open "Settings", copy "Client ID" and "Secret" into the wizard.
-15. "Authorize app".
+13. "On the Authorization page, identify the Jira Cloud API Authorization URL generated under the Authorization URL generator."
+14. Copy it into the wizard's "Authorization URL".
+15. "On the left-hand side, click on Settings."
+16. Copy "Client ID" into the wizard.
+17. Copy "Secret" into the wizard.
 
-When the user already has an app, the wizard's "My apps" variant skips steps 1 to 4: "Select your chosen app from the list in My apps.", then Permissions, Authorization, Credentials as above.
+Then "Authorize app", which is a button rather than a numbered step.
+
+When the user already has an app, the wizard's "My apps" variant drops "Create app" and "Distribution" and renumbers: 1 "Visit the Atlassian Developer Console.", 2 "Select your chosen app from the list in My apps.", then Permissions 3 to 4, Authorization 5 to 7 and Credentials 8 to 12 as above. Its step 6 reads "Click Add (or Configure) next to the OAuth 2.0 (3LO) authorization type", since the console shows "Configure" once the app has a callback.
 
 ## After the callback
 
@@ -83,8 +87,8 @@ The platform keeps the OAuth refresh token for 88 days of inactivity and Atlassi
 
 ## Known differences from the wizard
 
-- The wizard's "Authorization" section says "Click Add next to the OAuth 2.0 (3LO) authorization type"; Atlassian's current console labels the button "Configure" once a callback exists. Same place either way.
-- The wizard says "Distribution Status" then "Sharing"; Atlassian's documentation describes an "Enable sharing" toggle. Follow the console.
+- The wizard's step 9 caps scopes at 41 ("max 41 scopes, avoid mixing classical and granular scopes"). That is deliberate and lower than Atlassian's own limit: an app with 49 scopes failed to connect. Keep a self-managed app at 41 or fewer.
+- Atlassian's documentation describes an "Enable sharing" toggle; the console and the wizard have a "Sharing" radio button under "Distribution Status". Follow the console.
 - Atlassian documents the refresh token's inactivity expiry as 90 days; the platform re-authorizes a little earlier, at 88.
 - The wizard's own timing chips, "Less than 1 minute" and "10 minutes +", are estimates; the self-managed path took longer than that in every review where someone had to create the app and wait for it.
 

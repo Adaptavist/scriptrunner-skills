@@ -1,6 +1,6 @@
 # Jira Service Management Cloud
 
-Authorized in a browser through OAuth 2.0, with a choice between the platform's own OAuth app and one the user creates. Snapshot 2026-09-15 from the web application's authorization wizard, cross-checked the same day against https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/ and https://docs.adaptavist.com/src/latest/connectors/create-a-jsm-cloud-connector. The wizard is Jira Cloud's with a few lines changed; `jira-cloud.md` is the full text, and this file lists what differs.
+Authorized in a browser through OAuth 2.0, with a choice between the platform's own OAuth app and one the user creates. Snapshot 2026-09-15 from the web application's authorization wizard, rechecked 2026-10-07 against the wizard's source, and cross-checked on 2026-09-15 against https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/ and https://docs.adaptavist.com/src/latest/connectors/create-a-jsm-cloud-connector. The wizard is Jira Cloud's with a few lines changed; `jira-cloud.md` is the full text, and this file lists what differs.
 
 ## Before you hand over
 
@@ -12,7 +12,7 @@ Account type ("My Atlassian account" / "Service user"), then "ScriptRunner Conne
 
 ## Steps
 
-As Jira Cloud, with these differences. In the console, under "Permissions", the API to add is "Jira Service Management API" beside or instead of "Jira API", depending on which endpoints the integration calls. Under "Credentials" the wizard asks for the "JSM Cloud API Authorization URL" from the "Authorization URL generator"; the generator offers one URL per API, and the one pasted must carry the scopes the connector will use.
+As Jira Cloud, with the same step numbers and the same wording for the access type, "Sharing" and "Add (or Configure)" steps, and with these differences. In the console, under "Permissions", the API to add is "Jira Service Management API" beside or instead of "Jira API", depending on which endpoints the integration calls. Under "Credentials" the wizard asks for the "JSM Cloud API Authorization URL" from the "Authorization URL generator"; the generator offers one URL per API, and the one pasted must carry the scopes the connector will use.
 
 The public documentation's version of the steps, at the URL above, adds "Select your desired option for the Authorize for site dropdown, review the permissions, then click Accept" for the consent window, and "Reselect the site in the dropdown and confirm" for the step below.
 

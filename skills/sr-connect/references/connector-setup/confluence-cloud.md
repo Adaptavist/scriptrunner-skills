@@ -1,6 +1,6 @@
 # Confluence Cloud
 
-Authorized in a browser through OAuth 2.0, with a choice between the platform's own OAuth app and one the user creates. Snapshot 2026-09-15 from the web application's authorization wizard, cross-checked the same day against https://developer.atlassian.com/cloud/confluence/oauth-2-3lo-apps/ and https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/. The wizard is Jira Cloud's with a few lines changed; `jira-cloud.md` is the full text, and this file lists what differs. Confluence Cloud has no event listener type; the connector is for API connections only, and events reach the platform through a Generic listener as `references/event-listener-setup/generic.md` describes.
+Authorized in a browser through OAuth 2.0, with a choice between the platform's own OAuth app and one the user creates. Snapshot 2026-09-15 from the web application's authorization wizard, rechecked 2026-10-07 against the wizard's source, and cross-checked on 2026-09-15 against https://developer.atlassian.com/cloud/confluence/oauth-2-3lo-apps/ and https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/. The wizard is Jira Cloud's with a few lines changed; `jira-cloud.md` is the full text, and this file lists what differs. Confluence Cloud has no event listener type; the connector is for API connections only, and events reach the platform through a Generic listener as `references/event-listener-setup/generic.md` describes.
 
 ## Before you hand over
 
@@ -8,11 +8,11 @@ Authorized in a browser through OAuth 2.0, with a choice between the platform's 
 
 ## Methods the wizard offers
 
-Account type first; this wizard's sub-heading reads "Choose the default Atlassian account or a service user for security and access control." Then "ScriptRunner Connect OAuth 2.0 app" (default, "Less than 1 minute") or "Self-managed OAuth 2.0 app" ("10 minutes +"), whose description ends "Use this option with granular scopes for Confluence Cloud API V2." That line is the policy for this app: the v2 API and its granular scopes want the self-managed app; the v1 API with classical scopes works with the platform's app. Recommend self-managed whenever the API connection will use the v2 package.
+Account type first; this wizard's sub-heading reads "Choose the default Atlassian account or a service user for security and access control." The rest of the account type screen matches Jira Cloud's, including the note that service users are not Atlassian's service accounts and the alert to be signed in as the service user first. Then "ScriptRunner Connect OAuth 2.0 app" (default, "Less than 1 minute") or "Self-managed OAuth 2.0 app" ("10 minutes +"), whose description ends "Use this option with granular scopes for Confluence Cloud API V2." That line is the policy for this app: the v2 API and its granular scopes want the self-managed app; the v1 API with classical scopes works with the platform's app. Recommend self-managed whenever the API connection will use the v2 package.
 
 ## Steps
 
-As Jira Cloud, with these differences. The wizard's "Create app" section has no "Create dropdown" step; it goes from "Visit the Atlassian Developer Console." to "Specify a name for your app and agree to Atlassian's developer terms." In the console the "Create" dropdown is still where "OAuth 2.0 integration" lives, so the step is missing rather than wrong. Under "Permissions" the API to add is "Confluence API". Under "Credentials" the wizard asks for the "Confluence Cloud API Authorization URL" from the "Authorization URL generator".
+As Jira Cloud, with the same step numbers, and with these differences. Under "Permissions" the API to add is "Confluence API". Under "Credentials" the wizard asks for the "Confluence Cloud API Authorization URL" from the "Authorization URL generator".
 
 ## After the callback
 
@@ -28,7 +28,7 @@ As Jira Cloud: 88 days of inactivity on the refresh token, then "Reauthorize" at
 
 ## Known differences from the wizard
 
-Those listed in `jira-cloud.md`, plus the missing "Create dropdown" step above.
+Those listed in `jira-cloud.md`, plus one in this wizard alone. If the user picks "Service user", types an email, continues, goes back and switches to "My Atlassian account", the wizard keeps the service user's email and saves it on the connector. Jira Cloud's and Jira Service Management Cloud's wizards clear it. The connector still acts as whoever signs in on the consent window, but the web application will show the service user's email for it. When that happens, close the wizard and start it again rather than going back.
 
 ## Verify before trusting
 

@@ -9,11 +9,12 @@ Read `references/scripting.md` before writing or editing a script. Read `referen
 - Pass `--agent --raw` on every call, or export `SR_CONNECT_CLI_AGENT=1` and `SR_CONNECT_CLI_RAW=1` once. `--agent` turns every question into exit 2 and tells the API an agent is driving; `--raw` gives one JSON document on stdout and a JSON error envelope on failure. Two verbs read better without it, `log list-console-logs` and `log list-http-logs`, whose stored files are mostly wrapper; the CLI README names them and any others.
 - Those two flags are for your own calls only. A command you hand the user to run themselves carries neither `--agent` nor `--raw`, so the CLI can ask them questions and print for a person. Strip them from every example in this skill before quoting it, including the `auth login` line, and never tell them to export the two environment variables.
 - Read the exit code before the output. 0 ok. 1 the API or the run failed. 2 usage or a missing value. 3 not authenticated. 4 not found or an empty lookup. 130 cancelled.
-- Run `--explain` on a verb before the first call to it. A body key is often a flag under another spelling and the rules say which.
+- Run `--explain` on a verb before the first call to it. A body key is often a flag under another spelling and the rules say which. A flag marked `(switch)` there takes no value: `--required`, never `--required true`; the opposite is its pair, `--optional`, `--enabled`, `--unmasked`, where one exists.
+- One CLI call per line, or loop over an array. zsh does not split an unquoted `$v`, so `for v in "event-listener create"; do sr-connect $v --explain; done` passes the two words as one argument.
 - **Never read environment parameter values.** `environment-parameter list` returns them, and a parameter that is not a PASSWORD can still hold a secret: a TEXT created with `--masked`, a token in a MULTILINE_TEXT, a key inside a MAP. You have no business seeing those, and a secret you read once is in the transcript for good. To learn what parameters exist, clone the workspace and read `ev-params.ts`. It lists every parameter with its description, type and whether it is required, and no values. That is enough to write and debug scripts. If a task truly cannot go ahead without a value, ask the user for explicit permission first, name the parameter and say why you need it, and read nothing until they say yes. Permission covers that request only; it does not carry over to other parameters or later calls.
 - Credentials never ride in argv. `auth login --credentials-stdin`, or `SR_CONNECT_CLI_USERNAME` and `SR_CONNECT_CLI_PASSWORD`. Never print a key into a log, a message or a file you keep.
 - Destructive verbs need `--yes`. Before passing it, confirm the intent with the user unless the ask left no room for doubt.
-- Scope is `--team`, `-w`, `-e`, or the env vars `SR_CONNECT_CLI_TEAM`, `SR_CONNECT_CLI_WORKSPACE`, `SR_CONNECT_CLI_ENVIRONMENT`. Inside a cloned workspace directory, `workspace.json` supplies all three. Session defaults from `cli set-session` are read too.
+- Scope is `--team`, `-w`, `-e`, or the env vars `SR_CONNECT_CLI_TEAM`, `SR_CONNECT_CLI_WORKSPACE`, `SR_CONNECT_CLI_ENVIRONMENT`. Inside a cloned workspace directory, `workspace.json` supplies all three, to every verb but a destructive one under `--agent`: a delete takes no default from `workspace.json` or the session record when nobody can be asked about it, so pass `-w` and `-e`, and `--team` where the verb takes it, or the env vars. Session defaults from `cli set-session` are read too, with the same exception.
 - Cache `app list` for the session. Every event listener, API connection and connector verb takes IDs from it.
 - If the clone carries an `AGENTS.md` or `CLAUDE.md`, read it. It wins on that project's own conventions: naming, code structure, review rules, which files may be touched. It also wins on permission. Anything it forbids or restricts, a deployment, an environment, a resource it says not to touch, stands, and this skill never authorises what that document refuses. What it does not settle is mechanics: where it describes how to create, configure or deploy workspace resources, or how to move scripts between the workspace and disk, the verb to use is this skill's and the CLI's. Where the two disagree on something that changes what you would do, stop and ask the user which applies rather than picking one.
 
@@ -43,11 +44,11 @@ Use `--instance us` or `--instance <baseUrl>` as appropriate. The login asks whe
 
 ## Harness branches
 
-Four things differ by what you can do. Decide once at the start of the session and apply the same answer each time.
+Some things differ by what you can do. Decide once at the start of the session and apply the same answer each time.
 
 - You can drive a browser: offer to log in, to authorize a connector and to register a webhook with the user watching. Ask which browser or profile to drive, since the one where they are already signed in to the platform and the vendor saves a login and a consent screen. They still sign in and hold the permissions. For a connector, warn first that the consent window is closed after 100 seconds and that Jira Cloud, Jira Service Management Cloud and Confluence Cloud end with a site confirmation in the tab that started the flow; see Connector setup.
-- Your shell does not outlive one command, which is the case in Claude Code and most agent harnesses: the CLI's session record dies with each shell, so a lock it took is forgotten by the next call. Test it rather than assume it, with the two-take check under The lock, and when the shell forgets, carry the lock ID yourself through `SR_CONNECT_CLI_LOCK_ID`.
 - You cannot: hand the user the exact command or URL and wait. For a connector that is `authorizationUrl` in the document `connector create` and `connector get` return; for an event listener it is `setupUrl` with instructions and `webhookUrl` to register.
+- Whatever the harness, the CLI's session record, where it keeps a lock and scope defaults, is keyed to a terminal, not to your task. An agent's call may inherit the human's terminal record, or have no terminal and no record at all, and nothing you can test tells you which. So carry the lock ID yourself on every call through `SR_CONNECT_CLI_LOCK_ID`; see The lock.
 
 ## Feedback
 
@@ -59,7 +60,7 @@ When `agenticFeedback` is enabled, keep a markdown file of notes in your scratch
 - Runtime library gaps: an API missing from the runtime or from the record storage, convert or trigger packages.
 - Managed API gaps: a method missing, wrong, broken or out of date.
 - Event type gaps: a field missing, wrong or stale, above all when a test payload did not match the real event once tested end to end or probed.
-- Third-party app behaviour you could not know from public knowledge and had to find out the hard way. General quirks only, never the user's business logic.
+- Third-party app behaviour you could not know from public knowledge and had to find out the hard way. General quirks only, never the user's business logic. Name the product, so the note can land in its file under `references/product-gotchas/`, and say when that file already said otherwise.
 - Package outcomes: not every NPM package bundles or runs in the runtime. Name the ones you tried that failed and the one that worked.
 - Contradictions with this skill: anything it told you that reality disagreed with.
 - Setup instruction drift: an app file under `references/event-listener-setup/` or `references/connector-setup/`, the web application's dialog or the vendor's own console disagreeing with each other. Quote both sides and the file's snapshot date.
@@ -79,29 +80,26 @@ Then delete the notes file, and start a fresh one if the work carries on. If the
 
 ### The lock
 
-Take the lock before working on a workspace and release it when you are done, even though every write takes one on its own:
+Take the lock before working on a workspace and release it when you are done, even though every write takes one on its own. `workspace-lock take --raw` answers with `lockId`, and no read reports it later, so capture it from that one document and present it on every later call, writes, renewals and the release alike:
 
 ```sh
 npx @sr-connect/cli workspace-lock take -w <workspaceId> --agent --raw
-npx @sr-connect/cli workspace-lock release -w <workspaceId> --agent --raw
-```
-
-The CLI remembers the lock in a session record keyed to the shell that took it, and every later write in that shell renews it. That record is gone when each command runs in a fresh shell, which is how Claude Code's Bash tool and most agent harnesses work. The next write then finds no lock, takes one of its own, and the API refuses it with `WORKSPACE_LOCKED` and a hint that the holder is another session of yours, taken through the API. That is you colliding with yourself, not a stale lock.
-
-Find out which case you are in with the first lock of the session. `workspace-lock take --raw` answers with `lockId`, and no read reports it later, so capture it from that one document. Then, as a separate tool call, run the same `workspace-lock take` again. Exit 0 means the shell remembered the lock and renewed it: state persists, and nothing below applies. Exit 1 `WORKSPACE_LOCKED` naming another session of yours means the shell forgot: keep the ID yourself for the rest of the session. Put it in front of every later call, renewals and the release included:
-
-```sh
 SR_CONNECT_CLI_LOCK_ID=<lockId> npx @sr-connect/cli script update -w <workspaceId> ... --agent --raw
 SR_CONNECT_CLI_LOCK_ID=<lockId> npx @sr-connect/cli workspace-lock release -w <workspaceId> --agent --raw
 ```
 
-`--lock-id <lockId>` on the call does the same. Keep the ID in your scratchpad notes for the session, never in the clone or the user's repository, and do not print it in the closing summary. A lock belongs to the account that took it, so the ID is useless to anyone else and there is nothing to hand over. If you lose it, take the lock again with `--force`, which the next rule allows when the holder is you, and capture the new `lockId`.
+`--lock-id <lockId>` on the call does the same. Do this whatever your shell seems to remember. The CLI keeps a lock in a session record keyed to the terminal, not to your task: a call from an agent harness may share the human's terminal record, or run with no terminal and keep no record, in which case the CLI warns that the lock was not stored. A second `workspace-lock take` that exits 0 proves nothing either way, so do not test for it. Without the ID, the next write takes a lock of its own, and the API refuses it with `WORKSPACE_LOCKED` and a hint that the holder is another session of yours: you colliding with yourself, not a stale lock.
+
+Keep the ID in your scratchpad notes for the session, never in the clone or the user's repository, and do not print it in the closing summary. A lock belongs to the account that took it, so the ID is useless to anyone else and there is nothing to hand over. If you lose it, take the lock again with `--force`, which the rules below allow when the holder is you, and capture the new `lockId`.
+
+The lock lapses about 15 minutes after the last write that carried it. Reads do not renew it, so a long stretch of `list`, `get`, log reading or local editing lets it run out; `workspace-lock check` shows `expiresAt`. A lapsed lock is not lost: the next write presenting the same ID takes it back without a word, unless somebody else took the workspace in between.
 
 Rules:
 
 - At the start, run `workspace-lock check -w <workspaceId>`. Nobody holding it is exit 4 `NO_WORKSPACE_LOCK`, which is the answer you want. A holder is exit 0 with their name and how they took it; if it is not you, name them and ask the user whether it is safe to take the lock with `--force`.
+- A holder that is you in the web application means the user has the workspace open in a browser tab. Ask them to save their work and close the workspace there, then take the lock. `--force` instead only with their say-so: the tab loses any change it has not saved.
 - Mid-session, if a write is refused with `WORKSPACE_LOCKED` and the holder is someone else, stop and ask before forcing.
-- If the holder is you, which the refusal states as another session of yours, first check whether you dropped the ID: present the `lockId` you captured and retry. Only when you have no ID take it back with `--force`, without asking, and capture the new one.
+- If the holder is you through the API, which the refusal states as another session of yours, first check whether you dropped the ID: present the `lockId` you captured and retry. Only when you have no ID take it back with `--force`, without asking, and capture the new one.
 - After re-taking a lock while working from a clone, run `local-workspace clone --force` in the clone directory before touching files. Update mode rewrites workspace content and keeps your scaffolding. Something may have changed while you did not hold the lock. `--force` is for a directory that is already a clone of the same workspace; a directory holding a clone of another workspace keeps that workspace's scripts and would push them into this one, so delete it and clone fresh.
 - `--no-lock` writes past whoever holds the lock. Never use it to get around a conflict.
 
@@ -136,7 +134,7 @@ npx @sr-connect/cli script trigger -w <ws> -e <env> <scriptId> --stream-logs --a
 npx @sr-connect/cli script delete -w <ws> -e <env> <scriptId> --yes --agent --raw
 ```
 
-`--file` takes the source from disk, `--content` inline. Standing in the clone, the create writes `scripts/Probe.ts` for you and the delete removes it, which is why a probe may run in the clone that will become the final copy; see Where the clone lives.
+`--file` takes the source from disk, `--content` inline. `script trigger` and `script delete` take the script's ID, never its name: read `id` from the `script create` document, or the ID column of `script list`. Standing in the clone, the create writes `scripts/Probe.ts` for you and the delete removes it, which is why a probe may run in the clone that will become the final copy; see Where the clone lives.
 
 ### Simulation loop
 
@@ -181,7 +179,7 @@ Create the workspace:
 2. Rename the default environment to match what it targets: `environment update`.
 3. Start from the safest environment. Add the others once the work is confirmed, unless the user asks for them up front. Each environment you add gets every listener with no URL: `event-listener get -e <newEnv> <id>` reports `urlPath` and `webhookUrl` as null while `disabled` is false, and `event-listener list` and `environment list` say nothing. Fix it per listener before calling the environment ready. A generic listener takes `event-listener update -e <env> <id> --url-path <path>`; `--url-path` is refused for any other type. For those, any update touching the listener in that environment generates a path when it had none, so a no-op such as `--disabled false` echoing the current state is enough. A connector is not part of that: most listener types take none, and `event-listener get` reports `connectionRequired` for the ones that do. Attach one all the same when the team already has an authorized connector for the app, `--connector-id` with the environment's connector, because the handoff block's deep link is built on that connector's `baseUrl` and the setup instructions are better for it. No connector for the app means no connector on the listener, not a new connector. The new `webhookUrl` is not HEAD's, so the app-side webhook is registered again; give a handoff block per listener per environment.
 4. Set up API connections: `api-connection create`, which is workspace-scoped, then attach the connector per environment with `api-connection update`. Attaching adds the connector to the Egress Firewall; add `--request-approval` when the user declined auto-approval, and read `egressFirewall.state`. Add a Fetch API destination for every host a script calls with raw `fetch`. See Egress Firewall below.
-5. Parameters: `environment-parameter create`. Parametrize everything configurable. Never hardcode configuration, and never hardcode a credential. Mark values the user must supply as required. Requiredness is documentation and a web-app save check, not a runtime guarantee: every parameter is declared optional in `ev-params.ts`, `GREETING?: string`, so under ts-strict the code checks each one is present before using it. Default values seed new environments and copies; the value itself does not carry over. Secrets: recommend the user sets those values themselves and give them the exact `environment-parameter create` or `update` command with a placeholder where the value goes. If they insist you do it, take the value through `--input <file>`, never on argv, and delete the file after.
+5. Parameters: `environment-parameter create`. Parametrize everything configurable. Never hardcode configuration, and never hardcode a credential. Mark values the user must supply as required. Requiredness is documentation and a web-app save check, not a runtime guarantee: every parameter is declared optional in `ev-params.ts`, `GREETING?: string`, so under ts-strict the code checks each one is present before using it. Default values seed new environments and copies; the value itself does not carry over. Secrets: recommend the user sets those values themselves and give them the exact `environment-parameter create` or `update` command with a placeholder where the value goes. For an existing parameter, `environment-parameter update -w <ws> -e <env>` with no parameter ID and no value: on their terminal the CLI asks which parameter and then each field, the value included, so the secret never reaches argv and you never had to list the parameters. The update needs no `--key`: on flags it reads the parameter first and carries every field you leave out forward, key included; only an `--input` body replaces the whole parameter. When you created the parameter yourself, its ID is in the `environment-parameter create` document; never run `environment-parameter list` to find one. If the user insists you set a secret, take the value through `--input <file>`, never on argv, and delete the file after.
 6. Clone: `local-workspace clone <dir> --team <teamId> -w <ws> -e <env>`, into the working directory or a scratch directory as decided under Where the clone lives. Then install dependencies. Prefer pnpm when installed; ask whether to install it, and fall back to NPM if not allowed. Run the clone's `lint:fix`, then `lint` for what it could not fix, and `typecheck` before a push.
 7. Switch an existing workspace to `ts-strict` with `workspace update --language ts-strict`. Fix the errors the switch surfaces before adding anything.
 8. Packages. In a workspace you created this session, skip the version check: every package arrives at the version current when it was added, so there is nothing to upgrade. A package you added at an older version on purpose, one the verified table in `references/scripting.md` pins, stays where you put it, and goes into the README under Pinned packages with the version and the reason, so the next reader has something to check `package list` against. In an existing workspace, `package list`, then hold each version against two lists, the README's Pinned packages section and the verified table: a version either one names is deliberate and stays. For the rest, `package list-npm-versions <name>`; when a newer stable version exists, ask whether to upgrade, and recommend it. A package sitting behind latest that neither list explains may still be pinned for a reason nobody wrote down, so say what you found and let the user decide, and never upgrade one on your own. Whatever they decide to keep pinned, write into the README's Pinned packages section before you finish. Add with `package add`; add `@types/<name>` beside a package not written in TypeScript. Never edit the `dependencies` section of `package.json` in the clone; `devDependencies` and the rest are yours for local tooling. Standing in the clone, the CLI regenerates the dependencies after a package change; run the install again. A package change recompiles on the next push.
@@ -203,9 +201,10 @@ Scripts beyond the listener entry points: `script create`, `script update --name
 Iteration:
 
 1. Edit under `scripts/` in the clone. Read `references/scripting.md` first.
-2. `local-workspace push`. It sends every changed script at once; do not use `script update` for content. TypeScript diagnostics are reported and do not fail the push. The default mode compiles and bundles inside the request, which the API cuts off at 25 seconds: a push that runs past it is exit 1 `PUSH_OUTCOME_UNKNOWN` with the checksums untouched. `--async` moves the compile to a background job the CLI polls for, giving up after 16 minutes.
+2. `local-workspace push`. It sends every changed script at once; do not use `script update` for content. It also sends `README.md` when it changed, and turns a new JSON file under `test-payloads/<listener folder>/` into a stored test payload named after the file, so both are edited in the clone too. TypeScript diagnostics are reported and do not fail the push. The default mode compiles and bundles inside the request, which the API cuts off at 25 seconds: a push that runs past it is exit 1 `PUSH_OUTCOME_UNKNOWN` with the checksums untouched. `--async` moves the compile to a background job the CLI polls for, giving up after 16 minutes.
     Switch to `--async` when a normal push is creeping toward 20 seconds, and from the first push when the workspace is large or pulls in many third-party packages; one big package alone can carry bundling past 20 seconds. Time the pushes as you go so you see the creep.
     Do not judge by the first push. Cold starts make it several times slower than the ones after it, so a slow first push is not a reason to switch. A first push that times out outright is.
+    What makes a push slow is the number of scripts more than their size. Every push and every `script create` compiles and bundles the whole workspace, whichever file changed, at a cost per script. Snapshot 2026-10-08, one agent's measurements: about 60 ms per script plus 0.7 s per 100 KB of TypeScript, about 12 s for a workspace of 159 empty scripts, and `script create` at about 2.5 s each. Many tiny scripts make a slow push; prefer fewer, larger ones.
 3. `script trigger --stream-logs`, or with `--test-payload-id` or `--payload-file`. The stream prints on stderr; stdout carries only the invocation document, so capture both. When the order of two lines matters read `log list-console-logs` after the run; the live stream can print two rows swapped. Without a run permission, ask the user to fire the event and read `log list-console-logs`.
 4. Repeat until the user is happy.
 
@@ -215,7 +214,7 @@ Definition of done for a change:
 - Workspace language is `ts-strict` and the push reports no diagnostics you introduced.
 - Every throwaway script is deleted.
 - Scheduled triggers you created are enabled only when the code is finished.
-- The README, written with `readme update`, describes setup and usage for an end user; it never mentions the CLI, local copies or the agent.
+- The README describes setup and usage for an end user; it never mentions the CLI, local copies or the agent. Edit `README.md` in the clone and push it, or write it with `readme update`.
 - Packages are at the versions the user agreed to.
 - Additional environments, if any, are created and parametrized.
 - Release: when the workspace has more than one environment, ask whether to cut a release and deploy it to the staging or production environment. Never deploy without asking. Once they say yes, the normal path is one call: `release create -w <ws> -e <targetEnv>` cuts the release and deploys it into that environment, and `-e` repeats for several. Here `-e` is the deploy target, not the scope it is on every other verb, so do not pass the HEAD environment. `environment target-release` is for moving an environment onto a release that already exists, or back to `--head`; it is not a second step after `release create -e`. Standing in a clone of an environment deployed into, re-clone afterwards.
@@ -401,7 +400,7 @@ Index, one file per app that has listener types. The file name is the app's `app
 
 ## Refusals decoded
 
-- `WORKSPACE_LOCKED`: someone holds the lock. Read the hint; it says whether the holder is you, your browser tab, or someone else. Another session of yours, taken through the API, right after your own `workspace-lock take`, means the shell forgot the lock and you need `SR_CONNECT_CLI_LOCK_ID`. See The lock.
+- `WORKSPACE_LOCKED`: someone holds the lock. Read the hint; it says whether the holder is you, your browser tab, or someone else. Another session of yours, taken through the API, means the call did not present your `lockId`: pass `SR_CONNECT_CLI_LOCK_ID`. Your own session in the web application means a browser tab holds the workspace: ask the user to save and close it. See The lock.
 - `RELEASED_ENVIRONMENT` on a push, or a 400 on an update in a non-HEAD environment: you targeted an environment running a release. Switch `-e` to the HEAD environment, or move the environment with `environment target-release --head` only if the user wants that.
 - A 403 naming `features.eventQueues`: the plan has no event queues.
 - Exit 4 with a warning naming `workspace.json` or a session default: the scope came from a stale clone or a stale session default. Re-clone or pass the flags.
@@ -471,14 +470,14 @@ Start:
 2. `auth status`, `cli settings --raw`, `team list`, `egress-firewall list --team <teamId>`.
 3. Decide the harness branch. Open the feedback notes file if allowed. Ask the Egress Firewall approval question with the others.
 4. Identify the ask type and the target environment.
-5. Decide where the clone lives, `workspace-lock take` and capture `lockId` when the shell does not persist, then `local-workspace clone`.
+5. Decide where the clone lives, `workspace-lock take` and capture `lockId` for every later call, then `local-workspace clone`.
 
 End:
 
 1. Throwaway scripts and probe payloads deleted, in the workspace and in the clone; triggers in the intended state; README updated.
 2. Release offered where there is more than one environment.
 3. `egress-firewall list`, and `egress-firewall check-api-connections` per environment the work touched, read again for the summary's Egress Firewall block.
-4. `workspace-lock release`, with the captured `lockId` when the shell does not persist; without it the release finds no lock to let go of.
+4. `workspace-lock release` with the captured `lockId`; without it the release may find no lock to let go of.
 5. `feedback post` with whatever accumulated since the last post, plus the two scores, then delete the file.
 6. One-off job: `workspace delete <ws> --team <teamId> --yes` after confirmation.
 7. The closing summary, in the conversation, ending with the link to any workspace the work created.

@@ -42,7 +42,7 @@ Each invocation reports its own limits: `context.timeout` in milliseconds and `c
 | Missing                                                                               | Consequence                                                                                                         |
 | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
 | `Buffer`, `node:*`, `fs`, `http`, `require`                                           | Packages that touch Node APIs do not run. Use `@sr-connect/convert` for encodings.                                  |
-| `crypto.subtle.digest`, `encrypt`, `decrypt`                                          | Hashing and JWT signing need `jose-browser-runtime`, not `jsonwebtoken`.                                            |
+| `crypto.subtle.digest`, `encrypt`, `decrypt`                                          | No plain hash. See Hashing under Fetch. JWT signing works through `sign`; use `jose-browser-runtime`, not `jsonwebtoken`. |
 | `fetch` with a `Request` object, `signal`, `redirect`, `credentials`, `mode`, `cache` | Pass a URL string and `method`, `headers`, `body`, `agent` only.                                                    |
 | Streaming bodies                                                                      | The whole response is buffered before the promise resolves.                                                         |
 | WebSocket, streams, `structuredClone`, `queueMicrotask`, `crypto.randomUUID`          | Not available. `ulid` from the verified list covers IDs.                                                            |
@@ -141,6 +141,22 @@ Every configurable value is a parameter: base URLs, timeouts, retry counts, feat
 
 An API connection is the workspace-level proxy a script imports; a connector supplies its credentials per environment; a Managed API is the typed client generated for it. Managed APIs are thin: request and response shapes are one to one with the vendor API, nothing unified, nothing post-processed. What they add is types, discoverability and error handling with a pluggable strategy.
 
+### Product gotchas
+
+What a vendor's API, its Managed API package and its event types do that the typings and the vendor's docs do not warn about lives in one file per product under `references/product-gotchas/`. Load the file for a product only when a script calls that product's API or handles its events, and only that file; never at skill load and never while probing the platform. Each file has the same sections, The vendor API, The Managed API, Event types and Verify before trusting, and a snapshot date. The file name is the `app list` name lower-cased, spaces and dots to hyphens, the same rule as the setup folders. Connector and listener files keep what a person does in a dialog; a product file holds what the script meets at run time.
+
+| Product              | File                      | Load it when                                                |
+| -------------------- | ------------------------- | ----------------------------------------------------------- |
+| Atlassian Automation | `atlassian-automation.md` | an Automation rule sends web requests to a Generic listener |
+| Confluence Cloud     | `confluence-cloud.md`     | a script calls Confluence Cloud                             |
+| Google Sheets        | `google-sheets.md`        | a script calls Google Sheets, or copies a spreadsheet       |
+| Jira Cloud           | `jira-cloud.md`           | a script calls Jira Cloud or handles its events             |
+| monday.com           | `monday-com.md`           | a script calls monday.com or handles its events             |
+| ServiceNow           | `servicenow.md`           | a script calls ServiceNow or handles its events             |
+| Slack                | `slack.md`                | a script calls Slack or handles its events                  |
+
+Atlassian Automation is the one row that is not an `app list` app; it is the sender behind the Confluence Cloud bridge. A product with no row has no known gotchas yet. When the work finds one, it goes in the feedback notes against the product's name; see Feedback in `references/cli-workflow.md`.
+
 ### Three tiers
 
 Use the highest that can do the job.
@@ -151,7 +167,7 @@ Managed API method:
 import JiraCloud from './api/jira/cloud'
 
 const issue = await JiraCloud.Issue.getIssue({ issueIdOrKey: 'ISSUE-1' })
-console.log(issue.fields.reporter.displayName)
+console.log(issue.fields?.reporter?.displayName) // response fields are optional in the type
 ```
 
 Managed fetch on the connection, base URL and auth supplied, you check status and parse:
@@ -166,7 +182,7 @@ const issue = await response.json()
 
 Global `fetch`, full URL, your own headers. Only when no connector exists, and even then prefer a Generic connector so the credential stays out of code. Every host it reaches needs its own Fetch API destination on the team's Egress Firewall, which a connector's entry does not cover; see Egress Firewall in `cli-workflow.md`.
 
-Before dropping a tier, look harder: read `node_modules/@managed-api/<service>-core/` and its README, try sibling groups such as `Issue`, `IssueAttachment` and `IssueComment`, the verb variants `get`, `create`, `update`, `delete`, `list`, `search`, and the `All` group that holds every method.
+Before dropping a tier, look harder: read `node_modules/@managed-api/<service>-core/` and its README, try sibling groups such as `Issue`, `IssueAttachment` and `IssueComment`, the verb variants `get`, `create`, `update`, `delete`, `list`, `search`, and the `All` group that holds every method. The fastest route from a vendor endpoint to its method is the core package's `index.js`, which spells every path: `grep -n "/rest/api/3/users" node_modules/@managed-api/jira-cloud-v3-core/index.js` lands on the method that calls it, whose name need not resemble the path. Check its `@deprecated` tag in `index.d.ts` before using it.
 
 ### Imports and packages
 
@@ -193,7 +209,7 @@ Pagination: walk every page with the vendor's own paging fields, `startAt`, `max
 
 ### Errors
 
-All from `@managed-api/commons-core`: `UnexpectedError` for a JSON parse failure and the like, and `HttpError` with `.response`, parent of `BadRequestError` 400, `UnauthorizedError` 401, `ForbiddenError` 403, `NotFoundError` 404, `TooManyRequestsError` 429, `ServerError` 5xx. Services may add their own, `SlackError` from `@managed-api/slack-core/common` because Slack reports validation failures in the body.
+All from `@managed-api/commons-core`: `UnexpectedError` for a JSON parse failure and the like, and `HttpError` with `.response`, parent of `BadRequestError` 400, `UnauthorizedError` 401, `ForbiddenError` 403, `NotFoundError` 404, `TooManyRequestsError` 429, `ServerError` 5xx. Services may add their own, and the app's file under `references/product-gotchas/` names it where one exists.
 
 ```ts
 import { HttpError, UnexpectedError } from '@managed-api/commons-core'
@@ -233,16 +249,9 @@ errorStrategy: {
 
 Builder form: `errorStrategy: b => b.http404Error(() => null).retryOnRateLimiting(20)`, or `new ErrorStrategyBuilder()` from `@managed-api/<service>-core/builders/errorStrategy`. `Service.setGlobalErrorStrategy({...})` applies to every call through that import; the default global strategy already retries 429s and setting your own replaces it, so re-add retry if you still want it. Do not use a strategy to throw custom errors; handle the expected cases, a 404 fallback or a 429 retry, and let the rest bubble.
 
-### GraphQL services, monday.com
+### GraphQL services
 
-The options carry `args` for query arguments and `fields` for the selection: `true` for a leaf, `{ fields: {...} }` for a nested object, which may take its own `args`. The response type is inferred from `fields`, so you can only read what you asked for. Results are under `response.data`. For hand-written GraphQL use `fetch` or `gql-query-builder`.
-
-```ts
-const response = await Monday.Board.getBoards({
-	args: { ids: [123] },
-	fields: { name: true, items_page: { fields: { items: { fields: { id: true, name: true } } } } },
-})
-```
+monday.com's Managed API is GraphQL-shaped: options carry `args` and `fields`, and the response type follows the selection. The shape and an example are in `references/product-gotchas/monday-com.md`.
 
 ### A Managed API on a Generic connector
 
@@ -294,7 +303,8 @@ export default async function (event: IssueCreatedEvent, context: Context<EV>) {
 	// below is false for every event and the integration silently does nothing.
 	if (!projectKey) throw new Error('Parameter PROJECT_KEY is not set in this environment.')
 
-	if (event.issue.fields.project.key !== projectKey) {
+	// Every field of the event is optional in the type, so ts-strict needs the `?.`.
+	if (event.issue.fields.project?.key !== projectKey) {
 		console.log('Ignoring issue', event.issue.key, 'outside project', projectKey)
 		return
 	}
@@ -348,7 +358,9 @@ import {
 import { convertBase64ToText } from '@sr-connect/convert'
 
 export default async function (event: HttpEventRequest, context: Context<EV>): Promise<HttpEventResponse> {
-	if (event.headers['x-shared-secret'] !== context.environment.vars.WEBHOOK_SECRET) {
+	const secret = context.environment.vars.WEBHOOK_SECRET
+	if (!secret) throw new Error('Parameter WEBHOOK_SECRET is not set in this environment.')
+	if (header(event, 'x-shared-secret') !== secret) {
 		return { ...buildJSONResponse({ error: 'unauthorized' }), status: 401 }
 	}
 	if (isJSON<Payload>(event)) {
@@ -360,7 +372,16 @@ export default async function (event: HttpEventRequest, context: Context<EV>): P
 	}
 	return buildJSONResponse({ ok: true })
 }
+
+// Header names arrive in the caller's casing, so look them up case-insensitively.
+function header(event: HttpEventRequest, name: string): string | undefined {
+	const wanted = name.toLowerCase()
+	const key = Object.keys(event.headers).find((k) => k.toLowerCase() === wanted)
+	return key === undefined ? undefined : event.headers[key]
+}
 ```
+
+Header names keep the casing the caller sent: `X-Shared-Secret` from one client, `x-shared-secret` from another, and HTTP/2 clients send lower case. `event.headers` is a plain object, not a `Headers` instance, so `event.headers['x-shared-secret']` misses a caller that capitalizes, and a secret check written that way fails closed for it. Use a lookup like `header()` above for every header the script reads.
 
 Request shape: `method`, `path`, `queryString`, `queryStringParams`, `headers`, `bodyType?: 'base64' | 'text' | 'json'`, `body?`, `sourceIp`. JSON content types parse to an object, text types to a string, everything else to base64. Response shape: `status`, `headers?`, `body?`, `isBase64?`. Helpers: `isJSON<T>`, `isText`, `isBase64`, `buildJSONResponse`, `buildPlainTextResponse`, `buildHTMLResponse`. Each builder takes one argument, the body, and returns status 200 with the matching `Content-Type` header; none takes a status. For any other status, spread the builder's result and override `status`, as the 401 above does, or write the response object by hand. Do not modify an existing generic-listener script unless the intent is clear; you cannot see what calls it.
 
@@ -370,7 +391,7 @@ An ordinary entry point with `event: any` and `context.triggerType === 'SCHEDULE
 
 ## Record storage
 
-Key-value storage with JSON serialization. No atomic operations: two invocations writing one key overwrite each other.
+Key-value storage with JSON serialization. A plain write is last-writer-wins: two invocations writing one key overwrite each other. The one atomic operation is create-if-absent, a write with `denyUpdateOverwrite: true`: when several invocations race to create one key, exactly one succeeds and the rest throw. That is enough for an idempotency guard, a lease or an append log keyed by sequence.
 
 ```ts
 import { createRecordStorage, getRecordValue, setRecordValue } from '@sr-connect/record-storage'
@@ -395,15 +416,15 @@ workspace code often uses the class; leave it alone rather than rewriting it to 
 | `deleteRecordValue(key, options?)`     | `deleteValue` | idempotent                                      |
 | `getKeysOfAllRecords(options?)`        | `getAllKeys`  | one page: `{ keys, lastEvaluatedKey? }`         |
 
-Options: `scope`, one of `environment` by default, `workspace`, `team` and `invocation`; `teamScope`, a partition inside `team`, alphanumeric, up to 200 characters and strongly recommended with `team`; `ttl` in seconds, after which the record reads as absent; `secure`, an extra encryption layer that is slower; `denyUpdateOverwrite`; and `retryOn429`, on by default with one log line per retry. Per-call options override instance options. `invocation` scope is auto-deleted and its TTL is capped at 20 minutes.
+Options: `scope`, one of `environment` by default, `workspace`, `team` and `invocation`; `teamScope`, a partition inside `team`, alphanumeric, up to 200 characters and strongly recommended with `team`; `ttl` in seconds, after which the record reads as absent; `secure`, an extra encryption layer that is slower; `denyUpdateOverwrite`; and `retryOn429`, an object `{ enabled, verbose }`, not a boolean, both `true` by default. Enabled, a rate-limited call is retried with growing waits and no attempt limit; verbose, every retry writes a warning line to the console, and those lines count against the 1,000-line cap, so a burst of writes can use the cap up. Pass `retryOn429: { verbose: false }` for a loop of many writes, or `{ enabled: false }` to get the 429 as an error. Per-call options override instance options; `retryOn429` is merged field by field. `invocation` scope is auto-deleted and its TTL is capped at 20 minutes.
 
-Keys: letters, digits, underscore, dash. Under 1024 bytes. Case-insensitive; listings come back lower-cased. A `:`, `/`, `.` or space fails with HTTP 400 `Key can only contain alphanumeric characters, underscores and dashes.` Namespace with `_` or `-`: `mr-summary_${id}`.
+Keys: letters, digits, underscore, dash. Under 1024 bytes. Case-insensitive and stored lower-cased, so `Run-1` and `run-1` are one record and a listing gives back `run-1`. A `:`, `/`, `.` or space fails with HTTP 400 `Key can only contain alphanumeric characters, underscores and dashes.` Namespace with `_` or `-`: `mr-summary_${id}`.
 
-Values: any JSON-serializable object, string, number, boolean or array. Not `undefined`, `null` or a function. A `Date` comes back as a string, a `Map` or `Set` as `{}`.
+Values: any JSON-serializable object, string, number, boolean or array, far larger than the event payload cap; a 6 MB string stored and read back fine in one probe (Snapshot 2026-10-08). Not `undefined`, `null` or a function. A `Date` comes back as a string, a `Map` or `Set` as `{}`.
 
-Every operation throws `ServiceError` on a bad key, a failed call, a too-large value, exhausted capacity, or an existing record under `denyUpdateOverwrite`. Fail closed: never wrap a storage call in a `catch` that returns the "proceed" value, because an idempotency guard whose `catch` says "allowed" cannot tell an outage from a key it can never write. Do not default to `team` scope unless the user asks.
+Every operation throws `ServiceError` on a bad key, a failed call, a too-large value, exhausted capacity, or an existing record under `denyUpdateOverwrite`. The last carries no error code of its own: it is the 400 whose message starts `Record already exists in given scope`, so a create-if-absent tells "somebody else won" from a real failure by that message, and rethrows anything else. Fail closed: never wrap a storage call in a `catch` that returns the "proceed" value, because an idempotency guard whose `catch` says "allowed" cannot tell an outage from a key it can never write. Do not default to `team` scope unless the user asks.
 
-Listing keys, continue on `lastEvaluatedKey` and never on the page size, a page can be empty with more to follow:
+Listing keys, continue on `lastEvaluatedKey` and never on the page size. A page holds as many keys as fit in a fixed amount of stored data, so its size changes with the size of the values, and a page can be empty with more to follow. Keys come back sorted:
 
 ```ts
 let lastEvaluatedKey: string | undefined
@@ -456,7 +477,8 @@ Encodings default to `utf8`; `utf-16le` and `base64url` are among the options. `
 - The body can be read once. `response.json<J>()` takes a type parameter.
 - `Response.redirected` is always false, `url` empty, `type` `default`.
 - `Headers` matches names case-insensitively, so `get('Content-Type')` and `get('content-type')` are the same entry. Response headers come back lower-case.
-- `signal` is not an option. An `AbortController` exists but cannot cancel a request. For a hard time limit, read `context.timeout` and stop issuing calls before it runs out.
+- No timeout. The platform puts no limit of its own on a request and `signal` is not an option; an `AbortController` exists but cannot cancel anything. A host that never answers holds the call until something upstream gives up, which one agent saw take about 120 seconds, or until the invocation's own limit ends the run. A poller reaching several hosts should budget for that: read `context.timeout`, stop issuing calls well before it runs out, and keep progress in record storage so the next run picks up after a hang.
+- No `User-Agent` of the platform's own is sent, only the HTTP client's default. Some hosts refuse or throttle that; set `User-Agent` in `headers` for a host that wants one.
 - `URL` properties are snapshots; mutating `searchParams` does not update `href`. Build the string and construct again.
 
 Request headers the platform understands:
@@ -467,7 +489,7 @@ Request headers the platform understands:
 | `x-stitch-store-body: true`                                                          | Store the response body server-side instead of returning it; the response carries `x-stitch-stored-body-id`. Implies `x-stitch-drop-body` |
 | `x-stitch-stored-body-id`                                                            | On a later request, send the stored body as the request body                                                                              |
 | `x-stitch-transform-stored-body`                                                     | `form-data` (default) or `embedded-base64`                                                                                                |
-| `x-stitch-stored-body-form-data-file-name`, `-file-identifier`, `-additional-fields` | Multipart file name (default `file`), field name (default `file`; ServiceNow wants `uploadFile`), extra fields as `key:value;foo:bar;`    |
+| `x-stitch-stored-body-form-data-file-name`, `-file-identifier`, `-additional-fields` | Multipart file name (default `file`), field name (default `file`), extra fields as `key:value;foo:bar;`    |
 | `x-stitch-drop-body: true`                                                           | Send no body, for a service without `HEAD`                                                                                                |
 
 Response header `x-stitch-time` is the milliseconds the remote call took. Never set `x-stitch-connection-id` yourself; managed APIs do.
@@ -476,9 +498,21 @@ Response header `x-stitch-time` is the milliseconds the remote call took. Never 
 
 `agent: { rejectUnauthorized?, ca?, cert, key?, passphrase? }`, PEM strings or ArrayBuffers, arrays allowed; an indented template literal is fine, lines are trimmed. Setting `ca` replaces the default roots entirely. Keep certificates and keys in record storage with `secure: true`, or in a TEXT parameter under 4000 characters. A PASSWORD parameter does not work here, since it is only injected into HTTP bodies and headers.
 
+### Hashing
+
+There is no `crypto.subtle.digest`, so no plain SHA hash from the runtime, and `jose-browser-runtime` does not supply one. When the hash is only a fingerprint for change detection, an HMAC under a fixed key is deterministic and runs on what the runtime has:
+
+```ts
+const key = await crypto.subtle.importKey('raw', new TextEncoder().encode('fingerprint'), { name: 'HMAC', hash: 'SHA-256' }, false, ['sign'])
+const mac = await crypto.subtle.sign('HMAC', key, new TextEncoder().encode(text))
+const fingerprint = Array.from(new Uint8Array(mac), (b) => b.toString(16).padStart(2, '0')).join('')
+```
+
+When the exact digest matters, because another system computes it too, add a pure-JavaScript hash package that uses neither Node APIs nor `crypto.subtle`, and probe it with a throwaway script before relying on it; record the package and the result in the feedback notes.
+
 ### Signing a JWT
 
-No `subtle.digest`, so use `jose-browser-runtime` from the package manager. It is what the docs use; it is not on the verified list.
+Signing uses `crypto.subtle.sign`, which the runtime has, so `jose-browser-runtime` from the package manager works. It is what the docs use; it is not on the verified list.
 
 ```ts
 import { importPKCS8, SignJWT } from 'jose-browser-runtime'
@@ -552,7 +586,7 @@ Base64 variant: `x-stitch-transform-stored-body: embedded-base64` and a body of 
 
 Those are shapes, not a way to derive a name. The two families spell the same app differently and neither follows
 the app's display name, so a name guessed from the pattern is often a 404 and `package add` takes the string you
-give it with no suggestion. Read the name out of this table, verified against the registry on 2026-09-13. An
+give it with no suggestion. Read the name out of this table, verified against the registry on 2026-09-13, with the Confluence Cloud v1 and Google Drive names added on 2026-10-08. An
 empty events cell means the app publishes no event library and its listener, if it has one, is a generic HTTP
 listener.
 
@@ -562,12 +596,13 @@ listener.
 | Azure DevOps                | `@sr-connect/azure-devops`          | `@managed-api/azure-devops-v72-sr-connect`                          |
 | Bitbucket Cloud             | `@sr-connect/bitbucket-cloud`       | `@managed-api/bitbucket-cloud-v2-sr-connect`                        |
 | Bitbucket On-Premise        | `@sr-connect/bitbucket-on-premise`  | `@managed-api/bitbucket-on-premise-v1-sr-connect`                   |
-| Confluence Cloud            |                                     | `@managed-api/confluence-cloud-v2-sr-connect`                       |
+| Confluence Cloud            |                                     | `@managed-api/confluence-cloud-v2-sr-connect`, v1: `@managed-api/confluence-cloud-sr-connect` |
 | Confluence On-Premise       | `@sr-connect/confluence-on-premise` | `@managed-api/confluence-on-prem-v7-sr-connect`                     |
 | Generic                     | `@sr-connect/generic-app`           | `@managed-api/generic-sr-connect`                                   |
 | GitHub                      | `@sr-connect/github`                | `@managed-api/github-sr-connect`                                    |
 | GitLab                      | `@sr-connect/gitlab`                | `@managed-api/gitlab-v4-sr-connect`                                 |
 | Google Calendar             |                                     | `@managed-api/google-calendar-v3-sr-connect`                        |
+| Google Drive                |                                     | `@managed-api/google-drive-v3-sr-connect`                           |
 | Google Sheets               |                                     | `@managed-api/google-sheets-v4-sr-connect`                          |
 | Jira Cloud                  | `@sr-connect/jira-cloud`            | `@managed-api/jira-cloud-v3-sr-connect`                             |
 | Jira On-Premise             | `@sr-connect/jira-on-premise`       | `@managed-api/jira-on-prem-v8-sr-connect`                           |
@@ -596,8 +631,8 @@ Microsoft Teams is `microsoft` against `microsoft-graph-v1`; and Tempo Planner O
 Timesheets sibling is `v4`. The `-core` package for types is the runtime name with `-sr-connect` replaced by
 `-core`, so `@managed-api/service-now-core`.
 
-An app can publish more than one Managed API. Jira Cloud also has `@managed-api/jira-software-cloud-sr-connect`,
-which a workspace can carry beside the main one. `package list` reports what a given workspace actually has, and
+An app can publish more than one Managed API, which a workspace can carry beside the main one; Confluence Cloud's v1
+package above is one, and the app's file under `references/product-gotchas/` names the others where they matter. `package list` reports what a given workspace actually has, and
 `package list-npm-versions <name>` answers whether a name exists at all without credentials or an instance, which
 is how to check a name this table does not carry.
 

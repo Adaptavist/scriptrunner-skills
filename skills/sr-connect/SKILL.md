@@ -7,18 +7,20 @@ description: >-
     @sr-connect/cli. Use for any SRC, ScriptRunner Connect or Atlassian-integration question, and
     load references/ before running the CLI.
 metadata:
-    version: '1.6'
+    version: '1.7'
 ---
 
 # ScriptRunner Connect
 
-This file answers theory. Before touching the CLI read `references/cli-workflow.md`. Before writing a script read `references/scripting.md`. Read `references/testing.md` only when the user asks for tests.
+This file answers theory. Before touching the CLI read `references/cli-workflow.md`. Before writing a script read `references/scripting.md`, and the one file under `references/product-gotchas/` for each product the script calls, where one exists. Read `references/testing.md` only when the user asks for tests.
 
 ## Before the first CLI call
 
 Settle which command to invoke, once per session, ahead of every other CLI step.
 
 1. `command -v sr-connect`. A hit means the CLI is installed and on PATH: call it as `sr-connect <group> <verb>` everywhere, including in commands handed to the user. No hit: call it as `npx @sr-connect/cli <group> <verb>`, and pin the session's first call to `npx @sr-connect/cli@latest` so the cached copy is current.
+
+    On a miss, tell the user one plain line, so it does not read as something broken: npx works and there is nothing to fix; for faster calls they can install it globally with `npm install -g @sr-connect/cli`. npx checks its cache on every call, which costs several seconds a call, 4 to 10 s in one agent's measurement. A project-local install does not put `sr-connect` on PATH, so it does not help. Under nvm a global install belongs to the active Node version, and switching versions takes `sr-connect` off PATH again. If the user installs it mid-session, run this step again so the session switches to `sr-connect`.
 2. `<cli> cli check-updates --agent --raw`. The document carries `updateAvailable`, `current` and `latest`, plus `command` when there is an update. Exit 1 is a registry it could not read and exit 4 is a registry publishing no release; neither blocks the work, so say so and carry on with the version in hand.
 3. When `updateAvailable` is true, name both versions and ask whether the user upgrades it or you do. Never upgrade without that answer.
 
@@ -124,9 +126,9 @@ Source: https://docs.adaptavist.com/src/latest/workspaces/parameters
 
 ### API connections and Managed APIs
 
-An API connection is the outbound side: a path unique in the workspace, a vendor API package, and a connector per environment. Scripts import it, `import JiraCloud from './api/jira/cloud'`. Three tiers of abstraction, highest available wins: a Managed API, the typed client mirroring the vendor API one to one as in `JiraCloud.Issue.getIssue({ issueIdOrKey })`; managed `fetch` on the connection, where base URL and auth are supplied and you write the HTTP; and raw global `fetch`, where nothing is supplied. Managed APIs exist for every connector app; there is no public per-app reference, the typings in the workspace are the reference. monday.com's Managed API is GraphQL-shaped and takes `args` and `fields`.
+An API connection is the outbound side: a path unique in the workspace, a vendor API package, and a connector per environment. Scripts import it, `import JiraCloud from './api/jira/cloud'`. Three tiers of abstraction, highest available wins: a Managed API, the typed client mirroring the vendor API one to one as in `JiraCloud.Issue.getIssue({ issueIdOrKey })`; managed `fetch` on the connection, where base URL and auth are supplied and you write the HTTP; and raw global `fetch`, where nothing is supplied. Managed APIs exist for every connector app; there is no public per-app reference, the typings in the workspace are the reference. monday.com's Managed API is GraphQL-shaped and takes `args` and `fields`. What a product's API, Managed API and event types do that the typings do not say, deprecated methods that answer 410, fields the event types leave out, is one file per product under `references/product-gotchas/`; load a file only when a script calls that product or handles its events, as `references/scripting.md` describes under Product gotchas.
 
-Sources: https://docs.adaptavist.com/src/latest/workspaces/api-connections, https://docs.adaptavist.com/src/latest/managed-apis, and for the GraphQL shape https://docs.adaptavist.com/src/latest/managed-apis/managed-api-for-monday-com
+Sources: https://docs.adaptavist.com/src/latest/workspaces/api-connections, https://docs.adaptavist.com/src/latest/managed-apis, and for the GraphQL shape https://docs.adaptavist.com/src/latest/managed-apis/managed-api-for-monday.com
 
 ### Event listeners
 
@@ -164,7 +166,7 @@ Source: https://docs.adaptavist.com/src/latest/workspaces/package-manager
 
 ### Record storage
 
-A key-value store scripts use for state across invocations: get, set, delete, exists, list keys. Scopes are environment, the default, workspace, team and invocation. Options: TTL, encryption, deny-overwrite. Rate-limited with automatic retry; no atomicity across concurrent writes. Capacity is per plan; see Limits.
+A key-value store scripts use for state across invocations: get, set, delete, exists, list keys. Scopes are environment, the default, workspace, team and invocation. Options: TTL, encryption, deny-overwrite. A plain write overwrites, last writer wins; a write with deny-overwrite is an atomic create-if-absent, exactly one of several racing writers succeeds, which is what makes a lock, an idempotency guard or an append log possible. Rate-limited per team with automatic retry. Capacity is per plan; see Limits.
 
 Source: https://docs.adaptavist.com/src/latest/scripting/record-storage
 
@@ -286,7 +288,7 @@ Source: https://docs.adaptavist.com/src/latest/limits-and-quotas and the pages a
 | Workspaces, connectors per account                                          | 1,000 each                                                       |
 | Script invocations (team)                                                   | Free 1/s, paid 100/s                                             |
 | External API calls (team)                                                   | Free 5/s, paid 100/s                                             |
-| Record storage calls (team)                                                 | Free 1/s, paid 50/s                                              |
+| Record storage calls (team)                                                 | Free 1/s, paid up to 50/s depending on plan; shared by every workspace and invocation |
 | Trigger script calls (team)                                                 | Free 1/s, paid 10/s                                              |
 | REST API calls (user)                                                       | Free 5/s, paid 20/s                                              |
 
@@ -342,8 +344,8 @@ Sample test payloads exist for most listener apps. Zoom, Azure DevOps, Microsoft
 | Ask                                           | First move                                                                                                                                                                  | Load                                               | CLI needed |
 | --------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- | ---------- |
 | Can SRC do X, how does X work                 | Answer from this file. If an existing workspace is named, read its setup first                                                                                              | `cli-workflow.md` only if reading a workspace      | sometimes  |
-| Something fails, look at it                   | Ask for team, workspace, time span. Read invocation logs, then console and HTTP logs, then the script                                                                       | `cli-workflow.md`, then `scripting.md` for the fix | yes        |
-| Build or change an integration                | Gather requirements, probe connectors and environment, take the lock, clone                                                                                                 | `cli-workflow.md`, `scripting.md`                  | yes        |
+| Something fails, look at it                   | Ask for team, workspace, time span. Read invocation logs, then console and HTTP logs, then the script                                                                       | `cli-workflow.md`, then `scripting.md` and `product-gotchas/<app>.md` for the fix | yes        |
+| Build or change an integration                | Gather requirements, probe connectors and environment, take the lock, clone                                                                                                 | `cli-workflow.md`, `scripting.md`, `product-gotchas/<app>.md` per product the scripts call | yes        |
 | One-off job                                   | The short recipe in `cli-workflow.md`; ask whether it recurs, delete after if not                                                                                           | `cli-workflow.md`, `scripting.md`                  | yes        |
 | Register a webhook, or events never arrive    | Read the listener and its connector, then load the one app file; see Webhook handoff in `cli-workflow.md`                                                                   | `cli-workflow.md`, `event-listener-setup/<app>.md` | yes        |
 | Authorize a connector, or one stopped working | `connector list` and `connector get` first; load the one connector file only when a new or expired connector has to be authorized; see Connector setup in `cli-workflow.md` | `cli-workflow.md`, `connector-setup/<type>.md`     | yes        |

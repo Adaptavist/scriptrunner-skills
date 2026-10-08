@@ -21,7 +21,7 @@ Whatever the sender offers. Nothing on the platform side filters a Generic liste
 The endpoint is anonymous. Use all three of these where the sender allows:
 
 - A URL path that cannot be guessed: pass `--url-path` with a random suffix on create, or leave it to the generated one.
-- A shared secret in a header, compared in the script against a masked TEXT parameter, as `references/scripting.md` shows with `x-shared-secret`. Where the sender signs instead, verify the signature with `crypto.subtle`.
+- A shared secret in a header, compared in the script against a masked TEXT parameter, as `references/scripting.md` shows with `x-shared-secret`. Header names arrive in whatever casing the sender used, so the script looks them up case-insensitively; tell the sender the header name, not a casing. Where the sender signs instead, verify the signature with `crypto.subtle`.
 - An allowlist on `event.sourceIp` when the sender publishes its addresses.
 
 The platform verifies nothing on a Generic listener.
@@ -45,7 +45,7 @@ Trello registers webhooks only through its REST API, so the agent can do this st
 Confluence Cloud has no admin-configured webhooks and `app list` reports no listener types for it. Two ways to get its events out, both configured in Confluence by the user. Sources: https://docs.adaptavist.com/sr4cc/latest/features/script-listeners and https://support.atlassian.com/cloud-automation/docs/actions-in-confluence-automation/.
 
 - ScriptRunner for Confluence Cloud, "Script Listeners": a listener with the wanted events under "On These Events" (page created, updated, moved, removed; attachment, blog, comment, label, space and user events), running "As This User", with a "Code to Run" that posts the `webhookEvent` to the webhook URL. The listener scripts ship `Unirest` pre-imported for HTTP; `Unirest.post(<webhookUrl>).header('x-shared-secret', <value>).body(webhookEvent).asString()` is the shape, and the docs show Unirest only against Confluence's own API, so test the outbound call once.
-- Confluence automation, "Send web request" action: a rule on a page event with the webhook URL, JSON body and custom headers, configured in the space or site automation settings. No code, fewer events than ScriptRunner offers.
+- Confluence automation, "Send web request" action: a rule on a page event with the webhook URL, JSON body and custom headers, configured in the space or site automation settings. No code, fewer events than ScriptRunner offers. What the action actually delivers, a `Content-Type` it ignores and smart values that arrive altered, is in `references/product-gotchas/atlassian-automation.md`; load it when writing the script behind such a rule.
 
 Filter: the event selection, and in ScriptRunner a condition in the code on `webhookEvent` (space key, page title). Secure: neither signs; set a shared-secret header in the listener or the web request and check it in the script.
 

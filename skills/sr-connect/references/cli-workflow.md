@@ -271,7 +271,7 @@ Index, one file per connector type. The file name is `connectionType.name` from 
 | ----------------------------------------- | ----------------------------------------- | ---------------------------------------------------------- | -------------- |
 | AWS                                       | `aws.md`                                  | IAM role with a generated trust policy, or an access key   | no             |
 | Azure DevOps                              | `azure-devops.md`                         | Platform's Azure app, or own app registration              | create only    |
-| Bitbucket Cloud                           | `bitbucket-cloud.md`                      | Own OAuth consumer                                         | create only    |
+| Bitbucket Cloud                           | `bitbucket-cloud.md`                      | Own OAuth client                                           | create only    |
 | Bitbucket On-Premise                      | `bitbucket-on-premise.md`                 | Own incoming application link                              | create only    |
 | Confluence Cloud                          | `confluence-cloud.md`                     | Platform's OAuth app, or own app; site confirmation after  | create only    |
 | Confluence On-Premise                     | `confluence-on-premise.md`                | Application link with a generated key pair                 | create only    |
@@ -343,7 +343,7 @@ Never route around a block: no raw `fetch` in place of a blocked connector, no c
 
 ## Webhook handoff
 
-Every listener the work created or re-pointed gets one block in the closing summary, written for the person who will register the webhook. It is the last thing you write, so nothing under `references/event-listener-setup/` loads before then.
+Every listener the work created or re-pointed gets one block in the closing summary, written for the person who will register the webhook. Write the blocks at the end of the session, just before the Still to do block that lists them, so nothing under `references/event-listener-setup/` loads before then.
 
 Before writing a block:
 
@@ -368,7 +368,7 @@ Snapshot <the file's date>. Differs from the app's current docs: <what, or none 
 
 Rules for the block: the deep link is the file's pattern applied to `baseUrl` with any trailing slash removed. The setup URL is always present when the API returned one. The filter line names a concrete key, repository, board or table, and the script line that checks it. The secure line says who verifies. For Jira Cloud, Jira Service Management Cloud, Microsoft Teams, Zoom, and Slack through its connector, the platform checks the app's secret or signature before the script runs: say "checked by the platform, no further action needed". For every other app the line names what the app offers, says it goes unchecked, because an app listener hands the script the event body and nothing else, and says the webhook URL's secrecy is what is left.
 
-Hardening. An app listener exposes no request headers and no sender address to the script, so a vendor secret, signature, basic-auth header or IP range that the platform does not verify cannot be verified in code either. Nothing then authenticates the caller: the webhook URL's secrecy is the only control, and anyone who learns it can post a body the script acts on. Say that in the secure line rather than leaving the unchecked secret to imply protection, so the user decides knowingly. Do not write a check that reads a header from an app listener's event, and do not choose a Generic listener for security alone: the regular listener is the default, with no extra checks, and the handoff block says so in one sentence. Only when the user asks for more security, offer the Generic route: a Generic listener receives headers and `sourceIp`, so a script behind one can verify the vendor's signature or a shared header against a masked TEXT parameter. It is a rework, not a switch: create a Generic listener, keep the event's shape you already developed against by typing the body as the same `@sr-connect/<app>/events` type, and hand the user the new URL to swap into the webhook they already registered. End every block whose app offers a secret with one line saying this option exists and what it costs; build it only on request.
+Hardening. An app listener exposes no request headers and no sender address to the script, so a vendor secret, signature, basic-auth header or IP range that the platform does not verify cannot be verified in code either. Nothing then authenticates the caller: the webhook URL's secrecy is the only control, and anyone who learns it can post a body the script acts on. Say that in the secure line rather than leaving the unchecked secret to imply protection, so the user decides knowingly. Do not write a check that reads a header from an app listener's event, and do not choose a Generic listener for security alone: the regular listener is the default, with no extra checks, and the handoff block says so in one sentence. Only when the user asks for more security, offer the Generic route: a Generic listener receives headers and `sourceIp`, so a script behind one can check a shared header or credentials against a masked TEXT parameter, or the sender's address. A vendor's signature over a JSON body stays unverifiable there too: the Generic listener parses the body, so the signed bytes never reach the script. It is a rework, not a switch: create a Generic listener, keep the event's shape you already developed against by typing the body as the same `@sr-connect/<app>/events` type, and hand the user the new URL to swap into the webhook they already registered. End every block whose app offers a secret with one line saying this option exists and what it costs; build it only on request.
 
 Index, one file per app that has listener types. The file name is the app's `app list` name lower-cased, spaces and dots to hyphens.
 
@@ -378,7 +378,7 @@ Index, one file per app that has listener types. The file name is the app's `app
 | Bitbucket Cloud                    | `bitbucket-cloud.md`                    | Per repository, per event                                           | Webhook secret, `X-Hub-Signature`; unchecked, Generic only                    | no        |
 | Bitbucket On-Premise               | `bitbucket-on-premise.md`               | Per project or repository, per event                                | Secret token or basic auth; unchecked, Generic only                           | yes       |
 | Confluence On-Premise              | `confluence-on-premise.md`              | Event selection only                                                | Webhook secret, `X-Hub-Signature`; unchecked, Generic only                    | yes       |
-| Generic                            | `generic.md`                            | Whatever the sender offers                                          | Shared-secret header, signature or `sourceIp`, all checked in the script      | yes       |
+| Generic                            | `generic.md`                            | Whatever the sender offers                                          | Shared-secret header or `sourceIp`, checked in the script                     | yes       |
 | GitHub                             | `github.md`                             | Scope, then individual events; also sends `ping`                    | Secret, `X-Hub-Signature-256`; unchecked, Generic only                        | no        |
 | GitLab                             | `gitlab.md`                             | Group or project, per event; branch filter on push events           | Secret token or signing token; unchecked, Generic only                        | yes       |
 | Jira Cloud                         | `jira-cloud.md`                         | JQL on the webhook, issue-related events only                       | Secret, `X-Hub-Signature`; checked by the platform once entered at `setupUrl` | yes       |
@@ -396,7 +396,7 @@ Index, one file per app that has listener types. The file name is the app's `app
 | Zendesk                            | `zendesk.md`                            | Event subscription, or trigger conditions                           | Auth header or signing secret; unchecked, Generic only                        | yes       |
 | Zoom                               | `zoom.md`                               | Per event on the app                                                | Secret token; checked by the platform once entered at `setupUrl` first        | no        |
 
-"Unchecked, Generic only" means the app offers the mechanism, the platform does not verify it, and an app listener cannot; see Hardening above.
+"Unchecked, Generic only" means the app offers the mechanism, the platform does not verify it, and an app listener cannot; see Hardening above. A Generic listener can check a header or `sourceIp`, never a signature over a JSON body.
 
 ## Refusals decoded
 
@@ -459,8 +459,28 @@ End every session with a summary in the conversation, whatever the ask type. The
     Leave the section out only on a private cloud instance where the firewall is off. Name any entry added only for a probe, since only the web app removes a Fetch API destination.
 - What still needs a human: authorizing each connector you left unauthorized, as one block per connector under Connector setup, registering each listener's webhook as one block per listener under Webhook handoff, setting a secret parameter, each Egress Firewall entry left waiting, the end-to-end test, enabling a trigger you left disabled, creating and deploying a release, deleting a one-off workspace. Give the exact command or URL for each.
 - Whether feedback was posted, and where the notes went if it was not. Only when `agenticFeedback` is on; when it is off this line does not exist.
-- A workspace the work created, named and linked, as the summary's last line, so the way in is what the user is left with. Nothing in the API carries that URL: build it from the ID `workspace create` returned and the ID of the environment the work landed in, as the web application's host for the instance plus `/workspace/<workspaceId>/environment/<environmentId>`, EU `https://app.eu.scriptrunnerconnect.com/workspace/<workspaceId>/environment/<environmentId>`, US `https://app.us.scriptrunnerconnect.com/workspace/<workspaceId>/environment/<environmentId>`, private cloud the base URL the user gave with the same path. The environment segment is required: a link without it does not open the workspace. More than one, one line each.
+- A workspace the work created, named and linked, right before the Still to do block, or as the summary's last line when there is none, so the way in is close to the end. Nothing in the API carries that URL: build it from the ID `workspace create` returned and the ID of the environment the work landed in, as the web application's host for the instance plus `/workspace/<workspaceId>/environment/<environmentId>`, EU `https://app.eu.scriptrunnerconnect.com/workspace/<workspaceId>/environment/<environmentId>`, US `https://app.us.scriptrunnerconnect.com/workspace/<workspaceId>/environment/<environmentId>`, private cloud the base URL the user gave with the same path. The environment segment is required: a link without it does not open the workspace. More than one, one line each.
 - The workspace README beside that link, when the clone was kept: its path in the clone, `<clone>/README.md`, so the user can read what the workspace does without opening the web application. Link it where the harness renders a link to a local file, and open it directly where the harness can open one; a terminal-only harness prints the path and nothing else.
+- Still to do, as the very end of the summary. A reader who skims, or reads only the end, must not miss that the work is not live yet. The Connector setup and Webhook handoff blocks above hold the steps; this block is the short list that says they still have to happen. Write it as a quote block so it stands out, one numbered line per action from "What still needs a human", each pointing at its block above or giving its command or URL:
+
+    ```md
+    ### Still to do
+
+    > **Not live yet. Nothing below has been done, and the integration will not run until it is.**
+    >
+    > 1. Authorize <connector name> (<connectorId>) at <authorizationUrl>. Steps under Connector setup above.
+    > 2. Register the <App> webhook for <script name> in environment <name>. Steps under Webhook handoff above.
+    > 3. Approve <connector name> under Team Settings → Egress Firewall.
+    >
+    > I can do 1 and 2 in your browser while you watch; you sign in and confirm each consent screen. Tell me which.
+    > Better done by you: 3, because it needs a team admin.
+    ```
+
+    The opening line says plainly that the actions are outstanding and that the integration does not work until they are done. Never phrase them as optional or as already handled. List every blocking action, even when its block above already describes it.
+
+    The offer lines appear only when you can drive a browser; see Harness branches. Name each numbered action you are willing to carry out there: authorizing a connector, registering a webhook in the app's UI, approving an Egress Firewall entry the user's role allows. The user stays signed in, holds the permissions and watches. Never offer to type a password, a one-time code or a secret the user would otherwise paste. For Jira Cloud, Jira Service Management Cloud and Confluence Cloud authorization, recommend the user does it, for the reason under Connector setup. Name what you leave to the user, and why: someone else's admin rights, a secret only they hold, a vendor console you cannot reach. Without a browser, leave the offer lines out and keep the rest.
+
+    When nothing is left for a human, write one line instead: "Nothing left for you to do; the integration is live in <environment>."
 
 ## Session checklists
 
@@ -480,7 +500,7 @@ End:
 4. `workspace-lock release` with the captured `lockId`; without it the release may find no lock to let go of.
 5. `feedback post` with whatever accumulated since the last post, plus the two scores, then delete the file.
 6. One-off job: `workspace delete <ws> --team <teamId> --yes` after confirmation.
-7. The closing summary, in the conversation, ending with the link to any workspace the work created.
+7. The closing summary, in the conversation, with the link to any workspace the work created and, last, the Still to do block.
 
 ## Verb map
 

@@ -52,7 +52,7 @@ Only the event selection. GitHub offers no branch, path or repository filter on 
 
 ## Secure it
 
-GitHub offers a "Secret" and signs every delivery with it: `X-Hub-Signature-256` is `sha256=` followed by the hex HMAC-SHA256 of the raw body. The header does not reach the script, which receives the body only, and the platform does not check it for this app; leave "Secret" empty rather than suggest protection that is not there, and add no check. Hardening is possible through a Generic listener, which receives headers and `sourceIp`: a script behind one verifies the signature with `crypto.subtle` against a masked TEXT parameter, or checks the sender against the `hooks` ranges at https://api.github.com/meta. Flag that at the end of the handoff block and build it only when the user asks; see Hardening in `cli-workflow.md`.
+GitHub offers a "Secret" and signs every delivery with it: `X-Hub-Signature-256` is `sha256=` followed by the hex HMAC-SHA256 of the raw body. The header does not reach the script, which receives the body only, and the platform does not check it for this app; leave "Secret" empty rather than suggest protection that is not there, and add no check. Hardening is possible through a Generic listener, which receives headers and `sourceIp`: a script behind one checks the sender against the `hooks` ranges at https://api.github.com/meta. It cannot verify the signature, because the Generic listener parses the JSON body, so the signed bytes never reach the script. Flag that at the end of the handoff block and build it only when the user asks; see Hardening in `cli-workflow.md`.
 
 ## Known differences from the setup dialog
 

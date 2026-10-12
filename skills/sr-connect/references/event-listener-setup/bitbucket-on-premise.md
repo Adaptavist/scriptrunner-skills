@@ -30,7 +30,7 @@ The project or repository, and the event selection. No branch filter. Each body 
 
 ## Secure it
 
-Bitbucket offers two methods: "Secret token", which signs every request with `X-Hub-Signature` as `sha256=` and the hex HMAC-SHA256 of the body, and "Basic authentication", an `Authorization: Basic` header. Neither reaches the script, which receives the body only, and the platform does not check headers for this app; leave the method unset and add no check. Hardening is possible through a Generic listener, which receives headers and `sourceIp`, so a script behind one verifies the signature or the credentials against masked TEXT parameters, or checks the instance's egress address. Flag that at the end of the handoff block and build it only when the user asks; see Hardening in `cli-workflow.md`.
+Bitbucket offers two methods: "Secret token", which signs every request with `X-Hub-Signature` as `sha256=` and the hex HMAC-SHA256 of the body, and "Basic authentication", an `Authorization: Basic` header. Neither reaches the script, which receives the body only, and the platform does not check headers for this app; leave the method unset and add no check. Hardening is possible through a Generic listener, which receives headers and `sourceIp`, so a script behind one checks the basic-auth credentials against masked TEXT parameters, or the instance's egress address. It cannot verify the secret token's signature, because the Generic listener parses the JSON body, so the signed bytes never reach the script. Flag that at the end of the handoff block and build it only when the user asks; see Hardening in `cli-workflow.md`.
 
 ## Known differences from the setup dialog
 

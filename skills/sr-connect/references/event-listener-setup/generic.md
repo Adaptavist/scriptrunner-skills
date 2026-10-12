@@ -21,7 +21,7 @@ Whatever the sender offers. Nothing on the platform side filters a Generic liste
 The endpoint is anonymous. Use all three of these where the sender allows:
 
 - A URL path that cannot be guessed: pass `--url-path` with a random suffix on create, or leave it to the generated one.
-- A shared secret in a header, compared in the script against a masked TEXT parameter, as `references/scripting.md` shows with `x-shared-secret`. Header names arrive in whatever casing the sender used, so the script looks them up case-insensitively; tell the sender the header name, not a casing. Where the sender signs instead, verify the signature with `crypto.subtle`.
+- A shared secret in a header, compared in the script against a masked TEXT parameter, as `references/scripting.md` shows with `x-shared-secret`. Header names arrive in whatever casing the sender used, so the script looks them up case-insensitively; tell the sender the header name, not a casing. A sender's signature is verifiable only when the body arrives as a string, `bodyType` `'text'` or `'base64'`: a JSON body reaches the script parsed and the signed bytes are gone, as `references/scripting.md` explains under Generic HTTP events. For a JSON sender, the header or the allowlist is the check.
 - An allowlist on `event.sourceIp` when the sender publishes its addresses.
 
 The platform verifies nothing on a Generic listener.
@@ -37,7 +37,7 @@ Trello registers webhooks only through its REST API, so the agent can do this st
 1. Create the Generic listener, async.
 2. Through the Trello Managed API or `fetch` on the Trello API connection: `POST /1/tokens/<token>/webhooks/` (or `POST /1/webhooks` with OAuth) with `callbackURL` = the webhook URL, `idModel` = the ID of the board, list, card or member to watch, `description` for the user. Trello first sends a `HEAD` request to the URL and refuses the registration unless it answers 200. An async Generic listener answers 200 with the invocation ID before the script runs, which is why step 1 picks async; a sync listener answers whatever the script returns, so pick one only when the integration needs a particular status back.
 3. Filter: `idModel` is the filter, one webhook per model. In the script check `action.type` (`updateCard`, `createCard`, `commentCard`) and `action.data.board.id`.
-4. Secure: every delivery carries `X-Trello-Webhook`, the base64 HMAC-SHA1 of the raw body concatenated with the exact `callbackURL`, keyed with the Trello app's secret. Verify it in the script with `crypto.subtle` against a masked TEXT parameter holding the app secret. Trello's addresses are `104.192.142.240/28` and are listed at https://ip-ranges.atlassian.com/.
+4. Secure: every delivery carries `X-Trello-Webhook`, the base64 HMAC-SHA1 of the raw body concatenated with the exact `callbackURL`, keyed with the Trello app's secret. The script cannot verify it: Trello posts JSON, and the Generic listener parses the JSON body, so the signed bytes never reach the script. Check `event.sourceIp` against Trello's addresses instead, `104.192.142.240/28`, listed at https://ip-ranges.atlassian.com/, and keep the URL path random.
 5. Trello retries three times at 30, 60 and 120 seconds, disables a webhook after 30 days of consecutive failures, and deletes it on a 410 from the endpoint.
 
 ### Confluence Cloud

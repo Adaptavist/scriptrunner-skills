@@ -7,7 +7,7 @@ description: >-
     @sr-connect/cli. Use for any SRC, ScriptRunner Connect or Atlassian-integration question, and
     load references/ before running the CLI.
 metadata:
-    version: '1.7'
+    version: '1.8'
 ---
 
 # ScriptRunner Connect
@@ -22,7 +22,7 @@ Settle which command to invoke, once per session, ahead of every other CLI step.
 
     On a miss, tell the user one plain line, so it does not read as something broken: npx works and there is nothing to fix; for faster calls they can install it globally with `npm install -g @sr-connect/cli`. npx checks its cache on every call, which costs several seconds a call, 4 to 10 s in one agent's measurement. A project-local install does not put `sr-connect` on PATH, so it does not help. Under nvm a global install belongs to the active Node version, and switching versions takes `sr-connect` off PATH again. If the user installs it mid-session, run this step again so the session switches to `sr-connect`.
 2. `<cli> cli check-updates --agent --raw`. The document carries `updateAvailable`, `current` and `latest`, plus `command` when there is an update. Exit 1 is a registry it could not read and exit 4 is a registry publishing no release; neither blocks the work, so say so and carry on with the version in hand.
-3. When `updateAvailable` is true, name both versions and ask whether the user upgrades it or you do. Never upgrade without that answer.
+3. When `updateAvailable` is true, name both versions, link the changelog (https://cdn.jsdelivr.net/npm/@sr-connect/cli@latest/CHANGELOG.md) so the user can see what changed, and ask whether the user upgrades it or you do. Never upgrade without that answer.
 
 The `command` field is the upgrade line derived from how this copy was installed, and it is right for npm, pnpm, bun and npx. It is wrong for two installs the CLI reads as npm, so check for them before quoting it: resolve `sr-connect` to its real path, or run `yarn global bin` and `volta which sr-connect`.
 
@@ -306,7 +306,7 @@ Source: https://docs.adaptavist.com/src/latest/connectors and the web applicatio
 | ----------------------------------------- | ----------------------------------------------------------- | -------------------------------------- |
 | AWS                                       | IAM role with a generated trust policy, or access key       | no                                     |
 | Azure DevOps                              | OAuth 2.0, platform's Azure app or own                      | yes                                    |
-| Bitbucket Cloud                           | OAuth 2.0, own consumer                                     | yes                                    |
+| Bitbucket Cloud                           | OAuth 2.0, own OAuth client                                 | yes                                    |
 | Bitbucket On-Premise                      | OAuth 2.0, own incoming application link                    | yes                                    |
 | Confluence Cloud                          | OAuth 2.0, platform's app or own                            | no, bridge through a generic listener  |
 | Confluence On-Premise                     | Application link with a generated key pair                  | yes                                    |

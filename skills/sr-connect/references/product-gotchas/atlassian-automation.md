@@ -21,4 +21,4 @@ The script receives the Generic listener's `HttpEventRequest` from `@sr-connect/
 
 ## Verify before trusting
 
-Fire the rule once with the script logging `event.headers`, `event.queryStringParams`, `event.bodyType` and `event.body`, and read `log list-console-logs` before writing the parser. https://support.atlassian.com/cloud-automation/docs/actions-in-confluence-automation/ for the action's options.
+Fire the rule once with the script logging `event.queryStringParams`, `event.bodyType`, `event.body` and the headers, and read `log list-console-logs` before writing the parser. Log a copy of `event.headers` without the shared-secret header, matching its name case-insensitively; logging `event.headers` whole writes the secret into the invocation logs. https://support.atlassian.com/cloud-automation/docs/actions-in-confluence-automation/ for the action's options.

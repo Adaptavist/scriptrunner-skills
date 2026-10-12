@@ -1,6 +1,6 @@
 # Jira Cloud
 
-Listener type ADMIN_WEBHOOK, 49 event types. Snapshot 2026-09-14 from the web application's setup dialog, rechecked 2026-10-08 against the dialog's source after a change that moved Issue Transitioned to Jira's new workflow editor, and cross-checked on 2026-09-14 against https://developer.atlassian.com/cloud/jira/platform/webhooks/ and https://support.atlassian.com/jira-cloud-administration/docs/manage-webhooks/. Jira Service Management Cloud uses the same webhooks page and has its own file, which differs from this one in two lines.
+Listener type ADMIN_WEBHOOK, 49 event types. Snapshot 2026-09-14 from the web application's setup dialog, rechecked 2026-10-12 against the dialog's source after changes that moved Issue Transitioned to Jira's new workflow editor and told users not to select events on its webhook, and cross-checked on 2026-09-14 against https://developer.atlassian.com/cloud/jira/platform/webhooks/ and https://support.atlassian.com/jira-cloud-administration/docs/manage-webhooks/. Jira Service Management Cloud uses the same webhooks page and has its own file, which differs from this one in two lines.
 
 ## Before you hand over
 
@@ -27,7 +27,7 @@ Needs the Administer Jira global permission.
 6. Tick only the event the listener was created for. Leave "Exclude body" unticked; the script needs the body.
 7. "Create".
 
-Issue Transitioned is not a Jira event. The webhook is fired by a workflow rule on the transition, and the SRC event type exists for that delivery. After step 7, with no event ticked in step 6:
+Issue Transitioned is not a Jira event. The webhook is fired by a workflow rule on the transition, and the SRC event type exists for that delivery. After step 7, with no event ticked in step 6 (the dialog: "Do not select any events. This webhook is triggered by the workflow rule only."):
 
 8. Open "Workflows", "Edit" next to the workflow.
 9. Select the transition, then "Add rule".
@@ -50,7 +50,6 @@ Set a secret. Jira then signs every delivery: `X-Hub-Signature` is `sha256=` fol
 ## Known differences from the setup dialog
 
 - The dialog calls the JQL filter optional. It is the one vendor-side filter Jira offers, so recommend it whenever the integration cares about some projects or issue types and not the whole site.
-- For Issue Transitioned the dialog skips the event step without saying to leave the event list empty; ticking issue events on a webhook that a workflow rule triggers doubles the deliveries.
 - The dialog spells "Create a WebHook"; Jira's current UI reads "Create a webhook".
 - The dialog does not say that the secret is verified; the platform verifies it.
 

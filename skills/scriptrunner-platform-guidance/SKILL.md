@@ -32,4 +32,4 @@ Use this skill whenever you need ScriptRunner platform operating rules.
 
 - Keep platform and product assumptions explicit.
 - The guidance files are intentionally complete prompt references. The full-read rule applies to platform guidance only, not product documentation, examples, or OpenAPI specs.
-- When reading `references/cloud.md` or `references/confluence-cloud.md`, the read tool may cap the output and print an `offset` to continue. The parent agent must keep reading the selected guidance file with the suggested offsets until the output contains `(End of file` before producing code, running API lookups, or validating an answer. Do not delegate this full read to a subagent.
+- Skip any guidance file your system prompt already includes. Otherwise read the selected guidance file in full before producing code, running API lookups, or validating an answer, in as few reads as possible. Do not delegate this read to a subagent.

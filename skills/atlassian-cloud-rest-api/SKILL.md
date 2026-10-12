@@ -25,7 +25,7 @@ See `references/SPECS.md` for the quick map.
 ## Workflow
 
 1. Load this skill before answering Atlassian Cloud REST API questions.
-2. Use `references/SPECS.md`, `rg`, and `jq` first to narrow to the exact path, method, component, or schema.
+2. Resolve the operations you need in one call with `assets/operation.jq` (below). Use `references/SPECS.md`, `rg`, and `jq` only for what it does not answer.
 3. Use a subagent only for bounded discovery across a large search space. Ask it for concise findings, spec file paths, HTTP methods, operation paths, schema/component names, and jq selectors or line ranges, not full spec fragments.
 4. The parent agent performs any final focused reads and `$ref` resolution needed for accuracy.
 5. Read only the smallest matching fragments needed for the answer.
@@ -33,6 +33,8 @@ See `references/SPECS.md` for the quick map.
 
 ## CLI guidance
 
+- Resolve operations, `;`-separated, with parameters, request body and success responses fully dereferenced and read-only request properties dropped: `jq -c --arg ops 'POST /rest/api/3/version;GET /rest/api/3/project/{projectIdOrKey}/versions' -f assets/operation.jq references/specs/jira-cloud-platform-v3-openapi.json`
+- Find operations by path or summary: `jq -r --arg search 'version' -f assets/operation.jq references/specs/jira-cloud-platform-v3-openapi.json`
 - List specs: `ls references/specs`
 - Find candidate paths or component names: `rg -n '"/rest/api/3/issue"|IssueBean|CreateIssue' references/specs/*.json`
 - Inspect an operation: `jq '.paths["/rest/api/3/issue"].post' references/specs/jira-cloud-platform-v3-openapi.json`
@@ -41,7 +43,7 @@ See `references/SPECS.md` for the quick map.
 
 ## Ref resolution
 
-When generating code or summarizing request/response contracts, do not stop at a raw `$ref`.
+When generating code or summarizing request/response contracts, do not stop at a raw `$ref`. `assets/operation.jq` does all of this; resolve by hand only what it cuts short (it marks truncated depth with `…`).
 
 1. Resolve both path-level and operation-level `parameters`.
 2. Resolve `requestBody` references into `components.requestBodies`, then resolve nested schema refs into `components.schemas`.
@@ -56,10 +58,10 @@ If a referenced schema is large, resolve only the fields needed for the current 
 - `references/SPECS.md` - human-readable spec index.
 - `references/specs/*.json` - raw OpenAPI specs bundled with the skill.
 - `assets/specs.json` - machine-readable spec manifest.
+- `assets/operation.jq` - operation resolver and search.
 
 ## Notes
 
-- The `scriptrunner_search_atlassian_cloud_rest_api` tool is disabled in this environment.
 - Prefer these bundled local OpenAPI specs over memory or web lookups for Atlassian Cloud REST contracts.
 - Do not ask subagents to return full spec sections or large excerpts; the parent agent should perform any final focused reads directly.
 - Use `scriptrunner-documentation` separately for ScriptRunner behavior; use this skill for Atlassian REST details.

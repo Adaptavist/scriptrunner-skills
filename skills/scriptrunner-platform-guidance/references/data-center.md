@@ -20,7 +20,7 @@ ScriptRunner for Jira Data Center combines the HAPI DSL with unrestricted access
 
     <component_accessor_integration>
         <integration_approach>
-            1. Identify the Jira managers or services you need and inspect them with `look_up_api`.
+            1. Identify the Jira managers or services you need and inspect their Java API signatures (for example with the ScriptRunner MCP `look_up_scriptrunner_api` tool, or the Jira Java API documentation).
             2. Combine HAPI calls with direct Java API usage when you require advanced behaviour or performance.
             3. Reflect after each lookup to decide which service or class to explore next.
         </integration_approach>

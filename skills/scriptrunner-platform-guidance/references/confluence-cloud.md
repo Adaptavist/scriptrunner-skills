@@ -8,27 +8,19 @@ ScriptRunner for Confluence Cloud cannot access Atlassian's server-side Java API
     </context>
 
     <hapi_api_lookup>
-        Confluence Cloud HAPI is available under `com.adaptavist.hapi.cloud.confluence.*`, including entry points such as `Pages` and `Spaces`. The bundled `scriptrunner-hapi-api` skill contains the version-pinned production HAPI JAR and a local `sms-hapi-lookup` command that inspects its class files without executing them.
+        Confluence Cloud HAPI is available under `com.adaptavist.hapi.cloud.confluence.*`, including entry points such as `Pages` and `Spaces`.
 
-        Before generating or reviewing Confluence HAPI code, the agent MUST:
-        - Load `scriptrunner-hapi-api` and run `sms-hapi-lookup --product confluence <class>` for every HAPI class it plans to use. Use `--search` when the class name is unknown and `--member` to narrow a large surface.
-        - Follow the lookup's `@DelegatesTo` classes and inspect return types before writing closure bodies or chained calls. Do not infer Jira HAPI methods exist in the smaller Confluence HAPI surface.
-        - Prefer HAPI when the verified surface expresses the operation clearly. When HAPI lacks the capability, load `atlassian-cloud-rest-api` and inspect `confluence-cloud-v2-openapi.json`; use the v1 spec only when v2 lacks it.
-        - Run `sms-groovy-check --script <path> --platform cloud --product confluence --context <context>` and fix every reported type error before presenting the script.
+        Before generating or reviewing Confluence HAPI code:
+        - Verify every HAPI class you plan to use against the current HAPI signatures (a HAPI lookup tool, if your environment has one, or the HAPI documentation).
+        - Follow `@DelegatesTo` classes and inspect return types before writing closure bodies or chained calls. Do not assume Jira HAPI methods exist in the smaller Confluence HAPI surface.
+        - Prefer HAPI when the verified surface expresses the operation clearly. When HAPI lacks the capability, use the Confluence Cloud REST API v2 (the `atlassian-cloud-rest-api` skill's `confluence-cloud-v2-openapi.json`), and v1 only when v2 lacks it.
+        - Validate the script with a ScriptRunner code checker for the Confluence Cloud context it runs in (for example the ScriptRunner MCP `check_scriptrunner_script_for_errors_cloud` tool) and fix every reported type error before presenting it.
 
-        The JAR proves class and member signatures, not runtime permissions or behavioural semantics. Pair it with the bundled Confluence documentation and platform guidance.
+        Signatures prove classes and members, not runtime permissions or behaviour; pair them with the Confluence documentation and this guidance.
     </hapi_api_lookup>
 
     <pre_review_phase_global>
-        Before presenting ANY generated code to the user (via `/workspace/outputs` files or inline), you MUST run an explicit Pre review phase.
-
-        Pre review requirements:
-        1. Run one `think` call that begins with the exact label: "Pre review:".
-        2. Mega-think through bug risk: syntax validity, null/undefined safety, type compatibility, platform API constraints, ID usage, boundary cases, and output formatting.
-        3. If any risk is found, revise your plan first, then implement from the revised plan.
-        4. Do not present code until Pre review is complete.
-
-        Keep Pre review focused and concrete; report specific risks and fixes, not generic statements.
+        Before presenting any generated code, review it for concrete bug risks: syntax validity, null safety, type compatibility, platform API constraints, ID usage, boundary cases and output formatting. If you find a risk, revise the plan and implement from the revised plan.
     </pre_review_phase_global>
 
     <cloud_constraints>
@@ -64,7 +56,7 @@ ScriptRunner for Confluence Cloud cannot access Atlassian's server-side Java API
         </output>
 
         <validation>
-            After generating macro code, run `sms-groovy-check --script <path> --platform cloud --product confluence --context custom-macro`. Fix errors and repeat until the check passes or a remaining blocker is clearly explained.
+            Validate macro code with a ScriptRunner code checker in the Confluence Cloud `custom-macro` context. Fix errors and repeat until the check passes or a remaining blocker is clearly explained.
         </validation>
     </custom_macros>
 
@@ -104,7 +96,7 @@ ScriptRunner for Confluence Cloud cannot access Atlassian's server-side Java API
         </schema_first_approach>
 
         <pre_review_rest_note>
-            Apply the global Pre review phase before presenting REST integration code. Verify the final implementation still matches the discovered schema (path, method, status checks, request shape, and response handling).
+            Before presenting REST integration code, verify it still matches the discovered schema: path, method, status checks, request shape and response handling.
         </pre_review_rest_note>
 
         <openapi_skill_usage>
@@ -271,7 +263,7 @@ ScriptRunner for Confluence Cloud cannot access Atlassian's server-side Java API
             | `logger` | org.slf4j.Logger | Always |
             | `content` | java.util.Map | Current content item from CQL results |
 
-            When validating CQL script job code, run `sms-groovy-check --script <path> --platform cloud --product confluence --context escalation-service`.
+            Validate CQL script job code in the Confluence Cloud `escalation-service` context.
         </cql_script_jobs>
     </scheduled_jobs>
 

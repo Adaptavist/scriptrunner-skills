@@ -90,7 +90,7 @@ export default async function (event: IssueCreatedEvent, context: Context<EV>): 
 
 `event` is the typed event for a listener, the payload for a programmatic trigger, `{}` when none was given, `any` for a manual run. A utility script has no default export and exports named functions; any exported function can also be the target of `triggerScript`.
 
-File layout: imports, the entry function, supporting functions in reading order declared with `function`, types last. Shared logic in `scripts/Utils/<Service>.ts`, shared types in `scripts/Utils/Types.ts`. Listener handlers are named `On<Event>.ts`; scheduled jobs after the job, `SyncIssues.ts`. Prefer extending an existing script over adding one. Never edit `scripts/api/**` or `ev-params.ts`; both are generated.
+File layout: imports, the entry function, supporting functions in reading order declared with `function`, types last. Shared logic in `scripts/Utils/<Service>.ts`, shared types in `scripts/Utils/Types.ts`; in an existing workspace, use the folder it already has, `utils/` or `Utils/`, rather than adding a second. Listener handlers are named `On<Event>.ts`; scheduled jobs after the job, `SyncIssues.ts`. Prefer extending an existing script over adding one. Never edit `scripts/api/**` or `ev-params.ts`; both are generated.
 
 Style:
 
@@ -100,7 +100,7 @@ Style:
 - No global mutable state. State that outlives the invocation goes in record storage.
 - Do not catch an error only to log it; uncaught errors are logged with a stack trace, mark the run as failed and notify the workspace owner, which is what you want for anything the logic does not account for. Handle the expected cases and let the rest bubble.
 - Comment the why. JSDoc where it helps.
-- Run the clone's `lint:fix` script rather than fixing style by hand. An unused `context` warning is fine.
+- Run the clone's `lint:fix` script rather than fixing style by hand. An unused `context` warning is fine. In a workspace written in the web application, run it on the files you changed only; over the whole tree it reformats every script, as `references/cli-workflow.md` says under Building.
 - No third-party integration SDKs for a service that has a connector. Use the connector, the Generic connector, or `fetch`.
 - No tests unless asked; see `testing.md`.
 
@@ -150,12 +150,13 @@ What a vendor's API, its Managed API package and its event types do that the typ
 | Atlassian Automation | `atlassian-automation.md` | an Automation rule sends web requests to a Generic listener |
 | Confluence Cloud     | `confluence-cloud.md`     | a script calls Confluence Cloud                             |
 | Google Sheets        | `google-sheets.md`        | a script calls Google Sheets, or copies a spreadsheet       |
+| Atlassian Marketplace | `atlassian-marketplace.md` | a script calls the Marketplace reporting API               |
 | Jira Cloud           | `jira-cloud.md`           | a script calls Jira Cloud or handles its events             |
 | monday.com           | `monday-com.md`           | a script calls monday.com or handles its events             |
 | ServiceNow           | `servicenow.md`           | a script calls ServiceNow or handles its events             |
 | Slack                | `slack.md`                | a script calls Slack or handles its events                  |
 
-Atlassian Automation is the one row that is not an `app list` app; it is the sender behind the Confluence Cloud bridge. A product with no row has no known gotchas yet. When the work finds one, it goes in the feedback notes against the product's name; see Feedback in `references/cli-workflow.md`.
+Atlassian Automation and Atlassian Marketplace are the two rows that are not `app list` apps: the first is the sender behind the Confluence Cloud bridge, the second a vendor API reached through a Generic connector. A product with no row has no known gotchas yet. When the work finds one, it goes in the feedback notes against the product's name; see Feedback in `references/cli-workflow.md`.
 
 ### Three tiers
 
@@ -312,7 +313,7 @@ export default async function (event: IssueCreatedEvent, context: Context<EV>) {
 }
 ```
 
-An app listener's event is the request body and nothing else: no headers, no sender address. So a vendor's webhook secret or signature cannot be checked in the script, and no check goes in. For Jira Cloud, Jira Service Management Cloud, Microsoft Teams, Zoom, and Slack through its connector, the platform verifies the signature before the script runs; for the other apps the mechanism goes unchecked. Only a Generic listener hands the script `headers` and `sourceIp`, which is what the recipe below checks with `x-shared-secret`. A vendor's signature over a JSON body cannot be verified there either; see Generic HTTP events. Do not move an integration to a Generic listener for security on your own; `references/cli-workflow.md` says under Hardening when to offer it.
+An app listener's event is the request body and nothing else: no headers, no sender address. So a vendor's webhook secret or signature cannot be checked in the script, and no check goes in. For Microsoft Teams, Zoom, and Slack through its connector, the platform verifies the signature before the script runs. Jira Cloud and Jira Service Management Cloud get a partial check: the platform rejects a `sha256=` signature that does not match, but a request with no `X-Hub-Signature` header, or one without the `sha256=` prefix, reaches the script, so the webhook URL's secrecy still matters there. For the other apps the mechanism goes unchecked. Only a Generic listener hands the script `headers` and `sourceIp`, which is what the recipe below checks with `x-shared-secret`. A vendor's signature over a JSON body cannot be verified there either; see Generic HTTP events. Do not move an integration to a Generic listener for security on your own; `references/cli-workflow.md` says under Hardening when to offer it.
 
 ### Two-way syncs and the service user
 
@@ -358,9 +359,10 @@ import {
 import { convertBase64ToText } from '@sr-connect/convert'
 
 export default async function (event: HttpEventRequest, context: Context<EV>): Promise<HttpEventResponse> {
+	// A TEXT parameter created with --masked; a PASSWORD would reach the script as a placeholder
 	const secret = context.environment.vars.WEBHOOK_SECRET
 	if (!secret) throw new Error('Parameter WEBHOOK_SECRET is not set in this environment.')
-	if (header(event, 'x-shared-secret') !== secret) {
+	if (!safeEqual(header(event, 'x-shared-secret') ?? '', secret)) {
 		return { ...buildJSONResponse({ error: 'unauthorized' }), status: 401 }
 	}
 	if (isJSON<Payload>(event)) {
@@ -379,9 +381,44 @@ function header(event: HttpEventRequest, name: string): string | undefined {
 	const key = Object.keys(event.headers).find((k) => k.toLowerCase() === wanted)
 	return key === undefined ? undefined : event.headers[key]
 }
+
+// Compares in time that does not depend on where the strings first differ
+function safeEqual(a: string, b: string): boolean {
+	if (a.length !== b.length) return false
+	let diff = 0
+	for (let i = 0; i < a.length; i++) diff |= a.charCodeAt(i) ^ b.charCodeAt(i)
+	return diff === 0
+}
 ```
 
+The check runs before any work, and it fails closed: an unset parameter throws, which fails the run and tells the workspace owner, and a wrong or missing header answers 401.
+
 Header names keep the casing the caller sent: `X-Shared-Secret` from one client, `x-shared-secret` from another, and HTTP/2 clients send lower case. `event.headers` is a plain object, not a `Headers` instance, so `event.headers['x-shared-secret']` misses a caller that capitalizes, and a secret check written that way fails closed for it. Use a lookup like `header()` above for every header the script reads.
+
+A link that a notification posts, a Slack message or an email pointing at a sync listener's page, must not carry the shared secret: everyone who sees the message holds it from then on. Put a short-lived signed token in the link instead, and check it before the page renders. The runtime has HMAC through `crypto.subtle`:
+
+```ts
+// Link: `${url}?resource=${encodeURIComponent(id)}&expires=${expiresAt}&sig=${await sign(secret, `${id}.${expiresAt}`)}`
+const MAX_LINK_AGE_MS = 24 * 60 * 60 * 1000
+
+async function sign(secret: string, data: string): Promise<string> {
+	const key = await crypto.subtle.importKey('raw', new TextEncoder().encode(secret), { name: 'HMAC', hash: 'SHA-256' }, false, ['sign'])
+	const mac = await crypto.subtle.sign('HMAC', key, new TextEncoder().encode(data))
+	return Array.from(new Uint8Array(mac), (b) => b.toString(16).padStart(2, '0')).join('')
+}
+
+async function linkIsValid(secret: string, params: Record<string, string>): Promise<boolean> {
+	const { resource, expires, sig } = params
+	// Digits only: a NaN expiry never lapses, and a dot would let the holder move the split in `${resource}.${expires}`
+	if (!resource || !expires || !sig || !/^\d+$/.test(expires)) return false
+	const expiresAt = Number(expires)
+	const now = Date.now()
+	if (expiresAt <= now || expiresAt > now + MAX_LINK_AGE_MS) return false
+	return safeEqual(sig, await sign(secret, `${resource}.${expires}`))
+}
+```
+
+Read the parameters from `event.queryStringParams`, and keep the expiry short, minutes to a day, since anyone holding the link can use it until then. `linkIsValid` refuses anything further out than `MAX_LINK_AGE_MS`.
 
 Request shape: `method`, `path`, `queryString`, `queryStringParams`, `headers`, `bodyType?: 'base64' | 'text' | 'json'`, `body?`, `sourceIp`. JSON content types parse to an object, text types to a string, everything else to base64. A parsed JSON body cannot be turned back into the bytes the sender signed, and `JSON.stringify` does not rebuild them, so a sender's signature is verifiable only on a body that arrives as a string, `bodyType` `'text'` or `'base64'`; log one request to see which. For a JSON sender, check a shared-secret header or `sourceIp` instead. Response shape: `status`, `headers?`, `body?`, `isBase64?`. Helpers: `isJSON<T>`, `isText`, `isBase64`, `buildJSONResponse`, `buildPlainTextResponse`, `buildHTMLResponse`. Each builder takes one argument, the body, and returns status 200 with the matching `Content-Type` header; none takes a status. For any other status, spread the builder's result and override `status`, as the 401 above does, or write the response object by hand. Do not modify an existing generic-listener script unless the intent is clear; you cannot see what calls it.
 
@@ -420,7 +457,7 @@ Options: `scope`, one of `environment` by default, `workspace`, `team` and `invo
 
 Keys: letters, digits, underscore, dash. Under 1024 bytes. Case-insensitive and stored lower-cased, so `Run-1` and `run-1` are one record and a listing gives back `run-1`. A `:`, `/`, `.` or space fails with HTTP 400 `Key can only contain alphanumeric characters, underscores and dashes.` Namespace with `_` or `-`: `mr-summary_${id}`.
 
-Values: any JSON-serializable object, string, number, boolean or array, far larger than the event payload cap; a 6 MB string stored and read back fine in one probe (Snapshot 2026-10-08). Not `undefined`, `null` or a function. A `Date` comes back as a string, a `Map` or `Set` as `{}`.
+Values: any JSON-serializable object, string, number, boolean or array, far larger than the event payload cap; a 6 MB string stored and read back fine in one probe (Snapshot 2026-10-08). A value from about 390 KB up is kept in object storage instead of the table, which the API hides; one call takes about 100 MB at most on the standard runtime. One agent read back 23 values of about 3 million JSON characters each in about 9 seconds in all (Snapshot 2026-10-16). Not `undefined`, `null` or a function. A `Date` comes back as a string, a `Map` or `Set` as `{}`.
 
 Every operation throws `ServiceError` on a bad key, a failed call, a too-large value, exhausted capacity, or an existing record under `denyUpdateOverwrite`. The last carries no error code of its own: it is the 400 whose message starts `Record already exists in given scope`, so a create-if-absent tells "somebody else won" from a real failure by that message, and rethrows anything else. Fail closed: never wrap a storage call in a `catch` that returns the "proceed" value, because an idempotency guard whose `catch` says "allowed" cannot tell an outage from a key it can never write. Do not default to `team` scope unless the user asks.
 
@@ -474,11 +511,12 @@ Encodings default to `utf8`; `utf-16le` and `base64url` are among the options. `
 - URL string only. Options `method`, `headers`, `body`, `agent`.
 - `body`: `string`, `ArrayBuffer`, `ArrayBufferView` or `FormData`. Not `Blob`; pass `blob.arrayBufferSync()`. `FormData` sets the multipart content type for you.
 - A non-2xx status does not reject; check `response.ok`. A network failure rejects with `ServiceError` whose `service` is `Fetch`.
-- The body can be read once. `response.json<J>()` takes a type parameter.
+- The body can be read once. `response.json<J>()` takes a type parameter. That holds for script code, typed by `@sr-connect/runtime-types`; under the clone's `node/tsconfig.json`, which a test that imports a script runs with, `fetch` is Node's own, its `json()` takes none and returns `unknown`, so cast there.
 - `Response.redirected` is always false, `url` empty, `type` `default`.
 - `Headers` matches names case-insensitively, so `get('Content-Type')` and `get('content-type')` are the same entry. Response headers come back lower-case.
 - No timeout. The platform puts no limit of its own on a request and `signal` is not an option; an `AbortController` exists but cannot cancel anything. A host that never answers holds the call until something upstream gives up, which one agent saw take about 120 seconds, or until the invocation's own limit ends the run. A poller reaching several hosts should budget for that: read `context.timeout`, stop issuing calls well before it runs out, and keep progress in record storage so the next run picks up after a hang.
 - No `User-Agent` of the platform's own is sent, only the HTTP client's default. Some hosts refuse or throttle that; set `User-Agent` in `headers` for a host that wants one.
+- A response body too large to carry back fails with `ServiceError` `Error while performing HTTP call (Fetch API)` and no status, the same message as a network failure. One agent hit it on JSON exports of tens of MB, after about 10 seconds, while smaller pages of the same data came back fine (Snapshot 2026-10-16). Fetch large data in pages or date ranges, or use the vendor's asynchronous export.
 - `URL` properties are snapshots; mutating `searchParams` does not update `href`. Build the string and construct again.
 
 Request headers the platform understands:

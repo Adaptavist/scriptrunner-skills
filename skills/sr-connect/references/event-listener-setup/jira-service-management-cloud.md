@@ -1,6 +1,6 @@
 # Jira Service Management Cloud
 
-Listener type ADMIN_WEBHOOK, 40 event types. A Jira Service Management Cloud site is a Jira Cloud site: the webhooks page, the fields, the JQL filter, the secret and the workflow rule that fires Issue Transitioned are the same as in `jira-cloud.md`, and everything there applies. Snapshot 2026-09-14 from the web application's setup dialog, rechecked 2026-10-08 against the dialog's source, and cross-checked on 2026-09-14 against https://confluence.atlassian.com/servicedeskcloud/managing-webhooks-1097175852.html and https://developer.atlassian.com/cloud/jira/platform/webhooks/. Sibling: `jira-cloud.md`; a fix there is a fix here.
+Listener type ADMIN_WEBHOOK, 40 event types. A Jira Service Management Cloud site is a Jira Cloud site: the webhooks page, the fields, the JQL filter, the secret and the workflow rule that fires Issue Transitioned are the same as in `jira-cloud.md`, and everything there applies. Snapshot 2026-09-14 from the web application's setup dialog, rechecked 2026-10-08 against the dialog's source and 2026-10-16 against the platform's signature check, and cross-checked on 2026-09-14 against https://confluence.atlassian.com/servicedeskcloud/managing-webhooks-1097175852.html and https://developer.atlassian.com/cloud/jira/platform/webhooks/. Sibling: `jira-cloud.md`; a fix there is a fix here.
 
 ## Before you hand over
 
@@ -23,7 +23,7 @@ JQL on the webhook: `project = SD AND "Request Type" = "Get IT help"` narrows to
 
 ## Secure it
 
-As Jira Cloud: a secret on the webhook, the same value in the setup dialog, `X-Hub-Signature` verified by the platform.
+As Jira Cloud: a secret on the webhook and the same value in the setup dialog. The platform rejects a delivery whose `X-Hub-Signature` does not match, but a request with no `X-Hub-Signature` header, or one without the `sha256=` prefix, reaches the script unchecked, so the webhook URL's secrecy still matters.
 
 ## Known differences from the setup dialog
 

@@ -1,6 +1,6 @@
 # Jira Cloud
 
-What a script meets at run time when it calls Jira Cloud or handles its events. Snapshot 2026-10-08, read from `@managed-api/jira-cloud-v3-sr-connect` 3.7.0 and `@sr-connect/jira-cloud` 1.5.0 and from agents' notes on real sites. Load this file only when a script calls Jira Cloud's API or handles its events. Authorizing the connector is `references/connector-setup/jira-cloud.md`; registering the webhook is `references/event-listener-setup/jira-cloud.md`.
+What a script meets at run time when it calls Jira Cloud or handles its events. Snapshot 2026-10-16, read from `@managed-api/jira-cloud-v3-sr-connect` 3.7.0 and `@sr-connect/jira-cloud` 1.5.0 and from agents' notes on real sites. Load this file only when a script calls Jira Cloud's API or handles its events. Authorizing the connector is `references/connector-setup/jira-cloud.md`; registering the webhook is `references/event-listener-setup/jira-cloud.md`.
 
 ## The vendor API
 
@@ -31,6 +31,7 @@ What a script meets at run time when it calls Jira Cloud or handles its events. 
 - The event's `Comment` has no `visibility`, which Jira sends on a comment restricted to a role or group. A sync that must not leak restricted comments declares the field locally and checks it.
 - `summary`, `project`, `issuetype`, `reporter` and the rest of `IssueFields` are optional. `event.issue.fields.project.key` fails ts-strict; write `event.issue.fields.project?.key`.
 - The seeded samples use project `TST`. A script scoped to one project skips them; see Simulation loop in `references/cli-workflow.md`.
+- The seeded Issue Created sample's assignee carries `emailAddress`. A real webhook can leave it out, as the user directory does for a profile that hides it, so a script that relies on it passes in simulation and can fail on real events. Make an in-scope test payload without `emailAddress` to exercise the fallback.
 
 ## Verify before trusting
 

@@ -7,7 +7,7 @@ description: >-
     @sr-connect/cli. Use for any SRC, ScriptRunner Connect or Atlassian-integration question, and
     load references/ before running the CLI.
 metadata:
-    version: '1.8'
+    version: '1.9'
 ---
 
 # ScriptRunner Connect
@@ -41,16 +41,23 @@ The snapshots in this file, the connector table, limits, plans and package list,
 
 ## Is this skill current
 
-Once per session, before the first CLI call. Skip it when `~/.agents/.skill-lock.json` and `./.agents/.skill-lock.json` both lack an `sr-connect` entry, when there is no network, or when GitHub answers 403: say so in one line and carry on with this copy.
+Once per session, before the first CLI call. Compare hashes when you can, and fall back to comparing versions when you cannot. With no network, skip it: say so in one line and carry on with this copy.
 
-1. Read `skills["sr-connect"].skillFolderHash` from the lockfile that has the entry. The project lockfile wins over the home one. `npx skills add` writes this hash, and it is the git tree sha of `skills/sr-connect` in the published repo.
+1. Find the hash of the installed copy. A project lockfile wins over the home one. No lockfile with an `sr-connect` entry means no hash: go to the version check below.
+    - `./skills-lock.json` at the project root, which a project install by a recent `npx skills` writes. Its `computedHash` hashes the installed files a way GitHub does not, so do not compare it. Compute the git tree sha of the installed folder instead, which needs `git`; without it, go to the version check. Set `s` to the folder this `SKILL.md` was loaded from. The config flags and the `.DS_Store` sweep keep the user's git settings and Finder's files out of the hash:
+
+        ```bash
+        s=.agents/skills/sr-connect; d=$(mktemp -d) && cp -R "$s/." "$d" && find "$d" -name .DS_Store -delete && git -C "$d" init -q && git -C "$d" -c core.excludesFile=/dev/null -c core.attributesFile=/dev/null -c core.autocrlf=false add -A -f && git -C "$d" write-tree; rm -rf "$d"
+        ```
+
+    - `./.agents/.skill-lock.json` or `~/.agents/.skill-lock.json`: read `skills["sr-connect"].skillFolderHash`, which is already the git tree sha of `skills/sr-connect` in the published repo.
 2. Fetch the published sha of that folder. The endpoint is unauthenticated and lists every skill in the repo:
 
     ```bash
     curl -s 'https://api.github.com/repos/adaptavist/scriptrunner-skills/contents/skills?ref=main'
     ```
 
-    Take `sha` from the entry whose `name` is `sr-connect`.
+    Take `sha` from the entry whose `name` is `sr-connect`. A 403 means GitHub's limit of 60 unauthenticated calls an hour per address ran out: go to the version check.
 
 3. Equal hashes: say nothing. Different hashes: tell the user this copy is behind the published skill and recommend updating, strongly, since the newer copy holds guidance this one lacks. Offer to run the update for them, or to hand them the line to run themselves, and say that either way the new files load from their next session, not this one, so the current session carries on with this copy. Wait for their answer. Do not run it without one.
 
@@ -58,7 +65,13 @@ Once per session, before the first CLI call. Skip it when `~/.agents/.skill-lock
     npx skills@latest update sr-connect
     ```
 
-Do not compare `metadata.version` in this file instead. The folder hash changes on every publish and the version field does not.
+The version check, for when there is no hash to compare. Fetch the published `SKILL.md`, which is not subject to the API limit:
+
+```bash
+curl -s 'https://raw.githubusercontent.com/adaptavist/scriptrunner-skills/main/skills/sr-connect/SKILL.md'
+```
+
+Read `metadata.version` from its frontmatter and from this file's, and compare them part by part as numbers, so `1.10` is newer than `1.9`. A newer published version means this copy is behind: tell the user as for different hashes above. The same version, or a fetch that fails: say nothing. The version moves once per release that changes the skill, so it misses a release that went out without a bump. The hash catches every change, which is why it comes first.
 
 ## What it is
 
@@ -98,7 +111,7 @@ Glossary, docs word first, CLI group second:
 | FIFO processing for a listener's events                              | event queue         | `event-queue`                           |
 | Editable working version of a workspace                              | HEAD                | an environment with no `release` field  |
 | Immutable snapshot                                                   | release, deployment | `release create -e <env>`, one call     |
-| Space an environment's config lives in, targets HEAD or a release    | environment         | `environment`                           |
+| Space an environment's config lives in, targets HEAD or a release    | environment         | `environment`; `-e` takes its ID        |
 | Editing lock, shared with the web app                                | none                | `workspace-lock`                        |
 | Team allowlist of outbound destinations, connectors and hostnames    | Egress Firewall     | `egress-firewall`                       |
 
@@ -110,7 +123,7 @@ A workspace holds scripts, API connections, event listeners, scheduled triggers,
 
 HEAD is the working version and is always editable. A release is a snapshot of HEAD, scripts, README and the release-level configuration of listeners, API connections and triggers, and it cannot change afterwards. Versions are semver and must increase. `release create -e <env>` cuts the release and deploys it into the environment in one call; `environment target-release` only moves an environment onto an existing release or back to HEAD. An environment targets HEAD or a single release and holds its own environment-specific configuration: the connector on each API connection, the connector and setup state on each event listener, a generic listener's URL path, each scheduled trigger's CRON and enabled state, each queue's enabled state, and parameter values. That configuration stays editable in a released environment; everything else is read-only there, and a resource created after the release is out of scope until a release containing it is deployed.
 
-Every workspace starts with a single environment named Default on HEAD. Keep exactly one environment on HEAD and develop there; fix forward with a new release rather than editing an old one. Rolling back means pointing the environment at an older release or back at HEAD. Scripts read `context.environment.name`; `context.deployment` is undefined on HEAD.
+Every workspace starts with a single environment named Default on HEAD. Default is its name; the CLI addresses it by the ID `environment list` reports. Keep exactly one environment on HEAD and develop there; fix forward with a new release rather than editing an old one. Rolling back means pointing the environment at an older release or back at HEAD. Scripts read `context.environment.name`; `context.deployment` is undefined on HEAD.
 
 Source: https://docs.adaptavist.com/src/latest/workspaces/deployments-and-environments
 
@@ -143,6 +156,8 @@ The Generic app's HTTP_ENDPOINT listener type. It accepts any HTTP request on a 
 Its primary purpose is to receive events from apps SRC does not support out of the box: anything that can send an HTTP request can trigger a script. It also covers apps that have no webhooks of their own when something else can be made to send the event. Confluence Cloud is the standing example: it offers no webhooks, so it has no listener type, but ScriptRunner for Confluence Cloud can listen to events inside Confluence and forward them to a generic listener's URL, which gives SRC a Confluence Cloud event feed after all. Two more apps reach SRC the same way. Trello has an API that registers a webhook, so point that webhook at a generic listener. Google Calendar and Google Sheets have no connector-level events, but Google Apps Script can watch the calendar or sheet and post to a generic listener's URL.
 
 Because the sync mode sends a response back, the listener is also a way to publish something rather than only to receive. A script that answers with JSON is a small API of your own, in front of any system the workspace can reach, with SRC handling hosting, auth headers and logging. A script that answers with HTML is a custom user interface: a status page, a form, a lookup screen, served from the workspace with no separate web host. Between those two, the same listener adds security a plain webhook lacks: check a shared secret header, allowlist `sourceIp`, or validate a signature before doing anything, since the endpoint is otherwise anonymous.
+
+A Generic listener with no check in its script is protected only by the secrecy of its URL, and URLs leak: chat messages, browser history, proxy logs, screenshots, shared documents, notification payloads. Treat any endpoint that reads non-public data, changes state or triggers scripts as one that needs authentication. When you build such an endpoint, add the check without being asked and say in the closing summary that you did; leave it out only for a pure public sink, and say that too. The default check is a shared-secret header compared against a masked TEXT parameter, failing closed; the code is under Generic HTTP events in `references/scripting.md`. A link posted to Slack or an email must not carry the secret: link to a page that asks for it, or put a short-lived signed token in the link instead.
 
 Source: https://docs.adaptavist.com/src/latest/workspaces/event-listeners/generic-http-events
 
@@ -213,7 +228,7 @@ Request blocked by the team's Egress Firewall.
 The "Jira Cloud" connector is not on the allowed connectors list. A team admin can allow it under Team Settings → Egress Firewall. - ScriptRunner Connect Error code: 11007
 ```
 
-A different error means something else. Error code 10001 is the runtime failing a connection, and it is checked before the firewall. `Connection not allowed for URL` means a hostname that does not resolve or an address scripts cannot reach, and is fixed in the URL or DNS, never in the allowlist. `Error while performing HTTP call (Fetch API)` with the same code came back on connector calls that never received a response, and its text does not say whether the firewall is involved, so run `egress-firewall check-api-connections` in that workspace and environment. `APPROVED` there means look at the vendor, the connector's base URL or the connection; any other state is an entry to fix, since it would block the call as well. Only 11007 with "Request blocked by the team's Egress Firewall" is the firewall's own answer.
+A different error means something else. Error code 10001 is the runtime failing a connection, and it is checked before the firewall. `Connection not allowed for URL` means a hostname that does not resolve or an address scripts cannot reach, and is fixed in the URL or DNS, never in the allowlist. `Error while performing HTTP call (Fetch API)` with the same code came back on connector calls that never received a response, and on a response too large to carry back, and its text does not say whether the firewall is involved, so run `egress-firewall check-api-connections` in that workspace and environment. `APPROVED` there means look at the vendor, the connector's base URL or the connection; any other state is an entry to fix, since it would block the call as well. Only 11007 with "Request blocked by the team's Egress Firewall" is the firewall's own answer.
 
 A deployment says whether it has a firewall. A private cloud instance can run without one; there `egress-firewall list` is refused with `EGRESS_FIREWALL_DISABLED`, nothing is filtered, and nothing here applies. A deployment that predates the feature answers the same read with `Path not found`, exit 4, and filters nothing either. Assume the firewall is on until one of those answers says otherwise. How the agent asks about approval, adds entries and stops for a human is under Egress Firewall in `references/cli-workflow.md`.
 
@@ -290,7 +305,7 @@ Source: https://docs.adaptavist.com/src/latest/limits-and-quotas and the pages a
 | External API calls (team)                                                   | Free 5/s, paid 100/s                                             |
 | Record storage calls (team)                                                 | Free 1/s, paid up to 50/s depending on plan; shared by every workspace and invocation |
 | Trigger script calls (team)                                                 | Free 1/s, paid 10/s                                              |
-| REST API calls (user)                                                       | Free 5/s, paid 20/s                                              |
+| REST API calls (user)                                                       | Free 5/s, paid 20/s; shared by all of the user's API keys and agents |
 
 ## Runtime in one paragraph
 
@@ -361,7 +376,7 @@ When the `agenticFeedback` switch is on, the work leaves notes for the ScriptRun
 
 ## Asking questions
 
-Front-load them. Before the first change, gather everything the work will turn on: which apps and which environments, what counts as production, whether you may probe and whether a probe may mutate, whether you may run a simulation loop with test payloads, whether you may auto-approve the Egress Firewall entries the work adds, which package upgrades are wanted, how the result will be tested end to end. One round of questions up front is cheaper for the user than a question every ten minutes, and it is what lets you go away, build in the simulation loop for as long as the user allowed, and come back once with something to test.
+Front-load them. Before the first change, gather everything the work will turn on: which apps and which environments, what counts as production, whether you may probe and whether a probe may mutate, whether you may run a simulation loop with test payloads, whether you may auto-approve the Egress Firewall entries the work adds, which package upgrades are wanted, how the result will be tested end to end. One round of questions up front is cheaper for the user than a question every ten minutes, and it is what lets you go away, build in the simulation loop for as long as the user allowed, and come back once with something to test. Waiting is different from building: any one wait on the user, for an event they fire or an approval they give, stops at 15 minutes, as `references/cli-workflow.md` says under Posture.
 
 VERY IMPORTANT: a request for a plan does not skip that round. A plan for an integration written without knowing which environments exist, what counts as production, or whether you may probe is a guess dressed as a plan. Whatever mechanism your harness has for putting questions to the user, plan mode included, use it for these questions before writing the plan. The plan depends on what the workspace and the target apps hold, so probing belongs before the plan and not after it, but only once the user has consented to probing. No consent means no probe: write the plan from the reads the CLI allows and what the user told you, and mark each place a probe would have settled.
 

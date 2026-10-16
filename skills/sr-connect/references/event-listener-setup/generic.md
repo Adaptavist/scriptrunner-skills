@@ -1,6 +1,6 @@
 # Generic
 
-Listener type HTTP_ENDPOINT, 2 event types: "Async HTTP Event" and "Sync HTTP Event". Nothing to register on any vendor's side by definition; whatever can send an HTTP request is the sender, and what the block hands the user depends on what that is. Snapshot 2026-09-14 from the web application's setup dialog and https://docs.adaptavist.com/src/latest/workspaces/event-listeners/generic-http-events. The three bridges below were cross-checked the same day against the vendor URLs named in each.
+Listener type HTTP_ENDPOINT, 2 event types: "Async HTTP Event" and "Sync HTTP Event". Nothing to register on any vendor's side by definition; whatever can send an HTTP request is the sender, and what the block hands the user depends on what that is. Snapshot 2026-09-14, Secure it rechecked 2026-10-16, from the web application's setup dialog and https://docs.adaptavist.com/src/latest/workspaces/event-listeners/generic-http-events. The three bridges below were cross-checked the same day against the vendor URLs named in each.
 
 ## Before you hand over
 
@@ -18,13 +18,13 @@ Whatever the sender offers. Nothing on the platform side filters a Generic liste
 
 ## Secure it
 
-The endpoint is anonymous. Use all three of these where the sender allows:
+The endpoint is anonymous, and with no check in the script the secrecy of its URL is the only protection; URLs leak through chat, logs and screenshots. Any endpoint that reads non-public data, changes state or triggers scripts gets a check. Use all three of these where the sender allows:
 
 - A URL path that cannot be guessed: pass `--url-path` with a random suffix on create, or leave it to the generated one.
 - A shared secret in a header, compared in the script against a masked TEXT parameter, as `references/scripting.md` shows with `x-shared-secret`. Header names arrive in whatever casing the sender used, so the script looks them up case-insensitively; tell the sender the header name, not a casing. A sender's signature is verifiable only when the body arrives as a string, `bodyType` `'text'` or `'base64'`: a JSON body reaches the script parsed and the signed bytes are gone, as `references/scripting.md` explains under Generic HTTP events. For a JSON sender, the header or the allowlist is the check.
 - An allowlist on `event.sourceIp` when the sender publishes its addresses.
 
-The platform verifies nothing on a Generic listener.
+The platform verifies nothing on a Generic listener. A link to the endpoint that a notification posts must not carry the secret; `references/scripting.md` shows a short-lived signed link under Generic HTTP events.
 
 ## Bridges
 

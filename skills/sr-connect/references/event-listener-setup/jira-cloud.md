@@ -1,6 +1,6 @@
 # Jira Cloud
 
-Listener type ADMIN_WEBHOOK, 49 event types. Snapshot 2026-09-14 from the web application's setup dialog, rechecked 2026-10-12 against the dialog's source after changes that moved Issue Transitioned to Jira's new workflow editor and told users not to select events on its webhook, and cross-checked on 2026-09-14 against https://developer.atlassian.com/cloud/jira/platform/webhooks/ and https://support.atlassian.com/jira-cloud-administration/docs/manage-webhooks/. Jira Service Management Cloud uses the same webhooks page and has its own file, which differs from this one in two lines.
+Listener type ADMIN_WEBHOOK, 49 event types. Snapshot 2026-09-14 from the web application's setup dialog, rechecked 2026-10-12 against the dialog's source after changes that moved Issue Transitioned to Jira's new workflow editor and told users not to select events on its webhook, rechecked 2026-10-16 against an agent's notes from a live site and against the platform's signature check, and cross-checked on 2026-09-14 against https://developer.atlassian.com/cloud/jira/platform/webhooks/ and https://support.atlassian.com/jira-cloud-administration/docs/manage-webhooks/. Jira Service Management Cloud uses the same webhooks page and has its own file, which differs from this one in two lines.
 
 ## Before you hand over
 
@@ -19,7 +19,9 @@ Needs the Administer Jira global permission.
 
 ## Steps
 
-1. Open the webhooks page, "Create a webhook".
+1. Open the webhooks page, "Create a WebHook". Before creating one, look through the list for an enabled webhook with the same event and the same project scope, often left behind by an earlier integration: one Jira event then fans out to every one of them. Ask the user what to do with any you find.
+
+    Clicking the link adds an unsaved draft to the list at once, in bold and named "New Webhook Listener", and the "N webhooks found" count already includes it. To confirm that exactly one webhook was created, open the saved entry and read its URL, JQL and events, rather than comparing counts.
 2. "Name" it after the integration.
 3. Paste the webhook URL into "URL". HTTPS only, which it is.
 4. "Secret": see Secure it. "Generate secret" makes one; the same value goes into the setup dialog.
@@ -45,14 +47,16 @@ JQL on the webhook, the "Issue related events" filter: `project = ACME`, `projec
 
 ## Secure it
 
-Set a secret. Jira then signs every delivery: `X-Hub-Signature` is `sha256=` followed by the hex HMAC-SHA256 of the raw body. Paste the same secret into the setup dialog at `setupUrl`, "Secret", "Save changes". The platform checks every delivery against it before the script runs; no further action is needed, and nothing goes in the code.
+Set a secret. Jira then signs every delivery: `X-Hub-Signature` is `sha256=` followed by the hex HMAC-SHA256 of the raw body. Paste the same secret into the setup dialog at `setupUrl`, "Secret", "Save changes". The platform then rejects a delivery whose signature does not match it, before the script runs. It does not reject a request that carries no `X-Hub-Signature` header, or one that does not start with `sha256=`. Such a request reaches the script unchecked, so anyone who learns the webhook URL can still post a body the script acts on, and the URL's secrecy is what stops them. Say so in the handoff rather than calling the listener authenticated. Nothing goes in the code, because an app listener hands the script no headers to check.
+
+When you register the webhook in the user's browser, leave "Secret" empty and hand that part to the user, since you never generate, copy or paste a secret yourself. Their two steps: in Jira, "Edit" the webhook, "Generate secret", copy it and save; then in the setup dialog at `setupUrl`, paste it into "Secret", "Save changes". Until both are done, nothing is checked. After both, the platform checks every delivery Jira signs, and a request without a `sha256=` signature still gets through, as above.
 
 ## Known differences from the setup dialog
 
 - The dialog calls the JQL filter optional. It is the one vendor-side filter Jira offers, so recommend it whenever the integration cares about some projects or issue types and not the whole site.
-- The dialog spells "Create a WebHook"; Jira's current UI reads "Create a webhook".
-- The dialog does not say that the secret is verified; the platform verifies it.
+- The link's label varies. A live site read "Create a WebHook" on 2026-10-09, as the dialog spells it; Atlassian's docs and earlier sites read "Create a webhook".
+- The dialog does not say what the secret is for. The platform rejects a delivery whose signature does not match it, and does not check a request that carries no `sha256=` signature.
 
 ## Verify before trusting
 
-The workflow page path, which Atlassian moved once already, and the workflow editor's labels, which changed with the new editor; the event's label in the checkbox list, which uses Atlassian's names ("Issue" then "created") rather than SRC's; and whether the site's admin has the permission.
+The workflow page path, which Atlassian moved once already, and the workflow editor's labels, which changed with the new editor; the event's label in the checkbox list, which uses Atlassian's names ("Issue" then "created") rather than SRC's; and whether the site's admin has the permission. After creating the webhook, that it was saved once, by its details and not by the list count, and that no older enabled webhook covers the same event and project.

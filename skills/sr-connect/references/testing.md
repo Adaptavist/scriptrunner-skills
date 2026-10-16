@@ -106,6 +106,7 @@ Tests compile under the Node project. Two consequences matter:
 
 - Both projects are ES modules. Jest runs in ESM mode through `createDefaultEsmPreset` and `--experimental-vm-modules`. There is no CommonJS anywhere.
 - `node/apiRegistry.ts` compiles under both projects, because every generated `scripts/api/<name>/index.ts` imports it and the root project compiles `scripts`. Under the root project the only types are `@sr-connect/runtime-types`, which do not declare `Buffer` or `process`. Anything you put in `apiRegistry.ts` must type-check with the platform types alone: `TextEncoder`, `TextDecoder`, `fetch`, `JSON` and the `@managed-api/commons-core` classes are fine; `Buffer` and `process.env` fail `pnpm typecheck` with TS2591. Keep Node-only code in files under `node/tests/` and inject it from there.
+- `fetch` called from a test file is Node's own, not the platform's. Its `json()` takes no type argument and returns `unknown`, so `response.json<T>()` in a test fails with TS2558; cast the result there. Script code keeps the platform's typed `json<T>()`.
 
 `Context` is a global type in both projects. `EV` comes from `ev-params.ts`, which both projects include. Neither needs an import.
 
@@ -216,6 +217,8 @@ So the value extends `BaseApiCore` and carries a `connectionId`. The way to get 
 
 The entry must exist before the script module is first evaluated. `BaseApiCore`'s constructor calls `getPlatformImplementation()` immediately, so when the key is missing the fallback class throws while `scripts/api/<name>/index.ts` is being imported, and any test importing that script fails at load with `local implementation not found`. Registering in `apiRegistry.ts` at module level satisfies this for every test. Registering from a test at runtime works only if the test assigns into `API_REGISTRY` before it `await import(...)`s the script.
 
+The script's `./api/<name>` module reads its registry entry once, when it is first imported, and keeps that instance for the rest of the file. A fake registered anew in each test is never seen after the first. Keep one fake per file, give it a `reset()` that clears its canned responses and the calls it recorded, and call that in `beforeEach`.
+
 Always override `getPlatformImplementation()` in the class you register. The `*-sr-connect` default implementation performs its call through the global `fetch` with a relative URL and the `x-stitch-connection-id` header. Under `runtimeMocks.ts` that call is routed straight back to the registry entry with that connection ID, which is the same instance, which calls `fetch` again. Your override replaces `performHttpCall` with either canned responses or an absolute-URL call to a real server, and neither goes back through the router.
 
 Two constraints on the class body:
@@ -223,7 +226,7 @@ Two constraints on the class body:
 - Do not name your method `performHttpCall`. The `*-sr-connect` class declares a private one and TypeScript refuses a subclass that redeclares it, TS2415. Any other name works.
 - `getPlatformImplementation()` runs inside `super()`, before your own constructor fields are assigned. Read fields like a base URL inside the function that handles the request, never in the body of `getPlatformImplementation()` itself.
 
-`buildResponse(url, status, statusText, headers, body)` is a protected method on every Managed API core class and returns the `Response` the layer expects. `headers` is the `Headers` class from `@managed-api/commons-core`, not the web one; its constructor accepts a plain record.
+`buildResponse(url, status, statusText, headers, body)` is a protected method on every Managed API core class and returns the `Response` the layer expects. `headers` is the `Headers` class from `@managed-api/commons-core`, not the web one; its constructor accepts a plain record. Build every fake response with it. A `Response` constructed directly from `@managed-api/commons-core`, `new Response(...)`, fails on the first body read with "Buffer implementation was not specified for Body", because only `buildResponse` sets the buffer implementation.
 
 ## Building a Context
 
@@ -536,7 +539,7 @@ Never write credentials into the repository or into `apiRegistry.ts`. Ask the us
 - Do not `jest.mock` the API connection module. ESM has no hoisting for it, and the registry already does the job in a way `pnpm typecheck` verifies.
 - Do not import `runtimeMocks.ts` from anything under `scripts/`. It does not exist on the platform.
 - Leave `scripts/api/**` alone. The CLI regenerates those files.
-- Run `pnpm typecheck && pnpm lint && pnpm test` before telling the user the tests are done. The Prettier rules apply to tests: tabs, width 120, single quotes.
+- Run `pnpm typecheck && pnpm lint && pnpm test` before telling the user the tests are done. The Prettier rules apply to tests: tabs, width 120, single quotes, and semicolons, which the scaffold's `.prettierrc` leaves at Prettier's default.
 
 ## Verify before trusting
 

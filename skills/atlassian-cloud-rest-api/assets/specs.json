@@ -20,18 +20,18 @@
   {
     "description": "Confluence Cloud REST API v2 for pages, blogposts, spaces, attachments, comments, labels, content properties, tasks, whiteboards, databases, and other current Confluence resources.",
     "fileName": "confluence-cloud-v2-openapi.json",
-    "operationCount": 218,
+    "operationCount": 252,
     "pathPrefix": "/wiki/api/v2/",
-    "schemaCount": 142,
+    "schemaCount": 221,
     "sourceUrl": "https://dac-static.atlassian.com/cloud/confluence/openapi-v2.v3.json",
     "title": "Confluence Cloud REST API v2"
   },
   {
     "description": "Jira Cloud platform REST API v3 for core Jira resources such as issues, projects, users, workflows, fields, permissions, and dashboards.",
     "fileName": "jira-cloud-platform-v3-openapi.json",
-    "operationCount": 629,
+    "operationCount": 630,
     "pathPrefix": "/rest/api/3/",
-    "schemaCount": 995,
+    "schemaCount": 1000,
     "sourceUrl": "https://dac-static.atlassian.com/cloud/jira/platform/swagger-v3.v3.json",
     "title": "Jira Cloud platform REST API v3"
   },

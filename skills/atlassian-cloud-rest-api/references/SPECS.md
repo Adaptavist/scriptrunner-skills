@@ -19,16 +19,16 @@
 - `references/specs/confluence-cloud-v2-openapi.json`
   - Product: Confluence Cloud REST API v2
   - Common paths: `/wiki/api/v2/...`
-  - Operations: 218
-  - Schemas: 142
+  - Operations: 252
+  - Schemas: 221
   - Source: https://dac-static.atlassian.com/cloud/confluence/openapi-v2.v3.json
   - Summary: Confluence Cloud REST API v2 for pages, blogposts, spaces, attachments, comments, labels, content properties, tasks, whiteboards, databases, and other current Confluence resources.
 
 - `references/specs/jira-cloud-platform-v3-openapi.json`
   - Product: Jira Cloud platform REST API v3
   - Common paths: `/rest/api/3/...`
-  - Operations: 629
-  - Schemas: 995
+  - Operations: 630
+  - Schemas: 1000
   - Source: https://dac-static.atlassian.com/cloud/jira/platform/swagger-v3.v3.json
   - Summary: Jira Cloud platform REST API v3 for core Jira resources such as issues, projects, users, workflows, fields, permissions, and dashboards.
 

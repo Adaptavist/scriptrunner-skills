@@ -1,6 +1,6 @@
 # GitHub
 
-Authorized in a browser through the platform's own GitHub app. No wizard and no choice: the user clicks "Authorize" and GitHub asks for consent. Snapshot 2026-09-15 from the web application's Manage connector dialog, cross-checked the same day against https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens.
+Authorized in a browser through the platform's own GitHub app. No wizard and no choice: the user clicks "Authorize" and GitHub asks for consent. Snapshot 2026-10-14 from the web application's Manage connector dialog, whose warning was checked against GitHub's consent screen on 2026-10-14 after it gained a paragraph on organization access; earlier cross-check 2026-09-15 against https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens.
 
 ## Before you hand over
 
@@ -8,7 +8,7 @@ Authorized in a browser through the platform's own GitHub app. No wizard and no 
 
 ## The dialog
 
-The Manage connector dialog itself, with an "Authorize" button and a warning titled "Authorizing your GitHub connector": "Please keep in mind that if you already have an existing GitHub connector, you will be automatically authorized with the account you are currently signed in on GitHub website. If you want to use a different account, before creating a new connector please sign out on https://www.github.com". The same warning appears on the name screen when the connector is created in the web application, and the dialog rates the whole thing "Less than 1 minute".
+The Manage connector dialog itself, with an "Authorize" button and a warning titled "Authorizing your GitHub connector": "Please keep in mind that if you already have an existing GitHub connector, you will be automatically authorized with the account you are currently signed in on GitHub website. If you want to use a different account, before creating a new connector please sign out on https://www.github.com. Under Organization access, click Grant for each organization the connector should access. If it shows Request instead, an organization owner must approve it first." The same warning appears on the name screen when the connector is created in the web application, and the dialog rates the whole thing "Less than 1 minute".
 
 That warning is the whole setup difficulty. GitHub remembers the consent given to the platform's app, so a second connector is authorized silently as whoever is signed in on github.com in that browser, without a consent screen. When the integration should run as a bot or service account, sign out of github.com first, or use a private window signed in as that account, then open `authorizationUrl`.
 
@@ -16,7 +16,7 @@ That warning is the whole setup difficulty. GitHub remembers the consent given t
 
 1. In the browser that will authorize, make sure github.com is signed in as the account the integration should act as. Sign out first if it is not.
 2. Open `authorizationUrl`, sign in to the platform, "Authorize".
-3. A consent window opens on GitHub. On first consent GitHub lists the app's permissions and organizations; pick the organizations the integration needs access to, and "Authorize". An organization that requires approval for third-party apps shows "Request" instead, and an organization owner has to approve before the connector can reach its repositories.
+3. A consent window opens on GitHub. On first consent GitHub lists the app's permissions and, under "Organization access", the organizations; click "Grant" next to each one the integration needs, then "Authorize". "Grant" is offered to organization owners. A member of an organization that requires approval for third-party apps sees "Request" instead, and an owner has to approve before the connector can reach its repositories.
 4. The window closes and the connector reads "Authorized".
 
 ## After the callback
@@ -34,7 +34,6 @@ Re-authorize at `authorizationUrl`. The dialog then warns, under "Reauthorizing 
 ## Known differences from the dialog
 
 - The dialog links `https://www.github.com`; github.com is where the sign-out happens, and the `www.` redirects there.
-- GitHub's consent screen has changed shape more than once (organization access is now a list with "Grant" and "Request" per organization); the dialog does not describe it.
 
 ## Verify before trusting
 

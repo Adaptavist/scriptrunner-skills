@@ -7,7 +7,7 @@ description: >-
     @sr-connect/cli. Use for any SRC, ScriptRunner Connect or Atlassian-integration question, and
     load references/ before running the CLI.
 metadata:
-    version: '1.12'
+    version: '1.13'
 ---
 
 # ScriptRunner Connect
@@ -59,7 +59,7 @@ Once per session, before the first CLI call. Compare hashes when you can, and fa
 
     Take `sha` from the entry whose `name` is `sr-connect`. A 403 means GitHub's limit of 60 unauthenticated calls an hour per address ran out: go to the version check.
 
-3. Equal hashes: say nothing. Different hashes: tell the user this copy is behind the published skill and recommend updating, strongly, since the newer copy holds guidance this one lacks. Offer to run the update for them, or to hand them the line to run themselves, and say that either way the new files load from their next session, not this one, so the current session carries on with this copy. Wait for their answer. Do not run it without one.
+3. Equal hashes: say nothing. Different hashes: tell the user this copy differs from the published skill, which usually means it is behind, and recommend updating, strongly, since the published copy holds guidance this one lacks. Offer to run the update for them, or to hand them the line to run themselves, and say that either way the new files load from their next session, not this one, so the current session carries on with this copy. Wait for their answer. Do not run it without one.
 
     ```bash
     npx skills@latest update sr-connect

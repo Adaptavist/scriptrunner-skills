@@ -1,6 +1,6 @@
 # Zoom
 
-Listener type WEBHOOK, 92 event types. Snapshot 2026-09-14 from the web application's setup dialog, cross-checked the same day against https://developers.zoom.us/docs/api/webhooks/.
+Listener type WEBHOOK, 92 event types. Snapshot 2026-10-16 from the web application's setup dialog, whose steps were checked against the Zoom App Marketplace's Access page and event subscription form on 2026-10-16 after the Features, Add New Event Subscription and Save steps were aligned with them; earlier cross-check 2026-09-14 against https://developers.zoom.us/docs/api/webhooks/.
 
 ## Before you hand over
 
@@ -10,23 +10,24 @@ The secret token is required before Zoom will validate the endpoint URL, and it 
 
 ## Deep links
 
-`https://marketplace.zoom.us/user/build` lists the user's apps ("Manage", "Created Apps"). No per-app URL can be built without the app's ID.
+`https://marketplace.zoom.us/user/build` lists the user's apps: "Created apps" in the Developer sidebar, or under "Manage" in the older Marketplace layout. No per-app URL can be built without the app's ID.
 
 ## Steps
 
 Part one, the token:
 
-1. Sign in to the Zoom App Marketplace, "Manage", "Created Apps", open the app the listener is for.
-2. Open "Features", then "Access"; the older UI called the tab "Feature". Copy the "Secret Token".
+1. Sign in to the Zoom App Marketplace, "Created apps" in the Developer sidebar or under "Manage" in the older layout, open the app the listener is for.
+2. "Click on Features, then Access. On older apps the tab is Feature." "Under Token, copy the Secret Token and paste it in the Secret Token field below."
 3. Open the setup dialog at `setupUrl`, paste it into "Secret Token", "Save and continue". The platform keeps it; write it nowhere else.
 
 Part two, the subscription:
 
-4. Back on the same Zoom page, under "General Features" enable "Event Subscriptions", then "Add New Event Subscription". Up to 20 subscriptions per app.
-5. Paste the webhook URL into "Event notification endpoint URL".
-6. "Validate". Zoom posts an `endpoint.url_validation` challenge and the platform answers it with the saved token; the page shows the URL as validated. Without the token from part one this step fails.
-7. Open the event picker ("Add Events" in the dialog, "Event Types" in the current docs), tick only the event the listener was created for, "Done".
-8. "Save". Zoom revalidates the endpoint every 72 hours and emails after two failures; nothing to do as long as the listener stays enabled.
+4. Back on the same Zoom page: "Scroll down to General Features and enable Event Subscription, or Event Subscriptions on older apps." "Click on Add New Event Subscription, or Add Event Subscription on older apps." Up to 20 subscriptions per app.
+5. "Enter a meaningful name into the Subscription name field."
+6. "Click on Add Events." The "Event Types" picker lists events by description under their product, `meeting.created` is "Meeting has been created" under Meeting. "Select ONLY the following event to listen: <event>, then click Done."
+7. "Paste the copied URL into the Event notification endpoint URL field."
+8. "Click Save. Zoom validates the URL when you save. On older apps, click Validate next to the URL field first." Zoom posts an `endpoint.url_validation` challenge and the platform answers it with the saved token. Without the token from part one the save fails. Zoom revalidates the endpoint every 72 hours and emails after two failures; nothing to do as long as the listener stays enabled.
+9. Adding an event can add a scope to the app, `meeting.created` adds `meeting:read:meeting`. Zoom then delivers nothing for that event, silently, until the user re-authorizes the connector; see `references/connector-setup/zoom.md`.
 
 ## Filter on the app side
 
@@ -38,10 +39,8 @@ Zoom signs every delivery: `x-zm-signature` is `v0=` and the HMAC-SHA256 hex of 
 
 ## Known differences from the setup dialog
 
-- The dialog says "Click on Feature"; the current Marketplace UI reads "Features", then "Access", and Zoom's own docs use both spellings on one page.
-- The dialog's labels "Subscription name", "Add Events" and "Add Event Subscription" are the older page's; the current docs say "Add New Event Subscription", "Event Types" and "Done". The dialog's fallback link `marketplace.zoom.us/user/build` is not in the docs, which say "Manage", "Created Apps"; it resolves to the same list.
-- The dialog does not say the signature is verified after validation; the platform does both.
+- The dialog follows the General app form, naming the older app types' labels in asides. It does not say that on those older apps the fields come in a different order: name, method, endpoint URL, "Validate", authentication header, "Add Events", then Save.
 
 ## Verify before trusting
 
-The tab names on the app page, which Zoom has renamed at least once, and the 20-subscription cap. The validation and signature mechanics are stable and documented at the URL above.
+The 20-subscription cap, and the event names in the picker, which Zoom lists by description rather than by `event` value. The validation and signature mechanics are stable and documented at the URL above.

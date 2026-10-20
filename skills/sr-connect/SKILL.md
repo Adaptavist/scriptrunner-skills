@@ -7,7 +7,7 @@ description: >-
     @sr-connect/cli. Use for any SRC, ScriptRunner Connect or Atlassian-integration question, and
     load references/ before running the CLI.
 metadata:
-    version: '1.11'
+    version: '1.12'
 ---
 
 # ScriptRunner Connect
@@ -343,7 +343,7 @@ Source: https://docs.adaptavist.com/src/latest/connectors and the web applicatio
 | Salesforce                                | OAuth 2.0, own Connected App                                | yes                                    |
 | ServiceNow                                | OAuth 2.0, own OAuth API endpoint                           | yes                                    |
 | Slack                                     | App ID, signing secret, bot token                           | yes                                    |
-| Statuspage                                | API token                                                   | yes                                    |
+| Statuspage                                | API key                                                     | yes                                    |
 | Tempo Cloud                               | OAuth 2.0, own application in Tempo                         | no                                     |
 | Tempo Planner On-Premise                  | shares Jira On-Premise                                      | no                                     |
 | Tempo Timesheets On-Premise               | shares Jira On-Premise                                      | no                                     |

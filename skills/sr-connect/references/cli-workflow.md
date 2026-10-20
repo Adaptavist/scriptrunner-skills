@@ -311,7 +311,7 @@ Index, one file per connector type. The file name is `connectionType.name` from 
 | Salesforce                                | `salesforce.md`                           | Own Connected App                                          | create only    |
 | ServiceNow                                | `servicenow.md`                           | Own OAuth API endpoint for external clients                | create only    |
 | Slack                                     | `slack.md`                                | App ID, signing secret, bot token from own Slack app       | no             |
-| Statuspage                                | `statuspage.md`                           | API token                                                  | no             |
+| Statuspage                                | `statuspage.md`                           | API key                                                    | no             |
 | Tempo Cloud                               | `tempo-cloud.md`                          | Own application registered in Tempo                        | create only    |
 | Tempo Planner On-Premise                  | `jira-on-premise.md`                      | Shares the Jira On-Premise connector                       | create only    |
 | Tempo Timesheets On-Premise               | `jira-on-premise.md`                      | Shares the Jira On-Premise connector                       | create only    |

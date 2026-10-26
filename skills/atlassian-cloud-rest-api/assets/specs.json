@@ -13,7 +13,7 @@
     "fileName": "confluence-cloud-v1-openapi.json",
     "operationCount": 130,
     "pathPrefix": "/wiki/rest/api/",
-    "schemaCount": 168,
+    "schemaCount": 170,
     "sourceUrl": "https://dac-static.atlassian.com/cloud/confluence/swagger.v3.json",
     "title": "Confluence Cloud REST API v1"
   },

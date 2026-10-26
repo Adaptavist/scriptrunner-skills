@@ -12,7 +12,7 @@
   - Product: Confluence Cloud REST API v1
   - Common paths: `/wiki/rest/api/...`
   - Operations: 130
-  - Schemas: 168
+  - Schemas: 170
   - Source: https://dac-static.atlassian.com/cloud/confluence/swagger.v3.json
   - Summary: Confluence Cloud REST API v1 for CQL content search, audit, templates, and legacy space or content operations that are not available in v2.
 

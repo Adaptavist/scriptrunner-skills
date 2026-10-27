@@ -204,7 +204,7 @@ When checking a script that touches custom fields:
   <rich_text_field_handling>
   For Behaviours field API typing:
 - `description.getValue()` and `textarea.getValue()` may be `string | ADF`.
-- Treat description, environment and textarea values as rich text.
+- Treat description and textarea values as rich text.
 
 Narrow safely before reading ADF content:
 
@@ -212,12 +212,12 @@ Narrow safely before reading ADF content:
 - `else if (value && Array.isArray(value.content)) { ... }`
 
 Do not access `value.content` without narrowing when `value` may be a string.
-When writing values back to rich text fields, always write ADF values (not plain strings).
+`setValue` must match the type `getValue` returns. With the default rich-text renderer, `description` and textarea fields hold an ADF document, so write ADF. A plain string is only valid for a field using the plain-text renderer, and never on the issue view; on a rich-text field it is not applied, and on the issue view Jira reports an error applying UI modifications. Wiki markup left inside an ADF text node is stored as literal text, so it renders as the raw characters.
 If needed, use a structural ADF type to keep type checking clean: `{ version: 1; type: "doc"; content: unknown[] }`
 
 Checker-safe examples:
 
-1. Description empty check + ADF writeback (the same pattern applies to `environment`):
+1. Description empty check + ADF writeback:
 
 ```typescript
 const field = getFieldById('description')
@@ -236,7 +236,7 @@ if (field) {
 			type: 'doc' as const,
 			content: [] as unknown[],
 		}
-		field.setValue(adf as any)
+		field.setValue(adf)
 	}
 }
 ```
@@ -262,11 +262,22 @@ if (notes) {
 			version: 1 as const,
 			type: 'doc' as const,
 			content: [] as unknown[],
-		} as any)
+		})
 }
 ```
 
 </rich_text_field_handling>
+<wiki_markup_to_adf>
+Data Center description and textarea values are wiki-markup strings. Cloud stores them as ADF. Do not pass the wiki string to setValue, and do not wrap it in a single text node: both render the markup characters literally.
+
+Translate each construct into nodes:
+
+- \*bold\* → strong; \_italic\_ → em; +underline+ → underline; -strike- → strike; {{mono}} → code
+- h1. through h6. → heading (attrs.level); a leading "\* " or "# " line → bulletList or orderedList of listItem; ||header|| and |cell| rows → table; ---- → rule; {code} → codeBlock; [text|url] → link mark; !file.png! → media
+- {panel}, {info}, {warning}, {note}, {tip}, {status}, {color}, and [~user] mentions do not convert faithfully. Record a manual step. A mention needs the bare Cloud accountId as attrs.id; do not guess one from a Data Center username.
+
+Shape the document in the ADF Playground (https://developer.atlassian.com/cloud/jira/platform/apis/document/playground/) and pass that object to setValue: `{ version: 1, type: "doc", content: [ /* nodes */ ] }`.
+</wiki_markup_to_adf>
 <common_typecheck_failure_prevention>
 Prevent frequent TypeScript failures by applying these rules before final output:
 

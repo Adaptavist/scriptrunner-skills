@@ -288,7 +288,7 @@
 - [cloud] Get multi select list field options -> references/scripts/cloud/script-console/get-multi-select-list-field-options.md
 - [cloud] Get radio button custom field option -> references/scripts/cloud/script-console/get-radio-button-custom-field-option.md
 - [cloud] Get select list custom field option -> references/scripts/cloud/script-console/get-select-list-custom-field-option.md
-- [cloud] Get select list custom field option -> references/scripts/cloud/script-console/get-select-list-custom-field-option-get-select-list-custom-field-option-cloud.md
+- [cloud] Get select list custom field option -> references/scripts/cloud/script-console/get-select-list-custom-field-option-get-custom-field-option-cloud.md
 - [cloud] Get Sprint Name for Work Item -> references/scripts/cloud/script-console/get-sprint-name-for-work-item.md
 - [data-center] Get Tempo Plans Using the REST API for a Set Time Period -> references/scripts/data-center/script-console/get-tempo-plans-using-the-rest-api-for-a-set-time-period.md
 - [cloud] Get the First Comment on a Work Item -> references/scripts/cloud/script-console/get-the-first-comment-on-a-work-item.md

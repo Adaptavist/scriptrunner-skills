@@ -1,6 +1,6 @@
 ---
 name: scriptrunner-platform-guidance
-description: Local ScriptRunner platform and product guidance for Jira Cloud, Confluence Cloud, and Jira Data Center. Use before platform-specific implementation, migration analysis, Confluence scripting, or Data Center to Cloud conversion work.
+description: Rules for writing ScriptRunner scripts that work first time, covering which APIs each platform offers, how Cloud differs from Data Center, and the mistakes to avoid. Read before writing, reviewing or migrating any script.
 metadata:
     author: sms-core
     version: '1.0'

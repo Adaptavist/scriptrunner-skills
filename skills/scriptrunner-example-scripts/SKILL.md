@@ -1,6 +1,6 @@
 ---
 name: scriptrunner-example-scripts
-description: Local ScriptRunner example script bundle for Jira Cloud and Data Center. Use when users ask for starter code, implementation patterns, workflow script examples, listeners, jobs, behaviours, or ScriptRunner snippets by feature.
+description: Working ScriptRunner example scripts grouped by feature, including listeners, scheduled jobs, behaviours, workflow functions and scripted fields. Use as a starting point instead of writing a script from scratch.
 metadata:
     author: sms-core
     version: '1.0'

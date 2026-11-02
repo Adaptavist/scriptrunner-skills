@@ -1,6 +1,6 @@
 ---
 name: jira-expressions
-description: Jira Expressions DSL reference and worked examples for ScriptRunner for Jira Cloud workflow conditions and validators. Use before writing, reviewing, or converting any Jira expression - the DSL is not JavaScript, and only its documented syntax, methods, and properties exist.
+description: Write and fix Jira expressions for ScriptRunner for Jira Cloud workflow conditions and validators, with the full language reference and worked examples. Use for any Jira expression, as they are not JavaScript and anything missing from the reference fails when it runs.
 metadata:
     author: sms-core
     version: '1.0'

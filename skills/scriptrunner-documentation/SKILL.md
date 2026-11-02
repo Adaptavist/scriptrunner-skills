@@ -1,6 +1,6 @@
 ---
 name: scriptrunner-documentation
-description: Local ScriptRunner documentation bundle for Jira Cloud, Confluence Cloud, ScriptRunner Connect, Jira Data Center, Confluence Data Center, and ScriptRunner Migration Suite. Use when users ask about ScriptRunner capabilities, setup, migrations, Migration Suite workflows, Dev and Deployment Tool guidance, REST integrations, listeners, macros, behaviours, jobs, or platform-specific constraints.
+description: ScriptRunner product documentation covering what each feature does, how to set it up, and what each platform supports. Use to answer how ScriptRunner works, or to check what is possible before writing or migrating a script.
 metadata:
     author: sms-core
     version: '1.0'

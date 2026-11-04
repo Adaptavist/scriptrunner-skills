@@ -451,7 +451,7 @@ You want to enforce that _Done_ means all sub-tasks are completed by hiding the 
 issue.subtasks.every(subtask => subtask.status.name == 'Done')
 ```
 
-Edit `[subtask.status.name](http://subtask.status.name/) == 'Done'` if you require a different sub-task resolution or status.
+Edit `subtask.status.name == 'Done'` if you require a different sub-task resolution or status.
 
 ## Sub-tasks must be in progress
 

@@ -270,7 +270,7 @@ For example, all work items that have the item priority _Major_ should be escala
      Tip: It is recommended that a transition ID be used instead of the transition name because, in some cases, it is not possible to find the transition ID by name (for example, if the _Hide From User_ Condition is configured on the transition).
      
 11.  Pick the user to run the script as in Run As. See [Run as User](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/perform-actions/fields#run-as-user--en) for more information.
-12.  In the Additional Code field, modify the `transition` structure before it is used as the PUT body `/rest/api/2/issue/< [issue.id](http://issue.id/) >/transition` to modify the work item when transitioned.
+12.  In the Additional Code field, modify the `transition` structure before it is used as the PUT body `/rest/api/2/issue/< issue.id >/transition` to modify the work item when transitioned.
 13.  Click Add.
 
 Note:
@@ -449,7 +449,7 @@ The specified transition is performed on the parent of the sub-task when a condi
      
      See [Run as User](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/perform-actions/fields#run-as-user--en) for more information.
      
-12.  In the Additional Code field, modify the `transition` structure before it is used as the PUT body `/rest/api/2/issue/< [issue.id](http://issue.id/) >/transition` to modify the work item when transitioned.
+12.  In the Additional Code field, modify the `transition` structure before it is used as the PUT body `/rest/api/2/issue/< issue.id >/transition` to modify the work item when transitioned.
 13.  Click Add.
 
 Note: See the available Script Context for Condition and Additional Code fields in the [Script Context](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/perform-actions/fields#script-context--en) section.

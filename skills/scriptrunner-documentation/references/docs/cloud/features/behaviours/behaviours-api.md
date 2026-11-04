@@ -648,7 +648,7 @@ Using the logger allows you to read the logs from your scripts inside the [Scrip
 
 For example:
 
-`[logger.info](http://logger.info/) ("hello world");`
+`logger.info ("hello world");`
 
 Available functions - each method takes a string parameter:
 

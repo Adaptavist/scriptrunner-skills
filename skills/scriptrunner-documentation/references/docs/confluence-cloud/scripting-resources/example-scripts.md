@@ -22,7 +22,7 @@ The _Example Scripts_ modal also has a search function that allows you to easily
 
 When Adaptavist Library examples do not display, and there is no error indicator within the Examples modal, this indicates there are no Library examples for that particular context. We are constantly adding to the library, so there may be examples added for that context in the future.
 
-When Adaptavist Library examples do not display, and you see an error indicator on the page, your internet connection may be down or blocking API calls to the Adaptavist Library API. You should first check your internet connection. If your internet connection is good, ensure that you allow communication to the Adaptavist Library API via the `[examples.scriptrunner.io](http://examples.scriptrunner.io/)` domain to receive Library examples within the ScriptRunner App. If you still have problems after trying this solution, please contact [Adaptavist Support](https://the-adaptavist-group-support.atlassian.net/servicedesk/customer/portal/18).
+When Adaptavist Library examples do not display, and you see an error indicator on the page, your internet connection may be down or blocking API calls to the Adaptavist Library API. You should first check your internet connection. If your internet connection is good, ensure that you allow communication to the Adaptavist Library API via the `examples.scriptrunner.io` domain to receive Library examples within the ScriptRunner App. If you still have problems after trying this solution, please contact [Adaptavist Support](https://the-adaptavist-group-support.atlassian.net/servicedesk/customer/portal/18).
 
 ### Can I still use the Adaptavist Library?
 

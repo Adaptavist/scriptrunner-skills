@@ -88,7 +88,7 @@ The URLs used for hosting ScriptRunner for Jira and Confluence Cloud are changin
 
 We advise all users with a cloud firewall to ensure that access to the following wildcard URL is permitted:
 
--   `[connect.product.adaptavist.com](http://connect.product.adaptavist.com/)`
+-   `connect.product.adaptavist.com`
 
 For more information on this change, or if you are having ongoing issues, please contact [Adaptavist Support](https://the-adaptavist-group-support.atlassian.net/servicedesk/customer/portal/18).
 

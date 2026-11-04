@@ -200,6 +200,6 @@ Line 25: These are basic checks against directory traversal attacks. This checks
 
 Line 27: This line validates the file type accessed by extension. Only Markdown files are accepted.
 
-Line 36: Note that the URL is only created once all validation is passed. This differs from `[java.net](http://java.net/).URL` instances, which perform a DNS lookup on creation.
+Line 36: Note that the URL is only created once all validation is passed. This differs from `java.net.URL` instances, which perform a DNS lookup on creation.
 
 Once you have configured the REST endpoint for your environment, your users can configure the _Markdown_ macro to point to a URL like `https://confluence.mycompany.com/rest/scriptrunner/latest/custom/markdownSftp?filename=somefile.md`. Replace _confluence.mycompany.com_ with your Confluence instance's base URL.

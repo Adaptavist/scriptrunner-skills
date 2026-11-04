@@ -21,9 +21,9 @@ We have summarized below some of the most important information regarding Script
 
 ## ScriptRunner for Jira Cloud domain allow list
 
-We advise all customers with a Cloud firewall to ensure that access to the `*. [connect.product.adaptavist.com](http://connect.product.adaptavist.com/)` wildcard URL is permitted.
+We advise all customers with a Cloud firewall to ensure that access to the `*. connect.product.adaptavist.com` wildcard URL is permitted.
 
-If your firewall policy does not support dns resolution to `*. [connect.product.adaptavist.com](http://connect.product.adaptavist.com/)` , you can add the AWS IP ranges here: [https://ip-ranges.amazonaws.com/ip-ranges.json](https://ip-ranges.amazonaws.com/ip-ranges.json). The range is particularly large, but you can filter the AWS IP ranges down to:
+If your firewall policy does not support dns resolution to `*. connect.product.adaptavist.com` , you can add the AWS IP ranges here: [https://ip-ranges.amazonaws.com/ip-ranges.json](https://ip-ranges.amazonaws.com/ip-ranges.json). The range is particularly large, but you can filter the AWS IP ranges down to:
 
 -   'EC2' service, and further down to IPv4 only if you do not need IPv6.
 -   the region, us-west-2 or eu-central-1.

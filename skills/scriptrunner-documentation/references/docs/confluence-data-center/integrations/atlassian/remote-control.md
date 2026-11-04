@@ -64,7 +64,7 @@ RemoteControl.forPrimaryJiraAppLink().exec {
 }
 ```
 
-results in an exception: `Caused by: [java.io](http://java.io/).NotSerializableException: com.atlassian.jira.project.ProjectImpl`.
+results in an exception: `Caused by: java.io.NotSerializableException: com.atlassian.jira.project.ProjectImpl`.
 
 This applies equally to returning objects from the closure. So, rather than returning a Collection of [`Version`](https://docs.atlassian.com/jira/server/com/atlassian/jira/project/version/Version.html) objects we return just their names:
 

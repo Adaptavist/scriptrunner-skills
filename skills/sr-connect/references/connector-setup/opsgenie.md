@@ -35,6 +35,8 @@ The same key as a header: Generic connector, base URL `https://api.opsgenie.com`
 
 API integration keys do not expire. The connector stops working when the integration is disabled or deleted in Opsgenie, or when its key is regenerated; then the dialog again at `authorizationUrl` with the new key. Opsgenie itself is being folded into Jira Service Management; an account that has migrated has no API integrations page and this connector cannot be set up for it.
 
+Re-authorizing against the same instance keeps the connector's Egress Firewall approval; another host or port withdraws it in every team until an admin approves it again, and in a team over its connections allowance nobody can.
+
 ## Known differences from the dialog
 
 - The dialog's link `/settings/integration/add/API/` is Opsgenie's older route; current accounts land on the integrations list, and "Add integration", then "API", reaches the form.

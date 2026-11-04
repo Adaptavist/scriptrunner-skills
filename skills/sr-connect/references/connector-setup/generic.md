@@ -39,6 +39,8 @@ The connector's API connection exposes `fetch` with the base URL and headers app
 
 Whatever the credential's own lifetime is; the platform knows nothing about it and a request with an expired key answers whatever the vendor answers, usually 401. Replace the value with `connector update` (base URL required, headers replaced as a set) or in the web application. `connector update --explain` has the rules, including that headers omitted are kept and `[]` clears them.
 
+Moving the base URL to another host or port, with `connector update` or in the web application, withdraws the connector's Egress Firewall approval in every team until an admin approves it again; a path change on the same host does not. In a team over its connections allowance nobody can approve it again, so check `team get` first.
+
 ## Known differences from the wizard
 
 - The wizard tests the base URL before saving; the API does not, so a connector created through the CLI with an unreachable base URL is created and authorized and fails on first use.

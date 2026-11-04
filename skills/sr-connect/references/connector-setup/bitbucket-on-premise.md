@@ -34,6 +34,8 @@ A personal access token, on Bitbucket Data Center 5.5 and later: the user's avat
 
 Re-authorize at `authorizationUrl`. The application link's client secret can be regenerated in Bitbucket ("View credentials"), after which the connector needs the new one. Nothing else expires on this path.
 
+Re-authorizing against the same instance keeps the connector's Egress Firewall approval; another host or port withdraws it in every team until an admin approves it again, and in a team over its connections allowance nobody can.
+
 ## Known differences from the dialog
 
 - The dialog's step 3 repeats the word "page" ("application links page page"); a typo, not two pages.

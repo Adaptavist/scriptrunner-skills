@@ -26,6 +26,8 @@ Basic authentication with the Atlassian account email and an API token from http
 
 As Jira Cloud: 88 days of inactivity on the refresh token, then "Reauthorize" at `authorizationUrl`.
 
+Re-authorizing against the same site keeps the connector's Egress Firewall approval; picking a different site withdraws it in every team until an admin approves it again, and in a team over its connections allowance nobody can.
+
 ## Known differences from the wizard
 
 Those listed in `jira-cloud.md`, plus two in this wizard alone. The self-managed option's text recommends it for the v2 API, though the platform's app covers v2 for pages, comments, attachments, spaces, tasks, custom content, label reads and content metadata; see Methods above.

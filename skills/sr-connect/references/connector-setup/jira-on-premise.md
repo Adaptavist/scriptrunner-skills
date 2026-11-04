@@ -40,6 +40,8 @@ A personal access token, on Jira Core and Software 8.14 and later and Jira Servi
 
 The public key is valid for 5 years. Re-authorizing at `authorizationUrl` first shows the confirm "Regenerate key pair": "By re-authorizing, a new public-private key pair will be automatically regenerated, which will invalidate your existing connector setup." The application link in Jira then needs the new public key pasted in, so a re-authorization is the administrator's job too, not a click.
 
+Re-authorizing against the same instance keeps the connector's Egress Firewall approval; another host or port withdraws it in every team until an admin approves it again, and in a team over its connections allowance nobody can.
+
 ## Known differences from the dialog
 
 - The dialog's older-Jira branch ("If an application url field exists next to the Create new link button") describes Jira 8 and earlier. Current Jira Data Center shows "Create link" and asks for the type.

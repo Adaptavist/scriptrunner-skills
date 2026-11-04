@@ -43,6 +43,8 @@ That gives up what a connector is for: no Managed API types, no shared authoriza
 
 The token generated through the dialog's link never expires (`expiration=never`). The connector stops working when the token is revoked under the Trello account's "Applications" settings, when the Power-Up is deleted, or when the key is regenerated; then the dialog again at `authorizationUrl` with new values. Under "Applications" the token is listed as "ScriptRunner Connect". A token generated through the dialog's older link is listed as "Stitch It", the platform's former name.
 
+Re-authorizing an already authorized connector withdraws its Egress Firewall approval in every team, because the platform stores nothing that says which account it was approved for; an admin approves it again before scripts can use it. Check the team's allowance on `team get` first: over it, nobody can.
+
 ## Known differences from the dialog
 
 - The dialog offers `read,write,account` scopes with no narrower choice; Trello's authorize URL accepts a subset, and a read-only integration could use `read` by editing the link, which the dialog does not suggest.

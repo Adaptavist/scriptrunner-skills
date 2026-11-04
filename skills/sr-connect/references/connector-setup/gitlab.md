@@ -41,6 +41,8 @@ A personal access token: avatar, "Edit profile", "Access", "Personal access toke
 
 Re-authorize at `authorizationUrl`. On a connector authorized through the platform's application the dialog warns: "You will be automatically authorized with the account you are currently signed in on GitLab website. If you want to use a different account, before reauthorization please sign out on https://gitlab.com". The same is true at first authorization, so when the integration should run as a service account, sign in to gitlab.com as that account before opening `authorizationUrl`. A self-managed application's secret can be renewed in GitLab; the connector then needs re-authorizing with the new one.
 
+A GitLab.com connector stores no tenant, so re-authorizing it withdraws its Egress Firewall approval in every team until an admin approves it again. A self-managed connector keeps its approval for the same host and loses it for another host; moving between gitlab.com and a self-managed host counts as a change. Check the team's allowance on `team get` first: over it, nobody can approve.
+
 ## Known differences from the dialog
 
 - The dialog's alert says an application link needs "administrator privileges for your GitLab Instance"; a user-owned application under "Edit profile" needs none. Only a group or instance application does.

@@ -34,6 +34,8 @@ None fixed. Zoom retired JWT apps, and every remaining route is an OAuth exchang
 
 Re-authorize at `authorizationUrl`. "Reauthorize" runs the full four-step wizard again with empty "Client ID" and "Client Secret" fields, so have both to hand. Re-authorize too after the app's scopes change, including a scope Zoom adds on its own when an event subscription is added; until then calls needing the new scope fail and events needing it are not delivered. Zoom's refresh tokens are long-lived and rotated by the platform; a connector stops working when the app's secret is regenerated in the Marketplace, when the app is deleted, or when the authorizing user's account is deactivated. A user-managed app that has not been published works only for users in the developer's own account; publishing it is a Marketplace review, which is why the dialog steers to user-managed.
 
+Re-authorizing an already authorized connector withdraws its Egress Firewall approval in every team, because the platform stores nothing that says which account it was approved for; an admin approves it again before scripts can use it. Check the team's allowance on `team get` first: over it, nobody can.
+
 ## Known differences from the dialog
 
 None on the snapshot date; every step, label and link matched the Marketplace in both of its layouts.

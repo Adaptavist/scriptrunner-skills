@@ -28,6 +28,8 @@ As Jira Cloud: basic authentication with the account email and an API token from
 
 As Jira Cloud: 88 days of inactivity on the refresh token, then "Reauthorize" at `authorizationUrl`.
 
+Re-authorizing against the same site keeps the connector's Egress Firewall approval; picking a different site withdraws it in every team until an admin approves it again, and in a team over its connections allowance nobody can.
+
 ## Known differences from the wizard
 
 Those listed in `jira-cloud.md`, plus: the public documentation names the methods "the ScriptRunner Connect managed app" and "the self-managed Atlassian Cloud app option", while the wizard's radios read "ScriptRunner Connect OAuth 2.0 app" and "Self-managed OAuth 2.0 app". Same options.

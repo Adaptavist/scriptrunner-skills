@@ -45,6 +45,8 @@ None fixed. Microsoft Graph accepts bearer tokens only, and every way to one is 
 
 Re-authorize at `authorizationUrl`. A self-managed application's client secret has the expiry chosen in step 4 (Microsoft offers 90 days to 24 months); the dialog's own words: "after this date, all users on this tenant will need to re-authorize their connection", and that is after a new secret has been created and pasted into the dialog. Put the date somewhere the team will see it.
 
+On the platform's shared application the connector stores no tenant, so re-authorizing it withdraws its Egress Firewall approval in every team until an admin approves it again. A self-managed connector keeps its approval for the same tenant id and loses it for another. Check the team's allowance on `team get` first: over it, nobody can approve.
+
 ## Known differences from the dialog
 
 - The dialog says to visit portal.azure.com; Microsoft now documents app registration in the Entra admin center at https://entra.microsoft.com under "Entra ID", "App registrations". Both reach the same blade.

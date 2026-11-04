@@ -65,6 +65,8 @@ None. AWS APIs want every request signed with SigV4 over the request itself, whi
 
 Session tokens under a role are renewed by the platform for as long as the trust policy stands. Re-authorizing at `authorizationUrl` regenerates the trust policy; the Manage connector dialog warns "For security reasons, a new IAM role policy will be generated if you choose to use temporary credentials. Please ensure you update the IAM role with the new policy." So a re-authorization means the existing-role steps above: answer "Yes" and paste the new policy into the role's trust relationships. The "Yes" option adds "If you choose this option, your current credentials will be deleted and cannot be recovered. Follow all the steps to reauthorize your connector to make sure your integrations keep working smoothly. You will get a new, unique credential to replace your old one." An access key lives until deactivated in IAM, and AWS flags keys older than 90 days in its own console.
 
+Re-authorizing an already authorized connector withdraws its Egress Firewall approval in every team, because the platform stores nothing that says which account it was approved for; an admin approves it again before scripts can use it. Check the team's allowance on `team get` first: over it, nobody can.
+
 ## Known differences from the wizard
 
 - The "Yes" answer reads "use the credentials from my existing policy", but the policy is regenerated whichever answer is given; what is reused is the role, and its trust policy is replaced.

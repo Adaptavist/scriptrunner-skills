@@ -26,6 +26,8 @@ A personal access token: in the organization, user settings, "Personal access to
 
 As Microsoft: re-authorize at `authorizationUrl`; a self-managed application's client secret expires on the date chosen when it was created, after which a new secret is pasted into the dialog and every connector on it re-authorized.
 
+On the platform's shared application the connector stores no tenant, so re-authorizing it withdraws its Egress Firewall approval in every team until an admin approves it again. A self-managed connector keeps its approval for the same tenant id and loses it for another. Check the team's allowance on `team get` first: over it, nobody can approve.
+
 ## Known differences from the dialog
 
 Those listed in `microsoft.md`.

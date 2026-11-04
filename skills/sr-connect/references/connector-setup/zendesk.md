@@ -33,6 +33,8 @@ An API token: Admin Center, "Apps and integrations", "APIs", "Zendesk API", the 
 
 Re-authorize at `authorizationUrl`. Zendesk OAuth access tokens do not expire unless the client's "Expire tokens" option was switched on in step 4; the platform refreshes them when it is. Regenerating the client's secret in Admin Center means pasting the new one into the dialog and re-authorizing.
 
+Re-authorizing against the same instance keeps the connector's Egress Firewall approval; another host or port withdraws it in every team until an admin approves it again, and in a team over its connections allowance nobody can.
+
 ## Known differences from the dialog
 
 - The dialog spells the product "ZenDesk"; Zendesk spells it "Zendesk". Same product.

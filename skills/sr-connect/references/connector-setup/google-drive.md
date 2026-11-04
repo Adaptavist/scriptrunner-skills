@@ -20,6 +20,8 @@ None fixed, as Google Calendar. For files a person created, the OAuth recipe in 
 
 As Google Calendar.
 
+Re-authorizing an already authorized connector withdraws its Egress Firewall approval in every team, because the platform stores nothing that says which account it was approved for; an admin approves it again before scripts can use it. Check the team's allowance on `team get` first: over it, nobody can.
+
 ## Known differences from the dialog
 
 The public documentation has no page for the Google Drive connector; the limitation above is stated only in the web application.

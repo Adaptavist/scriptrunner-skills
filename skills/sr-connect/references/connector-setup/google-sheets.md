@@ -18,6 +18,8 @@ None fixed, as Google Calendar. A service account with the OAuth recipe in `refe
 
 As Google Calendar.
 
+Re-authorizing an already authorized connector withdraws its Egress Firewall approval in every team, because the platform stores nothing that says which account it was approved for; an admin approves it again before scripts can use it. Check the team's allowance on `team get` first: over it, nobody can.
+
 ## Known differences from the dialog
 
 Those listed in `google-calendar.md`. Unlike Google Drive, no limitation warning is shown for Sheets; the platform app's scope reaches any spreadsheet the account can open.

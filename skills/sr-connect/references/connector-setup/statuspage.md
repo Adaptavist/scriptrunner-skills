@@ -34,6 +34,8 @@ The same token as a header: Generic connector, base URL `https://api.statuspage.
 
 A key expires on the date chosen when it was created, or never if "No expiry" was chosen. The connector stops working when the key expires, is deleted under "API info" or the owner's account is removed; then the dialog again at `authorizationUrl` with a new key.
 
+Re-authorizing an already authorized connector withdraws its Egress Firewall approval in every team, because the platform stores nothing that says which account it was approved for; an admin approves it again before scripts can use it. Check the team's allowance on `team get` first: over it, nobody can.
+
 ## Known differences from the dialog
 
 None on the snapshot date; every step, label and link matched Statuspage's manage UI. Statuspage itself says "API token" in the title and body of the final "Copy your API token" dialog while labelling the field "API Key"; the dialog follows the field.

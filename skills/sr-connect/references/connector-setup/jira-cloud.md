@@ -85,6 +85,8 @@ Costs to name: a personal token carries the whole account's permissions rather t
 
 The platform keeps the OAuth refresh token for 88 days of inactivity and Atlassian rotates it on every use, so a connector that is used at least every few weeks stays authorized; one that sits idle needs re-authorizing. Re-authorize at `authorizationUrl`, the same wizard with "Reauthorize" as its button. A self-managed app's secret can be rotated in the Developer Console; after that every connector using the app has to be re-authorized with the new secret.
 
+Re-authorizing against the same site keeps the connector's Egress Firewall approval; picking a different site withdraws it in every team until an admin approves it again, and in a team over its connections allowance nobody can.
+
 ## Known differences from the wizard
 
 - The wizard's step 9 caps scopes at 41 ("max 41 scopes, avoid mixing classical and granular scopes"). That is deliberate and lower than Atlassian's own limit: an app with 49 scopes failed to connect. Keep a self-managed app at 41 or fewer.

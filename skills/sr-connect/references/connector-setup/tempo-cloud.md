@@ -32,6 +32,8 @@ A Tempo API token: the Tempo app, "Settings", "API integration", "New Token", a 
 
 Re-authorize at `authorizationUrl`. The application's secret can be regenerated in Tempo, after which the connector needs the new one. Tempo refreshes access tokens through the platform; nothing to do while the application exists.
 
+Re-authorizing against the same instance keeps the connector's Egress Firewall approval; another host or port withdraws it in every team until an admin approves it again, and in a team over its connections allowance nobody can.
+
 ## Known differences from the dialog
 
 - The dialog calls the settings page "Tempo settings page in Jira" and links its old configuration route; Tempo's current UI puts applications under "API integration".

@@ -28,6 +28,8 @@ None fixed. Google APIs take OAuth bearer tokens only. For an integration that s
 
 Google refresh tokens last until revoked, with one exception the connector cannot avoid: an account under a Workspace policy that limits token lifetime, or a consumer account that has not used the app in six months, has its token expire and the connector needs re-authorizing at `authorizationUrl`. Revoking the app under the Google account's "Third-party apps & services" does the same.
 
+Re-authorizing an already authorized connector withdraws its Egress Firewall approval in every team, because the platform stores nothing that says which account it was approved for; an admin approves it again before scripts can use it. Check the team's allowance on `team get` first: over it, nobody can.
+
 ## Known differences from the dialog
 
 - The public documentation's button label is "Sign In & Authorize With Google" in title case; the web application reads "Sign In & authorize with Google".

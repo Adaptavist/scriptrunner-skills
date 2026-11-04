@@ -31,6 +31,8 @@ A personal access token: github.com, "Settings", "Developer settings", "Personal
 
 Re-authorize at `authorizationUrl`. The dialog then warns, under "Reauthorizing your GitHub connector": "You will be automatically authorized with the account you are currently signed in on GitHub website. If you want to use a different account, before reauthorization please sign out on https://www.github.com". Revoking the platform's app under the user's GitHub "Applications" settings is what forces a fresh consent screen.
 
+Re-authorizing an already authorized connector withdraws its Egress Firewall approval in every team, because the platform stores nothing that says which account it was approved for; an admin approves it again before scripts can use it. Check the team's allowance on `team get` first: over it, nobody can.
+
 ## Known differences from the dialog
 
 - The dialog links `https://www.github.com`; github.com is where the sign-out happens, and the `www.` redirects there.

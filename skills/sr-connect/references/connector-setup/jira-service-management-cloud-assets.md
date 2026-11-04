@@ -30,6 +30,8 @@ The same pair on a Generic connector, which the CLI can create authorized: base 
 
 Atlassian API tokens expire on the date chosen, 1 to 365 days, default one year, and older tokens created without a date are being expired by Atlassian during 2026. A request with an expired token answers 401 with no warning before. Re-authorizing is the dialog again at `authorizationUrl` with a new token; note the expiry date where the team will see it.
 
+Re-authorizing an already authorized connector withdraws its Egress Firewall approval in every team, because the platform stores nothing that says which account it was approved for; an admin approves it again before scripts can use it. Check the team's allowance on `team get` first: over it, nobody can.
+
 ## Known differences from the dialog
 
 - The dialog says "enter a Label for your token"; Atlassian's page asks for a name and, since 2024, an expiry date. The dialog does not mention the expiry.

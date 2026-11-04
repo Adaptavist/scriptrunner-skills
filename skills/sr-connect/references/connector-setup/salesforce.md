@@ -36,6 +36,8 @@ None fixed. Salesforce's REST API takes bearer tokens only, and every way to one
 
 Re-authorize at `authorizationUrl`. The refresh token lives as long as the Connected App's "Refresh Token Policy" allows (the default is "Refresh token is valid until revoked"); an administrator can shorten it or revoke sessions under "Manage", "Edit Policies". Once Salesforce refuses the refresh token, every call through the connector fails with "It appears that the authentication token has expired or been revoked by Salesforce, please re-authorize the Connector." and the connector needs re-authorizing. Refresh Token Rotation does not cause that; the connector saves the new refresh token on each refresh. Rotating the consumer secret means pasting the new one into the dialog and re-authorizing.
 
+Re-authorizing against the same instance keeps the connector's Egress Firewall approval; another host or port withdraws it in every team until an admin approves it again, and in a team over its connections allowance nobody can.
+
 ## Known differences from the dialog
 
 - The dialog's App Manager link goes through the Lightning navigation setup page rather than App Manager itself; the menu path is Setup, "Apps", "App Manager".

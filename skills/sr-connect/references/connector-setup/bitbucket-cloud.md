@@ -36,6 +36,8 @@ An API token with scopes, from the Atlassian account: profile, "Account settings
 
 Re-authorize at `authorizationUrl`, the same dialog. The OAuth client's secret can be regenerated in Bitbucket, after which the connector needs the new one and a re-authorization. Bitbucket's OAuth access tokens are short-lived and the platform refreshes them; nothing to do while the OAuth client exists.
 
+Re-authorizing with the same workspace URL keeps the connector's Egress Firewall approval; a different workspace withdraws it in every team until an admin approves it again, and in a team over its connections allowance nobody can.
+
 ## Known differences from the dialog
 
 - None in the labels as of the snapshot; the dialog was aligned with Bitbucket's OAuth clients page on 2026-10-09. Atlassian's documentation may still say "OAuth consumers", "Add consumer", "Key" and "Permissions"; the workspace's own page wins.

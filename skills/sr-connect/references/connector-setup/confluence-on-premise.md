@@ -26,6 +26,8 @@ A personal access token, on Confluence 7.9 and later: avatar, "Settings", "Perso
 
 As Jira On-Premise: the public key is valid for 5 years, and re-authorizing regenerates the key pair after the "Regenerate key pair" confirm, which invalidates the application link until the new key is pasted in.
 
+Re-authorizing against the same instance keeps the connector's Egress Firewall approval; another host or port withdraws it in every team until an admin approves it again, and in a team over its connections allowance nobody can.
+
 ## Known differences from the dialog
 
 Those listed in `jira-on-premise.md`.

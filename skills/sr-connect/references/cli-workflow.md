@@ -268,6 +268,18 @@ An authorized connector still needs an approved Egress Firewall entry before a s
 
 Re-authorization is the same wizard. `connector get` reports `authorizationUrl` for every connector, authorized or not, and the button there reads "Reauthorize". Each file's Expiry section says what runs out and what a re-authorization invalidates: the on-premise Atlassian key pair and the NetSuite certificate are regenerated and have to be pasted into the vendor again, and AWS regenerates its trust policy.
 
+Re-authorization can also cost the connector its Egress Firewall approval. Before re-authorizing or re-pointing a connector that an API connection uses, read `egress-firewall list --team <teamId>` for its entry and `team get` for the allowance. A reset sends the entry back to waiting in every team that approved it, emails their admins and blocks the connector until one approves it again; in a team whose `connections.used` exceeds `max` nobody can, so stop and ask the user before touching such a connector. What counts as the tenant, and so what triggers a reset:
+
+| Apps | Tenant | Resets when |
+| --- | --- | --- |
+| Jira Cloud, Confluence Cloud, Jira Service Management Cloud | The Atlassian site (cloud id) | A different site is picked |
+| Slack | The workspace (team id) | A different workspace; a different app in the same workspace does not |
+| Bitbucket Cloud | The workspace in the URL | A different workspace |
+| NetSuite | The account id | A different account |
+| Generic, ServiceNow, Salesforce, Zendesk, monday.com, Tempo Cloud, Opsgenie, Bitbucket On-Premise, the Atlassian On-Premise apps | The instance or base URL, by host and port | Another host or port; a path change does not |
+| GitLab self-managed, Microsoft and Azure DevOps self-managed | The host, or the tenant id | Another host or tenant id |
+| GitHub, GitLab.com, Google Sheets, Calendar and Drive, Zoom, Trello, Statuspage, AWS, JSM Cloud Assets, Microsoft and Azure DevOps on the shared app | Nothing stored | Every re-authorization of an already authorized connector |
+
 The block, one per connector left for a human, in the closing summary:
 
 ```md

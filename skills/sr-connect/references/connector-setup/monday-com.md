@@ -31,6 +31,8 @@ A personal API token: the profile picture, "Developers", "My access tokens" (mon
 
 Re-authorize at `authorizationUrl`. monday.com's OAuth tokens do not expire; the connector stops working when the app is uninstalled from the account, when the authorizing user is removed, or when a workspace restriction set at install excludes the boards the integration reads. Uninstalling and reinstalling the app requires every connector on that account to re-authorize.
 
+Re-authorizing against the same instance keeps the connector's Egress Firewall approval; another host or port withdraws it in every team until an admin approves it again, and in a team over its connections allowance nobody can.
+
 ## Known differences from the dialog
 
 - The dialog's final install step says "Click Save." where the button is the stepper's "Next".

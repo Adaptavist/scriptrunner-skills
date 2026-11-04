@@ -32,6 +32,8 @@ Basic authentication with an instance user, ideally a dedicated integration user
 
 Re-authorize at `authorizationUrl`. With the lifespan in step 4 the refresh token outlives everything else; the connector stops working when the endpoint record is deactivated, its secret regenerated, or the authorizing user locked out. The instance's "Access Token Lifespan" (default 1800 seconds) is handled by the platform's refresh and needs no change.
 
+Re-authorizing against the same instance keeps the connector's Egress Firewall approval; another host or port withdraws it in every team until an admin approves it again, and in a team over its connections allowance nobody can.
+
 ## Known differences from the dialog
 
 - The dialog's link uses the old `nav_to.do` frame URL; current instances redirect it to the Application Registry list. The menu path works regardless of version.

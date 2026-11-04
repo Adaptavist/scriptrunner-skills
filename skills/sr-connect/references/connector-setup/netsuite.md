@@ -45,6 +45,8 @@ None fixed. NetSuite's other route, token-based authentication, signs every requ
 
 The certificate is valid for 2 years. Re-authorizing at `authorizationUrl` first shows the confirm "Regenerate certificate": "By re-authorizing, your certificate will be automatically regenerated, which will invalidate your existing connector setup." The mapping in NetSuite then needs the new certificate uploaded, which makes a re-authorization the administrator's job. Put the date somewhere the team will see it; NetSuite does not warn before the certificate expires.
 
+Re-authorizing with the same account id keeps the connector's Egress Firewall approval; a different account withdraws it in every team until an admin approves it again, and in a team over its connections allowance nobody can.
+
 ## Known differences from the dialog
 
 - The dialog says "Manage Integrations" is reached through "the NetSuite settings page"; the menu path is Setup, "Integration", "Manage Integrations".

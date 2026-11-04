@@ -34,6 +34,8 @@ The same bot token as a header: Generic connector, base URL `https://slack.com/a
 
 Slack bot tokens do not expire unless the app has token rotation switched on, which the connector does not support; leave rotation off. The connector stops working when the app is uninstalled from the workspace or when the token is revoked; either means the dialog again at `authorizationUrl` with the new values. Regenerating the signing secret is narrower: the bot token is untouched and outbound API calls carry on, and what breaks is the platform's verification of inbound Slack requests, so a Slack event listener on this connector receives nothing until the new secret is in the dialog. Reinstalling the app after adding scopes issues a new token; paste it in.
 
+Re-authorizing with a bot token for the same workspace keeps the connector's Egress Firewall approval, whatever the app; a token for a different workspace withdraws it in every team until an admin approves it again, and in a team over its connections allowance nobody can.
+
 ## Known differences from the dialog
 
 - The dialog says "Create an App" and "Create App"; Slack's buttons read "Create New App" and "Create App".

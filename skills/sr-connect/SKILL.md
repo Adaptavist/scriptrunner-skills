@@ -12,7 +12,7 @@ metadata:
 
 # ScriptRunner Connect
 
-This file answers theory. Before touching the CLI read `references/cli-workflow.md`. Before writing a script read `references/scripting.md`, and the one file under `references/product-gotchas/` for each product the script calls, where one exists. Read `references/testing.md` only when the user asks for tests.
+This file answers theory. Before touching the CLI read `references/cli-workflow.md`, and `references/access.md` when the API key turns out to be limited by an access policy. Before writing a script read `references/scripting.md`, and the one file under `references/product-gotchas/` for each product the script calls, where one exists. Read `references/testing.md` only when the user asks for tests.
 
 ## Before the first CLI call
 
@@ -147,6 +147,8 @@ Sources: https://docs.adaptavist.com/src/latest/workspaces/api-connections, http
 
 An event listener binds an app event type to a script, optionally through a connector and an event queue. The event type, script and queue are workspace-level and captured by a release; the connector, URL path and enabled state are per environment. Creating a script from the listener gives it the right typed event. Setup is finished by a human registering a webhook in the app; the CLI returns `webhookUrl`, the callback to register, and `setupUrl`, the instructions. Most apps cannot register webhooks programmatically. A new environment needs the connector relinked and setup redone: the listener exists there and reports `disabled: false`, but its URL path is per environment and a fresh environment has none, so `event-listener get -e <env>` shows `urlPath` and `webhookUrl` as null and the listener is enabled yet unreachable. The first `event-listener update` in that environment assigns one, `--url-path` for a generic listener, a no-op update such as `--disabled false` for the rest, and the resulting `webhookUrl` differs from HEAD's, so the webhook is registered again. Most listener types need no connector at all; `event-listener get` reports `connectionRequired` for the ones that do. Still, when the team already has an authorized connector for the app, attach it: the setup instructions improve, because the app's base URL comes from the connector and the webhook deep link is built on it. When there is none, leave the listener without one; never make a connector just to give a listener one. Test event payloads run the listener with a stored sample; a new listener gets a seeded Default payload sampling its event type. The registration steps for each app, what the app can filter on its side and how its webhook is secured are one file per app under `references/event-listener-setup/`; load a file only when handing the registration to the user, as `references/cli-workflow.md` describes under Webhook handoff.
 
+Declare what the logic uses, per app: an API connection only for an app the scripts call, an event listener only for events the scripts handle. Never add both for the same app just in case. Most integrations listen to one app and call another, so an app often needs only one of the two: a Jira Cloud listener that posts to Slack needs no Jira Cloud API connection unless a script also calls Jira, and no Slack listener at all. Each one you add is something to set up, keep working and explain: a listener is a webhook a person registers, and an API connection is a connector to attach and an Egress Firewall entry. Add the other side when a script turns out to need it.
+
 Sources: https://docs.adaptavist.com/src/latest/workspaces/event-listeners
 
 ### Generic event listener
@@ -175,7 +177,7 @@ Source: https://docs.adaptavist.com/src/latest/workspaces/event-queues
 
 ### Packages
 
-Three classes. Core packages, `@sr-connect/convert`, `record-storage` and `trigger`, and the event libraries `@sr-connect/<app>` arrive with the listeners you create. Managed API packages, `@managed-api/<service>[-v<N>]-sr-connect`, arrive with the API connections you declare. Third-party NPM packages are added by hand. All three classes are pinned at the version current when added and upgraded by hand; the one exception is `@sr-connect/runtime-types`, which tracks latest and cannot be changed. ESM imports only. Add `@types/<name>` beside a package without its own types. Packages built only for Node do not work; the runtime is a web-standards subset. The product's verified list is in `references/scripting.md`.
+Three classes. Core packages: `@sr-connect/convert`, `record-storage` and `trigger`, which every workspace has from the start, and the event libraries `@sr-connect/<app>`, which arrive with the listeners you create. Managed API packages, `@managed-api/<service>[-v<N>]-sr-connect`, arrive with the API connections you declare. Third-party NPM packages are added by hand. So declaring an API connection pulls its Managed API package into the workspace, and creating an event listener pulls in its app's event types, and neither needs a `package add` of its own. Adding one of those by hand is the exception, for when the workspace needs the Managed API or the event types but does not need to use the matching API connection or event listener directly: a Managed API wired to a Generic connector's API connection by passing its `connectionId`, or an app's event types used without its listener. Third-party libraries are always added by hand. All three classes are pinned at the version current when added and upgraded by hand; the one exception is `@sr-connect/runtime-types`, which tracks latest and cannot be changed. ESM imports only. Add `@types/<name>` beside a package without its own types. Packages built only for Node do not work; the runtime is a web-standards subset. The product's verified list is in `references/scripting.md`.
 
 Source: https://docs.adaptavist.com/src/latest/workspaces/package-manager
 
@@ -216,6 +218,8 @@ Once an entry exists, one thing changes it: the connector changing tenant. Re-au
 
 Attaching a connector to an API connection puts it on the allowlist in the same call, approved when the rules above allow it, and `api-connection create` and `update` report `egressFirewall.state` for the connector attached: approved, waiting, not listed, or no firewall on the deployment. A waiting entry also says what stands between it and approval for the caller, on every write and in the list: the allowance is full, in which case nobody can approve it until room is made; the caller is not a team admin; the call asked for approval; or nothing, and the caller can approve it themselves in the web app. `egress-firewall check-api-connections` reads the same for every API connection in one environment at once. A connector cannot be added on its own until an API connection in the team uses it.
 
+An approval does not reach scripts the moment it is made. A Fetch API destination is allowed within about a minute of its approval, and calls to it fail with error code 11007 until then. A connector's approval applies to runs that start after it, so start a new run once it is approved.
+
 A blocked call fails the run with error code 11007. The messages, as the runtime writes them:
 
 ```text
@@ -246,7 +250,7 @@ Source: https://docs.adaptavist.com/src/latest/observability
 
 ### Security
 
-AWS, in EU Ireland or US Oregon, chosen at signup; no data is stored outside the chosen region. Credentials encrypted with AWS KMS AES-256-GCM, TLS 1.2 in transit. Scripts run in fresh V8 isolates; enhanced isolation gives a tenant its own compute, at the price of more cold starts. ISO 27001, SOC 2 Type 2, GDPR, CREST-tested, Bugcrowd bounty. The in-app AI features use OpenAI models, with no training on your code.
+AWS, in EU Ireland or US Oregon, chosen at signup; data stays in the chosen region, with two exceptions: backup copies are also kept in a second region in the same jurisdiction (EU backups stay in the EU, US backups in the US), and a US account's details (name, email, company name and, when paying by card, card details) are also stored in the EU. Credentials encrypted with AWS KMS AES-256-GCM, TLS 1.2 in transit. Scripts run in fresh V8 isolates; enhanced isolation gives a tenant its own compute, at the price of more cold starts. ISO 27001, SOC 2 Type 2, GDPR, CREST-tested, Bugcrowd bounty. The embedded AI agent in the web app uses Anthropic models; its calls to the model are not bound to the chosen region, while its chats and files are stored there. The legacy AI assistant, which some teams still see, uses OpenAI models. ScriptRunner Connect trains no AI models on your data.
 
 Source: https://docs.adaptavist.com/src/latest/security
 
@@ -258,7 +262,7 @@ Source: https://docs.adaptavist.com/src/latest/templates
 
 ### REST API and the CLI
 
-Basic auth with the account email and an API key created under the user menu, API Keys; the key is shown once. Base URLs are `https://api.scriptrunnerconnect.com` for EU and `https://api.us.scriptrunnerconnect.com` for US. The CLI `@sr-connect/cli` is the client for it and covers workspaces, environments, parameters, scripts, listeners, payloads, queues, API connections, connectors, sharing, packages, releases, locks, logs, replay and abort.
+Basic auth with the account email and an API key created under the user menu, API access; the key is shown once. A key is unlimited, or limited by an access policy to the permissions the user chose, and a limited key asks the user for more through an access request. A key never expires unless the user gave it an expiry when creating it; past that, every call answers 401 with `code` `API_KEY_EXPIRED`, and only a new key helps, since an expiry cannot be extended. Base URLs are `https://api.scriptrunnerconnect.com` for EU and `https://api.us.scriptrunnerconnect.com` for US. The CLI `@sr-connect/cli` is the client for it and covers workspaces, environments, parameters, scripts, listeners, payloads, queues, API connections, connectors, sharing, packages, releases, locks, logs, replay and abort.
 
 Source: https://docs.adaptavist.com/src/latest/rest-api
 
@@ -367,12 +371,19 @@ Sample test payloads exist for most listener apps. Zoom, Azure DevOps, Microsoft
 | A run fails with error code 11007             | The Egress Firewall blocked a destination. `egress-firewall check-api-connections` maps a connector name to its ID, `egress-firewall list` shows a host; see Egress Firewall in `cli-workflow.md` | `cli-workflow.md`                                  | yes        |
 | A run fails with error code 10001             | `Connection not allowed for URL`: not the Egress Firewall, the hostname does not resolve or its address is private; check the URL and DNS and add no entry. Out of memory or too large: smaller pages. `Error while performing HTTP call (Fetch API)` on a connector call: `egress-firewall check-api-connections` first, see Egress Firewall | `scripting.md`, `cli-workflow.md`                  | sometimes  |
 | Tests                                         | Only when asked                                                                                                                                                             | `testing.md`                                       | yes        |
+| Send feedback to ScriptRunner Connect         | Write it from the user's words, show it to them, post only on their yes; see Sending feedback                                                                               | `cli-workflow.md`                                  | yes        |
 
 When there is no bespoke connector, use the Generic connector for fixed-key auth. For OAuth, set the flow up in the workspace instead; the recipe is in `references/scripting.md`. When there is a bespoke connector but the user refuses every method its wizard offers, the app's file under `references/connector-setup/` names the fixed-key alternative through a Generic connector, where the vendor has one.
 
 ## Sending feedback
 
-When the `agenticFeedback` switch is on, the work leaves notes for the ScriptRunner Connect team. What goes in them, when to post and the verb that sends them are under Feedback in `references/cli-workflow.md`. When the switch is off, the user has said no: no notes, no nudge to enable it, and no word about feedback in the summary.
+Sending feedback to the ScriptRunner Connect team is one of the things you do for the user, through the CLI's `feedback post`. Three cases, each spelled out under Feedback in `references/cli-workflow.md`:
+
+- **The user asks.** A complaint, a suggestion, a bug report, praise: write the message from what they said, then show it to them word for word, with any file you would attach and whether the team may contact them, and ask whether it is OK to send. Post only on a clear yes, and post exactly what they approved. This holds whatever the `agenticFeedback` switch says, because the user asked.
+- **The work is going badly.** When the back-and-forth shows the user struggling to carry out your instructions, when the task runs into something the platform cannot do, or when the user is visibly frustrated, ask whether they would like to send the team feedback on what could be better. Ask at a pause, not in the middle of a fix, and once per sticking point; a no closes that topic. A yes goes on as if they had asked. Offer only while the `agenticFeedback` switch is on.
+- **Your own notes.** When the `agenticFeedback` switch is on, the work leaves notes for the team as it goes.
+
+When the switch is off, the user has said no to the last two: no notes, no offer, no nudge to enable it, and no word about feedback in the summary. Feedback they ask for themselves still goes.
 
 ## Asking questions
 

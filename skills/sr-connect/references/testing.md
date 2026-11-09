@@ -127,7 +127,7 @@ Run `pnpm test`. `npm test` runs the same script. `pnpm typecheck` compiles both
 
 Node 22 or newer is the floor to assume: the CLI that wrote the clone requires it. The toolchain's own floors are lower, and the examples in this file ran on Node 24. `package.json` declares no `engines` field.
 
-Prefer pnpm. The clone ships no lockfile; it ships a `pnpm-workspace.yaml` that does two things pnpm needs: it allows the `unrs-resolver` build script that Jest 30's resolver depends on, and it hoists `@managed-api/*` to the root so the generated `scripts/api/**` files can import `@managed-api/commons-core`, a transitive dependency. Use NPM only when pnpm is not installed.
+Prefer pnpm. The clone ships no lockfile; it ships a `pnpm-workspace.yaml` that does two things pnpm needs: it allows the `unrs-resolver` build script that Jest 30's resolver depends on, and it hoists `@managed-api/*` to the root so the generated `scripts/api/**` files can import `@managed-api/commons-core`, a transitive dependency. The first `pnpm install` in a fresh clone writes `pnpm-lock.yaml`, so never pass it `--frozen-lockfile`. If pnpm refuses for want of a lockfile anyway, which it does when it believes it runs in CI, run `pnpm install --no-frozen-lockfile`. Use NPM only when pnpm is not installed.
 
 In ESM mode the `jest` object is not a global. `describe`, `test`, `expect`, `beforeEach` and the rest are, but `jest.spyOn` and friends need `import { jest } from '@jest/globals'`, which the clone ships in `devDependencies`.
 

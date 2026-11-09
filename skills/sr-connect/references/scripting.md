@@ -279,7 +279,7 @@ The Generic connector holds fixed credentials only. For an app that needs OAuth 
 
 ## Event listeners in code
 
-Events for an app live in `@sr-connect/<app>/events`, named `<Action>Event`. The library arrives when a listener for the app is created; look under `node_modules/@sr-connect/<app>/events/` for the types. Working from a clone, re-clone after adding an event listener or an API connection, `local-workspace clone --force` in the directory, so `package.json` picks up the new packages, then install again.
+Events for an app live in `@sr-connect/<app>/events`, named `<Action>Event`. The library arrives when a listener for the app is created; look under `node_modules/@sr-connect/<app>/events/` for the types. Working from a clone, run `event-listener create` and `api-connection create` inside its directory: they add the new packages to `package.json`, and a script made from `--script-name` lands in `scripts/`, so install again and carry on. Re-clone, `local-workspace clone --force`, only when the create ran outside the clone. A re-clone overwrites every script the clone recorded with the workspace's copy; a script you edited locally since the last clone or push is moved to `removed-scripts/<stamp>/` first and the run lists it, so push your edits before re-cloning, or copy them back from there.
 
 ```ts
 import { IssueCreatedEvent } from '@sr-connect/jira-cloud/events'
@@ -676,7 +676,12 @@ is how to check a name this table does not carry.
 
 Always present: `@sr-connect/runtime-types`, which supplies the globals and `Context` with no import, `@sr-connect/convert`, `@sr-connect/record-storage`, `@sr-connect/trigger`. For local Node runs, `@sr-connect/node-runtime-types` declares `Context` alone and is wired through `node/tsconfig.json`.
 
-Event libraries and managed API packages arrive in `package.json` when the listener or API connection is created; `package add` brings one in by hand, which is how a Managed API class becomes available for a Generic connection.
+Event libraries and managed API packages arrive in `package.json` when the listener or API connection is created: an API connection brings the Managed API package it was created with, and an event listener brings its app's events library. Do not `package add` them as well. `package add` is for two cases:
+
+- A third-party library, always.
+- A Managed API or events package the workspace needs when it does not need to use the matching API connection or event listener directly. Examples: the app's Managed API class wired to a Generic connector's API connection by passing its `connectionId`, as "A Managed API on a Generic connector" shows, or `@sr-connect/jira-cloud` for its ADF type in a workspace that calls Jira Cloud but has no Jira Cloud listener.
+
+To see which packages a connection or listener brought, check `package list` after creating it.
 
 Third-party packages must be added through `package add` before a script can import them; installing locally only serves local tooling, which belongs in `devDependencies`. ESM imports only. Add `@types/<name>` beside a package without its own types. The runtime is not Node, so prefer isomorphic packages built on web standards; see https://wintertc.org.
 

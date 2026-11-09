@@ -7,7 +7,8 @@ description: >-
     @sr-connect/cli. Use for any SRC, ScriptRunner Connect or Atlassian-integration question, and
     load references/ before running the CLI.
 metadata:
-    version: '1.15'
+    version: '1.16'
+    minCliVersion: '0.5.0'
 ---
 
 # ScriptRunner Connect
@@ -18,11 +19,12 @@ This file answers theory. Before touching the CLI read `references/cli-workflow.
 
 Settle which command to invoke, once per session, ahead of every other CLI step.
 
-1. `command -v sr-connect`. A hit means the CLI is installed and on PATH: call it as `sr-connect <group> <verb>` everywhere, including in commands handed to the user. No hit: call it as `npx @sr-connect/cli <group> <verb>`, and pin the session's first call to `npx @sr-connect/cli@latest` so the cached copy is current.
+1. `command -v sr-connect`. A hit means the CLI is installed and on PATH: call it as `sr-connect <group> <verb>` everywhere, including in commands handed to the user. No hit: call it through npx with an explicit version. The session's first call is `npx @sr-connect/cli@latest --version`, which brings npx's cached copy up to date and prints its version. Every later call, including `cli check-updates` and commands handed to the user, is `npx @sr-connect/cli@<version> <group> <verb>` with that version. Without a version, npx runs a project's own install of the CLI when there is one, which can be older. Examples in `references/` written as `npx @sr-connect/cli` stand for this versioned command.
 
     On a miss, tell the user one plain line, so it does not read as something broken: npx works and there is nothing to fix; for faster calls they can install it globally with `npm install -g @sr-connect/cli`. npx checks its cache on every call, which costs several seconds a call, 4 to 10 s in one agent's measurement. A project-local install does not put `sr-connect` on PATH, so it does not help. Under nvm a global install belongs to the active Node version, and switching versions takes `sr-connect` off PATH again. If the user installs it mid-session, run this step again so the session switches to `sr-connect`.
-2. `<cli> cli check-updates --agent --raw`. The document carries `updateAvailable`, `current` and `latest`, plus `command` when there is an update. Exit 1 is a registry it could not read and exit 4 is a registry publishing no release; neither blocks the work, so say so and carry on with the version in hand.
-3. When `updateAvailable` is true, name both versions, link the changelog (https://cdn.jsdelivr.net/npm/@sr-connect/cli@latest/CHANGELOG.md) so the user can see what changed, and ask whether the user upgrades it or you do. Never upgrade without that answer.
+2. `<cli> cli check-updates --agent --raw`. The document carries `updateAvailable`, `current` and `latest`, plus `command` when there is an update. Exit 1 is a registry it could not read and exit 4 is a registry publishing no release; neither blocks the work, so say so and carry on with the version in hand. On either exit, `<cli> --version` prints the installed version for the next step.
+3. Compare the installed version (`current`) with `metadata.minCliVersion` at the top of this file. When it is older, this skill's steps need a newer CLI: before any other CLI call, name both versions and ask the user for permission to upgrade. With it, upgrade with the line from the table below, or hand the user that line, then re-run `cli check-updates` and confirm `current` now meets the minimum. If the user declines, say this skill needs `@sr-connect/cli` at `minCliVersion` or newer, and do not work through the CLI until it is upgraded.
+4. Otherwise, when `updateAvailable` is true, name both versions, link the changelog (https://cdn.jsdelivr.net/npm/@sr-connect/cli@latest/CHANGELOG.md) so the user can see what changed, and ask whether the user upgrades it or you do. Never upgrade without that answer.
 
 The `command` field is the upgrade line derived from how this copy was installed, and it is right for npm, pnpm, bun and npx. It is wrong for two installs the CLI reads as npm, so check for them before quoting it: resolve `sr-connect` to its real path, or run `yarn global bin` and `volta which sr-connect`.
 
@@ -33,7 +35,7 @@ The `command` field is the upgrade line derived from how this copy was installed
 | bun global                                   | `bun add -g @sr-connect/cli@latest`                                   |
 | Yarn 1 global                                | `yarn global upgrade @sr-connect/cli`                                 |
 | Volta                                        | `volta install @sr-connect/cli@latest`                                |
-| npx, or Yarn 2+, which has no global install | nothing to upgrade; run the next call as `npx @sr-connect/cli@latest` |
+| npx, or Yarn 2+, which has no global install | nothing to upgrade; run `npx @sr-connect/cli@latest --version` and pin later calls to the version it prints |
 
 When the user runs it, hand them the one line, without `--agent` or `--raw`, and wait. When you run it, run that same line and re-run `cli check-updates` to confirm the new version answered.
 

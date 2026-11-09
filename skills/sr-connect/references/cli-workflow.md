@@ -32,7 +32,7 @@ Read `references/scripting.md` before writing or editing a script. Read `referen
 ## Preflight
 
 1. Node 22 or newer: `node --version`. If missing or older, ask whether to install it, then install the current LTS for the user's OS.
-2. The CLI, and its version. `command -v sr-connect` decides the command: a hit means every call in the session is `sr-connect ...`, a miss means `npx @sr-connect/cli ...` with the first call pinned to `@latest`. Then `cli check-updates`, and offer the upgrade when one is available. Both steps, including the upgrade line per install kind, are Before the first CLI call in `SKILL.md`. If npx cannot find the package, ask before installing anything.
+2. The CLI, and its version. `command -v sr-connect` decides the command: a hit means every call in the session is `sr-connect ...`, a miss means a first call of `npx @sr-connect/cli@latest --version` and `npx @sr-connect/cli@<version> ...` for every later one, at the version it printed. Then `cli check-updates`, and offer the upgrade when one is available. Both steps, including the upgrade line per install kind, are Before the first CLI call in `SKILL.md`. If npx cannot find the package, ask before installing anything.
 3. `cli get-readme`. Read it once per session.
 4. `auth status`. Exit 3 means not logged in; go to Authentication. Exit 3 with `API_KEY_EXPIRED` means the key passed the expiry it was created with: go to Authentication for a new one. Note the instance it reports. Then `access get`: `"limited": true` means an access policy limits the key, so read `references/access.md` before going further. An unknown command means the CLI predates access policies: offer the upgrade from step 2.
 5. `cli settings agenticFeedback --raw`. When `enabled` is true, keep feedback notes as you work; see Feedback below. When it is false, feedback is off for the whole session and you do not bring it up. A CLI that refuses the key as an extra argument predates the lookup: read the row with `"key":"agenticFeedback"` from `cli settings --raw` instead.
@@ -562,7 +562,7 @@ End every session with a summary in the conversation, whatever the ask type. The
 
 Start:
 
-1. `node --version`, `npx @sr-connect/cli@latest cli get-readme`.
+1. `node --version`, the command and version steps in Before the first CLI call (`SKILL.md`), then `cli get-readme`.
 2. `auth status`, `cli settings agenticFeedback --raw`, `team list`, `egress-firewall list --team <teamId>`.
 3. Decide the harness branch. Open the feedback notes file if allowed. Ask the Egress Firewall approval question with the others.
 4. Identify the ask type and the target environment.

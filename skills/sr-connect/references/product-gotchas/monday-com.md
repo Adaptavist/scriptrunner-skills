@@ -1,6 +1,6 @@
 # monday.com
 
-What a script meets at run time when it calls monday.com or handles its events. Snapshot 2026-10-08, read from `@managed-api/monday-v2025-07-core` 1.0.0. Load this file only when a script calls monday.com's API or handles its events. Authorizing the connector is `references/connector-setup/monday-com.md`; registering the webhook is `references/event-listener-setup/monday-com.md`.
+What a script meets at run time when it calls monday.com or handles its events. Snapshot 2026-10-28, read from `@managed-api/monday-v2025-07-core` 1.0.0. Load this file only when a script calls monday.com's API or handles its events. Authorizing the connector is `references/connector-setup/monday-com.md`; registering the webhook is `references/event-listener-setup/monday-com.md`.
 
 ## The vendor API
 
@@ -21,7 +21,7 @@ Source: https://docs.adaptavist.com/src/latest/managed-apis/managed-api-for-mond
 
 ## Event types
 
-None known.
+The script receives monday.com's body unchanged: one key, `event`, holding the fields, so read `event.event.boardId`, never `event.boardId`. The published types in `@sr-connect/monday` wrap each payload the same way.
 
 ## Verify before trusting
 

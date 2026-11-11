@@ -1,6 +1,6 @@
 # monday.com
 
-Authorized in a browser through OAuth 2.0 with the platform's own monday.com app, which an administrator of the monday.com account installs first. One method. Snapshot 2026-09-15 from the web application's setup dialog, cross-checked the same day against https://developer.monday.com/api-reference/docs/authentication.
+Authorized in a browser through OAuth 2.0 with the platform's own monday.com app, which an administrator of the monday.com account installs first. One method. Snapshot 2026-10-28 from the web application's setup dialog, walked the same day through a monday.com account and cross-checked against https://developer.monday.com/api-reference/docs/authentication.
 
 ## Before you hand over
 
@@ -16,7 +16,7 @@ Authorized in a browser through OAuth 2.0 with the platform's own monday.com app
 2. "Give an administrator of the account the Installed Apps Link below so they can check if ScriptRunner Connect is already installed." The link is `<account>/admin/installedApps/manage`.
 3. "If ScriptRunner Connect is already installed, click Next."
 4. "If ScriptRunner Connect is not installed, copy the Installation Link below and give it to an administrator to paste on their browser and install ScriptRunner Connect." The administrator opens it, picks the account (and, if asked, the workspaces the app may see), and installs. This is once per account, not per connector. If the dialog shows "Install URL not available. Check with ScriptRunner Connect support" instead of a link, the deployment has no installation link configured and support has to supply it.
-5. "Click Save." (the dialog's word for the step's Next).
+5. "Click Next."
 6. "Authorize": "To access information in monday.com you need to authorize our app to be able to make requests on your behalf." A consent window opens on monday.com; sign in as the user the integration should act as, "Authorize".
 
 ## After the callback
@@ -25,7 +25,7 @@ The consent window is closed by the web application after 100 seconds and the ru
 
 ## Fixed-key alternative through a Generic connector
 
-A personal API token: the profile picture, "Developers", "My access tokens" (monday.com's documentation: "API token", "Show"), copy the token. Generic connector: base URL `https://api.monday.com/v2`, header `Authorization: <token>`, through `--input` as `generic.md` says; monday.com takes the bare token in the header, no `Bearer` prefix, and also wants an `API-Version` header on some versions, which the Managed API sets. Build `MondayApi` from the current monday.com Managed API package `app list` reports on the Generic connection as `references/scripting.md` shows. Costs: the token acts as its user with every board that user can see, it does not expire but is revoked when the user's account is, and the connector reads as Generic. It is the route when no account administrator will install the app.
+A personal API token: the profile picture, "Developers", which opens the Developer Center in a new tab, "API token", "Show", copy the token. An account administrator also finds it under the profile picture, "Administration", "Connections", "Personal API token". Generic connector: base URL `https://api.monday.com/v2`, header `Authorization: <token>`, through `--input` as `generic.md` says; monday.com takes the bare token in the header, no `Bearer` prefix, and also wants an `API-Version` header on some versions, which the Managed API sets. Build `MondayApi` from the current monday.com Managed API package `app list` reports on the Generic connection as `references/scripting.md` shows. Costs: the token acts as its user with every board that user can see, it does not expire but is revoked when the user's account is, and the connector reads as Generic. It is the route when no account administrator will install the app.
 
 ## Expiry and re-authorization
 
@@ -35,8 +35,7 @@ Re-authorizing against the same instance keeps the connector's Egress Firewall a
 
 ## Known differences from the dialog
 
-- The dialog's final install step says "Click Save." where the button is the stepper's "Next".
-- monday.com's developer settings have moved between "Developers", "My access tokens" and an "API" tab; the dialog does not describe the token page because its flow does not need it.
+None at the snapshot date.
 
 ## Verify before trusting
 

@@ -7,7 +7,7 @@ description: >-
     @sr-connect/cli. Use for any SRC, ScriptRunner Connect or Atlassian-integration question, and
     load references/ before running the CLI.
 metadata:
-    version: '1.17'
+    version: '1.18'
     minCliVersion: '0.5.0'
 ---
 
@@ -276,13 +276,12 @@ The web app has a built-in assistant. When working from outside, use your own ca
 
 | Plan       | Connectors | Executions per month    | Event queues | Hosting                           |
 | ---------- | ---------- | ----------------------- | ------------ | --------------------------------- |
-| Free       | 4          | 5,000                   | no           | shared AWS, EU or US              |
 | Basic      | 4          | unlimited (500,000 cap) | yes          | shared AWS                        |
 | Advanced   | 8          | unlimited               | yes          | shared AWS                        |
 | Pro        | unlimited  | unlimited               | yes          | shared AWS                        |
 | Enterprise | unlimited  | unlimited               | yes          | private AWS account, optional VPC |
 
-A plan belongs to a team and its limits are shared by every workspace in the team. The Connectors column is the team's connections allowance, which approved Egress Firewall entries count against; see Egress Firewall. SSO is a paid add-on below Enterprise. Free plan support is community only.
+A plan belongs to a team and its limits are shared by every workspace in the team. The Connectors column is the team's connections allowance, which approved Egress Firewall entries count against; see Egress Firewall. SSO is a paid add-on below Enterprise.
 
 Source: https://www.scriptrunnerhq.com/atlassian-apps/jira/scriptrunner-connect-pricing
 

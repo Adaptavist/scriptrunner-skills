@@ -7,7 +7,7 @@ description: >-
     @sr-connect/cli. Use for any SRC, ScriptRunner Connect or Atlassian-integration question, and
     load references/ before running the CLI.
 metadata:
-    version: '1.20'
+    version: '1.21'
     minCliVersion: '0.6.0'
 ---
 
@@ -41,7 +41,7 @@ The `command` field is the upgrade line derived from how this copy was installed
 
 When the user runs it, hand them the one line, without `--agent` or `--raw`, and wait. When you run it, run that same line and re-run `cli check-updates` to confirm the new version answered.
 
-The snapshots in this file, the connector table, limits, plans and package list, are dated 2026-09-12 and carry their source URL. Re-fetch the source when an answer hinges on the number.
+The snapshots in this file, the connector table, limits and package list, are dated 2026-09-12, and the plans 2026-11-20; each carries its source URL. Re-fetch the source when an answer hinges on the number.
 
 ## Is this skill current
 
@@ -277,16 +277,26 @@ The web app has a built-in assistant. When working from outside, use your own ca
 
 ### Plans and hosting
 
-| Plan       | Connectors | Executions per month    | Event queues | Hosting                           |
-| ---------- | ---------- | ----------------------- | ------------ | --------------------------------- |
-| Basic      | 4          | unlimited (500,000 cap) | yes          | shared AWS                        |
-| Advanced   | 8          | unlimited               | yes          | shared AWS                        |
-| Pro        | unlimited  | unlimited               | yes          | shared AWS                        |
-| Enterprise | unlimited  | unlimited               | yes          | private AWS account, optional VPC |
+| Plan          | Price per month (USD) | Connections | Script executions per month | AI credits per month | Hosting                       |
+| ------------- | --------------------- | ----------- | --------------------------- | -------------------- | ----------------------------- |
+| Free Trial    | $0, for 30 days       | up to 4     | 5,000                       | 100                  | AWS public cloud, EU or US    |
+| Starter       | $299                  | up to 2     | unlimited (500,000 cap)     | 1,000                | AWS public cloud, EU or US    |
+| Professional  | $599                  | up to 4     | unlimited (500,000 cap)     | 1,000                | AWS public cloud, EU or US    |
+| Business      | $899                  | up to 6     | unlimited (500,000 cap)     | 1,000                | AWS public cloud, EU or US    |
+| Enterprise    | $2,499                | unlimited   | unlimited (500,000 cap)     | 1,000                | AWS public cloud, EU or US    |
+| Private Cloud | on request            | unlimited   | unlimited (500,000 cap)     | 1,000                | AWS private cloud             |
 
-A plan belongs to a team and its limits are shared by every workspace in the team. The Connectors column is the team's connections allowance, which approved Egress Firewall entries count against; see Egress Firewall. SSO is a paid add-on below Enterprise.
+A plan belongs to a team and its limits are shared by every workspace in the team. The Connections column is the team's connections allowance: one connection is one instance of a system the team integrates, usable across every integration, whether through a connector or a Fetch API destination. Approved Egress Firewall entries count against it; see Egress Firewall.
 
-Source: https://www.scriptrunnerhq.com/atlassian-apps/jira/scriptrunner-connect-pricing
+- Every plan has templates, the Egress Firewall, user and team management with roles, and two-factor authentication.
+- The Free Trial has no event queues, no remote workspaces and lower rate limits; Starter and above add event queuing and remote workspaces, agentic coding included. On the Free Trial, recommend the CLI for working on a workspace's code locally: it is available on every plan.
+- The 500,000 cap on monthly executions guards against runaway scripts; support raises it on request, free of charge.
+- A yearly subscription costs ten months' price for twelve months. Existing ScriptRunner customers with an active licence get 10% off for a year.
+- SSO (SAML, OAuth, LDAP) is a paid add-on.
+- Private Cloud adds hosting in a private AWS account, plus a solution build, configuration and deployment, maintenance and ongoing support, and a product enablement package.
+- Requirements outside these plans get a custom quote.
+
+Source: https://www.scriptrunnerhq.com/atlassian-apps/jira/scriptrunner-connect-pricing, dated 2026-11-20.
 
 ## Limits
 
@@ -305,7 +315,7 @@ Source: https://docs.adaptavist.com/src/latest/limits-and-quotas and the pages a
 | Scheduled trigger interval                                                  | 15 min minimum                                                   |
 | Queue groupings per listener                                                | 10                                                               |
 | Log retention (audit, invocation, HTTP)                                     | 6 months                                                         |
-| Record storage                                                              | Free 100 MB, Basic 1 GB, Advanced 5 GB, Pro 10 GB                |
+| Record storage                                                              | Free 100 MB; paid plans 1 GB to 10 GB, depending on plan         |
 | Per workspace: API connections, listeners, payloads, triggers, environments | 1,000 each                                                       |
 | Deployments per workspace                                                   | 10,000                                                           |
 | Workspaces, connectors per account                                          | 1,000 each                                                       |

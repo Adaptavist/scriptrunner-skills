@@ -7,13 +7,15 @@ description: >-
     @sr-connect/cli. Use for any SRC, ScriptRunner Connect or Atlassian-integration question, and
     load references/ before running the CLI.
 metadata:
-    version: '1.18'
-    minCliVersion: '0.5.0'
+    version: '1.20'
+    minCliVersion: '0.6.0'
 ---
 
 # ScriptRunner Connect
 
-This file answers theory. Before touching the CLI read `references/cli-workflow.md`, and `references/access.md` when the API key turns out to be limited by an access policy. Before writing a script read `references/scripting.md`, and the one file under `references/product-gotchas/` for each product the script calls, where one exists. Read `references/testing.md` only when the user asks for tests.
+This file answers theory. Before touching the CLI read `references/cli-workflow.md`, and `references/access.md` when the API key turns out to be limited by an access policy. Before writing a script read `references/scripting.md`, the whole of its Code style section and not only the example, and the one file under `references/product-gotchas/` for each product the script calls, where one exists. Read `references/testing.md` only when the user asks for tests.
+
+**Every script you write or change is documented for the visual flow before it is pushed:** a JSDoc on every function, and a `/** ... */` directly above every Managed API call, `fetch`, record storage call, `triggerScript`, `if`, `switch`, loop, `try` and `throw`. The visual flow shows those comments; a `//` comment it does not. The full rules are under Code style in `references/scripting.md`.
 
 ## Before the first CLI call
 
@@ -116,6 +118,7 @@ Glossary, docs word first, CLI group second:
 | Space an environment's config lives in, targets HEAD or a release    | environment         | `environment`; `-e` takes its ID        |
 | Editing lock, shared with the web app                                | none                | `workspace-lock`                        |
 | Team allowlist of outbound destinations, connectors and hostnames    | Egress Firewall     | `egress-firewall`                       |
+| Chart of what the workspace's scripts do, with its warnings          | Visual flow         | `visual-flow`                           |
 
 ## Capabilities
 

@@ -92,15 +92,153 @@ export default async function (event: IssueCreatedEvent, context: Context<EV>): 
 
 File layout: imports, the entry function, supporting functions in reading order declared with `function`, types last. Shared logic in `scripts/Utils/<Service>.ts`, shared types in `scripts/Utils/Types.ts`; in an existing workspace, use the folder it already has, `utils/` or `Utils/`, rather than adding a second. Listener handlers are named `On<Event>.ts`; scheduled jobs after the job, `SyncIssues.ts`. Prefer extending an existing script over adding one. Never edit `scripts/api/**` or `ev-params.ts`; both are generated.
 
-Style:
+## Code style
 
-- No `any` or `unknown` unless the type cannot be written or found in `node_modules`. Inference is fine when the right-hand side is clear.
-- Annotate a return type rather than casting at `return`. No temporary variable only to return it.
-- `??` over `||`. Options objects inline so the editor can complete them.
-- No global mutable state. State that outlives the invocation goes in record storage.
-- Do not catch an error only to log it; uncaught errors are logged with a stack trace, mark the run as failed and notify the workspace owner, which is what you want for anything the logic does not account for. Handle the expected cases and let the rest bubble.
-- Comment the why. JSDoc where it helps.
+Write every script for two readers: the person who maintains it, and the visual flow, which charts what the code does without running it. Code that reads plainly charts plainly.
+
+**Documentation is required in every script you write or change, on every line it names, before every push.** The visual flow shows these comments in each step's details and on hover; a script without them charts as bare code.
+
+- Every function, the entry function included, gets a JSDoc. Its first sentence says what the function does, for a reader who does not read code: the chart shows that sentence on hover and the whole comment in the details of every call to the function. Detail goes in later paragraphs. Leave out `@param` and `@returns` unless they say something the types do not.
+- Put a JSDoc, `/** ... */`, directly above every statement that becomes a step in the chart: a Managed API call, a managed or global `fetch`, a record storage call, a `triggerScript`, an `if` or `switch`, a loop, a `try` and a `throw`. Say why the step is there, for the same reader. Above an `if`, a `switch`, a loop or a `try` it describes the whole block; a statement with several steps shows it on the first. Above a `case` or `default` it goes to the first step under it, and above a call inside `Promise.all([...])` to that call.
+- A `//` comment is not shown. Above any of those statements, write `/** ... */`, never `//`.
+- Comment the why, not the what, everywhere else.
+- Before each push, read every script you changed from top to bottom against this list: each function has its JSDoc, and each step named above has a `/** ... */` directly above it. Add what is missing, then push.
+
+The example below follows every rule in this section. Read the rest of the section too: Shape, Control flow, the table of loops, Avoid, Formatting, and Data and types.
+
+```ts
+import JiraCloud from './api/jira/cloud';
+import { IssueCreatedEvent } from '@sr-connect/jira-cloud/events';
+import { RecordStorage } from '@sr-connect/record-storage';
+
+const NOTIFIED_PREFIX = 'notified-';
+
+/**
+ * Tells the team chat about a new urgent issue, once per issue.
+ */
+export default async function (event: IssueCreatedEvent, context: Context<EV>): Promise<void> {
+	/** Only urgent issues, and never the integration's own. */
+	if (!isUrgentFromSomeoneElse(event, context)) {
+		return;
+	}
+
+	const storage = new RecordStorage();
+
+	/** The team hears about each issue once, however often the event arrives. */
+	if (await wasNotified(storage, event.issue.key)) {
+		return;
+	}
+
+	const summary = await getSummary(event.issue.key);
+
+	await postToChat(context.environment.vars, event.issue.key, summary);
+	await markNotified(storage, event.issue.key);
+}
+
+/** Whether the issue is urgent, and someone other than the integration's account created it. */
+function isUrgentFromSomeoneElse(event: IssueCreatedEvent, context: Context<EV>): boolean {
+	const isUrgent = event.issue.fields.priority?.name === 'Highest';
+	const isOwnChange = event.user.accountId === context.environment.vars.SERVICE_USER_ID;
+
+	return isUrgent && !isOwnChange;
+}
+
+/** Whether the team has already heard about the issue. */
+async function wasNotified(storage: RecordStorage, key: string): Promise<boolean> {
+	/** One record per issue the team was told about. */
+	return storage.valueExists(`${NOTIFIED_PREFIX}${key}`);
+}
+
+/** Reads the issue's summary from Jira. */
+async function getSummary(key: string): Promise<string> {
+	/** Read the summary as it is now, not as the event carried it. */
+	const issue = await JiraCloud.Issue.getIssue({ issueIdOrKey: key, fields: ['summary'] });
+
+	return issue.fields?.summary ?? key;
+}
+
+/** Posts one line about the issue to the team chat. */
+async function postToChat(vars: EV, key: string, summary: string): Promise<void> {
+	/** The webhook is a parameter, so each environment posts to its own channel. */
+	await fetch(`${vars.CHAT_WEBHOOK}/messages`, {
+		method: 'POST',
+		headers: { 'Content-Type': 'application/json' },
+		body: JSON.stringify({ text: `${key} is urgent: ${summary}` }),
+	});
+}
+
+/** Remembers that the team has heard about the issue. */
+async function markNotified(storage: RecordStorage, key: string): Promise<void> {
+	/** Kept a month, so the records do not pile up for ever. */
+	await storage.setValue(`${NOTIFIED_PREFIX}${key}`, true, { ttl: 30 * 24 * 60 * 60 });
+}
+```
+
+Shape:
+
+- The entry function reads like a table of contents: the checks that end the run early first, then one call per step to a function whose name says what the step does.
+- One job per function, named with a verb for what it does in the integration's terms, `findOpenIssues` or `postSummaryToChannel`, never `process` or `handle`. The chart labels a call with the call as written and opens each function as a flow of its own.
+- Keep data shaping, such as mapping, filtering and formatting, in pure functions, apart from the functions that call a service, use record storage or trigger a script. The chart leaves out calls that reach none of those, so it shows only the integration's steps, and the pure functions can be tested on their own.
+- Keep it simple. Plain functions called by name; no classes, generic dispatchers, wrappers that take a callback, or recursion for the workflow itself. When two ways work, write the obvious one.
+
+Control flow:
+
+- `if` or `switch` for anything that does something. A ternary, `&&` or `||` only to choose a value; one that calls a service still draws a decision, labelled with the bare expression.
+- Give a condition with more than one part a name, through a function or a `const`: `if (isUrgentFromSomeoneElse(event, context))`. The chart's decision shows the condition as written.
+- Return early for the cases the run skips, and nest at most two levels deep; a deeper block becomes a function.
+- `async` and `await`, never `.then()` chains.
+- Await or return every call to a service, `fetch`, record storage, `triggerScript` and your own async functions. Nothing waits for one you don't: the run can end before it does, and its error is not caught. Write `void` before a call only when the user asked for one nothing waits for. No `setTimeout` or `setInterval` to do work later; await the work, after an awaited delay if it has to wait. The visual flow warns with `NOT_AWAITED`.
+
+Lists, loops and repetition, readable first and then short:
+
+| To | Write | Not |
+| --- | --- | --- |
+| Do work for each item, one at a time | `for (const item of items)`, with `break`, `continue` and `return` as needed | `items.forEach(...)`, which cannot wait, stop or return |
+| Use the index too | `for (const [index, item] of items.entries())` | `for (let i = 0; ...)`, unless you step by more than one |
+| Go over an object's keys | `for (const [key, value] of Object.entries(record))` | `for...in`, which also yields inherited keys |
+| Transform, pick or test a list | `map`, `filter`, `find`, `some`, `every` and `flatMap` with a short, pure callback | a loop that pushes into an array |
+| Fold a list into one value | `reduce` for a sum or a count; `Object.fromEntries(items.map(...))` for a lookup by key | a `reduce` whose callback runs past two lines |
+| Call for many items at once | `await Promise.all(items.map((item) => call(item)))` for a few; `throttleAll`, as Calls below describes, with its cap in a parameter when there are many or the API limits the rate | hand-made batches |
+| Call two unrelated things | one after the other, unless the user asked for speed | `Promise.all([a(), b()])` only to save a moment |
+| Read every page | one function, such as `findAllIssues(jql)`, with a `do...while` on the vendor's cursor that returns the items | paging code repeated at each call; an async generator, unless the pages do not fit in memory |
+| Choose what to do by event type | `switch (event.webhookEvent)` with one call per case and `default: throw` | a map of handler functions; an `if` chain on the same value |
+| Handle a call that may 404 | an `errorStrategy` that answers `null`, then an `if` on it | a `try`/`catch` around the call that swallows it |
+| Release what you took | `try { ... } finally { release }` | releasing in both the `try` and the `catch` |
+| Avoid repeating yourself | one function for steps that differ only in values, with the values as arguments; a `const` for a literal used twice; shared helpers in `Utils/` | one function that does different things depending on a flag argument |
+
+Avoid, even where the chart draws it:
+
+- An `async` callback, or one that returns a call, given to `forEach`, `filter`, `find`, `findIndex`, `some` or `every`, and a `map(async ...)` whose promises nothing awaits. Nothing waits for the calls, their errors are not caught, and a promise always passes a test. Use `for...of` with `await`, or `await Promise.all(items.map(...))`. The visual flow warns with `NOT_AWAITED`.
+- A `reduce` over promises to run calls in order. Write `for...of` with `await`.
+- Labelled `break` and `continue`, and labelled blocks left with `break`. Move the inner loop or the block into a function that returns what the code after it needs.
+- Keeping a Managed API client or its methods anywhere but its import: destructured or aliased, `const { Issue } = JiraCloud` or `const getIssue = JiraCloud.Issue.getIssue`, or kept in a class, an object, a `let` or an array, or returned from a function. Write the call in full where it is made, so each call says which API it reaches; when a function needs the client, pass it as an argument typed `typeof JiraCloud`. The visual flow warns with `CLIENT_NOT_FOLLOWED` where it can't follow one.
+- Calling a method whose version depends on the object's class, one a subclass overrides, an abstract one or one an interface declares, and calling a function picked from an array of functions, from an object's values or a `let` given more than one, or a Managed API client chosen with `?:` or given to a `let`. The chart draws every version or connection it can find under one step chosen at run time, not the one that runs, and marks a call it can find no function for as not known. Call the function the step needs by name. The visual flow warns with `DYNAMIC_CALL`.
+- Your own wrappers that take a callback, such as `withRetry(() => ...)`. A Managed API's `errorStrategy` retries its calls; otherwise write a named function with a loop.
+- Functions that build and return other functions, such as a factory that returns a poster for one base URL. Pass the values as arguments instead; the chart cannot work out the URLs such a function builds.
+- Nested ternaries. Use an `if` or a `switch`.
+- A chain of more than three array calls, or one whose callbacks run past one line. Name the results of the steps.
+- A boolean argument that switches what a function does. Write two functions whose names say which.
+- Changing an object or array a caller passed in. Return the new value.
+
+Formatting:
+
+- Braces around every block, even one with a single statement, and the body on its own line after the opening brace. Never `if (done) return` or `if (done) { return }` on one line. The clone's Prettier moves a braced body onto its own lines but does not add missing braces.
+- A blank line between blocks of logic, such as the early returns, the reads, the decision and the writes. One statement per line; give a result you pass on its own `const` rather than nesting calls inside calls, but no temporary variable only to return it.
 - Run the clone's `lint:fix` script rather than fixing style by hand. An unused `context` warning is fine. In a workspace written in the web application, run it on the files you changed only; over the whole tree it reformats every script, as `references/cli-workflow.md` says under Building.
+
+Data and types:
+
+- Nothing at the top level of a script but imports, functions, types and literal constants that never change, such as a record key prefix or a fixed vendor host. No objects, arrays, maps, instances, caches or counters there. Anything configurable is a parameter; state that outlives the invocation goes in record storage.
+- Pass data between functions as arguments. A record storage instance set up with options, a Managed API client, `context` and `context.environment.vars` may be passed as well. Give such a parameter its type, `storage: RecordStorage`, `client: typeof JiraCloud` or `vars: EV`, so the chart can follow it.
+- Build a URL in the function that sends it, from literal text, parameters, `const`s and helpers that only return a template literal. A URL kept in a `let` changed in a loop shows in the chart as a URL built at run time.
+- Call a Managed API method by name, `JiraCloud.Issue.getIssue(...)`, never `JiraCloud.Issue[name](...)`, and give `triggerScript` its target script as a literal.
+- Write a record storage key as a literal prefix and the variable part, `` `order-${order.id}` ``, so the chart shows which records scripts share.
+- No `any`, `unknown`, `as` or `!` unless the type cannot be written or found in `node_modules`; then a comment says why. Inference is fine when the right-hand side is clear. Annotate a return type rather than casting at `return`.
+- `??` over `||`. Options objects inline so the editor can complete them.
+
+Errors and dependencies:
+
+- Do not catch an error only to log it; uncaught errors are logged with a stack trace, mark the run as failed and notify the workspace owner, which is what you want for anything the logic does not account for. Handle the expected cases and let the rest bubble.
 - No third-party integration SDKs for a service that has a connector. Use the connector, the Generic connector, or `fetch`.
 - No tests unless asked; see `testing.md`.
 
@@ -111,9 +249,11 @@ Configured per environment, read as `context.environment.vars`. The clone's `ev-
 ```ts
 export default async function (event: any, context: Context<EV>) {
 	const baseUrl = context.environment.vars.BASE_URL
-	const timeout: number = context.environment.vars.HTTP.TIMEOUT_MS // FOLDER gives one level of nesting
+	const timeout: number = context.environment.vars.Http.TIMEOUT_MS // FOLDER gives one level of nesting
 }
 ```
+
+Name every parameter in SCREAMING_SNAKE_CASE, `BASE_URL`, `JIRA_PROJECT_KEY`, and every folder in PascalCase: the folder `Http` with `TIMEOUT_MS` inside. A key takes letters, digits and underscores only, up to 50 characters, and is unique among its siblings. In a workspace whose parameters already follow another style, match it rather than rename them: a renamed key breaks every script that reads the old one.
 
 | Parameter type                                | TypeScript                                                        |
 | --------------------------------------------- | ----------------------------------------------------------------- |
@@ -207,6 +347,17 @@ await JiraCloud.Issue.updateIssue({
 ```
 
 Pagination: walk every page with the vendor's own paging fields, `startAt`, `maxResults`, `next` or a cursor, unless told otherwise, and warn the user when that means many calls.
+
+Limited concurrency: when the user asks for calls to run at most a few at a time, use `throttleAll` from `promise-throttle-all` instead of hand-written batches, after adding the package with `package add`. Each task is a function that returns the promise, so a call starts only when a slot is free; plain `Promise.all` starts them all at once. Read the limit from a parameter when the user may want to tune it.
+
+```ts
+import { throttleAll } from 'promise-throttle-all'
+
+const results = await throttleAll(
+	context.environment.vars.CONCURRENCY,
+	issueKeys.map((key) => () => JiraCloud.Issue.getIssue({ issueIdOrKey: key })),
+)
+```
 
 ### Errors
 

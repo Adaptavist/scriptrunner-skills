@@ -7,8 +7,8 @@ description: >-
     @sr-connect/cli. Use for any SRC, ScriptRunner Connect or Atlassian-integration question, and
     load references/ before running the CLI.
 metadata:
-    version: '1.22'
-    minCliVersion: '0.6.0'
+    version: '1.24'
+    minCliVersion: '0.7.0'
 ---
 
 # ScriptRunner Connect
@@ -251,7 +251,7 @@ Source: https://docs.adaptavist.com/src/latest/collaborate-with-teams
 
 ### Observability
 
-Invocation logs are kept six months, per team. Each row has a status, one of Finished, Running, Denied, Timed out, Aborted, Function Error, Malformed Payload Error and Runtime Error; a trigger type, one of Manual, Manual Event Listener, External, Chained and Scheduled; and the console and HTTP log counts. Console logs cap at 1,000 lines per invocation; a line too large is stored separately. HTTP logs record every outbound call with headers and bodies truncated over 1 KB. Audit logs record every user action, six months. Replay re-runs an event-triggered invocation with an editable payload (not manual or scheduled runs, 4 MB cap). Script failure notifications email on uncaught errors, per user, per workspace and environment.
+Invocation logs are kept six months, per team. Each row has a status, one of Finished, Running, Denied, Timed out, Aborted, Function Error, Malformed Payload Error and Runtime Error; a trigger type, one of Manual, Manual Event Listener, External, Chained and Scheduled; and the console and HTTP log counts. Console logs cap at 1,000 lines per invocation; a line too large is stored separately. HTTP logs record every outbound call with headers and bodies truncated over 1 KB. Audit logs record every user action, six months, each with a label and a colour: green for reads and creates, yellow for changes, runs and new access, red for deletions. Reading people's details, such as the member list, is yellow, and ending a plan is red. Replay re-runs an event-triggered invocation with an editable payload (not manual or scheduled runs, 4 MB cap). Script failure notifications email on uncaught errors, per user, per workspace and environment.
 
 Source: https://docs.adaptavist.com/src/latest/observability
 

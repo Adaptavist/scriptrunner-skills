@@ -3,7 +3,7 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: Features > Script Manager
-- Doc ID: doc-sr4cc-2a948e67-4a24-4acf-a9e0-7271530689af-8d75bf258f01f942
+- Doc ID: doc-sr4cc-d14434bb-7041-4709-915a-688f26c34109-8d75bf258f01f942
 - Source: https://docs.adaptavist.com/sr4cc/latest/features/script-manager#troubleshooting-script-manager--en
 
 Our tips to help figure out why you're having a problem in the Script Manager.
@@ -28,32 +28,32 @@ When a saved script has been deleted but is still referenced:
 -   Script failing with compilation errors of missing classes or properties.
 -   Some execution errors will reference only the script ID.
     -   The name of the deleted script is not available.
-    -   Fix: Choose a new saved script, or contact Support to have the deleted script restored.
+    -   Fix: Choose a new saved script or contact Support to have the deleted script restored.
 
 ## Was a saved script deleted?
 
 You should check the following:
 
--   Missing script, or missing method exceptions.
--   _'Script not found'_ errors that reference a UUID.
+-   Missing script or missing method exceptions.
+-   `Script not found` errors that reference a UUID.
 
 ## Does the folder path match the package declaration?
 
-You may notice this as a missing script, or missing method exceptions.
+You may notice this as a missing script or missing method exception.
 
 ## Autocomplete does not appear to work
 
-Autocomplete only works for classes, not plain scripts. It will work for methods contained within scripts too, but only after a manual import has occurred.
+Autocomplete works only for classes, not for plain scripts. It will work for methods contained within scripts too, but only after a manual import has occurred.
 
-Some level of failure can occur during autocompletion as we fetch code from remote storage and compile on the fly so if a saved script appears to be missing according to the autocompletion but you know it's there, you can fallback to writing the import statement manually.
+Some failures can occur during autocompletion because we fetch code from remote storage and compile on the fly. So, if a saved script appears to be missing in autocompletion but you know it's there, you can fall back to writing the import statement manually.
 
-Tip: You can use the Load button to browse the code base in Script Manager and remind yourself of the exact name and location of a saved script.
+Tip: You can use the Load button to browse the codebase in Script Manager and remind yourself of the exact name and location of a saved script.
 
-## Script Manager content is unusually large, or deeply nested
+## Script Manager content is unusually large or deeply nested
 
 If there are too many scripts, you should simplify.
 
-We have built Script Manager to handle hundreds of scripts, even thousands. However, Cloud environments can have drawbacks when operating at such scales and various limiting conditions can occur depending on variations like scripts size, scripts count, names length and other. We recommend that if you use large numbers of saved scripts then it should only be considered as an extreme case and efforts should be made to prevent the codebase from reaching such extents.
+We have built Script Manager to handle hundreds of scripts, even thousands. However, Cloud environments can have drawbacks when operating at such scales, and various limiting conditions can arise depending on factors such as script size, script count, name length and others. We recommend that, if you use a large number of saved scripts, it be considered an extreme case, and that efforts be made to prevent the codebase from reaching such an extent.
 
 ## Other limitations
 
@@ -63,7 +63,7 @@ We have built Script Manager to handle hundreds of scripts, even thousands. Howe
 
 ## Recommendations
 
-The name of the file should match the name of the class described within the file. It is necessary that the name of the script, for example, `ABC.groovy`, is the same as the class name:
+The file name should match the name of the class described in the file. It is necessary that the name of the script, for example, `ABC.groovy`, is the same as the class name:
 
 ```
 class ABC {
@@ -86,7 +86,7 @@ class Test {
 }
 ```
 
-If multiple classes within one file is preferred, you can create one overarching class that contain child classes within:
+If multiple classes within one file are preferred, you can create one overarching class that contains child classes within:
 
 DoubleClass.groovy
 

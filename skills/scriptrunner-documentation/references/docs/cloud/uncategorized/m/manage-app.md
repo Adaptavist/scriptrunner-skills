@@ -3,8 +3,10 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: n/a
-- Doc ID: doc-sr4jc-23666378-f8be-426f-9a33-879bb1ccbe5b-6bcfb25936e5ff0a
+- Doc ID: doc-sr4jc-37fdbe43-53ee-41af-a80d-d1a3ba90bc5c-6bcfb25936e5ff0a
 - Source: https://docs.adaptavist.com/sr4jc/latest/manage-app
+
+Learn how to monitor and manage ScriptRunner for Jira Cloud by checking code, reviewing logs, tracking script execution, and using reports and IP address data.
 
 |  |  |
 | --- | --- |

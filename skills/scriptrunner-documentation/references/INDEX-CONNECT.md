@@ -1,15 +1,18 @@
 # ScriptRunner Connect Documentation Index
 
-Total pages: 64
+Total pages: 72
 
 | Title | Path | Source |
 | --- | --- | --- |
+| Access Policies | references/docs/connect/rest-api/access-policies.md | https://docs.adaptavist.com/src/latest/rest-api#access-policies--en |
 | Advanced Managed API Concepts | references/docs/connect/managed-apis/advanced-managed-api-concepts.md | https://docs.adaptavist.com/src/latest/managed-apis#advanced-managed-api-concepts--en |
 | AI Assistant | references/docs/connect/get-help/ai-assistant.md | https://docs.adaptavist.com/src/latest/get-help#ai-assistant--en |
 | API Connections | references/docs/connect/workspaces/api-connections.md | https://docs.adaptavist.com/src/latest/workspaces#api-connections--en |
 | Audit Logs | references/docs/connect/observability/audit-logs.md | https://docs.adaptavist.com/src/latest/observability/audit-logs |
+| CLI (Command Line Interface) | references/docs/connect/external-coding/cli-command-line-interface.md | https://docs.adaptavist.com/src/latest/external-coding/cli-command-line-interface |
 | Code Snippets | references/docs/connect/scripting/code-snippets.md | https://docs.adaptavist.com/src/latest/scripting#code-snippets--en |
 | Collaborate with Teams | references/docs/connect/uncategorized/c/collaborate-with-teams.md | https://docs.adaptavist.com/src/latest/collaborate-with-teams |
+| Community and Partner Guides | references/docs/connect/demos/community-and-partner-guides.md | https://docs.adaptavist.com/src/latest/demos#topic-5195--en |
 | Connect to Services Behind the Firewall | references/docs/connect/get-started/connect-to-services-behind-the-firewall.md | https://docs.adaptavist.com/src/latest/get-started#connect-to-services-behind-the-firewall--en |
 | Connectors | references/docs/connect/uncategorized/c/connectors.md | https://docs.adaptavist.com/src/latest/connectors |
 | Console Log | references/docs/connect/workspaces/console-log.md | https://docs.adaptavist.com/src/latest/workspaces#console-log--en |
@@ -19,9 +22,10 @@ Total pages: 64
 | Create an Issue in Jira Cloud | references/docs/connect/scripting/code-snippets/create-an-issue-in-jira-cloud.md | https://docs.adaptavist.com/src/latest/scripting#code-snippets--en#create-an-issue-in-jira-cloud--en |
 | Delete a Connector | references/docs/connect/connectors/delete-a-connector.md | https://docs.adaptavist.com/src/latest/connectors#delete-a-connector--en |
 | Demos | references/docs/connect/uncategorized/d/demos.md | https://docs.adaptavist.com/src/latest/demos |
-| Deploying From Build Pipelines | references/docs/connect/external-coding/deploying-from-build-pipelines.md | https://docs.adaptavist.com/src/latest/external-coding#deploying-from-build-pipelines--en |
+| Deploying From Build Pipelines | references/docs/connect/external-coding/sftp-remote-workspace/deploying-from-build-pipelines.md | https://docs.adaptavist.com/src/latest/external-coding/sftp-remote-workspace#deploying-from-build-pipelines--en |
 | Deployments and Environments | references/docs/connect/workspaces/deployments-and-environments.md | https://docs.adaptavist.com/src/latest/workspaces#deployments-and-environments--en |
 | Editor | references/docs/connect/scripting/editor.md | https://docs.adaptavist.com/src/latest/scripting#editor--en |
+| Egress Firewall User Guide | references/docs/connect/security/egress-firewall-user-guide.md | https://docs.adaptavist.com/src/latest/security#egress-firewall-user-guide--en |
 | Error Handling | references/docs/connect/managed-apis/error-handling.md | https://docs.adaptavist.com/src/latest/managed-apis#error-handling--en |
 | Event Listeners | references/docs/connect/workspaces/event-listeners.md | https://docs.adaptavist.com/src/latest/workspaces#event-listeners--en |
 | Event Queues | references/docs/connect/workspaces/event-queues.md | https://docs.adaptavist.com/src/latest/workspaces#event-queues--en |
@@ -43,7 +47,7 @@ Total pages: 64
 | Parameters | references/docs/connect/workspaces/parameters.md | https://docs.adaptavist.com/src/latest/workspaces#parameters--en |
 | Perform Mutual TLS | references/docs/connect/scripting/code-snippets/perform-mutual-tls.md | https://docs.adaptavist.com/src/latest/scripting#code-snippets--en#perform-mutual-tls--en |
 | Plans and Billing | references/docs/connect/collaborate-with-teams/plans-and-billing.md | https://docs.adaptavist.com/src/latest/collaborate-with-teams#plans-and-billing--en |
-| Recommended Setup | references/docs/connect/external-coding/recommended-setup.md | https://docs.adaptavist.com/src/latest/external-coding#recommended-setup--en |
+| Recommended Setup | references/docs/connect/external-coding/sftp-remote-workspace/recommended-setup.md | https://docs.adaptavist.com/src/latest/external-coding/sftp-remote-workspace#recommended-setup--en |
 | Record Storage | references/docs/connect/scripting/record-storage.md | https://docs.adaptavist.com/src/latest/scripting#record-storage--en |
 | Release Notes | references/docs/connect/uncategorized/r/release-notes.md | https://docs.adaptavist.com/src/latest/release-notes |
 | Replay Script Invocations | references/docs/connect/observability/script-invocation-logs/replay-script-invocations.md | https://docs.adaptavist.com/src/latest/observability/script-invocation-logs#replay-script-invocations--en |
@@ -55,16 +59,20 @@ Total pages: 64
 | Script Invocation Logs | references/docs/connect/observability/script-invocation-logs.md | https://docs.adaptavist.com/src/latest/observability/script-invocation-logs |
 | Scripting | references/docs/connect/uncategorized/s/scripting.md | https://docs.adaptavist.com/src/latest/scripting |
 | Security | references/docs/connect/uncategorized/s/security.md | https://docs.adaptavist.com/src/latest/security |
+| SFTP (Remote Workspace) | references/docs/connect/external-coding/sftp-remote-workspace.md | https://docs.adaptavist.com/src/latest/external-coding/sftp-remote-workspace |
 | Sign In | references/docs/connect/get-started/sign-in.md | https://docs.adaptavist.com/src/latest/get-started#sign-in--en |
 | Sign JWT Token with a Private Key | references/docs/connect/scripting/code-snippets/sign-jwt-token-with-a-private-key.md | https://docs.adaptavist.com/src/latest/scripting#code-snippets--en#sign-jwt-token-with-a-private-key--en |
 | Templates | references/docs/connect/uncategorized/t/templates.md | https://docs.adaptavist.com/src/latest/templates |
-| Test and Run Scripts Locally | references/docs/connect/external-coding/test-and-run-scripts-locally.md | https://docs.adaptavist.com/src/latest/external-coding#test-and-run-scripts-locally--en |
+| Test and Run Scripts Locally | references/docs/connect/external-coding/test-and-run-scripts-locally.md | https://docs.adaptavist.com/src/latest/external-coding/test-and-run-scripts-locally |
 | Triggering scripts | references/docs/connect/scripting/triggering-scripts.md | https://docs.adaptavist.com/src/latest/scripting#triggering-scripts--en |
 | Tutorial: Configure a Confluence Cloud Template | references/docs/connect/templates/tutorial-configure-a-confluence-cloud-template.md | https://docs.adaptavist.com/src/latest/templates#tutorial-configure-a-confluence-cloud-template--en |
 | Tutorial: Configure a Google Sheets Template | references/docs/connect/templates/tutorial-configure-a-google-sheets-template.md | https://docs.adaptavist.com/src/latest/templates#tutorial-configure-a-google-sheets-template--en |
 | Tutorial: Configure a Slack Template | references/docs/connect/templates/tutorial-configure-a-slack-template.md | https://docs.adaptavist.com/src/latest/templates#tutorial-configure-a-slack-template--en |
+| Visual Flow | references/docs/connect/workspaces/visual-flow.md | https://docs.adaptavist.com/src/latest/workspaces#visual-flow--en |
+| Work with AI Agents | references/docs/connect/uncategorized/w/work-with-ai-agents.md | https://docs.adaptavist.com/src/latest/work-with-ai-agents |
+| Work with the Embedded Agent | references/docs/connect/work-with-ai-agents/work-with-the-embedded-agent.md | https://docs.adaptavist.com/src/latest/work-with-ai-agents/work-with-the-embedded-agent |
+| Work with your own AI Agent | references/docs/connect/work-with-ai-agents/work-with-your-own-ai-agent.md | https://docs.adaptavist.com/src/latest/work-with-ai-agents/work-with-your-own-ai-agent |
 | Working principle | references/docs/connect/get-started/working-principle.md | https://docs.adaptavist.com/src/latest/get-started#working-principle--en |
-| Working with AI agents | references/docs/connect/external-coding/working-with-ai-agents.md | https://docs.adaptavist.com/src/latest/external-coding#working-with-ai-agents--en |
 | Working with Attachments | references/docs/connect/scripting/code-snippets/working-with-attachments.md | https://docs.adaptavist.com/src/latest/scripting#code-snippets--en#working-with-attachments--en |
 | Working with Fetch API | references/docs/connect/scripting/code-snippets/working-with-fetch-api.md | https://docs.adaptavist.com/src/latest/scripting#code-snippets--en#working-with-fetch-api--en |
 | Workspaces | references/docs/connect/uncategorized/w/workspaces.md | https://docs.adaptavist.com/src/latest/workspaces |

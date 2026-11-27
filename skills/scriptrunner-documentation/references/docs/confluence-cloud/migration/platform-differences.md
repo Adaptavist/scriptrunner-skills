@@ -3,7 +3,7 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: Migration
-- Doc ID: doc-sr4cc-47dfa549-cf66-4a6d-a7e3-042fd6b8e7ce-19264317e8b4ec97
+- Doc ID: doc-sr4cc-ae54f411-8c9c-45bb-8395-e11d7f293b5a-19264317e8b4ec97
 - Source: https://docs.adaptavist.com/sr4cc/latest/migration/platform-differences
 
 Find tables describing the differences between ScriptRunner for Confluence Server/DC and Cloud to aid in rewriting scripts for migration.

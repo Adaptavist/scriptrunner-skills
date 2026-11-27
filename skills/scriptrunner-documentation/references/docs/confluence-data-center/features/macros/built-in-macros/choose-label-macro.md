@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Macros > Built-In Macros
-- Doc ID: doc-sr4c-e6136f5a-b5f9-4ab4-adc0-9bc463063e31-3801c2ed8251a443
+- Doc ID: doc-sr4c-c76e2191-e6fc-4d70-a6fa-f2807f3e8f8e-3801c2ed8251a443
 - Source: https://docs.adaptavist.com/sr4c/latest/features#macros--en#built-in-macros--en#choose-label-macro--en
 
 Using the _Choose Label_ macro, you can add labels and generate suggested labels to a page if they are not present.

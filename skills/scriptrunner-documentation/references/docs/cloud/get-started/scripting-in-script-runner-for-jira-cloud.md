@@ -3,8 +3,10 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Get Started
-- Doc ID: doc-sr4jc-25e178e2-807d-4d6b-8d32-ea08118ac79f-70dac58bec3c7739
+- Doc ID: doc-sr4jc-c25daf23-42c5-457a-aaac-9dd37bed85b7-70dac58bec3c7739
 - Source: https://docs.adaptavist.com/sr4jc/latest/get-started/scripting-in-scriptrunner-for-jira-cloud
+
+Learn how scripting works in ScriptRunner for Jira Cloud, including supported languages, execution contexts, and best practices.
 
 ## Overview
 
@@ -20,7 +22,7 @@ Outlined below are the various programming languages used for scripting and thei
 | --- | --- | --- | --- | --- | --- | --- |
 | [Behaviours](../features/behaviours.md) |  |  |  |  |  |  |
 | [Built-in Scripts](../features/built-in-scripts.md) |  |  |  |  |  |  |
-| [Enhanced Search](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/scriptrunner_enhanced_search.dita) |  |  |  |  |  |  |
+| [Enhanced Search](../features/script-runner-enhanced-search.md) |  |  |  |  |  |  |
 | [Scheduled Jobs](../features/scheduled-jobs.md) |  |  |  |  |  |  |
 | [Script Console](../features/script-console.md) |  |  |  |  |  |  |
 | [Script Listeners](../features/script-listeners.md) |  |  |  |  |  |  |
@@ -36,7 +38,7 @@ Scripting is not used for this [feature](../features/script-variables.md); it ut
 
 ### Groovy
 
-Utilising the [Groovy programming language](http://www.groovy-lang.org/), you can respond to events and transitions and manipulate Jira using the [REST API](https://docs.adaptavist.com/sr4jc/latest/get-started/technical-background#rest-apis--en). Additionally, you can use the [Enhanced Search](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/scriptrunner_enhanced_search.dita) feature to run [ScriptRunner Enhanced Search JQL Functions](https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/scriptrunner-enhanced-search-jql-functions) in Jira Cloud and create filters for dashboards and scrum boards that use those functions.
+Utilising the [Groovy programming language](http://www.groovy-lang.org/), you can respond to events and transitions and manipulate Jira using the [REST API](https://docs.adaptavist.com/sr4jc/latest/get-started/technical-background#rest-apis--en). Additionally, you can use the [Enhanced Search](../features/script-runner-enhanced-search.md) feature to run [ScriptRunner Enhanced Search JQL Functions](https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/scriptrunner-enhanced-search-jql-functions) in Jira Cloud and create filters for dashboards and scrum boards that use those functions.
 
 Scripts using the [Groovy](../training/course-script-runner-for-jira-cloud-for-intermediate-users/2-3-module-introduction-to-groovy-for-script-runner-cloud.md) language include [Perform Actions](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/perform-actions), [Scripted Fields](../features/scripted-fields.md), [Script Listeners](../features/script-listeners.md), and [Scheduled Jobs](../features/scheduled-jobs.md). Check out our [HAPI](../uncategorized/h/hapi.md) section on updating your scripts to make them more manageable.
 

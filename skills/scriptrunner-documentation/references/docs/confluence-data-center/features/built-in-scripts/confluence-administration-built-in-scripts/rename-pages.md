@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Built-In Scripts > Confluence Administration Built-In Scripts
-- Doc ID: doc-sr4c-c5753b72-88fe-40f3-b9b8-6e17cc410697-cf6001a25d40231e
+- Doc ID: doc-sr4c-9d2e4bbd-9740-40b9-895f-a6fd669bcf28-cf6001a25d40231e
 - Source: https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#confluence-administration-built-in-scripts--en#rename-pages--en
 
 Use this built-in script to change the titles of pages.

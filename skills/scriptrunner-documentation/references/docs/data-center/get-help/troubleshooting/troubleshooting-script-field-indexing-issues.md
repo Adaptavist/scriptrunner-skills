@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Get Help > Troubleshooting
-- Doc ID: doc-sr4js-eaa1f96b-9d5e-4600-a816-36b6eed441f3-85d06e455674eb8f
+- Doc ID: doc-sr4js-aac6c8dd-226f-462c-a15b-07eedb562a02-85d06e455674eb8f
 - Source: https://docs.adaptavist.com/sr4js/latest/get-help#troubleshooting--en#troubleshooting-script-field-indexing-issues--en
 
 ## Cannot re-index or create/update issues after creating a script field

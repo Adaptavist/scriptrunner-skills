@@ -3,8 +3,8 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: Features > Script Fragments
-- Doc ID: doc-sr4cc-e2688664-82b8-48b4-81ee-bcdbd38d8d79-33e13bfa1ed1b89e
-- Source: https://docs.adaptavist.com/sr4cc/latest/features/script-fragments#adaptavist-bridge--en
+- Doc ID: doc-sr4cc-c53234a3-cda7-406b-a4d3-453cf48373e8-205fdfa7b27697ba
+- Source: https://docs.adaptavist.com/sr4cc/latest/features/script-fragments#adaptavist-bridge-main--en
 
 The Adaptavist Bridge allows your scripts to communicate with Confluence.
 

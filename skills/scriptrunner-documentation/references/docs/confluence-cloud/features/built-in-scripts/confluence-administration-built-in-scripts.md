@@ -3,7 +3,7 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: Features > Built-In Scripts
-- Doc ID: doc-sr4cc-15f9e484-c28c-4199-8669-ca49d2b4df0a-b38247bd7baf209f
+- Doc ID: doc-sr4cc-237e8082-c68a-42d4-b663-cbd35125a5c0-b38247bd7baf209f
 - Source: https://docs.adaptavist.com/sr4cc/latest/features/built-in-scripts/confluence-administration-built-in-scripts
 
 Learn about our built-in scripts that complete functions related to Confluence administration.

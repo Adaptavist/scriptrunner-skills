@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Workflows > Post Functions
-- Doc ID: doc-sr4js-a7a1b9c8-6360-4dfa-995f-bab5c0d6f211-5c58a3aed33611f6
+- Doc ID: doc-sr4js-d38cd534-d907-4c46-a96c-180d3d36c0ab-5c58a3aed33611f6
 - Source: https://docs.adaptavist.com/sr4js/latest/features#workflows--en#post-functions--en#add-a-comment-to-this-issue--en
 
 The _Add a comment to this issue_ post function posts a comment to an issue when it is transitioned.

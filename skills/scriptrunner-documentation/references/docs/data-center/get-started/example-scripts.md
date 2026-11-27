@@ -3,10 +3,12 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Get Started
-- Doc ID: doc-sr4js-00563f04-3dc4-4ec3-8052-15e5add15826-7d7ad4ab8b32d198
+- Doc ID: doc-sr4js-2357c9a5-e748-487f-b69b-3dad71bce748-7d7ad4ab8b32d198
 - Source: https://docs.adaptavist.com/sr4js/latest/get-started/example-scripts
 
-The _Example Scripts_ modal is your go-to destination for finding basic examples and Adaptavist [Example Scripts](https://www.scriptrunnerhq.com/help/example-scripts) without having to leave the ScriptRunner app. To access this modal, you can select the Example Scripts button in any code editor within ScriptRunner. This modal automatically displays basic examples and example scripts related to the feature you are working on.
+The Example Scripts modal is your go-to destination for finding basic examples and Adaptavist [Example Scripts](https://www.scriptrunnerhq.com/help/example-scripts) without having to leave the ScriptRunner app.
+
+To access this modal, you can select the Example Scripts button in any code editor within ScriptRunner. This modal automatically displays basic examples and example scripts related to the feature you are working on.
 
 ## Search for scripts
 

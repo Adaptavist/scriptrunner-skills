@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Release Notes
-- Doc ID: doc-sr4c-dc82f9c3-75f5-45d7-83d3-0eb957c39a43-02a8720a6b0e14f5
+- Doc ID: doc-sr4c-3a9d8d49-ff35-4416-8057-3b3cc09d9917-02a8720a6b0e14f5
 - Source: https://docs.adaptavist.com/sr4c/latest/release-notes/ceasing-development-on-confluence-6
 
 Following Atlassian's decision to drop IE11 Support in Atlaskit (Atlassian's UI library), Adaptavist is no longer developing new features for ScriptRunner versions running on Confluence 6.

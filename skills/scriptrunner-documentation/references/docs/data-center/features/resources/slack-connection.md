@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Resources
-- Doc ID: doc-sr4js-dcd4e4a6-f39d-4684-9721-2236ad315544-b1bf07b3985993f0
+- Doc ID: doc-sr4js-7ad3db3f-b57b-4397-b00f-94a926e24706-b1bf07b3985993f0
 - Source: https://docs.adaptavist.com/sr4js/latest/features#resources--en#slack-connection--en
 
 In this page we go through the process of creating a _Resources_ Slack connection.

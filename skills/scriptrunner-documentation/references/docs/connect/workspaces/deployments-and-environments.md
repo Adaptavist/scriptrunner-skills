@@ -3,7 +3,7 @@
 - Platform: connect
 - Space: SRC
 - Hierarchy: Workspaces
-- Doc ID: doc-src-efc4a325-df71-45f6-92c1-ba77f6ca0792-e6489a6e79a09bdd
+- Doc ID: doc-src-9a853536-1b88-4158-b71f-c2e65d7601bd-e6489a6e79a09bdd
 - Source: https://docs.adaptavist.com/src/latest/workspaces#deployments-and-environments--en
 
 ScriptRunner Connect makes use of environments, releases, and deployments to allow you to implement a managed release process and deploy your releases to multiple environments.
@@ -12,7 +12,9 @@ Consider an environment to be either "production" or "live," "staging" or "UAT,"
 
 As hinted earlier, ScriptRunner Connect aims to implement industry-standard release management processes based on server-side software release management principles. This means that when a new software release is ready, it can be deployed to multiple environments, usually first to staging and then to production once everything looks good.
 
-## Demo
+## Demo: Environments, releases and deployment
+
+[Media](https://demo.arcade.software/bguOwse6O7Dt5ZOGq6Y3?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true)
 
 ## Terminology
 

@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Integrations > Atlassian
-- Doc ID: doc-sr4c-50168de9-df23-473e-8b75-9bb8736669f1-f7a5059b59769027
+- Doc ID: doc-sr4c-cc7e1024-21e2-4b1c-b6ef-7283e8087123-f7a5059b59769027
 - Source: https://docs.adaptavist.com/sr4c/latest/integrations#atlassian--en#connect-to-atlassian-via-app-links--en
 
 [Application Links](https://confluence.atlassian.com/display/APPLINKS/Application+Links+Documentation) exist to handle authentication when making calls between applications.

@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Workflows > Conditions
-- Doc ID: doc-sr4js-33f3c984-4fbb-4e38-8e85-9693efeddcbe-0fdffb6edbfbf156
+- Doc ID: doc-sr4js-fb41fe13-c6ca-4a5f-ab69-745e6121f10c-0fdffb6edbfbf156
 - Source: https://docs.adaptavist.com/sr4js/latest/features#workflows--en#conditions--en#custom-script-condition--en
 
 Use the _Custom script condition_ to run an embedded script that determines whether an issue should be permitted to transition to a particular status within a workflow. This condition allows you to write Groovy scripts that can evaluate a wide range of conditions based on issue fields, workflow states, project properties, user permissions, and other contextual data.

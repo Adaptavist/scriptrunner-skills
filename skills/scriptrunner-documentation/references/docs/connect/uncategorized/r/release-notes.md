@@ -3,7 +3,7 @@
 - Platform: connect
 - Space: SRC
 - Hierarchy: n/a
-- Doc ID: doc-src-691ad387-a372-4561-9ace-4bba05c2d0c1-56412873206e2d66
+- Doc ID: doc-src-d1a59743-b326-4adb-9379-9d05c321a309-56412873206e2d66
 - Source: https://docs.adaptavist.com/src/latest/release-notes
 
 Information on the latest released versions of ScriptRunner Connect.
@@ -13,6 +13,15 @@ Here are the changes we document in the Release Notes:
 -   New features: Brand new functionality designed to make ScriptRunner Connect an exceptional app.
 -   Updates: Changes we've made, large and small, that we want you to be aware of.
 -   Bug Fixes: Issues we've resolved to make ScriptRunner Connect work as intended.
+
+## 1 October 2026
+
+### Updates
+
+We have 2 updates to share!
+
+-   The [Egress Firewall](https://docs.adaptavist.com/src/latest/security/egress-firewall-user-guide) feature now requires you to allowlist all outbound connections, which, by default, will remain blocked.
+-   The [Command Line Interface (CLI)](../../external-coding/cli-command-line-interface.md) feature now enables a much-improved local editing experience. When combined with the [agent skill](https://www.skills.sh/adaptavist/scriptrunner-skills/sr-connect), you can now let your agent work in ScriptRunner Connect autonomously for you.
 
 ## 21 September 2026
 
@@ -50,7 +59,7 @@ We have a very exciting update to share! ✨
 
 ### Pro Plan Free Trial
 
-A free, 3-month trial of the Pro Plan is available to users of the Free Plan and users who annually subscribe to the Basic and Advanced Plans. With a trial of the Pro Plan, you'll have access to unlimited script executions and connectors. You'll also have access to a trial of [Remote Workspace](../e/external-coding.md),
+A free, 3-month trial of the Pro Plan is available to users of the Free Plan and users who annually subscribe to the Basic and Advanced Plans. With a trial of the Pro Plan, you'll have access to unlimited script executions and connectors. You'll also have access to a trial of [Remote Workspace](../../external-coding/sftp-remote-workspace.md),
 
 To initiate your free trial in 3 easy steps:
 
@@ -90,7 +99,7 @@ V2 runtime benefits:
 
 ### Update
 
-We added support for [deploying remote workspace content from CI/CD pipelines](https://docs.adaptavist.com/src/latest/external-coding/deploying-from-build-pipelines).
+We added support for [deploying remote workspace content from CI/CD pipelines](https://docs.adaptavist.com/src/latest/external-coding/sftp-remote-workspace/deploying-from-build-pipelines).
 
 ## 16 January 2026
 
@@ -130,7 +139,7 @@ We have 3 wonderful new features to tell you about:
 
 External Coding features are now available to use without request.
 
-See the [External Coding](../e/external-coding.md) section of the documentation to learn more about customising your coding experience.
+See the [External Coding](../../external-coding/sftp-remote-workspace.md) section of the documentation to learn more about customising your coding experience.
 
 ### Share a connector
 

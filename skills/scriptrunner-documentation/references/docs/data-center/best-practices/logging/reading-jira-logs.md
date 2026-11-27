@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Best Practices > Logging
-- Doc ID: doc-sr4js-8e26a645-168c-4777-ae32-e2a0091fa484-1415c426642f9d63
+- Doc ID: doc-sr4js-ed088b55-8641-4cf8-a484-22b8e169d2a1-1415c426642f9d63
 - Source: https://docs.adaptavist.com/sr4js/latest/best-practices/logging#reading-jira-logs--en
 
 A Jira log file is a file that records the events that occur when Jira software runs. For more information, read [Atlassian's guide to logging](https://confluence.atlassian.com/adminjiraserver/logging-and-profiling-938847671.html). This document will help you to search for ScriptRunner errors in your log files.

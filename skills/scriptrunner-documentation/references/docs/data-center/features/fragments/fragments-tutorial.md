@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Fragments
-- Doc ID: doc-sr4js-f8517aed-f97d-4906-bf99-3fb2f6f9c45c-4bfab84263f112fd
+- Doc ID: doc-sr4js-e36a78fd-909c-43cc-aeee-fc91567e8679-4bfab84263f112fd
 - Source: https://docs.adaptavist.com/sr4js/latest/features#fragments--en#fragments-tutorial--en
 
 Fragments allow you to customize the UI of your Jira instance. Examples are hiding a button, adding a banner, adding a button, or customizing how areas of your Jira instance look.

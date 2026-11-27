@@ -3,7 +3,7 @@
 - Platform: connect
 - Space: SRC
 - Hierarchy: Observability
-- Doc ID: doc-src-261d40d5-56a9-4fa7-9796-1742e039f31f-53795e81dfbfc3b3
+- Doc ID: doc-src-220b4450-22cd-4396-afc2-3b0d7650ce13-53795e81dfbfc3b3
 - Source: https://docs.adaptavist.com/src/latest/observability/script-invocation-logs
 
 Use Script Invocation Logs to view console logs that were emitted during script invocations.

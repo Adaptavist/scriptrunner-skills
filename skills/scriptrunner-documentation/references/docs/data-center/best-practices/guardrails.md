@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Best Practices
-- Doc ID: doc-sr4js-c528c24d-3ab1-4cc3-a494-810f503c6084-2f83c0307f4db874
+- Doc ID: doc-sr4js-f0876e27-e7de-481c-b423-95f400012f0b-2f83c0307f4db874
 - Source: https://docs.adaptavist.com/sr4js/latest/best-practices/guardrails
 
 Atlassian recommends a number of [guardrails](https://confluence.atlassian.com/adminjiraserver/jira-software-guardrails-1141488685.html) that are designed to prevent or fix performance issues with your Jira instance.

@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Workflows > Post Functions
-- Doc ID: doc-sr4js-00c209a6-1dfc-42d2-92a2-50c1a363a280-a01a0a3e7177860b
+- Doc ID: doc-sr4js-3a14ac7f-531f-4b72-b4dc-c517f1e48c11-a01a0a3e7177860b
 - Source: https://docs.adaptavist.com/sr4js/latest/features#workflows--en#post-functions--en#add-or-remove-from-or-to-active-sprint--en
 
 The _Add/remove from sprint_ post function has two complementary parts - you can either add an issue to an active sprint or remove an issue from its current sprint. For example, you can add this post function to a transition, such as _Start Progress_, and configure it to automatically add the issue to the currently active sprint. This practice does not align with traditional Scrum methodology, where sprints are planned in advance, and changes during the sprint are minimized. However, in practice, teams may need to adapt and add work to an active sprint, especially if they complete their commitments early.

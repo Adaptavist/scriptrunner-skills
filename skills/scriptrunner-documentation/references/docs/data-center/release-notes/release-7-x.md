@@ -3,8 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Release Notes
-- Doc ID: doc-sr4js-c4b2dde7-bf0f-4a95-b22e-16cc4708c2e4-632249cdfd4c8989
+- Doc ID: doc-sr4js-1433de0a-e6dd-4313-86a4-182151794ca8-632249cdfd4c8989
 - Source: https://docs.adaptavist.com/sr4js/latest/release-notes/release-7.x
+
+See all fixes, new features, and known issues across every 7.x release of ScriptRunner for Jira Data Center.
 
 ## 7.13.0
 

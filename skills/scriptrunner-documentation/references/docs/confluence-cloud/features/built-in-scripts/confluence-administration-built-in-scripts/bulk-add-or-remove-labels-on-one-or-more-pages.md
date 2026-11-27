@@ -3,7 +3,7 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: Features > Built-In Scripts > Confluence Administration Built-In Scripts
-- Doc ID: doc-sr4cc-09d15cfc-e20c-47ca-bacb-de0e8c2ac247-1c214061e7803721
+- Doc ID: doc-sr4cc-a772b19e-2ef2-445d-914c-3be5893c1ab8-1c214061e7803721
 - Source: https://docs.adaptavist.com/sr4cc/latest/features/built-in-scripts/confluence-administration-built-in-scripts#bulk-add-or-remove-labels-on-one-or-more-pages--en
 
 Instructions for using the Bulk Add/Remove Labels on One or More Pages built-in script.
@@ -13,7 +13,7 @@ With _Bulk Add/Remove Labels on One or More Pages_, you can add or remove labels
 Follow these steps to run the built-in script:
 
 1.  Select the Space.
-2.  In _Select a Space_, select the parent or children pages you want to update.
+2.  In Select a Space, select the parent or children pages you want to update.
     
     You can select all pages within a page tree (a page and all of its children) select individual pages within a space, or a combination of both.
     
@@ -31,7 +31,7 @@ The results of the script appear after you select Run.
 
 ## Example
 
-Add internal label to HR space
+Add an internal label to the HR space
 
 If you want to add an `internal` label to sensitive pages in a space, follow these steps:
 
@@ -40,8 +40,8 @@ If you want to add an `internal` label to sensitive pages in a space, follow the
     
     For this example, we'll select _Payroll_ and _Employee Locations_.
     
-3.  Select _Add Labels_ for the Action.
-4.  Enter _internal_ for Labels.
+3.  Select Add Labels for the Action.
+4.  Enter internal for Labels.
 5.  Select Run.
     
 

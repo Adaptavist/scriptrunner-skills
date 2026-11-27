@@ -3,7 +3,7 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features > Scripted Fields
-- Doc ID: doc-sr4jc-681d56b1-5bc0-4dfc-a724-cb365bd19e72-4f70c078ad7661b9
+- Doc ID: doc-sr4jc-c591e4ce-eb81-4b7f-b5cd-66cb964c0ccd-4f70c078ad7661b9
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/scripted-fields#create-and-modify-scripted-fields--en
 
 Note: Change notice: Atlassian's changes to custom field configurations
@@ -67,7 +67,7 @@ When you create a new scripted field that uses custom fields and attempt to add 
     
     CAUTION:
     
-    Any changes to the scripted field's configuration will require a re-test.
+    Any changes to the scripted field's configuration will require a re-test
     
 9.  Click Save.
     

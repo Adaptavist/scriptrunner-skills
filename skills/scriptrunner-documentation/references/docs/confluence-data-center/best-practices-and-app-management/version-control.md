@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Best Practices and App Management
-- Doc ID: doc-sr4c-fb25884d-6288-423b-905d-7145d025aa1b-8d3d7474c4f22f39
+- Doc ID: doc-sr4c-e3780e78-4a24-4171-b028-c32d4cc15525-8d3d7474c4f22f39
 - Source: https://docs.adaptavist.com/sr4c/latest/best-practices-and-app-management#version-control--en
 
 For large instances with multiple administrators, we recommend you establish a version control system (VCS) to maintain your ScriptRunner scripts.

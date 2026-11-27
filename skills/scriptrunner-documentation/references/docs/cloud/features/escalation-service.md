@@ -3,8 +3,10 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features
-- Doc ID: doc-sr4jc-e29c048e-b287-4758-a8f3-b0566854be40-aa3a71c46b74ec05
+- Doc ID: doc-sr4jc-8ced39aa-8660-431e-bb54-c16a8926e728-aa3a71c46b74ec05
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/escalation-service
+
+Overview of the Escalation Service and how it supports automated issue escalation in ScriptRunner for Jira.
 
 |  |  |
 | --- | --- |

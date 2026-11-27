@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: HAPI
-- Doc ID: doc-sr4c-4de22a19-85c9-402b-937b-3864b0e9d6eb-e631bbfba656af44
+- Doc ID: doc-sr4c-6b94e3da-be7a-4bc9-ac54-43a848089662-e631bbfba656af44
 - Source: https://docs.adaptavist.com/sr4c/latest/hapi#work-with-users--en
 
 With HAPI, you can create scripts to gather lists of users based on different criteria and deactivate users.

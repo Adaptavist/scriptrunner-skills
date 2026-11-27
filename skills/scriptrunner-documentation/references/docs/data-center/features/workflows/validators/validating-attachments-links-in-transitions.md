@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Workflows > Validators
-- Doc ID: doc-sr4js-0d6a336c-77de-45da-b640-c7daae82a779-e58f88f92c04e578
+- Doc ID: doc-sr4js-b0101931-50b7-44d0-ad0b-d97094e6803f-e58f88f92c04e578
 - Source: https://docs.adaptavist.com/sr4js/latest/features#workflows--en#validators--en#validating-attachments-links-in-transitions--en
 
 If a user adds attachments or links in a workflow transition, normally you cannot validate them because they're not accessible via the Jira API until the transition is complete. However, we have made it easy to access links or attachments by using extension methods on [`MutableIssue`](https://docs.atlassian.com/software/jira/docs/api/latest/com/atlassian/jira/issue/MutableIssue.html?_ga=2.93838303.393075385.1679903559-2029362582.1658496808). Check out the following documentation for more information on accessing attachments and links during transition:
@@ -75,7 +75,7 @@ The following example shows how to read links that have been added on the screen
 issue.allOutwardLinks*.issueLinkType.outward == ['blocks']
 ```
 
-Note: Check out our HAPI documentation on [Accessing links in transition](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Data_Center_SR4JS/topics/accessing_links_in_transition.dita) for more information on how to access links in transition.
+Note: Check out our HAPI documentation on [Accessing links in transition](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/production/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Data_Center_SR4JS/topics/accessing_links_in_transition.dita) for more information on how to access links in transition.
 
 ## Related content
 

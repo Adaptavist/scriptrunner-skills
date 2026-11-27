@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Workflows > Post Functions
-- Doc ID: doc-sr4js-f20c5d78-230c-429e-902b-51c98bc6bfb7-7745d3e47d41bab4
+- Doc ID: doc-sr4js-dd50d022-4f90-4761-8323-12a21106ae0f-7745d3e47d41bab4
 - Source: https://docs.adaptavist.com/sr4js/latest/features#workflows--en#post-functions--en#copy-field-values--en
 
 The _Copy Field Values_ post function copies the values from a configured field to another field on the same issue or to another field on linked issues. This post function can be used to keep fields up-to-date, eliminating the need for manual input of values.

@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Best Practices and App Management
-- Doc ID: doc-sr4c-8247d10b-2f84-4f44-acb8-3f2fda70f687-fc45ddb7122c8e42
+- Doc ID: doc-sr4c-335b869a-5b1d-41e2-a5ae-cf2dd3724ea4-fc45ddb7122c8e42
 - Source: https://docs.adaptavist.com/sr4c/latest/best-practices-and-app-management#script-roots--en
 
 Script Roots are directories that ScriptRunner will automatically scan for scripts.

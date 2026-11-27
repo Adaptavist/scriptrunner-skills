@@ -3,7 +3,7 @@
 - Platform: connect
 - Space: SRC
 - Hierarchy: Scripting > Code Snippets
-- Doc ID: doc-src-26559480-6ce8-4033-a50d-a6861b33bb7a-af7810d1298be361
+- Doc ID: doc-src-9c58ea71-c695-4f54-b565-49ad0d6e5a32-af7810d1298be361
 - Source: https://docs.adaptavist.com/src/latest/scripting#code-snippets--en#sign-jwt-token-with-a-private-key--en
 
 Learn how to use a code snippet to sign a JWT token with a private key.
@@ -16,20 +16,20 @@ This example requires that you import `jose-browser-runtime` (which is a port of
 
 ```
 import { importPKCS8, SignJWT } from 'jose-browser-runtime';
- 
+
 export default async function (event: any, context: Context): Promise<void> {
- // Define private key in PEM format, for example sake it's defined in the code, but consider using Record Storage to store the private key more securely
+    // Define private key in PEM format, for example sake it's defined in the code, but consider using Record Storage to store the private key more securely
     const privateKeyPem = `-----BEGIN PRIVATE KEY-----
         PRIVATE_KEY_IN_PEM_FORMAT...
         -----END PRIVATE KEY-----`;
- 
- // Define the algorithm for private key, possible values: https://github.com/panva/jose/issues/210
+
+    // Define the algorithm for private key, possible values: https://github.com/panva/jose/issues/210
     const alg = 'RS256';
- 
- // Import private key from PEM format
+
+    // Import private key from PEM format
     const privateKey = await importPKCS8(privateKeyPem, alg);
- 
- // Sign the JWT token
+
+    // Sign the JWT token
     const jwt = await new SignJWT({ 'urn:example:claim': true })
         .setProtectedHeader({ alg })
         .setIssuedAt()
@@ -37,8 +37,8 @@ export default async function (event: any, context: Context): Promise<void> {
         .setAudience('urn:example:audience')
         .setExpirationTime('2h')
         .sign(privateKey);
- 
- // Print out the signed JWT token
+
+    // Print out the signed JWT token
     console.log('Signed JWT token: ', jwt);
 }
 ```

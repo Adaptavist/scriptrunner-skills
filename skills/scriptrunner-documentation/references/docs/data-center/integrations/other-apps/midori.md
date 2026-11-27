@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Integrations > Other Apps
-- Doc ID: doc-sr4js-a3c91c76-9d7a-42cf-b45e-9e54b307b362-34f18ef3683fb1ec
+- Doc ID: doc-sr4js-f9d09139-e5a5-4ca3-9250-0195dfd6cb14-34f18ef3683fb1ec
 - Source: https://docs.adaptavist.com/sr4js/latest/integrations/other-apps#midori--en
 
 ## Better PDF Exporter for Jira

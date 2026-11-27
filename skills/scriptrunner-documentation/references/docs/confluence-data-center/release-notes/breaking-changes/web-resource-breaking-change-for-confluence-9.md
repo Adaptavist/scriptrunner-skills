@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Release Notes > Breaking changes
-- Doc ID: doc-sr4c-c23aa90d-bb1b-41ea-9851-f1fcd475e8a5-09175c59bedabe8e
+- Doc ID: doc-sr4c-439c0769-463f-4c18-8d82-c58a7203b0d7-09175c59bedabe8e
 - Source: https://docs.adaptavist.com/sr4c/latest/release-notes/breaking-changes#web-resource-breaking-change-for-confluence-9--en
 
 Information about using web resources in Confluence 9.

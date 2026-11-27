@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Fragments
-- Doc ID: doc-sr4c-903b85e4-f9cf-468c-bfff-2346960d6813-1ec273fba667388b
+- Doc ID: doc-sr4c-6e94eb10-5b7a-454f-9017-633137154897-1ec273fba667388b
 - Source: https://docs.adaptavist.com/sr4c/latest/features#fragments--en#web-item--en
 
 A web item is a button or link that appears at the location you choose.

@@ -3,10 +3,12 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Built-in scripts
-- Doc ID: doc-sr4js-6f8217aa-5f1c-448c-939a-25eaa5ddeb42-5f075f2180658f6f
+- Doc ID: doc-sr4js-531c8ce2-85bc-4331-b875-75de4006a9bd-5f075f2180658f6f
 - Source: https://docs.adaptavist.com/sr4js/latest/features#built-in-scripts--en#copy-project--en
 
-Use the _Copy Projects_ built-in script to create a new project based on the configuration of an existing project in the Jira instance, allowing administration users to quickly and efficiently create projects without the need for timely manual configuration. This script copies the following to a new project:
+Create a new Jira project based on an existing project's configuration quickly, without manual setup.
+
+This built-in script copies the following to a new project:
 
 -   Schemes
 -   Role memberships

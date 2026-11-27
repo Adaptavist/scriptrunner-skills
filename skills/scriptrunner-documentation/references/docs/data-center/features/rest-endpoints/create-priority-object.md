@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > REST endpoints
-- Doc ID: doc-sr4js-42482e7e-32d7-42aa-ae01-583cb07ad079-b920e05523e580ea
+- Doc ID: doc-sr4js-16e5991c-4167-4b1e-998e-4565162c964a-b920e05523e580ea
 - Source: https://docs.adaptavist.com/sr4js/latest/features#rest-endpoints--en#create-priority-object--en
 
 This example demonstrates plugging a gap in the official REST API. There is no way to create a new priority object.

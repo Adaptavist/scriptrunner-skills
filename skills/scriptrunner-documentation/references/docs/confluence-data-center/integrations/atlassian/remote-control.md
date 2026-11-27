@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Integrations > Atlassian
-- Doc ID: doc-sr4c-9c8a00c8-3899-43fc-af9b-f627b32c2609-9f9e505572eed969
+- Doc ID: doc-sr4c-1c0c4d48-fd2a-4b1a-86b7-9d2200575bed-9f9e505572eed969
 - Source: https://docs.adaptavist.com/sr4c/latest/integrations#atlassian--en#remote-control--en
 
 _Remote Control_ allows you to easily execute code on other Atlassian applications with ScriptRunner installed.

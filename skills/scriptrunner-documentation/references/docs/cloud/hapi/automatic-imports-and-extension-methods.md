@@ -3,16 +3,18 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: HAPI
-- Doc ID: doc-sr4jc-e31fa5c9-fc18-423d-9ac4-bb3dc3514672-f6d5017b26e1a109
+- Doc ID: doc-sr4jc-3d0ebf2f-9b1a-4a70-9b89-38668e58d254-f6d5017b26e1a109
 - Source: https://docs.adaptavist.com/sr4jc/latest/hapi#automatic-imports-and-extension-methods--en
+
+This concept explains how automatic imports work and how to use extension methods.
 
 This page provides technical information on automatic imports and extension methods.
 
 ## Automatic imports
 
-For convenience, HAPI classes such as `WorkItems`, `Users`, and `Spaces` are automatically imported into all scripts compiled within ScriptRunner, so an explicit import is not required.
+For convenience, HAPI classes such as `` `WorkItems` ``, `` `Users` ``, and `` `Spaces` `` are automatically imported into all scripts compiled within ScriptRunner, so an explicit import is not required.
 
-If you import another class called `WorkItems` it results in a conflict. To avoid conflicts, HAPI classes won't automatically import if there is an existing import for a class with the same name in a script.
+If you import another class called `` `WorkItems` `` it results in a conflict. To avoid conflicts, HAPI classes won't automatically import if there is an existing import for a class with the same name in a script.
 
 For cases where you have a script that contains a conflicting import, you can access HAPI via the `Hapi` automatic import. This automatic import is unlikely to conflict with other classes. For example:
 

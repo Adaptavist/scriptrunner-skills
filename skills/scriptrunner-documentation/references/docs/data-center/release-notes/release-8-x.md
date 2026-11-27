@@ -3,8 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Release Notes
-- Doc ID: doc-sr4js-ac8c77a9-4663-43d9-88b9-416da0fa731d-017690c0ca89a6cb
+- Doc ID: doc-sr4js-4fab3c15-ef0a-4c29-bfbb-b49dcd6d0284-017690c0ca89a6cb
 - Source: https://docs.adaptavist.com/sr4js/latest/release-notes/release-8.x
+
+See all fixes, new features, and known issues across every 8.x release of ScriptRunner for Jira Data Center.
 
 Note: Feature Release Summary
 
@@ -19,6 +21,50 @@ The ScriptRunner Migration Suite is a suite of tools that helps you plan, analys
 -   [ScriptRunner Dev and Deployment Tool](../../migration-suite/uncategorized/s/script-runner-dev-and-deployment-tool.md): Use this tool to organise and deploy ScriptRunner Cloud scripts. It is focused on making it easier and faster for consultants and developers to migrate, test, and deploy scripts from ScriptRunner DC to Cloud.
 
 If you have any questions, need help, or would like to request access, the quickest way to get assistance is through our [dedicated support portal](https://the-adaptavist-group-support.atlassian.net/servicedesk/customer/portal/1069).
+
+## 8.71.0
+
+26 Nov 2026
+
+### Security update
+
+We've made targeted security improvements in this release as part of our ongoing hardening work. For more details on how we handle security and vulnerability management, see our Vulnerabilities and Security documentation.
+
+### Third-party dependencies updated to remove CVEs
+
+We've updated third party dependencies within ScriptRunner, including `jsoup`, to address known CVEs (Common Vulnerabilities and Exposures). These changes are part of our ongoing hardening work.
+
+### Automation for Jira ScriptRunner action bug fixed
+
+We've fixed an issue where ScriptRunner actions in Automation for Jira rules, such as Execute a ScriptRunner Script, failed with a permission error when the rule actor was not a Jira administrator. These actions now run as expected for actors without administrator permissions.
+
+### Script editor Java documentation bug fixed
+
+We've fixed an issue in the script editor where documentation for Java (JDK) classes failed to load and showed Cannot fetch documentation, please check your internet connection. The documentation panel and hover now show a View Documentation on docs.oracle.com link to the relevant class or method page.
+
+## 8.70.0
+
+7 Oct 2026
+
+### Security update
+
+We've made targeted security improvements in this release as part of our ongoing hardening work. For more details on how we handle security and vulnerability management, see our [Vulnerabilities and Security](../get-started/vulnerabilities-and-security.md) documentation.
+
+### Third-party dependencies updated to remove CVEs
+
+We've updated third-party dependencies within ScriptRunner, including Apache Ant, to address known CVEs (Common Vulnerabilities and Exposures). These changes are part of our ongoing hardening work.
+
+### Script Export bug fixed
+
+We've fixed an issue where Script Export could mix up parameters between legacy workflow conditions, validators and post functions, so exports contained the wrong script or settings. Legacy workflow functions are now exported correctly.
+
+### Script engine class-loading bug fixed
+
+We've fixed an issue where the ScriptRunner script engine could load duplicate classes. Scripts now load and run as expected.
+
+### Issue Picker bug fixed
+
+We've fixed an issue where the Issue Picker dropdown was hidden after a comment field was hidden on the screen. The Issue Picker dropdown now displays as expected.
 
 ## 8.68.0
 

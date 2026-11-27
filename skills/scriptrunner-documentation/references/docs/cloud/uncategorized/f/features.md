@@ -3,12 +3,14 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: n/a
-- Doc ID: doc-sr4jc-9ef51eba-4fc8-4ad2-9946-2a21cc1b8398-fc04aba8e3321fc9
+- Doc ID: doc-sr4jc-29a2a87d-7ec0-4523-b04e-a98b90ef1864-fc04aba8e3321fc9
 - Source: https://docs.adaptavist.com/sr4jc/latest/features
+
+Discover the key ScriptRunner for Jira Cloud features and tools that help you automate and extend Jira with scripts.
 
 This page summarises the main features of ScriptRunner for Jira Cloud and describes additional features we have developed to optimize your scripting experience.
 
-Tip: Not confident with scripting?Many ScriptRunner features include built-in scripts that require minimal scripting experience. Our documentation offers practical examples, and you can use example scripts in the code editors of several features or explore more on our [ScriptRunner HQ website](https://www.scriptrunnerhq.com/help/example-scripts?ScriptRunner%5BrefinementList%5D%5Bapp%5D%5B0%5D=script-runner-jira). Check out our [Scripting in ScriptRunner for Jira Cloud](../../get-started/scripting-in-script-runner-for-jira-cloud.md) overview too!
+Tip: Not confident with scripting? Many ScriptRunner features include built-in scripts that require minimal scripting experience. Our documentation offers practical examples, and you can use example scripts in the script editors of several features or explore more on our [ScriptRunner HQ website](https://www.scriptrunnerhq.com/help/example-scripts?ScriptRunner%5BrefinementList%5D%5Bapp%5D%5B0%5D=script-runner-jira). Check out our [Scripting in ScriptRunner for Jira Cloud](../../get-started/scripting-in-script-runner-for-jira-cloud.md) overview too!
 
 |  |  |
 | --- | --- |
@@ -60,7 +62,7 @@ Use [Scripted Fields](../../features/scripted-fields.md) to display information 
 
 ## Script Manager
 
-Use [Script Manager](../../features/script-manager.md) to manage saved .groovy and .jel scripts and folders directly from the ScriptRunner front-end. It allows you to easily reuse and organize scripts in any of the Groovy and Jira Expression Language code editors across your instance, making script management more efficient and accessible.
+Use [Script Manager](../../features/script-manager.md) to manage saved .groovy and .jel scripts and folders directly from the ScriptRunner front-end. It allows you to easily reuse and organize scripts in any of the Groovy and Jira Expression Language script editors across your instance, making script management more efficient and accessible.
 
 ## HAPI
 

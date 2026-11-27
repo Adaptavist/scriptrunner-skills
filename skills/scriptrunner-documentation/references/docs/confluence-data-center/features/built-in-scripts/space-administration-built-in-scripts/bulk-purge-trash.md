@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Built-In Scripts > Space Administration Built-In Scripts
-- Doc ID: doc-sr4c-139659d9-e676-4360-a9ca-d75859ed759f-7a2b68de059e4ccb
+- Doc ID: doc-sr4c-767f85c2-95e1-403e-b5de-c40a6da2eb8b-7a2b68de059e4ccb
 - Source: https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#space-administration-built-in-scripts--en#bulk-purge-trash--en
 
 Use this script to purge all trash for specific spaces or all spaces in your Confluence instance that you have admin permissions to

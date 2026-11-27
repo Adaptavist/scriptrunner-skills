@@ -3,7 +3,7 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: HAPI
-- Doc ID: doc-sr4cc-f1067caa-9e87-4e36-805d-faa07db6810f-7b968235fd52cde0
+- Doc ID: doc-sr4cc-89f74e0b-0a82-4146-8978-a1215557716a-7b968235fd52cde0
 - Source: https://docs.adaptavist.com/sr4cc/latest/hapi/work-with-templates
 
 Learn about using HAPI to complete tasks related to templates.

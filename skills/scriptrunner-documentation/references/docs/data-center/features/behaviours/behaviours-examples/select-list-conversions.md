@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Behaviours > Behaviours Examples
-- Doc ID: doc-sr4js-3ba8fc80-c5d6-467e-a288-323b826e2000-a80efa795925a32b
+- Doc ID: doc-sr4js-f2a5c822-20f4-4186-90ab-0b7fd5d71284-a80efa795925a32b
 - Source: https://docs.adaptavist.com/sr4js/latest/features#behaviours--en#behaviours-examples--en#select-list-conversions--en
 
 Warning: Several of the use cases here can now be better accomplished using one of the new picker fields. If possible you should use those, as they allow better options for validation, rendering, integration with Behaviours, and so on. Where there is a better feature to accomplish the same, that will be displayed in the text below.

@@ -3,7 +3,7 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features > Behaviours
-- Doc ID: doc-sr4jc-908f41af-e831-4cb3-ab46-1fbd757ed426-83ce34ba1ce9e408
+- Doc ID: doc-sr4jc-af2ede0b-3646-44ef-bdd3-1dca09ad07eb-83ce34ba1ce9e408
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/behaviours#create-and-modify-jsm-behaviours--en
 
 ## Create a JSM Behaviour
@@ -25,13 +25,16 @@ The steps below describe how you can create a new JSM behaviour:
 3.  Enter a name and description for the behaviour. It's good practice to make these as descriptive as possible.
 4.  Choose where the behaviour rules will apply from the Step 1: Location options.
     
-    1.  Select the spaces to which the behaviour will be applied from the list of available Spaces.
-    2.  Select the request type to which the behaviour will be applied from the list of available Request Types
-    3.  Select the view type to which the behaviour will be applied from the list of available View Types.
+    1.  Select the spaces where the behaviour will apply from the list of available Spaces.
+        
+        Tip: If no spaces are available to select, your subscription may be inactive, preventing you from creating or editing JSM Behaviours. Ask your site admin to reactivate the subscription.
+        
+    2.  Select the request type where the behaviour will apply from the list of available Request Types.
+    3.  Select the view type where the behaviour will apply from the list of available View Types.
     
-    Tip: JSM is supported on Portal view only. Due to an Atlassian limitation, Agent view is not supported at this time, but will be available soon.
+    Tip: The No request type option is supported on Agent view types only and cannot be selected unless an Agent view type has been chosen. Agents can use this option for internal tasks in service spaces, it is not available to customers in the portal.
     
-    Tip: At least one option must be selected from each category, and you have the option to choose _Select all_if required.
+    Tip: At least one option must be selected from each category, and you have the option to choose _Select all_ if required.
     
 5.  Determine when the behaviour script will run by choosing the trigger that controls when the script executes from either On load or On change (or both) from the Step 2: Trigger options.
     
@@ -40,7 +43,7 @@ The steps below describe how you can create a new JSM behaviour:
     | On load | The script will run when the chosen view type screen initially loads. Choose this option when you want the affected field to populate immediately upon opening the chosen view type screen. For example, a field name or description can be changed, or a value can be pre-populated into the field. |
     | On change | The script will run when the specified supported field change happens. You may want to run the script initially when it loads, AND if a change has occurred. Choose this option when you've added a condition to the logic and identified a trigger that will update the affected field. So, if you want to run the script after the user alters a field on the create screen, you should choose the On change option. For example, initially, you could set the assignee field to Bob, so all new bugs are assigned to them, but if the user changes the priority to high, the assignee would auto-update to Jane.. |
     
-6.  Enter your code within the script box of the Step 3: Rules section, as required. If needed, you can open the [API documentation](https://docs.adaptavist.com/sr4jc/latest/features/behaviours/behaviours-api) directly from here.
+6.  Enter your code within the script editor of the Step 3: Rules section, as required. If needed, you can open the [API documentation](https://docs.adaptavist.com/sr4jc/latest/features/behaviours/behaviours-api) directly from here.
     
     Tip: JSM Behaviours support only one script per Behaviour. If you need to use multiple scripts, you can create a separate Behaviour for each one. This approach makes your Behaviours easier to manage and aligns with our recommended best practice of using one primary use case per Behaviour. Jira Behaviours will soon move to this same single-script model as well.
     
@@ -51,7 +54,7 @@ The steps below describe how you can create a new JSM behaviour:
     
     To choose an example:
     
-    1.  Click Example scripts, and you are automatically redirected to the ScriptRunner HQ website, where you can view the Behaviours example scripts.
+    1.  Click Example scripts.
     2.  Choose your preferred script from the examples provided. You also have the option to search for a particular script.
     3.  View the script and click Copy Cloud script.
     4.  Return to the script box and paste the copied script into the script editor.
@@ -81,9 +84,7 @@ Follow the steps below to make changes to existing behaviours in ScriptRunner fo
 
 1.  Click Edit from the Actions ellipsis next to the behaviour you want to modify.
     
-    Tip:
-    
-    Click the Behaviour name to quickly navigate to the Edit Behaviour screen without opening the Actions ellipsis menu.
+    Tip: Click the Behaviour name to quickly navigate to the Edit Behaviour screen without opening the Actions ellipsis menu.
     
     The _Edit Behaviour_ screen opens, as shown in the example below:
     
@@ -96,8 +97,6 @@ Follow the steps below to make changes to existing behaviours in ScriptRunner fo
     -   edits to the code. JSM Behaviours support only one script per Behaviour. If you need to use multiple scripts, you can create a separate Behaviour for each one.
         
     
-    Note:
-    
-    It is not possible to convert a JSM Behaviour to a Jira Behaviour when making edits.
+    Note: It is not possible to convert a JSM Behaviour to a Jira Behaviour when making edits.
     
 3.  Click Save changes when all modifications are complete. You will see a message confirming that your changes have been successfully saved.

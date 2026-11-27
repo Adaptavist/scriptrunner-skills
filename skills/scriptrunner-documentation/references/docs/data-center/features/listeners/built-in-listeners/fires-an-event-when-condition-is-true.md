@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Listeners > Built-In Listeners
-- Doc ID: doc-sr4js-112fcc60-78a4-497d-b78f-c33a6fc447f1-bf679acc7c3b88a3
+- Doc ID: doc-sr4js-b338a59a-931c-4d19-8284-4629cfed078b-bf679acc7c3b88a3
 - Source: https://docs.adaptavist.com/sr4js/latest/features#listeners--en#built-in-listeners--en#fires-an-event-when-condition-is-true--en
 
 The _Fires an event when condition is true_ post function enables you to trigger a specific [Jira event](https://confluence.atlassian.com/adminjiraserver073/adding-a-custom-event-861253643.html) based on a custom condition. Once fired, the event can be picked up by a [notification scheme](https://confluence.atlassian.com/adminjiraserver0820/creating-a-notification-scheme-1095777110.html), determining who gets alerted.

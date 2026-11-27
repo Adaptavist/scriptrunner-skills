@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Event Listeners > Built-In Listeners
-- Doc ID: doc-sr4c-59b8abfe-c211-4e7d-9f26-35a20984f93a-d31d26cdb0142f0a
+- Doc ID: doc-sr4c-d82fb9f5-29a6-44a5-9602-e948560e5117-d31d26cdb0142f0a
 - Source: https://docs.adaptavist.com/sr4c/latest/features#event-listeners--en#built-in-listeners--en#send-custom-email--en
 
 Using the _Send Custom Email_ listener, you can send a customized email in response to an event.

@@ -3,8 +3,10 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: HAPI
-- Doc ID: doc-sr4jc-95b7ffb5-f88f-4ad1-8d8d-7703fa4fa88a-a940853e5e80122d
+- Doc ID: doc-sr4jc-bfa3e82f-b97a-4cb3-bb94-d6f3b8b0f821-a940853e5e80122d
 - Source: https://docs.adaptavist.com/sr4jc/latest/hapi#work-with-users--en
+
+Learn how to manage and interact with users in HAPI.
 
 With HAPI, we've made it easy for you to work with users.
 

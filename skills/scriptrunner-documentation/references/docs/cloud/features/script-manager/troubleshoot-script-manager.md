@@ -3,7 +3,7 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features > Script Manager
-- Doc ID: doc-sr4jc-42c68b8c-a20b-4ad6-bcad-98c9ebc2f9ec-f7da15d5b41c082a
+- Doc ID: doc-sr4jc-99effa57-b5dc-49f1-b671-6dcc6f334dd4-f7da15d5b41c082a
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/script-manager#troubleshoot-script-manager--en
 
 Note: Saved Script Manager scripts are available for reuse in Groovy and Jira Expression Language code editors only and are not available for use with Behaviours.

@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Release Notes
-- Doc ID: doc-sr4c-51ac07a4-92ec-4427-8370-46323581cd33-d03726c0a03ea94a
+- Doc ID: doc-sr4c-0e451048-1d0a-44f1-a776-6c7165b50a26-d03726c0a03ea94a
 - Source: https://docs.adaptavist.com/sr4c/latest/release-notes/feature-release-summary
 
 The feature release summary hub, providing information about releases from version 7.0 and on.

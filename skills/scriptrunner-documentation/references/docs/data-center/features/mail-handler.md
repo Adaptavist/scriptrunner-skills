@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features
-- Doc ID: doc-sr4js-61c52ab5-b7f3-4bb1-87df-5020d5f210d2-4bbf73abee92a3a0
+- Doc ID: doc-sr4js-43d7bde9-b437-445c-8ad5-4b14a3d77d30-4bbf73abee92a3a0
 - Source: https://docs.adaptavist.com/sr4js/latest/features#mail-handler--en
 
 ## What is the Mail Handler?

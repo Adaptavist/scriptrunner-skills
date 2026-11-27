@@ -3,7 +3,7 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features > Scripted Fields
-- Doc ID: doc-sr4jc-122e8332-1e21-436a-883c-50bc0e2def19-ec9acfd80fa50785
+- Doc ID: doc-sr4jc-725afb2b-abec-4f11-9761-e57e8ad88145-ec9acfd80fa50785
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/scripted-fields#return-types--en
 
 The script for your field must return the correct data type.

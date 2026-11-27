@@ -3,7 +3,7 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: Migration > Rewrite Scripts for Cloud Guide
-- Doc ID: doc-sr4cc-5880ced0-6963-4a8b-9db6-076a3a1f1723-657ee35f35b47674
+- Doc ID: doc-sr4cc-8dca0357-6ce8-477e-867b-ffa3a66dc6eb-657ee35f35b47674
 - Source: https://docs.adaptavist.com/sr4cc/latest/migration/rewrite-scripts-for-cloud-guide#adapt-scripts-for-confluence-cloud--en
 
 Information to help your scripts keep running as expected after migrating between ScriptRunner for Confluence Server/DC and Cloud.
@@ -142,7 +142,7 @@ By following these steps, you'll be well-prepared to rewrite your Server/Data Ce
 
 ## Step five: Test your scripts, API calls and integrations
 
-1.  Test real scenarios: Use the [test environment](https://docs.adaptavist.com/sr4cc/latest/migration/migration-checklist#migration_checklist__migration_checklist_prepare--en) to simulate real scenarios and workflows that your scripts will encounter in production.
+1.  Test real scenarios: Use the [test environment](https://docs.adaptavist.com/sr4cc/latest/migration/migration-checklist#migration_checklist_prepare--en) to simulate real scenarios and workflows that your scripts will encounter in production.
     
     This includes testing API calls, integrations with other applications, and handling various data inputs and outputs.
     
@@ -157,7 +157,7 @@ By creating a test environment you can identify and resolve issues early, reduci
 
 Learn about script logs and how they are useful.
 
-Logging in scripts is very helpful when debugging. In Cloud scripts, anything printed to `stdout` using `println`, or using a [logger.info](http://logger.info/) ( `'message'`) call will be available in the [Script Logs](../../features/logging/script-logs.md) page, and in the execution history of script listeners and script jobs. As noted above, usage of assertions can also help debugging and diagnosing the behaviour of scripts.
+Logging in scripts is very helpful when debugging. In Cloud scripts, anything printed to `stdout` using `println`, or using a [logger.info](http://logger.info/) ( `'message'`) call will be available in the [Script Logs](../../features/logging/script-logs.md) page, and in the execution history of script listeners and script jobs. As noted above, the usage of assertions can also help debug and diagnose the behaviour of scripts.
 
 ## Step six: Migrate to production
 

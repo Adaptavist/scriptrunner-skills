@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Macros > Built-In Macros
-- Doc ID: doc-sr4c-77195b44-1e7d-40cf-b916-836d10b6ee93-f9781a9713f61d20
+- Doc ID: doc-sr4c-93fe8a05-5ddb-40a3-9d04-67e753c662c7-f9781a9713f61d20
 - Source: https://docs.adaptavist.com/sr4c/latest/features#macros--en#built-in-macros--en#cql-search-macro--en
 
 You can add the CQL Search macro to a Confluence page. If you provide the CQL query, the macro executes the search and returns the results as links to pages.

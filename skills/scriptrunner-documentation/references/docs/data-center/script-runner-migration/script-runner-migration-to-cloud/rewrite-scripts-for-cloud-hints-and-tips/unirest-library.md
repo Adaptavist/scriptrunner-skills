@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: ScriptRunner Migration > ScriptRunner Migration to Cloud > Rewrite Scripts for Cloud Hints and Tips
-- Doc ID: doc-sr4js-25d84e53-8dea-49d8-93a0-e1aa94c3928e-f416c0b4f22daa2e
+- Doc ID: doc-sr4js-ee05ed9d-b7fb-46af-9375-4ae1e1c8df0a-f416c0b4f22daa2e
 - Source: https://docs.adaptavist.com/sr4js/latest/scriptrunner-migration/scriptrunner-migration-to-cloud/rewrite-scripts-for-cloud-hints-and-tips#unirest-library--en
 
 When working with ScriptRunner for Jira Cloud, the Unirest library is a powerful tool for making HTTP requests to interact with Jira's REST API and other web services. It's important to understand how to use Unirest effectively within ScriptRunner scripts to perform actions like retrieving, creating, or updating Jira issues. Below we detail how to use Unirest in ScriptRunner for Jira Cloud.

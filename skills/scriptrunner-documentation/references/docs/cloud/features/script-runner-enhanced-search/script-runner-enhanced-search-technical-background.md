@@ -3,7 +3,7 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features > ScriptRunner Enhanced Search
-- Doc ID: doc-sr4jc-4d5a7bac-b5bb-4c1b-9ff3-51ef66b270a7-48a138fa9f51c816
+- Doc ID: doc-sr4jc-fe1ce319-f64e-47b4-8a40-93bb94fa3b94-48a138fa9f51c816
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search#scriptrunner-enhanced-search-technical-background--en
 
 Add-on developers do not have access to the underlying database, therefore, the only way we can make a search to retrieve data is by using the [Search API](https://developer.atlassian.com/cloud/jira/platform/rest/#api-api-2-search-get). Enhanced Search works by making simple queries to available APIs and then processing the results using pattern matching, comparing, aggregation and so on.

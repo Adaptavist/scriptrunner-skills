@@ -3,7 +3,7 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Get Started
-- Doc ID: doc-sr4jc-ff81a2a6-cf3e-461b-a19d-db4131cd9921-bad9c887b1edc53c
+- Doc ID: doc-sr4jc-e4ef3bce-7e8d-4aef-b540-2814093d60b4-bad9c887b1edc53c
 - Source: https://docs.adaptavist.com/sr4jc/latest/get-started/permissions
 
 ## Permissions categories
@@ -31,7 +31,7 @@ The table below lists the main ScriptRunner for Jira Cloud features and details 
 | Scheduled Jobs |  |  |  |  |
 | Escalation Services |  |  |  |  |
 | Scripted Fields |  |  |  |  |
-| Behaviours |  |  |  |  |
+| Behaviours |  |  |  | See [Behaviours permissions](https://docs.adaptavist.com/sr4jc/latest/get-started/permissions#permissions-tlpjqwvh--en). |
 | Script Variables |  |  |  |  |
 | Script Fragments |  |  |  |  |
 | Execution History |  |  |  |  |
@@ -50,3 +50,16 @@ The add-on user is the user who is created for the add-on app and has permission
 The add-on user is automatically generated upon ScriptRunner installation and added to the Atlassian-addon-group permission group.
 
 Scripts written for [Scripted Fields](../features/scripted-fields.md) are always executed as the add-on user and, as such, will have the correct set of permissions granted. However, if the permission schemes are changed for the Atlassian-addon-group, then there is a possibility that Scripted Fields will not work as intended.
+
+### Behaviours permissions
+
+Behaviours only return spaces (projects) where the user has the required Jira permissions and JSM access, as outlined below:
+
+| Behaviour type | Space permission | Additional access |
+| --- | --- | --- |
+| Jira | Browse Spaces or Administer Spaces | None |
+| JSM | Browse Spaces (on the underlying Jira project) | One of:<br>• Agent access: normally given by membership in the Service Desk Team role, which grants the Service Desk Agent permission.<br>• Service space administrator access: normally includes the agent permissions. |
+
+Tip: Behaviour Bot permissions
+
+In order to access and activate the [Behaviours Bot setting](https://docs.adaptavist.com/sr4jc/latest/get-started/settings#scriptrunner-ai--en), you must belong to the org-admins or site-admins groups.

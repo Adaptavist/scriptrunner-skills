@@ -3,10 +3,10 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: Features > Macros > Custom Macros
-- Doc ID: doc-sr4cc-f1576cc8-761a-4bb6-bdb6-2afb020365a9-68188d5db855ecd7
+- Doc ID: doc-sr4cc-fce223d0-667f-44d8-b37a-dabaa98c7c7f-68188d5db855ecd7
 - Source: https://docs.adaptavist.com/sr4cc/latest/features/macros/custom-macros#example-stock-exchange-price--en
 
-You can use the custom macro functionality to create a macro that allows users to display stock exchange prices on a Confluence page.
+You can use custom macro functionality to create a macro that allows users to display stock exchange prices on a Confluence page.
 
 The example below assumes you already have a REST API authentication token for the [StockData REST API](https://www.stockdata.org/) stored in a [Script Variable](../../script-variables.md) with the name `STOCKDATA_API_KEY`.
 
@@ -54,7 +54,7 @@ The example below assumes you already have a REST API authentication token for t
 
 You can now use this macro on a Confluence page. For help with using the macro, check out the Use Macros section of the [Macros](../../macros.md) documentation.
 
-This is what the macro looks when rendered on a Confluence page:
+This is what the macro looks like when rendered on a Confluence page:
 
 You can use multiple instances of it in a table, which would look like this:
 

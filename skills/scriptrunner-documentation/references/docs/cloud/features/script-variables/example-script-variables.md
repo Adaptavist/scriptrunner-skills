@@ -3,7 +3,7 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features > Script Variables
-- Doc ID: doc-sr4jc-73031480-8ed7-4fcc-aea5-23eb05be548e-1f5cc9a52ebcbc7b
+- Doc ID: doc-sr4jc-5038579d-1add-4e5e-9e93-336e6f8df3c0-1f5cc9a52ebcbc7b
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/script-variables#example-script-variables--en
 
 An example of how to use a script variable is outlined below:
@@ -27,4 +27,4 @@ An example of how to use a script variable is outlined below:
 8.  Close the _Script context_ modal and enter `println EXAMPLE_VAR` in the code editor.
 9.  Click Run. Once complete, you will see the Script Variable value previously created in Step 4 display in the _Logs_, as shown below.
     
-    Tip: In this example, we referenced the saved script variable in the _Script Console_ code editor. Saved script variables can also be referenced using the Script Context button in the editors for [Script Listeners](../script-listeners.md), [Workflow Perform Actions](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/perform-actions), [Scheduled Jobs](../scheduled-jobs.md), and [Escalation Service](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/escalation_service.dita).
+    Tip: In this example, we referenced the saved script variable in the _Script Console_ code editor. Saved script variables can also be referenced using the Script Context button in the editors for [Script Listeners](../script-listeners.md), [Workflow Perform Actions](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/perform-actions), [Scheduled Jobs](../scheduled-jobs.md), and [Escalation Service](../escalation-service.md).

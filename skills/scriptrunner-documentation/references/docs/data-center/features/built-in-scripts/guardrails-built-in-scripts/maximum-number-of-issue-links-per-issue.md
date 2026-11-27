@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Built-in scripts > Guardrails Built-in Scripts
-- Doc ID: doc-sr4js-56b6e3e8-aaf3-480c-b749-14997d585b8a-038e7bc177dd2d56
+- Doc ID: doc-sr4js-d1146512-b9a0-4099-a965-90aa312730c4-038e7bc177dd2d56
 - Source: https://docs.adaptavist.com/sr4js/latest/features#built-in-scripts--en#guardrails-built-in-scripts--en#maximum-number-of-issue-links-per-issue--en
 
 Use this built-in script to find issues that contain more issue links than the recommended amount, and archive or delete the oldest.

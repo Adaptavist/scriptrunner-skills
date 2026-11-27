@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Workflows > Post Functions
-- Doc ID: doc-sr4js-af7982ec-89bd-4d3e-b077-16a61d60686c-303ae58aab67b332
+- Doc ID: doc-sr4js-13a8af60-dca2-4371-9e6b-d87ff3bc0525-303ae58aab67b332
 - Source: https://docs.adaptavist.com/sr4js/latest/features#workflows--en#post-functions--en#custom-post-functions--en
 
 Use the _Custom script post-function_ to run a custom script after the transition has been validated. This is where you can pass on a message to a downstream system, send custom notifications, modify the issue, and more.
@@ -14,7 +14,7 @@ If you need help writing your script, check out the [Scripting tips](https://doc
 
 ## Recommendations for writing a custom post function
 
-Post functions are executed after a transition has been completed. They are meant for performing actions on the transitioned issue or related tasks that don't require user interaction. For example, you can use a custom post function to update the transitioned issue, create or update related issues, and send notifications or emails. However, there are limitations to custom post functions, some of which can impact performance. We therefore recommend the following:
+Post functions run as the final step of a transition. They are meant for performing actions on the transitioned issue or related tasks that don't require user interaction. For example, you can use a custom post function to update the transitioned issue, create or update related issues, and send notifications or emails. However, there are limitations to custom post functions, some of which can impact performance. We therefore recommend the following:
 
 -   Keep it simple: Avoid complex operations that could delay the transition or require user input. If complex searches or operations are required, use a [scheduled job](https://docs.adaptavist.com/sr4js/latest/features/jobs) or a [listener](https://docs.adaptavist.com/sr4js/latest/features/listeners) instead of a post function.
 -   Optimize searches: If a search is necessary, narrow down the search criteria as much as possible to minimize performance impact.
@@ -25,6 +25,7 @@ Post functions are executed after a transition has been completed. They are mean
 -   Use logging: Implement appropriate logging to aid in debugging and understanding script behavior, but be mindful of excessive logging that could impact performance.
 -   Monitor and optimize: Regularly review and optimize your custom post functions to ensure they continue to perform efficiently as your Jira instance grows.
 -   Avoid calling `issue.transition()` on the current issue inside a post-function: Doing so may cause the current status to not update correctly. See our [Transition issues](https://docs.adaptavist.com/sr4js/latest/hapi/transition-issues#known-limitation-when-transitioning-from-a-post-function--en) page for more details.
+-   Use a post function, not a listener, to update the transitioned issue: If you use a listener on an event fired by the transition (for example, Generic Event), changes it makes to system fields are overwritten. See [Listeners and issue transitions](https://docs.adaptavist.com/sr4js/latest/features/listeners/custom-listener#listeners-and-issue-transitions--en) for more details.
 
 ## Post function order
 

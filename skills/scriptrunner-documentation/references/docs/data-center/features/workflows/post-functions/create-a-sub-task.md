@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Workflows > Post Functions
-- Doc ID: doc-sr4js-6c4db1b7-b605-4e73-a4fa-13380d372d22-a568090b43e7be73
+- Doc ID: doc-sr4js-ed8dda30-44d1-4290-81e2-a66e3893235e-a568090b43e7be73
 - Source: https://docs.adaptavist.com/sr4js/latest/features#workflows--en#post-functions--en#create-a-sub-task--en
 
 The _Create a sub-task_ post function creates a sub-task after an issue has been transitioned. For example, you have an issue type that requires approval from three different departments. You could use this post function multiple times to automatically create three sub-tasks, one for each approval, whenever an issue is moved through an _Approval Required_ transition (or equivalent). If you want to further automate your workflow, you could also use the [Transition Parent when all Sub-tasks are Resolved](https://docs.adaptavist.com/sr4js/latest/features/workflows/post-functions/transition-parent-when-all-sub-tasks-are-resolved) post function.

@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Workflows > Post Functions
-- Doc ID: doc-sr4js-78c80ca7-5038-4d3a-96bd-16c9ceec92d8-ccfc01fbd85911bb
+- Doc ID: doc-sr4js-b3cd1559-1dbb-4fb2-8748-01b7ef2ee40b-ccfc01fbd85911bb
 - Source: https://docs.adaptavist.com/sr4js/latest/features#workflows--en#post-functions--en#send-a-custom-email--en
 
 Use this post function to send an email based on a custom condition. For example, you can use this post function to send an email to certain recipients when an issue with _Critical_ or _High_ priority is created. Further examples include using this post function to send an email that is requesting approval for a sub-task, for instance, or letting the QA team know an issue is ready for test.

@@ -3,8 +3,10 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: HAPI
-- Doc ID: doc-sr4jc-e5c121c4-637d-4c81-a1e3-0c672b3fc04e-4c434a3fbfe8c4e7
+- Doc ID: doc-sr4jc-292115d6-45c6-4f5c-aa2b-5343533cac7d-4c434a3fbfe8c4e7
 - Source: https://docs.adaptavist.com/sr4jc/latest/hapi#work-with-spaces--en
+
+Learn how to create, modify, and archive spaces in HAPI.
 
 With HAPI, we've made it easy for you to create, modify, and archive spaces.
 

@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Integrations
-- Doc ID: doc-sr4js-fe9c5b9c-f328-4129-8ada-a93bdf79bd2a-d230bd6bde040952
+- Doc ID: doc-sr4js-ac9f8d86-76f8-4c4d-8f6c-80267fec075e-d230bd6bde040952
 - Source: https://docs.adaptavist.com/sr4js/latest/integrations/other-apps
 
 A focus of ScriptRunner is being able to script other plugins, for instance, Jira Software, Structure, etc.

@@ -3,8 +3,10 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Manage App
-- Doc ID: doc-sr4jc-c73863c2-a883-4942-bc52-6cd08c17cc83-6870965fb6eb5318
+- Doc ID: doc-sr4jc-c57e4b31-87c9-428d-9bbe-b2a78cbb4ef2-6870965fb6eb5318
 - Source: https://docs.adaptavist.com/sr4jc/latest/manage-app/connected-apps
+
+Connected apps allow external applications to securely access and interact with your account data through authorized integrations.
 
 ## ScriptRunner Leap app
 

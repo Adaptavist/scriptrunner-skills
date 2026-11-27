@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Workflows > Post Functions
-- Doc ID: doc-sr4js-f5d5fdf9-7c3d-4257-8c03-7c220ea3adba-cc23a6386afeb0d0
+- Doc ID: doc-sr4js-9326eaf6-ff7b-4e18-bd10-890f2eafaadd-cc23a6386afeb0d0
 - Source: https://docs.adaptavist.com/sr4js/latest/features#workflows--en#post-functions--en#assign-to-last-role-member--en
 
 The _Assign to last role member_ post function assigns the issue to the last user assigned to that issue with a specific role. For example, Developer A finishes working on an issue and marks it as _Ready to Test_. After it transitions, the issue is automatically assigned to Tester B. Tester B rejects the issue, and it returns to the development team. The last user assigned in the development role is re-assigned to the issue ( Developer A). The developer can then fix the issue and transition it back to the QA team. When they do, the issue is re-assigned to Tester B (the last user in the tester role).

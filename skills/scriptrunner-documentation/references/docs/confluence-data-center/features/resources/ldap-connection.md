@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Resources
-- Doc ID: doc-sr4c-744ddfb7-fdab-4c33-8843-ebef4f11edd6-7e9d8ae70d59b01f
+- Doc ID: doc-sr4c-a48f75cc-6dfd-4b83-9128-47e830e8821b-7e9d8ae70d59b01f
 - Source: https://docs.adaptavist.com/sr4c/latest/features#resources--en#ldap-connection--en
 
 Adding an LDAP resource allows you to query your LDAP servers in a similar way to database connections.

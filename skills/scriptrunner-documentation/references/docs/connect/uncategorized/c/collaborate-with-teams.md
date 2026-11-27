@@ -3,7 +3,7 @@
 - Platform: connect
 - Space: SRC
 - Hierarchy: n/a
-- Doc ID: doc-src-a5459dfa-c743-4750-b8a2-ee584215ee41-992fac2a64aeb1a5
+- Doc ID: doc-src-29a320ad-1cad-48cd-bf3a-aa74daec2bc2-992fac2a64aeb1a5
 - Source: https://docs.adaptavist.com/src/latest/collaborate-with-teams
 
 Teams in ScriptRunner Connect allow colleagues and clients to come together and collaborate within a shared space within the app.
@@ -14,11 +14,6 @@ The Teams module in ScriptRunner Connect:
 -   Provides a dashboard of usage statistics on connectors, script invocations, and record storage shared by the entire group
 -   Makes it easy to manage members and admins of the teams
 -   Consolidates billing options, plans, and limits.
-
-Wanna jump ahead?
-
--   [Creating a Team](https://docs.adaptavist.com/src/latest/collaborate-with-teams#creating-a-team--en)
--   [Share a Workspace with a Team](https://docs.adaptavist.com/src/latest/collaborate-with-teams#share-a-workspace-with-a-team--en)
 
 ## Collaboration
 

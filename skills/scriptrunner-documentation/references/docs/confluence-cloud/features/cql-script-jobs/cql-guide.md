@@ -3,7 +3,7 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: Features > CQL Script Jobs
-- Doc ID: doc-sr4cc-dde53421-fd8a-412e-b61d-f01b29a4d958-13ebc5eb45f9f3d6
+- Doc ID: doc-sr4cc-31d53868-36bc-40ff-b468-af536b0382c2-13ebc5eb45f9f3d6
 - Source: https://docs.adaptavist.com/sr4cc/latest/features/cql-script-jobs/cql-guide
 
 Learn all about CQL and how to use it most effectively.
@@ -48,8 +48,8 @@ You can add [CQL keywords](https://developer.atlassian.com/cloud/confluence/cql-
 
 These are example steps for using a combined CQL query:
 
-1.  Use the previous example of _label = "test"_
-2.  Add an operator of _AND_ to search for a second statement to search for a label of users, _label = "users"_.
+1.  Use the previous example of `label = "test"`
+2.  Add an operator of _AND_ to search for a second statement to search for a label of users, `label = "users"`.
 
 Now, you have `label = "test" AND label = "users"`, which will return any content that has both of the users and test labels.
 
@@ -64,23 +64,23 @@ You can add [CQL keywords](https://developer.atlassian.com/cloud/confluence/cql-
 
 These are the example steps for using multiple CQL queries:
 
-1.  Use the previous example of label = "test" AND label = "users"
-2.  Add a statement for the title "Development Work" without needing that space to have the labels of "test" and "users."
+1.  Use the previous example of `label = "test" AND label = "users"`.
+2.  Add a statement for the title "Development Work" so it doesn't need space for the labels "test" and "users."
 
 Now, you have `(label = "test" AND label = "users") OR (title = "Development Work")`, which returns any content that has both of the users and test labels or the title is _Development Work_.
 
 Other examples of multiple CQL queries:
 
 -   `(label = "internal" OR label = "secret") OR (space = "internal")`: This returns content with the internal and secret labels or content in the _Internal_ space.
--   `(lastModified < startOfYear() AND creator = vburton) OR (lastModified < startOfYear() AND contributor = vburton)`: This returns content last modified before the start of the current year created by the _vburton_ user or content last modified before the start of the current year and the user _vburton_ contributed to it.
+-   `(lastModified < startOfYear() AND creator = vburton) OR (lastModified < startOfYear() AND contributor = vburton)`: This returns content last modified before the start of the current year, created by the _vburton_ user or content last modified before the start of the current year, and the user _vburton_ contributed to it.
 
 ## Atlassian CQL resources
 
 Information from the following Atlassian materials were used to help create this page. To find out more information about CQL, visit one of the following resources:
 
--   [Advanced Searching Using CQL](https://developer.atlassian.com/cloud/confluence/advanced-searching-using-cql/): "The instructions on this page describe how to define and execute a search using the advanced search capabilities of the Confluence Cloud REST API."
+-   [Advanced Searching Using CQL](https://developer.atlassian.com/cloud/confluence/advanced-searching-using-cql/): The instructions on this page describe how to define and execute a search using the advanced search capabilities of the Confluence Cloud REST API.
 -   [CQL Field References](https://developer.atlassian.com/cloud/confluence/cql-fields/): This resource contains a list of supported fields (the first part of a basic CQL query). It also lists supported operators and functions for each field, along with examples.
 -   [CQL Function References](https://developer.atlassian.com/cloud/confluence/cql-functions/): This resource contains a list of supported functions (the final part of a basic CQL query). It also lists supported operators and fields for each function, along with examples.
 -   [CQL Keywords References](https://developer.atlassian.com/cloud/confluence/cql-keywords/): This resource explains what keywords (AND, OR, NOT, ORDER BY) are and how to use them in CQL, along with examples.
 -   [CQL Operators Reference](https://developer.atlassian.com/cloud/confluence/cql-operators/): This resource contains a list of supported operators (the middle part of a basic CQL query), along with examples.
--   [Performing Text Searches Using CQL](https://developer.atlassian.com/cloud/confluence/performing-text-searches-using-cql/): "This page provides information on how to perform text searches. It applies to advanced searches when used with the CONTAINS operator."
+-   [Performing Text Searches Using CQL](https://developer.atlassian.com/cloud/confluence/performing-text-searches-using-cql/): This page provides information on how to perform text searches. It applies to advanced searches when used with the CONTAINS operator.

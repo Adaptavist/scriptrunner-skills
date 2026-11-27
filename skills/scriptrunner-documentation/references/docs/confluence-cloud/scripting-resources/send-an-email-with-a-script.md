@@ -3,7 +3,7 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: Scripting Resources
-- Doc ID: doc-sr4cc-66d93eb2-f3d2-4296-a727-f9f80c941fbf-bcf0beeca09affe9
+- Doc ID: doc-sr4cc-50164881-df47-4db9-8158-513a19a736e1-bcf0beeca09affe9
 - Source: https://docs.adaptavist.com/sr4cc/latest/scripting-resources#send-an-email-with-a-script--en
 
 Learn how to send custom emails using a script.
@@ -12,7 +12,7 @@ You can write a custom script to send emails.
 
 Warning: An SMTP server setup is required to send emails through scripts.
 
-Here is an example of code to send an email. You can include a script like this in any ScriptRunner [Code Editor](https://docs.adaptavist.com/sr4cc/latest/scripting-resources/code-editor) field, like the [Script Listeners](../features/script-listeners.md) or [Script Jobs](../features/script-jobs.md). They can include code like the example in their script jobs or CQL jobs to send out an email notification of job completion.
+Here is an example of code to send an email. You can include a script like this in any ScriptRunner [Code Editor](https://docs.adaptavist.com/sr4cc/latest/scripting-resources/code-editor) field, like the [Script Listeners](../features/script-listeners.md) or [Script Jobs](../features/script-jobs.md). They can include code, such as the example in their script or CQL jobs, to send out an email notification of job completion.
 
 ```
 import javax.mail.internet.*

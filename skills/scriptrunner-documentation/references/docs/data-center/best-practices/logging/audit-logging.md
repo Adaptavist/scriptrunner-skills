@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Best Practices > Logging
-- Doc ID: doc-sr4js-900cc81f-c455-4bd9-8787-21d77d818027-2eeb89c89c4866fa
+- Doc ID: doc-sr4js-8f8f1218-d9f5-4ad4-a941-745df85cd536-2eeb89c89c4866fa
 - Source: https://docs.adaptavist.com/sr4js/latest/best-practices/logging#audit-logging--en
 
 The ScriptRunner audit log helps you inspect the script configuration changes made by your users. The audit log service logs add, edit, or delete operations for ScriptRunner scripts as part of application audit log. The service also logs execution of built-in scripts that could potentially change the system.

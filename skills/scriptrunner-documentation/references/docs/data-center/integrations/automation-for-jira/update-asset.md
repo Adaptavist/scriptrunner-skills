@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Integrations > Automation for Jira
-- Doc ID: doc-sr4js-ee78317b-55c4-42a8-8436-aab128c5a284-aa1b9de1700e8db4
+- Doc ID: doc-sr4js-be7d09c6-2559-4b50-a976-bc07fc0a626e-aa1b9de1700e8db4
 - Source: https://docs.adaptavist.com/sr4js/latest/integrations/automation-for-jira#update-asset--en
 
 We've provided an easy way to update [Insight/Asset objects](https://confluence.atlassian.com/servicemanagementserver/working-with-objects-1044784539.html) in Automation for Jira. For example, you can use the Update Asset with ScriptRunner action to update the attributes of an Assets object when an issue is updated.

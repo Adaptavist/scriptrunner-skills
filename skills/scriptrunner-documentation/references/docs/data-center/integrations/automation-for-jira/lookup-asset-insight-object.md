@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Integrations > Automation for Jira
-- Doc ID: doc-sr4js-b8e707b1-5341-4b48-967c-73fb2919957d-3670faddbfc54375
+- Doc ID: doc-sr4js-e28295b4-2607-4d28-938b-69053127d802-3670faddbfc54375
 - Source: https://docs.adaptavist.com/sr4js/latest/integrations/automation-for-jira#lookup-asset-insight-object--en
 
 We've provided an easy way to look up/retrieve [Insight/Asset objects](https://confluence.atlassian.com/servicemanagementserver/working-with-objects-1044784539.html) in Automation for Jira. You can use the Lookup Asset (Insight) object with ScriptRunner action to retrieve an Assets object from any object schema. Once you have added the Lookup Asset (Insight) object with ScriptRunner action, you can then reference the attributes of the Assets object in another action using the `{{lookupAsset}}` [smart value](https://confluence.atlassian.com/automation/smart-values-syntax-and-formatting-1141480622.html).

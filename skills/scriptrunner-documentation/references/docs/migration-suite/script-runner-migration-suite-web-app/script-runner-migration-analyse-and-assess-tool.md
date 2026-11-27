@@ -3,12 +3,12 @@
 - Platform: migration-suite
 - Space: SMS
 - Hierarchy: ScriptRunner Migration Suite Web App
-- Doc ID: doc-sms-10c42cb7-9b7e-4e39-9c2a-a736161d9db5-36083b6f93ccb8be
+- Doc ID: doc-sms-9889d4a4-0e67-4574-a7cb-8dda2afd069f-36083b6f93ccb8be
 - Source: https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-analyse-and-assess-tool
 
 Use The ScriptRunner Migration Analyse and Assess tool to review your ScriptRunner Data Center scripts and configurations for risks and cloud readiness. After your scripts and configurations are assessed and analyzed, you will be given guidance on how to convert scripts for Cloud.
 
-Note: This tool does not use AI.
+Note: Analyzing an instance, as described in [Use the Analyse and Assess Tool](script-runner-migration-analyse-and-assess-tool/use-the-analyse-and-assess-tool.md), does not use AI. It is deterministic software. However, the process described in [Bulk Convert Your Scripts](script-runner-migration-analyse-and-assess-tool/bulk-convert-your-scripts.md) does use AI because it uses the [ScriptRunner Migration Agent](script-runner-migration-agent.md).
 
 The Assess and Analyse tool reads a [Script Registry export from ScriptRunner for Jira Data Center](https://docs.adaptavist.com/sr4js/latest/features/script-registry) and provides you with:
 
@@ -21,3 +21,5 @@ If you are on a version older than 8.54 or 9.19, you only need to update to the 
 
 -   If you're on version 8.x, update to the latest 8.x release.
 -   If you're on version 9.x, update to the latest 9.x release.
+
+If you would like JQL functions to appear in your analysis, use ScriptRunner for Jira version 9.46.0 or above.

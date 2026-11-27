@@ -3,7 +3,7 @@
 - Platform: connect
 - Space: SRC
 - Hierarchy: Connectors
-- Doc ID: doc-src-393bf9bb-4c24-4b19-a51c-62328c99aaf6-f438b8fa717674c4
+- Doc ID: doc-src-8ac9c69a-179b-4376-8b7d-6f192d01e1ed-f438b8fa717674c4
 - Source: https://docs.adaptavist.com/src/latest/connectors#generic-connector--en
 
 Create a generic connector to connect to any third-party APIs you need.
@@ -75,23 +75,23 @@ For this example, let's fetch an issue from Jira Cloud:
 
 ```
 import JiraCloud from './api/generic';
- 
+
 export default async function(event: any, context: Context): Promise<void> {
     const issueKey = 'ISSUE-1';
- 
- // Fetch the issue
+
+    // Fetch the issue
     const response = await JiraCloud.fetch(`/rest/api/3/issue/${issueKey}`);
- 
- // Check if the response is OK (within 200 range)
- if (!response.ok) {
- // If not then throw an error
- throw Error(`Unexpected response: ${response.status}`); 
+
+    // Check if the response is OK (within 200 range)
+    if (!response.ok) {
+        // If not then throw an error
+        throw Error(`Unexpected response: ${response.status}`);
     }
- 
- // If it is OK, then read the body as JSON
+
+    // If it is OK, then read the body as JSON
     const issue = await response.json();
- 
- // And then print out the reporter's display name
+
+    // And then print out the reporter's display name
     console.log(issue.fields.reporter.displayName);
 }
 ```
@@ -103,17 +103,17 @@ To achieve this, you can construct the managed API manually and use it with the 
 ```
 import { JiraCloudApi } from '@managed-api/jira-cloud-v3-sr-connect';
 import JiraCloudGeneric from './api/generic';
- 
+
 export default async function(event: any, context: Context): Promise<void> {
- // Construct Managed API manually by pulling `connectionId` from the Generic API Connection and then pass it into Managed API constructor
+    // Construct Managed API manually by pulling `connectionId` from the Generic API Connection and then pass it into Managed API constructor
     const JiraCloud = new JiraCloudApi(JiraCloudGeneric.connectionId);
- 
- // Fetch the issue
+
+    // Fetch the issue
     const issue = await JiraCloud.Issue.getIssue({
         issueIdOrKey: 'EL-66'
     });
- 
- // And then print out the reporter's display name
+
+    // And then print out the reporter's display name
     console.log(issue.fields.reporter.displayName);
 }
 ```

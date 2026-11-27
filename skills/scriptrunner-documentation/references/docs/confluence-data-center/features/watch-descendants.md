@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features
-- Doc ID: doc-sr4c-26fe36cb-eaeb-41dc-ace6-1ed253e0ff30-b2e658f230613cbe
+- Doc ID: doc-sr4c-c686ac94-dc5c-440f-83ad-f1a2c51d1cba-b2e658f230613cbe
 - Source: https://docs.adaptavist.com/sr4c/latest/features#watch-descendants--en
 
 You can automatically watch (or unwatch) an entire hierarchy of pages with the watch descendants feature.

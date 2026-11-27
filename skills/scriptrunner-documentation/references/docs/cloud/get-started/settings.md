@@ -3,8 +3,10 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Get Started
-- Doc ID: doc-sr4jc-108329ec-d80b-47b1-ab38-7e64ee3b56d4-25534b95fb251a61
+- Doc ID: doc-sr4jc-92604925-b2db-443f-b109-ddc78731462c-25534b95fb251a61
 - Source: https://docs.adaptavist.com/sr4jc/latest/get-started/settings
+
+This section explains how to configure your ScriptRunner for Jira Cloud settings and preferences.
 
 This section helps you understand how to set up your ScriptRunner for Jira Cloud configurations. You can use the _Settings_ page to configure your preferences and save when complete.
 
@@ -52,7 +54,7 @@ Using ScriptRunner JQL functions removes the need to learn the Atlassian SDK and
 
 ### Filter sync interval period
 
-When the [Enhanced Search](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/scriptrunner_enhanced_search.dita) feature has been turned on, this setting checks every 'X' minutes for changes in your Jira work items or if another user has recently changed the ScriptRunner add-on settings. If changes have occurred, then filters are synced with the changes made to the work items in your Jira instance. Filters are always run with the same set of permissions as the user who created the filter.
+When the [Enhanced Search](../features/script-runner-enhanced-search.md) feature has been turned on, this setting checks every 'X' minutes for changes in your Jira work items or if another user has recently changed the ScriptRunner add-on settings. If changes have occurred, then filters are synced with the changes made to the work items in your Jira instance. Filters are always run with the same set of permissions as the user who created the filter.
 
 You can select the _Filter Sync Interval Period_ from the options available in the drop-down list to specify how often ScriptRunner synchronizes your filters. The maximum interval period allowed is one hour. However, the default interval of five minutes is recommended.
 

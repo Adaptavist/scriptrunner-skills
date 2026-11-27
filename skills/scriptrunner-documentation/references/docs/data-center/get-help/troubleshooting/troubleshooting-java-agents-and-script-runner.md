@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Get Help > Troubleshooting
-- Doc ID: doc-sr4js-00d41acd-dc18-439e-90ba-cca4e7afc456-57cccfdcfdd57859
+- Doc ID: doc-sr4js-4c348601-63ba-4424-92db-545c6780f27b-57cccfdcfdd57859
 - Source: https://docs.adaptavist.com/sr4js/latest/get-help#troubleshooting--en#troubleshooting-java-agents-and-scriptrunner--en
 
 DataCenter admins have a tough job keeping a service running 24/7, and ScriptRunner is a big help. But sometimes ScriptRunner and Java Agents don't work well together.

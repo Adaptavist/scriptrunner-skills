@@ -3,7 +3,7 @@
 - Platform: migration-suite
 - Space: SMS
 - Hierarchy: ScriptRunner Migration Suite Web App
-- Doc ID: doc-sms-727a198b-44f8-4d26-a391-6bac2921ab58-251e04a1a7b3ae2c
+- Doc ID: doc-sms-fa0bdb18-9d00-4a19-b3ec-62444e360267-251e04a1a7b3ae2c
 - Source: https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/data-residency-and-privacy
 
 There are two main sections of this page:

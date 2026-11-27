@@ -3,7 +3,7 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: HAPI
-- Doc ID: doc-sr4cc-197e74c0-7b33-4ead-bd55-166d67458734-913301627e994545
+- Doc ID: doc-sr4cc-52b5d234-69f6-49a9-bda0-669052e0d2a8-913301627e994545
 - Source: https://docs.adaptavist.com/sr4cc/latest/hapi/work-with-spaces
 
 Learn about using HAPI to complete tasks on the space level.
@@ -20,7 +20,7 @@ def space = Spaces.create("Analytics and Data", "AD") {}
 
 This script creates an _Analytics and Data_ space with a space key of _AD_:
 
-You can customize the script by changing the space name and space key.
+You can customize the script by changing the _space name_ and _space key_.
 
 ## Delete a space
 
@@ -33,7 +33,7 @@ space.delete()
 
 This message appears after the script runs:
 
-You can customize the script by changing the space key.
+You can customize the script by changing the _space key_.
 
 ## Delete all pages in a space
 
@@ -56,7 +56,7 @@ When you run the script, the pages are deleted from the space if they had one of
 
 Tip: The homepage for the space is not deleted.
 
-To customize this script, change the space key.
+To customize this script, change the _space key_.
 
 ## Get all pages in a space
 
@@ -71,7 +71,7 @@ allPages.each(page ->
 allPageTitles
 ```
 
-You can customize this script by changing the space key.
+You can customize this script by changing the _space key_.
 
 ## Get all pages and their body format in a space
 
@@ -98,7 +98,7 @@ The results of this script show a list of page keys:
 
 You can also view the Logs to see the page content:
 
-You can customize this script by changing the space key.
+You can customize this script by changing the _space key_.
 
 ## Get space permissions
 
@@ -109,7 +109,7 @@ def space = Spaces.getById(158072836)
 space.getPermissions()
 ```
 
-The script returns the permission of the space:You can customize the script by changing the space key.
+The script returns the permission of the space:You can customize the script by changing the _space key_.
 
 ## Retrieve a space with its space key
 
@@ -121,7 +121,7 @@ def space = Spaces.getByKey("AD")
 
 This script retrieves the space `AD`_:_
 
-You can customize the script by changing the space key.
+You can customize the script by changing the _space key_.
 
 ## Retrieve a space with its ID
 
@@ -133,7 +133,7 @@ def space = Spaces.getById(158072836)
 
 This script retrieves a space by the ID `158072836`:
 
-You can customize the script by changing the space ID.
+You can customize the script by changing the _space ID_.
 
 ## Search for spaces with CQL
 
@@ -190,4 +190,4 @@ After you run the script, the new name appears in the _Results_:
 
 You can also see the new name in the space:
 
-You can customize the script by changing the space key and the new name.
+You can customize the script by changing the _space key_ and the new _name_.

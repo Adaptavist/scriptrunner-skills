@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Best Practices and App Management
-- Doc ID: doc-sr4c-9837e8f0-6fbc-405d-b134-c51279d0b943-f44640c25e3b64e2
+- Doc ID: doc-sr4c-36b643aa-713a-44b9-9a93-d24de5ae4f10-f44640c25e3b64e2
 - Source: https://docs.adaptavist.com/sr4c/latest/best-practices-and-app-management#audit-logging--en
 
 The ScriptRunner audit log helps you inspect the script configuration changes made by your users.

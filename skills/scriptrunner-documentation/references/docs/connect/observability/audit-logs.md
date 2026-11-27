@@ -3,7 +3,7 @@
 - Platform: connect
 - Space: SRC
 - Hierarchy: Observability
-- Doc ID: doc-src-f673a629-b24d-4f85-ac04-6b57b1c3d9ff-92f400bb9d540e92
+- Doc ID: doc-src-8300859f-d564-484a-b1f5-dbd083a32f5c-92f400bb9d540e92
 - Source: https://docs.adaptavist.com/src/latest/observability/audit-logs
 
 The audit log tracks all actions taken by users within ScriptRunner Connect.

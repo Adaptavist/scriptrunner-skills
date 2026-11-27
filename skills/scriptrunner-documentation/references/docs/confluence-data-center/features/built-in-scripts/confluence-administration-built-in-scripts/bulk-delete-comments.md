@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Built-In Scripts > Confluence Administration Built-In Scripts
-- Doc ID: doc-sr4c-55f4188f-e9ff-41cb-90b2-a7aedc2c3c84-5b0acba159e559a7
+- Doc ID: doc-sr4c-b66d606e-8818-4318-ad41-d7f52f8bb6ed-5b0acba159e559a7
 - Source: https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#confluence-administration-built-in-scripts--en#bulk-delete-comments--en
 
 Using this script, you can automatically delete comments from a space or certain pages.

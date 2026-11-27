@@ -3,7 +3,7 @@
 - Platform: migration-suite
 - Space: SMS
 - Hierarchy: Training > 2. Perform a Data Center to Cloud migration using the suite
-- Doc ID: doc-sms-c3ec1228-39a5-443b-8a8f-04a8fbc35887-a7c1d559dad3819e
+- Doc ID: doc-sms-cf4d60c3-f903-44cc-9d51-816441c956b3-a7c1d559dad3819e
 - Source: https://docs.adaptavist.com/sms/latest/training/2.-perform-a-data-center-to-cloud-migration-using-the-suite/summary
 
 By simplifying complex tasks and making migrations more predictable, the ScriptRunner Migration Suite can support your teams at every stage of the migration process.

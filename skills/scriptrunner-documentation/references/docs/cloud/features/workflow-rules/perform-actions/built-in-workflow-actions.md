@@ -3,16 +3,16 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features > Workflow Rules > Perform Actions
-- Doc ID: doc-sr4jc-d304e594-f209-48cc-bebd-f88fb813dfb8-8c0ad17cb31ab3a0
+- Doc ID: doc-sr4jc-fb0d2970-f5f0-413a-bdf5-e953cef9c931-8c0ad17cb31ab3a0
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules#perform-actions--en#built-in-workflow-actions--en
 
 ScriptRunner for Jira Cloud has many built-in workflow actions; each of these is outlined below.
 
 ## Add/remove to/from sprint
 
-Using this function, you can either add a work item to an active sprint or remove it from its current sprint after a transition.
+Using this function, you can either add a Work item to an active sprint or remove it from its current sprint after a transition.
 
-For example, on the _Start Progress_ transition, you can apply this workflow action to automatically add the transitioned work item to the current sprint. Although this does not follow scrum methodology, there may be times when the team has finished all work in a sprint, and this workflow action automatically adds work items to the sprint.
+For example, on the _Start Progress_ transition, you can apply this workflow action to automatically add the transitioned Work item to the current sprint. Although this does not follow Scrum methodology, there may be times when the team has finished all work in a sprint, and this workflow action automatically adds Work items to the sprint.
 
 1.  Select a transition.
 2.  Click Perform actions > Add perform actions rule.
@@ -24,7 +24,7 @@ For example, on the _Start Progress_ transition, you can apply this workflow act
     
     See [Restrict Transitions](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/restrict-transitions) for examples.
     
-8.  Select the Action you want to trigger after transition (either Add to Sprint or Remove from Sprint).
+8.  Select the Action you want to trigger after transition (either _Add to Sprint_ or _Remove from Sprint_).
 9.  Choose the Board Name.
     
     The function picks the first active sprint from that board.
@@ -35,15 +35,13 @@ For example, on the _Start Progress_ transition, you can apply this workflow act
      
 11.  Click Add.
 
-Note:
-
-See the available Script Context for Condition and Additional Code fields in the [Script Context](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/perform-actions/fields#script-context--en) section.
+Note: See the available Script Context for Condition and Additional Code fields in the [Script Context](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/perform-actions/fields#script-context--en) section.
 
 ## Assign Work Item
 
 _Assign Work Item_ takes the item and assigns it to the last assignee with a specified role or from a user group. You must specify either a space role or a user group. If both are defined, the space role is used, and the user group is skipped.
 
-For example, a developer finishes working on a work item and marks it as _Ready to Test_. After the work item is transitioned, it is automatically assigned to a tester. The tester rejects the work item, and it returns to the development team. The last user assigned to the development role is reassigned to the work item. The dev can then fix the work item and transition it back to the QA team. When they do, the work item is reassigned to the same tester (the last user in the tester role).
+For example, a developer finishes working on a Work item and marks it as _Ready to Test_. After the Work item is transitioned, it is automatically assigned to a tester. The tester rejects the Work item, and it returns to the development team. The last user assigned to the development role is reassigned to the Work item. The dev can then fix the Work item and transition it back to the QA team. When they do, the Work item is reassigned to the same tester (the last user in the tester role).
 
 1.  Select a transition.
 2.  Click Perform actions > Add perform actions rule.
@@ -51,13 +49,13 @@ For example, a developer finishes working on a work item and marks it as _Ready 
 4.  Select the Assign Work Item built-in workflow action.
 5.  Add a Description, for example, _Assign to last developer_.
 6.  Check Enable perform actions to make it active as soon as creation is finished.
-7.  Add additional Groovy code in the Conditions field that returns a boolean value determining the condition for which the work item is assigned.
+7.  Add additional Groovy code in the Conditions field that returns a boolean value determining the condition for which the Work item is assigned.
     
     See [Restrict Transitions](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/restrict-transitions) for examples.
     
-8.  Either select a Space Role (for example, Developer) or User Group.
+8.  Either select a Space Role (for example, _Developer_) or User Group.
     
-    The last user with this role/in this user group is selected after the work item has transitioned.
+    The last user with this role/in this user group is selected after the Work item has transitioned.
     
 9.  Pick the user to run the script as in Run As.
     
@@ -69,9 +67,9 @@ Note: See the available Script Context for Condition and Additional Code fields 
 
 ## Clone Work Item
 
-Note: Known issue error for the Clone Issue Post Function
+Note: Known issue error for the Clone Work item Perform actions rule
 
-Work Item Description: When cloning a work item with attachments in the rich text field, you may encounter an error if you _have enabled_ [Atlassian's new transition experience](https://community.atlassian.com/forums/Jira-articles/Now-GA-try-the-new-issue-transition-experience-in-Jira/ba-p/2734436). Read more in our [Breaking Changes](https://docs.adaptavist.com/sr4jc/latest/release-notes/release-notes#atlassians-new-transition-experience-compatibility-with-jira-expressions--en) documentation. For example:
+Description: When cloning a Work item with attachments in the rich text field, you may encounter an error if you _have enabled_ [Atlassian's new transition experience](https://community.atlassian.com/forums/Jira-articles/Now-GA-try-the-new-issue-transition-experience-in-Jira/ba-p/2734436). Read more in our [Breaking Changes](https://docs.adaptavist.com/sr4jc/latest/release-notes/release-notes#atlassians-new-transition-experience-compatibility-with-jira-expressions--en) documentation. For example:
 
 ```
 2025-03-14 18:34:49.554 WARN - POST request to /rest/api/3/issue returned an error code: status: 400 - Bad Requestbody: {errorMessages=[], errors={description=We don't recognise the format of a file you added or the data in it. Remove and try again.}}
@@ -98,9 +96,9 @@ Rather than leaving blank content, you can include custom content using Atlassia
 issueInput.fields.description = new groovy.json.JsonSlurper().parseText("""Your ADF""")
 ```
 
-_Clone Work Item_ creates a clone of a selected work item and optionally links the two items. Specify the target space, work type, link type, and link direction (between the source work item and the clone). For example, you have a ticket for a potential new hire. When this ticket transitions to _Hired_ you want to automatically clone the work item to the IT board so the team can set up their login details.
+_Clone Work Item_ creates a clone of a selected Work item and optionally links the two items. Specify the target space, work type, link type, and link direction (between the source Work item and the clone). For example, you have a ticket for a potential new hire. When this ticket transitions to _Hired_ you want to automatically clone the Work item to the IT board so the team can set up their login details.
 
-Note: An epic workflow action can be cloned; however, the work items contained within that epic are not cloned. You will, therefore, need to recreate any associated items.
+Note: An epic workflow action can be cloned; however, the Work items contained within that epic are not cloned. You will, therefore, need to recreate any associated items.
 
 It is possible to override `issueInput` with a new structure by setting `issueInput` from additional code; however, this is not recommended.
 
@@ -114,13 +112,13 @@ It is possible to override `issueInput` with a new structure by setting `issueIn
     
     See [Restrict Transitions](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/restrict-transitions) for examples.
     
-8.  Select an Work Type for the cloned work item.
+8.  Select a Work Type for the cloned work item.
     
-    Leave this field blank to make the cloned work item the same type as the source work item.
+    Leave this field blank to make the cloned work item the same type as the source Work item.
     
-9.  Select a Target Space; this is the space the new cloned work item is assigned to.
+9.  Select a Target Space; this is the space the new cloned Work item is assigned to.
     
-    Leave this field blank to clone the work item to the same space as the source item.
+    Leave this field blank to clone the Work item to the same space as the source item.
     
 10.  Pick the user to run the script as in Run As.
      
@@ -128,20 +126,20 @@ It is possible to override `issueInput` with a new structure by setting `issueIn
      
 11.  Select a link type under Link Name.
      
-     The source work item and the clone are linked using this link type. Leave blank for no link.
+     The source Work item and the clone are linked using this link type. Leave blank for no link.
      
-12.  Select the Link Direction between the source work item and the clone.
-13.  In the Additional Code field, modify the `issueInput` structure before it is used as the POST body `/rest/api/2/issue` to create the work item.
+12.  Select the Link Direction between the source Work item and the clone.
+13.  In the Additional Code field, modify the `issueInput` structure before it is used as the POST body `/rest/api/2/issue` to create the Work item.
      
      For example, add a label, set an assignee, or update the summary of the clone.
      
 14.  Click Add.
 
-See the available Script Context for Condition and Additional Code fields in the [Script Context](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/perform-actions/fields#script-context--en) section.
+Note: See the available Script Context for Condition and Additional Code fields in the [Script Context](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/perform-actions/fields#script-context--en) section.
 
 ### Supported field types
 
-The Clone Work Item function only copies Jira system fields and any custom fields that have the following types:
+The _Clone Work Item_ function only copies Jira system fields and any custom fields that have the following types:
 
 -   Checkbox
 -   Date picker
@@ -166,7 +164,7 @@ Note: Fields created by other plugins might not be supported. However, it is pos
 
 ## Create sub-task
 
-Create a sub-task for the work item being transitioned. Specify the sub-task type and title, along with executing additional code. Additional code has `issueInput` bound as the structure that is used in the post to `/rest/api/2/issue` to create the sub-task. Overriding `issueInput` is possible by setting `issueInput` as part of the script.
+Create a sub-task for the Work item being transitioned. Specify the sub-task type and title, along with executing additional code. Additional code has `issueInput` bound as the structure that is used in the post to `/rest/api/2/issue` to create the sub-task. Overriding `issueInput` is possible by setting `issueInput` as part of the script.
 
 For example, a ticket needs to be checked by several departments before it is considered _Done_. Using this workflow action, you can automatically create sub-tasks for these departments when a ticket is created.
 
@@ -181,7 +179,7 @@ For example, a ticket needs to be checked by several departments before it is co
     See [Restrict Transitions](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/restrict-transitions) for examples.
     
 8.  Enter a short Sub-task Summary.
-9.  Select the sub-task _Issue Type_
+9.  Select the sub-task Issue Type
 10.  Pick the user to run the script as in Run As.
      
      See [Run as User](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/perform-actions/fields) for more information.
@@ -242,13 +240,13 @@ assert resp.status >= 200 && resp.status < 300 && subtask && subtask.key != null
 subtask
 ```
 
-## Fast-track transition work item
+## Fast-track transition Work Item
 
-Use _Fast-track Transition Work Item_ to immediately transition an item if the provided condition is true. Transitions are specified by name and must be valid for the work item that is to be transitioned.
+Use _Fast-track Transition Work Item_ to immediately transition an item if the provided condition is true. Transitions are specified by name and must be valid for the Work item that is to be transitioned.
 
 Note: Due to limitations in the Jira REST API, it is not possible to validate transition names until execution.
 
-For example, all work items that have the item priority _Major_ should be escalated to get additional sign-off after creation.
+For example, all Work items that have the item priority _Major_ should be escalated to get additional sign-off after creation.
 
 1.  Select a transition.
 2.  Click Perform actions > Add Perform actions rule.
@@ -256,40 +254,38 @@ For example, all work items that have the item priority _Major_ should be escala
 4.  Select the Fast-track Transition Work Item built-in workflow action.
 5.  Add a Description, for example, _Requires Additional Approval_.
 6.  Check Enable perform action to make it active as soon as creation is finished.
-7.  Add additional Groovy code in the Conditions field that returns a boolean value determining the condition for which the work item is transitioned. See [Restrict Transitions](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/restrict-transitions) for examples.
+7.  Add additional Groovy code in the Conditions field that returns a boolean value determining the condition for which the Work item is transitioned. See [Restrict Transitions](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/restrict-transitions) for examples.
 8.  Enter a comment to add during the transition in Transition Comment.
     
     Note: A comment is only added if the transition allows adding a comment.
     
-9.  Enter a Transition ID. This is the ID of the transition you wish to perform on the work item.
+9.  Enter a Transition ID. This is the ID of the transition you wish to perform on the Work item.
     
-    Note: The transition ID is found on the _Edit_ page of a workflow. It is the number in brackets after the transition name. For example, the ID for the transition _OPEN (1)_ is 1
+    Note: The transition ID is found on the _Edit_ page of a workflow. It is the number in brackets after the transition name. For example, the ID for the transition _OPEN (1)_ is 1.
     
 10.  Alternatively to using the Transition ID, you can specify a Transition Name.
      
-     Tip: It is recommended that a transition ID be used instead of the transition name because, in some cases, it is not possible to find the transition ID by name (for example, if the _Hide From User_ Condition is configured on the transition).
+     Tip: It is recommended that a transition ID be used instead of the transition name because, in some cases, it is not possible to find the transition ID by name (for example, if the _Hide From User_ Restrict transition is configured on the transition).
      
 11.  Pick the user to run the script as in Run As. See [Run as User](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/perform-actions/fields#run-as-user--en) for more information.
-12.  In the Additional Code field, modify the `transition` structure before it is used as the PUT body `/rest/api/2/issue/< issue.id >/transition` to modify the work item when transitioned.
+12.  In the Additional Code field, modify the `transition` structure before it is used as the PUT body `/rest/api/2/issue/< issue.id >/transition` to modify the Work item when transitioned.
 13.  Click Add.
 
-Note:
+Note: See the available Script Context for Condition and Additional Code fields in the [Script Context](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/perform-actions/fields#script-context--en) section.
 
-See the available Script Context for Condition and Additional Code fields in the [Script Context](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/perform-actions/fields#script-context--en) section.
+## Modify Work Item
 
-## Modify work item
-
-Update the work item, or perform any action on the item after a transition.
+Update the Work item or perform any action on the item after a transition.
 
 Tip: Cancel an update by setting `issueInput` to `null`. Cancelling an update allows you to use this workflow action in a similar way to a script listener.
 
 1.  Select a transition.
-2.  Click Perform actions > Add perform actions rule.
+2.  Click Perform actions > Add Perform actions rule.
 3.  Select ScriptRunner Perform actions and click Add.
 4.  Select the Modify Work Item built-in workflow action.
 5.  Add a Description, for example, _Change assignee when approved_.
 6.  Check Enable perform actions to make the function active as soon as creation is finished.
-7.  Add additional Groovy code in the Conditions field that returns a boolean value determining the condition for which the work item is modified.
+7.  Add additional Groovy code in the Conditions field that returns a boolean value determining the condition for which the Work item is modified.
     
     See [Restrict Transitions](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/restrict-transitions) for examples.
     
@@ -297,7 +293,7 @@ Tip: Cancel an update by setting `issueInput` to `null`. Cancelling an update al
     
     See [Run as User](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/perform-actions/fields#run-as-user--en) for more information.
     
-9.  Modify the `issueInput` structure in Additional Code before it is used as the POST body to `/rest/api/2/issue/<issue id>/notify` to modify the work item.
+9.  Modify the `issueInput` structure in Additional Code before it is used as the POST body to `/rest/api/2/issue/<issue id>/notify` to modify the Work item.
 
 Running as the add-on user adds `overrideScreenSecurity=true` as a query parameter to allow editing fields that are not on the screen.
 
@@ -308,7 +304,7 @@ Note: See the available Script Context for Condition and Additional Code fields 
 Run arbitrary code after a transition.
 
 1.  Select a transition.
-2.  Click Perform actions > Add perform actions rule.
+2.  Click Perform actions > Add Perform actions rule.
 3.  Select ScriptRunner Perform actions and click Add.
 4.  Select the Run Script built-in workflow action.
 5.  Add a Description.
@@ -321,9 +317,9 @@ Run arbitrary code after a transition.
     
     See [Run as User](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/perform-actions/fields#run-as-user--en) for more information.
     
-9.  In the Code field, add the code to run when the condition is true.
+9.  In the Code field, add the code to run when the Restrict transition rule is true.
     
-    For example, link a work item, update a work item, or add a comment.
+    For example, link a Work item, update a Work item, or add a comment.
     
 10.  Click Add.
 
@@ -347,7 +343,7 @@ Note: The notify API, which this script uses, contains a validation rule prevent
     
 8.  Specify who receives the notification:
     
-    1.  Select the users to notify. Check to notify watchers, voters, the reporter, or assignee.
+    1.  Select the users to notify. Check to notify _Watchers_, _Voters_, the _Reporter_, or _Assignee_.
     2.  Choose users to send the notification to in the Users field.
     3.  Enter the Groups to send the notification to.
     
@@ -375,15 +371,15 @@ Note: The notify API, which this script uses, contains a validation rule prevent
      notification.subject = "This is the issue key: ${issue.key}"
      ```
      
-     Note: This example forces the removal of the hardcoded value entered by the user on the Subject field, and sends an email with the current work item's key in the subject as "This is the item key: TEST-123".
+     Note: This example forces the removal of the hardcoded value entered by the user on the Subject field, and sends an email with the current Work item's key in the subject as "This is the item key: TEST-123".
      
 13.  Click Add.
 
 Note: See the available Script Context for Condition and Additional Code fields in the [Script Context](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/perform-actions/fields#script-context--en) section.
 
-The following is an example of constructing an email from the work item details.
+The following is an example of constructing an email from the Work item details.
 
-Use the following in the Condition field to specify that the work item must have an assignee
+Use the following in the Condition field to specify that the Work item must have an assignee:
 
 ```
 issue.fields.assignee != null
@@ -413,21 +409,21 @@ ${issue.fields.reporter?.displayName}"""
 
 Line 5: Retrieve the custom field ID for the 'TextFieldB' custom field.
 
-## Transition parent work item
+## Transition parent Work Item
 
-Transition the parent work item of a sub-task.
+Transition the parent Work item of a sub-task.
 
-Note: This workflow action is only valid for sub-tasks and will not work on parent work items or items with no sub-tasks.
+Note: This workflow action is only valid for sub-tasks and will not work on parent Work items or items with no sub-tasks.
 
 The specified transition is performed on the parent of the sub-task when a condition is met. As with _Fast-Track Transition Item_, the transition name is provided and not validated.
 
 1.  Select a transition.
-2.  Click Perform actions > Add perform actions rule.
+2.  Click Perform actions > Add Perform actions rule.
 3.  Select ScriptRunner Perform actions and click Add.
 4.  Select the Transition Parent Item built-in workflow action.
 5.  Add a Description, for example, _Transition parent when done_.
 6.  Check Enable Perform Actions rule to make it active as soon as creation is finished.
-7.  Add additional Groovy code in the Conditions field that returns a boolean value determining the condition for which the work item is transitioned.
+7.  Add additional Groovy code in the Conditions field that returns a boolean value determining the condition for which the Work item is transitioned.
     
     See [Restrict Transitions](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/restrict-transitions) for examples.
     
@@ -437,19 +433,19 @@ The specified transition is performed on the parent of the sub-task when a condi
     
 9.  Enter a Transition ID.
     
-    This is the ID of the transition you wish to perform on the parent work item.
+    This is the ID of the transition you wish to perform on the parent Work item.
     
     Note: The transition ID is found on the _Edit_ page of a workflow. It is the number in brackets after the transition name. For example, the ID for the transition _OPEN (1)_ is 1.
     
 10.  Alternatively to using the Transition ID, you can specify a Transition Name.
      
-     Tip: It is recommended that a transition ID be used instead of the transition name because, in some cases, it is not possible to find the transition ID by name (for example, if the _Hide From User_ Condition is configured on the transition).
+     Tip: It is recommended that a transition ID be used instead of the transition name because, in some cases, it is not possible to find the transition ID by name (for example, if the _Hide From User_ Restrict transition rule is configured on the transition).
      
 11.  Pick the user to run the script as in Run As.
      
      See [Run as User](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/perform-actions/fields#run-as-user--en) for more information.
      
-12.  In the Additional Code field, modify the `transition` structure before it is used as the PUT body `/rest/api/2/issue/< issue.id >/transition` to modify the work item when transitioned.
+12.  In the Additional Code field, modify the `transition` structure before it is used as the PUT body `/rest/api/2/issue/< issue.id >/transition` to modify the Work item when transitioned.
 13.  Click Add.
 
 Note: See the available Script Context for Condition and Additional Code fields in the [Script Context](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/perform-actions/fields#script-context--en) section.

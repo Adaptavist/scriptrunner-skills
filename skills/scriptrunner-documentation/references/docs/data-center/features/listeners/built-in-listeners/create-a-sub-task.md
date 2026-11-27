@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Listeners > Built-In Listeners
-- Doc ID: doc-sr4js-8e0b687d-a0b1-4cd2-9a7e-d296141d7196-48fb8fe1caf90d8f
+- Doc ID: doc-sr4js-b8c555c0-6467-413d-acbc-af885b97774d-48fb8fe1caf90d8f
 - Source: https://docs.adaptavist.com/sr4js/latest/features#listeners--en#built-in-listeners--en#create-a-sub-task--en
 
 Use this listener to create a new sub-task when the chosen event fires, or reopen a matching sub-task. This listener can be used multiple times to trigger the creation/reopening of several sub-tasks. You may want to:

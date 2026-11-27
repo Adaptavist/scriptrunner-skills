@@ -3,8 +3,10 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features
-- Doc ID: doc-sr4jc-50a871fc-007f-4348-825e-615e65640e9e-804fcb8aa9d70748
+- Doc ID: doc-sr4jc-94e9fac5-4a29-4cbd-be64-13b0fd367e4f-804fcb8aa9d70748
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/scheduled-jobs
+
+Learn about the scheduled jobs available in ScriptRunner and how they help you automate routine tasks.
 
 |  |  |
 | --- | --- |
@@ -29,9 +31,9 @@ You may want to use a Scheduled Job to:
 -   Email a report to users on a schedule.
 -   Delete inactive users on a monthly basis.
 -   Change the status of a work item depending on the time it has been open.
--   Automatically escalate a work item based on the elapsed time using [Escalation Services](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/escalation_service.dita).
+-   Automatically escalate a work item based on the elapsed time using [Escalation Services](escalation-service.md).
 
-Say, I have a team of consultants who need to fill out expenses at the end of every month. I can create a Scheduled Job to automatically create a task for each user at the end of every month to remind them to complete their expenses.
+Say I have a team of consultants who need to fill out expenses at the end of every month. I can create a Scheduled Job to automatically create a task for each user at the end of every month to remind them to complete their expenses.
 
 As a Jira administrator, it's key to keep my instance healthy and reduce costs by removing inactive users. I can set up a job to run a script that deletes inactive users on a monthly basis.
 
@@ -85,7 +87,7 @@ Follow the steps below to use this feature:
 9.  Optional: Click Script context to view an information modal highlighting parameters/code variables. For further information on referencing Script Context values, refer to [Example Script Variables](https://docs.adaptavist.com/sr4jc/latest/features/script-variables/example-script-variables).
 10.  Click Save. You can test your script using the Run Now button, which executes the script and returns the results and logs.
      
-     Note: Each Scheduled Job can execute for the same length of time as [Script Listeners](script-listeners.md), [Post Functions](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/perform-actions), and in the [Script Console](script-console.md), as documented in the script [limitations](../get-started/limitations.md). See also the [Escalation Service](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/escalation_service.dita), which allows you to configure code to be executed against each work item returned from a JQL search, on a schedule. This is useful for performing automated transitions/releases/updates of work items.
+     Note: Each Scheduled Job can execute for the same length of time as [Script Listeners](script-listeners.md), [Post Functions](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/perform-actions), and in the [Script Console](script-console.md), as documented in the script [limitations](../get-started/limitations.md). See also the [Escalation Service](escalation-service.md), which allows you to configure code to be executed against each work item returned from a JQL search, on a schedule. This is useful for performing automated transitions/releases/updates of work items.
      
 
 ## Edit a Scheduled Job

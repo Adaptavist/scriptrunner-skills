@@ -3,7 +3,7 @@
 - Platform: connect
 - Space: SRC
 - Hierarchy: Connectors
-- Doc ID: doc-src-2b7c2e36-1115-423b-bfda-836f0483aeb8-1c2c7282371f6706
+- Doc ID: doc-src-71d08164-022c-4a21-93fc-46e71c1a3b47-1c2c7282371f6706
 - Source: https://docs.adaptavist.com/src/latest/connectors#create-a-jsm-cloud-connector--en
 
 Follow these instructions to create a connector for Jira Service Management Cloud.

@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Built-In Scripts > Confluence Administration Built-In Scripts > Update Macro
-- Doc ID: doc-sr4c-15b32b29-7fe4-4236-aad9-aae1358d37a7-c3b517860cab679f
+- Doc ID: doc-sr4c-80e43ced-f7bb-415f-9bc7-28ec0f241058-c3b517860cab679f
 - Source: https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#confluence-administration-built-in-scripts--en#update-macro--en#update-macro-performance--en
 
 Information on macro performance.

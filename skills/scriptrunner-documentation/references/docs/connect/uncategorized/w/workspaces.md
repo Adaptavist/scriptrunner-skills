@@ -3,7 +3,7 @@
 - Platform: connect
 - Space: SRC
 - Hierarchy: n/a
-- Doc ID: doc-src-e3c302ba-d4eb-49ef-b5fa-c48cc5081259-b14fde40cf951b93
+- Doc ID: doc-src-12cba729-b36a-431a-bb40-6d2d6ec8b223-b14fde40cf951b93
 - Source: https://docs.adaptavist.com/src/latest/workspaces
 
 The _Workspaces_ module is where all of your integrations live and run.

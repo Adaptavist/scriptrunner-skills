@@ -3,20 +3,30 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Get Started
-- Doc ID: doc-sr4jc-ab9e6e0e-4c9d-4adf-9d8c-855c844b7fc6-2df11b84fbc71595
+- Doc ID: doc-sr4jc-23377ab2-890b-401b-9a65-c5b7a6882830-2df11b84fbc71595
 - Source: https://docs.adaptavist.com/sr4jc/latest/get-started/data-residency
 
-All new Jira and Confluence Cloud customers can choose the location where their instance is hosted, including all processed and stored data related to that instance. These locations are known as the realms, or localities, that customers can choose to pin their data to, provided they are compliant with any legislation in their chosen region (ex, GDPR in the EU). You can find more information on locations and associated AWS regions that Atlassian offers [here](https://support.atlassian.com/security-and-access-policies/docs/understand-data-residency/#What-are-locations-and-AWS-regions).
+Understand how ScriptRunner for Jira and Confluence Cloud aligns its data residency with your Atlassian Cloud instance.
 
-ScriptRunner for Jira and Confluence Cloud offers hosting in either the EU (Frankfurt) or the USA (Oregon). The location of ScriptRunner data residency will match that of your Jira or Confluence instance if you chose one of these regions.
+All new Jira and Confluence Cloud customers can choose the location where their instance is hosted, including all stored data related to that instance. These locations are known as the realms, or localities, that customers can choose to pin their data to, provided they are compliant with any legislation in their chosen region (ex, GDPR in the European Union). You can find more information on locations and associated AWS regions that Atlassian offers [here](https://support.atlassian.com/security-and-access-policies/docs/understand-data-residency/#What-are-locations-and-AWS-regions).
+
+ScriptRunner for Jira and Confluence Cloud offers hosting in:
+
+-   Germany (Frankfurt)
+-   the European Union (Frankfurt)
+-   the USA (Oregon)
+
+The location of ScriptRunner data residency will match that of your Jira or Confluence instance if you chose one of these regions.
 
 ## What is data residency?
 
-Data residency refers to the physical location where an organization's data is stored and processed. To understand the term Data Residency and how it relates to your instance of ScriptRunner for Jira and Confluence Cloud, we can outline the benefits it provides and break it down into its component parts.
+Data residency refers to the physical location where an organization's data is hosted. To understand the term Data Residency and how it relates to your instance of ScriptRunner for Jira and Confluence Cloud, we can outline the benefits it provides and break it down into its component parts.
+
+Refer to [Atlassian's data residency documentation](https://support.atlassian.com/security-and-access-policies/docs/understand-data-residency/) for more details.
 
 ## Benefits of data residency
 
-Data residency gives organizations more control over their data by ensuring their user-generated content is stored within the US or EU. Companies that work in regulated industries like finance, government, or healthcare may need data residency to operate in a cloud environment.
+Data residency gives organizations more control over their data by ensuring their user-generated content is stored within the US (Oregon), Germany (Frankfurt), or European Union (Frankfurt). Companies that work in regulated industries like finance, government, or healthcare may need data residency to operate in a cloud environment.
 
 ## Data
 
@@ -38,7 +48,7 @@ According to Atlassian, migration data is [temporarily stored in transit in US-W
 
 ScriptRunner does not control where Atlassian stores or routes JCMA migration data during transfer.
 
-Our migration processing services operate in both the EU and the US regions. If your ScriptRunner Cloud data residency is set to EU, ScriptRunner migration processing will occur in the EU where applicable. However, any data handled directly by JCMA during migration remains under Atlassian's control.
+Our migration processing services operate in the US (Oregon), Germany (Frankfurt), or European Union (Frankfurt) regions. If your ScriptRunner Cloud data residency is set to US (Oregon), Germany (Frankfurt), or European Union (Frankfurt) then ScriptRunner migration processing will occur in the corresponding region. However, any data handled directly by JCMA during migration remains under Atlassian's control.
 
 ## Residency
 
@@ -50,7 +60,7 @@ Your data is stored in the US regardless of where you are geographically located
 
 ### ScriptRunner or Jira and Confluence Cloud installed after 30th June 2021
 
-Your data will be stored in the EU (Frankfurt) if your Jira instance is pinned to the European Union; otherwise, it will be stored in the US (Oregon).
+Your data will be stored in Frankfurt, if your Jira or Confluence instance is pinned to Germany or the European Union; otherwise, it will be stored in the US (Oregon).
 
 If you require data residency hosting in a region that we do not currently provide, please let us know via our [suggestion board](https://scriptrunner-for-jira-cloud.nolt.io/).
 
@@ -60,17 +70,17 @@ Note: You cannot have dual residency.
 
 ### Instances of ScriptRunner for Jira and Confluence Cloud installed before 30th June 2021
 
-These instances are automatically stored in the US (Oregon) unless you have pinned your Jira instance to a supported region, the European Union, or the US.
+These instances are automatically stored in the US (Oregon) unless you have pinned your Jira instance to one of the supported regions which are Germany (Frankfurt), the European Union (Frankfurt), or the US (Oregon).
 
 ### New instances of ScriptRunner for Jira and Confluence Cloud
 
-When ScriptRunner is installed, its data is stored in the EU (Frankfurt) if your Jira instance is pinned to the European Union; otherwise, it will be stored in the US (Oregon). For details on how to pin the region, see:
+When ScriptRunner is installed, its data is stored in the European Union (Frankfurt), or Germany (Frankfurt), if your Jira instance is pinned to the European Union or Germany; otherwise, it will be stored in the US (Oregon). For details on how to pin the region, see:
 
 [https://support.atlassian.com/security-and-access-policies/docs/understand-data-residency-and-realms/](https://support.atlassian.com/security-and-access-policies/docs/understand-data-residency-and-realms/)
 
-Warning: To ensure ScriptRunner for Jira and Confluence Cloud data residency within the EU (Frankfurt), you must select the European Union as the Jira instance location. If any other European country is selected, ScriptRunner for Jira and Confluence Cloud data residency will default to the US (Oregon).
+Warning: To ensure ScriptRunner for Jira and Confluence Cloud data residency within the European Union (Frankfurt) or Germany (Frankfurt), you must select the European Union or Germany as the Jira instance location. If any other European country is selected, ScriptRunner for Jira and Confluence Cloud data residency will default to the US (Oregon).
 
-If you are located outside of the EU or US, for example, in Australia, and select this as your instance location, ScriptRunner for Jira and Confluence Cloud data residency will default to the US (Oregon).
+If you are located outside of the US (Oregon), Germany (Frankfurt), or European Union (Frankfurt), for example, in Australia, and select this as your instance location, ScriptRunner for Jira and Confluence Cloud data residency will default to the US (Oregon).
 
 ## Change locality
 

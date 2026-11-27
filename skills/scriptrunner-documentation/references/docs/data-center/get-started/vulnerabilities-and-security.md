@@ -3,8 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Get Started
-- Doc ID: doc-sr4js-8110256f-5c2c-43dd-93ad-e3289f43f341-cd80ee01f80c536a
+- Doc ID: doc-sr4js-bdf24e2f-32e0-4b07-9f71-55ed0e117c23-cd80ee01f80c536a
 - Source: https://docs.adaptavist.com/sr4js/latest/get-started/vulnerabilities-and-security
+
+Learn how ScriptRunner handles vulnerability scanning and common security concerns, including open-source library dependency risks.
 
 All software can have security vulnerabilities. ScriptRunner uses a number of open-source libraries, similar to most apps on the Marketplace. This page covers how we scan for vulnerabilities and common security concerns.
 

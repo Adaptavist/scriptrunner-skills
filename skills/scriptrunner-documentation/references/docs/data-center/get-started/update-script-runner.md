@@ -3,10 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Get Started
-- Doc ID: doc-sr4js-fa4d457a-2189-4a3c-87f1-935b5234e487-ed07aaba7a7c033f
+- Doc ID: doc-sr4js-b1b69c23-d6e1-45ac-a670-14856151ec40-ed07aaba7a7c033f
 - Source: https://docs.adaptavist.com/sr4js/latest/get-started/update-scriptrunner
 
-There are two ways to update ScriptRunner for Jira—on the Atlassian marketplace or from within your Jira instance. This page provides update instructions and recommendations for both minor and major version updates.
+Update ScriptRunner for Jira via the Atlassian Marketplace or from within Jira, with recommendations for minor and major version upgrades.
 
 ## Recommendations for updating ScriptRunner
 

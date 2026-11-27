@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Integrations > Automation for Jira
-- Doc ID: doc-sr4js-0759a3cc-2cd4-410e-ac1f-4651d5d57cf2-af274114db4e4108
+- Doc ID: doc-sr4js-5584f7c1-2538-4811-b333-c081193241f3-af274114db4e4108
 - Source: https://docs.adaptavist.com/sr4js/latest/integrations/automation-for-jira#create-asset--en
 
 We've provided an easy way to create [Insight/Asset objects](https://confluence.atlassian.com/servicemanagementserver/working-with-objects-1044784539.html) in Automation for Jira. For example, you can use the Create Asset with ScriptRunner action to create a new Assets object when a new issue is created.

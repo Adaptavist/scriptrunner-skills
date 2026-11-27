@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Resources
-- Doc ID: doc-sr4js-ca596631-1ff1-4677-a55d-96fb7ba0c2fa-e7874de465700be0
+- Doc ID: doc-sr4js-49c1d9f7-266c-47f9-b2ce-aa22efb946de-e7874de465700be0
 - Source: https://docs.adaptavist.com/sr4js/latest/features#resources--en#local-database-connection--en
 
 Tip: Where possible, you should always use an application's API to retrieve data rather than its database.

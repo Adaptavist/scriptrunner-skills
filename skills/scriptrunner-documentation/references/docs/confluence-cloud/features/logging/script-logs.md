@@ -3,10 +3,10 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: Features > Logging
-- Doc ID: doc-sr4cc-deca59f1-c2b3-477e-8d4a-905a92d7f431-e966fbecde099736
+- Doc ID: doc-sr4cc-433fd77f-80f3-4072-87b7-fd07178de2cd-e966fbecde099736
 - Source: https://docs.adaptavist.com/sr4cc/latest/features/logging/script-logs
 
-Information on interacting with logs of the latest exeuctions.
+Information on interacting with logs of the latest executions.
 
 Use Script Logs to view the logs for your latest lambda executions.
 
@@ -20,7 +20,7 @@ Once you navigate to the feature, you can search for the most recent logs genera
 
 -   Correlation ID: View the script logs for one particular script execution.
     
-    Note: Each time a script fails, the notifications group defined in [Settings](../../get-started/settings.md) receive a script error notification email containing a Correlation ID unique to each execution of a given script.
+    Note: Each time a script fails, the notifications group defined in [Settings](../../get-started/settings.md) receives a script error notification email containing a Correlation ID unique to each execution of a given script.
     
 -   Script Identifier: View all script logs across many executions for a given script.
     

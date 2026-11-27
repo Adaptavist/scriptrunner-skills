@@ -3,7 +3,7 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features > ScriptRunner Enhanced Search > ScriptRunner Enhanced Search JQL Functions
-- Doc ID: doc-sr4jc-01bdd959-8f46-4871-9ea0-1003cf36d3d6-04e30cd8373e92b3
+- Doc ID: doc-sr4jc-d47f8051-11d4-4ce8-9cd5-317bc646ab98-04e30cd8373e92b3
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search#scriptrunner-enhanced-search-jql-functions--en#date-and-time-management-datecompare--en
 
 ## dateCompare

@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Event Listeners > Built-In Listeners
-- Doc ID: doc-sr4c-aa8295f0-2011-44fd-8f07-3bcfc5c017f0-ba6613a6893bdc26
+- Doc ID: doc-sr4c-0347ec87-b508-49f2-be69-5606bbdd25cc-ba6613a6893bdc26
 - Source: https://docs.adaptavist.com/sr4c/latest/features#event-listeners--en#built-in-listeners--en#manage-labels-listener--en
 
 Use the _Manage Labels_ listener to automate label management.

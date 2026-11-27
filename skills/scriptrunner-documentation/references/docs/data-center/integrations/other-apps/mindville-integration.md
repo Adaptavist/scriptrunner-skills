@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Integrations > Other Apps
-- Doc ID: doc-sr4js-c4fa5b4a-9ed7-49f6-af70-c762a6a44780-7c189e58cac60912
+- Doc ID: doc-sr4js-d0df9865-2abd-45fa-83c9-a153b34df7df-7c189e58cac60912
 - Source: https://docs.adaptavist.com/sr4js/latest/integrations/other-apps#mindville-integration--en
 
 ScriptRunner _Behaviours_ supports the [Mindville](https://documentation.mindville.com/dashboard.action) _Insight Object/s_ select custom field type.

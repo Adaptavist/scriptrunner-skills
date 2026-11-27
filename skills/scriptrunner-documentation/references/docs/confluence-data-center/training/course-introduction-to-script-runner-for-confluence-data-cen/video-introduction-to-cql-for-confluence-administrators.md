@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Training > Course: Introduction to ScriptRunner for Confluence Data Center
-- Doc ID: doc-sr4c-3291a3aa-9e40-43c4-baf0-c5e7ab29c043-458085d81a6a6424
+- Doc ID: doc-sr4c-79109962-ca3b-4b87-8983-7e1fa844b3e5-458085d81a6a6424
 - Source: https://docs.adaptavist.com/sr4c/latest/training#course-introduction-to-scriptrunner-for-confluence-data-center--en#video-introduction-to-cql-for-confluence-administrators--en
 
 [Media](https://player.vimeo.com/video/732110600?h=1f77af3a04)

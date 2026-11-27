@@ -3,7 +3,7 @@
 - Platform: migration-suite
 - Space: SMS
 - Hierarchy: Training
-- Doc ID: doc-sms-6975744c-c1d7-49b5-9ea7-bcb00adf2384-a697038d6f0de17b
+- Doc ID: doc-sms-f35cfcb8-7ae1-4ebd-b290-2f2bc89625d6-a697038d6f0de17b
 - Source: https://docs.adaptavist.com/sms/latest/training/1.2-a-tour-of-the-scriptrunner-migration-suite
 
 The ScriptRunner Migration Suite consists of three tools, each designed to support a specific phase of your Cloud migration journey:

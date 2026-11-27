@@ -3,7 +3,7 @@
 - Platform: connect
 - Space: SRC
 - Hierarchy: Scripting
-- Doc ID: doc-src-fe2952dd-218e-4b02-b97c-0cb9b5427740-d883e4552b32209d
+- Doc ID: doc-src-4c1325e6-48e1-45f9-9349-4ed25eb91ee2-d883e4552b32209d
 - Source: https://docs.adaptavist.com/src/latest/scripting#fetch-api--en
 
 Learn about Fetch API, a JavaScript interface used for making asynchronous HTTP requests across a network.
@@ -14,7 +14,9 @@ Note: Compliance
 
 ScriptRunner Connect's Fetch API implementation is not fully compliant with the specification because the Fetch API was originally designed to work in a browser and not in server-side JavaScript runtime, which is where ScriptRunner Connect code is executed.
 
-## Demo
+## Demo: Fetch API
+
+[Media](https://demo.arcade.software/pyCkn5uNI91DnQPc3Aqj?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true)
 
 ## Fetch options
 
@@ -26,10 +28,10 @@ ScriptRunner Connect's Fetch API implementation is not fully compliant with the 
     agent?: {
         rejectUnauthorized?: boolean; // Whether to reject invalid HTTPS connection, defaults to true
         ca?: string | ArrayBuffer | (string | ArrayBuffer)[]; // CA certificate to be used with HTTPS connection (must be in PEM format)
-        cert: string | ArrayBuffer | (string | ArrayBuffer)[]; // Certificate to be used with HTTPS connection (must be in PEM format)
-        key? string | ArrayBuffer | (string | ArrayBuffer)[]; // Private key to be used with HTTPS connection (must be in PEM format)
+        cert?: string | ArrayBuffer | (string | ArrayBuffer)[]; // Certificate to be used with HTTPS connection (must be in PEM format)
+        key?: string | ArrayBuffer | (string | ArrayBuffer)[]; // Private key to be used with HTTPS connection (must be in PEM format)
         passphrase?: string; // Use to decrypt certificates, if certificates are not encrypted, don't specify it
-    }
+    };
 }
 ```
 

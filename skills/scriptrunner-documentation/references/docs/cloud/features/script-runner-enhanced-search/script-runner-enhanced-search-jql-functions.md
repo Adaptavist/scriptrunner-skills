@@ -3,7 +3,7 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features > ScriptRunner Enhanced Search
-- Doc ID: doc-sr4jc-46a21b09-b7f2-4f7c-8c07-ea8b2dbffaff-614e167a4a655399
+- Doc ID: doc-sr4jc-960663f6-f872-4b20-8c7a-393d15988601-614e167a4a655399
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search#scriptrunner-enhanced-search-jql-functions--en
 
 Note: Custom field name duplicates

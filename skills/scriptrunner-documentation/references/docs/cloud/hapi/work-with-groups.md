@@ -3,8 +3,10 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: HAPI
-- Doc ID: doc-sr4jc-b08efa38-4313-45e8-9eb1-0e46944ae011-170fe55b2b6dd44e
+- Doc ID: doc-sr4jc-d90d4da6-605c-43b2-9a4d-18b8b478b318-170fe55b2b6dd44e
 - Source: https://docs.adaptavist.com/sr4jc/latest/hapi#work-with-groups--en
+
+Learn how to create, manage, and use groups in HAPI.
 
 With HAPI, we've made it easy for you to work with groups.
 

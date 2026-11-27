@@ -3,7 +3,7 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: Get Started
-- Doc ID: doc-sr4cc-bb531221-9a40-4691-9a95-7e036f574939-1393ddd4cd1fde4f
+- Doc ID: doc-sr4cc-43bb5930-aef0-4a95-927b-e0f432840f27-1393ddd4cd1fde4f
 - Source: https://docs.adaptavist.com/sr4cc/latest/get-started/installation
 
 How to install ScriptRunner for Confluence cloud in your instance.

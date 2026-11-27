@@ -3,7 +3,7 @@
 - Platform: connect
 - Space: SRC
 - Hierarchy: Scripting > Code Snippets
-- Doc ID: doc-src-60ff8bc5-51f2-41e0-9e23-18d4b7250230-9496ce44f667876d
+- Doc ID: doc-src-13a42260-baee-4e71-9a0f-deddef77b7a1-9496ce44f667876d
 - Source: https://docs.adaptavist.com/src/latest/scripting#code-snippets--en#working-with-fetch-api--en
 
 Learn how to use our two versions of Fetch API.
@@ -26,7 +26,7 @@ To make a fetch request, call the `fetch` function and pass in the URL.
 For this example, we're using [https://jsonplaceholder.typicode.com/](https://jsonplaceholder.typicode.com/) anonymous service, which means we can use the raw Fetch API directly.
 
 ```
-export default async function(event: any, context: Context): Promise<void> {
+export default async function (event: any, context: Context): Promise<void> {
     const response = await fetch('https://jsonplaceholder.typicode.com/posts');
 }
 ```
@@ -36,11 +36,11 @@ You can also pass in the options which accept the `method`, `headers`, and `body
 Here is an example of how to make a `POST` request with JSON body:
 
 ```
-export default async function(event: any, context: Context): Promise<void> {
+export default async function (event: any, context: Context): Promise<void> {
     const response = await fetch('https://jsonplaceholder.typicode.com/posts', {
         method: 'POST',
         headers: {
- 'Content-Type': 'application/json'
+            'Content-Type': 'application/json'
         },
         body: JSON.stringify({
             userId: 1,
@@ -72,13 +72,13 @@ Given the path for the API connection that targets the generic connector is `/ap
 ```
 // Imports API Connection with path of '/api/json' under the namespace of 'JsonPlaceholder'
 import JsonPlaceholder from './api/json';
- 
-export default async function(event: any, context: Context): Promise<void> {
- // Calls managed Fetch API from JsonPlaceholder namespace
+
+export default async function (event: any, context: Context): Promise<void> {
+    // Calls managed Fetch API from JsonPlaceholder namespace
     const response = await JsonPlaceholder.fetch('/posts', {
         method: 'POST',
         headers: {
- 'Content-Type': 'application/json'
+            'Content-Type': 'application/json'
         },
         body: JSON.stringify({
             userId: 1,
@@ -110,20 +110,20 @@ Response handling works the same regardless of whether you're using the raw or t
 Here is a typical example of making a Fetch API call, checking if the response is OK, and then extracting the body as a JSON object:
 
 ```
-export default async function(event: any, context: Context): Promise<void> {
- // Fetch posts
+export default async function (event: any, context: Context): Promise<void> {
+    // Fetch posts
     const response = await fetch('https://jsonplaceholder.typicode.com/posts');
- 
- // Check if the response is OK
- if (!response.ok) {
- // If it's not, then throw an error
- throw Error(`Unexpected response code: ${response.status} - ${await response.text()}`);
+
+    // Check if the response is OK
+    if (!response.ok) {
+        // If it's not, then throw an error
+        throw Error(`Unexpected response code: ${response.status} - ${await response.text()}`);
     }
- 
- // If it's OK, then proceed by getting the JSON object from the body that represents the posts
+
+    // If it's OK, then proceed by getting the JSON object from the body that represents the posts
     const posts = await response.json();
- 
- // And finally print out the posts
+
+    // And finally print out the posts
     console.log('Posts', posts);
 }
 ```

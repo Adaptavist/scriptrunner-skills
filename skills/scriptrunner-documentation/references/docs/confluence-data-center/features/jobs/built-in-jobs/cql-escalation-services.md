@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Jobs > Built-In Jobs
-- Doc ID: doc-sr4c-2be10575-9daa-416b-a374-9ae0894cabab-06641160244a9bbc
+- Doc ID: doc-sr4c-a7154610-f84c-46be-9660-a74e29262997-06641160244a9bbc
 - Source: https://docs.adaptavist.com/sr4c/latest/features#jobs--en#built-in-jobs--en#cql-escalation-services--en
 
 Using the _CQL Escalation Services_ built-in job, you can pass the results of a CQL query to the code you provide.

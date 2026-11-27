@@ -3,7 +3,7 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: Migration
-- Doc ID: doc-sr4cc-9e5844ec-7808-4dc8-a348-b46995d20945-2298e264fc1637c3
+- Doc ID: doc-sr4cc-7d695726-aad3-4ace-a962-af0ad73b06db-2298e264fc1637c3
 - Source: https://docs.adaptavist.com/sr4cc/latest/migration/gdpr-migration
 
 Atlassian Cloud REST APIs were updated in response to the General Data Protection Regulation (GDPR) legislation.
@@ -42,7 +42,7 @@ Once you click on the _Show Scripts_ link at the bottom of the banner, you see t
 
 Here a few examples of scripts before and after the GDPR migration that you need to do. You can find accountIds by searching for users in the /people section of your Confluence Cloud instance.
 
-### Setting a user as a watcher
+### Set a user as a watcher
 
 ```
 // Before 29th April 2019
@@ -66,7 +66,7 @@ def result = post("/wiki/rest/api/user/watch/content/${contentId}")
         .asString()
 ```
 
-### Inspecting user details on a blog Script Listener
+### Inspect user details on a blog Script Listener
 
 ```
 // Before 29th April 2019
@@ -80,7 +80,7 @@ logger.info("'${blog.title}' was written by ${blog.creatorName}")
 logger.info("'${blog.title}' was written by ${blog.creatorAccountId}")
 ```
 
-### Inspecting user details on content from the REST API
+### Inspect user details on content from the REST API
 
 ```
 // Before 29th April 2019
@@ -106,7 +106,7 @@ logger.info("${resp.version.by.accountId} made change #${resp.version.number} to
 logger.info("${resp.version.by.displayName} made change #${resp.version.number} to '${resp.title}'")
 ```
 
-### Searching for content based on a user
+### Search for content based on a user
 
 ```
 // Before 29th April 2019

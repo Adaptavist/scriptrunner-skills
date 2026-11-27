@@ -3,8 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Get Started
-- Doc ID: doc-sr4js-9f1d65e9-363d-4660-a613-9aa22c8b75ff-6cbea549415f7d17
+- Doc ID: doc-sr4js-ed717652-5aaa-48ab-865e-bffaafce4455-6cbea549415f7d17
 - Source: https://docs.adaptavist.com/sr4js/latest/get-started/settings
+
+Configure ScriptRunner instance-wide settings, including analytics, code helpers, permissions, and editor preferences.
 
 The _Settings_ page is only accessible for group members with _System Administrators_ permission.
 

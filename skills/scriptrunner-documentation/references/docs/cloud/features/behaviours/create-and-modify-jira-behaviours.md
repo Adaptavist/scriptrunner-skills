@@ -3,7 +3,7 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features > Behaviours
-- Doc ID: doc-sr4jc-11163637-f6ea-48ab-b3b1-05167f0d8f68-4b209d573ed6ca3d
+- Doc ID: doc-sr4jc-fbda4f2e-f740-4fb6-9b58-5b6fa023da7c-4b209d573ed6ca3d
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/behaviours#create-and-modify-jira-behaviours--en
 
 ## Create a Jira Behaviour
@@ -108,7 +108,7 @@ Follow the steps below to make changes to existing behaviours in ScriptRunner fo
     
     A list of previously created behaviours displays.
     
-    You can search for a specific behaviour using the search bar by entering its name or UUID. The list of behaviours can be sorted by name and filtered using the available options—such as Affected Fields, Spaces, or Work Types — to help narrow down the list, for example:
+    You can search for a specific behaviour using the search bar by entering its name or UUID. The list of behaviours can be sorted by name and filtered using the available options - such as Jira, JSM, Fields, Spaces, Work Types, or View Types - to help narrow down the list, for example:
     
 2.  Click the Actions ellipsis next to your chosen behaviour, and you can choose from the following options:
     

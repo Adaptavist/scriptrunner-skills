@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Workflows > Conditions
-- Doc ID: doc-sr4js-777cf788-84bb-4094-8d07-8217a8866335-27f6866659516d2f
+- Doc ID: doc-sr4js-2b23abde-839d-4470-a5e4-6912790fecf6-27f6866659516d2f
 - Source: https://docs.adaptavist.com/sr4js/latest/features#workflows--en#conditions--en#user-in-fields-condition--en
 
 The _User in field(s) condition_ controls if a user can transition an issue based on whether or not they are in any specified field(s). If a field contains users, the condition checks if the current user is selected. If the field contains groups, the condition checks if the current user is within any of those selected groups.

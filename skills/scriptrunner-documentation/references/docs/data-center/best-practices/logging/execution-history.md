@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Best Practices > Logging
-- Doc ID: doc-sr4js-c9ff0aad-77de-498e-adf5-ce725c8ac14c-9b25f20aa1c08a82
+- Doc ID: doc-sr4js-47a55151-c689-4620-b406-97f6e8adc281-9b25f20aa1c08a82
 - Source: https://docs.adaptavist.com/sr4js/latest/best-practices/logging#execution-history--en
 
 Understanding the effects of ScriptRunner scripts on your Jira instance is critical for successful platform management. Use Execution History to view execution times and failure rates of ScriptRunner scripts in your instance, providing in-depth data and logs for script executions.

@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Workflows > Conditions
-- Doc ID: doc-sr4js-417303f4-57a6-4f09-8e46-0a401355cf32-ee4b24ef9e378277
+- Doc ID: doc-sr4js-c3da96af-96f5-4cd3-a703-1e271bad4bfe-ee4b24ef9e378277
 - Source: https://docs.adaptavist.com/sr4js/latest/features#workflows--en#conditions--en#regular-expression-condition--en
 
 Use the _Regular Expression Condition_ to make a transition unavailable if a text field input does not match a regular expression. For example, you may want to use this condition to ensure:

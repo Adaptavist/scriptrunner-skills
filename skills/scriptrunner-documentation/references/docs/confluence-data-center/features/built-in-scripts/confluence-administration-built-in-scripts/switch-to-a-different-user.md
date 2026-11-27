@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Built-In Scripts > Confluence Administration Built-In Scripts
-- Doc ID: doc-sr4c-0b096083-4426-4fd0-8c5c-72c1ae1da306-e74c48598610f287
+- Doc ID: doc-sr4c-33ebf0c2-ad4b-4365-98bb-3613ea369847-e74c48598610f287
 - Source: https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#confluence-administration-built-in-scripts--en#switch-to-a-different-user--en
 
 The _Switch User_ built-in script allows administrator users to temporarily assume the identity of another user.

@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Workflows > Post Functions
-- Doc ID: doc-sr4js-7fb76993-ad34-4b7c-a300-b9f492529fe8-33618c95b54c005e
+- Doc ID: doc-sr4js-086de6df-2c54-42aa-be36-f4bf4547dc59-33618c95b54c005e
 - Source: https://docs.adaptavist.com/sr4js/latest/features#workflows--en#post-functions--en#fast-track-transition-an-issue--en
 
 The _Fast-track transition an issue_ post-function transitions an issue to a chosen status if the provided condition holds true. For example, we can use this post function to make sure any issues created with the priority status of _Highest_ are immediately escalated.

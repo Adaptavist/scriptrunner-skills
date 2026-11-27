@@ -3,10 +3,10 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features > Workflow Rules
-- Doc ID: doc-sr4jc-97e8fb32-3b53-424a-9761-f7c803b821cd-c0ccb4fc8c006d8a
+- Doc ID: doc-sr4jc-983bbfd5-2ab2-41bd-b4b5-87fb916fe13d-c0ccb4fc8c006d8a
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules#troubleshoot-workflow-rules--en
 
-Note: You can view Workflows in ScriptRunner for Jira Cloud if you have created a restriction, validator, or workflow action from the Workflows within the Jira Administration menus. Once added in Jira, the workflow then appears in the Workflows section of ScriptRunner for Jira Cloud, from where you can edit or disable it.
+Note: You can view Workflows in ScriptRunner for Jira Cloud if you have created a restriction, validator, or workflow action from Workflows within the _Jira Administration_ menus. Once added in Jira, the workflow then appears in the _Workflows_ section of ScriptRunner for Jira Cloud, from where you can edit or disable it.
 
 ## Limitations on restrictions and validators
 
@@ -18,22 +18,28 @@ Atlassian provides information on [Jira Expressions Types](https://developer.atl
 
 You can execute expressions using the [Evaluate Jira expression REST API operation](https://developer.atlassian.com/cloud/jira/platform/rest/#api-rest-api-2-expression-eval-post) and use the meta.complexity [expand](https://developer.atlassian.com/cloud/jira/platform/rest/#expansion) parameter to see the runtime complexity and number of expensive operations triggered.
 
-## Perform actions workflow rules limitations
+## Perform Actions workflow rules limitations
+
+### Failed loading due to configuration size
+
+As a best practice, we advise storing Perform actions scripts as files, as this reduces the configuration size and fixes a known issue where large Perform actions fail to load.
+
+### Asynchronous webhooks
 
 Perform actions rules in ScriptRunner for Jira Cloud are implemented as asynchronous webhooks. This means that:
 
 -   Workflow actions cannot cancel a transition.
--   The work item may be displayed to the user before all the workflow actions have executed. ScriptRunner attempts to indicate to the user that the work item has been updated in the background, but this is not guaranteed.
+-   The Work item may be displayed to the user before all the workflow actions have executed. ScriptRunner attempts to indicate to the user that the Work item has been updated in the background, but this is not guaranteed.
 -   The order of workflow action execution is not defined (one action cannot rely on the output of another).
--   If you add a workflow action for creating a transition, then it must be ordered below the workflow action named 'Re-index a work item to keep indexes in sync with the database' to ensure the work item gets created before the workflow action runs.
+-   If you add a workflow action for creating a transition, then it must be ordered below the workflow action named _Re-index a work item to keep indexes in sync with the database_ to ensure the Work item gets created before the workflow action runs.
 
-An epic Perform actions rule can be cloned; however, the work items contained within that epic are not cloned. You will, therefore, need to recreate any associated work.
+An epic Perform actions rule can be cloned; however, the Work items contained within that epic are not cloned. You will, therefore, need to recreate any associated work.
 
 ## Troubleshooting tips
 
-### Known issue error for the clone work item workflow action
+### Known issue for the Clone Work Item Workflow Action
 
-Issue description: When cloning a work item with attachments in the rich text field, you may encounter an error if you _have enabled_ [Atlassian's new transition experience](https://community.atlassian.com/forums/Jira-articles/Now-GA-try-the-new-issue-transition-experience-in-Jira/ba-p/2734436). Read more in our [Breaking Changes](https://docs.adaptavist.com/sr4jc/latest/release-notes/release-notes#atlassians-new-transition-experience-compatibility-with-jira-expressions--en) documentation. For example:
+Issue description: When cloning a Work item with attachments in the rich text field, you may encounter an error if you _have enabled_ [Atlassian's new transition experience](https://community.atlassian.com/forums/Jira-articles/Now-GA-try-the-new-issue-transition-experience-in-Jira/ba-p/2734436). Read more in our [Breaking Changes](https://docs.adaptavist.com/sr4jc/latest/release-notes/release-notes#atlassians-new-transition-experience-compatibility-with-jira-expressions--en) documentation. For example:
 
 ```
 2025-03-14 18:34:49.554 WARN - POST request to /rest/api/3/issue returned an error code: status: 400 - Bad Request

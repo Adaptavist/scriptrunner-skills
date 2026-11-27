@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Behaviours > Behaviours Examples
-- Doc ID: doc-sr4js-3f364688-e041-4955-89a6-1036c6ae813f-8cee9fab0bb1f51f
+- Doc ID: doc-sr4js-f836f263-390f-456d-8c67-54b0173c23de-8cee9fab0bb1f51f
 - Source: https://docs.adaptavist.com/sr4js/latest/features#behaviours--en#behaviours-examples--en#restricting-comment-visibility--en
 
 Behaviours allow you to control comment visibility by configuring the `commentLevel` field. You can either set specific options for this field or lock it to a fixed value. This feature is particularly useful when you want to restrict the visibility of comments added during issue editing or transitions to certain users only.

@@ -3,7 +3,7 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features > ScriptRunner Enhanced Search
-- Doc ID: doc-sr4jc-cb7d56b2-f4a7-4bb9-a5e1-a0af5957918d-e9856b4125496e60
+- Doc ID: doc-sr4jc-aa189458-c390-432d-b054-818feb429798-e9856b4125496e60
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search#build-efficient-queries--en
 
 Occasionally, you may encounter long loading times, which can be a result of writing inefficient queries. The image below summarises how you can write efficient queries and how you can avoid writing inefficient ones:

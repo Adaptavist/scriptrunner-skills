@@ -3,8 +3,10 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: HAPI
-- Doc ID: doc-sr4jc-67f0bdb9-4f8f-4935-8ff1-feff26864cc3-48d3cc24b1e3cfe3
+- Doc ID: doc-sr4jc-0098ed43-6039-4a41-892c-dff33171ecf2-48d3cc24b1e3cfe3
 - Source: https://docs.adaptavist.com/sr4jc/latest/hapi#work-with-comments--en
+
+Learn how to add and retrieve comments on work items using HAPI.
 
 With HAPI, you can easily add comments to work items and retrieve comments from work items.
 

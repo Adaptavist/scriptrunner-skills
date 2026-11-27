@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Best Practices > Write Code
-- Doc ID: doc-sr4js-dcf7bddf-6668-4c98-8074-978c8349a570-b43376e7ae6ef044
+- Doc ID: doc-sr4js-58c83b69-45fb-47ba-858a-b64c92dbee8c-b43376e7ae6ef044
 - Source: https://docs.adaptavist.com/sr4js/latest/best-practices/write-code#using-gstring-templates--en
 
 ScriptRunner allows you to write Groovy scripts with dynamically generated text using GString Templates. You can add dynamic text in a template using the `${expression}` syntax. All editors supporting GString Templates in ScriptRunner have [Code Insight](https://docs.adaptavist.com/sr4js/latest/best-practices/write-code/code-editor), allowing you to utilize code completions, parameter hints, and Javadoc lookup.

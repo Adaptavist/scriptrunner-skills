@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Built-in scripts
-- Doc ID: doc-sr4js-f6bba2f3-f2be-459c-b3fc-7977d223ee4a-46aca5d04c5bd36d
+- Doc ID: doc-sr4js-3f8929ea-5010-4cad-b9be-7a1bfe49e79b-46aca5d04c5bd36d
 - Source: https://docs.adaptavist.com/sr4js/latest/features#built-in-scripts--en#change-dashboard-filter-or-board-ownership--en
 
 Use the _Change Dashboard, Filter, or Board Ownership_ built-in script to change the owner of the selected [dashboards](https://confluence.atlassian.com/adminjiraserver100/managing-dashboards-1442846260.html), [filters](https://confluence.atlassian.com/adminjiraserver100/managing-filters-1442846255.html), and [board](https://confluence.atlassian.com/jirasoftwareserver/what-is-a-board-938845235.html) s from one user to another.

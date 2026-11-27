@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Fragments
-- Doc ID: doc-sr4js-b8b3e653-3f34-4b48-a7e4-60ca1cf10dfc-06153adf68e4646a
+- Doc ID: doc-sr4js-7f4ab833-ac3a-4e36-b76a-59812d033433-06153adf68e4646a
 - Source: https://docs.adaptavist.com/sr4js/latest/features#fragments--en#fragment-locations--en
 
 Fragment locations are key to creating a [Fragment](https://docs.adaptavist.com/sr4js/latest/features/fragments). For example, if you want to create a button (web link), or banner (web panel), you need to know where to put it.

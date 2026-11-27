@@ -3,8 +3,10 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: HAPI
-- Doc ID: doc-sr4jc-cec53ab6-b67e-497f-864a-e6f49417d8c2-1873bce9a831f7dc
+- Doc ID: doc-sr4jc-80af392d-6607-44e9-b59c-f0a80a23eaf6-1873bce9a831f7dc
 - Source: https://docs.adaptavist.com/sr4jc/latest/hapi#rewrite-scripts-with-hapi--en
+
+Learn how to simplify your existing scripts using HAPI and discover helpful tips for rewriting and optimizing them.
 
 Here you'll find useful information on how you can simplify your current scripts with HAPI, and learn some helpful tips too.
 
@@ -20,9 +22,15 @@ There are many reasons you should simplify your scripts with HAPI:
 
 ## How to simplify scripts using HAPI examples
 
+### Non-HAPI and HAPI script examples
+
+Review the following Non-HAPI and HAPI script examples to understand how HAPI simplifies common automation tasks.
+
+### Copying labels from a work item to its outward-linked work items example
+
 This script automates the copying of every label from a work item to all work items linked to it, specifically targeting those with an outward link. You can compare the Non-HAPI and HAPI versions. See the examples outlined below.
 
-[Non-HAPI](https://docs.adaptavist.com/sr4jc/latest/hapi/rewrite-scripts-with-hapi#how-to-simplify-scripts-using-hapi-examples--en__codeblock-13044)
+Non-HAPI
 
 ```
 // Specify the Work Item's key
@@ -71,7 +79,7 @@ def successStatusByWorkItemKey = linkedWorkItems.collectEntries { Map linkedWork
 Please see the 'Logs' tab for more information on what work items were updated."""
 ```
 
-[HAPI](https://docs.adaptavist.com/sr4jc/latest/hapi/rewrite-scripts-with-hapi#how-to-simplify-scripts-using-hapi-examples--en__codeblock-13045)
+HAPI
 
 ```
 // Specify the Work Item by key
@@ -90,9 +98,11 @@ successStatusByWorkItemKey ? """Labels successfully copied to work items: ${succ
 Please see the 'Logs' tab for more information on what work items were updated.""" : "No outward links found. No labels copied."
 ```
 
+### Setting the impediment flag example
+
 This script enables you to select work items that match criteria specified in a JQL query and set the _impediment_ flag on each of them.
 
-[Non-HAPI](https://docs.adaptavist.com/sr4jc/latest/hapi/rewrite-scripts-with-hapi#how-to-simplify-scripts-using-hapi-examples--en__section-13071)
+Non-HAPI
 
 ```
 // Define a JQL query to search for the work items on which you want to set the impediment flag
@@ -150,7 +160,7 @@ searchResult.issues.each { Map workItem ->
 "Script Completed - Check the Logs tab for information on which work items were updated."
 ```
 
-[HAPI](https://docs.adaptavist.com/sr4jc/latest/hapi/rewrite-scripts-with-hapi#how-to-simplify-scripts-using-hapi-examples--en__codeblock-13049)
+HAPI
 
 ```
 // Define a JQL query to search for the work items on which you want to set the impediment flag
@@ -167,9 +177,11 @@ WorkItems.search(query).each { workItem ->
 "Script Completed - Check the Logs tab for information on which work items were updated."
 ```
 
+### Summing custom field values across epic work items example
+
 This script adds all the values of a custom field from all the work items and subtasks contained in an epic, and sets the sum as the value of the same custom field in the epic work item.
 
-[Non-HAPI](https://docs.adaptavist.com/sr4jc/latest/hapi/rewrite-scripts-with-hapi#how-to-simplify-scripts-using-hapi-examples--en__codeblock-13052)
+Non-HAPI
 
 ```
 //Epic Link Custom Field ID
@@ -245,7 +257,7 @@ put("/rest/api/2/issue/$epicKey")
         ]).asString()
 ```
 
-[HAPI](https://docs.adaptavist.com/sr4jc/latest/hapi/rewrite-scripts-with-hapi#how-to-simplify-scripts-using-hapi-examples--en__codeblock-13053)
+HAPI
 
 ```
 //the name of the custom field. This code will work just as well with the custom field ID instead i.e. 10124L
@@ -285,10 +297,6 @@ epicWorkItem.update {
 ```
 
 Once the code has been updated, you might not need some imports - hover over them to see if they're still required in your script.
-
-### Non-HAPI and HAPI script examples
-
-Review the following Non-HAPI and HAPI script examples to understand how HAPI simplifies common automation tasks.
 
 ## How to rewrite existing scripts video demo
 

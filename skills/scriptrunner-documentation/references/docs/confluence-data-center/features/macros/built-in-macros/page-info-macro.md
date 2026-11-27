@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Macros > Built-In Macros
-- Doc ID: doc-sr4c-e7b5afef-c3c4-42e4-a6c5-1a6e4d348c93-c9b922f13ad1b59a
+- Doc ID: doc-sr4c-4dc69839-ef25-4b02-86ed-03fe1134e2e0-c9b922f13ad1b59a
 - Source: https://docs.adaptavist.com/sr4c/latest/features#macros--en#built-in-macros--en#page-info-macro--en
 
 The Page Info macro makes it easy to display information about the page it is used on.

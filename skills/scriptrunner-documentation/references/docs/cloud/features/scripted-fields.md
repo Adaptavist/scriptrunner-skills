@@ -3,7 +3,7 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features
-- Doc ID: doc-sr4jc-aa487484-564a-4f31-8c1c-cbb15e0acad1-57aff6314797a6d6
+- Doc ID: doc-sr4jc-5e8d9879-7974-48ee-bc10-81f6e334b6a4-57aff6314797a6d6
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/scripted-fields
 
 Scripted fields let you use Groovy scripts to calculate and display dynamic values in Jira issues.
@@ -23,9 +23,9 @@ Tip: Remember, our scripts are written in Groovy! Check out our page on [Scripti
 
 ## What are Scripted Fields?
 
-You can use ScriptRunner for Jira Cloud's _Scripted Fields_ to customise how the information for a work item is displayed _._ They enable you to display information that would otherwise be unavailable for a work item by calculating or amalgamating data from one or more existing fields. Check out our [examples](https://docs.adaptavist.com/sr4jc/latest/features/scripted-fields/example-scripted-fields) for more details.
+You can use ScriptRunner for Jira Cloud's _Scripted Fields_ to customise how the information for a work item is displayed_._ They enable you to display information that would otherwise be unavailable for a work item by calculating or amalgamating data from one or more existing fields. Check out our [examples](https://docs.adaptavist.com/sr4jc/latest/features/scripted-fields/example-scripted-fields) for more details.
 
-Scripted Fields appear on your screens when you assign their associated custom fields to the relevant screen.
+Tip: Remember! Scripted Fields appear on your screens when you assign their associated custom fields to the relevant screen. This is only possible if you have already added custom fields within your Jira admin settings.
 
 Note: Add-on User
 

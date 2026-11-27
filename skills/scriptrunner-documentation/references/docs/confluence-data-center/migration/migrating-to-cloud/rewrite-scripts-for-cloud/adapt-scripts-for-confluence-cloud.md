@@ -2,9 +2,9 @@
 
 - Platform: confluence-data-center
 - Space: SR4C
-- Hierarchy: Migration > Migrating to or from Cloud > Rewrite Scripts for Cloud
-- Doc ID: doc-sr4c-d1545989-b502-4ac2-b971-1dcb9e671723-76e7bd3ce445bca7
-- Source: https://docs.adaptavist.com/sr4c/latest/migration#migrating-to-or-from-cloud--en#rewrite-scripts-for-cloud--en#adapt-scripts-for-confluence-cloud--en
+- Hierarchy: Migration > Migrating to Cloud > Rewrite Scripts for Cloud
+- Doc ID: doc-sr4c-55be314c-41d2-4e62-8006-5e749d1e7ffa-1d26fc88c43ae824
+- Source: https://docs.adaptavist.com/sr4c/latest/migration#migrating-to-cloud--en#rewrite-scripts-for-cloud--en#adapt-scripts-for-confluence-cloud--en
 
 The following steps will guide you through understanding how scripts work in Confluence Cloud, enabling you to effectively rewrite your scripts.
 
@@ -24,7 +24,7 @@ Identify any API calls within your scripts, especially those that interact with 
     
     -   Compile a list of API calls in your Server/Data Center scripts.
     -   Include calls to Confluence's internal APIs and any external applications.
-    -   Verify the purpose of each API call by checking the [Atlassian Confluence REST API](https://developer.atlassian.com/cloud/confluence/rest/v2/intro/#about) documentation or using [Migration Tools](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-or-from-cloud/rewrite-scripts-for-cloud#rewrite-scripts-for-cloud--en__migration-tools).
+    -   Verify the purpose of each API call by checking the [Atlassian Confluence REST API](https://developer.atlassian.com/cloud/confluence/rest/v2/intro/#about) documentation or using [Migration Tools](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-cloud/rewrite-scripts-for-cloud#rewrite-scripts-for-cloud--en__migration-tools).
     
 2.  Understand API endpoints:
     
@@ -41,7 +41,7 @@ Identify any API calls within your scripts, especially those that interact with 
     -   Confluence Cloud APIs typically use OAuth 2.0 for authorization. You'll need to manage tokens and ensure that your requests include the appropriate authorization headers.
     
 
-For more details on APIs see the [Best Practices and Supporting Technical Information](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-or-from-cloud/rewrite-scripts-for-cloud/migration-best-practices-and-supporting-technical-information) page.
+For more details on APIs see the [Best Practices and Supporting Technical Information](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-cloud/rewrite-scripts-for-cloud/migration-best-practices-and-supporting-technical-information) page.
 
 ## Step three: Understand and apply basic operations
 
@@ -144,7 +144,7 @@ By following these steps, you'll be well-prepared to rewrite your Server/Data Ce
 
 ## Step five: Test your scripts, API calls and integrations
 
-1.  Test real scenarios: Use the [test environment](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-or-from-cloud/rewrite-scripts-for-cloud/prepare-to-migrate-scripts) to simulate real scenarios and workflows that your scripts will encounter in production.
+1.  Test real scenarios: Use the [test environment](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-cloud/rewrite-scripts-for-cloud/prepare-to-migrate-scripts) to simulate real scenarios and workflows that your scripts will encounter in production.
     
     This includes testing API calls, integrations with other applications, and handling various data inputs and outputs.
     
@@ -167,7 +167,7 @@ This is a manual process, so each script must be copied manually from the test e
 
 ## Other resources
 
--   [Feature Parity](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-or-from-cloud/feature-parity)
--   [Rewriting Scripts](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-or-from-cloud/rewrite-scripts-for-cloud)
--   [Prepare to Migrate Scripts](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-or-from-cloud/rewrite-scripts-for-cloud/prepare-to-migrate-scripts)
--   [Migration Best Practices and Supporting Technical Information](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-or-from-cloud/rewrite-scripts-for-cloud/migration-best-practices-and-supporting-technical-information)
+-   [Feature Parity](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-cloud/feature-parity)
+-   [Rewriting Scripts](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-cloud/rewrite-scripts-for-cloud)
+-   [Prepare to Migrate Scripts](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-cloud/rewrite-scripts-for-cloud/prepare-to-migrate-scripts)
+-   [Migration Best Practices and Supporting Technical Information](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-cloud/rewrite-scripts-for-cloud/migration-best-practices-and-supporting-technical-information)

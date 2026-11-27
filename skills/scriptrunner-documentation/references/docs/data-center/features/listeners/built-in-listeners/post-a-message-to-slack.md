@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Listeners > Built-In Listeners
-- Doc ID: doc-sr4js-af10cea0-7251-4702-9993-18420c5aad87-0836166195bfdf11
+- Doc ID: doc-sr4js-5afa3943-182b-451b-8fae-2b1e447842d9-0836166195bfdf11
 - Source: https://docs.adaptavist.com/sr4js/latest/features#listeners--en#built-in-listeners--en#post-a-message-to-slack--en
 
 This listener allows you to send a personalized custom message to your Slack room. When configuring a listener there are bindings for the issue object and event object.

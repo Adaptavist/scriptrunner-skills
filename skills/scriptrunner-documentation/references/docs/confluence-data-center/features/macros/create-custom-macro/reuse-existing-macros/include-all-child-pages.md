@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Macros > Create Custom Macro > Reuse Existing Macros
-- Doc ID: doc-sr4c-7255ed2d-27f3-4f72-bb58-90209a6d5792-3ac4090f6e105f35
+- Doc ID: doc-sr4c-ddf66fb1-77a3-4690-94f6-2f29a9881694-3ac4090f6e105f35
 - Source: https://docs.adaptavist.com/sr4c/latest/features#macros--en#create-custom-macro--en#reuse-existing-macros--en#include-all-child-pages--en
 
 You can include the content of all child pages using the _Including All Child Pages_ macro.

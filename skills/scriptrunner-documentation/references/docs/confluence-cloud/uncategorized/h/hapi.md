@@ -3,7 +3,7 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: n/a
-- Doc ID: doc-sr4cc-bf686c3f-0592-4844-90a4-a313932007bf-a7a7f2af2cdf45d3
+- Doc ID: doc-sr4cc-f3c90cf0-2088-4f2d-9237-3315850a219e-a7a7f2af2cdf45d3
 - Source: https://docs.adaptavist.com/sr4cc/latest/hapi
 
 Learn about HAPI, our simple API that is used for running common tasks.
@@ -12,7 +12,7 @@ HAPI is an API used for carrying out common tasks in Confluence. These can inclu
 
 Visit ScriptRunner HQ to find out more about HAPI.
 
-[ScriptRunner HQ - update](https://www.scriptrunnerhq.com/atlassian-apps/confluence/scriptrunner-for-confluence-cloud)
+[ScriptRunner HQ](https://www.scriptrunnerhq.com/atlassian-apps/confluence/scriptrunner-for-confluence-cloud)
 
 ## Who is HAPI for?
 

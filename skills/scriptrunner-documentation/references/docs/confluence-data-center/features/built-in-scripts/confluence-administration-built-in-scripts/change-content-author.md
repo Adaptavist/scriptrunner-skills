@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Built-In Scripts > Confluence Administration Built-In Scripts
-- Doc ID: doc-sr4c-bb0f783d-6224-4133-be58-03b36240d331-7bb0b7258dc09141
+- Doc ID: doc-sr4c-8ca015d6-3940-4d68-8e96-73bea0bbf751-7bb0b7258dc09141
 - Source: https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#confluence-administration-built-in-scripts--en#change-content-author--en
 
 Using this built-in script, you can change the author of Confluence content, like pages, blog posts, comments and attachments.

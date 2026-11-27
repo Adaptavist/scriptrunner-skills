@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Best Practices and App Management
-- Doc ID: doc-sr4c-ebb2eba7-5341-4137-954c-05b015384b0c-5289a1c1f902a931
+- Doc ID: doc-sr4c-7df5f3c6-bb40-4f3d-ba4b-08cb396c06bc-5289a1c1f902a931
 - Source: https://docs.adaptavist.com/sr4c/latest/best-practices-and-app-management#script-plugins--en
 
 A script plugin is an Atlassian app that bundles ScriptRunner scripts and their configurations.

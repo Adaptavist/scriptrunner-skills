@@ -3,7 +3,7 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features > Behaviours
-- Doc ID: doc-sr4jc-19738f76-f198-470c-9f26-6dd52d5d9ac2-f99a79caffaba21a
+- Doc ID: doc-sr4jc-7786b709-b8e8-463e-96d3-b0000571bf43-f99a79caffaba21a
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/behaviours#troubleshoot-behaviours--en
 
 Behaviours are built on the [UI Modifications API](https://developer.atlassian.com/platform/forge/custom-ui-jira-bridge/uiModifications/) provided by Atlassian. Described below are some of the common errors that can occur as a result of using that API for the Behaviours feature.
@@ -20,9 +20,7 @@ Note: Scripting language
 
 Ensure you are using [Javascript](../../get-started/scripting-in-script-runner-for-jira-cloud.md) or Typescript within your script, not Groovy. Refer to [Scripting in ScriptRunner for Jira Cloud](../../get-started/scripting-in-script-runner-for-jira-cloud.md) for more details on our scripts.
 
-If your behaviour script does not trigger as expected, we recommend checking the following: Is the space a Jira Service Management space? If so, JSM is currently not [supported](../behaviours.md) in Behaviours.
-
-We also recommend adding logging to the first line of your script if you are using a [supported product](https://docs.adaptavist.com/sr4jc/latest/features/behaviours/behaviours-supported-fields-and-products) and space type. For example
+If your behaviour script does not trigger as expected, we recommend adding logging to the first line of your script if you are using a [supported product](https://docs.adaptavist.com/sr4jc/latest/features/behaviours/behaviours-supported-fields-and-products) and space type. For example
 
 ```
 logger.info("Debugging : Script for behaviour XXX is running")
@@ -60,7 +58,7 @@ getFieldById("description").setValue({
 
 You may also find mapping your Behaviours to all spaces or all work types helpful. Additionally, you may need to add a condition to check the space key or work type and then update or clear the `Description` field.
 
-Atlassian's [new transition experience](https://community.atlassian.com/forums/Jira-articles/Now-GA-try-the-new-issue-transition-experience-in-Jira/ba-p/2734436) in Jira is being permanently rolled out in April 2025. As a consequence, how your Jira expressions ( conditions and validators) work will change. Check out our [Breaking Changes](https://docs.adaptavist.com/sr4jc/latest/release-notes/release-notes#atlassians-new-transition-experience-compatibility-with-jira-expressions--en) section for more information.
+Atlassian's [new transition experience](https://community.atlassian.com/forums/Jira-articles/Now-GA-try-the-new-issue-transition-experience-in-Jira/ba-p/2734436) in Jira was permanently rolled out in April 2025. As a consequence, how your Jira expressions (restrict transitions and validate details) work changed. Check out our [Breaking Changes](https://docs.adaptavist.com/sr4jc/latest/release-notes/release-notes#atlassians-new-transition-experience-compatibility-with-jira-expressions--en) section for more information.
 
 ## Incorrect value type error
 

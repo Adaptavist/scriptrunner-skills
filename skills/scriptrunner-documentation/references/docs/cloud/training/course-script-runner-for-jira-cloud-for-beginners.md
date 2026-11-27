@@ -3,8 +3,10 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Training
-- Doc ID: doc-sr4jc-35724001-815b-44e5-af16-59d49ed5e6d0-71bd56f99d9cc6d3
+- Doc ID: doc-sr4jc-f379775f-fdfc-4e83-a7ec-715aaf6b7234-71bd56f99d9cc6d3
 - Source: https://docs.adaptavist.com/sr4jc/latest/training/course-scriptrunner-for-jira-cloud-for-beginners
+
+Learn the fundamentals of ScriptRunner for Jira Cloud through a beginner-friendly course that builds your skills step by step.
 
 For complete beginners to ScriptRunner and scripting, or for users with some experience of ScriptRunner who want to brush up, this course will give you the tools you need to start making the most of ScriptRunner for Jira Cloud.
 

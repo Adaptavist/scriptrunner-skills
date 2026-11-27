@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > JQL Functions > Included JQL Functions
-- Doc ID: doc-sr4js-e14c3a22-4f68-49a3-9e77-67839eec52a6-d0f42c08ee990248
+- Doc ID: doc-sr4js-3f1c1b09-d1d3-4bcd-9aba-99f3a1e2c9e0-d0f42c08ee990248
 - Source: https://docs.adaptavist.com/sr4js/latest/features#jql-functions--en#included-jql-functions--en#sub-tasks--en
 
 This page provides information on various functions used to find issues with sub-tasks and parents:

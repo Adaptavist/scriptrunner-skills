@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Built-In Scripts > Confluence Administration Built-In Scripts
-- Doc ID: doc-sr4c-ff32f766-2d43-45b9-a855-95a4e47aebdc-99fd049e3eb1b419
+- Doc ID: doc-sr4c-d008827c-57b0-4b31-859a-955f373a3e3c-99fd049e3eb1b419
 - Source: https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#confluence-administration-built-in-scripts--en#list-scheduled-jobs--en
 
 [Jobs](https://docs.adaptavist.com/sr4c/latest/features/jobs) are a way to run code at specific times of the day/week/month or on an interval in order to perform an automated task.

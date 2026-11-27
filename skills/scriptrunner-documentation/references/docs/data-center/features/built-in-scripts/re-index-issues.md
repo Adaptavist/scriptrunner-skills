@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Built-in scripts
-- Doc ID: doc-sr4js-18357e71-d2af-4db3-a875-06816e405990-9c0f66dcb18b4ec4
+- Doc ID: doc-sr4js-d0efe14a-8d12-4357-90a6-498acea65a61-9c0f66dcb18b4ec4
 - Source: https://docs.adaptavist.com/sr4js/latest/features#built-in-scripts--en#re-index-issues--en
 
 Use _Re-index Issues_ to re-index a project or issues returned by a filter. Re-indexing may be required after a change to the database, or when an indexing issue occurs. The _Re-index Issues_ built-in script allows you to re-index only those issues affected by the changes, saving time and reducing downtime on your Jira instance.

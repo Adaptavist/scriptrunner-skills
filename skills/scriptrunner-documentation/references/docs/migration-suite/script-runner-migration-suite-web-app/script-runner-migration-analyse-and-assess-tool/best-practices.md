@@ -3,7 +3,7 @@
 - Platform: migration-suite
 - Space: SMS
 - Hierarchy: ScriptRunner Migration Suite Web App > ScriptRunner Migration Analyse and Assess Tool
-- Doc ID: doc-sms-b4d5c50d-765d-4e9c-aff8-a1d574919cbb-723799e98700367e
+- Doc ID: doc-sms-b51b1485-aa99-473c-aa75-0321d87eaf61-723799e98700367e
 - Source: https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-analyse-and-assess-tool/best-practices
 
 ## Convert scripts best practices

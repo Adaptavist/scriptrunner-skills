@@ -3,7 +3,7 @@
 - Platform: connect
 - Space: SRC
 - Hierarchy: n/a
-- Doc ID: doc-src-5164ac70-3721-4496-91bc-a58a7c3330c9-cdc226ca9d15404e
+- Doc ID: doc-src-ded6dc10-2eab-4f03-89a9-edcd8e44c33d-cdc226ca9d15404e
 - Source: https://docs.adaptavist.com/src/latest/security
 
 Learn about the security measures in place for our app.
@@ -16,7 +16,7 @@ ScriptRunner Connect is a multi-tenant SaaS product that ensures the separation 
 
 The app achieved positive results from a penetration test conducted by a third-party, [CREST-certified vendor](https://www.crest-approved.org/).
 
-ScriptRunner Connect is also part of a public [bug bounty program](https://bugcrowd.com/adaptavist-og?preview=8286ea2b71d7eee1041c27b428aa0d14).
+ScriptRunner Connect is also part of a public [bug bounty program](https://www.bugcrowd.com/).
 
 To proactively identify potential vulnerabilities, we operate vulnerability scanners for third-party packages and ensure all security-related changes are thoroughly peer-reviewed. Our team is also trained in secure coding practices, reinforcing our commitment to maintaining a secure environment.
 
@@ -29,6 +29,12 @@ For script executions, ScriptRunner Connect uses [V8 Isolates](https://v8.dev/) 
 Access to ScriptRunner Connect's AWS account and other cloud services is strictly limited to the ScriptRunner Connect engineering team.
 
 We also use private network subnets for added security where appropriate.
+
+## Private cloud hosting
+
+For the strictest requirements, ScriptRunner Connect can run in your own AWS account instead of our shared service. We deploy and maintain it there, so your data and integrations stay in your infrastructure. You can also deploy it into your company's VPC, where it can reach your internal services directly and be cut off from the internet. Private cloud hosting includes single sign-on (SAML, OAuth or LDAP) through Auth0, so it supports the identity providers Auth0 can connect to.
+
+For more, see [Private cloud hosting](https://www.scriptrunnerhq.com/scriptrunner-connect/private-cloud-hosting).
 
 ## Data retention and security
 
@@ -58,19 +64,78 @@ If you'd like to customize this process, we offer a public REST API that include
 
 ## Compliance
 
-ScriptRunner Connect is GDPR compliant and [ISO 27001](https://www.iso.org/standard/27001) and [SOC Type 2](https://www.imperva.com/learn/data-security/soc-2-compliance/) certified.
+ScriptRunner Connect is GDPR compliant and [ISO 27001](https://www.iso.org/standard/27001) and [SOC 2 Type 2](https://www.imperva.com/learn/data-security/soc-2-compliance/) certified.
 
 While we aim to reduce the PII (Personally Identifiable Information) data in our logs, we may occasionally temporarily increase our logging levels, which could contain PII data, for troubleshooting.
 
-For further information, you may refer to the following related compliance documents: [AWS](https://aws.amazon.com/compliance/), [The Adaptavist Group Terms and Conditions](https://www.theadaptavistgroup.com/policy/terms), [The Adaptavist Group Privacy Policy](https://www.theadaptavistgroup.com/policy/privacy), and the [The Adaptavist Group Data Processing Addendum](https://www.theadaptavistgroup.com/policy/dpa).
+For further information, you may refer to the following related compliance documents:
+
+-   [AWS](https://aws.amazon.com/compliance/)
+    
+-   [The Adaptavist Group Terms and Conditions](https://www.theadaptavistgroup.com/policy/terms)
+    
+-   [The Adaptavist Group Privacy Policy](https://www.theadaptavistgroup.com/policy/privacy)
+    
+-   [The Adaptavist Group EULA](https://www.theadaptavistgroup.com/policy/adaptavist-eula)
+    
+    -   [Annexe to The Adaptavist Group EULA](https://www.theadaptavistgroup.com/policy/annexe-to-adaptavist-eula-for-scriptrunner-connect)
+        
+-   [The Adaptavist Group Data Processing Addendum](https://www.theadaptavistgroup.com/policy/dpa)
+    
+    -   [Supplement to the Data Processing Addendum](https://cdn.sanity.io/files/qec1bdmb/production/ba361187a8752e8a17885cb2c09597053420f81f.pdf)
+        
 
 ## AI features
 
-ScriptRunner Connect offers an AI-assistant feature that uses OpenAI's GPT models to provide its services. This feature is opt-in, meaning it is only available with your explicit consent.
+ScriptRunner Connect has an AI agent built into the web app, the embedded agent. It replaces the previous AI assistant, which some teams still see while the embedded agent is being rolled out.
 
-ScriptRunner Connect stores the AI assistant chat history for functional purposes only; no user data is processed or permanently stored.
+### The embedded agent
 
-The app does not use your code or any other personal data to train the models. However, if you copy and paste your own proprietary code into the AI chat prompt, the chat content will be sent to a third party, OpenAI, for processing. All interactions with OpenAI are secure, and user data is handled in accordance with our [privacy policy](https://www.theadaptavistgroup.com/policy/privacy?_gl=1*1hdgrpx*_gcl_au*MjA4NDk3NjM4NC4xNzMyMDk5NDQ3*_ga*NDk1MzY2ODEyLjE3MDczMDIxMDA.*_ga_E36BNDVDTN*MTczMzg1MDQzOS42OS4wLjE3MzM4NTA0MzkuNjAuMC4xNjAxNzIxNTc2) , [OpenAI's privacy policy](https://openai.com/policies/privacy-policy), and [OpenAI's data processing addendum.](https://openai.com/policies/data-processing-addendum)
+-   Models
+    -   The embedded agent uses Anthropic's Claude models. You pick the model for each task.
+-   When it runs
+    -   The embedded agent is available to every team, and it runs only when a member starts a task. A Super Admin can turn it off for the whole team in Team settings > AI agent.
+-   What is sent to Anthropic?
+    -   Your messages, the files you attach, and what the agent reads to do the work. Scripts, workspace settings and invocation, console and HTTP logs, which can contain data from the systems your integrations connect to. The agent cannot read connector credentials or the values of _Password_ parameters. With limited access, it reads other parameter values only once you approve.
+-   Where is it processed?
+    -   Calls to the model are not bound to your ScriptRunner Connect region: Anthropic routes them through its global data centres, mainly in the US. Your tasks and attached files are stored in your ScriptRunner Connect region.
+-   What is kept?
+    -   A task is kept until you delete it. A task with no activity for 180 days is deleted. We do not write your messages or the agent's replies to our logs.
+-   Training
+    -   We do not train AI models on your data. For how Anthropic handles the data it receives, see Anthropic's commercial terms.
+-   Isolation
+    -   Each task runs in its own temporary sandbox. The agent acts as you, using a temporary API key that expires within an hour and can be revoked. It can never do more than you can, and with limited access, it does only what the task's access policy grants or you approve. Its changes are recorded in the team's audit log.
+-   Controls in each task
+    -   Under Security below the message box, you decide whether the agent has internet access, whether it can call your event listeners' URLs, and whether it sends the ScriptRunner Connect team agentic feedback: short notes on what got in its way, without personal data, business data, credentials or script content. Agentic feedback is on by default.
+-   Share with us
+    -   The ScriptRunner Connect team reads a task only if you share it, with Share chat when you send feedback.
+
+For more, see [Work with the embedded agent](../../work-with-ai-agents/work-with-the-embedded-agent.md).
+
+### The AI assistant
+
+The previous AI assistant uses OpenAI's GPT models and OpenAI's embeddings to search the ScriptRunner Connect documentation.
+
+-   Before it sends the code you selected, it asks you to confirm, until you tick Don't ask me again.
+-   Your chat history is stored so you can view your previous conversations.
+-   We do not train AI models on your data, including the code you paste into the AI chat prompt. Chat content is sent to OpenAI for processing and handled in line with our privacy policy.
+
+### Private cloud hosting
+
+In private cloud hosting, AI features are off. Upon request, we enable the embedded agent with your own Anthropic API key. Its calls to the model then leave your network and go to Anthropic.
+
+### Checking what AI produces
+
+AI output can be wrong or incomplete. Review the agent's plan before you confirm it, build and test against a non-production environment first, and check the results before you deploy a release to production.
+
+### Terms of use
+
+Your use of the AI features is covered by these terms:
+
+-   [Adaptavist's End User License Agreement](https://www.theadaptavistgroup.com/policy/adaptavist-eula)
+-   [Adaptavist's Data Processing Addendum](https://www.theadaptavistgroup.com/policy/dpa) and [privacy policy](https://www.theadaptavistgroup.com/policy/privacy?_gl=1*1hdgrpx*_gcl_au*MjA4NDk3NjM4NC4xNzMyMDk5NDQ3*_ga*NDk1MzY2ODEyLjE3MDczMDIxMDA.*_ga_E36BNDVDTN*MTczMzg1MDQzOS42OS4wLjE3MzM4NTA0MzkuNjAuMC4xNjAxNzIxNTc2)
+-   [Anthropic's commercial terms](https://www.anthropic.com/legal/commercial-terms) and [usage policy](https://www.anthropic.com/legal/aup), for the embedded agent
+-   OpenAI's [privacy policy](https://openai.com/policies/privacy-policy) and [Data Processing Addendum](https://openai.com/policies/data-processing-addendum), for the AI assistant
 
 ## Backups
 
@@ -83,6 +148,32 @@ ScriptRunner Connect offers Multi-Factor Authentication (MFA) to enhance the app
 Multi-factor authentication (MFA) is a multi-step login process that enhances security by requiring users to provide more information than just a username and password. To log in with MFA enabled, users will use a one-time password (OTP) generated from an authenticator app. Popular options include Authy, Google Authenticator, Auth0 Guardian, and Microsoft Authenticator, all of which can be downloaded from the Google Play Store or Apple App Store.
 
 Users receive a prompt to enable MFA when they sign up for the app. MFA preferences can be managed under user profile settings:
+
+## Controlling access
+
+Access policies
+
+Limitations to what an API key or an AI agent can do. In which teams, workspaces and environments, and which external API endpoints the scripts it triggers can call.
+
+Egress Firewall
+
+Let your team approve the host scripts that can call. Calls to any other host are blocked.
+
+Fixed outbound IP addresses
+
+Calls from your scripts leave from a single IP address per region, so your firewall can allow them in: `34.251.34.27` in the EU and `35.163.23.171` in the US. A dedicated outbound IP address for your company can be requested separately.
+
+Audit logs
+
+Record every change in a team and who made it, the embedded agent's changes included. They are kept for six months.
+
+Password parameters
+
+Once saved, their values are never displayed or returned by the REST API.
+
+Turn the embedded agent off
+
+A Super Admin can turn off the embedded agent for the whole team, in Team settings > AI agent.
 
 ## Conclusion
 

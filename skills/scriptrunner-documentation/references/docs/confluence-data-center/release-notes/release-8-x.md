@@ -3,10 +3,36 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Release Notes
-- Doc ID: doc-sr4c-4ef407ac-9d16-4801-9a73-d0f9e5ee15a3-b91a28e4b938cca4
+- Doc ID: doc-sr4c-a764a6f3-4a3c-4361-809d-fc143fa2033f-b91a28e4b938cca4
 - Source: https://docs.adaptavist.com/sr4c/latest/release-notes/release-8.x
 
 Feature release information about our 8.x versions.
+
+## 8.71.0
+
+26 Nov 2026
+
+### Third-party dependencies updated to remove CVEs
+
+We've updated third party dependencies within ScriptRunner, including `jsoup`, to address known CVEs (Common Vulnerabilities and Exposures). These changes are part of our ongoing hardening work.
+
+### Script editor Java documentation bug fixed
+
+We've fixed an issue in the script editor where documentation for Java (JDK) classes failed to load and showed Cannot fetch documentation, please check your internet connection. The documentation panel and hover now show a View Documentation on docs.oracle.com link to the relevant class or method page.
+
+## 8.70.0
+
+### Security update
+
+We've made targeted security improvements in this release as part of our ongoing hardening work. For more details on how we handle security and vulnerability management, see our [Vulnerabilities and Security](https://docs.adaptavist.com/sr4c/latest/get-started/vulnerabilities-and-security) documentation.
+
+### Third-party dependencies updated to remove CVEs
+
+We've updated third-party dependencies within ScriptRunner, including Apache Ant, to address known CVEs (Common Vulnerabilities and Exposures). These changes are part of our ongoing hardening work.
+
+### Script engine class-loading bug fixed
+
+We've fixed an issue where the ScriptRunner script engine could load duplicate classes. Scripts now load and run as expected.
 
 ## 8.68.0
 
@@ -246,7 +272,7 @@ ScriptRunner for Confluence is now compatible with Confluence 8.9.3!
 
 ### New best practices guide
 
-Check out our new [Best Practices Guide](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Confluence_Data_Center_SR4C/maps/best_practices_and_app_management.ditamap)! This guide covers 11 automation categories of ScriptRunner for Confluence! Each section walks you through different features and scripts we've created to help you automate your Confluence instance to save you time and money!
+Check out our new [Best Practices Guide](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/production/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Confluence_Data_Center_SR4C/maps/best_practices_and_app_management.ditamap)! This guide covers 11 automation categories of ScriptRunner for Confluence! Each section walks you through different features and scripts we've created to help you automate your Confluence instance to save you time and money!
 
 ### Bugs fixed
 

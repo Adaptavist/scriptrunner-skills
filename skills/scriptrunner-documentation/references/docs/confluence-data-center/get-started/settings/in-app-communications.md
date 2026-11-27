@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Get Started > Settings
-- Doc ID: doc-sr4c-3c18837a-6e17-47b3-ba24-ba33672d0668-c3bd8458afb9331f
+- Doc ID: doc-sr4c-fdc682e1-bdaf-4c33-b47a-17787294932f-c3bd8458afb9331f
 - Source: https://docs.adaptavist.com/sr4c/latest/get-started#settings--en#in-app-communications--en
 
 The In-App Inbox is a feature in ScriptRunner that, when enabled, allows ScriptRunner to show notifications in the Inbox when viewing a ScriptRunner admin screen.

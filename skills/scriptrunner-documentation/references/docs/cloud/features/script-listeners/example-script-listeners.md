@@ -3,7 +3,7 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features > Script Listeners
-- Doc ID: doc-sr4jc-a3a6355e-f43c-473b-8448-bbaff28b0572-1752e82e1c829238
+- Doc ID: doc-sr4jc-f5aa7dc7-c8c0-4073-ae9e-9a3e4671b2dc-1752e82e1c829238
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/script-listeners#example-script-listeners--en
 
 Note: Condition script examples
@@ -204,7 +204,7 @@ if (toPriority == "Highest") {
 
 Line 17: Only do anything here if the priority change was to Highest.
 
-Line 21: Generate a HTML message using `MarkupBuilder`
+Line 21: Generate an HTML message using `MarkupBuilder`
 
 Line 24: The issue URL here is created manually. It should be updated.
 

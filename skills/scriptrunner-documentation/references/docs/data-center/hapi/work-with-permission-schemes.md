@@ -3,8 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: HAPI
-- Doc ID: doc-sr4js-a87c6fa5-3eff-4424-ae90-ffbb4eabb15b-70ae758f666c9609
+- Doc ID: doc-sr4js-38635e74-fc2c-4b79-8274-81cc0fd61ff8-70ae758f666c9609
 - Source: https://docs.adaptavist.com/sr4js/latest/hapi#work-with-permission-schemes--en
+
+Retrieve and modify permission schemes using HAPI, with code examples for each operation.
 
 Permission schemes are a collection of [PermissionGrant](https://docs.atlassian.com/software/jira/docs/api/latest/com/atlassian/jira/permission/PermissionGrant.html), which govern whether a user can do a particular action in any given project.
 

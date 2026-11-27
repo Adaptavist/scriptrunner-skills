@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Resources
-- Doc ID: doc-sr4js-a2700e05-f519-422a-a249-d2d48c2942f9-c4e54f4a4fec9b21
+- Doc ID: doc-sr4js-d96dbdbf-d88c-42f2-a58c-b11cf54b934a-c4e54f4a4fec9b21
 - Source: https://docs.adaptavist.com/sr4js/latest/features#resources--en#ldap-connection--en
 
 Adding an LDAP resource allows you to query your LDAP servers in a similar way to database connections.

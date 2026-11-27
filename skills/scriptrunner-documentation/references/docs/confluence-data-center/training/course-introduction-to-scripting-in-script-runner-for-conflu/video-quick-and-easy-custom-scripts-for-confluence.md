@@ -3,14 +3,14 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Training > Course: Introduction to Scripting in ScriptRunner for Confluence
-- Doc ID: doc-sr4c-fa77882e-36d0-4407-88f0-f71ee48d0c4a-ef0a7064b9e5dbaa
+- Doc ID: doc-sr4c-95332207-e97d-4926-ad67-221edd0d05c0-ef0a7064b9e5dbaa
 - Source: https://docs.adaptavist.com/sr4c/latest/training#course-introduction-to-scripting-in-scriptrunner-for-confluence--en#video-quick-and-easy-custom-scripts-for-confluence--en
 
 [Media](https://player.vimeo.com/video/733186349?h=ecc89c1888)
 
 |  |  |  |
 | --- | --- | --- |
-| [Downloadable Resources](https://app.box.com/s/0nx4od9yjpal0k9528y8k47bgr25zzom) |  | [Next](https://docs.adaptavist.com/sr4c/latest/training/course-introduction-to-scriptrunner-for-space-administrators) |
+| [Downloadable Resources](https://app.box.com/s/0nx4od9yjpal0k9528y8k47bgr25zzom) |  | [Next Course](https://docs.adaptavist.com/sr4c/latest/training/course-introduction-to-scriptrunner-for-space-administrators) |
 
 ## Links
 

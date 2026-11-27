@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Behaviours
-- Doc ID: doc-sr4js-b603355e-56b8-4155-8cee-0ce4a036f4a5-ea4b993331dae28e
+- Doc ID: doc-sr4js-b9e640a7-a142-497a-8108-8192864e74e6-ea4b993331dae28e
 - Source: https://docs.adaptavist.com/sr4js/latest/features#behaviours--en#behaviours-supported-fields--en
 
 Many third-party apps provide users with additional fields in Jira. Below is a list of all fields supported by ScriptRunner Behaviours.

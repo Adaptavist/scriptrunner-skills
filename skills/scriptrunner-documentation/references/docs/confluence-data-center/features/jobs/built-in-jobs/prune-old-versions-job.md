@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Jobs > Built-In Jobs
-- Doc ID: doc-sr4c-c28e0c44-2c41-421e-84fc-622db6d56975-47ac48b83d0fdf51
+- Doc ID: doc-sr4c-6cc4ddca-f9d1-4a32-9e6e-0d08e741f087-47ac48b83d0fdf51
 - Source: https://docs.adaptavist.com/sr4c/latest/features#jobs--en#built-in-jobs--en#prune-old-versions-job--en
 
 The Prune Old Page Versions built-in job allows you to automatically prune old page versions according to your requirements.

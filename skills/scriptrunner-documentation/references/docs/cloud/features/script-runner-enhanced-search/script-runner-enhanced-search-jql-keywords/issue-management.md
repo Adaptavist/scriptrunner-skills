@@ -3,8 +3,10 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features > ScriptRunner Enhanced Search > ScriptRunner Enhanced Search JQL Keywords
-- Doc ID: doc-sr4jc-ee45ed8f-8887-4374-8f67-c4f126864bf6-97f678b76656dde9
+- Doc ID: doc-sr4jc-91c6516d-a6df-4213-ad44-b30ad9ba9382-97f678b76656dde9
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search#scriptrunner-enhanced-search-jql-keywords--en#issue-management--en
+
+Use Enhanced Search for Jira Cloud issue management JQL keywords to perform advanced searches, manipulate issues efficiently, and gain granular control over issue queries.
 
 In ScriptRunner Enhanced Search for Jira Cloud, issue management JQL keywords are specialized terms used to perform advanced searches and manipulate issues efficiently. These keywords extend Jira's native JQL functionality to provide more granular control over issue queries.
 

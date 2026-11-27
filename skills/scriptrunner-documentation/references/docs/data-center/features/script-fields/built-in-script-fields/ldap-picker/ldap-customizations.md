@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Script fields > Built-In Script Fields > LDAP Picker
-- Doc ID: doc-sr4js-ec59f84a-d88d-4046-a041-c1271b98a0c0-0cf280b411de6066
+- Doc ID: doc-sr4js-2f9faf5e-6eda-4073-932c-330de9e9b1c1-0cf280b411de6066
 - Source: https://docs.adaptavist.com/sr4js/latest/features#script-fields--en#built-in-script-fields--en#ldap-picker--en#ldap-customizations--en
 
 You can customize the picker in many ways using the _Configuration Script_ option. However, it's recommended you get the basic functionality of your picker working before you work on advanced customization.

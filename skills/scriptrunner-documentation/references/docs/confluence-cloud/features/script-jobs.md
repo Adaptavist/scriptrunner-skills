@@ -3,7 +3,7 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: Features
-- Doc ID: doc-sr4cc-c3e35b82-bbb0-4f7f-bb5e-d54f023831bb-e2c551c2c44ad7ad
+- Doc ID: doc-sr4cc-edd59cec-c674-4ffb-93f3-e26d4c06e115-e2c551c2c44ad7ad
 - Source: https://docs.adaptavist.com/sr4cc/latest/features/script-jobs
 
 Perform automated tasks at predetermined times using Script Jobs.
@@ -33,7 +33,7 @@ For example you could use Script Jobs to archive pages after a certain amount of
 
 1.  Navigate to ScriptRunner and select Script Jobs.
 2.  Provide a Name for your script job.
-3.  Choose if you want it Enabled (or turned on).
+3.  Choose if you want it _Enabled_ (turned on).
 4.  For On This Schedule, select the schedule on which you want this script to run.
     
     Note: The schedule editor lets you choose between running your script on several days during the week (like Monday, Wednesday, Friday) or running your script on particular days of the month (like the last day of the month or the second Tuesday of the month).

@@ -3,14 +3,14 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: HAPI
-- Doc ID: doc-sr4js-1577a7bc-1c9b-42cc-859d-5803ee8c1e09-e10a71f36dcd3dfc
+- Doc ID: doc-sr4js-fc3672ca-2815-417e-bc58-67959ff8fd5c-e10a71f36dcd3dfc
 - Source: https://docs.adaptavist.com/sr4js/latest/hapi#work-with-projects--en
+
+Create, modify, and archive projects using HAPI, with code examples for each operation.
 
 |  |  |
 | --- | --- |
 |  | Migrating to Jira Cloud? This feature is available in Cloud.<br>[HAPI Cloud documentation](https://docs.adaptavist.com/sr4jc/latest/hapi/work-with-spaces) |
-
-With HAPI we've made it easy for you to create, modify, and archive projects.
 
 ## Creating a new project
 

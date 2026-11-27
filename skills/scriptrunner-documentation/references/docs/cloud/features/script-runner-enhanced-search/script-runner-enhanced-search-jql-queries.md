@@ -3,7 +3,7 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features > ScriptRunner Enhanced Search
-- Doc ID: doc-sr4jc-39b49378-d96a-4e60-9608-d248d72df7cc-3d53f24fe42ffd4f
+- Doc ID: doc-sr4jc-e000c299-e8d9-4e65-b51a-6a28538a6627-3d53f24fe42ffd4f
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search#scriptrunner-enhanced-search-jql-queries--en
 
 ## Run a search
@@ -54,7 +54,7 @@ The number of columns is not capped, but depending on your screen resolution, we
 
 As well as running one-off searches, you can save your ScriptRunner Enhanced Search JQL queries as _filters_. Saving your query searches as filters allows you to use [ScriptRunner Enhanced Search JQL functions](https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/scriptrunner-enhanced-search-jql-functions) in other JQL fields.
 
-Follow the steps below to save your filter, and refer to [Saved Filters](https://docs.adaptavist.com/enhanced-search-for-jira-cloud/latest/saved-filters) to understand how these can be used.
+Follow the steps below to save your filter, and refer to [Saved Filters](https://docs.adaptavist.com/enhanced-search-for-jira-cloud/latest/work-with-saved-filters) to understand how these can be used.
 
 1.  Run a search as outlined above and customize the results.
 2.  Click the Save as filter button to save the filter and reuse it later.
@@ -85,7 +85,7 @@ Follow the steps below to save your filter, and refer to [Saved Filters](https:/
     
 5.  Click Save.
 
-To see all [saved filters](https://docs.adaptavist.com/enhanced-search-for-jira-cloud/latest/saved-filters), click Jira Software and navigate to Issues and Filters > View All Filters.
+To see all [saved filters](https://docs.adaptavist.com/enhanced-search-for-jira-cloud/latest/work-with-saved-filters), click Jira Software and navigate to Issues and Filters > View All Filters.
 
 ### Export a saved filter to a CSV file
 

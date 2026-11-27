@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Script fields > Built-In Script Fields > Database Picker
-- Doc ID: doc-sr4js-cb572689-1c95-4add-bc65-17d93c5b7900-084f26e3b90c774f
+- Doc ID: doc-sr4js-932822a8-6d3c-42cd-a306-ab6ec01d29cc-084f26e3b90c774f
 - Source: https://docs.adaptavist.com/sr4js/latest/features#script-fields--en#built-in-script-fields--en#database-picker--en#database-picker-customizations--en
 
 You can customize the picker in many ways using the _Configuration Script_ option. However, it's recommended you get the basic functionality of your picker working before you work on advanced customization.

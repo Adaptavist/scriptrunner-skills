@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Workflows > Post Functions
-- Doc ID: doc-sr4js-e6e51469-69d2-4112-af78-dd40d4b2af90-c7b74cdb95337643
+- Doc ID: doc-sr4js-d4aa8ae7-676f-41d7-ab66-c6911107111d-c7b74cdb95337643
 - Source: https://docs.adaptavist.com/sr4js/latest/features#workflows--en#post-functions--en#set-issue-security--en
 
 Use this post function to set the [security level](https://confluence.atlassian.com/adminjiraserver/configuring-issue-level-security-938847117.html) of an issue based on a custom condition. This can help ensure that sensitive information is only visible to the appropriate users. For example, you can use this post function to make sure that issues created by those in the _business-users_ group are marked as _Private_. This is useful in situations where business-related issues contain sensitive information that should not be visible to all users.

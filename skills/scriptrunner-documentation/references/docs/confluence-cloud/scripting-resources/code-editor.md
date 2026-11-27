@@ -3,12 +3,12 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: Scripting Resources
-- Doc ID: doc-sr4cc-f6d9a181-9448-4445-85cb-c6a0367e33ea-c0edd3d21de865ce
+- Doc ID: doc-sr4cc-a249d8d0-b1cf-4a7d-b7ac-9c0d8d5da8e0-c0edd3d21de865ce
 - Source: https://docs.adaptavist.com/sr4cc/latest/scripting-resources#code-editor--en
 
 Use the code editor to write scripts in ScriptRunner.
 
-The browser-based code editor provides code completions, inline Javadoc lookups, inline find and replace, and error line indicators. This editor has autocomplete for the following code:
+The browser-based code editor provides code completions, inline Javadoc lookups, inline find-and-replace, and error line indicators. This editor has autocomplete for the following code:
 
 -   Groovy
 -   Atlassian REST API
@@ -32,7 +32,7 @@ Press Ctrl+Alt+Space to show a list of completions that match the expected type 
 
 ### Parameters
 
-When typing method parameters, it is easy to forget the expected types. Parameter types, and where possible names, are shown for the given method. Use the up/down cursor keys to scroll through any available overloads.
+When typing method parameters, it is easy to forget the expected types. Parameter types, and where possible, names are shown for the given method. Use the up/down cursor keys to scroll through any available overloads.
 
 Press Control+Shift+Space to view parameters when inside a method.
 
@@ -55,7 +55,7 @@ Errors in your script are highlighted in the right-hand panel of the script edit
 
 ## Restrictions
 
-There are some limitations to the code editor; work is ongoing to reduce these limitations. As mentioned, Javadoc for Bamboo APIs, and ScriptRunner's API (e.g. Behaviours) is not available. However, completions and parameter hints are available for all.
+There are some limitations to the code editor; work is ongoing to address them. As mentioned, Javadoc for Bamboo APIs and ScriptRunner's API (e.g. Behaviours) is not available. However, completions and parameter hints are available for all.
 
 ## Example scripts
 

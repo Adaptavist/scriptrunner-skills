@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Release Notes > Breaking changes
-- Doc ID: doc-sr4c-84fa3256-ecb4-4923-82bd-4ecaa8fdd643-29f62f81a1c8dbd1
+- Doc ID: doc-sr4c-471d6bdc-c8df-4a12-85ba-bc7ef78836dd-29f62f81a1c8dbd1
 - Source: https://docs.adaptavist.com/sr4c/latest/release-notes/breaking-changes#raw-xml-module-breaking-change-for-confluence-9--en
 
 Information about errors, symptoms, and solutions related to using a Raw XML module to generate fragments in Confluence 9.

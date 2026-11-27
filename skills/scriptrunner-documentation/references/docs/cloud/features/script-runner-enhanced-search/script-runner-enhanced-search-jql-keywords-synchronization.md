@@ -3,7 +3,7 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features > ScriptRunner Enhanced Search
-- Doc ID: doc-sr4jc-24af18f8-5e7e-4699-ae28-53ac9ed4e0a4-77c37e5c3fde5ffa
+- Doc ID: doc-sr4jc-9977c56d-bd48-4fc2-9352-985d1eb960b7-77c37e5c3fde5ffa
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search#scriptrunner-enhanced-search-jql-keywords-synchronization--en
 
 When ScriptRunner for Jira Cloud is [installed](../../get-started/installation.md), an administrator must perform an initial synchronisation. Although the administrator initiates the synchronisation process, the issues are accessed as the ScriptRunner user. Synchronisation is also required after [migrating](../../uncategorized/s/script-runner-migration-to-cloud.md) from ScriptRunner for Jira Server to Cloud.
@@ -12,7 +12,7 @@ Note: Lengthy Sync Alert
 
 Currently, instances that contain more than 500,000 issues may take a _significant_ amount of time to sync. In some cases, this can take several weeks. If your instance falls into this category, we strongly advise you to create a [Support](https://the-adaptavist-group-support.atlassian.net/servicedesk/customer/portal/27) ticket so we can keep track of the initial sync with you.
 
-ScriptRunner Enhanced Search augments each issue in your Jira instance with some additional metadata and provides a number of [ScriptRunner Enhanced Search JQL keywords](https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/scriptrunner-enhanced-search-jql-keywords) that you can use within your JQL queries to access this metadata. These keywords allow users to search for previously unavailable variables, such as the number of sub-tasks ( [`numberOfSubtasks`](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/numberofsubtasks.dita)). The metadata is stored within your Jira instance. The _Issue Updated_ field on your issues is NOT affected by the metadata we store against each issue.
+ScriptRunner Enhanced Search augments each issue in your Jira instance with some additional metadata and provides a number of [ScriptRunner Enhanced Search JQL keywords](https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/scriptrunner-enhanced-search-jql-keywords) that you can use within your JQL queries to access this metadata. These keywords allow users to search for previously unavailable variables, such as the number of sub-tasks ( [`numberOfSubtasks`](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/production/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/numberofsubtasks.dita)). The metadata is stored within your Jira instance. The _Issue Updated_ field on your issues is NOT affected by the metadata we store against each issue.
 
 Note: The metadata we store against each issue is automatically updated asynchronously whenever an issue is updated. This means that your search resultsmay be out of date for a short while after you edit an issue.
 

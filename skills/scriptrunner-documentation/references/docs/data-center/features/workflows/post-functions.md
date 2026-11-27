@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Workflows
-- Doc ID: doc-sr4js-8c1a330a-72df-4a55-bc04-64c1353e1c23-5e575eb084735c9d
+- Doc ID: doc-sr4js-e12a25f7-fe6b-45b4-902b-4f3b4c90e390-5e575eb084735c9d
 - Source: https://docs.adaptavist.com/sr4js/latest/features#workflows--en#post-functions--en
 
 A ScriptRunner post function is a workflow function that performs automated actions after an issue transitions to a new status. ScriptRunner has several built-in post functions. Each function contains a condition that can be used to dismiss the rest of the script if it returns false. Most functions also have additional code that can execute to modify the final action of the function.

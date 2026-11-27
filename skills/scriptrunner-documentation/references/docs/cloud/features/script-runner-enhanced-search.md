@@ -3,7 +3,7 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features
-- Doc ID: doc-sr4jc-4ede025c-91e4-4ed5-bc8f-10592f052401-baa209156c99f1e4
+- Doc ID: doc-sr4jc-3e8cf08d-d206-4cc6-93f6-c3086b69ba34-baa209156c99f1e4
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search
 
 |  |  |
@@ -57,7 +57,7 @@ Below are just some examples of how you can use ScriptRunner JQL functions:
 
 ## What are ScriptRunner JQL keywords?
 
-Alongside JQL Functions are the [ScriptRunner Enhanced Search JQL Keywords](https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/scriptrunner-enhanced-search-jql-keywords) that can be used _within_ those advanced JQL searches. ScriptRunner Enhanced Search looks at each issue in your Jira instance and adds metadata to them for easier and faster searching. We call this metadata [ScriptRunner Enhanced Search JQL Keywords](https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/scriptrunner-enhanced-search-jql-keywords). These keywords can be used _within_ JQL queries to access this metadata and allow users to search for previously unavailable variables, such as the number of sub-tasks ( [`numberOfSubtasks`](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/numberofsubtasks.dita)).
+Alongside JQL Functions are the [ScriptRunner Enhanced Search JQL Keywords](https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/scriptrunner-enhanced-search-jql-keywords) that can be used _within_ those advanced JQL searches. ScriptRunner Enhanced Search looks at each issue in your Jira instance and adds metadata to them for easier and faster searching. We call this metadata [ScriptRunner Enhanced Search JQL Keywords](https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/scriptrunner-enhanced-search-jql-keywords). These keywords can be used _within_ JQL queries to access this metadata and allow users to search for previously unavailable variables, such as the number of sub-tasks ( [`numberOfSubtasks`](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/production/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/numberofsubtasks.dita)).
 
 JQL Keywords can be used in both the Enhanced Search screen under Apps > ScriptRunner Enhanced Search or within Jira's issue navigator.
 

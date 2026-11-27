@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Behaviours > Behaviours Examples
-- Doc ID: doc-sr4js-5e7a3f5e-f7c1-46ba-853b-a95dc844a9c7-9d4a21d9f3d93a74
+- Doc ID: doc-sr4js-c6ee7323-96b5-48cb-8ccf-933f2f861df9-9d4a21d9f3d93a74
 - Source: https://docs.adaptavist.com/sr4js/latest/features#behaviours--en#behaviours-examples--en#using-a-server-side-validator-to-set-the-fix-versions-required--en
 
 On this page, we provide you with an example of how to set the Fix Version/s field as required using a [server-side script](https://docs.adaptavist.com/sr4js/latest/features/behaviours/behaviours-tutorial#should-i-add-an-initialiser-or-server-side-script--en) in a Behaviour. For example, when you mark an issue as Resolved with the resolution of Fixed, you want the developer to specify the Fix Version/s. You may also want to hide this field if the resolution is any other resolution, such as Won't Fix.
@@ -25,8 +25,6 @@ The following example will only work if your project has the following:
 6.  Select the project and issue type(s) to map this behaviour to. In this example we chose the ITSM project and All issue types.
 7.  Select Add Mapping to confirm the mapping.
 8.  Select Create to create the behaviour.
-    
-    \`
     
     You're taken to the Edit Behaviour screen where you can configure the behaviour further.
     

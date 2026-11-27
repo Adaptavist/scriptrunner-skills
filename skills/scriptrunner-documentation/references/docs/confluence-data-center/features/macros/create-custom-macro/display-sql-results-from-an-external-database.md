@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Macros > Create Custom Macro
-- Doc ID: doc-sr4c-20bec853-8bb5-47da-9f56-975eb17705de-28a3b34f5d3e891c
+- Doc ID: doc-sr4c-0b822467-1eba-423a-a9b5-8e9d0776cd7b-28a3b34f5d3e891c
 - Source: https://docs.adaptavist.com/sr4c/latest/features#macros--en#create-custom-macro--en#display-sql-results-from-an-external-database--en
 
 If you want to display SQL results from an external database in a table, you can easily accomplish this with a custom script macro.

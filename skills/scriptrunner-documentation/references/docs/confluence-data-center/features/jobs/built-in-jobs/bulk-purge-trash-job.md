@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Jobs > Built-In Jobs
-- Doc ID: doc-sr4c-a1f5ea51-6f29-4552-befe-89939864fc89-4489cfd1cab78ecf
+- Doc ID: doc-sr4c-e98b8643-5db4-4604-9f8e-a35c69f115bb-4489cfd1cab78ecf
 - Source: https://docs.adaptavist.com/sr4c/latest/features#jobs--en#built-in-jobs--en#bulk-purge-trash-job--en
 
 You can use _Bulk Purge Trash_ to create a job that runs on a set schedule to purge trash from all the specified spaces.

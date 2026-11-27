@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Best Practices > Write Code
-- Doc ID: doc-sr4js-cf4e0e3b-5886-47cb-9460-d3d4942770e7-1ed218b2b6188fa5
+- Doc ID: doc-sr4js-53412d12-7094-41d6-a05e-a4c1365c290d-1ed218b2b6188fa5
 - Source: https://docs.adaptavist.com/sr4js/latest/best-practices/write-code#introduction-to-groovy--en
 
 Groovy is a programming and scripting language, and therefore you do not need to define a class to be able to run code. With its powerful features, the use of Groovy in ScriptRunner allows for a high level of customisation.

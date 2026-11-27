@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Best Practices and App Management
-- Doc ID: doc-sr4c-1bb938f0-a04f-45bd-92f2-94505896248c-dc11634450e7e71e
+- Doc ID: doc-sr4c-cdd7908f-cfc6-493d-9f70-7e02a3629792-dc11634450e7e71e
 - Source: https://docs.adaptavist.com/sr4c/latest/best-practices-and-app-management#introduction-to-groovy--en
 
 ScriptRunner allows you to create custom scripts using the [Apache Groovy](https://groovy-lang.org/) language.

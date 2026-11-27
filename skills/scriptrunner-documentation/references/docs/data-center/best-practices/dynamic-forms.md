@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Best Practices
-- Doc ID: doc-sr4js-97c58f41-fc36-44fd-9609-9cbc4a62d7d2-dfa506b5d26db5a1
+- Doc ID: doc-sr4js-06186839-484c-4801-a5dd-9597a2c71b10-dfa506b5d26db5a1
 - Source: https://docs.adaptavist.com/sr4js/latest/best-practices/dynamic-forms
 
 Use the Dynamic Forms feature to simplify the process of adding variables to your ScriptRunner Groovy scripts.

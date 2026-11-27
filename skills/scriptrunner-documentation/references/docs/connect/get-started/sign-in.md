@@ -3,7 +3,7 @@
 - Platform: connect
 - Space: SRC
 - Hierarchy: Get Started
-- Doc ID: doc-src-ec031e2c-9662-4c5c-9dfe-b421338a777f-bced369241a76320
+- Doc ID: doc-src-6bc7e831-0b86-4997-aa24-0306626bd013-bced369241a76320
 - Source: https://docs.adaptavist.com/src/latest/get-started#sign-in--en
 
 Learn how to create a ScriptRunner Connect account and sign in to the app.

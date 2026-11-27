@@ -2,9 +2,9 @@
 
 - Platform: confluence-data-center
 - Space: SR4C
-- Hierarchy: Migration > Migrating to or from Cloud > Feature Parity
-- Doc ID: doc-sr4c-36bdbad2-6e63-4ad9-879e-4dc976ed227c-ed2429fb041515b4
-- Source: https://docs.adaptavist.com/sr4c/latest/migration#migrating-to-or-from-cloud--en#feature-parity--en#confluence-events-parity--en
+- Hierarchy: Migration > Migrating to Cloud > Feature Parity
+- Doc ID: doc-sr4c-9c8ecbac-87b5-4b10-9008-b7fd29d93423-b7f52aa92b5a7a0c
+- Source: https://docs.adaptavist.com/sr4c/latest/migration#migrating-to-cloud--en#feature-parity--en#confluence-events-parity--en
 
 Find which Confluence events differ between ScriptRunner for Confluence Server/DC and Cloud.
 

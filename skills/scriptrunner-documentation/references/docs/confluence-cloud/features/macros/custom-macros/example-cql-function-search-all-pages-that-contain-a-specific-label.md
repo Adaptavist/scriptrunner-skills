@@ -3,7 +3,7 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: Features > Macros > Custom Macros
-- Doc ID: doc-sr4cc-57d38df4-fd80-4a7d-930e-a94b0b5b823a-d8a4563e42d7e8d6
+- Doc ID: doc-sr4cc-5cc61b61-8948-4065-bd7e-694894a51e2f-d8a4563e42d7e8d6
 - Source: https://docs.adaptavist.com/sr4cc/latest/features/macros/custom-macros#example-cql-function-search-all-pages-that-contain-a-specific-label--en
 
 Note: In ScriptRunner for Confluence Data Center, you can create custom CQL Functions that perform advanced searches for content in Confluence. Although this exact functionality in Cloud does not exist, you can create a custom macro that performs the same way by including code and macro parameters. For more information, check out:
@@ -17,10 +17,10 @@ To set up a custom macro that searches all pages that contain a specific label, 
 2.  Fill out the fields that appear:
     
     1.  Macro Name: CQL Function - Search for label
-    2.  Description: Use this macro to search all pages that contain a specific label
-    3.  Enabled (radio button): Select _Enabled_.
-    4.  Body Type: _None_.
-    5.  Output Type: _Block_
+    2.  Description: Use this macro to search all pages that contain a specific label.
+    3.  Enabled (radio button): Select Enabled.
+    4.  Body Type: None.
+    5.  Output Type: Block
     6.  Script to Execute: Enter the script for the macro here.
     
     ```

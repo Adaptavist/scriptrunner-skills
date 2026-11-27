@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Fragments > Fragment Locations
-- Doc ID: doc-sr4js-923bf73f-5353-4715-857b-95e5f356eac4-a3fd46960fb4dcb0
+- Doc ID: doc-sr4js-e2373994-e70d-44a6-92d1-ecbd3343190d-a3fd46960fb4dcb0
 - Source: https://docs.adaptavist.com/sr4js/latest/features#fragments--en#fragment-locations--en#web-item-locations--en
 
 Web item locations are where you can put links or buttons. Web item fragment locations can typically be found in menus, so you can add more options within that menu. There are also web item fragment locations you can use to add buttons to pages. For more information, read up on [web items](https://developer.atlassian.com/server/framework/atlassian-sdk/web-item-plugin-module/) in the Atlassian documentation.

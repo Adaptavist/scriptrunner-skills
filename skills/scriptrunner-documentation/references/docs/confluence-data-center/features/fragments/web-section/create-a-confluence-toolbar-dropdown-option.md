@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Fragments > Web Section
-- Doc ID: doc-sr4c-3dc65442-a33a-4068-b1f9-a6d50f7a440b-8d95235b75bfa197
+- Doc ID: doc-sr4c-645ac60e-ac39-40f4-84da-d0a654b789de-8d95235b75bfa197
 - Source: https://docs.adaptavist.com/sr4c/latest/features#fragments--en#web-section--en#create-a-confluence-toolbar-dropdown-option--en
 
 A two-step process for a workaround to influde Javascript to add necessary classes and attributes to the partent of a dropdown.

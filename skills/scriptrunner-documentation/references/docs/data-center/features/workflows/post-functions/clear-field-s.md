@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Workflows > Post Functions
-- Doc ID: doc-sr4js-a7be89d5-a623-42ba-9796-18c7504bae00-c861de7f3913c60f
+- Doc ID: doc-sr4js-ff7863cf-513d-4bab-8ad3-59c515f45953-c861de7f3913c60f
 - Source: https://docs.adaptavist.com/sr4js/latest/features#workflows--en#post-functions--en#clear-fields--en
 
 The _Clear field(s)_ post function clears the selected fields when an issue is transitioned to another status.

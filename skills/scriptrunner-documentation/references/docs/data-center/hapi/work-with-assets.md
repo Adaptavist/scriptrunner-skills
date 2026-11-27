@@ -3,8 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: HAPI
-- Doc ID: doc-sr4js-7bec235c-3537-4663-8c39-c7dc165dca06-b7e68c31e85f8730
+- Doc ID: doc-sr4js-cca8ce0a-f857-4221-89b7-184ea05d91e6-b7e68c31e85f8730
 - Source: https://docs.adaptavist.com/sr4js/latest/hapi#work-with-assets--en
+
+Work with Assets objects using HAPI: create, search, and add attachments to asset records from your scripts.
 
 Assets (formerly Insight) is a database of objects, and objects are a digital representation of your assets. An asset/object can be anything from hardware to software to people. You can find out more about Assets in [Atlassian's documentation](https://confluence.atlassian.com/servicemanagementserver/managing-your-assets-with-assets-1044784300.html). With HAPI you can easily work with asset objects, create attachments and search for assets, all from your ScriptRunner script console.
 

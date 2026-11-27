@@ -3,20 +3,15 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Release Notes > Breaking Changes
-- Doc ID: doc-sr4jc-2c461630-9ac4-4363-8637-e638643286c9-1daee999f53f6da5
+- Doc ID: doc-sr4jc-fcdc3f57-2edf-41b3-8b42-1b1929fd40e7-1daee999f53f6da5
 - Source: https://docs.adaptavist.com/sr4jc/latest/release-notes/breaking-changes#atlassians-transition-to-forge-events-and-missing-event-properties--en
 
 The transition to native Forge events is required due to [Atlassian's platform changes](https://www.atlassian.com/blog/developer/announcing-connect-end-of-support-timeline-and-next-steps) and the deprecation of the old event model. These new Forge events have a different structure and do not include all properties previously available. Some event properties that were available in the old model are now missing and cannot be retrieved from the Atlassian API, as outlined in the table below:
 
-Warning:
+Warning: Action Required! It's important that you review and update any [Script Listeners](../../features/script-listeners.md) that depend on the now-missing properties. There is _no workaround_ for retrieving these properties via the Atlassian REST API. Therefore, to ensure your scripts do not break after the transition, they need to be removed from any scripts that use them. Refer to our [Deprecation Notices Overview](../deprecation-notices-overview.md) for details on deadlines.
 
-Action Required!
-
-It's important that you review and update any [Script Listeners](../../features/script-listeners.md) that depend on the now-missing properties. There is _no workaround_ for retrieving these properties via the Atlassian REST API. Therefore, to ensure your scripts do not break after the transition, they need to be removed from any scripts that use them. Refer to our [Deprecation Notices Overview](../deprecation-notices-overview.md) for details on deadlines.
-
-|  |  |
-| --- | --- |
 | Event type | Missing properties |
+| --- | --- |
 | Issuelink Created Issuelink Deleted | `issueLink.issueLinkType.isSubTaskLinkType`<br>`issueLink.issueLinkType.isSystemLinkType`<br>`issueLink.systemLink` |
 | Worklog Updated | `worklog.comment` |
 | Worklog Created Worklog Deleted | `worklog.comment`<br>`isFromIssueLimitTransformation` |

@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Workflows > Post Functions
-- Doc ID: doc-sr4js-128380d8-7f15-490f-b925-03aaa93b39af-d36021bb1b01463c
+- Doc ID: doc-sr4js-35ff35d8-cac8-48f0-b55d-569b4ee90a94-d36021bb1b01463c
 - Source: https://docs.adaptavist.com/sr4js/latest/features#workflows--en#post-functions--en#assign-to-first-member-of-role--en
 
 The _Assign to first member of role_ post function automatically assigns an issue to the first member of a user role after it transitions. For example, you want to assign a _Tester_ role member to an issue after it transitions from _In Development_ to _In Test_.

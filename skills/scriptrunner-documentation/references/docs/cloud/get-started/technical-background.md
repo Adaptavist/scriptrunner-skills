@@ -3,8 +3,10 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Get Started
-- Doc ID: doc-sr4jc-d266ddd0-894c-4104-9cf8-9b805ca77156-772d6309481c2059
+- Doc ID: doc-sr4jc-1b92ab8e-b879-4b6d-b565-14daa2326770-772d6309481c2059
 - Source: https://docs.adaptavist.com/sr4jc/latest/get-started/technical-background
+
+Establish recommended practices before using ScriptRunner for Jira Cloud in your environment.
 
 When using ScriptRunner for Jira Cloud, it's worth establishing some good practices from the outset.
 
@@ -66,7 +68,7 @@ STC in the cloud will provide additional help for the script context, ensuring t
 
 ### Asynchronous execution
 
-Asynchronous execution is at the heart of the Atlassian Connect Framework that ScriptRunner must use to extend Jira Cloud.
+Asynchronous execution is at the heart of the Atlassian Forge Framework that ScriptRunner must use to extend Jira Cloud.
 
 Jira fires webhooks when events and transitions occur and any user interface elements are loaded in iframes. It is not possible to veto, cancel or otherwise prevent Jira performing an action using ScriptRunner.
 
@@ -99,7 +101,7 @@ All interaction with Jira must be through the [REST APIs](https://developer.atla
 
 ### Authentication and authorization
 
-All REST requests made from ScriptRunner are performed as either the ScriptRunner user or as the user that initiated the action. The initiating user is the current user of the [Script Console](../features/script-console.md), the user that performed the action to cause an event to fire or the user that performed a workflow transition that caused a Perform Action to run. Atlassian Connect Add-ons must also register for [API scopes.](https://developer.atlassian.com/cloud/jira/platform/jira-rest-api-scopes) These work in a similar way to the permissions that are granted to iOS or Android apps. When installing, the Jira Administrator can see the scopes that any given add-on is requesting. ScriptRunner requests all scopes as it is not known beforehand what any given user will want to do. Even given this, there are restrictions on the APIs that are available to ScriptRunner.
+All REST requests made from ScriptRunner are performed as either the ScriptRunner user or as the user that initiated the action. The initiating user is the current user of the [Script Console](../features/script-console.md), the user that performed the action to cause an event to fire or the user that performed a workflow transition that caused a Perform Action to run. Atlassian Forge Add-ons must also register for [API scopes.](https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#authentication) These work in a similar way to the permissions that are granted to iOS or Android apps. When installing, the Jira Administrator can see the scopes that any given add-on is requesting. ScriptRunner requests all scopes as it is not known beforehand what any given user will want to do. Even given this, there are restrictions on the APIs that are available to ScriptRunner.
 
 -   No private APIs are available, only those specifically white-listed by Atlassian
 -   Scopes are documented for
@@ -111,9 +113,8 @@ All REST requests made from ScriptRunner are performed as either the ScriptRunne
 Authentication from user scripts is handled by an authentication proxy builtin to ScriptRunner. Each script invocation is given a temporary authentication token to use to make requests into this proxy which will then perform the necessary request signing to make the authenticated request to your Jira instance. In this way authenticated requests happen transparently. Tokens that are handed to scripts are only valid for two minutes. Responses that come through the proxy have URLs modified to go through the proxy so that URLs in the JSON response can be used directly without manipulation. For example the following code shows how to fetch a space from a work item get.
 
 ```
-String spaceUrl = get("/rest/api/2/issue/EX-1").asObject(Map).body['fields']['space']['self']
- 
-get(spaceUrl).asObject(Map).body.name
+String projectUrl = get("/rest/api/2/issue/EX-1").asObject(Map).body['fields']['project']['self']
+get(projectUrl).asObject(Map).body['name']
 ```
 
 ### Unirest
@@ -129,9 +130,7 @@ Get work types:
 ```
 get('/rest/api/2/issuetype').asString().body
  
-Create a work item:
- 
-def spaceKey = 'TP'
+def projectKey = 'TP'
 def taskType = get('/rest/api/2/issuetype').asObject(List).body.find { it['name'] == 'Task' }['id']
  
 post('/rest/api/2/issue')
@@ -141,8 +140,8 @@ post('/rest/api/2/issue')
                 fields: [
                         summary    : 'Task Summary',
                         description: "Don't forget to do this!.",
-                        space    : [
-                                key: spaceKey
+                        project    : [
+                                key: projectKey
                         ],
                         issuetype  : [
                                 id: taskType
@@ -152,13 +151,13 @@ post('/rest/api/2/issue')
         .asString().body
 ```
 
-Line 6: Use the issuetype REST endpoint to get all issuetypes, parse into a list, and find the type with name `Task`, then take the `id` of that type.
+Line 4: Use the issuetype REST endpoint to get all issuetypes, parse into a list, and find the type with name `Task`, then take the `id` of that type.
 
-Line 8: Make the post request to create the work item in the specified space with the specified workitemtype.
+Line 6: Make the post request to create the work item in the specified space with the specified workitemtype.
 
-Line 23: It is important to note that the request is only made when one of the `as*` methods are called. `asString()` takes response and makes it available in .body as a String. `asObject(Object)` will use Jackson to parse the response from JSON
+Line 21: It is important to note that the request is only made when one of the `as*` methods are called. `asString()` takes response and makes it available in .body as a String. `asObject(Object)` will use Jackson to parse the response from JSON
 
-### Update a work item:
+### Update a work item
 
 ```
 def workItemKey = 'TP-1'

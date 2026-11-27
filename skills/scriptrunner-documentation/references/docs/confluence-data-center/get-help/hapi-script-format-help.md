@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Get Help
-- Doc ID: doc-sr4c-7d80ab82-d664-4522-bdd3-f2f501d2b519-29677c0d3b35bf12
+- Doc ID: doc-sr4c-1b967cdb-5187-459b-af34-77a8dfb1d7d7-29677c0d3b35bf12
 - Source: https://docs.adaptavist.com/sr4c/latest/get-help#hapi-script-format-help--en
 
 There are a few [Groovy](https://groovy-lang.org/index.html) elements that are crucial in [HAPI](../uncategorized/h/hapi.md) scripting. Review this guide for a few quick reminders.

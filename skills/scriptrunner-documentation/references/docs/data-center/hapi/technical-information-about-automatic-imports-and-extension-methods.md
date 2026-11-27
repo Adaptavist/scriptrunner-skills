@@ -3,10 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: HAPI
-- Doc ID: doc-sr4js-8fe8d2b7-fb65-4187-99c2-9e63a3c7eff7-7ece0b29efb7fed3
+- Doc ID: doc-sr4js-f5073af6-3065-425e-b625-3a80883b98a0-7ece0b29efb7fed3
 - Source: https://docs.adaptavist.com/sr4js/latest/hapi#technical-information-about-automatic-imports-and-extension-methods--en
 
-This page provides technical information on automatic imports and extension methods.
+Understand how HAPI uses automatic imports and Groovy extension methods under the hood to reduce boilerplate in scripts.
 
 ## Automatic imports
 

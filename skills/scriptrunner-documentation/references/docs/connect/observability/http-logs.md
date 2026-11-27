@@ -3,7 +3,7 @@
 - Platform: connect
 - Space: SRC
 - Hierarchy: Observability
-- Doc ID: doc-src-95ae6a50-4213-490e-b680-31afa86bc235-6182927cad8c373c
+- Doc ID: doc-src-022daf3b-ac8e-4824-a942-b58e421542a9-6182927cad8c373c
 - Source: https://docs.adaptavist.com/src/latest/observability/http-logs
 
 HTTP logs allow you to peek under the hood to troubleshoot when you need to debug and investigate certain API call failures.
@@ -32,18 +32,18 @@ HTTP logs are kept for six months and then deleted from ScriptRunner Connect.
             size: number; // Size of the body in bytes.
             truncated: boolean; // Whether the body is truncated in the log, anything larger than 1KB gets truncated.
             text: string; // Body content in string format (might be truncated).
-        }
-    },
+        };
+    };
     response: {
         status: number; // Response status code.
-        time: // Timestamp when response arrived in ISO time.
+        time: string; // Timestamp when response arrived in ISO time.
         headers: Record<string, string>; // Response headers.
         body: {
             size: number; // Size of the body in bytes.
             truncated: boolean; // Whether the body is truncated in the log, anything larger than 1KB gets truncated.
             text: string; // Body content in string format (might be truncated).
-        }
-    }
+        };
+    };
 }
 ```
 

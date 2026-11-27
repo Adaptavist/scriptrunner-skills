@@ -3,8 +3,10 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features > ScriptRunner Enhanced Search > ScriptRunner Enhanced Search JQL Functions
-- Doc ID: doc-sr4jc-d9d91fd4-d721-4c60-b58a-dd079da895f8-0635fa2cd3d6d326
+- Doc ID: doc-sr4jc-fcdafacb-f75e-4b00-a68f-3e7ecb41f0a4-0635fa2cd3d6d326
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search#scriptrunner-enhanced-search-jql-functions--en#links-and-relationships--en
+
+Use these JQL functions to find issues based on their links, such as blockers, dependencies, parents, children, epics, and subtasks.
 
 These ScriptRunner Enhanced Search JQL functions help to identify blockers, dependencies, and linked tasks.
 
@@ -47,7 +49,7 @@ Note: The issues returned when using link names such as 'blocks' and 'is Blocked
     
     To identify unresolved issues that are blocked by issues in the Open state, you can use the following query:
     
-    `issueFunction in linkedIssuesOf(` `"status = Open"` `,` `"blocks"` `) AND resolution IS EMPTY`
+    `issueFunction in linkedIssuesOf(``"status = Open"``,` `"blocks"``) AND resolution IS EMPTY`
     
     This query helps teams to focus on resolving blocking issues first, ensuring a smoother workflow.
     
@@ -55,7 +57,7 @@ Note: The issues returned when using link names such as 'blocks' and 'is Blocked
     
     If you need to find all linked issues regardless of the link type, you can use a query like:
     
-    `issueFunction in linkedIssuesOf(` `"resolution = unresolved"` `)`
+    `issueFunction in linkedIssuesOf(``"resolution = unresolved"``)`
     
     This broader query is useful for gaining a comprehensive view of all dependencies.
     

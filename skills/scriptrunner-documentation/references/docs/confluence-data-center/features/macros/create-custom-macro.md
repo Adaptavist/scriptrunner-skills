@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Macros
-- Doc ID: doc-sr4c-4f195503-5b2d-4aa4-bf23-6ddd95672c76-588896f980f04929
+- Doc ID: doc-sr4c-b39cb0bd-8286-4797-aa42-d1317f9b6901-588896f980f04929
 - Source: https://docs.adaptavist.com/sr4c/latest/features#macros--en#create-custom-macro--en
 
 Script macros allow you to include dynamic content.

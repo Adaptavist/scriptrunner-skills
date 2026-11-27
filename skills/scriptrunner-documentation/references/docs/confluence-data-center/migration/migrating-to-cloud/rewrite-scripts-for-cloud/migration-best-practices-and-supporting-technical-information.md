@@ -2,9 +2,9 @@
 
 - Platform: confluence-data-center
 - Space: SR4C
-- Hierarchy: Migration > Migrating to or from Cloud > Rewrite Scripts for Cloud
-- Doc ID: doc-sr4c-66fc1875-f4cc-4385-811c-354f60d946cd-3bd072e5b155075a
-- Source: https://docs.adaptavist.com/sr4c/latest/migration#migrating-to-or-from-cloud--en#rewrite-scripts-for-cloud--en#migration-best-practices-and-supporting-technical-information--en
+- Hierarchy: Migration > Migrating to Cloud > Rewrite Scripts for Cloud
+- Doc ID: doc-sr4c-5f08eb33-0c6b-4c77-9fab-e3b5dd8569fe-855e289a037aee4b
+- Source: https://docs.adaptavist.com/sr4c/latest/migration#migrating-to-cloud--en#rewrite-scripts-for-cloud--en#migration-best-practices-and-supporting-technical-information--en
 
 When migrating to or working with ScriptRunner for Confluence Cloud, keep these best practices and tips in mind. They apply to various use cases and can help streamline your scripting process.
 
@@ -63,7 +63,7 @@ Note:
 
 ## Common listener events availability
 
-Check out the [Event Listener Parity](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Confluence_Data_Center_SR4C/topics/feature_parity_listeners.dita) documentation so you can learn about events in ScriptRunner for Confluence Server/Data Center and their availability in Cloud. More detail on what ScriptRunner can do with the supported Cloud events can be found on our [Script Listeners](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Confluence_Data_Center_SR4C/topics/feature_parity_listeners.dita) page.
+Check out the [Event Listener Parity](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/production/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Confluence_Data_Center_SR4C/topics/feature_parity_listeners.dita) documentation so you can learn about events in ScriptRunner for Confluence Server/Data Center and their availability in Cloud. More detail on what ScriptRunner can do with the supported Cloud events can be found on our [Script Listeners](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/production/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Confluence_Data_Center_SR4C/topics/feature_parity_listeners.dita) page.
 
 ## Common operations
 
@@ -265,8 +265,8 @@ page.addLabels("label-here1", "label-here2")
 
 ## Other resources
 
--   [Rewriting Scripts](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-or-from-cloud/rewrite-scripts-for-cloud)
--   [Prepare to Migrate Script](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-or-from-cloud/rewrite-scripts-for-cloud/prepare-to-migrate-scripts)
--   [Adapt scripts for Confluence Cloud](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-or-from-cloud/rewrite-scripts-for-cloud/adapt-scripts-for-confluence-cloud)
--   [Feature Parity](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-or-from-cloud/feature-parity)
--   [Event Listener Parity](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-or-from-cloud/feature-parity#feature-parity--en__listeners)
+-   [Rewriting Scripts](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-cloud/rewrite-scripts-for-cloud)
+-   [Prepare to Migrate Script](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-cloud/rewrite-scripts-for-cloud/prepare-to-migrate-scripts)
+-   [Adapt scripts for Confluence Cloud](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-cloud/rewrite-scripts-for-cloud/adapt-scripts-for-confluence-cloud)
+-   [Feature Parity](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-cloud/feature-parity)
+-   [Event Listener Parity](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-cloud/feature-parity#feature-parity--en__listeners)

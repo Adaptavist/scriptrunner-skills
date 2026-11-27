@@ -3,10 +3,12 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Manage App
-- Doc ID: doc-sr4jc-ebb46473-5be8-4b7c-911e-ca59f7ea92e8-8d327c6e1afd722c
+- Doc ID: doc-sr4jc-c239bdab-7b71-43db-9805-76c1b1dfad0a-8d327c6e1afd722c
 - Source: https://docs.adaptavist.com/sr4jc/latest/manage-app/execution-history
 
-Use the Execution History page to analyse the effects of ScriptRunner scripts on your Jira instance. You can use _Execution History_ to view execution times and failure rates for [Script Listeners](../features/script-listeners.md), [Scheduled Jobs](../features/scheduled-jobs.md), [Escalation Services](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/escalation_service.dita) and [Perform Actions](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/perform-actions) scripts in your instance, allowing a long-term view of script performance.
+Use the Execution History page to analyze and monitor the performance and outcomes of your ScriptRunner scripts over time.
+
+Use the Execution History page to analyse the effects of ScriptRunner scripts on your Jira instance. You can use _Execution History_ to view execution times and failure rates for [Script Listeners](../features/script-listeners.md), [Scheduled Jobs](../features/scheduled-jobs.md), [Escalation Services](../features/escalation-service.md) and [Perform Actions](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/perform-actions) scripts in your instance, allowing a long-term view of script performance.
 
 The Execution History page allows you to view an analysis of all your script executions for Script Listeners, Scheduled Jobs, Escalation Services and Perform Actions in a single page.
 

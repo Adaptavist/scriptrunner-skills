@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Get Help > Troubleshooting
-- Doc ID: doc-sr4js-80eb8714-d3e6-4524-8b2c-8d834e6bb1f5-d97c024df984e9b7
+- Doc ID: doc-sr4js-f1dcaf40-5b3d-48e8-98f5-bc5be3a0dd9a-d97c024df984e9b7
 - Source: https://docs.adaptavist.com/sr4js/latest/get-help#troubleshooting--en#troubleshooting-rest-endpoints--en
 
 ## Delete a REST endpoint that had broken the REST endpoints page

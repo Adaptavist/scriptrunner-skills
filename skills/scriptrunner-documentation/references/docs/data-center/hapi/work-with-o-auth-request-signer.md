@@ -3,10 +3,12 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: HAPI
-- Doc ID: doc-sr4js-46314814-af3e-4c56-a66c-687f07bf6d49-67d439ab3de3b7b3
+- Doc ID: doc-sr4js-680735d8-8b59-45af-91a4-d052c7239be6-67d439ab3de3b7b3
 - Source: https://docs.adaptavist.com/sr4js/latest/hapi#work-with-oauthrequestsigner--en
 
-The HAPI API `OAuthRequestSigner` is designed to replace the deprecated `TrustedRequestFactory`, which was removed in Jira 11. This API provides a secure and efficient way to sign both GET and POST requests, ensuring proper authentication when interacting with Jira's REST API endpoints.
+Sign GET and POST requests to Jira's REST API using the HAPI OAuthRequestSigner: the replacement for deprecated TrustedRequestFactory in Jira 11.
+
+This API provides a secure and efficient way to sign both GET and POST requests, ensuring proper authentication when interacting with Jira's REST API endpoints.
 
 ## Get request
 

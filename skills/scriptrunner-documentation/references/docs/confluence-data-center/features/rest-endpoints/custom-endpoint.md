@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > REST Endpoints
-- Doc ID: doc-sr4c-f2e4286c-6534-42b9-867d-5fd3bd29a3fc-66af0b32e65d008e
+- Doc ID: doc-sr4c-4359d256-e5e8-44a2-871e-936cbb99cb17-66af0b32e65d008e
 - Source: https://docs.adaptavist.com/sr4c/latest/features#rest-endpoints--en#custom-endpoint--en
 
 Instructions for creating a custom REST endpoint.

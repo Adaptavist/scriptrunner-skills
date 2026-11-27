@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Integrations > Automation for Jira
-- Doc ID: doc-sr4js-176fe907-9eaf-4e44-a498-c9184bebcfd6-1769c32ec6981cfa
+- Doc ID: doc-sr4js-049880b9-a3eb-4888-9a6d-c28eabe384f9-1769c32ec6981cfa
 - Source: https://docs.adaptavist.com/sr4js/latest/integrations/automation-for-jira#asset-object-updated-trigger--en
 
 You can use the Asset Object updated with ScriptRunner trigger to create a rule that runs whenever an Assets object is updated. You can also use the associated `{{updatedObject}}` [smart value](https://confluence.atlassian.com/automation/smart-values-syntax-and-formatting-1141480622.html) to apply conditions to the rule and input the updated object's information elsewhere, for example, into an email or a comment (see step 14 in the example below for a working example of how to use this smart value).

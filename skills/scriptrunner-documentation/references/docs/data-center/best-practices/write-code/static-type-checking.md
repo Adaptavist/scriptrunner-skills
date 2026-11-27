@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Best Practices > Write Code
-- Doc ID: doc-sr4js-5f9ad8aa-8487-417d-ab1b-65673519d858-96150fb8f75af20a
+- Doc ID: doc-sr4js-2b1d3a0c-afad-482f-8b39-093e77216a3b-96150fb8f75af20a
 - Source: https://docs.adaptavist.com/sr4js/latest/best-practices/write-code#static-type-checking--en
 
 Static type checking (STC) provides information about whether your script is correctly written.

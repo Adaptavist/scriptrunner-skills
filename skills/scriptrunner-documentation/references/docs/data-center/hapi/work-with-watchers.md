@@ -3,10 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: HAPI
-- Doc ID: doc-sr4js-1bb19421-5914-4131-adfe-803a58801ee6-a13c1610258a8d50
+- Doc ID: doc-sr4js-09a321f1-56ce-45f7-ad91-99bcf3faf150-a13c1610258a8d50
 - Source: https://docs.adaptavist.com/sr4js/latest/hapi#work-with-watchers--en
 
-With HAPI, we've made it easy for you to work with watchers.
+Add and remove watchers on Jira issues using HAPI, with code examples for each operation.
 
 ## Add a watcher to an issue
 

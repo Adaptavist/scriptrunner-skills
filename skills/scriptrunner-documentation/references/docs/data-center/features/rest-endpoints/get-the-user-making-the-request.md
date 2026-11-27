@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > REST endpoints
-- Doc ID: doc-sr4js-922b47b2-4108-417c-9038-a74490549e7d-2456b7355a401936
+- Doc ID: doc-sr4js-85e609b6-04cc-43df-ad8b-c22039f6492d-2456b7355a401936
 - Source: https://docs.adaptavist.com/sr4js/latest/features#rest-endpoints--en#get-the-user-making-the-request--en
 
 Use `com.atlassian.sal.api.user.UserManager` to get the current user from the http request.

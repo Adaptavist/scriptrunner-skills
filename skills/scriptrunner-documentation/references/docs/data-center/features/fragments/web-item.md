@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Fragments
-- Doc ID: doc-sr4js-e6e56e55-0bdc-4fdd-a678-d7324b09b6a1-4a893fd5841bb986
+- Doc ID: doc-sr4js-da3a7d33-fe2e-4977-9bab-db7bdbabb40a-4a893fd5841bb986
 - Source: https://docs.adaptavist.com/sr4js/latest/features#fragments--en#web-item--en
 
 A web item is a button or link that appears at the location you choose.

@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Fragments
-- Doc ID: doc-sr4js-247cf2ed-c94f-4ed0-af33-d4c15a8992cc-bcae32db978dad7e
+- Doc ID: doc-sr4js-62947ba0-b2f9-4213-b2b5-a28e2e7846c6-bcae32db978dad7e
 - Source: https://docs.adaptavist.com/sr4js/latest/features#fragments--en#web-resource--en
 
 Web resources allow you to include JavaScript and CSS resources into certain contexts, for example:

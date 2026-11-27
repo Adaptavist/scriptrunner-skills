@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Best Practices and App Management
-- Doc ID: doc-sr4c-afcef6c7-7ef5-4438-84a1-c529db450ccb-c147f9d993239d5e
+- Doc ID: doc-sr4c-978793e6-5ce7-410b-b3e2-ced9fcf200f7-c147f9d993239d5e
 - Source: https://docs.adaptavist.com/sr4c/latest/best-practices-and-app-management#static-type-checking--en
 
 Static type checking (STC) provides information about whether your script is correctly written.

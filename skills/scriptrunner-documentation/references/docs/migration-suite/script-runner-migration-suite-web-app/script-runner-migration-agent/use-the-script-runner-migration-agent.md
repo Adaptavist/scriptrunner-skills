@@ -3,7 +3,7 @@
 - Platform: migration-suite
 - Space: SMS
 - Hierarchy: ScriptRunner Migration Suite Web App > ScriptRunner Migration Agent
-- Doc ID: doc-sms-2bb1e066-169a-4518-b3ef-c64ab3fcc341-e33faa078f68c826
+- Doc ID: doc-sms-31c28228-24df-4365-9e03-10db86f0f457-e33faa078f68c826
 - Source: https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-agent/use-the-scriptrunner-migration-agent
 
 To start, open the [ScriptRunner Migration Agent](https://scriptrunnermigrationsuite.com/) and log in with your Atlassian ID or email.

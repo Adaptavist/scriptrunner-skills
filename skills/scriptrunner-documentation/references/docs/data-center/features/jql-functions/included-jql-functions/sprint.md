@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > JQL Functions > Included JQL Functions
-- Doc ID: doc-sr4js-2574632f-ef17-4c32-996e-7f1789945bd9-0ab4a5f1211889fe
+- Doc ID: doc-sr4js-1ae66fd9-9b4f-4bc6-8676-513ed2b96f45-0ab4a5f1211889fe
 - Source: https://docs.adaptavist.com/sr4js/latest/features#jql-functions--en#included-jql-functions--en#sprint--en
 
 ## addedAfterSprintStart

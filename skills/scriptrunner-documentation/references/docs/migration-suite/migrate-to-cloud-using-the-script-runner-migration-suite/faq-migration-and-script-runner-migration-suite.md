@@ -3,7 +3,7 @@
 - Platform: migration-suite
 - Space: SMS
 - Hierarchy: Migrate to Cloud Using the ScriptRunner Migration Suite
-- Doc ID: doc-sms-ec96b5a8-576d-4854-96a9-b886fba5ead7-810a17d4f3dce099
+- Doc ID: doc-sms-92c2fc0a-9da1-4213-8a1c-01b86883e31c-810a17d4f3dce099
 - Source: https://docs.adaptavist.com/sms/latest/migrate-to-cloud-using-the-scriptrunner-migration-suite#faq-migration-and-scriptrunner-migration-suite--en
 
 ## Q: What are best practices for using the ScriptRunner Migration Suite?

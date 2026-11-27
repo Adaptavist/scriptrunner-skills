@@ -3,12 +3,12 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Get Started
-- Doc ID: doc-sr4js-6ce924eb-97bb-464c-9543-a848b2e1cb3f-ac75e8e66c970234
+- Doc ID: doc-sr4js-94022f96-15d0-4731-a1b4-00213453f75f-ac75e8e66c970234
 - Source: https://docs.adaptavist.com/sr4js/latest/get-started/introduction-to-scriptrunner
 
-Note: For a video introduction to ScriptRunner, see the [Introduction to ScriptRunner](../training/course-introduction-to-script-runner-for-jira-data-center.md) video.
-
 ScriptRunner for Jira is an app available on the Atlassian Marketplace that allows you to extend Jira functionality using built-in and custom Groovy scripts.
+
+Note: For a video introduction to ScriptRunner, see the [Introduction to ScriptRunner](../training/course-introduction-to-script-runner-for-jira-data-center.md) video.
 
 ScriptRunner allows you to extend basic Jira functionality, such as JQL, and use scripted [JQL functions](https://docs.adaptavist.com/sr4js/latest/features/jql-functions). It also allows you to automate using [escalation services](https://docs.adaptavist.com/sr4js/latest/features/jobs/built-in-jobs/escalation-services) and [workflow functions](https://docs.adaptavist.com/sr4js/latest/features/workflows). You can build scripted fields to show calculated data or use [Behaviours](https://docs.adaptavist.com/sr4js/latest/features/behaviours) to customize how you create and update issues.
 

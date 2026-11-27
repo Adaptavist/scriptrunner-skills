@@ -3,8 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: HAPI
-- Doc ID: doc-sr4js-86882cc8-a1fb-48f8-8d6e-32d2c67adf76-428069181280b865
+- Doc ID: doc-sr4js-2a216eeb-66f2-4052-8a70-750f88233273-428069181280b865
 - Source: https://docs.adaptavist.com/sr4js/latest/hapi#update-issues--en
+
+Update existing Jira issues using HAPI, with examples for modifying fields and properties on single or multiple issues at once.
 
 |  |  |
 | --- | --- |

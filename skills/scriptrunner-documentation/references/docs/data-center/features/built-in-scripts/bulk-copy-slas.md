@@ -3,10 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Built-in scripts
-- Doc ID: doc-sr4js-b0197f2e-8fdf-400a-a5ba-7474789f5daf-1fa80dd50d3a35d6
+- Doc ID: doc-sr4js-4492e91f-4640-46bb-910f-5d5e859f62a2-1fa80dd50d3a35d6
 - Source: https://docs.adaptavist.com/sr4js/latest/features#built-in-scripts--en#bulk-copy-slas--en
 
-Use the _Bulk Copy SLA Configuration_ built-in script to copy the Service Level Agreement (SLA) configuration from one Service Management project to one or more additional Service Management projects on the same Jira Service Management instance.
+Copy SLA configuration from one Jira Service Management project to multiple others using the Bulk Copy SLA Configuration built-in script.
 
 Warning: The SLA configuration of the target project(s) is overwritten by the configuration copied from the source project.
 

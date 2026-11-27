@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Jobs > Built-In Jobs
-- Doc ID: doc-sr4c-e8717dd8-31ca-4aae-949e-e44a1cbea3fc-c7de869cf7d19ef8
+- Doc ID: doc-sr4c-7b3c445e-7175-4f65-938f-1c709942f11b-c7de869cf7d19ef8
 - Source: https://docs.adaptavist.com/sr4c/latest/features#jobs--en#built-in-jobs--en#manage-labels-job--en
 
 Use the _Manage Labels_ job to schedule routine label management.

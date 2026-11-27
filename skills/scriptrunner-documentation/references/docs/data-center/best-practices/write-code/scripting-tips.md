@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Best Practices > Write Code
-- Doc ID: doc-sr4js-22f628c7-f754-4035-a285-8fd4c945c6e3-4a6e0ddb3dd47e8a
+- Doc ID: doc-sr4js-0ec6b9b6-7826-4aae-b260-dcbf5e4e162a-4a6e0ddb3dd47e8a
 - Source: https://docs.adaptavist.com/sr4js/latest/best-practices/write-code#scripting-tips--en
 
 The following page provides you with some quick tips on writing and debugging your scripts.

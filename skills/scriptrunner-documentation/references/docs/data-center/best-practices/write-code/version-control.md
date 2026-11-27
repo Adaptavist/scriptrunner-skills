@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Best Practices > Write Code
-- Doc ID: doc-sr4js-2602d2c9-d77b-49d3-876e-b631f7077440-c4b0c67516fd5379
+- Doc ID: doc-sr4js-d3dc7f73-8393-4962-8515-99373510ccf4-c4b0c67516fd5379
 - Source: https://docs.adaptavist.com/sr4js/latest/best-practices/write-code#version-control--en
 
 For large instances with multiple administrators, we recommend you establish a version control system (VCS) to maintain your ScriptRunner scripts. Maintaining scripts within a VCS records changes to individual scripts over time, allowing you to revert changes and access old script versions if needed. When troubleshooting, the VCS history may contain meta-information on why a particular change was made, when it was made, and who initiated the change.

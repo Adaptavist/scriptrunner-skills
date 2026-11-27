@@ -3,7 +3,7 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Get Started > Data Residency
-- Doc ID: doc-sr4jc-5b47a95d-754a-4470-90f4-be4c96e5c45c-29e3e17c0d7ad216
+- Doc ID: doc-sr4jc-6c514cbf-a5c6-4a0a-8748-c7f3ae0ce151-29e3e17c0d7ad216
 - Source: https://docs.adaptavist.com/sr4jc/latest/get-started/data-residency#region-to-region-data-migration--en
 
 If you change the region in which your Jira Cloud is hosted, you can also choose to move ScriptRunner to the same region (if supported). Atlassian will then notify us of the request, and we will move your ScriptRunner for Jira Cloud data to the same geographical region in which your Jira is hosted.

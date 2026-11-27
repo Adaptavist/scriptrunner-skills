@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Behaviours > Behaviours Examples
-- Doc ID: doc-sr4js-0f92b92c-cafa-4aaa-9e82-7514aa3ecd77-e726b53941b0980c
+- Doc ID: doc-sr4js-6929cf6d-40e9-4e6a-89d1-c31f06843c0f-e726b53941b0980c
 - Source: https://docs.adaptavist.com/sr4js/latest/features#behaviours--en#behaviours-examples--en#sub-task-default-field--en
 
 You can use Behaviors to automatically populate sub-task fields with data from the parent issue when creating new sub-tasks.

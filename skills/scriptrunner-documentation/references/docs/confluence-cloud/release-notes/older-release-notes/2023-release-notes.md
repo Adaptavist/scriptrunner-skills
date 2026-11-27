@@ -3,7 +3,7 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: Release Notes > Older Release Notes
-- Doc ID: doc-sr4cc-9463d55d-fa83-4ee1-adc7-5fd34152791a-7887ea09fd6654c6
+- Doc ID: doc-sr4cc-3439987c-5e16-4bf2-a50d-9f568cdf83b9-7887ea09fd6654c6
 - Source: https://docs.adaptavist.com/sr4cc/latest/release-notes/older-release-notes/2023-release-notes
 
 ## October 2023

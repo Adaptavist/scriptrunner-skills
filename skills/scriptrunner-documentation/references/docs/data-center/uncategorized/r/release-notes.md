@@ -3,10 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: n/a
-- Doc ID: doc-sr4js-2c42ac22-75c7-48b0-8f3a-a36bfb925502-8a642d0348ea6a02
+- Doc ID: doc-sr4js-7f44f76f-3d49-4365-ac75-4763d470cb6d-8a642d0348ea6a02
 - Source: https://docs.adaptavist.com/sr4js/latest/release-notes
 
-Find recent breaking changes, bug fixes, and feature updates across all ScriptRunner for Jira Data Center releases.
+See what's new in each release and check fixes, breaking changes, and security notices before you upgrade.
 
 -   [Critical Vulnerability Notification: SRJIRA-8436](../../release-notes/critical-vulnerability-notification-srjira-8436.md)
 -   [Breaking Changes](../../release-notes/breaking-changes.md)

@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features
-- Doc ID: doc-sr4js-3f7173d3-1506-46b5-8578-459caf0ecb9d-a60aed76bc623ad8
+- Doc ID: doc-sr4js-49cb2f0c-d020-4885-98d7-d6abf9c470e2-a60aed76bc623ad8
 - Source: https://docs.adaptavist.com/sr4js/latest/features#rest-endpoints--en
 
 |  |  |
@@ -195,7 +195,7 @@ Warning: In previous versions, an `extraPath` variable was used in the scripts. 
 
 ## Script Root Scanning
 
-As well as manually adding scripts or files via the UI, ScriptRunner scans your script roots for scripts that contain REST endpoints and automatically register them. To enable the scanning, set the property `plugin.rest.scripts.package` to a comma-delimited list of packages. For example:
+As well as manually adding scripts or files via the UI, ScriptRunner scans your script roots for scripts that contain REST endpoints and automatically registers them. To enable the scanning, set the property `plugin.rest.scripts.package` to a comma-delimited list of packages. For example:
 
 ```
 -Dplugin.rest.scripts.package=com.acme.rest
@@ -206,6 +206,10 @@ On plugin enablement, scripts/classes under this package are scanned and registe
 ```
 @BaseScript CustomEndpointDelegate delegate
 ```
+
+To pick up new, changed, or deleted endpoint files without re-enabling ScriptRunner, select Scan on the _REST Endpoints_ page.
+
+Note: After a scan, a message might say that no REST endpoints were added or removed, even when they were. Check the list on the _REST Endpoints_ page to confirm which endpoints are registered.
 
 ### Package Declarations and File Paths
 

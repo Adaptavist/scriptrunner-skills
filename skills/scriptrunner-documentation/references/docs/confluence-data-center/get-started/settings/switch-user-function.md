@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Get Started > Settings
-- Doc ID: doc-sr4c-4cd31c8e-3e75-478c-aa15-0ea284e3f6e9-8521230eea182fbb
+- Doc ID: doc-sr4c-7d9a1a82-21d4-4286-b800-259c45706f72-8521230eea182fbb
 - Source: https://docs.adaptavist.com/sr4c/latest/get-started#settings--en#switch-user-function--en
 
 The Switch User function allows administrator users to temporarily assume another user's identity.

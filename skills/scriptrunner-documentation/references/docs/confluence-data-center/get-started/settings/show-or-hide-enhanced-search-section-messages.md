@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Get Started > Settings
-- Doc ID: doc-sr4c-6aa1609f-2165-4eca-a329-26b52801fd89-d0d46f44dbd37f2e
+- Doc ID: doc-sr4c-e7b4b9c3-2cc8-46c8-a58c-ce095cddb72f-d0d46f44dbd37f2e
 - Source: https://docs.adaptavist.com/sr4c/latest/get-started#settings--en#show-or-hide-enhanced-search-section-messages--en
 
 You can hide the [Enhanced Search](https://docs.adaptavist.com/sr4c/latest/features/enhanced-search) section messages.

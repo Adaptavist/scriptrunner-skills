@@ -3,7 +3,7 @@
 - Platform: connect
 - Space: SRC
 - Hierarchy: n/a
-- Doc ID: doc-src-71a24059-9be6-4456-a8b4-c0fe3e590e31-6b76ae3d1e81de73
+- Doc ID: doc-src-21e3f1c2-a122-4b30-910c-0a4bebf0bb32-6b76ae3d1e81de73
 - Source: https://docs.adaptavist.com/src/latest/get-help
 
 Experiencing problems with ScriptRunner Connect? We can help!
@@ -20,4 +20,4 @@ Have an idea to improve the app? Want to vote on what feature comes next? Check 
 
 ## Consult with AI
 
-To get a faster reply we recommend first asking the question from our [AI assistant](https://docs.adaptavist.com/src/latest/get-help/ai-assistant) or [hook up your own favourite AI tool](https://docs.adaptavist.com/src/latest/external-coding/working-with-ai-agents) for more powerful engagements.
+To get a faster reply we recommend first asking the question from our [AI assistant](https://docs.adaptavist.com/src/latest/get-help/ai-assistant) or [hook up your own favourite AI tool](../../work-with-ai-agents/work-with-your-own-ai-agent.md) for more powerful engagements.

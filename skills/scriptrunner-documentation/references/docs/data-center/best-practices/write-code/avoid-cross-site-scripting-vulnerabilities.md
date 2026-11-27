@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Best Practices > Write Code
-- Doc ID: doc-sr4js-60158643-546f-46c1-bdb3-a5452522f516-c0e55f7239401097
+- Doc ID: doc-sr4js-fc79be67-e798-440c-91fe-27c7c219d36e-c0e55f7239401097
 - Source: https://docs.adaptavist.com/sr4js/latest/best-practices/write-code#avoid-cross-site-scripting-vulnerabilities--en
 
 Cross-Site Scripting (XSS) is a type of vulnerability that arises when a web application renders data as HTML from an untrusted source.

@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Get Started
-- Doc ID: doc-sr4c-7969f57c-a23e-4a36-9031-892cc8340f24-8461d8ecc44a96ae
+- Doc ID: doc-sr4c-9a9c6944-b102-4f1f-94f2-6b50e5d4ee99-8461d8ecc44a96ae
 - Source: https://docs.adaptavist.com/sr4c/latest/get-started#update--en
 
 We added a link to the ScriptRunner home page from the Confluence Settings menu.

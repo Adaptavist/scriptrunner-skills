@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Script fields > Built-In Script Fields > Database Picker > Database Picker Examples
-- Doc ID: doc-sr4js-3c6db8f6-ace7-4a7e-a36b-256bfca4126b-ccf238daedab01db
+- Doc ID: doc-sr4js-17da2322-a36e-4c13-be5b-701d1e25dea5-ccf238daedab01db
 - Source: https://docs.adaptavist.com/sr4js/latest/features#script-fields--en#built-in-script-fields--en#database-picker--en#database-picker-examples--en#select-jira-project--en
 
 This example outlines selecting a project from the Jira _Projects_ database table.

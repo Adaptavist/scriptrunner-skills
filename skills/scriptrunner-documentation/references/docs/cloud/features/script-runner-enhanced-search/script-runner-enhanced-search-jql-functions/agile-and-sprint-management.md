@@ -3,7 +3,7 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features > ScriptRunner Enhanced Search > ScriptRunner Enhanced Search JQL Functions
-- Doc ID: doc-sr4jc-13b5e255-e894-4c2b-8c7c-0e81526d8145-5b1e66720ac3ad9d
+- Doc ID: doc-sr4jc-e9b74fb6-5da8-4d6f-bb73-0e872d843827-5b1e66720ac3ad9d
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search#scriptrunner-enhanced-search-jql-functions--en#agile-and-sprint-management--en
 
 These ScriptRunner Enhanced Search JQL functions are particularly useful for Scrum Masters and Team Leads as they focus on agile methodologies. They enable sprint progress tracking, planning of future sprints, and management of sprint backlogs.

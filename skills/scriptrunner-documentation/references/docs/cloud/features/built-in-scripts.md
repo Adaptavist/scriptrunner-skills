@@ -3,8 +3,10 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features
-- Doc ID: doc-sr4jc-c42d59de-ba73-4327-ab70-161f670bfbe6-46decb866e88c83c
+- Doc ID: doc-sr4jc-f3d69c6a-702b-460b-b196-5f1f77f1979b-46decb866e88c83c
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/built-in-scripts
+
+Overview of built-in scripts available in ScriptRunner for Jira Cloud.
 
 |  |  |
 | --- | --- |

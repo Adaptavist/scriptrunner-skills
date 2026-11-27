@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Best Practices and App Management
-- Doc ID: doc-sr4c-87d8a7c8-6e57-4511-80c4-40dc52c65644-ea35f1b1d8b345d4
+- Doc ID: doc-sr4c-f4ed7705-5243-452e-b2de-34aa137be27f-ea35f1b1d8b345d4
 - Source: https://docs.adaptavist.com/sr4c/latest/best-practices-and-app-management#store-all-environment-specific-variables--en
 
 Learn to write and test your ScriptRunner scripts on a test/development instance before migrating over to your production instance.

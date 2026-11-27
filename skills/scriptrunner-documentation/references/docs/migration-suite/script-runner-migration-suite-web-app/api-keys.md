@@ -3,7 +3,7 @@
 - Platform: migration-suite
 - Space: SMS
 - Hierarchy: ScriptRunner Migration Suite Web App
-- Doc ID: doc-sms-3842a144-1c43-41e4-a090-44f9571aefa0-3a70906f24f2fb65
+- Doc ID: doc-sms-6d36f436-b144-4f18-88c2-754fc878ee35-3a70906f24f2fb65
 - Source: https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/api-keys
 
 You can create and manage personal credentials for scripts and integrations that use the ScriptRunner Migration Suite API.

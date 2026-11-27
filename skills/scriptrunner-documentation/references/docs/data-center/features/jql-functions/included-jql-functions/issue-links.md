@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > JQL Functions > Included JQL Functions
-- Doc ID: doc-sr4js-5dc65dec-7b7f-4583-a956-52f125344f61-a7277df927ac50d7
+- Doc ID: doc-sr4js-a5221f03-9b52-4ad7-9e94-5ffe4589dc19-a7277df927ac50d7
 - Source: https://docs.adaptavist.com/sr4js/latest/features#jql-functions--en#included-jql-functions--en#issue-links--en
 
 This page provides information on various functions used to find issues with links:

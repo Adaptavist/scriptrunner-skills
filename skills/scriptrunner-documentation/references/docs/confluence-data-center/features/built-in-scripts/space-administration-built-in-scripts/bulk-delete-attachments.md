@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Built-In Scripts > Space Administration Built-In Scripts
-- Doc ID: doc-sr4c-3efeefb1-6c30-4941-9660-cba44e8106ac-3c754704cf1f9b38
+- Doc ID: doc-sr4c-17062e7f-fd90-49e1-9db8-5b3f343c2b97-3c754704cf1f9b38
 - Source: https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#space-administration-built-in-scripts--en#bulk-delete-attachments--en
 
 You can delete all attachments (or all attachments within the selected time range) for a page or multiple pages using _Bulk Delete Attachments_.

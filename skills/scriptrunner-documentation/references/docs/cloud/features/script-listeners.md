@@ -3,8 +3,10 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features
-- Doc ID: doc-sr4jc-d4d1c680-2339-4d26-a20d-06d9df37b2a2-dd2d3d98c10eee8c
+- Doc ID: doc-sr4jc-ee441fc2-8992-43fe-b6ee-aae78f034666-dd2d3d98c10eee8c
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/script-listeners
+
+Overview of Script Listeners and how they work in ScriptRunner for Jira.
 
 |  |  |
 | --- | --- |
@@ -71,7 +73,7 @@ For example, whenever there is a _Critical_ level priority work item in a specif
     
 3.  Optional: You can modify or delete any of the script listeners listed. Click Edit or Delete via the Actions ellipsis to select the relevant script listener and delete, or refer to [Edit a script listener](https://docs.adaptavist.com/sr4jc/latest/features/script-listeners#edit-a-script-listener--en).
     
-    You will see the _Create Script Listener_ screen, as shown below:
+    You will see the Create Script Listener screen, as shown below:
     
 4.  Enter a name for the listener in Script Listener Called.
 5.  Choose to Enable Script Listener, or turn off to disable.
@@ -84,7 +86,7 @@ For example, whenever there is a _Critical_ level priority work item in a specif
     
 8.  Enter a condition on which the code will run. Note that the _ScriptRunner Add-on user_ always runs the condition _,_ but you can choose who runs the script.
     
-    The [condition script](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/restrict-transitions) will be evaluated before your code is executed. If a value other than true is returned, the code will not execute. The condition is evaluated using the [Jira Expression Framework](https://developer.atlassian.com/cloud/jira/software/jira-expressions/?_ga=2.239484483.1976807474.1684141123-2016015256.1672998146#introduction). Event-specific Script Context parameters and variables are listed [here](script-listeners.md) for each event. The work item property is not an available Context variable for work item link created events.
+    The [condition script](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/restrict-transitions) will be evaluated before your code is executed. If a value other than true is returned, the code will not execute. The condition is evaluated using the [Jira Expression Framework](https://developer.atlassian.com/cloud/jira/software/jira-expressions/?_ga=2.239484483.1976807474.1684141123-2016015256.1672998146#introduction). Event-specific Script Context parameters and variables are listed [here](script-listeners.md) for each event. The work item property is not available as a Context variable for work item link-created events.
     
 9.  Choose from either _ScriptRunner Add-On User_ or _Current User_ as the user you wish to run the listener from the Run code as: drop-down options. Script Listeners can make requests to Jira using either user.
     
@@ -106,9 +108,7 @@ For example, whenever there is a _Critical_ level priority work item in a specif
      
 11.  Optional: Click Script context to view an information modal highlighting parameters/code variables.
      
-     Note:
-     
-     Script context
+     Note: Script context
      
      The Script Context is a set of parameters/code variables automatically available in your script to provide contextual data for the script listeners. The parameters and variables in the Script Context are different for each Listener Event. Event-specific Script Context parameters and variables are listed [here](https://docs.adaptavist.com/sr4jc/latest/features/script-listeners/example-script-listeners) for each event.
      
@@ -121,7 +121,7 @@ For example, whenever there is a _Critical_ level priority work item in a specif
      
      For further information on referencing Script Context values, refer to [Example Script Variables](https://docs.adaptavist.com/sr4jc/latest/features/script-variables/example-script-variables).
      
-12.  Click Save. You can test your script using the Run Now button, which will execute the script and return the results.
+12.  Click Save. You can test your script using the Run Now button, which executes the script and returns the results.
 
 ## Edit a Script Listener
 

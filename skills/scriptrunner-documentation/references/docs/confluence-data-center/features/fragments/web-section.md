@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Fragments
-- Doc ID: doc-sr4c-0f95c797-05ac-4a59-84c3-e06f01c14ee9-50acb66eca700b47
+- Doc ID: doc-sr4c-8df1b7e8-477b-4fad-99b7-af24c33413aa-50acb66eca700b47
 - Source: https://docs.adaptavist.com/sr4c/latest/features#fragments--en#web-section--en
 
 Web sections can be used to add new locations or sections or to add web-items (links, buttons etc).

@@ -3,10 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Get Started > Settings
-- Doc ID: doc-sr4js-ada41eff-76ee-4ff9-b345-cce263136bce-802bdb9167d5e886
+- Doc ID: doc-sr4js-76026e87-e76f-4c13-a1a4-11c1362af2e0-802bdb9167d5e886
 - Source: https://docs.adaptavist.com/sr4js/latest/get-started/settings/anonymous-analytics
 
-_Anonymous Analytics_ is a setting in ScriptRunner that, when enabled, allows us to collect ScriptRunner usage data.
+Anonymous Analytics is a setting in ScriptRunner that, when enabled, allows us to collect ScriptRunner usage data.
 
 Data is sent to the following domain when _Anonymous Analytics_ is enabled: `https://product.telemetry.adaptavist.com/`
 

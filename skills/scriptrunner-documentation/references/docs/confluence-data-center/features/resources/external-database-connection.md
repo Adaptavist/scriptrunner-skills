@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Resources
-- Doc ID: doc-sr4c-d20922ac-823a-4a61-bf6f-f073e1671671-9bab11c99145c901
+- Doc ID: doc-sr4c-bf09b98d-f9f9-447e-94dc-ba3e07c4fe94-9bab11c99145c901
 - Source: https://docs.adaptavist.com/sr4c/latest/features#resources--en#external-database-connection--en
 
 External database connections are used to connect to any database.

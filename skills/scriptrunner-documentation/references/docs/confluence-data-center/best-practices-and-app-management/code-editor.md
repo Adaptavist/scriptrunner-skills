@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Best Practices and App Management
-- Doc ID: doc-sr4c-0ce0082d-edd9-46e6-9729-99c1a72f3713-fbbd1449a84a17d8
+- Doc ID: doc-sr4c-6f7a9379-41a5-4f96-b530-c05ff749b07c-fbbd1449a84a17d8
 - Source: https://docs.adaptavist.com/sr4c/latest/best-practices-and-app-management#code-editor--en
 
 Use the _Code Editor_ to write scripts in ScriptRunner.

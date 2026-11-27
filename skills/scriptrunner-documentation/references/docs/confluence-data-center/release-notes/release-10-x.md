@@ -3,10 +3,55 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Release Notes
-- Doc ID: doc-sr4c-7e328ed1-a1a7-4a15-ad12-8e569f1e4fbe-ee39f1d964103323
+- Doc ID: doc-sr4c-13981ee8-ca97-428e-8979-81df23c24896-ee39f1d964103323
 - Source: https://docs.adaptavist.com/sr4c/latest/release-notes/release-10.x
 
 Feature release information about our 10.x versions.
+
+## 10.21.0
+
+26 Nov 2026
+
+### Fragments web item bug fixed
+
+We've fixed an issue where clicking a Web Item fragment set to Navigate to a Link at the `system.content.button` location did nothing. The button now opens the configured link.
+
+### Logging bug fixed
+
+We've fixed an issue where log messages written by ScriptRunner for Confluence through SLF4J never reached the Confluence logs. These messages now appear in the logs as expected.
+
+## 10.19.0
+
+### Security update
+
+We've made targeted security improvements in this release as part of our ongoing hardening work. For more details on how we handle security and vulnerability management, see our [Vulnerabilities and Security](https://docs.adaptavist.com/sr4c/latest/get-started/vulnerabilities-and-security) documentation.
+
+### Third-party dependencies updated to remove CVEs
+
+We've updated third-party dependencies within ScriptRunner, including Apache Ant, to address known CVEs (Common Vulnerabilities and Exposures). These changes are part of our ongoing hardening work.
+
+### Fragments performance improvement
+
+We've made an improvement to how Fragments are processed available to all customers. This reduces the load Fragments place on large or busy instances.
+
+### Page rendering safeguards extended
+
+We've extended the safeguards that stop a ScriptRunner failure from affecting the data Confluence and other apps rely on to render pages. This is a preventative improvement.
+
+### HAPI bugs fixed
+
+We've fixed multiple issues with HAPI:
+
+-   `Pages.create` failed with an error on Confluence 10.x. Pages can now be created with HAPI as expected.
+-   The `OAuthRequestSigner` class returned a 401 error when the username contained an `@` symbol, for example an email address. Requests for these users now work as expected.
+
+### Script engine and diagnostics bugs fixed
+
+We've fixed several issues with script execution and diagnostics:
+
+-   The script engine could load duplicate classes. Scripts now load and run as expected.
+-   Groovy compiler errors, such as `BUG! exception in phase 'class generation'`, were logged with an empty stack trace. These errors now include full stack traces, which makes them easier to diagnose.
+-   The ScriptRunner diagnostics tools could fail with a `NoClassDefFoundError` related to logging. Diagnostics now run as expected.
 
 ## 10.18.0
 

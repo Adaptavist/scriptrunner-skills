@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features
-- Doc ID: doc-sr4js-e18f5843-258e-40d0-aba7-e93d9106d4b8-761c5366f5432686
+- Doc ID: doc-sr4js-cd73967f-1387-4eee-a6b5-bca5b2218be9-761c5366f5432686
 - Source: https://docs.adaptavist.com/sr4js/latest/features#fragments--en
 
 |  |  |

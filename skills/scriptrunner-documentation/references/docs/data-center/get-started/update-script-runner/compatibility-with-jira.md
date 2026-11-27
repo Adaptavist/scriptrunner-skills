@@ -3,10 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Get Started > Update ScriptRunner
-- Doc ID: doc-sr4js-07e11ea5-5cb9-4242-806c-92ea803dbcee-d8a6b6e4153e89b0
+- Doc ID: doc-sr4js-012b8bd6-4f84-427a-8d4f-2d6c82d19b39-d8a6b6e4153e89b0
 - Source: https://docs.adaptavist.com/sr4js/latest/get-started/update-scriptrunner#compatibility-with-jira--en
 
-This page details ScriptRunner compatibility with major Jira versions. We recommend you check this page if you plan on upgrading your Jira instance.
+Check ScriptRunner compatibility with major Jira versions before upgrading your Jira instance.
 
 ## Jira 11
 

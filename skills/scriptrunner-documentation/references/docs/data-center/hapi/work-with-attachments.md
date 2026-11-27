@@ -3,10 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: HAPI
-- Doc ID: doc-sr4js-bfc9b2ba-faa2-4e6f-9c07-443b9d2921e5-c78cba9622bd7da7
+- Doc ID: doc-sr4js-3fd5ab88-6e7c-4434-852e-9de23c83cef1-c78cba9622bd7da7
 - Source: https://docs.adaptavist.com/sr4js/latest/hapi#work-with-attachments--en
 
-With HAPI, we've made it easy for you to add, access, and delete attachments.
+Add, retrieve, and delete issue attachments using HAPI, with code examples for each operation.
 
 ## Adding attachments
 

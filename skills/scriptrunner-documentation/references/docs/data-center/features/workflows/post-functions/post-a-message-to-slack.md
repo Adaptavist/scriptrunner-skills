@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Workflows > Post Functions
-- Doc ID: doc-sr4js-ade6226e-da39-4524-80cd-b81bfb52114a-170dd468925fcd29
+- Doc ID: doc-sr4js-bbfb950c-6cb1-4661-932c-157b5ed220c2-170dd468925fcd29
 - Source: https://docs.adaptavist.com/sr4js/latest/features#workflows--en#post-functions--en#post-a-message-to-slack--en
 
 The _Post a message to Slack_ post function allows you to send a personalized custom message to your Slack room. For example, you could be notified in a Slack channel when an issue is moved to _Done._

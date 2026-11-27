@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Workflows
-- Doc ID: doc-sr4js-cc6c73c8-35ed-4c1d-a799-d54199b4a020-c90b540d508fe961
+- Doc ID: doc-sr4js-135bb9c8-ced7-4d6b-978b-97ef1763fd03-c90b540d508fe961
 - Source: https://docs.adaptavist.com/sr4js/latest/features#workflows--en#validators--en
 
 A ScriptRunner validator is a powered-up version of a standard Jira validator. Instead of using one of the basic validators that you find in Jira, you can run a script to validate your issue. If the script returns `false` the script does not transition until all errors are resolved, for example, filling in the required fields. Validators allow administrators to determine what error message is displayed to the user.

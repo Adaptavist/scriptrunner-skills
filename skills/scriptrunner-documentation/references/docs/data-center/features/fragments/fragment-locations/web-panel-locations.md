@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Fragments > Fragment Locations
-- Doc ID: doc-sr4js-46f8ce58-1f98-4020-90e2-455a9317c016-d4b814730ca364b6
+- Doc ID: doc-sr4js-315af69f-3ed7-4e40-af10-6f49cd35b226-d4b814730ca364b6
 - Source: https://docs.adaptavist.com/sr4js/latest/features#fragments--en#fragment-locations--en#web-panel-locations--en
 
 Panel locations are places where you can add a custom banner. Banners could be used to display additional information on a particular build, a plan, or the system navigation. For more information, read up on [web panels](https://developer.atlassian.com/server/framework/atlassian-sdk/web-panel-plugin-module/) in the Atlassian documentation.

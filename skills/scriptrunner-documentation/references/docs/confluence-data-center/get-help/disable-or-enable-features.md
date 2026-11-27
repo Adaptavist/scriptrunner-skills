@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Get Help
-- Doc ID: doc-sr4c-8b4dc2cf-6cff-43ec-994e-466433358563-e351b8c3ac5f066b
+- Doc ID: doc-sr4c-833364bf-a2a7-4787-9e36-39e223cec729-e351b8c3ac5f066b
 - Source: https://docs.adaptavist.com/sr4c/latest/get-help#disable-or-enable-features--en
 
 How to disable and re-enable features in the app for troubleshooting.

@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Get Started
-- Doc ID: doc-sr4c-406f8820-ece0-482c-ab5f-f696172d54b1-97aa8d228183ee71
+- Doc ID: doc-sr4c-d84421b6-bfef-40b8-b8a0-b996b6cb65ac-97aa8d228183ee71
 - Source: https://docs.adaptavist.com/sr4c/latest/get-started#vulnerabilities-and-security--en
 
 This page covers how we scan for vulnerabilities and common security concerns.

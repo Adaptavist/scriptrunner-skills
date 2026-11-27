@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Best Practices > Write and Run Tests
-- Doc ID: doc-sr4js-e3e99662-305a-45c7-8931-b289838d8e0c-573ad6373f0fcefa
+- Doc ID: doc-sr4js-14bb1a39-0ddc-40a1-a8e5-a96cb13d3ffd-573ad6373f0fcefa
 - Source: https://docs.adaptavist.com/sr4js/latest/best-practices/write-and-run-tests#test-script-fields--en
 
 Testing [scripted fields](https://docs.adaptavist.com/sr4js/latest/features/script-fields) is fairly simple, it just involves creating the custom field, creating issues and verifying the correct data.

@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Built-in scripts > Guardrails Built-in Scripts
-- Doc ID: doc-sr4js-8321caa3-03b7-4143-a127-38aa641b35a8-d07db4bd0a77dea1
+- Doc ID: doc-sr4js-dd3dd0e3-5337-4c0b-9454-48b2e576426c-d07db4bd0a77dea1
 - Source: https://docs.adaptavist.com/sr4js/latest/features#built-in-scripts--en#guardrails-built-in-scripts--en#maximum-change-history-records-per-issue--en
 
 Use this built-in script to find issues with change items that exceed the recommended amount, and delete the oldest.

@@ -3,7 +3,7 @@
 - Platform: connect
 - Space: SRC
 - Hierarchy: n/a
-- Doc ID: doc-src-409dd1d8-cfd5-4a85-918c-76e4664343cd-d665ab2a2101dc5d
+- Doc ID: doc-src-4b966570-80cc-49cd-bf19-48fc1cf60396-d665ab2a2101dc5d
 - Source: https://docs.adaptavist.com/src/latest/scripting
 
 Learn the specifics of scripting in ScriptRunner Connect.
@@ -18,7 +18,9 @@ Our [runtime](https://docs.adaptavist.com/src/latest/scripting/runtime) is based
 
 Don't have the time or capacity to write scripts in-house? Our on-demand [scripting service](https://www.adaptavist.com/solutions/development-services) can bolster your capability and help you launch customization and automation initiatives.
 
-## Demo
+## Demo: About scripting & emulating external events
+
+[Media](https://app.arcade.software/share/FLng31ysQCQqyMaFmc8e?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true)
 
 ## Scripting language options
 

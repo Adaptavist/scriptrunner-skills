@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Listeners
-- Doc ID: doc-sr4js-3458c92b-e3d6-4a91-845b-0f48b4ab6d0c-9a44ec54c478f80d
+- Doc ID: doc-sr4js-931e198a-da15-43af-9ba5-b13b3893f452-9a44ec54c478f80d
 - Source: https://docs.adaptavist.com/sr4js/latest/features#listeners--en#custom-listener--en
 
 Using groovy scripts as workflow functions instead of full-blown java plugins is much faster, more maintainable and flexible, and has all the same capabilities as java plugins. Explicit compilation is much over-rated.
@@ -54,6 +54,35 @@ def getIncludedEvents = {
 	} as List<IssueEvent>
 }
 ```
+
+## Listeners and issue transitions
+
+During a workflow transition, Jira fires the event configured on the transition (for example, _Generic Event_ or _Issue Resolved_). A listener on that event runs _before_ the transition finishes. After the listener runs, Jira saves its own copy of the issue, which still holds the old values, so any system field the listener changed (such as Assignee, Summary, Priority, Due date or Original estimate) is set back to its previous value. The change still appears in the issue history. Custom field changes are not affected, and neither are listeners triggered by events outside a transition, such as editing an issue.
+
+To update the issue being transitioned, use one of these approaches:
+
+-   A post function. Add a [custom script post function](https://docs.adaptavist.com/sr4js/latest/features/workflows/post-functions/custom-post-functions), or a built-in one, and place it before the _Update change history for an issue and store the issue in the database_ post function. For more information, see [Post function order](https://docs.adaptavist.com/sr4js/latest/features/workflows/post-functions/custom-post-functions#post-function-order--en). In a custom script post function, use `issue.set { }`. This changes the transition's own copy of the issue, so nothing overwrites it: 
+    
+    ```
+    issue.set {
+        setAssignee('admin')
+    }
+    ```
+    
+-   Keep the listener and update the transition's copy as well. This is useful if you have many workflows. After updating the issue, set the same system fields on `event.issue`, which is the copy Jira saves at the end of the transition: 
+    
+    ```
+    import com.atlassian.jira.issue.MutableIssue
+    
+    def issue = Issues.getByKey(event.issue.key)
+    issue.update {
+        setAssignee(Users.getByKey('admin')) // records the change in the issue history
+    }
+    (event.issue as MutableIssue).setAssignee(Users.getByKey('admin')) // keeps the change after the transition saves
+    ```
+    
+    Do this for each system field the listener changes. Custom fields only need `issue.update { }`.
+    
 
 ## Custom Listener Example
 

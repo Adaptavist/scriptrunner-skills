@@ -3,12 +3,12 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: Scripting Resources
-- Doc ID: doc-sr4cc-785b600c-7c2f-405e-8ecc-b95859398b91-a91a92ee3d461c1b
+- Doc ID: doc-sr4cc-fca884c2-bca3-4b34-9901-bd9c6df24e16-a91a92ee3d461c1b
 - Source: https://docs.adaptavist.com/sr4cc/latest/scripting-resources#introduction-to-groovy--en
 
 Learn the basics of Groovy, the programming language that is used by ScriptRunner.
 
-ScriptRunner allows you to create custom scripts using the [Apache Groovy](https://groovy-lang.org/) language. Apache Groovy is both a dynamic and static language; it has been created for the Java platform, meaning seamless integration with Confluence.
+ScriptRunner allows you to create custom scripts using the [Apache Groovy](https://groovy-lang.org/) language. Apache Groovy is both a dynamic and static language; it was created for the Java platform, meaning seamless integration with Confluence.
 
 Apache Groovy is a programming and scripting language, so you do not need to define a class to be able to run code. With its powerful features, Apache Groovy in ScriptRunner enables a high level of customization.
 
@@ -22,7 +22,7 @@ We intend this page to be a list of useful resources for self-learning. Adaptavi
 
 You can use Apache Groovy scripts to customize the majority of ScriptRunner features. Apache Groovy scripts can be inserted anywhere a 'Script' field is found. You can enter Apache Groovy scripts directly into the ScriptRunner front-end, or select one of the .groovy files stored in the _Script Roots_ directory on the server.
 
-We regularly run champion hour Q&A sessions to answer a host of questions about our products, including ScriptRunner and the use of Apache Groovy.
+We regularly run champion hour Q&A sessions to answer a host of questions about our products, including ScriptRunner and Apache Groovy.
 
 -   [Champion Hour Q&A](https://www.adaptavist.com/webinars/live-champion-hour/) - Hear from our team of experts on how to get the most out of your Adaptavist and Atlassian solutions.
 -   [ScriptRunner Q&A](https://www.adaptavist.com/webinars/champion-hour-scriptrunner/) - Listen to our dedicated team of engineers answering technical questions about using ScriptRunner.

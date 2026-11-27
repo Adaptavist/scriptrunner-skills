@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Integrations > Vendors API
-- Doc ID: doc-sr4js-5a58b12e-f1c9-49d7-8fd2-4af50f8fee4e-03e1be866c1cae3c
+- Doc ID: doc-sr4js-49babfea-4158-4537-b12a-2af9cfdac9b2-03e1be866c1cae3c
 - Source: https://docs.adaptavist.com/sr4js/latest/integrations/vendors-api#vendors-api-example-plugin--en
 
 This example demonstrates how to integrate a Jira custom field with the Behaviours API. You can download the source code from [GitHub](https://github.com/scriptrunnerhq/vendors-api-example). You'll also need the latest version of ScriptRunner for Jira (8.14.0 or above) for the integration to work.

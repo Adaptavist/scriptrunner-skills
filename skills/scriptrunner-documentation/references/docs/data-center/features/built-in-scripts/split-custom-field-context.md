@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Built-in scripts
-- Doc ID: doc-sr4js-3260c9e2-0845-4e1b-90f5-cd86301cf8de-e62fa700a7cbb2c0
+- Doc ID: doc-sr4js-9ca51140-bef4-46a8-80ce-77396df88ec5-e62fa700a7cbb2c0
 - Source: https://docs.adaptavist.com/sr4js/latest/features#built-in-scripts--en#split-custom-field-context--en
 
 The _Split Custom Field_ context script allows users to separate custom field contexts between two projects, duplicating the custom field values across the projects. This means they can be configured separately.

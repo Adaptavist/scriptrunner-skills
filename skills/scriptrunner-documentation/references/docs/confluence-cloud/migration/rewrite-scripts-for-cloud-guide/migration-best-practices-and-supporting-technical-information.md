@@ -3,7 +3,7 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: Migration > Rewrite Scripts for Cloud Guide
-- Doc ID: doc-sr4cc-436754da-191e-401c-8b58-43a50b27c621-303e8bd8e0977d55
+- Doc ID: doc-sr4cc-12bfdb55-c825-4ef4-af8c-e160a677ed86-303e8bd8e0977d55
 - Source: https://docs.adaptavist.com/sr4cc/latest/migration/rewrite-scripts-for-cloud-guide#migration-best-practices-and-supporting-technical-information--en
 
 Details on our reccomendations when migrating between ScriptRunner for Confluence Server/DC and Cloud.
@@ -103,8 +103,6 @@ if (page) {
 }
 ```
 
- 
-
 ```
 // Define the page ID and the new content
 def pageId = 256475137 // Replace with the actual page ID
@@ -184,8 +182,6 @@ if (space) {
 }
 ```
 
- 
-
 ```
 def space = Spaces.getByKey("your space key") // Replace with the actual space key
 def pageTitle = 'New Page Title'
@@ -249,8 +245,6 @@ if (page) {
     return "Page not found."
 }
 ```
-
- 
 
 ```
 def page = Pages.getById(196721) //replace with your actual page id

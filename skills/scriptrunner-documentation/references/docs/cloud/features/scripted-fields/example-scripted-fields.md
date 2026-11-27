@@ -3,12 +3,12 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features > Scripted Fields
-- Doc ID: doc-sr4jc-477c07c4-9319-4b30-80ca-cbe0b5b6e4db-5804114d4b1aed95
+- Doc ID: doc-sr4jc-a2c444b3-5e08-44f9-8bae-108f7e033f85-5804114d4b1aed95
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/scripted-fields#example-scripted-fields--en
 
 Along with the example Scripted Fields outlined below, we have added a demo video to help you understand how this feature works in ScriptRunner for Jira Cloud:
 
-[Media](https://www.youtube.com/embed/t3gnI11MBOU#)
+Tip: Remember! Scripted Fields appear on your screens when you assign their associated custom fields to the relevant screen. This is only possible if you have already added custom fields within your Jira admin settings.
 
 Here are some examples that show how to use Jira APIs. The Scripted Fields feature in Cloud works differently from Server/Data Center, where you must use one of the return types.
 

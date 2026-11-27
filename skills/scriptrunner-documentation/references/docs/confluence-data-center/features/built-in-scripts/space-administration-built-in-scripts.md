@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Built-In Scripts
-- Doc ID: doc-sr4c-b8dafde0-7a1e-4079-bee6-3cea1746f5ee-c6b33816609cef85
+- Doc ID: doc-sr4c-6029f06d-2074-484b-86c6-5b007e4ef5a3-c6b33816609cef85
 - Source: https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#space-administration-built-in-scripts--en
 
 Learn about our built-in scripts, available to users with space admin permissions.

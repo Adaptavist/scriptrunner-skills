@@ -2,9 +2,9 @@
 
 - Platform: confluence-data-center
 - Space: SR4C
-- Hierarchy: Migration > Migrating to or from Cloud > Feature Parity
-- Doc ID: doc-sr4c-9ac016be-8f0b-44b6-847d-b7a1f471fd22-e5c0d3ade8e8af1e
-- Source: https://docs.adaptavist.com/sr4c/latest/migration#migrating-to-or-from-cloud--en#feature-parity--en#macro-migration-tips--en
+- Hierarchy: Migration > Migrating to Cloud > Feature Parity
+- Doc ID: doc-sr4c-51c773b0-e8ea-4b25-904a-0fb633e5c24d-790d669d45754909
+- Source: https://docs.adaptavist.com/sr4c/latest/migration#migrating-to-cloud--en#feature-parity--en#macro-migration-tips--en
 
 Helpful information about macros to use during a migration.
 

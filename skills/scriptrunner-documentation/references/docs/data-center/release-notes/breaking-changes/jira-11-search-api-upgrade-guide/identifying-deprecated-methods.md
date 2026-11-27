@@ -3,8 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Release Notes > Breaking Changes > Jira 11 Search API Upgrade Guide
-- Doc ID: doc-sr4js-62a5cab8-a7d4-4cdb-8f82-a0918121099a-62c1304b8ed6fd4b
+- Doc ID: doc-sr4js-15973f45-5249-47ff-a90d-4d3da7a7f223-62c1304b8ed6fd4b
 - Source: https://docs.adaptavist.com/sr4js/latest/release-notes/breaking-changes#jira-11-search-api-upgrade-guide--en#identifying-deprecated-methods--en
+
+Find out which Lucene-based JQL methods are deprecated in Jira 10.4 and how to identify them in your ScriptRunner scripts.
 
 In Jira Data Center version 10.4, Atlassian introduced a [new Search API](https://confluence.atlassian.com/adminjiraserver/search-api-upgrade-guide-1488594607.html), transitioning from Lucene to OpenSearch. Many methods related to JQL functions will be deprecated, and if you use them in your scripts, you'll need to update to their Search API equivalents. This page guides you to relevant sections of the Atlassian documentation to help you quickly identify the affected methods.
 

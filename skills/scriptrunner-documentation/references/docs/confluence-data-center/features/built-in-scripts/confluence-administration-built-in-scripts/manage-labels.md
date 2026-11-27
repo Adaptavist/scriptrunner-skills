@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Built-In Scripts > Confluence Administration Built-In Scripts
-- Doc ID: doc-sr4c-4f319fb5-58aa-45de-b33c-1dd2302a4630-b752695be0a87017
+- Doc ID: doc-sr4c-3a625d10-8476-4fbf-91a5-8b774134a696-b752695be0a87017
 - Source: https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#confluence-administration-built-in-scripts--en#manage-labels--en
 
 Use this script to rename, add, and remove page labels in bulk.

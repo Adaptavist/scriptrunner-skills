@@ -3,10 +3,55 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Release Notes
-- Doc ID: doc-sr4c-36d32d6c-d1b9-4e6d-9c32-5ff44a962cd0-b888ceac2415f444
+- Doc ID: doc-sr4c-43275f65-ab36-4011-b363-1544ac076015-b888ceac2415f444
 - Source: https://docs.adaptavist.com/sr4c/latest/release-notes/release-9.x
 
 Feature release information about our 9.x versions.
+
+## 9.47.0
+
+26 Nov 2026
+
+### Third-party dependencies updated to remove CVEs
+
+We've updated third party dependencies within ScriptRunner, including `jsoup`, to address known CVEs (Common Vulnerabilities and Exposures). These changes are part of our ongoing hardening work.
+
+### Create Page macro bug fixed
+
+We've fixed an issue where pages created by the _Create Page_ macro from a From Page with attachments showed Created by Anonymous instead of the user who created them. The page creator is now recorded correctly.
+
+### Fragments web item bug fixed
+
+We've fixed an issue where clicking a Web Item fragment set to Navigate to a Link at the `system.content.button` location did nothing. The button now opens the configured link.
+
+### Script engine and diagnostics bugs fixed
+
+We've fixed multiple issues with the script editor and diagnostics:
+
+-   Documentation for Java (JDK) classes in the script editor failed to load and showed Cannot fetch documentation, please check your internet connection. The documentation panel and hover now show a View Documentation on docs.oracle.com link to the relevant class or method page.
+-   Log messages written by ScriptRunner for Confluence through SLF4J never reached the Confluence logs. These messages now appear in the logs as expected.
+
+## 9.45.0
+
+### Security update
+
+We've made targeted security improvements in this release as part of our ongoing hardening work. For more details on how we handle security and vulnerability management, see our [Vulnerabilities and Security](https://docs.adaptavist.com/sr4c/latest/get-started/vulnerabilities-and-security) documentation.
+
+### Third-party dependencies updated to remove CVEs
+
+We've updated third-party dependencies within ScriptRunner, including Apache Ant and Apache OpenNLP, to address known CVEs (Common Vulnerabilities and Exposures). These changes are part of our ongoing hardening work.
+
+### Fragments performance improvement
+
+We've made an improvement to how Fragments are processed available to all customers. This reduces the load Fragments place on large or busy instances.
+
+### Script engine and diagnostics bugs fixed
+
+We've fixed several issues with script execution and diagnostics:
+
+-   The script engine could load duplicate classes. Scripts now load and run as expected.
+-   Groovy compiler errors, such as `BUG! exception in phase 'class generation'`, were logged with an empty stack trace. These errors now include full stack traces, which makes them easier to diagnose.
+-   The ScriptRunner diagnostics tools could fail with a `NoClassDefFoundError` related to logging. Diagnostics now run as expected.
 
 ## 9.44.0
 
@@ -173,7 +218,7 @@ We want to emphasize that this update doesn't mean your instance was vulnerable 
 
 ### Documentation update
 
-The [Rewrite Scripts for Cloud Guide](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-or-from-cloud/rewrite-scripts-for-cloud) is ready to help with your migration!
+The [Rewrite Scripts for Cloud Guide](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-cloud/rewrite-scripts-for-cloud) is ready to help with your migration!
 
 ## 9.22.0
 
@@ -209,7 +254,7 @@ There are only core component changes in ScriptRunner for Confluence 8.42.0, so 
 
 ### Documentation update
 
-We added a [Migration Checklist](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-or-from-cloud/migration-checklist) to help get you started with migration to ScriptRunner for Confluence Cloud!
+We added a [Migration Checklist](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-cloud/migration-checklist) to help get you started with migration to ScriptRunner for Confluence Cloud!
 
 ## 9.17.0
 
@@ -233,12 +278,12 @@ There are only core component changes in ScriptRunner for Confluence 8.41.0, so 
 
 The following migration documentation has been updated:
 
--   [Feature Parity](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-or-from-cloud/feature-parity)
+-   [Feature Parity](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-cloud/feature-parity)
 
 The following migration documentation has been added:
 
--   [Confluence Events Parity](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-or-from-cloud/feature-parity/confluence-events-parity)
--   [Macro Migration Tips](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-or-from-cloud/feature-parity/macro-migration-tips)
+-   [Confluence Events Parity](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-cloud/feature-parity/confluence-events-parity)
+-   [Macro Migration Tips](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-cloud/feature-parity/macro-migration-tips)
 
 ## 9.14.0
 

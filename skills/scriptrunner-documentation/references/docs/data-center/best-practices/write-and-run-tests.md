@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Best Practices
-- Doc ID: doc-sr4js-19499bdb-9654-4e3a-9b00-3e2088365399-a5366ff88e1985cf
+- Doc ID: doc-sr4js-7414fa07-5ea8-4fe5-818d-292925c8dd6a-a5366ff88e1985cf
 - Source: https://docs.adaptavist.com/sr4js/latest/best-practices/write-and-run-tests
 
 ScriptRunner makes easy things easier and allows experienced users to perform advanced tasks. You can do anything in a script that you could do in a plugin, usually without the overhead of understanding the host of software development tools and methodologies that a typical plugin developer would have to worry about.

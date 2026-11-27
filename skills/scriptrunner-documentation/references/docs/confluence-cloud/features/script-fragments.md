@@ -3,10 +3,10 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: Features
-- Doc ID: doc-sr4cc-866c1d11-4c53-4968-bfe0-3bbe2ab1af03-06406df0e84cb114
+- Doc ID: doc-sr4cc-d784ac47-d4bd-43f0-973f-8d36b9ca3529-06406df0e84cb114
 - Source: https://docs.adaptavist.com/sr4cc/latest/features/script-fragments
 
-Script Fragments allow you to customize your Confluence instance. Learn about the two types and thier functionality.
+Script Fragments allow you to customize your Confluence instance. Learn about the two types and their functionality.
 
 There are two types of fragments that you can use to customize your Confluence instance:
 
@@ -21,44 +21,36 @@ Here is an example of a simple button directing users to more information in the
 
 ### Use cases
 
-You could use custom buttons in a number of ways, here are a few ideas to get you started:
+You could use custom buttons in a number of ways; here are a few ideas to get you started:
 
--   Direct users to a log in or documentation page
--   Open a Jira instance with project information related to the Confluence page, like the open tasks of a devlopement team
+-   Direct users to a login or documentation page
+-   Open a Jira instance with project information related to the Confluence page, like the open tasks of a development team
 -   Redirect users to another location within Confluence
--   Give users a link to more resource information
+-   Give users a link to more resource information.
 
 ### Create a web item fragment
 
-Follow these steps to create a custom button for your Confluence instance:
+Follow these steps to create a custom button appearing in the More menu, for your Confluence instance:
 
-1.  Navigate to _ScriptRunner_ and select Script Fragments.
+1.  Navigate to ScriptRunner and select More > Script Fragments.
     
 2.  Select Spaces where you want the button to appear.
-3.  Select WebItem for _Fragment Type_.
-4.  Enter the Location, which is where you want the button to appear on the page.
+3.  Select WebItem for Fragment Type.
+4.  Select the Source, either _Single URL_ or _Separate HTML, CSS, JS URLs_.
     
-    Your options are:
-    
-    -   _Sidebar Link_: appears on the lefthand side navigation.
-    -   _More Button Primary_
-    -   _More Button Secondary_
-    -   More Button Tertiary
-5.  Select the Source, either _Single URL_ or _Separate HTML, CSS, JS URLs_.
-    
-    What option you select depends on how you do your web development. If you put your plain text, styling, and functionality in one code file, choose Single URL. If you have code for HTML for text, CSS for style, and JS for functionality, select _Separate HTML, CSS, JS URLs._
+    What option you select depends on how you do your web development. If you put your plain text, styling, and functionality into a single code file, choose _Single URL_. If you have code for HTML for text, CSS for style, and JS for functionality, select _Separate HTML, CSS, JS URLs._
     
     When you select your Source choice, different URL options appear.
     
-6.  Choose the next step based on your Source choice:
+5.  Choose the next step based on your Source choice:
     
     -   If you chose _Single URL_, a URL field appears. Enter where you want your button to navigate to.
     -   If you chose _Separate HTML, CSS, JS URLs_, fields appear for each required URL, which are HTML URL, CSS URL, and JS URL.
         
-        Tip: To use this option, you must have each file hosted at a URL accessible to your instance. See the [Host URLs for Script Fragments](https://docs.adaptavist.com/sr4cc/latest/features/script-fragments#host-urls-for-script-fragments--en) section at the bottom of this page.
+        Tip: To use this option, each file must be hosted at a URL accessible to your instance. See the [Host URLs for Script Fragments](https://docs.adaptavist.com/sr4cc/latest/features/script-fragments#host-urls-for-script-fragments--en) section at the bottom of this page.
         
     
-7.  Select Save Changes.
+6.  Select Save Changes.
 
 Here is an example of the web item form filled out:
 
@@ -75,44 +67,37 @@ Here is an example of a web panel display with an external source:
 You could use custom web panels in a number of ways, here are a few ideas to get you started:
 
 -   Add a banner to a documentation site to alert users of an important feature update
--   Add resource information to a Confluence page
+-   Add resource information to a Confluence page.
 
 ### Create a web panel script fragment
 
-Follow these steps to create a custom web panel for your Confluence instance:
+Follow these steps to create a custom web panel in the header of your Confluence instance:
 
-1.  Navigate to _ScriptRunner_ and select Script Fragments.
+Note: The Connect _Footer_ location was [deprecated](https://developer.atlassian.com/cloud/confluence/extension-point-locations/#web-panel) April 30, 2025 and is not supported in Forge.
+
+1.  Navigate to ScriptRunner and select More > Script Fragments.
     
 2.  Select Spaces where you want the panel to appear.
-3.  Select _WebPanel_ Fragment Type.
-4.  Enter the Location, which is where you want the panel to appear on the page.
+3.  Select WebPanel in the Fragment Type field.
+4.  Select the Source, either _Single URL_ or _Separate HTML, CSS, JS URLs_.
+5.  What option you select depends on how you do your web development.
     
-    Your options are:
+    If you put your plain text, styling, and functionality in a single code file, choose Single URL. If you have code for HTML for text, CSS for style, and JS for functionality, select _Separate HTML, CSS, JS URLs._
     
-    1.  _Header_ appears at the top of the page.
-    2.  _Footer_ appears at the bottom of the page.
+    Result: When you select your Source choice, different URL options appear.
     
-5.  Select the Source, either _Single URL_ or _Separate HTML, CSS, JS URLs_.
-6.  What option you select depends on how you do your web development.
-    
-    If you put your plain text, styling, and functionality in one code file, choose Single URL. If you have code for HTML for text, CSS for style, and JS for functionality, select _Separate HTML, CSS, JS URLs._
-    
-    Result _: When you select your Source choice, different URL options appear._
-    
-7.  Choose the next step based on your Source choice:
+6.  Choose the next step based on your Source choice:
     
     -   If you chose _Single URL_, a URL field appears. Enter the URL of the content you want in your panel, and the content appears in the panel as it does at that URL.
     -   If you chose _Separate HTML, CSS, JS URLs_, fields appear for each required URL, which are HTML URL, CSS URL, and JS URL. This creates a more custom panel.
     
     Tip: To use this option, you must have each file hosted at a URL accessible to your instance. See the [Host URLS for Script Fragments](https://docs.adaptavist.com/sr4cc/latest/features/script-fragments#host-urls-for-script-fragments--en) section at the bottom of this page.
     
-8.  Select Save Changes.
+7.  Select Add Fragment.
 
-Note:
+Your custom web panel is now available.
 
 Here is an example of the web panel form filled out:
-
-Your custom web panel is now in the spaces you specified.
 
 ## Host URLs for script fragments
 
@@ -140,4 +125,4 @@ Functionality could be limited for security issues. If there is a security issue
 Visit the following Atlassian documentation pages to learn more about fragments:
 
 -   [Web items](https://developer.atlassian.com/cloud/confluence/modules/web-item/)
--   [Web panels](https://developer.atlassian.com/cloud/confluence/modules/web-panel/)
+-   [Web panels](https://developer.atlassian.com/cloud/confluence/modules/web-panel/).

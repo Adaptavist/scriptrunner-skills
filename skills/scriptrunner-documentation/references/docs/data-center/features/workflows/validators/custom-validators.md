@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Workflows > Validators
-- Doc ID: doc-sr4js-278d1f20-1e56-4375-9e28-4f88ab2790ab-553bc37a2f3698f8
+- Doc ID: doc-sr4js-5db5df04-6464-4bdf-851c-5505e3709139-553bc37a2f3698f8
 - Source: https://docs.adaptavist.com/sr4js/latest/features#workflows--en#validators--en#custom-validators--en
 
 Use the _Custom script validator_ to run an embedded script that determines whether an issue should be permitted to transition to a particular status within a workflow. This validator allows you to write Groovy scripts that can evaluate a wide range of conditions based on issue fields, workflow states, project properties, user permissions, and other contextual data.

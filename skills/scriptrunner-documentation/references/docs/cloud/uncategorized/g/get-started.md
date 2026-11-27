@@ -3,8 +3,10 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: n/a
-- Doc ID: doc-sr4jc-2669d17b-8a9c-4b9d-9b4c-2240ac742654-baf689bff703f1f8
+- Doc ID: doc-sr4jc-e98d1512-3f9c-444b-a588-bb46037c81f4-baf689bff703f1f8
 - Source: https://docs.adaptavist.com/sr4jc/latest/get-started
+
+Learn the initial steps required to install, configure, and start using ScriptRunner for Jira Cloud.
 
 To get started with ScriptRunner for Jira Cloud, some first steps are required. This includes [installing](../../get-started/installation.md) the app and configuring the required [settings](../../get-started/settings.md) before you can begin using it.
 

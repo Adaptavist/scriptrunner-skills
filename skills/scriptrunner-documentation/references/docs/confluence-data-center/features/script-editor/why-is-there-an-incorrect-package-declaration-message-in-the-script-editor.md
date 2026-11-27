@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Script Editor
-- Doc ID: doc-sr4c-5b79edc1-0b07-4d12-91e1-cd85404c2614-0d9d295eb639db52
+- Doc ID: doc-sr4c-a9abaab2-f909-43cd-8095-219672840cb5-0d9d295eb639db52
 - Source: https://docs.adaptavist.com/sr4c/latest/features#script-editor--en#why-is-there-an-incorrect-package-declaration-message-in-the-script-editor--en
 
 Information about an Incorrect Package Declaration error message in the Script Editor that some users may encounter.

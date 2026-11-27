@@ -3,7 +3,7 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features > Script Manager
-- Doc ID: doc-sr4jc-ee5a4685-1958-4f9e-9f21-a4e613fd5f4e-3ae24ef24952cea9
+- Doc ID: doc-sr4jc-5aed705a-0bd6-4522-b4b9-d466621e7c1b-3ae24ef24952cea9
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/script-manager#script-manager-naming-rules--en
 
 When creating scripts and folders in Script Manager, you must follow specific naming rules to ensure your scripts function correctly. These rules are enforced by the frontend validation system. As you type the name, spaces are automatically replaced with underscores, and invalid characters are rejected. If a character is rejected, an explanatory notification appears in the top-right corner of your screen.

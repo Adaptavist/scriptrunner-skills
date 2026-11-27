@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Resources
-- Doc ID: doc-sr4js-8395b48a-c5b0-47a2-b459-61f81669b9e5-8853118b62427020
+- Doc ID: doc-sr4js-b57fa565-5454-41bf-b599-a900461de988-8853118b62427020
 - Source: https://docs.adaptavist.com/sr4js/latest/features#resources--en#database-connection--en
 
 To set up a connection to an external database, you need to know the following information for the database:

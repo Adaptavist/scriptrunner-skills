@@ -3,8 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: HAPI
-- Doc ID: doc-sr4js-c05f3018-dcca-4a55-a9f6-0ff9296bbe56-9042d46c3ecebe94
+- Doc ID: doc-sr4js-573ae06a-4432-4c4b-a1aa-cfb7a2ab3b5b-9042d46c3ecebe94
 - Source: https://docs.adaptavist.com/sr4js/latest/hapi#work-with-issue-links--en
+
+Create, retrieve, and remove links between Jira issues using HAPI, with examples for linking by link type ID.
 
 |  |  |
 | --- | --- |

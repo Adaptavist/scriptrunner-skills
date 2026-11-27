@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Get Started > Settings
-- Doc ID: doc-sr4c-09915c23-2e21-4c4d-8fce-79987fd072b2-206b9250653a3d4e
+- Doc ID: doc-sr4c-218c77ce-9f00-4f95-bedd-0c6980472d3a-206b9250653a3d4e
 - Source: https://docs.adaptavist.com/sr4c/latest/get-started#settings--en#anonymous-analytics--en
 
 _Anonymous Analytics_ collects ScriptRunner usage data, together with platform version, plugin version, and SEN, allowing Adaptavist to gain insight into ScriptRunner usage.

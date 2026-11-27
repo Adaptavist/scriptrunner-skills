@@ -3,14 +3,14 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: HAPI
-- Doc ID: doc-sr4js-575cf206-1a4d-4f32-8e77-61e3d365fc66-de22c094d713c381
+- Doc ID: doc-sr4js-2aedce34-2ace-4637-9a59-5f8b01cad544-de22c094d713c381
 - Source: https://docs.adaptavist.com/sr4js/latest/hapi#work-with-users--en
+
+Find, create, and update Jira users using HAPI, including retrieving creation dates and managing user properties.
 
 |  |  |
 | --- | --- |
 |  | Migrating to Jira Cloud? This feature is available in Cloud.<br>[HAPI Cloud documentation](https://docs.adaptavist.com/sr4jc/latest/hapi/work-with-users) |
-
-With HAPI, we've made it easy for you to work with users.
 
 ## Running code as another user
 

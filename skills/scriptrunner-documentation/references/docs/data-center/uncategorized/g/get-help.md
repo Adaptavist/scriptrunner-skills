@@ -3,8 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: n/a
-- Doc ID: doc-sr4js-abc2b7dc-00db-41b7-b561-ff6f81ab29ef-d4392d37634f7b04
+- Doc ID: doc-sr4js-ee9366f8-f39c-4d07-a634-8e85dfad8700-d4392d37634f7b04
 - Source: https://docs.adaptavist.com/sr4js/latest/get-help
+
+Contact Adaptavist support, find Groovy resources, and learn what to include in a ScriptRunner support request.
 
 ## Support Requests
 

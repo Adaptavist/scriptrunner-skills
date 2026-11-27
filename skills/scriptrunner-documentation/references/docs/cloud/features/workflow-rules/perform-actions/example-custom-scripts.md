@@ -3,12 +3,12 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features > Workflow Rules > Perform Actions
-- Doc ID: doc-sr4jc-ae74e2de-f67b-4c41-a010-d02f456027fa-2a0932e2abaf0001
+- Doc ID: doc-sr4jc-a48af897-194b-4c72-84f2-fcb4eebcc375-2a0932e2abaf0001
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules#perform-actions--en#example-custom-scripts--en
 
-## Add an automated comment for every work item created inside a JSM customer portal
+## Add an automated comment for every Work Item created inside a JSM customer portal
 
-Add an automated comment including a greeting and a request for information. Also, explain that the work item will be closed if left inactive on all new work created in Jira Service Management.
+Add an automated comment including a greeting and a request for information. Also, explain that the Work item will be closed if left inactive on all new work created in Jira Service Management.
 
 Use the following code:
 
@@ -39,7 +39,7 @@ assert addComment.status >= 200 && addComment.status <= 300
 
 ## Add label
 
-This example script shows how you can add a label when using the clone work item workflow action.
+This example script shows how you can add a label when using the clone Work item workflow action.
 
 ```
 List labels = issue.fields.labels ?: [] // get the labels for the current item
@@ -47,7 +47,7 @@ labels += "newLabel"
 issueInput.fields.labels = labels
 ```
 
-## Add a comment to linked work items when this work item is transitioned
+## Add a comment to linked Work Items when this Work Item is transitioned
 
 ```
 def issueHapi = Issues.getByKey(issue.key)
@@ -59,7 +59,7 @@ linkedIssues.each { linkedIssue ->
 }
 ```
 
-## Add a comment to this work item
+## Add a comment to this Work Item
 
 ```
 def issue = Issues.getByKey(issue.key)
@@ -68,7 +68,7 @@ issue.comment("This is a work item comment on transition.")
 
 ## Add a customer-facing comment on a linked service management
 
-This script allows you to add a comment on a linked Jira Service Management Cloud space after the transition of a work item. For example, you may want to let a bug reporter know that the related development is marked as complete.
+This script allows you to add a comment on a linked Jira Service Management Cloud space after the transition of a Work item. For example, you may want to let a bug reporter know that the related development is marked as complete.
 
 Note: We advise you to run this script as the _ScriptRunner Add-on User_.
 
@@ -102,9 +102,9 @@ Service Desk ticket ${linkedIssue.getKey()} has been commented to inform affecte
 return "The script finished successfully. ${counter} support ticket/s were commented on.
 ```
 
-## Add a customer to an organization when a work item is created through the customer portal
+## Add a customer to an organization when a Work Item is created through the customer portal
 
-Add customers to configured organisations when they create a work item through the service desk portal and select their organisation in a select list custom field.
+Add customers to configured organisations when they create a Work item through the service desk portal and select their organisation in a select list custom field.
 
 ```
 **Note:** Service Desk API calls don't have HAPI equivalents, so this remains as REST API.
@@ -207,9 +207,9 @@ usersAssignableToIssue.forEach { Map user ->
 }
 ```
 
-## Automatically close all sub-tasks when the parent work item is transitioned to a done status
+## Automatically close all sub-tasks when the parent Work Item is transitioned to a Done status
 
-Automatically close all subtasks when the parent work item transitions to the Done status to keep your Jira instance clean.
+Automatically close all subtasks when the parent Work item transitions to the _Done_ status to keep your Jira instance clean.
 
 ```
 // Get all subtasks below a work item
@@ -264,7 +264,7 @@ issueHapi.update {
 
 Line 1: Grab the values of the custom fields from the event.
 
-Line 14: Sanity check for null values - the work item may not have a value for any input.
+Line 14: Sanity check for null values - the Work item may not have a value for any input.
 
 Line 20: Here, we check if the output field already has the calculated value; if it does, we do nothing. This is important because an IssueUpdated event will fire for the update we are about to perform.
 
@@ -272,9 +272,9 @@ Line 24: Update the value of the custom field.
 
 Line 25: If using the Add-on user to run the script, it is possible to set the overrideScreenSecurity property to modify fields that are not on the current screen.
 
-## Clone a work item on transition with new due date and update date attribute of associated Assets
+## Clone a Work Item on transition with new due date and update date attribute of associated assets
 
-This script shows how to clone a work item with associated assets, setting the new work item's due date to 3 months from now. Then, update the date attribute of the associated assets.
+This script shows how to clone a Work item with associated assets, setting the new Work item's due date to 3 months from now. Then, update the date attribute of the associated assets.
 
   
 
@@ -339,9 +339,9 @@ assetFieldValue.each { asset ->
 }
 ```
 
-## Condition work item must have assignee
+## Work Item must have assignee Restrict Transition
 
-The condition for the workflow action that will run only if the work item has an Assignee.
+The Restrict transition rule for the workflow action that will run only if the Work item has an Assignee.
 
 ```
 issue.fields.assignee != null
@@ -407,9 +407,9 @@ results.each { Map result ->
 }
 ```
 
-## Create sub-tasks when a work item is created
+## Create sub-tasks when a Work Item is created
 
-This example script automatically creates sub-tasks when a new work item is created.
+This example script automatically creates sub-tasks when a new Work item is created.
 
   
 
@@ -445,9 +445,9 @@ issueHapi.update {
 }
 ```
 
-## Link to a work item
+## Link to a Work Item
 
-Automatically link the work item being transitioned to another item.
+Automatically link the Work item being transitioned to another item.
 
 ```
 def issueHapi = Issues.getByKey(issue.key)
@@ -457,7 +457,7 @@ issueHapi.link("Blocks", targetIssue)
 
 ## Post to Slack
 
-Use this example to send a simple Slack post, notifying users that a work item has been updated.
+Use this example to send a simple Slack post, notifying users that a Work item has been updated.
 
 ```
 def apiToken = 'YOUR_SECRET_TOKEN'
@@ -476,15 +476,15 @@ post('https://slack.com/api/chat.postMessage')
         .asString()
 ```
 
-1.  Line 1: Generate a Slack API token and use it here. This API token should be saved as a script variable.
-2.  Line 4: Add the name of the channel you wish to post to.
-3.  Line 5: Enter the username ScriptRunner will post as.
-4.  Line 7: Enter the notification text.
-5.  Line 10: Post the message to Slack.
+-   Line 1: Generate a Slack API token and use it here. This API token should be saved as a script variable.
+-   Line 4: Add the name of the channel you wish to post to.
+-   Line 5: Enter the username ScriptRunner will post as.
+-   Line 7: Enter the notification text.
+-   Line 10: Post the message to Slack.
 
 ## Set label
 
-This example script shows how you can set labels when updating a work item.
+This example script shows how you can set labels when updating a Work item.
 
 ```
 issueInput.update.labels = [[set: ["finance"]]]

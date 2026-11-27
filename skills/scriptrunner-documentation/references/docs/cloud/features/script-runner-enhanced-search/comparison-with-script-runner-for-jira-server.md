@@ -3,7 +3,7 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features > ScriptRunner Enhanced Search
-- Doc ID: doc-sr4jc-e3f0a882-cadb-450e-9c62-a353ebf0a8d8-60500f36019a4ca3
+- Doc ID: doc-sr4jc-0a1671b1-faca-4552-8908-e7b3a388d6cd-60500f36019a4ca3
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search#comparison-with-scriptrunner-for-jira-server--en
 
 Note: Migrating to Cloud?
@@ -12,7 +12,7 @@ For more details, or if you are migrating to Cloud, refer to the [Platform Diffe
 
 Although you may be familiar with advanced queries in the [Jira Server](../../../data-center/uncategorized/g/get-started.md) version of ScriptRunner, the Cloud infrastructure differs and, therefore, some queries are not available or are implemented differently. Even if you have a good understanding of [JQL Functions from Jira Server](https://docs.adaptavist.com/sr4js/latest/features/jql-functions), it's worth noting that some of the concepts here are a little different.
 
-As it is not possible to integrate directly into the standard search functionality that Jira Cloud provides, the [ScriptRunner Enhanced Search](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/scriptrunner_enhanced_search.dita) functionality provides the ability to run advanced JQL functions in your Jira filters in a similar way to ScriptRunner for Jira Server. You can read more details on the differences in the [JQL Query Comparison](https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search#comparison-with-scriptrunner-for-jira-server--en__jql-query-comparison) information.
+As it is not possible to integrate directly into the standard search functionality that Jira Cloud provides, the [ScriptRunner Enhanced Search](../script-runner-enhanced-search.md) functionality provides the ability to run advanced JQL functions in your Jira filters in a similar way to ScriptRunner for Jira Server. You can read more details on the differences in the [JQL Query Comparison](https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search#comparison-with-scriptrunner-for-jira-server--en__jql-query-comparison) information.
 
 Note: It is not possible in Jira Cloud for an add-on to alter the results of a JQL search either during or after a search is being performed.
 
@@ -36,8 +36,6 @@ At this time we are not implementing this function.
 ## JQL query comparison
 
 The table below contains equivalent JQL queries from ScriptRunner for Jira Server and Jira Cloud. Differences between the two systems are highlighted.
-
-\`\`\`xml 
 
 | Jira Server JQL | Jira Cloud JQL | Description |
 | --- | --- | --- |

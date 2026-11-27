@@ -3,14 +3,14 @@
 - Platform: migration-suite
 - Space: SMS
 - Hierarchy: ScriptRunner Migration Suite Web App > ScriptRunner Migration Analyse and Assess Tool
-- Doc ID: doc-sms-f2a0a850-b034-4532-b66b-3e2f4adb3486-f8dc93ae2e714491
+- Doc ID: doc-sms-91ddfb48-0888-443c-8630-e8dff132494c-f8dc93ae2e714491
 - Source: https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-analyse-and-assess-tool/faq
 
 Check out the answers to frequently asked questions:
 
 Q: Does the ScriptRunner Migration Assess and Analyse Tool use AI?
 
-A: No. It's classic deterministic software; the output is designed to feed AI agents if/when you want them, but no "AI" is baked into this tool.
+A: Analyzing an instance, as described in [Use the Analyse and Assess Tool](use-the-analyse-and-assess-tool.md), does not use AI. It is deterministic software. However, the process described in [Bulk Convert Your Scripts](bulk-convert-your-scripts.md) does use AI because it uses the [ScriptRunner Migration Agent](../script-runner-migration-agent.md).
 
 Q: Will the ScriptRunner Migration Assess and Analyse Tool rewrite my scripts?
 

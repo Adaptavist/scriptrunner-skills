@@ -3,8 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features
-- Doc ID: doc-sr4js-8184618d-d70d-40e5-a503-61ae42021c7c-4546181b787b8385
+- Doc ID: doc-sr4js-37eb6e09-ad5e-4fb9-9de6-b8bd88176cf1-4546181b787b8385
 - Source: https://docs.adaptavist.com/sr4js/latest/features#built-in-scripts--en
+
+Use pre-built scripts for common admin tasks: bulk-fix resolutions, copy fields, switch users, and automate via the REST API.
 
 |  |  |
 | --- | --- |

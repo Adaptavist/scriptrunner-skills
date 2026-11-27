@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Behaviours
-- Doc ID: doc-sr4js-77f34ea8-00e2-44e8-a90e-deafbc842512-27b0e5b5cd4799f0
+- Doc ID: doc-sr4js-2165a012-fec1-4dde-894e-bce4579ca17f-27b0e5b5cd4799f0
 - Source: https://docs.adaptavist.com/sr4js/latest/features#behaviours--en#behaviours-tutorial--en
 
 Note: For a video on behaviours, see the [Using Behaviours](../../training/course-introduction-to-script-runner-for-jira-data-center/1-2-video-using-behaviours-in-script-runner-for-jira-data-center.md) training video.
@@ -29,19 +29,19 @@ See each image description to find out more:
 4.  If you want your behaviour to run once you need to set an Initialiser script. The script won't run again if that user edits the issue, because they only need it to run the first time. Not all behaviours need or use an initialiser.
 5.  You can set additional options on fields in Jira. When you add a field to a behaviour, you can work with pre-built options available—similar to what you find in a field configuration. These options include optional/required, writable/read-only, and shown/hidden. You can also add a pre-built condition on a field that allows you to set additional restrictions or requirements based on the field you choose.
 
-When you choose Add Mapping more options display. Hover over each section in the image below to find out more.
+When you choose Add Mapping more options display. See each image description to find out more:
 
 1.  Choose this option to map the behaviour to specific projects and issue types.
 2.  Choose this option to map the behaviour to selected service desks and request types. This option allows behaviours to be mapped to fields within customer portals.
 3.  These options change if you select "Use Service Desk mapping"
 
-If you choose Add a Field more options display. Hover over each section in the image below to find out more.
+If you choose Add a Field more options display. See each image description to find out more:
 
 1.  You can configure the added field so it's optional/required, writable/read-only, and shown/hidden.
 2.  You can add predefined conditions to determine if the behaviour should run for the field you are configuring.
 3.  You can add a server-side script if you need a script to run on this field each time a user interacts with it.
 
-If you choose Add new condition more options display. Hover over each section in the image below to find out more.
+If you choose Add new condition more options display. See each image description to find out more:
 
 1.  You can choose whether the behaviour will run or not when the condition you set is true.
 2.  You can set a condition to further define the field you are configuring.
@@ -71,6 +71,19 @@ If you have only When conditions:
 -   If none of the When conditions are `true`, the behaviour does not run.
 
 If there are no conditions, the behaviour runs.
+
+## Using Workflow Action and Workflow Step conditions
+
+The Workflow Action and Workflow Step conditions look similar, but they work differently:
+
+| Condition | What it checks | Where it applies |
+| --- | --- | --- |
+| Workflow Action | The transition that the user is performing | Only on the transition screen for that action. The transition must have a screen, and the field must be on it. |
+| Workflow Step | The issue's current status | Any screen where the issue is in that status, such as the _Edit_ screen |
+
+Because Workflow Step checks the issue's current status, it doesn't apply while a user transitions an issue into that status. For example, a Workflow Step condition for _In Progress_ doesn't apply on the transition screen for _Start Progress_, because the issue is still in its previous status.
+
+Tip: To apply a behaviour when users transition an issue into a status, we recommend that you use Workflow Action and add the field to that transition's screen. To apply a behaviour whenever an issue is in a status, for example when users edit it, use Workflow Step.
 
 ## Should I add an initialiser or server-side script?
 

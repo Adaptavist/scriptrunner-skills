@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Get Help > Frequently Asked Questions
-- Doc ID: doc-sr4js-5a89fdeb-a5b3-41eb-93c6-3978c279b64f-a881ec9dc635c777
+- Doc ID: doc-sr4js-804342bc-7133-4297-b479-a0c0b418b557-a881ec9dc635c777
 - Source: https://docs.adaptavist.com/sr4js/latest/get-help#frequently-asked-questions--en#mail-handler-faqs--en
 
 ## How can I catch emails sent to Jira and then create or update issues from that email?

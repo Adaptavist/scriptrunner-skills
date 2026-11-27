@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Macros > Create Custom Macro
-- Doc ID: doc-sr4c-32f941c3-308b-462e-b5ea-9b6dc70a9994-c09b5cef6a7159af
+- Doc ID: doc-sr4c-0b45dbd2-1992-454f-b9c4-8e8b934e1dd3-c09b5cef6a7159af
 - Source: https://docs.adaptavist.com/sr4c/latest/features#macros--en#create-custom-macro--en#reuse-existing-macros--en
 
 Some existing macros have many complex parameters, and you may want to get some standardization over their usage. Script macros provide an easy way to standardize parameters.

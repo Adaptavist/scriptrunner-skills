@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Macros > Built-In Macros
-- Doc ID: doc-sr4c-e7a12892-ca71-43ff-98c6-4eeeefc8f1b8-4db464f8deaaa4d1
+- Doc ID: doc-sr4c-c61ce643-3722-41fb-9d04-0897f6be7c4e-4db464f8deaaa4d1
 - Source: https://docs.adaptavist.com/sr4c/latest/features#macros--en#built-in-macros--en#add-label-macro--en
 
 The _Add Label_ macro adds specified labels to a page if they are not already present.

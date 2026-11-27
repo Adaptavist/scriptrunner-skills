@@ -3,16 +3,22 @@
 - Platform: connect
 - Space: SRC
 - Hierarchy: Scripting
-- Doc ID: doc-src-d8e518c5-694f-41d5-a50e-10875c77ea43-5f000e1165d80899
+- Doc ID: doc-src-98459f2a-8350-4c23-9c0b-fcc444542adc-5f000e1165d80899
 - Source: https://docs.adaptavist.com/src/latest/scripting#editor--en
 
 ScriptRunner Connect comes bundled with an embedded editor for writing code in JavaScript/TypeScript.
 
 It is based on the same technology that is powering the extremely popular [VS Code](https://code.visualstudio.com/) product. Our editor will be very familiar if you have used VS Code before. Most default features and key bindings should remain the same, although certain features are removed; for example, you won't have access to your local file system.
 
-## Demos
+## Tutorials
+
+### Editor tips and tricks
 
 Here's a ten-minute overview of the ScriptRunner Connect editor's features, including some tips and tricks. The UI has been updated since the creation of the video, but the content is still relevant.
+
+### Demo: Script editor shortcuts
+
+[Media](https://demo.arcade.software/P6bmJxFyQfnGAN1HEC2e?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true)
 
 ## Toggle auto-complete suggestions
 

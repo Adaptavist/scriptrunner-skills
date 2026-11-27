@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Fragments
-- Doc ID: doc-sr4js-7d55c62f-95d4-41a5-9ad2-085efa98726b-30d61d8cc4926b50
+- Doc ID: doc-sr4js-f29da3a2-bdb0-43e9-8edb-26af435dffbc-30d61d8cc4926b50
 - Source: https://docs.adaptavist.com/sr4js/latest/features#fragments--en#web-section--en
 
 Web sections can be used to add new locations, or sections, to add web-items (links, buttons etc).

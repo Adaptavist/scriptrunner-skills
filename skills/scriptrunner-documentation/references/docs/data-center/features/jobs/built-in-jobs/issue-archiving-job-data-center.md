@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Jobs > Built-In Jobs
-- Doc ID: doc-sr4js-e1a9a0af-26c2-4483-875f-6c8d68993245-f3c5232e5a9cc27f
+- Doc ID: doc-sr4js-f3761910-f2d8-410b-908b-5da24bb7d8a8-f3c5232e5a9cc27f
 - Source: https://docs.adaptavist.com/sr4js/latest/features#jobs--en#built-in-jobs--en#issue-archiving-job-data-center--en
 
 Note: The _Issue Archiving Job_ is only available on Data Center 8.1 and above.

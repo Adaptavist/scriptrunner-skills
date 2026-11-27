@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > JQL Functions
-- Doc ID: doc-sr4js-38fce2de-f92e-489f-84c5-b6ba1fe34ae2-0e82babaecb902f9
+- Doc ID: doc-sr4js-30b2f95e-4f13-4908-9aea-82ff4557602b-0e82babaecb902f9
 - Source: https://docs.adaptavist.com/sr4js/latest/features#jql-functions--en#custom-jql-functions--en
 
 Custom [JQL functions](https://developer.atlassian.com/server/jira/platform/jql-function/) let you extend Jira's search language with your own query logic, for example, finding issues linked to a specific object, matching a complex business rule, or querying across related entities that standard JQL can't reach.

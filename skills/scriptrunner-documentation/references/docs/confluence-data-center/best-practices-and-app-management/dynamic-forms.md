@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Best Practices and App Management
-- Doc ID: doc-sr4c-d731a48e-a225-4ce6-a23d-1ee83d7fac14-8d64cc372e64511b
+- Doc ID: doc-sr4c-bd587dc4-75d0-4ccb-9e55-4d76b52aed95-8d64cc372e64511b
 - Source: https://docs.adaptavist.com/sr4c/latest/best-practices-and-app-management#dynamic-forms--en
 
 Use the Dynamic Forms feature to simplify the process of adding variables to your ScriptRunner Groovy scripts

@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Script fields
-- Doc ID: doc-sr4js-0930a710-4514-4435-879a-9f8d7be87766-6b882aab7d84cfb5
+- Doc ID: doc-sr4js-9356b066-414a-4cc2-b838-b0951d509771-6b882aab7d84cfb5
 - Source: https://docs.adaptavist.com/sr4js/latest/features#script-fields--en#built-in-script-fields--en
 
 As part of the ScriptRunner framework, there are provided built-in scripts that you can use. These save time on common scripted fields because you need to write little or no code to implement them.

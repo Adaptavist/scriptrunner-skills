@@ -3,7 +3,7 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: Get Started > General Information
-- Doc ID: doc-sr4cc-a4ab7ea5-b6be-4139-ace6-8dbed8d83d89-22c65dea5294448f
+- Doc ID: doc-sr4cc-386ff444-2f2d-4928-8be3-14c74adacb0e-22c65dea5294448f
 - Source: https://docs.adaptavist.com/sr4cc/latest/get-started/general-information/script-execution
 
 Learn about the two types of script execution ScriptRunner for Confluence Cloud uses.

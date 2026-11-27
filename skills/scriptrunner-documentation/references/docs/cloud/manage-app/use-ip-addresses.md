@@ -3,8 +3,10 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Manage App
-- Doc ID: doc-sr4jc-0e357e7c-0b84-4520-9749-5992ba97ee66-9f1ee7eee4aa511d
+- Doc ID: doc-sr4jc-75b0ee9d-3622-4f58-96d7-86081eed2363-9f1ee7eee4aa511d
 - Source: https://docs.adaptavist.com/sr4jc/latest/manage-app/use-ip-addresses
+
+Use ScriptRunner for Jira Cloud IP addresses to configure your firewall or network security settings and allow secure traffic from the app.
 
 You can use ScriptRunner for Jira Cloud's IP addresses to configure your firewall or network security settings, allowing traffic from the app. This is essential for establishing a secure and reliable integration between your system and ScriptRunner for Jira Cloud, particularly when the app needs to communicate with on-premises infrastructure or cloud services protected by a firewall.
 

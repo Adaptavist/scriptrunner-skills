@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Workflows > Post Functions
-- Doc ID: doc-sr4js-9e51412d-137e-4e76-9364-e514ca765484-acf034b7f02cb699
+- Doc ID: doc-sr4js-3fb24bb3-ba20-4335-84b8-a5eacce96cf0-acf034b7f02cb699
 - Source: https://docs.adaptavist.com/sr4js/latest/features#workflows--en#post-functions--en#clones-an-issue-and-links--en
 
 Use the _Clones an issue, and links_ built-in post function to clone the current issue to a new one and create a link between the two. For example, when an issue is moved to _With QA_, we want the issue to be cloned to the QA project, and we want to update the summary of the cloned issue.

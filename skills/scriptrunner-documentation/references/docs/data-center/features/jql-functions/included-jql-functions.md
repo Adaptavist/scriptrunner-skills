@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > JQL Functions
-- Doc ID: doc-sr4js-e33c1555-aebf-48a7-98c9-4ae59d1fe824-489f5db57227b3cd
+- Doc ID: doc-sr4js-ba4e3bad-8363-43f7-be0c-028a40504cf3-489f5db57227b3cd
 - Source: https://docs.adaptavist.com/sr4js/latest/features#jql-functions--en#included-jql-functions--en
 
 ScriptRunner provides a large number of out-of-the-box JQL functions. Unlike most of ScriptRunner features, these included functions are available to all users on an instance, not just administrators.

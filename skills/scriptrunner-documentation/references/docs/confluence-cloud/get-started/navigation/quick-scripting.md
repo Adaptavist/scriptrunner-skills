@@ -3,7 +3,7 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: Get Started > Navigation
-- Doc ID: doc-sr4cc-3233ead6-0090-4991-a82e-d12ad4074662-6543890691be3cd7
+- Doc ID: doc-sr4cc-122a7ada-c4f1-497d-9d81-50be50f8616b-6543890691be3cd7
 - Source: https://docs.adaptavist.com/sr4cc/latest/get-started/navigation/quick-scripting
 
 Information about the features and how to navigate the Quick Scripting page.

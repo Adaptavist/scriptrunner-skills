@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Release Notes > Breaking Changes
-- Doc ID: doc-sr4js-5072640d-f220-4f4b-bb98-962b2799b240-757876a1e3fc5dc0
+- Doc ID: doc-sr4js-a422a79c-a817-4447-86fd-13bd9791018e-757876a1e3fc5dc0
 - Source: https://docs.adaptavist.com/sr4js/latest/release-notes/breaking-changes#jira-11-search-api-upgrade-guide--en
 
 Understand Jira Data Center version 10.4 OpenSearch-based Search API and what it means for ScriptRunner scripts that use Lucene-based methods.

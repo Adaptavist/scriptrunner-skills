@@ -3,7 +3,7 @@
 - Platform: connect
 - Space: SRC
 - Hierarchy: Workspaces
-- Doc ID: doc-src-3e8a0807-5360-4517-b0d6-df3bad2450ca-8fd7f32c0a38432a
+- Doc ID: doc-src-8c52d300-a92e-4eaa-9880-112d01a8be63-8fd7f32c0a38432a
 - Source: https://docs.adaptavist.com/src/latest/workspaces#api-connections--en
 
 API connections allow you to make outbound (egress) external API calls to services you need to talk to. API connections act as a proxy and as an API client.
@@ -28,9 +28,9 @@ Once an API connection is created, you can import any API connection you created
     
     Note:
     
-    -   Import syntax for API connections is as follows: "import IMPORT\_NAME from './api/API\_CONNECTION\_PATH'";
-        -   For example: "import JiraCloud from './api/jira/cloud'"
-    -   You can name the import anything you like, as long as the import is unique in your script. For example, instead of using the suggested import name as demonstrated in the example above, you can change it to "import MyJira from './api/jira/cloud'"
+    -   Import syntax for API connections is as follows: `"import IMPORT_NAME from './api/API_CONNECTION_PATH'"`;
+        -   For example: `"import JiraCloud from './api/jira/cloud'"`
+    -   You can name the import anything you like, as long as the import is unique in your script. For example, instead of using the suggested import name as demonstrated in the example above, you can change it to `"import MyJira from './api/jira/cloud'"`
     
 
 ## Use the API Connection Import in your code

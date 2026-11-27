@@ -3,8 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Training
-- Doc ID: doc-sr4js-d67f204d-4df2-4056-969a-bd9fba4a09a8-a459b0efd47f6f6f
+- Doc ID: doc-sr4js-e512fa83-e0f2-4434-9f3f-6cbfcb5194d8-a459b0efd47f6f6f
 - Source: https://docs.adaptavist.com/sr4js/latest/training/course-introduction-to-scriptrunner-for-jira-data-center
+
+Start learning ScriptRunner for Jira Data Center with this beginner-friendly course covering the tools you need to get productive fast.
 
 Designed for complete beginners to ScriptRunner and scripting, or for users with some experience of ScriptRunner who want to improve, this course will give you the tools you need to start making the most of ScriptRunner for Jira Data Center or Server.
 

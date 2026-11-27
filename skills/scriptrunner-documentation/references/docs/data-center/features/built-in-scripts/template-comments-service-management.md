@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Built-in scripts
-- Doc ID: doc-sr4js-bd6cdc20-ddac-45a3-a3cb-615eb19940e7-27fa7025e70ecb32
+- Doc ID: doc-sr4js-5443b4e9-1b12-4f4b-994a-5735012495c6-27fa7025e70ecb32
 - Source: https://docs.adaptavist.com/sr4js/latest/features#built-in-scripts--en#template-comments-service-management--en
 
 CAUTION: This feature is available in Jira Service Management only.

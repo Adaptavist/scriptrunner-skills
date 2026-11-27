@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Integrations > Other Apps
-- Doc ID: doc-sr4js-48d187a2-6229-467a-b167-1955e5d9e895-0f8ecfa2f7816f29
+- Doc ID: doc-sr4js-2624f5e4-37b7-4594-be23-b3d8653e2423-0f8ecfa2f7816f29
 - Source: https://docs.adaptavist.com/sr4js/latest/integrations/other-apps#jira-agile--en
 
 This page gives some guidance on how to use ScriptRunner to work with Jira Agile, or TAFKAG (the add-on formerly known as Greenhopper).

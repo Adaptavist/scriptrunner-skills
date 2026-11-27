@@ -3,12 +3,46 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: Release Notes
-- Doc ID: doc-sr4cc-2fe7725c-fa57-45d9-ab82-09fb7bc7fb9a-b9976606a608a231
+- Doc ID: doc-sr4cc-c4ee2677-5af3-4d7f-9514-53fc56031ce9-b9976606a608a231
 - Source: https://docs.adaptavist.com/sr4cc/latest/release-notes/recent-release-notes
 
 Notes on our latest versions of the app.
 
 Check out release notes for the current year here. For other release notes, visit [Older Release Notes](older-release-notes.md).
+
+## 9 October 2026
+
+### Data residency update
+
+ScriptRunner for Jira Cloud and ScriptRunner for Confluence Cloud now support data residency in Germany (Frankfurt). If your Jira or Confluence Cloud instance is pinned to Germany, you can now migrate ScriptRunner data to be stored in Germany (Frankfurt) as well. This includes scripts, script variables, configurations and script logs.
+
+New customers: If your instance is pinned to Germany when you install ScriptRunner, your ScriptRunner data is stored in Germany (Frankfurt) automatically.
+
+Existing customers: If you move your Atlassian instance to Germany, you can choose to move your ScriptRunner data there too. When Atlassian provides us with information about your move request, we migrate your ScriptRunner data to Germany (Frankfurt).
+
+For more information, see:
+
+-   [Data Residency (Jira Cloud)](https://docs.adaptavist.com/sr4cc/latest/get-started/general-information/data-residency#data-residency-data--en)
+-   [Data Residency (Confluence)](../get-started/general-information/data-residency.md)
+-   [Atlassian's Data Residency](https://www.atlassian.com/software/data-residency)
+
+## 22 September 2026
+
+### CQL Search Macro now available!
+
+We've added a CQL Search macro to the Built-in Macros section of ScriptRunner for Confluence Cloud! The _CQL Search_ macro runs CQL queries and displays matching Confluence content as navigable page links.
+
+The CQL Search macro supports migrated content from ScriptRunner for Confluence DC to our Cloud-based app.
+
+Check out the [CQL Search Macro](../features/macros/built-in-macros/cql-search.md) now!
+
+### Version History Macro now available!
+
+We've added a Version History macro to the Built-in Macros section of ScriptRunner for Confluence Cloud! The _Version History_ macro displays page version information in a configurable list, with options for date formatting, sort order, and the number of entries shown.
+
+The Version History macro supports migrated content from ScriptRunner for Confluence DC to our Cloud-based app.
+
+Check out the [Version History](../features/macros/built-in-macros/version-history.md) macro now!
 
 ## 1 September 2026
 
@@ -286,7 +320,7 @@ We are changing how we create release notes! We will communicate more changes wi
 
 ### Bug fixes
 
-We fixed an issue in the Custom Macro that caused non-ASCII characters (such as ç, ã, etc.) to be rendered incorrectly. Previously Previously, text containing these characters was displayed as question marks. With this fix, the macro now accurately displays non-ASCII text as intended.
+We fixed an issue in the Custom Macro that caused non-ASCII characters (such as ç, ã, etc.) to be rendered incorrectly. Previously, text containing these characters was displayed as question marks. With this fix, the macro now accurately displays non-ASCII text as intended.
 
 ### Documentation updates
 

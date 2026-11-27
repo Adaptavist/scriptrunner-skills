@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Workflows > Workflow Functions Tutorial
-- Doc ID: doc-sr4js-27fc0025-b9e8-4996-9978-c55d7a7be941-52de04201746cb5b
+- Doc ID: doc-sr4js-3159b7a2-c1fb-4005-99df-af6e32a284ea-52de04201746cb5b
 - Source: https://docs.adaptavist.com/sr4js/latest/features#workflows--en#workflow-functions-tutorial--en#conditions-tutorial--en
 
 Before you start this tutorial, make sure you've read the [Workflow Functions Tutorial](https://docs.adaptavist.com/sr4js/latest/features/workflows/workflow-functions-tutorial) page to understand what workflow functions are, for an overview of ScriptRunner workflow functions, and for details on how to access workflow functions.

@@ -3,10 +3,12 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: HAPI
-- Doc ID: doc-sr4js-89494fd3-4f3f-4b7d-b493-883209e336ff-c9516b2b9e0749cb
+- Doc ID: doc-sr4js-1b4abc53-bfe0-438f-84cf-3d515e920377-c9516b2b9e0749cb
 - Source: https://docs.adaptavist.com/sr4js/latest/hapi#work-with-jira-service-management--en
 
-You can easily set Jira Service Management fields such as Customer Request Type, Request participants, and Organizations. They are standard _custom fields_ pre configured by the JSM app. You can modify these fields by setting custom field values on an issue, as previously discussed on the [Update Fields](https://docs.adaptavist.com/sr4js/latest/hapi/update-fields) page:
+Set Jira Service Management fields such as Customer Request Type, Request participants, and Organizations using HAPI.
+
+They are standard _custom fields_ pre configured by the JSM app. You can modify these fields by setting custom field values on an issue, as previously discussed on the [Update Fields](https://docs.adaptavist.com/sr4js/latest/hapi/update-fields) page:
 
 ```
 Issues.create('JSD', 'Service Request') {

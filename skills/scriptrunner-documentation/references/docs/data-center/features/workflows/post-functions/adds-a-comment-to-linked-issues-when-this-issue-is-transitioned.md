@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Workflows > Post Functions
-- Doc ID: doc-sr4js-860e9e69-e64f-4355-abc0-f834aca8e82d-f6b91096233c8aee
+- Doc ID: doc-sr4js-aad68d35-782d-497a-b19a-3a75dfa3f421-f6b91096233c8aee
 - Source: https://docs.adaptavist.com/sr4js/latest/features#workflows--en#post-functions--en#adds-a-comment-to-linked-issues-when-this-issue-is-transitioned--en
 
 Use _Adds a Comment to Linked Issues when this Issue is Transitioned_ to automatically add a custom comment to linked issues after the selected issue is transitioned. For example, you can use this post function if you want to add a comment on a service desk request when the development issue that causes the request has been transitioned to _Done_.

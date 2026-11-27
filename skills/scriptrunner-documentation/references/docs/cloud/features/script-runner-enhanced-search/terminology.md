@@ -3,7 +3,7 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features > ScriptRunner Enhanced Search
-- Doc ID: doc-sr4jc-1136071e-f183-4def-8ed1-bcf43f7e08f3-53595ea31f975590
+- Doc ID: doc-sr4jc-35501ddd-ebf2-4b83-9b5e-bbb9d55ccb8d-53595ea31f975590
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search#terminology--en
 
 This page provides a comprehensive list of key terms and definitions used throughout the ScriptRunner Enhanced Search for Jira Cloud app and/or within this documentation. Each term is defined concisely to offer quick reference, making it easier to interpret technical concepts. Understanding these terms will help you navigate both the app and the content more effectively and ensure clarity.

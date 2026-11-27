@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Script fields > Built-In Script Fields > Database Picker > Database Picker Examples
-- Doc ID: doc-sr4js-d3df9b97-b90d-4d00-a20c-4aae650130f2-ff3e7abdd80b22a7
+- Doc ID: doc-sr4js-0c2987b8-6d6e-488d-b207-f74f3e8417bf-ff3e7abdd80b22a7
 - Source: https://docs.adaptavist.com/sr4js/latest/features#script-fields--en#built-in-script-fields--en#database-picker--en#database-picker-examples--en#database-picker-country-picker--en
 
 What follows is a longer, worked example of using the database picker in case any concepts need reinforcing.

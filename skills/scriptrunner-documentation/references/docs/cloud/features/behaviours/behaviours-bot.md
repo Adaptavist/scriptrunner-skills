@@ -3,16 +3,16 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features > Behaviours
-- Doc ID: doc-sr4jc-e85ff3ad-dc80-41ad-8faa-c95d06e94daf-04e7ca68767cf903
+- Doc ID: doc-sr4jc-11ed22a7-bbfc-4056-927b-5c90de87a7bf-04e7ca68767cf903
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/behaviours#behaviours-bot--en
 
-The Behaviours Bot is an AI-powered script generation assistant built into ScriptRunner for Jira Cloud. It converts natural, everyday language instructions into ready-to-use Behaviour scripts. The Behaviours Bot uses a Ministral model by Mistral AI (hosted on AWS Bedrock) to process requests and generate responses.
+The Behaviours Bot is an AI-powered script generation assistant built into ScriptRunner for Jira Cloud. It converts natural, everyday language instructions into ready-to-use Behaviour scripts. The Behaviours Bot uses an OpenAI `GPT-5.6 Luna` model (hosted on AWS Bedrock) to process requests and generate responses.
 
 ## What is the Behaviours Bot?
 
 The Behaviours Bot is an AI-powered script generation assistant built into ScriptRunner for Jira Cloud. It converts natural, everyday language instructions into ready-to-use Behaviour scripts. You can utilize the functionality of the Behaviours Bot to create new Behaviour scripts or modify, refine, and improve existing ones.
 
-Note: The Behaviours Bot uses a Mistral AI Ministral model (hosted on AWS Bedrock) to process requests and generate responses. All data handled by the Behaviours Bot is processed exclusively within AWS, which is already covered under the Adaptavist Data Processing Addendum (DPA) accepted when obtaining a ScriptRunner license. No additional third parties receive or process Behaviours Bot data.
+Note: The Behaviours Bot uses an OpenAI GPT-5.6 Luna model (hosted on AWS Bedrock) to process requests and generate responses. All data handled by the Behaviours Bot is processed exclusively within AWS, which is already covered under the Adaptavist Data Processing Addendum (DPA) accepted when obtaining a ScriptRunner license. No additional third parties receive or process Behaviours Bot data.
 
 Using the Behaviours Bot offers several advantages when creating and managing Behaviour scripts:
 
@@ -45,7 +45,7 @@ Using the Behaviours Bot offers several advantages when creating and managing Be
     Early error detection and clear Behaviour script generation lead to smoother workflows and fewer support tickets.
     
 
-## How to use the Behaviours Bot
+## How to access the Behaviours Bot
 
 Note:
 
@@ -63,7 +63,7 @@ Within the Behaviours feature, you'll see a notification banner prompting you to
     -   Activate the required setting.
     -   Contact your administrator.
     
-2.  Enter your script in the Behaviours code editor, when writing a script you can:
+2.  Use the Behaviours Bot to generate your script in the Behaviours code editor. When writing a script you can:
     
     -   Use one of the available Example Scripts.
     -   Write your own code, or
@@ -82,10 +82,14 @@ Suppose you're editing an existing behaviour that has two events and two views s
     
 2.  Enter your Behaviours context in the right-hand panel by choosing from either the Create or View/Edit view type options.
     
+    Note: Selecting the View/Edit context provides you with a list of existing work items from your workspace. It displays those you have recently viewed, or you can search using the work item key. This populates the form preview panel with the data from the chosen work item so you can test scripts set to modify the View/Edit view type.
+    
     Depending on your selection, choose:
     
     -   Space - select the relevant space from the list available for the chosen view.
     -   Work type - select from a list of recent work items, or enter a full work item key.
+    
+    Tip: If the Space and Work type are already selected in the behaviour you are configuring, then this context automatically populates when you open the bot, so you can jump to step 3.
     
 3.  Enter your query or instruction in the main panel.
     

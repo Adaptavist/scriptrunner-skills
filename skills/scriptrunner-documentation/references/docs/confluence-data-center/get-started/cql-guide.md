@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Get Started
-- Doc ID: doc-sr4c-081c7cf1-879e-4a0e-8dbf-b7061a47baa2-cbf7440e22176dc7
+- Doc ID: doc-sr4c-564dc9a5-9b30-4f64-ae70-82931222fff9-cbf7440e22176dc7
 - Source: https://docs.adaptavist.com/sr4c/latest/get-started#cql-guide--en
 
 You can use Confluence Query Language (CQL) to [perform advanced searches](https://developer.atlassian.com/server/confluence/advanced-searching-using-cql/). Advanced searches allow you to use structured queries to search for content in Confluence.

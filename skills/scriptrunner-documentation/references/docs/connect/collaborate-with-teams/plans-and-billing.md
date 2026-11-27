@@ -3,7 +3,7 @@
 - Platform: connect
 - Space: SRC
 - Hierarchy: Collaborate with Teams
-- Doc ID: doc-src-64a2fd18-5d28-4b69-9477-c9f3bc1a50a2-09e1562516127cf7
+- Doc ID: doc-src-5ac1be32-43bc-4352-acbc-27f13448cb83-09e1562516127cf7
 - Source: https://docs.adaptavist.com/src/latest/collaborate-with-teams#plans-and-billing--en
 
 Find the information you need about purchasing our app here.

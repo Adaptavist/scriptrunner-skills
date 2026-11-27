@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Get Started
-- Doc ID: doc-sr4js-7802152a-1499-4dd6-a1c9-9a2da4e0e2cf-df55ef19aa76da42
+- Doc ID: doc-sr4js-578da075-bc36-4331-bd6a-286bc4315b2c-df55ef19aa76da42
 - Source: https://docs.adaptavist.com/sr4js/latest/get-started/permissions
 
 Groups with the Jira administrators or Jira System administrators global permission can use and configure ANY ScriptRunner feature.

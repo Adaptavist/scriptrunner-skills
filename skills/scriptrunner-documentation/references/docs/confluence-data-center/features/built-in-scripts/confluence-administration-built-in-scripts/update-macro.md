@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Built-In Scripts > Confluence Administration Built-In Scripts
-- Doc ID: doc-sr4c-31ac9b15-e74b-4d85-9352-06a5cccc3a22-6cfc96ad22d8222e
+- Doc ID: doc-sr4c-43a1e936-ded9-4d58-8ab0-b12f5119b4df-6cfc96ad22d8222e
 - Source: https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#confluence-administration-built-in-scripts--en#update-macro--en
 
 You can use this script to update macro parameters in bulk. This script updates every selected parameter of the selected macro in pages found by the CQL query.

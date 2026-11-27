@@ -3,7 +3,7 @@
 - Platform: connect
 - Space: SRC
 - Hierarchy: Templates
-- Doc ID: doc-src-21b6b375-5702-4d11-9141-d34a61383239-15bc7c84224535b1
+- Doc ID: doc-src-0664cb18-80b7-4c62-839f-56e08447140e-15bc7c84224535b1
 - Source: https://docs.adaptavist.com/src/latest/templates#tutorial-configure-a-google-sheets-template--en
 
 Follow the steps to configure the _Export users from Jira Cloud to Google Sheets_ template and trigger the resulting script.

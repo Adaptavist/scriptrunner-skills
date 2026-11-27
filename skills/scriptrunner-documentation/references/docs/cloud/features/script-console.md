@@ -3,8 +3,10 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features
-- Doc ID: doc-sr4jc-c8b0a945-b128-4886-967f-ff47eccc7df1-f75b5d70332fed0d
+- Doc ID: doc-sr4jc-df85e199-45d2-42f1-9334-96a7ece70b92-f75b5d70332fed0d
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/script-console
+
+The Script Console lets you write, test, and run Groovy scripts directly in Jira.
 
 |  |  |
 | --- | --- |

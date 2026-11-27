@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Script fields > Built-In Script Fields
-- Doc ID: doc-sr4js-7d5b070a-5a1c-46bd-be8c-eaf7a1a9d919-4bcb5de7a60c22ef
+- Doc ID: doc-sr4js-116201c0-88bd-4315-b876-e2248f8b429d-4bcb5de7a60c22ef
 - Source: https://docs.adaptavist.com/sr4js/latest/features#script-fields--en#built-in-script-fields--en#issue-picker--en
 
 Use the Issue Picker script field to create a field that allows you to pick an issue, or issues, from a pre-defined JQL query. For example, you could use this script field to create a field that links _Incident_ issues records to _Problem_ issues.

@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Integrations
-- Doc ID: doc-sr4js-eadc068d-e6b2-47d9-8f57-89cd5f5e2539-5b247698eb384833
+- Doc ID: doc-sr4js-1534a3c5-e97a-4c8f-92ab-08897f4688c0-5b247698eb384833
 - Source: https://docs.adaptavist.com/sr4js/latest/integrations/vendors-api
 
 We have developed a new API for Atlassian Marketplace Vendors to use with their custom Jira fields to make them compatible with our DC [Behaviours](https://docs.adaptavist.com/sr4js/latest/features/behaviours) feature. When a Vendor integrates this API, all custom fields created with their application will work seamlessly with our Behaviours feature.

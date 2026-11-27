@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Get Started > Settings
-- Doc ID: doc-sr4c-0e945da5-60f3-4beb-9d80-ce8845121d1d-8ff1db4f976a511f
+- Doc ID: doc-sr4c-402aa8ed-4d16-478c-b490-514af8bb942d-8ff1db4f976a511f
 - Source: https://docs.adaptavist.com/sr4c/latest/get-started#settings--en#enable-custom-css-for-macros--en
 
 As recommended by [Atlassian](https://confluence.atlassian.com/doc/styling-confluence-with-css-166528400.html), custom CSS for macros is disabled by default. However, it is easy to enable the ScriptRunner _Settings_ options.

@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Script fields > Built-In Script Fields
-- Doc ID: doc-sr4js-289d275a-e30a-4722-a37e-1c862cb9c1bc-819c7594d4265ab5
+- Doc ID: doc-sr4js-d483d1e7-cfff-4bee-89ec-5c290a77143a-819c7594d4265ab5
 - Source: https://docs.adaptavist.com/sr4js/latest/features#script-fields--en#built-in-script-fields--en#ldap-picker--en
 
 The _LDAP Picker_ scripted field displays LDAP records returned by a pre-configured search query from a [connected LDAP server](https://docs.adaptavist.com/sr4js/latest/features/resources/ldap-connection).

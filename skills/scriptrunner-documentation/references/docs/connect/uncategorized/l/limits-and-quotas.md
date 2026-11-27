@@ -3,7 +3,7 @@
 - Platform: connect
 - Space: SRC
 - Hierarchy: n/a
-- Doc ID: doc-src-f0f0719b-8c5e-40a2-84b3-40e29754f42b-6c38674432e6a499
+- Doc ID: doc-src-ae28f309-8747-44d0-9eb0-3f724bed98cc-6c38674432e6a499
 - Source: https://docs.adaptavist.com/src/latest/limits-and-quotas
 
 To ensure ScriptRunner Connect's service reliability, the app enforces various limits and quotas to guard against accidents or malicious behavior.

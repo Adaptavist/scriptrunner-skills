@@ -3,7 +3,7 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features > ScriptRunner Enhanced Search > Troubleshoot ScriptRunner Enhanced Search
-- Doc ID: doc-sr4jc-97cddafa-5784-4748-bbb7-78826c04704f-a982353245143db7
+- Doc ID: doc-sr4jc-a94d0a25-66b2-423c-ad41-efddaf49246f-a982353245143db7
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search#troubleshoot-scriptrunner-enhanced-search--en#initial-synchronization-issues--en
 
 After [installing](../../../get-started/installation.md) ScriptRunner Enhanced Search, you must perform an initial JQL keyword sync only once. The length of time this sync will take is based on the following calculation:

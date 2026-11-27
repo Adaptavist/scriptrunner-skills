@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Behaviours > Behaviours Examples
-- Doc ID: doc-sr4js-02ab6573-240e-49f2-9e20-e6af43556436-cbba84051d576008
+- Doc ID: doc-sr4js-0d7cab02-a7c6-4ecf-99d2-061cbbceec2c-cbba84051d576008
 - Source: https://docs.adaptavist.com/sr4js/latest/features#behaviours--en#behaviours-examples--en#restricting-priority-and-resolution--en
 
 You can use Behaviours to easily restrict priority and resolution values by workflow transition, project and/or issue type, user groups, user roles, and more.

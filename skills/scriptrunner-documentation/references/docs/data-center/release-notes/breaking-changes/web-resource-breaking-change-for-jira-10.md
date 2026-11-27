@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Release Notes > Breaking Changes
-- Doc ID: doc-sr4js-e448aeb0-cfdc-4006-92ea-770f01dbb614-65ea614079dd575c
+- Doc ID: doc-sr4js-60dbb5d4-c0e4-4e30-9b4c-6f234bc10fd2-65ea614079dd575c
 - Source: https://docs.adaptavist.com/sr4js/latest/release-notes/breaking-changes#web-resource-breaking-change-for-jira-10--en
 
 Learn what changed for custom web resource directories in Jira 10.0 and where to store your JavaScript and CSS files going forward.

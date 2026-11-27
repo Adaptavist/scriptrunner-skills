@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Best Practices
-- Doc ID: doc-sr4js-14a994fc-ff5a-47c7-ac83-eee993f22cb5-bd0fbdaffc0b3457
+- Doc ID: doc-sr4js-3a06421a-9fbc-4461-bcea-ac1e4fb17c36-bd0fbdaffc0b3457
 - Source: https://docs.adaptavist.com/sr4js/latest/best-practices/dashboard-and-gadgets
 
 Enterprise Jira users often need to automatically generate dashboards with gadgets to provide a consistent management-level overview of progress. These could be created either on demand or automatically in response to version or project-created events.

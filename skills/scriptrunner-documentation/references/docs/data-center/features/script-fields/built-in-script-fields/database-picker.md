@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Script fields > Built-In Script Fields
-- Doc ID: doc-sr4js-cd6ed1d0-5a16-41c1-ae70-1e3a88d3c481-e47871ea9865c2fe
+- Doc ID: doc-sr4js-fb5501b8-f9cd-4ca1-8368-99ce752a24a3-e47871ea9865c2fe
 - Source: https://docs.adaptavist.com/sr4js/latest/features#script-fields--en#built-in-script-fields--en#database-picker--en
 
 The _Database Picker_ scripted field displays database records returned by a pre-configured SQL query from a [connected database](https://docs.adaptavist.com/sr4js/latest/features/resources).

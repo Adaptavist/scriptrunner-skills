@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Built-In Scripts > Confluence Administration Built-In Scripts
-- Doc ID: doc-sr4c-993ad002-b023-4b10-b6f6-0a3ddd756aeb-fe9de112ee0eb3aa
+- Doc ID: doc-sr4c-908007b7-8b6a-45ea-b54d-4e6c15387f38-fe9de112ee0eb3aa
 - Source: https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#confluence-administration-built-in-scripts--en#xpath-search-in-pages--en
 
 This is an advanced built-in script. Use _XPath Search in Pages_ to search each page's source using the provided XPath expression.
@@ -52,7 +52,7 @@ The script returns the pages with images in the _Demonstration Space_. Each page
 
 ### Search for pages with nested macros
 
-You can use two built-in examples to search for all pages with macros nested inside of other macros. For example, this search returns those pages if you use Mosaic: Content Formatting Macros and Templates to nest formatting macros inside of division macros. You can use the generated list to help with your [migration](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-or-from-cloud/migrate-from-scriptrunner-for-confluence-server-to-cloud).
+You can use two built-in examples to search for all pages with macros nested inside of other macros. For example, this search returns those pages if you use Mosaic: Content Formatting Macros and Templates to nest formatting macros inside of division macros. You can use the generated list to help with your [migration](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-cloud/migrate-from-scriptrunner-for-confluence-server-to-cloud).
 
 1.  Navigate to General Configuration > ScriptRunner > Built-in Scripts.
 2.  Select XPath Search in Pages.

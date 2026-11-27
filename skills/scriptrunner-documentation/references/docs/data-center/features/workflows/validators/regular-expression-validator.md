@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Workflows > Validators
-- Doc ID: doc-sr4js-edca11b8-0bc2-48ea-ac5f-202ecd7510fb-9edf6ded43d5b15a
+- Doc ID: doc-sr4js-3e74fbdf-d661-415a-8efe-42d2f2bdb95c-9edf6ded43d5b15a
 - Source: https://docs.adaptavist.com/sr4js/latest/features#workflows--en#validators--en#regular-expression-validator--en
 
 Use the Regular expression validator to validate that the text field input on a transition screen matches a regular expression (regex) before transitioning the issue. A regular expression is a sequence of characters that specifies a pattern. For example, you may want to use this validator to ensure:

@@ -3,7 +3,7 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: Features > Built-In Scripts > Confluence Administration Built-In Scripts
-- Doc ID: doc-sr4cc-689a1a8f-a087-4786-9b8a-e7926fd36fa4-f3ba3bf88ee3cac9
+- Doc ID: doc-sr4cc-478f09a0-b033-4a3d-8946-307e5d5ec307-f3ba3bf88ee3cac9
 - Source: https://docs.adaptavist.com/sr4cc/latest/features/built-in-scripts/confluence-administration-built-in-scripts#rename-labels--en
 
 Instructions for using the Rename Labels built-in script.
@@ -35,12 +35,12 @@ A user added the label `style guide` to several pages, not realizing that spaces
 
 For this part of the label fixing, follow these steps:
 
-1.  Select _Product Documentation_ (or the name of the space you want to work with) for Space.
-2.  Enter _style_ for Choose Label.
-3.  Enter _styleguide_ for New Name.
+1.  Select Product Documentation (or the name of the space you want to work with) for Space.
+2.  Enter style for Choose Label.
+3.  Enter styleguide for New Name.
 4.  Select Run.
     
 
-You will get your success message.
+You see a success message.
 
 Now, navigate to [Bulk Add or Remove Labels on One or More Pages](https://docs.adaptavist.com/sr4cc/latest/features/built-in-scripts/confluence-administration-built-in-scripts/bulk-add-or-remove-labels-on-one-or-more-pages) to delete the `guide` label.

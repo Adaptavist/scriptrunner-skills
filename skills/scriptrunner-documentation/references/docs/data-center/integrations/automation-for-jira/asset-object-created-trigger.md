@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Integrations > Automation for Jira
-- Doc ID: doc-sr4js-20e79188-d195-4b96-a761-3b85a64d7a7b-501f889b076cb773
+- Doc ID: doc-sr4js-8c56a640-72d9-4c0c-b358-ad1bd5f1e7ad-501f889b076cb773
 - Source: https://docs.adaptavist.com/sr4js/latest/integrations/automation-for-jira#asset-object-created-trigger--en
 
 You can use the Asset Object created with ScriptRunner trigger to create a rule that runs whenever an Assets object is created. You can also use the associated `{{createdObject}}` [smart value](https://confluence.atlassian.com/automation/smart-values-syntax-and-formatting-1141480622.html) to apply conditions to the rule and input the created object's information elsewhere, for example, into an email or a comment (see step 15 in the example below for a working example of how to use this smart value).

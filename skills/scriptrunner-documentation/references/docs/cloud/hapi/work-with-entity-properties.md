@@ -3,8 +3,10 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: HAPI
-- Doc ID: doc-sr4jc-37aeb30d-f402-4365-b348-ebb137f65ce4-001a699bd68ca1c9
+- Doc ID: doc-sr4jc-12240229-2a2c-4a61-83db-08af5463b753-001a699bd68ca1c9
 - Source: https://docs.adaptavist.com/sr4jc/latest/hapi#work-with-entity-properties--en
+
+Learn how to define, store, and retrieve Jira entity properties using HAPI.
 
 With HAPI, you can easily set and retrieve entity properties.
 

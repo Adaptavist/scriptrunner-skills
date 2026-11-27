@@ -3,7 +3,7 @@
 - Platform: connect
 - Space: SRC
 - Hierarchy: Scripting
-- Doc ID: doc-src-fe923f8a-b985-41b2-8fbe-93b9a4fe275c-6e491b63f44c629a
+- Doc ID: doc-src-f9d26218-faa6-4443-8aa8-7d966e907984-6e491b63f44c629a
 - Source: https://docs.adaptavist.com/src/latest/scripting#convert-data-types--en
 
 Learn our convenient functions for converting data between different types.
@@ -11,13 +11,13 @@ Learn our convenient functions for converting data between different types.
 Each ScriptRunner Connect workspace includes the [@sr-connect/convert](https://www.npmjs.com/package/@sr-connect/convert) package, which provides a set of convenient functions for converting between different data types:
 
 -   `convertBase64ToBuffer` - Converts a base64 encoded string into an ArrayBuffer.
--   convertBase64ToText - Converts a base64 encoded string into plain text.
--   convertBufferToBase64 - Converts an ArrayBuffer into a base64 encoded string.
--   convertBufferToText - Converts an ArrayBuffer into plain text.
--   convertTextToBase64 - Converts plain text into a base64 encoded string.
--   convertTextToBuffer - Converts plain text into an ArrayBuffer.
--   convertTextToText - Converts plain text to plain text with a different encoding.
--   convertArrayBufferToFormDataBuffer - Converts an ArrayBuffer into a form-data-encoded ArrayBuffer, offering a more efficient solution than using FormData and Blob classes separately (strongly recommended). Read more about it in the [Working with Attachments](https://docs.adaptavist.com/src/latest/scripting/code-snippets/working-with-attachments) topic.
+-   `convertBase64ToText` - Converts a base64 encoded string into plain text.
+-   `convertBufferToBase64` - Converts an ArrayBuffer into a base64 encoded string.
+-   `convertBufferToText` - Converts an ArrayBuffer into plain text.
+-   `convertTextToBase64` - Converts plain text into a base64 encoded string.
+-   `convertTextToBuffer` - Converts plain text into an ArrayBuffer.
+-   `convertTextToText` - Converts plain text to plain text with a different encoding.
+-   `convertArrayBufferToFormDataBuffer` - Converts an ArrayBuffer into a form-data-encoded ArrayBuffer, offering a more efficient solution than using FormData and Blob classes separately (strongly recommended). Read more about it in the [Working with Attachments](https://docs.adaptavist.com/src/latest/scripting/code-snippets/working-with-attachments) topic.
 
 Note: Plain-text encoding ℹ️
 
@@ -31,8 +31,8 @@ You can import each function separately as follows:
 
 ```
 import { convertTextToBase64 } from '@sr-connect/convert';
- 
-export default async function(event: any, context: Context): Promise<void> {
+
+export default async function (event: any, context: Context): Promise<void> {
     console.log(convertTextToBase64('HELLO WORLD', 'utf8'));
 }
 ```
@@ -41,8 +41,8 @@ Or you can import the entire namespace as follows:
 
 ```
 import { Convert } from '@sr-connect/convert';
- 
-export default async function(event: any, context: Context): Promise<void> {
+
+export default async function (event: any, context: Context): Promise<void> {
     console.log(Convert.textToBase64('HELLO WORLD', 'utf8'));
 }
 ```

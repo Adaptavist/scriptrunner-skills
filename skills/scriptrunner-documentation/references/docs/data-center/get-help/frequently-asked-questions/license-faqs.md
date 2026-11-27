@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Get Help > Frequently Asked Questions
-- Doc ID: doc-sr4js-97c8703a-b5aa-4d2c-a998-459bb52a1867-1269dd21666e1130
+- Doc ID: doc-sr4js-ba596a3a-bb65-4b47-bffd-6b3848437dba-1269dd21666e1130
 - Source: https://docs.adaptavist.com/sr4js/latest/get-help#frequently-asked-questions--en#license-faqs--en
 
 Note: If you wish to discuss quotes and discounts, please visit our [contact](https://www.adaptavist.com/contact) page, and select Licensing when you choose the type of enquiry. For all other licensing questions, contact [Atlassian](https://www.atlassian.com/company/contact/purchasing-licensing).

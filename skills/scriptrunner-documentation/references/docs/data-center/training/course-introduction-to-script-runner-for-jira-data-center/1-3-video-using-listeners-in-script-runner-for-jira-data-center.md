@@ -3,8 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Training > Course: Introduction to ScriptRunner for Jira Data Center
-- Doc ID: doc-sr4js-efa44c17-8ae1-4818-88a6-b416bc10427b-70055aaa2f92d108
+- Doc ID: doc-sr4js-e2bbe008-da43-4d3b-a325-3360ec6723b7-70055aaa2f92d108
 - Source: https://docs.adaptavist.com/sr4js/latest/training/course-introduction-to-scriptrunner-for-jira-data-center/1.3-video-using-listeners-in-scriptrunner-for-jira-data-center
+
+Watch how to set up Listeners in ScriptRunner to trigger automated actions when Jira events occur.
 
 Note: For a written tutorial on listeners, see the [Listeners Tutorial](https://docs.adaptavist.com/sr4js/latest/features/listeners) page.
 

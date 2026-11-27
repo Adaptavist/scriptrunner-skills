@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Best Practices > Logging
-- Doc ID: doc-sr4js-fa3d772b-c65e-41f7-94ac-80ff22199fb6-6b0cf94f643d8ee2
+- Doc ID: doc-sr4js-47b96daa-c0f0-4843-980f-7e3aec227f24-6b0cf94f643d8ee2
 - Source: https://docs.adaptavist.com/sr4js/latest/best-practices/logging#advanced-logging--en
 
 Note: Log4j 1 and Log4j 2

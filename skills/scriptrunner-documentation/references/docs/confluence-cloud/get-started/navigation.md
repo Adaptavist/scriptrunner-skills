@@ -3,7 +3,7 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: Get Started
-- Doc ID: doc-sr4cc-3cd06d04-274f-41d2-9329-e86c5230755c-6588244b67389a8e
+- Doc ID: doc-sr4cc-cfb05d28-233a-4cf3-9b41-7d9e731fa880-6588244b67389a8e
 - Source: https://docs.adaptavist.com/sr4cc/latest/get-started/navigation
 
 Learn how to get to the various functions within the ScriptRunner for Confluence Cloud app.

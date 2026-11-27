@@ -3,7 +3,7 @@
 - Platform: connect
 - Space: SRC
 - Hierarchy: Scripting > Code Snippets
-- Doc ID: doc-src-417c93ba-4ac6-40fe-bdf4-9d62320c10cb-4409c8d992bb8d89
+- Doc ID: doc-src-33ec1f2c-9932-4a89-b766-58b701313bac-4409c8d992bb8d89
 - Source: https://docs.adaptavist.com/src/latest/scripting#code-snippets--en#create-an-issue-in-jira-cloud--en
 
 Learn how to use a code snippet to create an issue in Jira Cloud.
@@ -14,30 +14,31 @@ This code should work for Jira Server and Data Center, too, since the APIs are s
 
 ```
 import JiraCloud from './api/jira/cloud';
- 
+
 const JIRA_PROJECT_KEY = 'ISSUE';
 const ISSUE_TYPE_NAME = 'Task';
- 
+
 export default async function (event: any, context: Context): Promise<void> {
- // Find the project to use based on pre-defined project key
+    // Find the project to use based on pre-defined project key
     const project = await JiraCloud.Project.getProject({
         projectIdOrKey: JIRA_PROJECT_KEY,
     });
- 
- // Find all the issue types for the given project
+
+    // Find all the issue types for the given project
     const issueTypes = await JiraCloud.Issue.Type.getTypesForProject({
         projectId: +(project.id ?? 0) // + sign converts the string to number
     });
- 
- // // Find the issue type to use based on pre-defined issue type name
+
+    // Find the issue type to use based on pre-defined issue type name
     const issueType = issueTypes.find(it => it.name === ISSUE_TYPE_NAME);
- // Check if the issue type was found
- if (!issueType) {
- // If not, then throw an error
- throw Error('Issue type not found');
+
+    // Check if the issue type was found
+    if (!issueType) {
+        // If not, then throw an error
+        throw Error('Issue type not found');
     }
- 
- // Create the issue
+
+    // Create the issue
     const issue = await JiraCloud.Issue.createIssue({
         body: {
             fields: {
@@ -51,8 +52,8 @@ export default async function (event: any, context: Context): Promise<void> {
             }
         }
     });
- 
- // Log out created issue key
+
+    // Log out created issue key
     console.log(`Issue created: ${issue.key}`);
 }
 ```

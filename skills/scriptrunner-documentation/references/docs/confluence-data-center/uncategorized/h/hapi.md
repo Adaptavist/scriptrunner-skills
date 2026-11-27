@@ -3,10 +3,10 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: n/a
-- Doc ID: doc-sr4c-58b0bb85-2789-4876-aad3-04cdf687a91c-63eba05dc097273d
+- Doc ID: doc-sr4c-f545b5d3-3e18-4061-b8bc-9f3e966cd8c4-63eba05dc097273d
 - Source: https://docs.adaptavist.com/sr4c/latest/hapi
 
-Learn about HAPI, our API in Confluence.
+Write shorter, simpler scripts that create and search pages, manage labels and users, and run as other users, with less code to maintain.
 
 Visit ScriptRunner HQ to find out more about HAPI.
 
@@ -17,8 +17,6 @@ HAPI is an API (application programming interface) for doing common tasks in Con
 |  |  |
 | --- | --- |
 |  | Visit ScriptRunner HQ to find out more about HAPI.<br>[ScriptRunner HQ](https://www.scriptrunnerhq.com/hapi) |
-
- 
 
 |  |  |
 | --- | --- |
@@ -78,4 +76,4 @@ Take our [short survey](https://www.surveymonkey.com/r/YXN8SNW) and let us know 
 
 ## What's next?
 
-[Create a page](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-or-from-cloud/rewrite-scripts-for-cloud/adapt-scripts-for-confluence-cloud#create-a-page--en) with HAPI and see how easy it is to use.
+[Create a page](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-cloud/rewrite-scripts-for-cloud/adapt-scripts-for-confluence-cloud#create-a-page--en) with HAPI and see how easy it is to use.

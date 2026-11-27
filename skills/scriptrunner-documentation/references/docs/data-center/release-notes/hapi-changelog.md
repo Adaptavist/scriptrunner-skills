@@ -3,10 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Release Notes
-- Doc ID: doc-sr4js-21740bd4-20b4-4ff4-a36c-4e59c59a16c2-352df77dab92ec7e
+- Doc ID: doc-sr4js-bc95b9cb-768d-4dc5-991d-f977eb43db63-352df77dab92ec7e
 - Source: https://docs.adaptavist.com/sr4js/latest/release-notes/hapi-changelog
 
-Find the latest updates and enhancements to HAPI on this page.
+Track additions, updates, and breaking changes to the HAPI library version by version across all ScriptRunner releases.
 
 ## Compatibility policy
 

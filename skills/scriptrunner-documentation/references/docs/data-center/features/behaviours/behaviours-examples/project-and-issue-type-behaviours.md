@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Behaviours > Behaviours Examples
-- Doc ID: doc-sr4js-06f398dd-8f23-4726-83c6-1014022c648a-e56e82172e4bc5b8
+- Doc ID: doc-sr4js-f3ceb0f5-c0a0-471f-8bb8-13e2e0d04f10-e56e82172e4bc5b8
 - Source: https://docs.adaptavist.com/sr4js/latest/features#behaviours--en#behaviours-examples--en#project-and-issue-type-behaviours--en
 
 In certain scenarios, you may need to implement different behaviours based on the selected project or issue type. To do this, we recommend you use an initialiser, as described below.

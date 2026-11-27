@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Script fields
-- Doc ID: doc-sr4js-b82efb2b-66bb-4a59-a1c3-c9428ef2a8b2-ad4bdaed0165d16d
+- Doc ID: doc-sr4js-b462804d-0cdb-46f2-9bf9-c0917e2c4b19-ad4bdaed0165d16d
 - Source: https://docs.adaptavist.com/sr4js/latest/features#script-fields--en#script-field-tutorial--en
 
 Note: For a video on script fields, see the [Using Script Fields](../../training/course-introduction-to-script-runner-for-jira-data-center/1-4-video-using-script-fields-in-script-runner-for-jira-data-center.md) training video.

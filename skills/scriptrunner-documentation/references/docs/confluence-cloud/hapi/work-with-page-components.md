@@ -3,7 +3,7 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: HAPI
-- Doc ID: doc-sr4cc-c577b68e-034c-4135-8131-dfcff56c7122-36f2a818514e7655
+- Doc ID: doc-sr4cc-165ad767-4d80-4177-8f0e-88ac570c6548-36f2a818514e7655
 - Source: https://docs.adaptavist.com/sr4cc/latest/hapi/work-with-page-components
 
 Learn about using HAPI to complete tasks associated with page components.
@@ -28,7 +28,7 @@ attachments
 
 The results look like this:
 
-You can customize this script by replacing the page ID.
+You can customize this script by replacing the _page ID_.
 
 ## Comments
 
@@ -42,4 +42,4 @@ Pages.getById(123).addComment("Please review this page.")
 
 Your comment should look like this:
 
-You can customize this script by replacing the page ID and comment text.
+You can customize this script by replacing the _page ID_ and _comment text_.

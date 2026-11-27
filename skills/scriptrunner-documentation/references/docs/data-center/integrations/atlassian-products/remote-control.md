@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Integrations > Atlassian Products
-- Doc ID: doc-sr4js-ea0dd653-c34b-4448-986a-e5d7db2ac756-d1b389efccf660a2
+- Doc ID: doc-sr4js-e92354dd-a338-4090-9caa-6fe7afcf3f50-d1b389efccf660a2
 - Source: https://docs.adaptavist.com/sr4js/latest/integrations/atlassian-products/remote-control
 
 _Remote Control_ allows you to easily execute code on other Atlassian applications with ScriptRunner installed.

@@ -3,7 +3,7 @@
 - Platform: connect
 - Space: SRC
 - Hierarchy: Workspaces > Event Listeners
-- Doc ID: doc-src-d1cb1825-63f7-4afd-86ad-5598febf13cf-27d2a56106116c70
+- Doc ID: doc-src-72dd452f-7b17-4dab-b345-bf7e5b135fe2-27d2a56106116c70
 - Source: https://docs.adaptavist.com/src/latest/workspaces#event-listeners--en#generic-http-events--en
 
 Generic HTTP events allow you to listen to events from services/apps that ScriptRunner Connect officially does not support.
@@ -12,9 +12,17 @@ Since you can also send back an HTTP response with these events, you can use it 
 
 To get started, create a new event listener and select a generic app from the list. You will then be taken to a new screen where you have to insert the following information:
 
--   Event Type: You'll get to select between async and sync event types. The main difference between the two is that an async event is processed in a fire-and-forget manner, without you being able to send back an HTTP response. Your script gets invoked when this event gets triggered, but a default HTTP response will be sent back immediately, even while your script is still running. This should be the preferred option in all cases where you don't need to respond with a specific message, which should be suitable for most webhooks. Alternatively, you can process your events synchronously, meaning that you can construct and return your custom HTTP response. A major limitation of this approach is that your script must complete processing the event within 25 seconds. If you exceed this limitation, your script will time out, and a status code 408 (request timeout) will be returned. Asynchronous events do not share this limitation; they are bound by a regular function timeout limit, which by default is 15 minutes. You can use this option when you need to respond with anything specific, such as when building your own APIs or UIs.
--   Linked Script: The same logic applies to regular [event listeners](https://docs.adaptavist.com/src/latest/workspaces/event-listeners).
--   URL Path: URL path is a globally unique identifier that makes up your URL. By default, a random path identifier is generated. We recommend using the random identifier. If you do change it to something more predictable, be aware that other people can attempt to guess it, and you may want to implement additional authentication to prevent anonymous access. You can no longer take a URL if someone has already reserved a URL path .
+Event Type
+
+You'll get to select between async and sync event types. The main difference between the two is that an async event is processed in a fire-and-forget manner, without you being able to send back an HTTP response. Your script gets invoked when this event gets triggered, but a default HTTP response will be sent back immediately, even while your script is still running. This should be the preferred option in all cases where you don't need to respond with a specific message, which should be suitable for most webhooks. Alternatively, you can process your events synchronously, meaning that you can construct and return your custom HTTP response. A major limitation of this approach is that your script must complete processing the event within 25 seconds. If you exceed this limitation, your script will time out, and a status code 408 (request timeout) will be returned. Asynchronous events do not share this limitation; they are bound by a regular function timeout limit, which by default is 15 minutes. You can use this option when you need to respond with anything specific, such as when building your own APIs or UIs.
+
+Linked Script
+
+The same logic applies to regular [event listeners](https://docs.adaptavist.com/src/latest/workspaces/event-listeners).
+
+URL Path
+
+URL path is a globally unique identifier that makes up your URL. By default, a random path identifier is generated. We recommend using the random identifier. If you do change it to something more predictable, be aware that other people can attempt to guess it, and you may want to implement additional authentication to prevent anonymous access. You can no longer take a URL if someone has already reserved a URL path.
 
 Note: In a synchronous event, status code 299 will be returned if the invocation is aborted.
 
@@ -26,14 +34,14 @@ An event, which will be the HTTP request, will contain the following fields:
 
 ```
 {
-  body?: any; // Request body, in case the request contains JSON content, the body is already parsed JSON object. In case it is text content then the body is string. In case it is binary then it is also string but base64 encoded. If the body is empty then this property is undefined.
-  bodyType?: 'base64' | 'text' | 'json'; // Determines in which shape the body is in. If the body is empty then this property is also undefined.
-  headers: Record<string, string>; // Headers that were sent with the request.
-  method: string; // HTTP request method.
-  path: string; // URL path that was used.
-  queryString: // Raw query string
-  queryStringParams: Record<string, string>; // Parsed record of query string params, if there were any.
-  sourceIp: string; // IP of the user/system that triggered the event. Can be used to implement IP allowlist.
+    body?: any; // Request body, in case the request contains JSON content, the body is already parsed JSON object. In case it is text content then the body is string. In case it is binary then it is also string but base64 encoded. If the body is empty then this property is undefined.
+    bodyType?: 'base64' | 'text' | 'json'; // Determines in which shape the body is in. If the body is empty then this property is also undefined.
+    headers: Record<string, string>; // Headers that were sent with the request.
+    method: string; // HTTP request method.
+    path: string; // URL path that was used.
+    queryString: string; // Raw query string
+    queryStringParams: Record<string, string>; // Parsed record of query string params, if there were any.
+    sourceIp: string; // IP of the user/system that triggered the event. Can be used to implement IP allowlist.
 }
 ```
 
@@ -78,22 +86,22 @@ An example of how to detect the incoming HTTP request body type:
 ```
 import { convertBase64ToText } from '@sr-connect/convert';
 import { HttpEventRequest, isBase64, isJSON, isText } from '@sr-connect/generic-app/events/http';
- 
+
 export default async function (event: HttpEventRequest, context: Context): Promise<void> {
- if (isBase64(event)) { // Check if body is base64 encoded
- // Convert base64 to text
+    if (isBase64(event)) { // Check if body is base64 encoded
+        // Convert base64 to text
         const body = convertBase64ToText(event.body);
     } else if (isText(event)) { // Check if body is string
- // Body is already string, no need for explicit conversion
+        // Body is already string, no need for explicit conversion
         const body = event.body;
     } else if (isJSON<MyType>(event)) { // Check if body is already parsed JSON object and optionally specify the type you wish it to be in
- // Body is already object that in a shape of MyType, no need for explicit conversion
+        // Body is already object that in a shape of MyType, no need for explicit conversion
         const body = event.body;
     } else {
- // If body was not sent
+        // If body was not sent
     }
 }
- 
+
 // Shape of my JSON object type
 interface MyType {
     prop1: string;

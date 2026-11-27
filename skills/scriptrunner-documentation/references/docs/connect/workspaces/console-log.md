@@ -3,7 +3,7 @@
 - Platform: connect
 - Space: SRC
 - Hierarchy: Workspaces
-- Doc ID: doc-src-f41d7bac-53e0-485f-99e4-859a4e78fa9f-c5d0a1e8b4ba93c9
+- Doc ID: doc-src-d7e606f0-5ace-473b-8afd-2ab3524303e9-c5d0a1e8b4ba93c9
 - Source: https://docs.adaptavist.com/src/latest/workspaces#console-log--en
 
 Whenever you perform an action in the workspace, run a script manually, or trigger a script through a scheduled or external event, the related logs will appear in the Console Log.

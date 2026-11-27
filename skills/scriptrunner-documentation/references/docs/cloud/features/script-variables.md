@@ -3,8 +3,10 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features
-- Doc ID: doc-sr4jc-54479bea-2f64-4784-a0a5-9f38ad8e1269-967fa38c1107727c
+- Doc ID: doc-sr4jc-799b88dc-155b-4974-ae2f-e5178cf671c8-967fa38c1107727c
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/script-variables
+
+Learn how ScriptRunner variables work and how to use them effectively in your scripts.
 
 |  |  |
 | --- | --- |
@@ -18,7 +20,7 @@
 
 ## What are Script Variables?
 
-You can use _Script Variables_ to specify variables that can be inserted into your scripts ( [Script Console](script-console.md), [Script Listeners](script-listeners.md), [Workflow Perform Actions](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/perform-actions), [Scheduled Jobs](scheduled-jobs.md), [Escalation Service](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/escalation_service.dita)).
+You can use _Script Variables_ to specify variables that can be inserted into your scripts ( [Script Console](script-console.md), [Script Listeners](script-listeners.md), [Workflow Perform Actions](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/perform-actions), [Scheduled Jobs](scheduled-jobs.md), [Escalation Service](escalation-service.md)).
 
 ## How to use Script Variables
 
@@ -59,7 +61,7 @@ Note that clicking the show password icon of script variables that are >50 chara
 4.  Enter a name in the Script Variable name field.
     
 5.  Enter a password in the Script Variable value field.
-6.  Click Save or Cancel. Once saved, you will see a confirmation message display and you are automatically redirected to the Script Variables page. You can access saved script variables by clicking the Script Context button in the editors for the [Script Console](script-console.md), [Script Listeners](script-listeners.md), [Workflow Perform Actions](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/perform-actions), [Scheduled Jobs](scheduled-jobs.md), and [Escalation Service](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/escalation_service.dita).
+6.  Click Save or Cancel. Once saved, you will see a confirmation message display and you are automatically redirected to the Script Variables page. You can access saved script variables by clicking the Script Context button in the editors for the [Script Console](script-console.md), [Script Listeners](script-listeners.md), [Workflow Perform Actions](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/perform-actions), [Scheduled Jobs](scheduled-jobs.md), and [Escalation Service](escalation-service.md).
 
 ### Edit a Script Variable
 

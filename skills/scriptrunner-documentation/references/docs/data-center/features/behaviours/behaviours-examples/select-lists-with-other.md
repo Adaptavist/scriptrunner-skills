@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Behaviours > Behaviours Examples
-- Doc ID: doc-sr4js-08cf52db-4ab3-4536-8e76-ee8535a68cda-e3570afd0f64af31
+- Doc ID: doc-sr4js-1fe9119c-2d21-4061-a54c-022ad553392f-e3570afd0f64af31
 - Source: https://docs.adaptavist.com/sr4js/latest/features#behaviours--en#behaviours-examples--en#select-lists-with-other--en
 
 As an Administrator, you may want to create a select list where users are asked to select an option. To accommodate preferences not included in the predefined options, Other is provided as a choice. When selected, you want this option to reveal an additional text input field.

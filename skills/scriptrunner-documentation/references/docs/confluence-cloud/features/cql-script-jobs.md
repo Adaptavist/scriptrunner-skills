@@ -3,7 +3,7 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: Features
-- Doc ID: doc-sr4cc-4fb1cf76-ee91-484f-82fe-0317fc34aebe-6a7d3c23d8605dfc
+- Doc ID: doc-sr4cc-18babda7-5eef-4d02-ba96-8341d66fdf9f-6a7d3c23d8605dfc
 - Source: https://docs.adaptavist.com/sr4cc/latest/features/cql-script-jobs
 
 A CQL (Confluence Query Language) script job (or escalation service) runs a CQL query on a specified schedule.
@@ -27,14 +27,14 @@ Each defined job must have a CQL query that will be run in order to find the con
 
 ## Use case
 
-ou could fix content that was mislabeled with _CQL Script Jobs_. A CQL query like `space = development and label = requirements` would find the _requirements_ label in the _development_ space. You could then write a script that transforms all of those found labels to _product requirements_.
+You could fix content that was mislabeled with _CQL Script Jobs_. A CQL query like `space = development and label = requirements` would find the _requirements_ label in the _development_ space. You could then write a script that transforms all of those found labels to _product requirements_.
 
 ## Use CQL script jobs
 
 1.  Navigate to ScriptRunner and select CQL Jobs.
 2.  Provide a name for your CQL job in The CQL Script Job Called.
     
-3.  Choose if you want it Enabled (or turned on).
+3.  Choose if you want it _Enabled_ (turned on).
     
 4.  Enter your CQL query in For the First 50 Results Returned By This Query.
     
@@ -46,7 +46,7 @@ ou could fix content that was mislabeled with _CQL Script Jobs_. A CQL query lik
     
 6.  For As This User, select if you want to run this task as yourself or another user
     
-    For example, you run this task as a user named _Confluence Admin_, so that that changes can be easily tracked.
+    For example, you run this task as a user named _Confluence Admin_, so that changes can be easily tracked.
 7.  For Code To Run, enter what you want the job to do.
 8.  You can select Run Now to see the script run or Save.
     

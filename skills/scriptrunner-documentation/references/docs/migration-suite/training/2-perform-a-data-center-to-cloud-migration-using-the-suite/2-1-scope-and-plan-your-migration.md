@@ -3,7 +3,7 @@
 - Platform: migration-suite
 - Space: SMS
 - Hierarchy: Training > 2. Perform a Data Center to Cloud migration using the suite
-- Doc ID: doc-sms-34f9c3ac-71d3-4bb4-aeef-009c5aa1e709-1c28e089679b0f9d
+- Doc ID: doc-sms-7a9a2fe5-2592-4867-8dd0-776a2a4abbf7-1c28e089679b0f9d
 - Source: https://docs.adaptavist.com/sms/latest/training/2.-perform-a-data-center-to-cloud-migration-using-the-suite/2.1-scope-and-plan-your-migration
 
 Until now, manually scoping a migration has been a time-consuming process. However, it's a critical step in the migration process that enables our teams to determine the complexity of a migration and avoid surprises.

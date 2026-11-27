@@ -3,7 +3,7 @@
 - Platform: migration-suite
 - Space: SMS
 - Hierarchy: Training
-- Doc ID: doc-sms-bd4e9729-f8d4-4061-abe6-09d5eb86ffd6-229a4a4c938c74e1
+- Doc ID: doc-sms-4413eead-be16-40d9-bc54-448acd391a10-229a4a4c938c74e1
 - Source: https://docs.adaptavist.com/sms/latest/training/contact-us
 
 ## Get technical support

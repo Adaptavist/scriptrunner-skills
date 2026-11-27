@@ -3,7 +3,7 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: Migration > Feature Parity
-- Doc ID: doc-sr4cc-8a8ae859-bf28-4b4c-a620-fd884aa3d621-b3f004448aa7f7f0
+- Doc ID: doc-sr4cc-d0a0ec21-fb2c-43c9-b7b2-9d56d6397d53-b3f004448aa7f7f0
 - Source: https://docs.adaptavist.com/sr4cc/latest/migration/feature-parity#confluence-events-parity--en
 
 Tables detailing mutual Confluence events between ScriptRunner for Confluence Server/DC and Cloud.

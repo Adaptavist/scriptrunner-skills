@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Behaviours > Behaviours Examples
-- Doc ID: doc-sr4js-71182c74-28c4-4845-8692-d45f40b7c037-2d21eb3828a78cb7
+- Doc ID: doc-sr4js-cad793b6-475a-4142-80f4-608280d78eb4-2d21eb3828a78cb7
 - Source: https://docs.adaptavist.com/sr4js/latest/features#behaviours--en#behaviours-examples--en#the-linked-issues-field--en
 
 You can use Behaviours to work with the _Linked Issues_ field, similar to how you work with other fields. However, as it's a _composite_ field consisting of two fields you must set the value differently from other fields.

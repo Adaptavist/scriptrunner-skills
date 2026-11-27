@@ -3,8 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: HAPI
-- Doc ID: doc-sr4js-59d44f85-5a68-43ef-8a9a-85b692fc2f2a-e70e13a714ce2d3b
+- Doc ID: doc-sr4js-7013744e-82a0-4553-a505-bd9593d0acfd-e70e13a714ce2d3b
 - Source: https://docs.adaptavist.com/sr4js/latest/hapi#work-with-issue-and-entity-properties--en
+
+Add key/value entity properties to issues, projects, users, and comments using HAPI for use in script automations.
 
 |  |  |
 | --- | --- |

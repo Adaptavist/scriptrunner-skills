@@ -3,7 +3,7 @@
 - Platform: migration-suite
 - Space: SMS
 - Hierarchy: ScriptRunner Dev and Deployment Tool
-- Doc ID: doc-sms-c7e302e0-75d9-4e7b-b63d-616c3d34277b-1d8a9dd6b29285b8
+- Doc ID: doc-sms-f0de2117-5ad5-4b08-83e7-34685951b15d-1d8a9dd6b29285b8
 - Source: https://docs.adaptavist.com/sms/latest/scriptrunner-dev-and-deployment-tool#best-practices--en
 
 ## Convert scripts

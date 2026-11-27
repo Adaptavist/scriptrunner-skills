@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features
-- Doc ID: doc-sr4c-dc928e07-a128-4841-aff5-b6bd51dfcede-553b7aad7a1e12e3
+- Doc ID: doc-sr4c-7c73c873-66e3-418b-8df0-7a0f12940872-553b7aad7a1e12e3
 - Source: https://docs.adaptavist.com/sr4c/latest/features#fragments--en
 
 Using ScriptRunner, you can customize the web UI by dynamically adding web fragments.

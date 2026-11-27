@@ -3,14 +3,14 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: HAPI
-- Doc ID: doc-sr4js-db2f3459-96b7-4f20-ba0e-9e782c6fbfbc-5f5399301e0c181f
+- Doc ID: doc-sr4js-973b1a93-f027-4277-b01c-70f46b4216d8-5f5399301e0c181f
 - Source: https://docs.adaptavist.com/sr4js/latest/hapi#create-issues--en
+
+Create Jira issues programmatically using HAPI, with examples for basic creation, setting fields, and working with issue type IDs.
 
 |  |  |
 | --- | --- |
 |  | Migrating to Jira Cloud? This feature is available in Cloud.<br>[HAPI Cloud documentation](https://docs.adaptavist.com/sr4jc/latest/hapi/work-with-work-items) |
-
-With HAPI you can quickly and easily create issues and set parameters.
 
 ## Creating issues
 

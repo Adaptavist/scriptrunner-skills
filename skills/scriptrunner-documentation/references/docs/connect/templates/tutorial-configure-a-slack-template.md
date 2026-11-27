@@ -3,7 +3,7 @@
 - Platform: connect
 - Space: SRC
 - Hierarchy: Templates
-- Doc ID: doc-src-319a892c-f9b9-43b3-972d-81cee271b979-73bb1ee28a0f56bd
+- Doc ID: doc-src-53b0857a-9fb2-43d9-a50e-66549b525f28-73bb1ee28a0f56bd
 - Source: https://docs.adaptavist.com/src/latest/templates#tutorial-configure-a-slack-template--en
 
 Follow the steps to configure the _Create Jira Cloud issue from Slack using a simple Slack command_ template and trigger the resulting script.

@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Built-in scripts > Guardrails Built-in Scripts
-- Doc ID: doc-sr4js-d6a3abde-85fb-4a22-bb72-a132bb5f3013-3620981d52356b3b
+- Doc ID: doc-sr4js-0133b324-26da-4d3f-9224-71071da4e04e-3620981d52356b3b
 - Source: https://docs.adaptavist.com/sr4js/latest/features#built-in-scripts--en#guardrails-built-in-scripts--en#maximum-number-of-unarchived-projects--en
 
 Note: This built-in script is available for Data Center only.

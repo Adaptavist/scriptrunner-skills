@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features
-- Doc ID: doc-sr4c-d39ecf52-8161-4542-9023-1f4c5ad39471-fcb4678e46324c1a
+- Doc ID: doc-sr4c-06ac7d89-9085-4686-81d9-1f6c0e81bf5c-fcb4678e46324c1a
 - Source: https://docs.adaptavist.com/sr4c/latest/features#cql-functions--en
 
 Confluence Query Language (CQL) allow you to create custom [CQL Functions](https://developer.atlassian.com/confdev/confluence-plugin-guide/confluence-plugin-module-types/cql-function-module) that perform advanced searches for content in Confluence.

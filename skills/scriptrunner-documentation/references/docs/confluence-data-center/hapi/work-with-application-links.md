@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: HAPI
-- Doc ID: doc-sr4c-7235877d-da9e-4435-a0e7-ebd44564a0d9-27d012e99cd3fb8a
+- Doc ID: doc-sr4c-4f7a1e5e-23d1-4cc4-8dee-873446f5e6de-27d012e99cd3fb8a
 - Source: https://docs.adaptavist.com/sr4c/latest/hapi#work-with-application-links--en
 
 HAPI provides a simpler method of working with other Atlassian products that have been connected via [Application Links](https://confluence.atlassian.com/conf85/linking-to-another-application-1283360948.html) (app link).
@@ -208,4 +208,4 @@ You also have access to the [Response](https://developer.atlassian.com/server/fr
 
 -   [HAPI Script Format Help](https://docs.adaptavist.com/sr4c/latest/get-help/hapi-script-format-help)
 -   [Run Scripts as Other Users Using HAPI](https://docs.adaptavist.com/sr4c/latest/hapi/run-scripts-as-other-users)
--   [Create a Page Using HAPI](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-or-from-cloud/rewrite-scripts-for-cloud/adapt-scripts-for-confluence-cloud#create-a-page--en)
+-   [Create a Page Using HAPI](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-cloud/rewrite-scripts-for-cloud/adapt-scripts-for-confluence-cloud#create-a-page--en)

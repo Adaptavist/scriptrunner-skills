@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Integrations
-- Doc ID: doc-sr4c-8603370a-ff07-4bd5-bc39-fd490686bef2-8b7382a1501d2fef
+- Doc ID: doc-sr4c-1fbb9ded-256f-466f-891d-30c555d9e838-8b7382a1501d2fef
 - Source: https://docs.adaptavist.com/sr4c/latest/integrations#connecting-to-databases--en
 
 Find instructions for connecting the app to databases of your choice.

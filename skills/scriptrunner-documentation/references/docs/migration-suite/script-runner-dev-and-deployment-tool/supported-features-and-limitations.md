@@ -3,7 +3,7 @@
 - Platform: migration-suite
 - Space: SMS
 - Hierarchy: ScriptRunner Dev and Deployment Tool
-- Doc ID: doc-sms-ef0fbe39-f2e4-4ec1-b950-64212038eb57-971fc99a4f67ba79
+- Doc ID: doc-sms-802300e9-b32c-4b8a-83fd-4bf70c94d007-971fc99a4f67ba79
 - Source: https://docs.adaptavist.com/sms/latest/scriptrunner-dev-and-deployment-tool#supported-features-and-limitations--en
 
 ## Supported features
@@ -24,6 +24,7 @@ This tool is a work in progress and does not yet work for all features. Review t
 | Resources | No | No | This feature is unavailable in ScriptRunner for Jira Cloud, so no configuration is needed.<br>Some Resources have script alternatives that can be executed in the Script Console in ScriptRunner for Jira Cloud. |
 | Script Manager | Yes | \- |  |
 | Mail Handler | No | No | This feature is unavailable in ScriptRunner for Jira Cloud, so no configuration is needed. |
+| Script Variables | Yes | \- |  |
 
 Tip: We hope to support more features in the future. Check this page and the [changelog](../uncategorized/s/script-runner-migration-suite-changelog.md) for updates.
 

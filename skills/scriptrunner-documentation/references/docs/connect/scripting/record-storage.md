@@ -3,7 +3,7 @@
 - Platform: connect
 - Space: SRC
 - Hierarchy: Scripting
-- Doc ID: doc-src-ed35fa91-67a9-4621-9a9f-27f97609a6e4-27d68ce250d461b3
+- Doc ID: doc-src-121c63bd-c28f-4633-8930-c96739837cc7-27d68ce250d461b3
 - Source: https://docs.adaptavist.com/src/latest/scripting#record-storage--en
 
 Record storage is key-value storage that allows you to store arbitrary data as key-value pairs.
@@ -35,8 +35,8 @@ When you create a record-storage instance, you can set options globally. You can
 ### Available options in ScriptRunner Connect
 
 -   `scope` - Specifies the scope (available options are `team`, `workspace`, `environment` (default), and `invocation)`.
--   teamScope - Specifies an additional scope as a random string that will be used to limit accessibility. It can only be specified if the team scope is used.
--   retryOn429 - Options for automatic retry logic should the API request get rate limited, enabled by default.
+-   `teamScope` - Specifies an additional scope as a random string that will be used to limit accessibility. It can only be specified if the team scope is used.
+-   `retryOn429` - Options for automatic retry logic should the API request get rate limited, enabled by default.
 -   `ttl` - Stands for "Time To Live" and allows you to specify how long (in seconds) the record will be accessible. After expiration, the record will be deleted, though the deletion may not occur immediately. This option is useful if you don't need to keep records around forever. Default: `undefined` (items are stored indefinitely).
 -   `denyUpdateOverwrite` - By default, any update would overwrite the previous value. To disable this behavior and allow the update operation to fail if the record already exists, set this option to `true`. Default: `false`.
 -   `secure` - Use the `secure` option to store sensitive information. The secure option adds an additional layer of encryption to the default encryption AWS provided encryption at rest. Default: false.
@@ -62,7 +62,13 @@ Note: The last argument for each function is the optional options object. If opt
 If you don't like the instance access pattern, you can call functions directly by importing them:
 
 ```
-import { setRecordValue, getRecordValue, getKeysOfAllRecords, deleteRecordValue, recordValueExists } from '@sr-connect/record-storage';
+import {
+    setRecordValue,
+    getRecordValue,
+    getKeysOfAllRecords,
+    deleteRecordValue,
+    recordValueExists
+} from '@sr-connect/record-storage';
 ```
 
 Note: Since you cannot set default global (instance-level) options when using functions directly, you must explicitly specify options (if needed) on each function call as the last optional argument.
@@ -83,21 +89,21 @@ In the following example, a value with a specific type is written into the Recor
 
 ```
 import { RecordStorage } from '@sr-connect/record-storage';
- 
-export default async function(event: any, context: Context): Promise<void> {
-    const storage = new RecordStorage({ /** options */});
- 
+
+export default async function (event: any, context: Context): Promise<void> {
+    const storage = new RecordStorage({ /** options */ });
+
     const valueToStore: TestRecord = {
         hello: 'world'
-    }
- 
- // Store the value
+    };
+
+    // Store the value
     await storage.setValue('MY_KEY', valueToStore);
- 
- // Read back the value, and specify the TestRecord type
+
+    // Read back the value, and specify the TestRecord type
     const value = await storage.getValue<TestRecord>('MY_KEY');
 }
- 
+
 interface TestRecord {
     hello: string;
 }
@@ -113,16 +119,16 @@ For example:
 
 ```
 import { RecordStorage } from '@sr-connect/record-storage';
- 
-export default async function(event: any, context: Context): Promise<void> {
-    const storage = new RecordStorage({ /** options */});
- 
+
+export default async function (event: any, context: Context): Promise<void> {
+    const storage = new RecordStorage({ /** options */ });
+
     const valueExists = await storage.valueExists('MY_KEY');
- 
- if (valueExists) {
- // Do something if the record exists
+
+    if (valueExists) {
+        // Do something if the record exists
     } else {
- // Do something if the record does not exist
+        // Do something if the record does not exist
     }
 }
 ```
@@ -139,10 +145,10 @@ For example:
 
 ```
 import { RecordStorage } from '@sr-connect/record-storage';
- 
-export default async function(event: any, context: Context): Promise<void> {
-    const storage = new RecordStorage({ /** options */});
- 
+
+export default async function (event: any, context: Context): Promise<void> {
+    const storage = new RecordStorage({ /** options */ });
+
     await storage.deleteValue('MY_KEY');
 }
 ```
@@ -153,8 +159,8 @@ Use the `getAllKeys` method to retrieve all keys:
 
 ```
 {
-  keys: string[]; // List of all keys
-  lastEvaluatedKey?: string; // Last evaluated key if there are more keys available that couldn't fit into the current response
+    keys: string[]; // List of all keys
+    lastEvaluatedKey?: string; // Last evaluated key if there are more keys available that couldn't fit into the current response
 }
 ```
 
@@ -166,25 +172,25 @@ Example of implementation of pagination traversal:
 
 ```
 import { RecordStorage } from '@sr-connect/record-storage';
- 
-export default async function(event: any, context: Context): Promise<void> {
-    const storage = new RecordStorage({ /** options */});
- 
+
+export default async function (event: any, context: Context): Promise<void> {
+    const storage = new RecordStorage({ /** options */ });
+
     const keys: string[] = [];
     let lastEvaluatedKey: string | undefined;
- 
- while (true) {
+
+    while (true) {
         const response = await storage.getAllKeys({ lastEvaluatedKey });
         keys.push(...response.keys); // Push existing keys to keys list
- 
- if (response.lastEvaluatedKey) {
+
+        if (response.lastEvaluatedKey) {
             lastEvaluatedKey = response.lastEvaluatedKey; // If 'lastEvaluatedKey' is present then store it and repeat the operation
         } else {
- break; // If not then break the loop
+            break; // If not then break the loop
         }
     }
- 
- // Log out all the collected keys
+
+    // Log out all the collected keys
     console.log(keys);
 }
 ```
@@ -197,22 +203,23 @@ Here is an example of how you can disable automatic retry logic and warning mess
 
 ```
 import { RecordStorage } from "@sr-connect/record-storage-test";
- 
+
 export default async function (event: any, context: Context): Promise<void> {
- // Create new Record Storage instance and overwrite default automatic retry options
+    // Create new Record Storage instance and overwrite default automatic retry options
     const storage = new RecordStorage({
         retryOn429: {
             enabled: false, // Disable automatic retry
             verbose: false // Disable warning messages on automatic retries
         }
     });
- 
- try {
- // You can also specify `retryOn429` options individually on a function level which will overwrite global (instance level) settings
+
+    try {
+        // You can also specify `retryOn429` options individually on a function level which will overwrite global (instance level) settings
         const value = await storage.getValue('KEY');
     } catch (e) {
- if (e instanceof ServiceError && e.errorCode === 429) {
- // Do something when API call was rate limited
+        if (e instanceof ServiceError && e.errorCode === 429) {
+            // Do something when API call was rate limited
         }
-    }}
+    }
+}
 ```

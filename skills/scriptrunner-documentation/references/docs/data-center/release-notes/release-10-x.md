@@ -3,8 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Release Notes
-- Doc ID: doc-sr4js-42244aed-0439-4a15-a066-c37a921f4124-7c192fea1c6c5e4d
+- Doc ID: doc-sr4js-9d4111d9-afb8-4ce6-bf45-c927c967f050-7c192fea1c6c5e4d
 - Source: https://docs.adaptavist.com/sr4js/latest/release-notes/release-10.x
+
+See all fixes, new features, and known issues across every 10.x release of ScriptRunner for Jira Data Center.
 
 Note: Feature Release Summary
 
@@ -19,6 +21,105 @@ The ScriptRunner Migration Suite is a suite of tools that helps you plan, analys
 -   [ScriptRunner Dev and Deployment Tool](../../migration-suite/uncategorized/s/script-runner-dev-and-deployment-tool.md): Use this tool to organise and deploy ScriptRunner Cloud scripts. It is focused on making it easier and faster for consultants and developers to migrate, test, and deploy scripts from ScriptRunner DC to Cloud.
 
 If you have any questions, need help, or would like to request access, the quickest way to get assistance is through our [dedicated support portal](https://the-adaptavist-group-support.atlassian.net/servicedesk/customer/portal/1069).
+
+## 10.21.0
+
+26 Nov 2026
+
+### Security update
+
+We've made targeted security improvements in this release as part of our ongoing hardening work. For more details on how we handle security and vulnerability management, see our Vulnerabilities and Security documentation.
+
+### Cloud migration update
+
+When you migrate to Jira Cloud, ScriptRunner now migrates over Forge by default. There's nothing for an administrator to switch on.
+
+### Automation for Jira ScriptRunner action bug fixed
+
+We've fixed an issue where ScriptRunner actions in Automation for Jira rules, such as Execute a ScriptRunner Script, failed with a permission error when the rule actor was not a Jira administrator. These actions now run as expected for actors without administrator permissions.
+
+### Behaviours customer portal bugs fixed
+
+We've fixed multiple issues with Behaviours in the Jira Service Management customer portal:
+
+-   `setFormValue()` and `setRequired()` did not work on single select and Assets fields on Jira Service Management 11.3.13. They now work as expected.
+-   `setFormValue()` had no effect on single user picker fields. It now sets the field value as expected.
+-   After `setFieldOptions()` limited the options of a cascading select field, the parent options could no longer be selected when the controlling field changed. They can now be selected as expected.
+
+### Behaviours read-only field bug fixed
+
+We've fixed an issue where values in multiple selection fields, such as Labels or Fix Version/s, could still be removed when editing an issue, even though a Behaviour made the field read-only. These fields now stay read-only as expected.
+
+### Database Picker customer portal bug fixed
+
+We've fixed an issue where a multi-select Database Picker field was displayed more than once on a Jira Service Management customer portal request after it was submitted. The field is now displayed once.
+
+### Scripted field Issue(s) template bug fixed
+
+We've fixed an issue where scripted fields that return a list of issues and use the Issue(s) template showed raw template code instead of a formatted list of issues. The field value now renders correctly.
+
+## 10.20.0
+
+11 Nov 2026
+
+### Third-party dependencies updated to remove CVEs
+
+We've updated third party dependencies within ScriptRunner, including libraries such as `jsoup`, to address known CVEs (Common Vulnerabilities and Exposures). These changes are part of our ongoing hardening work.
+
+### Script Export bug fixed
+
+We've fixed an issue where the Script Export report ignored its inclusion parameters and always included every item. The report now respects the inclusion parameters as documented, and each one defaults to including its items, so existing exports keep the same content.
+
+### Script editor JDK documentation bug fixed
+
+We've fixed an issue in the script editor where the documentation popup for Java (JDK) classes showed Cannot fetch documentation, please check your internet connection. The documentation panel and hover now show a View documentation on docs.oracle.com link that opens the exact class or method page. Documentation for Groovy, Jira and ScriptRunner APIs is unchanged.
+
+## 10.19.0
+
+7 Oct 2026
+
+### Security update
+
+We've made targeted security improvements in this release as part of our ongoing hardening work. For more details on how we handle security and vulnerability management, see our [Vulnerabilities and Security](../get-started/vulnerabilities-and-security.md) documentation.
+
+### Fragments performance improvement
+
+We've made an improvement to how Fragments are processed available to all customers. This reduces the load Fragments place on large or busy instances.
+
+### Page rendering safeguards extended
+
+We've extended the safeguards that stop a ScriptRunner failure from affecting the data Jira and other apps rely on to render pages. This is a preventative improvement.
+
+### Behaviours read-only field bug fixed
+
+We've fixed an issue where fields set to read-only by Behaviours were cleared when an issue edit was saved by pressing Enter, for example straight after changing the Assignee. Read-only fields now keep their values.
+
+### Issue Picker bugs fixed
+
+We've fixed multiple issues with issue picker fields:
+
+-   The dropdown list for a scripted Issue Picker field was hidden on a transition screen when a Behaviour hid the Comment field. The dropdown list now displays as expected.
+-   The Project Details page returned an HTTP 500 error when a Remote Issue Picker field used the Remote Issue Picker searcher. The page now loads correctly.
+
+### Script Export bug fixed
+
+We've fixed an issue where Script Export could mix up parameters between legacy workflow conditions, validators and post functions, so exports contained the wrong script or settings. Legacy workflow functions are now exported correctly.
+
+### HAPI OAuth bug fixed
+
+We've fixed an issue where the HAPI `OAuthRequestSigner` class returned a 401 error when the username contained an `@` symbol, for example an email address. Requests for these users now work as expected.
+
+### Script engine and diagnostics bugs fixed
+
+We've fixed several issues with script execution and diagnostics:
+
+-   The script engine could load duplicate classes. Scripts now load and run as expected.
+-   Groovy compiler errors, such as `BUG! exception in phase 'class generation'`, were logged with an empty stack trace. These errors now include full stack traces, which makes them easier to diagnose.
+-   The ScriptRunner diagnostics tools could fail with a `NoClassDefFoundError` related to logging. Diagnostics now run as expected.
+
+### Planning board context menu item bug fixed
+
+We've fixed an issue where the [Planning board context menu item](https://docs.adaptavist.com/sr4js/latest/features/fragments/board-context-menu-item) script fragment opened a dialog that was cut off when Comment or Assign was selected under Do What. Some dialog buttons couldn't be clicked and could only be reached with the keyboard. The full dialog now displays, and all buttons can be clicked as expected.
 
 ## 10.18.0
 

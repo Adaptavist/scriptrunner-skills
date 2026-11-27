@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Built-in scripts
-- Doc ID: doc-sr4js-50566ea3-4aeb-42ca-a622-69bc1414cdda-88be2e7c1bd4146a
+- Doc ID: doc-sr4js-95d8d955-0491-4224-b20d-9302d0db6a2a-88be2e7c1bd4146a
 - Source: https://docs.adaptavist.com/sr4js/latest/features#built-in-scripts--en#list-scheduled-jobs--en
 
 Scheduled jobs are a mechanism for running code at specific times of day/week/month or on an interval, in order to perform some automated task.

@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Resources
-- Doc ID: doc-sr4c-caa59634-6605-44b6-988c-c19b8943cdf9-19f9c13f6b5d8330
+- Doc ID: doc-sr4c-0e900ae1-887e-4ac7-8984-129a53e5fb1b-19f9c13f6b5d8330
 - Source: https://docs.adaptavist.com/sr4c/latest/features#resources--en#local-database-connection--en
 
 Local database connections connect to the current database your Atlassian application is using.

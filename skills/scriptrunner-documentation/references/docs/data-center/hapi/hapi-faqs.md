@@ -3,10 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: HAPI
-- Doc ID: doc-sr4js-32d0980d-bab7-4a75-aa0e-a3f238010e84-d3695c065861067c
+- Doc ID: doc-sr4js-ec25de47-70e0-428c-9b0c-239ecdda27ca-d3695c065861067c
 - Source: https://docs.adaptavist.com/sr4js/latest/hapi#hapi-faqs--en
 
-This page details frequently asked questions about [HAPI](../uncategorized/h/hapi.md).
+Find answers to frequently asked questions about HAPI, covering usage, compatibility, and troubleshooting
 
 ## How do I get HAPI?
 

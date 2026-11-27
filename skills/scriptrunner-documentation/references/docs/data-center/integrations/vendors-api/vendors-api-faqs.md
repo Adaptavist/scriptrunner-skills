@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Integrations > Vendors API
-- Doc ID: doc-sr4js-8d4a8eab-806b-40cc-a192-a2e96108b6b3-fd453cffef64a63d
+- Doc ID: doc-sr4js-4cfa42dd-b707-4010-9f14-82d9c9d6a26e-fd453cffef64a63d
 - Source: https://docs.adaptavist.com/sr4js/latest/integrations/vendors-api#vendors-api-faqs--en
 
 This page details frequently asked questions about our [Vendors API](../vendors-api.md).

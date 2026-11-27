@@ -3,10 +3,12 @@
 - Platform: migration-suite
 - Space: SMS
 - Hierarchy: n/a
-- Doc ID: doc-sms-65d85dad-110a-4f6f-bf57-d72977d17c41-914ba19bade6a2aa
+- Doc ID: doc-sms-bc4e7174-67f7-4ec4-b4ac-acba4d00dc4e-914ba19bade6a2aa
 - Source: https://docs.adaptavist.com/sms/latest/scriptrunner-dev-and-deployment-tool
 
-Use the Dev and Deployment Tool to organise and deploy ScriptRunner Cloud scripts. It is focused on making it easier and faster for consultants and developers to migrate, test, and deploy scripts from ScriptRunner DC to Cloud.
+Use the Dev and Deployment Tool to organise and deploy ScriptRunner Cloud scripts.
+
+It is focused on making it easier and faster for consultants and developers to migrate, test, and deploy scripts from ScriptRunner DC to Cloud.
 
 ## How the tool works
 

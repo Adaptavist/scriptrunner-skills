@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Macros > Built-In Macros > Include Macros
-- Doc ID: doc-sr4c-f4b166a6-604e-42ac-8a3b-9cfd1c032797-91c07f6546f7a1d7
+- Doc ID: doc-sr4c-c8bee211-798e-4da1-919c-c53e93fdf349-91c07f6546f7a1d7
 - Source: https://docs.adaptavist.com/sr4c/latest/features#macros--en#built-in-macros--en#include-macros--en#converting-include-pages-macro-to-include-version--en
 
 It's difficult to manage multiple _Include Page_ macros on one page. A REST endpoint is included in ScriptRunner for Confluence, which converts all instances of _Include Page_ to _Include Version_.

@@ -3,7 +3,7 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Training > Video Playlist: ScriptRunner for Jira Cloud Demo
-- Doc ID: doc-sr4jc-c172ee70-5c69-4d6f-9859-1d91748468c9-d864d86d26392812
+- Doc ID: doc-sr4jc-61674199-8026-4a26-b764-38ea017bc2e5-d864d86d26392812
 - Source: https://docs.adaptavist.com/sr4jc/latest/training/video-playlist-scriptrunner-for-jira-cloud-demo/behaviours-dynamic-field-control--customization
 
 This playlist will help you gain control and customize how fields in Jira behave. Watch this playlist to find out how to use the ScriptRunner for Jira Cloud Behaviours feature to bring structure to Jira. Apply conditional logic to enable dynamic changes based on user actions, field selections, project and issue types, user roles, and more. Streamline issue creation, editing and transitioning and align Jira with your team and business unique processes.

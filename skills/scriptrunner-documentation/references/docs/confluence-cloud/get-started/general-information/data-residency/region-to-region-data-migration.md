@@ -3,7 +3,7 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: Get Started > General Information > Data Residency
-- Doc ID: doc-sr4cc-276b6f95-8368-4ac5-a991-8ff0b2172702-0f78aa73c51548e3
+- Doc ID: doc-sr4cc-a2cc84a0-3cdc-4a1b-b42d-d596344526bf-0f78aa73c51548e3
 - Source: https://docs.adaptavist.com/sr4cc/latest/get-started/general-information/data-residency#region-to-region-data-migration--en
 
 Details about data migration.

@@ -3,8 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Training > Course: Introduction to Scripting in ScriptRunner for Jira Data Center
-- Doc ID: doc-sr4js-16b80333-b705-465b-af9f-aaf9b5fa8335-5c892e9e7bfe022d
+- Doc ID: doc-sr4js-4e7c62db-eb75-451e-b3d1-bc876b3e0faa-5c892e9e7bfe022d
 - Source: https://docs.adaptavist.com/sr4js/latest/training/course-introduction-to-scripting-in-scriptrunner-for-jira-data-center/2.1-video-groovy-basics-for-scriptrunner-data-center
+
+Watch a Groovy programming language fundamentals video covering what you need to write ScriptRunner scripts.
 
 Note: For more information on scripting, check out the [HAPI](../../uncategorized/h/hapi.md) documentation and our [Best Practices](../../uncategorized/b/best-practices.md) section.
 

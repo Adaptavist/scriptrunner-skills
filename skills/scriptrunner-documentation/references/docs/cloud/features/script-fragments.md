@@ -3,8 +3,10 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features
-- Doc ID: doc-sr4jc-93302aac-e42d-4e49-b6b6-11e4812c0437-4dd91c1d35c98bb9
+- Doc ID: doc-sr4jc-803ae551-a6ef-4668-9752-0891ab313004-4dd91c1d35c98bb9
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/script-fragments
+
+Learn how Script Fragments let you customize the Jira UI with buttons and embedded web content.
 
 |  |  |
 | --- | --- |

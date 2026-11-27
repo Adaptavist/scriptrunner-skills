@@ -2,9 +2,9 @@
 
 - Platform: connect
 - Space: SRC
-- Hierarchy: External Coding
-- Doc ID: doc-src-3e9647f2-31e1-4b13-a88e-f2d2db89f95a-1cdcca61316c5b8c
-- Source: https://docs.adaptavist.com/src/latest/external-coding#recommended-setup--en
+- Hierarchy: External Coding > SFTP (Remote Workspace)
+- Doc ID: doc-src-12588627-7d73-4cc2-bcb6-b78c42a086bf-64add8fc65178414
+- Source: https://docs.adaptavist.com/src/latest/external-coding/sftp-remote-workspace#recommended-setup--en
 
 Learn the reccomended setup for use with our external coding features.
 
@@ -47,20 +47,20 @@ This tutorial focuses on the standard version of VS Code, but AI-powered forks l
     
     ```
     {
-     "name": "sr-connect-workspace",
-     "host": "HOST",
-     "protocol": "sftp",
-     "port": 22,
-     "username": "USER_NAME",
-     "remotePath": "/",
-     "privateKeyPath": "/path/to/your/private/key",
-     "uploadOnSave": true,
-     "ignore": [
-     "/.vscode/sftp.json",
-     "/node_modules",
-     "/http_logs_*.json",
-     ".git"
-      ]
+        "name": "sr-connect-workspace",
+        "host": "HOST",
+        "protocol": "sftp",
+        "port": 22,
+        "username": "USER_NAME",
+        "remotePath": "/",
+        "privateKeyPath": "/path/to/your/private/key",
+        "uploadOnSave": true,
+        "ignore": [
+            "/.vscode/sftp.json",
+            "/node_modules",
+            "/http_logs_*.json",
+            ".git"
+        ]
     }
     ```
     
@@ -70,7 +70,7 @@ This tutorial focuses on the standard version of VS Code, but AI-powered forks l
 
 ### 3️⃣ Sync it up
 
-You'll need to [enable the SFTP server for the workspace and generate credentials](https://docs.adaptavist.com/src/latest/external-coding#m_1-enable-sftp--en) to complete this step.
+You'll need to [enable the SFTP server for the workspace and generate credentials](https://docs.adaptavist.com/src/latest/external-coding/sftp-remote-workspace#m_1-enable-sftp--en) to complete this step.
 
 1.  Replace the `host`, `username`, and `privateKeyPath` with your personal values if you copied the file from here.
     
@@ -126,4 +126,4 @@ Here are a few things to keep in mind:
 -   To monitor the actions of the SFTP extension, go to the Output tab in the _Console_ and select sftp from the dropdown menu. This is very handy for troubleshooting.
 -   Occasionally, the FTP session may get stuck and not automatically reconnect.
     -   Restarting VS Code can resolve the issue.
--   Be aware of the [limitations regarding deleting and renaming files](https://docs.adaptavist.com/src/latest/external-coding#limitations--en).
+-   Be aware of the [limitations regarding deleting and renaming files](https://docs.adaptavist.com/src/latest/external-coding/sftp-remote-workspace#limitations--en).

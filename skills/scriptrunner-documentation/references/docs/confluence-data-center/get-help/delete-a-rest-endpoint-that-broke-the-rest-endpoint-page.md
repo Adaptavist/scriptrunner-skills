@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Get Help
-- Doc ID: doc-sr4c-be804660-6575-447e-9d5e-0a4fbb897038-13422e584410e8ed
+- Doc ID: doc-sr4c-422dbab7-5ae2-4c6b-a5fe-4b6ce64e65e0-13422e584410e8ed
 - Source: https://docs.adaptavist.com/sr4c/latest/get-help#delete-a-rest-endpoint-that-broke-the-rest-endpoint-page--en
 
 Remedy for the problem of creating a REST endpoint that causes the REST Endpoints page to fail to load.

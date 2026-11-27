@@ -3,7 +3,7 @@
 - Platform: connect
 - Space: SRC
 - Hierarchy: Scripting > Code Snippets
-- Doc ID: doc-src-3044bf92-f5f0-404f-bc12-9d8825c30294-05cf26fb982b603b
+- Doc ID: doc-src-27e6f890-02df-4679-a1b5-9b47494e829d-05cf26fb982b603b
 - Source: https://docs.adaptavist.com/src/latest/scripting#code-snippets--en#working-with-attachments--en
 
 Learn to use code snippets to work with attachments.
@@ -16,8 +16,8 @@ Here is a code snippet that will create an attachment in Jira Cloud with a file 
 
 ```
 import JiraCloud from './api/jira/cloud';
- 
-export default async function(event: any, context: Context): Promise<void> {
+
+export default async function (event: any, context: Context): Promise<void> {
     await JiraCloud.Issue.Attachment.addAttachments({
         issueIdOrKey: 'ISSUE-1',
         body: [{
@@ -32,21 +32,21 @@ The following code snippet demonstrates how to work with binary data. In this ca
 
 ```
 import JiraCloud from './api/jira/cloud';
- 
-export default async function(event: any, context: Context): Promise<void> {
- // Fetch a kitten image using Fetch API
+
+export default async function (event: any, context: Context): Promise<void> {
+    // Fetch a kitten image using Fetch API
     const response = await fetch('https://placekitten.com/300/400');
- 
- // Check if the response is OK
- if (!response.ok) {
- // If not then throw an error
- throw Error(`Unexpected response: ${response.status}`)
+
+    // Check if the response is OK
+    if (!response.ok) {
+        // If not then throw an error
+        throw Error(`Unexpected response: ${response.status}`);
     }
- 
- // Extract the kitten image as ArrayBuffer
+
+    // Extract the kitten image as ArrayBuffer
     const kittenImage = await response.arrayBuffer();
- 
- // Add an attachment with the kitten image
+
+    // Add an attachment with the kitten image
     await JiraCloud.Issue.Attachment.addAttachments({
         issueIdOrKey: 'ISSUE-1',
         body: [{
@@ -65,42 +65,43 @@ The following code snippet performs the same function as the snippet above, but 
 
 ```
 import JiraCloud from './api/jira/cloud';
- 
+
 export default async function (event: any, context: Context): Promise<void> {
-    const issueKey = 'ISSUE-1';   
- 
- // Fetch a an image using Fetch API
+    const issueKey = 'ISSUE-1';
+
+    // Fetch an image using Fetch API
     const response = await fetch('https://app.scriptrunnerconnect.com/js.png');
- 
- // Check if the response is OK
- if (!response.ok) {
- // If not then throw an error
- throw Error(`Unexpected response while fetching the image: ${response.status}`)
+
+    // Check if the response is OK
+    if (!response.ok) {
+        // If not then throw an error
+        throw Error(`Unexpected response while fetching the image: ${response.status}`);
     }
- 
- // Extract the the image as ArrayBuffer
+
+    // Extract the image as ArrayBuffer
     const image = await response.arrayBuffer();
- 
- // Construct the FormData that holds the attachment
+
+    // Construct the FormData that holds the attachment
     const blob = new Blob([image]);
     const formData = new FormData();
     formData.append('file', blob, 'js.png');
- 
- // Add an attachment using Fetch API
+
+    // Add an attachment using Fetch API
     const attachmentResponse = await JiraCloud.fetch(`/rest/api/3/issue/${issueKey}/attachments`, {
         method: 'POST',
         body: formData,
         headers: {
- 'Accept': 'application/json',
- 'X-Atlassian-Token': 'no-check',
+            'Accept': 'application/json',
+            'X-Atlassian-Token': 'no-check'
         }
     });
- 
- // Check if the attachment response is OK
- if (!attachmentResponse.ok) {
- // If not then throw an error
- throw Error(`Unexpected response while uploading attachment: ${attachmentResponse.status}`);
-    } }
+
+    // Check if the attachment response is OK
+    if (!attachmentResponse.ok) {
+        // If not then throw an error
+        throw Error(`Unexpected response while uploading attachment: ${attachmentResponse.status}`);
+    }
+}
 ```
 
 Note: Content-type fix 🔧
@@ -116,43 +117,43 @@ Here's an example that demonstrates this:
 ```
 import JiraCloud from './api/jira/cloud';
 import { Convert } from "@sr-connect/convert";
- 
-export default async function(event: any, context: Context): Promise<void> {
+
+export default async function (event: any, context: Context): Promise<void> {
     const issueKey = 'ISSUE-1';
- 
- // Fetch an image using Fetch API
+
+    // Fetch an image using Fetch API
     const response = await fetch('https://app.scriptrunnerconnect.com/js.png');
- 
- // Check if the response is OK
- if (!response.ok) {
- // If not then throw an error
- throw Error(`Unexpected response while fetching the image: ${response.status}`)
+
+    // Check if the response is OK
+    if (!response.ok) {
+        // If not then throw an error
+        throw Error(`Unexpected response while fetching the image: ${response.status}`);
     }
- 
- // Extract the the image as ArrayBuffer
+
+    // Extract the image as ArrayBuffer
     const image = await response.arrayBuffer();
- 
- // Convert the image to buffered form data
+
+    // Convert the image to buffered form data
     const bufferedFormData = Convert.arrayBufferToFormDataBuffer({
         fileName: 'js.png',
         value: image
     });
- 
- // Add an attachment using Fetch API
+
+    // Add an attachment using Fetch API
     const attachmentResponse = await JiraCloud.fetch(`/rest/api/3/issue/${issueKey}/attachments`, {
         method: 'POST',
         body: bufferedFormData.arrayBuffer, // Get and then set the encoded buffer
         headers: {
- 'Accept': 'application/json',
- 'X-Atlassian-Token': 'no-check',
- 'Content-Type': bufferedFormData.contentType // Get and then set the content type
+            'Accept': 'application/json',
+            'X-Atlassian-Token': 'no-check',
+            'Content-Type': bufferedFormData.contentType // Get and then set the content type
         }
     });
- 
- // Check if the attachment response is OK
- if (!attachmentResponse.ok) {
- // If not then throw an error
- throw Error(`Unexpected response while uploading attachment: ${attachmentResponse.status}`);
+
+    // Check if the attachment response is OK
+    if (!attachmentResponse.ok) {
+        // If not then throw an error
+        throw Error(`Unexpected response while uploading attachment: ${attachmentResponse.status}`);
     }
 }
 ```
@@ -181,99 +182,86 @@ Header `x-stitch-transform-stored-body` is controlling which transformation to a
 
 Use the following custom headers to control the transformation process into multipart/form-data format:
 
--   x-stitch-stored-body-form-data-file-name
+-   `x-stitch-stored-body-form-data-file-name`
     
     Use this header to specify the name of the file that is attached to the file entry. Defaults to: `file`.
     
--   x-stitch-stored-body-form-data-additional-fields
+-   `x-stitch-stored-body-form-data-additional-fields`
     
     Use this header to add additional key pairs to the form data content. Key pairs are delimited by `;` and keys and pairs are delimited by `:`
     
     For example, `key:value;foo:bar;`
     
--   x-stitch-stored-body-form-data-file-identifier
+-   `x-stitch-stored-body-form-data-file-identifier`
     
     Identifier for the file entry. Defaults to: `file`. Overwrite it if the service you're working with requires a different identifier. For example, ServiceNow requires the following identifier: `uploadFile`
     
--   x-stitch-drop-body: true
+-   `x-stitch-drop-body: true`
     
     Although unrelated to uploading attachments, this header will drop the body from the request if you are only interested in the headers and the service does not support the `HEAD` method, which should be used otherwise. This option is always enabled when the `x-stitch-store-body` header is enabled.
     
 
-An example
+An example:
 
 ```
 import JiraCloud from './api/jira/cloud';
- 
+
 const ISSUE_KEY = 'ISSUE-1';
- 
+
 export default async function (event: any, context: Context): Promise<void> {
- // Get the issue
+    // Get the issue
     const issue = await JiraCloud.Issue.getIssue({
         issueIdOrKey: ISSUE_KEY
     });
- 
- // Get the first attachment
+
+    // Get the first attachment
     const attachment = issue.fields.attachment[0];
- 
- // Fetch the attachment content
+
+    // Fetch the attachment content
     const attachmentContentResponse = await JiraCloud.fetch(attachment.content, {
-        headers: {          
- 'x-stitch-store-body': 'true' // Ask this attachment to be stored
+        headers: {
+            'x-stitch-store-body': 'true' // Ask this attachment to be stored
         }
     });
- 
- // Check if the attachment content response is OK
- if (!attachmentContentResponse.ok) {
- // If not, then throw an error
- throw Error(`Failed to download attachment: ${attachmentContentResponse.status}`);
+
+    // Check if the attachment content response is OK
+    if (!attachmentContentResponse.ok) {
+        // If not, then throw an error
+        throw Error(`Failed to download attachment: ${attachmentContentResponse.status}`);
     }
- 
- // Since we asked the attachment to be stored, we're expecting to receive the stored attachment body ID
+
+    // Since we asked the attachment to be stored, we're expecting to receive the stored attachment body ID
     const storedBodyId = attachmentContentResponse.headers.get('x-stitch-stored-body-id');
- 
- // Check if the stored body ID was found
- if (!storedBodyId) {
- // If not, throw an error
- throw Error('No stored body id found');
+
+    // Check if the stored body ID was found
+    if (!storedBodyId) {
+        // If not, throw an error
+        throw Error('No stored body id found');
     }
- 
- // Upload an attachment under the same issue with the same content but prepend `copy_of_` to the attachment name
+
+    // Upload an attachment under the same issue with the same content but prepend `copy_of_` to the attachment name
     const uploadResponse = await JiraCloud.fetch(`/rest/api/3/issue/${ISSUE_KEY}/attachments`, {
         method: 'POST',
         headers: {
- 'X-Atlassian-Token': 'no-check',
- 'x-stitch-stored-body-id': storedBodyId, // Reference the stored attachment body ID
- 'x-stitch-stored-body-form-data-file-name': `copy_of_${attachment.filename}`, // Specify the file name to be used in multipart/form-data
- 'x-stitch-stored-body-form-data-additional-fields': 'key:value;foo:bar;', // Add additional fields to the multipart/form-data, although not required for Atlassian and thus gets ignored
- 'x-stitch-stored-body-form-data-file-identifier': 'file' // Specify the multipart/form-data file upload identifier, although not necessary for Atlassian since it defaults to 'file' anyway
-        }
-    })
- 
- // Check if the upload was successful
- if (!uploadResponse.ok) {
- // If it was not, throw an error
- throw Error(`Failed to upload attachment: ${uploadResponse.status}`)
-    }
- 
- // Log out the copied attachment name
-    console.log(`Copied attachment: ${attachment.filename}`);
-}
+            'X-Atlassian-Token': 'no-check',
+            'x-stitch-stored-body-id': storedBodyId, // Reference the stored attachment body ID
+            'x-stitch-stored-body-form-data-file-name': `copy_of_${attachment.filename}`, // Specify the file name to be used in multipart/form-data
+            'x-stitch-stored-body-form-data-additional-fields': 'key:value;foo:bar;', // Add additional fields to the multipart/form-data, although not required for Atlassian and thus gets ignored
 ```
 
 ### Using base64 upload
 
 To use base64 streaming, you first have to specify the `x-stitch-transform-stored-body='embedded-base64'` header with the fetch call. Then, you can specify the `x-stitch-stored-body-id` header and include the `[storedBodyBase64]` marker somewhere in the body, where the transformed base64 output will be injected. Please use only one marker.
 
-An example
+An example:
 
 ```
 await fetch('https://name.domain', {
     method: 'POST',
     headers: {
- 'Content-Type': 'application/json',
- 'x-stitch-transform-stored-body': 'embedded-base64', // Transform the stored body into embedded base64
- 'x-stitch-stored-body-id': storedBodyId, // Reference the stored attachment body ID 
+        'Content-Type': 'application/json',
+        'x-stitch-transform-stored-body': 'embedded-base64', // Transform the stored body into embedded base64
+        'x-stitch-stored-body-id': storedBodyId, // Reference the stored attachment body ID
     },
     body: JSON.stringify({
         content: '[storedBodyBase64]' // Inject the transformed base64 output into here

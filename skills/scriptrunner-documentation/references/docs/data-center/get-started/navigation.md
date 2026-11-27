@@ -3,8 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Get Started
-- Doc ID: doc-sr4js-7c8dd58c-1f9e-429b-995d-540254c2f05a-212a34c6c97582aa
+- Doc ID: doc-sr4js-ed33e3ac-6ef6-417a-b215-57bc7318c149-212a34c6c97582aa
 - Source: https://docs.adaptavist.com/sr4js/latest/get-started/navigation
+
+Learn how to find and navigate ScriptRunner's features in the Jira administration section.
 
 There are two main ways to navigate to ScriptRunner in Jira:
 

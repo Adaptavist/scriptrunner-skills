@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features
-- Doc ID: doc-sr4js-5dac0602-c201-4e0f-bfde-58401f02b0a2-789f4fcf2f19b1e4
+- Doc ID: doc-sr4js-5daaeba7-b833-4842-8092-13f120bbdef8-789f4fcf2f19b1e4
 - Source: https://docs.adaptavist.com/sr4js/latest/features#jql-functions--en
 
 |  |  |

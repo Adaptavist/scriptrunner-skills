@@ -3,7 +3,7 @@
 - Platform: connect
 - Space: SRC
 - Hierarchy: Get Started
-- Doc ID: doc-src-7e372969-4eca-4f4d-a430-4325fde04677-03a3e918ae44e942
+- Doc ID: doc-src-5300547a-a7ca-44c3-8314-a3efbc174400-03a3e918ae44e942
 - Source: https://docs.adaptavist.com/src/latest/get-started#finding-objects-ids-in-monday-com--en
 
 Use this page to learn how to obtain the IDs for [Monday.com](http://monday.com/) objects, like boards, items, and columns.
@@ -15,23 +15,6 @@ Note: Enter developer mode 💻
 To find object IDs, you must [enable developer mode](https://developer.monday.com/api-reference/docs/getting-started-1#developer-mode). This enables viewing IDs in the UI and/or shows IDs in the browser URL.
 
 Not sure how to find the ID of an object you need to use in a script? Check out [Managed API for monday.com](https://docs.adaptavist.com/src/latest/managed-apis/managed-api-for-monday.com).
-
-Click one of the following links to view more information about finding object IDs in monday.com:
-
--   [Account](https://docs.adaptavist.com/src/latest/get-started#account--en)
--   [Boards](https://docs.adaptavist.com/src/latest/get-started#boards--en)
--   [Board views](https://docs.adaptavist.com/src/latest/get-started#board-views--en)
--   [Column](https://docs.adaptavist.com/src/latest/get-started#column--en)
--   [Document](https://docs.adaptavist.com/src/latest/get-started#document-monday-doc--en)
--   [File](https://docs.adaptavist.com/src/latest/get-started#file-asset--en)
--   [Folder](https://docs.adaptavist.com/src/latest/get-started#folder--en)
--   [Group](https://docs.adaptavist.com/src/latest/get-started#group--en)
--   [Item/subitem](https://docs.adaptavist.com/src/latest/get-started#item-subitem--en)
--   [Item update](https://docs.adaptavist.com/src/latest/get-started#item-update--en)
--   [Team](https://docs.adaptavist.com/src/latest/get-started#team--en)
--   [User](https://docs.adaptavist.com/src/latest/get-started#user--en)
--   [Webhook](https://docs.adaptavist.com/src/latest/get-started#webhook--en)
--   [Workspace](https://docs.adaptavist.com/src/latest/get-started#workspace--en)
 
 ## Account
 
@@ -72,7 +55,8 @@ You can find a document block's ID by using the following GQL query:
 
 ```
 query {
-    docs(ids: 123-YOUR-DOCUMENT-ID-7938) { //change this with your document ID
+    # Replace 123-YOUR-DOCUMENT-ID-7938 with your document ID
+    docs(ids: 123-YOUR-DOCUMENT-ID-7938) {
         blocks {
             id
             content
@@ -85,10 +69,8 @@ Alternatively, you could run this script in ScriptRunner Connect and check the l
 
 ```
 import Monday from "./api/monday";
- 
-export default async function(event: any, context: Context):
-Promise<void> {
- 
+
+export default async function(event: any, context: Context): Promise<void> {
     const resp = await Monday.Doc.DocBlock.getDocBlocks({
         args: {
             ids: [23-YOUR-DOCUMENT-ID-7938]
@@ -101,14 +83,13 @@ Promise<void> {
                 }
             }
         }
-    })
- 
-    resp.data.docs.forEach ( doc => {
-        doc.blocks.forEach( block => {
-            console.log(`Block with id : "${block.id}" and
-content: ${block.content} `);
-        })
-    })
+    });
+
+    resp.data.docs.forEach(doc => {
+        doc.blocks.forEach(block => {
+            console.log(`Block with id : "${block.id}" and content: ${block.content}`);
+        });
+    });
 }
 ```
 
@@ -137,7 +118,8 @@ Currently, you cannot find a group ID by looking at the UI. You can find them wi
 
 ```
 query {
-    boards(ids: 123-BOARD_ID-789) { //make sure to replace this board ID with the board you are working with
+    boards(ids: 123-BOARD_ID-789) {
+        # Replace this board ID with the board you are working with.
         groups {
             id
             title
@@ -150,13 +132,11 @@ Alternatively, you could run this script in ScriptRunner Connect and check the l
 
 ```
 import Monday from "./api/monday";
- 
-export default async function(event: any, context: Context):
-Promise<void> {
- 
- const resp = await Monday.Board.Group.getGroups({
+
+export default async function(event: any, context: Context): Promise<void> {
+    const resp = await Monday.Board.Group.getGroups({
         args: {
-            ids: [ 123-BOARD_ID-789 ]
+            ids: [123-BOARD_ID-789]
         },
         fields: {
             groups: {
@@ -166,13 +146,13 @@ Promise<void> {
                 }
             }
         }
-    })
-    resp.data.boards.forEach ( board => {
-        board.groups.forEach( group => {
-            console.log(`Id for group ${group.title} is "$
-{group.id}"`);
-        })
-    })
+    });
+
+    resp.data.boards.forEach(board => {
+        board.groups.forEach(group => {
+            console.log(`Id for group ${group.title} is "${group.id}"`);
+        });
+    });
 }
 ```
 
@@ -212,21 +192,18 @@ Alternatively, you could run this script in ScriptRunner Connect and check the l
 
 ```
 import Monday from "./api/monday";
- 
-export default async function(event: any, context: Context):
-Promise<void> {
- 
- const resp = await Monday.Team.getTeams({
+
+export default async function(event: any, context: Context): Promise<void> {
+    const resp = await Monday.Team.getTeams({
         fields: {
             id: true,
             name: true
         }
-    })
- 
-    resp.data.teams.forEach ( team => {
-        console.log(`Team with id : ${team.id} and name: "$
-{team.name}" `);
-    })
+    });
+
+    resp.data.teams.forEach(team => {
+        console.log(`Team with id: ${team.id} and name: "${team.name}"`);
+    });
 }
 ```
 

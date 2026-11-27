@@ -2,9 +2,9 @@
 
 - Platform: confluence-data-center
 - Space: SR4C
-- Hierarchy: Migration > Migrating to or from Cloud
-- Doc ID: doc-sr4c-7eafe77c-081d-4e8f-9661-fb7a72f0f65f-1df7d53a4bdc5a6b
-- Source: https://docs.adaptavist.com/sr4c/latest/migration#migrating-to-or-from-cloud--en#platform-differences--en
+- Hierarchy: Migration > Migrating to Cloud
+- Doc ID: doc-sr4c-91a939ec-7a41-4622-a6d7-b2bffed8dd80-d131ce2b29662263
+- Source: https://docs.adaptavist.com/sr4c/latest/migration#migrating-to-cloud--en#platform-differences--en
 
 Learn about the differences the ScriptRunner for Confluence Cloud and DC/Server products.
 

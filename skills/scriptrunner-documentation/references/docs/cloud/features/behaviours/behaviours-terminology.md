@@ -3,7 +3,7 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features > Behaviours
-- Doc ID: doc-sr4jc-ae7fd432-3605-4621-9902-898f2d82d7e6-7173f4f701a53919
+- Doc ID: doc-sr4jc-6741caed-de9e-441f-9242-c28d9d18c1f4-7173f4f701a53919
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/behaviours#behaviours-terminology--en
 
 ## Behaviour
@@ -20,9 +20,9 @@ For example, if a behaviour called _Change Summary Name_ is mapped to the _Docs_
 
 You can select the wildcard option for either All spaces or All work types only; due to an Atlassian limitation, both options cannot be chosen simultaneously.
 
-## Behaviours Bot
+## Behaviours bot
 
-The Behaviours Bot is an AI-powered script generation assistant built into ScriptRunner for Jira Cloud. It converts natural, everyday language instructions into ready-to-use Behaviour scripts. The Behaviours Bot uses a Ministral model by Mistral AI (hosted on AWS Bedrock) to process requests and generate responses.
+The Behaviours Bot is an AI-powered script generation assistant built into ScriptRunner for Jira Cloud. It converts natural, everyday language instructions into ready-to-use Behaviour scripts. The Behaviours Bot uses an OpenAI `GPT-5.6 Luna` model (hosted on AWS Bedrock) to process requests and generate responses.
 
 ## Behaviour logs
 
@@ -60,7 +60,7 @@ In Behaviours, some Jira-native system fields can be custom field types. An exam
 
 ## Supported products
 
-Both company and team-managed spaces are supported on Cloud for Jira Software. We also support Jira Service Management. You can refer to the [Supported Jira products](https://docs.adaptavist.com/sr4jc/latest/features/behaviours/behaviours-supported-fields-and-products) section for details.
+Both company and team-managed spaces are supported on Cloud for Jira Software. We also support Jira Service Management. You can refer to the [Supported view-specific products](https://docs.adaptavist.com/sr4jc/latest/features/behaviours/behaviours-supported-fields-and-products#supported-jira-view-specific-limitations--en) section for details.
 
 ## Work type
 

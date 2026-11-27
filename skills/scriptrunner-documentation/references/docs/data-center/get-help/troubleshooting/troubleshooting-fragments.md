@@ -3,14 +3,18 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Get Help > Troubleshooting
-- Doc ID: doc-sr4js-fef43b23-9b11-4cda-bdbb-bcba7527e8ea-3f1b1bdad809bd13
+- Doc ID: doc-sr4js-5f1b2ccc-9f5c-4285-a4d2-9787d9036303-3f1b1bdad809bd13
 - Source: https://docs.adaptavist.com/sr4js/latest/get-help#troubleshooting--en#troubleshooting-fragments--en
+
+Note: From ScriptRunner for Jira Data Center 10.19.0 and 9.45.0, the fragment performance changes are included in ScriptRunner and the `scriptrunner.fragments.performance` dark feature has been removed. If you're on one of these versions or later, you don't need to enable it.
 
 ## Fragment performance in Jira 10
 
-In some Jira 10 Data Center environments, updating [web fragments](https://docs.adaptavist.com/sr4js/latest/features/fragments) can cause noticeable performance degradation, especially on large clusters. From ScriptRunner for Jira Data Center 9.37.0 and later in the 9.x series, we've introduced changes to how fragment updates are propagated across the cluster to reduce this impact. These changes are not yet present in ScriptRunner 8.x or 10.x.
+In some Jira 10 Data Center environments, updating [web fragments](https://docs.adaptavist.com/sr4js/latest/features/fragments) can cause noticeable performance degradation, especially on large clusters. To reduce this impact, we've changed how fragment updates are propagated across the cluster.
 
-This guide explains how to enable the fragment performance feature in ScriptRunner and how to check whether it improves performance in your instance.
+In ScriptRunner 9.37.0 and later in the 9.x series, before 9.45.0, the changes are available as a dark feature that you need to enable. This guide explains how to enable the fragment performance feature in those versions and how to check whether it improves performance in your instance.
+
+These changes are included in ScriptRunner for Jira Data Center 10.19.0 and later and 9.45.0 and later, with no setup needed. These changes are not present in ScriptRunner 8.x as this performace issue started in Jira 10.
 
 ## Enable the fragment performance feature
 

@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Behaviours > Behaviours Examples
-- Doc ID: doc-sr4js-502815da-bd80-4328-8984-61af06b29f2b-016d1760a826c212
+- Doc ID: doc-sr4js-c4984ed5-095f-4a0e-bf68-ae09eb25cc16-016d1760a826c212
 - Source: https://docs.adaptavist.com/sr4js/latest/features#behaviours--en#behaviours-examples--en#operations-on-tabs--en
 
 If your screen has multiple tabs you can use our Behaviours feature to hide, disable, or switch to a tab. By leveraging these functions you can create a more intuitive and controlled user experience.

@@ -3,8 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: HAPI
-- Doc ID: doc-sr4js-5d633d32-b16b-4492-b613-5917c733e0e5-2d53ff304a45e96f
+- Doc ID: doc-sr4js-7ade9670-c224-4dc3-abdd-f357aab8dc15-2d53ff304a45e96f
 - Source: https://docs.adaptavist.com/sr4js/latest/hapi#reindex-issues--en
+
+Understand when and how to manually reindex Jira issues using HAPI, and when automatic reindexing handles it for you.
 
 When you update an issue with HAPI, the issue is reindexed automatically. In general, you shouldn't need to manually reindex an issue, however there are cases where you might want to. For example, when a modification has been made directly in the Jira database, and you want to reindex impacted issues
 

@@ -2,9 +2,9 @@
 
 - Platform: confluence-data-center
 - Space: SR4C
-- Hierarchy: Migration > Migrating to or from Cloud > Rewrite Scripts for Cloud
-- Doc ID: doc-sr4c-1de4810c-469f-4a1b-a226-07f3e45a1b3e-8888915d46599bb6
-- Source: https://docs.adaptavist.com/sr4c/latest/migration#migrating-to-or-from-cloud--en#rewrite-scripts-for-cloud--en#prepare-to-migrate-scripts--en
+- Hierarchy: Migration > Migrating to Cloud > Rewrite Scripts for Cloud
+- Doc ID: doc-sr4c-305b1642-66e2-47e2-840a-903ead10b4aa-ce64ffb7ffd3f84e
+- Source: https://docs.adaptavist.com/sr4c/latest/migration#migrating-to-cloud--en#rewrite-scripts-for-cloud--en#prepare-to-migrate-scripts--en
 
 What to do before beginning to migrate scripts between products.
 
@@ -89,13 +89,13 @@ Research whether the functionality provided by these plugins is available in Con
 
 ### Step six: Categorize ScriptRunner script types
 
-Before diving into writing or adapting scripts, it's beneficial to categorize them by type and understand the specific limitations of each type in Cloud. The [Feature Parity](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-or-from-cloud/feature-parity) page details the parity of each ScriptRunner for Server/Data Center feature. Below is each category you should consider; visit the link to find out more about the limitations of each script:
+Before diving into writing or adapting scripts, it's beneficial to categorize them by type and understand the specific limitations of each type in Cloud. The [Feature Parity](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-cloud/feature-parity) page details the parity of each ScriptRunner for Server/Data Center feature. Below is each category you should consider; visit the link to find out more about the limitations of each script:
 
--   [Built-In Scripts](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-or-from-cloud/feature-parity#feature-parity--en__built-in-scripts)
--   [Fragments](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-or-from-cloud/feature-parity#feature-parity--en__fragments)
--   [Jobs](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-or-from-cloud/feature-parity#feature-parity--en__jobs)
--   [Listeners](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-or-from-cloud/feature-parity#feature-parity--en__listeners)
--   [Macros](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-or-from-cloud/feature-parity#feature-parity--en__macros)
+-   [Built-In Scripts](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-cloud/feature-parity#feature-parity--en__built-in-scripts)
+-   [Fragments](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-cloud/feature-parity#feature-parity--en__fragments)
+-   [Jobs](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-cloud/feature-parity#feature-parity--en__jobs)
+-   [Listeners](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-cloud/feature-parity#feature-parity--en__listeners)
+-   [Macros](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-cloud/feature-parity#feature-parity--en__macros)
 
 ### Step seven: Plan a migration path for each script
 
@@ -113,6 +113,6 @@ Check out the [Adapt scripts for Confluence Cloud](https://docs.adaptavist.com/s
 
 ## Other resources
 
--   [Feature Parity](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-or-from-cloud/feature-parity)
--   [Rewriting Scripts](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-or-from-cloud/rewrite-scripts-for-cloud)
--   [Best Practices and Supporting Technical Information](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-or-from-cloud/rewrite-scripts-for-cloud/migration-best-practices-and-supporting-technical-information)
+-   [Feature Parity](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-cloud/feature-parity)
+-   [Rewriting Scripts](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-cloud/rewrite-scripts-for-cloud)
+-   [Best Practices and Supporting Technical Information](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-cloud/rewrite-scripts-for-cloud/migration-best-practices-and-supporting-technical-information)

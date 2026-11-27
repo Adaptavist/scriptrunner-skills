@@ -4,7 +4,7 @@
   - Product: Assets Cloud REST API
   - Common paths: `/rest/assets/1.0/...`
   - Operations: 64
-  - Schemas: 52
+  - Schemas: 54
   - Source: https://dac-static.atlassian.com/cloud/assets/swagger.v3.json
   - Summary: Assets Cloud REST APIs for object schemas, object types, objects, attributes, icons, statuses, and AQL search.
 
@@ -28,7 +28,7 @@
   - Product: Jira Cloud platform REST API v3
   - Common paths: `/rest/api/3/...`
   - Operations: 630
-  - Schemas: 1000
+  - Schemas: 1001
   - Source: https://dac-static.atlassian.com/cloud/jira/platform/swagger-v3.v3.json
   - Summary: Jira Cloud platform REST API v3 for core Jira resources such as issues, projects, users, workflows, fields, permissions, and dashboards.
 

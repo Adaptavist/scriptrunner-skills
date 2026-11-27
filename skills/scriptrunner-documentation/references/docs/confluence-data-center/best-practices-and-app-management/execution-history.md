@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Best Practices and App Management
-- Doc ID: doc-sr4c-8aea4b27-1a27-4e84-81b0-3d507dcffdd0-97d16923e98519a5
+- Doc ID: doc-sr4c-cce351a3-d994-42d2-b30a-92a76485e17a-97d16923e98519a5
 - Source: https://docs.adaptavist.com/sr4c/latest/best-practices-and-app-management#execution-history--en
 
 Use _Execution History_ to view up to two years of execution times and failure rates of ScriptRunner scripts in your instance, allowing a long-term view of script performance.

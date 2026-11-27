@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Get Help
-- Doc ID: doc-sr4js-25778cc7-3ccb-4904-8a0b-79062f3312a3-671ba76ca59f198c
+- Doc ID: doc-sr4js-37bbd328-8546-44e6-953c-a05c1d632e7d-671ba76ca59f198c
 - Source: https://docs.adaptavist.com/sr4js/latest/get-help#troubleshooting--en
 
 Browse the following pages for troubleshooting tips.

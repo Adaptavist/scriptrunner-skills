@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Built-In Scripts > Space Administration Built-In Scripts
-- Doc ID: doc-sr4c-7bb6b4bf-87d3-415d-9913-21539ab1cad5-a7c524dc0b2d9753
+- Doc ID: doc-sr4c-0b9fbfb1-10c6-4154-be0f-720c2df54d4d-a7c524dc0b2d9753
 - Source: https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#space-administration-built-in-scripts--en#update-page-restrictions--en
 
 Using the _Update Page Restrictions_ built-in script, you can easily manage the editing restrictions to the pages in your space.

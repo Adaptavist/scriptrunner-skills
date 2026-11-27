@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Fragments
-- Doc ID: doc-sr4js-c9aca8d4-6e52-4952-b3f9-f79952fd8ebe-6a539364cd5d5ec8
+- Doc ID: doc-sr4js-a6b45b5c-d9b8-49d2-ad87-007980932fab-6a539364cd5d5ec8
 - Source: https://docs.adaptavist.com/sr4js/latest/features#fragments--en#web-item-provider-built-in-script--en
 
 You have seen that we can add web items to new or existing web sections, and use conditions to determine whether they should be displayed for the current user, or issue, page etc.

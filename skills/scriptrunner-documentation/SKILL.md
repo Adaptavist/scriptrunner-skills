@@ -4,13 +4,13 @@ description: ScriptRunner product documentation covering what each feature does,
 metadata:
     author: sms-core
     version: '1.0'
-    generated-doc-count: '914'
-    generated-cloud-doc-count: '137'
+    generated-doc-count: '930'
+    generated-cloud-doc-count: '144'
     generated-confluence-cloud-doc-count: '109'
-    generated-confluence-data-center-doc-count: '215'
-    generated-connect-doc-count: '64'
+    generated-confluence-data-center-doc-count: '214'
+    generated-connect-doc-count: '72'
     generated-data-center-doc-count: '350'
-    generated-migration-suite-doc-count: '39'
+    generated-migration-suite-doc-count: '41'
 ---
 
 # ScriptRunner Documentation Skill

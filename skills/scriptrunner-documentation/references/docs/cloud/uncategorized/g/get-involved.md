@@ -3,16 +3,22 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: n/a
-- Doc ID: doc-sr4jc-cc150c31-53f1-4dc2-9321-9eab7573309e-2448c82b498fd392
+- Doc ID: doc-sr4jc-5f8c8950-0ca1-4e9d-9c4f-89a34ecf162a-2448c82b498fd392
 - Source: https://docs.adaptavist.com/sr4jc/latest/get-involved
 
+Learn how to participate, contribute, and stay engaged with our community.
+
 ## Get involved with our ScriptRunner products
+
+Discover how you can help shape the future of ScriptRunner by sharing feedback, joining programs, and contributing your ideas.
 
 Want to know how you can get involved with shaping the future of ScriptRunner?
 
 Look no further!
 
 ## New ways to share your ideas, experiences and opinions
+
+Discover how to share your ideas, experiences, and feedback with the ScriptRunner team through our dedicated Get Involved area.
 
 We have created a dedicated area on our website which is your exclusive gateway to the ScriptRunner teams and having your voice heard! From here, you can:
 

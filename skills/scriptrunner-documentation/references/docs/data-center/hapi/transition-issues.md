@@ -3,14 +3,14 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: HAPI
-- Doc ID: doc-sr4js-abb2a649-11e4-41e4-bd56-89db517dec72-7c51ec41f496ae75
+- Doc ID: doc-sr4js-74402a33-691f-4fb1-9c4f-0662a62da325-7c51ec41f496ae75
 - Source: https://docs.adaptavist.com/sr4js/latest/hapi#transition-issues--en
+
+Transition issues using HAPI, with examples for updating fields and skipping permissions while you transition issues.
 
 |  |  |
 | --- | --- |
 |  | Migrating to Jira Cloud? This feature is available in Cloud.<br>[HAPI Cloud documentation](https://docs.adaptavist.com/sr4jc/latest/hapi/work-with-work-items#transition-work-items--en) |
-
-With HAPI, we've made it easy for you to transition issues and even update fields while you transition issues.
 
 ## Transitioning issues
 
@@ -63,7 +63,7 @@ Due to a limitation, we recommend against calling `issue.transition()` on the cu
 
 ## Workaround
 
-Use a [Custom Listener](https://docs.adaptavist.com/sr4js/latest/features/listeners/custom-listener) instead, which runs outside the workflow transition steps and is not affected by this behaviour.
+Use a Custom Listener instead. If the listener updates system fields (such as Assignee or Summary) of the issue being transitioned, those changes are overwritten when the transition finishes, unless you also set them on `event.issue`. For more information, see [Listeners and issue transitions](https://docs.adaptavist.com/sr4js/latest/features/listeners/custom-listener#listeners-and-issue-transitions--en).
 
 ## Related content
 

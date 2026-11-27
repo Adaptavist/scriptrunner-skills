@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Workflows > Validators
-- Doc ID: doc-sr4js-b302e17e-feb1-4272-b920-fe91295c7b72-a2cb4ca1c123a39c
+- Doc ID: doc-sr4js-045ee255-ca58-4c21-a1e2-42a5a2484e98-a2cb4ca1c123a39c
 - Source: https://docs.adaptavist.com/sr4js/latest/features#workflows--en#validators--en#user-in-fields-validator--en
 
 The _User in field(s) validator_ controls if a user can transition an issue based on whether or not they are added in any specified field(s). If a field contains users, the validator checks if the current user is selected. If the field contains groups, the validator checks if the current user is within any of those selected groups.

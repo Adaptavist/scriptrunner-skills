@@ -3,10 +3,12 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: HAPI
-- Doc ID: doc-sr4js-697eb74c-7465-4988-b114-84c277773f1b-904f1cba407ed94f
+- Doc ID: doc-sr4js-37debcd4-8ebc-456f-aa2c-02e7ce9db62d-904f1cba407ed94f
 - Source: https://docs.adaptavist.com/sr4js/latest/hapi#simplify-current-scripts-with-hapi--en
 
-The following page will guide you through ways to simplify your current scripts with [HAPI](../uncategorized/h/hapi.md). The guidance will include why it's useful to simplify your scripts, how to find scripts that can be simplified, and examples of simplified scripts.
+Learn how to simplify existing ScriptRunner scripts using HAPI, including how to find candidates and what simplified code looks like.
+
+This guidance will include why it's useful to simplify your scripts, how to find scripts that can be simplified, and examples of simplified scripts.
 
 Tip: What is HAPI?
 

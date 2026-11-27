@@ -3,7 +3,7 @@
 - Platform: migration-suite
 - Space: SMS
 - Hierarchy: Training > 2. Perform a Data Center to Cloud migration using the suite
-- Doc ID: doc-sms-c63a9aae-a2dc-4c31-8d49-d0aac8d9f26c-d9c0073d1c839c14
+- Doc ID: doc-sms-ce460130-efef-4442-8304-7cc08905081b-d9c0073d1c839c14
 - Source: https://docs.adaptavist.com/sms/latest/training/2.-perform-a-data-center-to-cloud-migration-using-the-suite/2.2-convert-your-scripts-for-cloud
 
 In the previous module, while scoping our migration, we identified migration blockers and warnings that need to be addressed. So, what's the next step? The Migration Agent is a tool designed to understand the root cause of these blockers and determine the best way to resolve them.

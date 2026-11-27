@@ -3,7 +3,7 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Release Notes > Breaking Changes
-- Doc ID: doc-sr4jc-91ebe8ac-8573-4f18-9b7e-b83c8edfba26-5118dd42f5ee90c1
+- Doc ID: doc-sr4jc-649d35c5-eb21-4045-b84e-4c6359544b0a-5118dd42f5ee90c1
 - Source: https://docs.adaptavist.com/sr4jc/latest/release-notes/breaking-changes#atlassian-epic-and-parent-fields-jira-rest-api-deprecation--en
 
 Atlassian have announced that parent and child issue associations are being standardised for company-managed and team-managed projects. As a result, they are deprecating the `Epic Link` and `Parent Link` custom fields in the REST API and webhooks.

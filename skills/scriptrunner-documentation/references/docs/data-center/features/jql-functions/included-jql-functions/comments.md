@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > JQL Functions > Included JQL Functions
-- Doc ID: doc-sr4js-7144ff4c-daed-42c4-9d7d-0a05103bcc4e-dafa79350807203f
+- Doc ID: doc-sr4js-cc8e0905-891b-4836-927d-52d13f4fb4c8-dafa79350807203f
 - Source: https://docs.adaptavist.com/sr4js/latest/features#jql-functions--en#included-jql-functions--en#comments--en
 
 This page provides information on functions used to search for issues with comments or attributes of comments:

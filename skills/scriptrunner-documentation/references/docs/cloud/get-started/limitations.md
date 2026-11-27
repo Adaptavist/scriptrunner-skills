@@ -3,8 +3,10 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Get Started
-- Doc ID: doc-sr4jc-636eaa64-2678-4eef-b803-4b4b051badf1-ee5ab2b1d4bbd552
+- Doc ID: doc-sr4jc-4d01707d-c3f1-4343-95a8-01740f7a8ae7-ee5ab2b1d4bbd552
 - Source: https://docs.adaptavist.com/sr4jc/latest/get-started/limitations
+
+Understand the limits that apply when scripts run, including safeguards to prevent erroneous or runaway scripts.
 
 Several limitations are applied to scripts when they run, as detailed below. The limits should be more than sufficient for most scripts and are designed to catch erroneous scripts.
 
@@ -19,11 +21,9 @@ There is a limit of 30 seconds for each call made to the API. We impose these ti
 ScriptRunner Enhanced Search is moving to Atlassian's native Forge platform this year. As part of this transition, there are two new limits:
 
 -   Result limit of 1,000 issues
--   Timeout limit of 25 seconds
+-   Timeout limit of 55 seconds
 
-Both of these limits are per precomputation. A precomputation is an individual use of an ScriptRunner Enhanced Search function. Filters can contain multiple precomputations, and each one can return up to 1,000 issues and run for 25 seconds.
-
-Example: `issueFunction` in `linkedIssuesOf("project = test")` and `issueFunction` in `addedAfterSprintStart(1)`. Each use of a function, or precomputation, can return 1000 issues, so the entire filter could return 2,000 issues since there are two. For timeout limits, each function, or precomputation, can take 25-seconds to process. They will run at the same time.
+Both of these limits are per precomputation. A precomputation is an individual use of an ScriptRunner Enhanced Search function. Filters can contain multiple precomputations, and each one can return up to 1,000 issues and run for 55 seconds.
 
 For more information about the new limits, please visit [Timeouts and Performance for ScriptRunner Enhanced Search](https://docs.adaptavist.com/sr4jc/latest/get-started/limitations#scriptrunner-enhanced-search-timeouts--en). For more information about the Forge migration, please visit [Enhanced Search Migration to Forge Breaking Changes](https://docs.adaptavist.com/sr4jc/latest/release-notes/breaking-changes/enhanced-search-migration-to-forge).
 
@@ -45,9 +45,9 @@ Please note that we store [Behaviours](../features/behaviours.md) using the [UI 
 
 Note: Jira back-ups and ScriptRunner data
 
-As scripts are stored in our AWS hosting infrastructure and NOT stored within Jira (with the exception of [Workflow Perform Actions](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/perform-actions)), then you should be aware that if a Jira backup is performed, you are not backing up any links to the ScriptRunner Cloud data.
-
-Unfortunately, the instance URL is irrelevant. Therefore, performing a site import or restoring a backup, even with the same URL, does not guarantee that ScriptRunner Cloud will be restored. In some cases, the opposite is true.
+-   As scripts are stored in our AWS hosting infrastructure and NOT stored within Jira (with the exception of [Workflow Rules](../features/workflow-rules.md)), you should be aware that if a Jira backup is performed, you are not backing up any links to the ScriptRunner Cloud data.
+-   If you save scripts in [Script Manager](https://adaptavistlabs.atlassian.net/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/script_manager.dita), then load those saved scripts on a Workflow Restrict Transitions or Validate Details, a synced copy resides in ScriptRunner's AWS but it is Atlassian's stored copy that runs. Script Manager watches for edits to the script file and pushes updated code to the Atlassian-stored copy so both copies remain synced.
+-   Unfortunately, the instance URL is irrelevant. Therefore, performing a site import or restoring a backup, even with the same URL, does not guarantee that ScriptRunner Cloud will be restored. In some cases, the opposite is true.
 
 ## Package imports
 
@@ -142,3 +142,69 @@ def result = get('/rest/project-templates/1.0/createshared/10005')
         .asObject(Map)
         .body
 ```
+
+## Forge platform limitations
+
+ScriptRunner for Jira Cloud now runs on Atlassian's Forge platform, which has stricter limits than Connect. Atlassian is [ending support for Connect](https://www.atlassian.com/blog/development/announcing-connect-end-of-support-timeline-and-next-steps), so all Marketplace apps must migrate. Most scripts continue to work without changes, but some may behave differently or fail.
+
+The key platform limits you should be aware of are highlighted below. They explain how each one affects your scripts, and include workarounds where possible. Many of these limits are imposed by Atlassian, so we cannot change them ourselves, but if Atlassian is working on a fix, we will note that as well.
+
+### Event delivery times
+
+Atlassian states that Forge events may take up to 3 minutes to reach an app after the change ([Forge trigger documentation](https://developer.atlassian.com/platform/forge/manifest-reference/modules/trigger/)). Script Listeners, Workflow Perform Actions (post functions), and Scripted Fields that recalculate on update can therefore run up to 3 minutes after the change that triggered them.
+
+Tip: Take a look at the information related to perform actions, clone issues, restricted comments, and rate limits in [Script listener behavior change on Forge events](https://docs.adaptavist.com/sr4jc/latest/features/script-listeners/script-listener-behavior-change-on-forge-events).
+
+-   You should not assume a script will run within seconds of a change, or that one listener's update will complete before another listener runs.
+    
+-   During Atlassian incidents, delays can be longer. If a listener hasn't run after 3 minutes, check its Execution History before contacting support.
+    
+
+### API rate limits and fetched data
+
+Forge events carry less data than Connect events, so ScriptRunner makes more calls to Jira on your behalf, and every one counts toward your site's rate limit. The [Script Listener behavior change on Forge events](https://docs.adaptavist.com/sr4jc/latest/features/script-listeners/script-listener-behavior-change-on-forge-events) page explains how ScriptRunner fetches missing data when a script reads it, and what happens when a call is rate limited.
+
+### Events that never reach ScriptRunner
+
+Some Jira changes no longer produce an event that ScriptRunner receives, so listeners for them don't run at all. Nothing appears in the listener's Execution History, because no run was started.
+
+Very large events
+
+Atlassian doesn't deliver Forge events larger than 200 kB ([Forge product events](https://developer.atlassian.com/platform/forge/events-reference/product_events/#known-issues)). Connect allowed up to 25 MB. Very few events are this large, but a change to a work item with very large field values may not trigger your script.
+
+Deletion events for child items
+
+When a parent item is deleted, Forge sends only one event for the parent. See the [deletion events notice](https://docs.adaptavist.com/sr4jc/latest/release-notes/breaking-changes#concept-6637--en) for which child items are affected.
+
+### Response size limits
+
+Forge limits each response from ScriptRunner's backend to the browser to 5 MB ([Atlassian's invocation limits](https://developer.atlassian.com/platform/forge/limits-invocation/)).
+
+Where you might hit it:
+
+-   Script Console. If a script's combined output (returned values plus logs) is larger than 5 MB, it fails with an error instead of displaying the output.
+    
+
+What you can do:
+
+-   Return a summary or a count from the Script Console rather than full objects, and log only what you need.
+    
+-   For large outputs, process the data in batches, or write it somewhere else, such as an attachment or an external system, rather than returning it.
+    
+
+### Workflow Perform Actions
+
+Workflow Perform Actions (post functions) get their `issue` variable from Forge events, the same way Script Listeners do. The behaviors below are specific to Workflow Perform Actions.
+
+-   Whose permissions apply. ScriptRunner fetches missing data using the permissions of the user the Perform Action runs as. If that user can't see the data, the script receives `null` and two warnings appear in the log. If a Perform Action needs data that the initiating user might not be allowed to see, run it as the ScriptRunner add-on user.
+    
+-   Conditions can now fail with an error. If a Perform Action's condition reads a field that has to be fetched and the fetch fails, the Perform Action stops with an error. Before, the condition counted as false and the Perform Action silently did nothing.
+    
+-   A failed Perform Action doesn't undo the transition. Perform Actions run after the transition completes. If one fails, the work item stays in its new status, only that Perform Action's work is missing, and ScriptRunner doesn't run it again.
+    
+-   Clone Issue copies the current state. The built-in Clone Issue Perform Action copies the work item as it is when it runs, including changes made by earlier Perform Actions on the same transition.
+    
+
+### Enhanced Search
+
+On Forge, each Enhanced Search function in a filter returns up to 1,000 work items and times out after 55 seconds ([Enhanced Search Migration to Forge](https://docs.adaptavist.com/sr4jc/latest/release-notes/breaking-changes/enhanced-search-migration-to-forge)).

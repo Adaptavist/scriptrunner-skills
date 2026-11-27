@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Workflows > Conditions
-- Doc ID: doc-sr4js-847da23d-98c3-41a4-bb5a-e0215f42a67c-245fb2ca14ad9fca
+- Doc ID: doc-sr4js-01407fbe-a3ce-43c1-a488-202a04b87e44-245fb2ca14ad9fca
 - Source: https://docs.adaptavist.com/sr4js/latest/features#workflows--en#conditions--en#checks-if-this-issue-has-been-in-a-status-previously-condition--en
 
 This condition checks whether the issue has ever been in the selected status at some point or immediately before the current status (the current status is the status at the start of the transition you're applying this condition to). For example, you could use this condition to ensure a support ticket cannot be closed if it has never been with a customer service agent. This can be particularly useful when you have global transitions.

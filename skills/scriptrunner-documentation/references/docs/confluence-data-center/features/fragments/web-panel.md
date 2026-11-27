@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Fragments
-- Doc ID: doc-sr4c-b289e83b-8636-4a52-80e6-3ccce8c95716-6b0869f64bb26b49
+- Doc ID: doc-sr4c-d728b392-1eca-48dc-85fa-dc1926e251e8-6b0869f64bb26b49
 - Source: https://docs.adaptavist.com/sr4c/latest/features#fragments--en#web-panel--en
 
 Web panels can be used to add HTML snippets to parts of a page. They could be used to display additional information on particular builds, plans, or the system navigation.

@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Listeners > Built-In Listeners
-- Doc ID: doc-sr4js-7938dcb7-e57e-45e7-9c1c-e0826a183cd2-859cfd7258f3c32a
+- Doc ID: doc-sr4js-403e4369-4300-41eb-90fe-1487728ffe79-859cfd7258f3c32a
 - Source: https://docs.adaptavist.com/sr4js/latest/features#listeners--en#built-in-listeners--en#clones-an-issue-and-links--en
 
 Use this listener to clone the current issue to a new one and create a link between the two. You can specify which fields are being copied, either all fields, no fields, or specific fields, from the source issue to the new one.

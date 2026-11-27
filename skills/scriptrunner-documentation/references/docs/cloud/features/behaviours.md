@@ -3,8 +3,10 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features
-- Doc ID: doc-sr4jc-b5605134-7894-46e9-b724-f64e1dff9829-fd90b959495a21bf
+- Doc ID: doc-sr4jc-8d66d105-24f0-4363-8850-daeb823d92a2-fd90b959495a21bf
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/behaviours
+
+Learn how Behaviours let you control how Jira and Jira Service Management fields appear and behave for different users and contexts.
 
 |  |  |
 | --- | --- |
@@ -43,4 +45,4 @@ Additionally, it is essential to determine the timing of _when_ the script on th
 
 Note: Difference with ScriptRunner for Jira Server/DC
 
-A fundamental [difference between the ScriptRunner for Jira Server/DC and ScriptRunner for Jira Cloud](../script-runner-migration-to-cloud/platform-differences-between-script-runner-for-jira-server-dc-and-jira-cloud.md) behaviours feature is that the field selected is the trigger that causes the behaviour to run in ScriptRunner for Jira Server/DC. However, with ScriptRunner for Cloud, you choose an affected field first and then write a script with logic that will alter that field in your preferred way.
+A key [difference between the ScriptRunner for Jira Server/DC and ScriptRunner for Jira Cloud](../script-runner-migration-to-cloud/platform-differences-between-script-runner-for-jira-server-dc-and-jira-cloud.md) behaviours feature is that, in ScriptRunner for Jira Server/DC, the selected field acts as the trigger that runs the behaviour. In ScriptRunner for Jira Cloud, you instead select an affected field first and then write a script whose logic updates that field in the way you require.

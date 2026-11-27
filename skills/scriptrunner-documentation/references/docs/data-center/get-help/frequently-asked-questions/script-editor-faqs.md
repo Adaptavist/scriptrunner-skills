@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Get Help > Frequently Asked Questions
-- Doc ID: doc-sr4js-37f9c923-1e55-4a1a-afce-b79d19007b9f-c4ebfd2b8384e5e5
+- Doc ID: doc-sr4js-98a4fa20-e72b-4cb0-823d-31cf3bf0bba6-c4ebfd2b8384e5e5
 - Source: https://docs.adaptavist.com/sr4js/latest/get-help#frequently-asked-questions--en#script-editor-faqs--en
 
 ## Why is there an Incorrect Package Declaration Message in the Script Editor?

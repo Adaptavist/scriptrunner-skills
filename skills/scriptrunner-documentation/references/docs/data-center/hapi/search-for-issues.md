@@ -3,14 +3,14 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: HAPI
-- Doc ID: doc-sr4js-088c2c82-046a-48a3-9c5e-af374cb8c8c5-53c1518a10db1650
+- Doc ID: doc-sr4js-518617a3-9c50-406b-8785-2a53a3c83556-53c1518a10db1650
 - Source: https://docs.adaptavist.com/sr4js/latest/hapi#search-for-issues--en
+
+Search for Jira issues using HAPI and JQL, with examples showing how to iterate over results and use common query patterns.
 
 |  |  |
 | --- | --- |
 |  | Migrating to Jira Cloud? This feature is available in Cloud.<br>[HAPI Cloud documentation](https://docs.adaptavist.com/sr4jc/latest/hapi/work-with-work-items#search-for-work-items--en) |
-
-With HAPI, we've made it easy for you to search for issues.
 
 ## Running JQL queries to search for issues
 

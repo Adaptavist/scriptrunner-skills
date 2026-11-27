@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Built-In Scripts > Space Administration Built-In Scripts
-- Doc ID: doc-sr4c-8bdc2794-71b3-4c29-a275-262481c0ecc0-c6db87ddd5f5e00c
+- Doc ID: doc-sr4c-c271be83-88e3-43db-9746-858808c24728-c6db87ddd5f5e00c
 - Source: https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#space-administration-built-in-scripts--en#bulk-delete-attachment-versions--en
 
 Use this script to delete old attachment versions throughout your instance.

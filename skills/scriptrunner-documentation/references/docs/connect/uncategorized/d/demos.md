@@ -3,18 +3,24 @@
 - Platform: connect
 - Space: SRC
 - Hierarchy: n/a
-- Doc ID: doc-src-d7520054-6270-4207-98f2-3bb50f7dbc4c-df385d09b067a6f4
+- Doc ID: doc-src-1916fb97-2a6c-492b-abc3-9929003aef79-df385d09b067a6f4
 - Source: https://docs.adaptavist.com/src/latest/demos
+
+This page contains helpful interactive and video demos for ScriptRunner Connect.
 
 ## Basics
 
-### Demo: Working Principle
+### Demo: Working principle
 
-[Media](https://demo.arcade.software/tc0Dnq9AoZ4g8Vhy2YXe?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true)
+[Media](https://demo.arcade.software/tc0Dnq9AoZ4g8Vhy2YXe?embed&embed_mobile=tab&embed_desktop=inline)
 
-### Demo: AI Assistant
+### Demo: AI assistant
 
 [Media](https://demo.arcade.software/1fcFWinIxLAzQxUto7HH?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true)
+
+### Demo: Agentic workflow
+
+[Media](https://demo.arcade.software/H8rf1qSMP7I6n9PdOvwb?embed&embed_mobile=tab&embed_desktop=inline)
 
 ### Connectors tutorial video
 
@@ -48,19 +54,19 @@ Learn more about [workspaces](../w/workspaces.md).
 
 ## Scripting
 
-[Media](https://app.arcade.software/share/mOElG7xElJdDywZwNsIV)
+[Media](https://app.arcade.software/share/FLng31ysQCQqyMaFmc8e?embed&embed_mobile=tab&embed_desktop=inline)
 
 Learn more about [scripting](../s/scripting.md).
 
 ### TypeScript
 
-[Media](https://demo.arcade.software/I6b4lyr1Hw5mYF0dx2wF?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true)
+[Media](https://demo.arcade.software/I6b4lyr1Hw5mYF0dx2wF?embed&embed_mobile=tab&embed_desktop=inline)
 
 Learn more about [TypeScript](https://www.typescriptlang.org/docs/handbook/intro.html).
 
 ### Triggering scripts manually
 
-[Media](https://demo.arcade.software/iybFVsoCUhXH6wOjQUdI?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true)
+[Media](https://demo.arcade.software/iybFVsoCUhXH6wOjQUdI?embed&embed_mobile=tab&embed_desktop=inline)
 
 ### Script editor
 
@@ -86,23 +92,23 @@ Learn more about [Managed API error handling](https://docs.adaptavist.com/src/la
 
 ### Fetch API
 
-[Media](https://demo.arcade.software/pyCkn5uNI91DnQPc3Aqj?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true)
+[Media](https://demo.arcade.software/pyCkn5uNI91DnQPc3Aqj?embed&embed_mobile=tab&embed_desktop=inline)
 
 Learn more about [Fetch API](https://docs.adaptavist.com/src/latest/scripting/fetch-api).
 
 ## Advanced
 
-[Media](https://app.arcade.software/share/bguOwse6O7Dt5ZOGq6Y3)
+[Media](https://app.arcade.software/share/bguOwse6O7Dt5ZOGq6Y3?embed&embed_mobile=tab&embed_desktop=inline)
 
 ### Parameters
 
-[Media](https://app.arcade.software/share/4WB52Z6nTNm5tuSC3ThO)
+[Media](https://app.arcade.software/share/4WB52Z6nTNm5tuSC3ThO?embed&embed_mobile=tab&embed_desktop=inline)
 
 Learn more about [parameters](https://docs.adaptavist.com/src/latest/workspaces/parameters).
 
 ### Package manager
 
-[Media](https://app.arcade.software/share/zretMBlRAuZXaGf6gx9I)
+[Media](https://app.arcade.software/share/zretMBlRAuZXaGf6gx9I?embed&embed_mobile=tab&embed_desktop=inline)
 
 Learn more about the [package manager](https://docs.adaptavist.com/src/latest/workspaces/package-manager).
 
@@ -110,19 +116,13 @@ Learn more about the [package manager](https://docs.adaptavist.com/src/latest/wo
 
 [Media](https://www.youtube.com/watch?v=kxUyqy7n2lw)
 
-Lean more about the [remote workspaces](../e/external-coding.md).
+Learn more about the [remote workspaces](../../external-coding/sftp-remote-workspace.md).
 
 #### Recommended Setup
 
-[Media](https://app.arcade.software/share/3bSk7MTH5OFfO0u3Yvgn)
+[Media](https://app.arcade.software/share/3bSk7MTH5OFfO0u3Yvgn?embed&embed_mobile=tab&embed_desktop=inline)
 
-Learn more about the [recommended setup](https://docs.adaptavist.com/src/latest/external-coding/recommended-setup).
-
-#### Working with AI agents
-
-[Media](https://www.youtube.com/watch?v=XxPMeWRRCqI)
-
-Learn more about [working with AI agents](https://docs.adaptavist.com/src/latest/external-coding/working-with-ai-agents).
+Learn more about the [recommended setup](https://docs.adaptavist.com/src/latest/external-coding/sftp-remote-workspace/recommended-setup).
 
 ## Templates
 

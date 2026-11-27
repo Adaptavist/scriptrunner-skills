@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Listeners > Built-In Listeners
-- Doc ID: doc-sr4js-620e9e41-ac18-466e-88a7-55871ee8f5b7-46bfa22888ef237e
+- Doc ID: doc-sr4js-236518a5-6fbb-4f69-81d8-76c3c0038763-46bfa22888ef237e
 - Source: https://docs.adaptavist.com/sr4js/latest/features#listeners--en#built-in-listeners--en#send-a-custom-email--en
 
 Use this listener to send an email based on a Jira issue event and custom condition. For example, you can use this listener to send an email to certain recipients when an issue with _Critical_ or _High_ priority is created. Further examples include using this listener to send an email that is requesting approval for a sub-task, for instance, or letting the QA team know an issue is ready for test. If you'd rather use a workflow function to perform this function you can use our [Send a Custom Email](https://docs.adaptavist.com/sr4js/latest/features/workflows/post-functions/send-a-custom-email) post function instead.

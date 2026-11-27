@@ -3,7 +3,7 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features > ScriptRunner Enhanced Search > ScriptRunner Enhanced Search JQL Keywords
-- Doc ID: doc-sr4jc-416e4e78-24e7-4bc0-bb8d-756ee820b8ff-44e34f611e0c3836
+- Doc ID: doc-sr4jc-304b7cc2-0cdc-4236-90ea-73d2f5f4082f-44e34f611e0c3836
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search#scriptrunner-enhanced-search-jql-keywords--en#time-tracking--en
 
 In ScriptRunner Enhanced Search for Jira Cloud, time tracking JQL keywords expand upon Jira's native capabilities, allowing you to perform more complex and detailed queries related to time tracking. These enhanced keywords enable teams to better analyze and manage time spent, remaining estimates, and work logs.

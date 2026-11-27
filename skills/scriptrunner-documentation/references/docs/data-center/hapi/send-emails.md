@@ -3,10 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: HAPI
-- Doc ID: doc-sr4js-1f6db85a-530b-48f7-873e-00f1b381af32-732fc73be9c15bc6
+- Doc ID: doc-sr4js-4466e71c-8589-4498-b4f1-c9a0d384c02d-732fc73be9c15bc6
 - Source: https://docs.adaptavist.com/sr4js/latest/hapi#send-emails--en
 
-A common requirement when writing automations is the ability to mail people. HAPI provides you with a very simple method of sending mail.
+Send emails using HAPI, with examples for sending emails with attachments, images, and more.
 
 Note: Prerequisite
 

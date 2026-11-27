@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Built-in scripts
-- Doc ID: doc-sr4js-d451812c-12f2-4f6f-863d-78f54d39d5ad-93d8ac869884c2b0
+- Doc ID: doc-sr4js-61681d04-2a74-4dd9-ac47-1e3ed74ef465-93d8ac869884c2b0
 - Source: https://docs.adaptavist.com/sr4js/latest/features#built-in-scripts--en#guardrails-built-in-scripts--en
 
 Guardrails are suggested limits and thresholds that Atlassian recommend in order to keep your Jira instance performing well.

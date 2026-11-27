@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Workflows > Conditions
-- Doc ID: doc-sr4js-de37281c-8662-44f9-ba63-05ee279b4321-f268277953ad9c4b
+- Doc ID: doc-sr4js-e72b3ca8-2006-4353-a90a-8f23377ea027-f268277953ad9c4b
 - Source: https://docs.adaptavist.com/sr4js/latest/features#workflows--en#conditions--en#jql-query-matches-condition--en
 
 Use the _JQL Query Matches Condition_ to control if an issue can be transitioned based on if a JQL query would return the current issue.

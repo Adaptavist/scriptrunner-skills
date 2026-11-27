@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Event Listeners > Built-In Listeners
-- Doc ID: doc-sr4c-75cbbac5-dfb5-48d6-bfac-195d2c3ced12-76b5942d60be747d
+- Doc ID: doc-sr4c-ea7eb453-8962-4c41-ad20-ff71ceaecaf1-76b5942d60be747d
 - Source: https://docs.adaptavist.com/sr4c/latest/features#event-listeners--en#built-in-listeners--en#add-or-remove-watchers-listener--en
 
 You can use the _Add/Remove Watchers_ built-in listener to choose to add or remove watchers on spaces, blogs, or content selected by the CQL when prompted by a Confluence event.

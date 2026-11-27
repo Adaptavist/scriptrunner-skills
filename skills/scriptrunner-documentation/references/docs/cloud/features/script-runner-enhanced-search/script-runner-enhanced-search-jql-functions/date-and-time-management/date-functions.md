@@ -3,7 +3,7 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features > ScriptRunner Enhanced Search > ScriptRunner Enhanced Search JQL Functions > Date and Time Management
-- Doc ID: doc-sr4jc-55c7741d-1c7f-45ab-b41c-1d3b3734ab89-c41984fe055e9bb8
+- Doc ID: doc-sr4jc-c9e20714-e759-4e75-b576-51cb57fdad18-c41984fe055e9bb8
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search#scriptrunner-enhanced-search-jql-functions--en#date-and-time-management-datecompare--en#date-functions--en
 
 You can use Date functions, for instance `now(), startOfDay()` etc, anywhere you would use a date. Supported functions include:

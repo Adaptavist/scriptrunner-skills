@@ -3,8 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Release Notes > Breaking Changes > Jira 11 Search API Upgrade Guide
-- Doc ID: doc-sr4js-a911ff88-3eaa-4943-8701-512bdd514835-daf06698df3a2f87
+- Doc ID: doc-sr4js-7eb5e8bd-b877-4968-a97e-8f95c6c5b5c6-daf06698df3a2f87
 - Source: https://docs.adaptavist.com/sr4js/latest/release-notes/breaking-changes#jira-11-search-api-upgrade-guide--en#writing-to-the-index--en
+
+Learn how to update Lucene indexers in your scripts to use the new Search API equivalents required by Jira Data Center 10.4.
 
 Atlassian has introduced a [new Search API](https://confluence.atlassian.com/adminjiraserver/search-api-upgrade-guide-1488594607.html) in Jira Data Center version 10.4, transitioning from Lucene to OpenSearch. As part of the Search API upgrade all Lucene indexers will be removed and need to be upgraded to Search API equivalents. Before the new Search API, when writing to the Index, we would rely on the Lucene indexers in this package:
 
@@ -20,7 +22,7 @@ This page focuses on explaining how to write to the index with the new Search AP
 
 Below we detail the key differences between the Lucene-based indexing approach and the new Search API implementation.
 
-### Changes to the `index()` method and introduction of `FieldValueCollector` to manipulate documents
+### Changes to the index() method and introduction of FieldValueCollector to manipulate documents
 
 Although most of the Lucene classes have equivalent classes in Search API (such as `BooleanQuery` being equivalent to `DefaultBooleanQuery`), the `index()` method has changed. This means that rather than relying on methods such as `indexLocalDateField()` or `Document#add()`, we rely on `FieldValueCollector#add()`. For any indexer, the signature of the index method has changed as follows:
 

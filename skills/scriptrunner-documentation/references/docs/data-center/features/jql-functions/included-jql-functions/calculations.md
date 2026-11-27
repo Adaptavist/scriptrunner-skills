@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > JQL Functions > Included JQL Functions
-- Doc ID: doc-sr4js-fbaf36a8-0bf6-42ad-a725-ea33efaa7e00-f3ec1506f1582b09
+- Doc ID: doc-sr4js-5fc19baf-a359-4a54-a68d-26dda8c08576-f3ec1506f1582b09
 - Source: https://docs.adaptavist.com/sr4js/latest/features#jql-functions--en#included-jql-functions--en#calculations--en
 
 This page provides information on functions used to perform calculations:

@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Macros > Built-In Macros
-- Doc ID: doc-sr4c-200d6654-7e0d-4349-97fd-ef9cddf6d606-4759b9e5f3ba7539
+- Doc ID: doc-sr4c-6b56bf13-953c-4124-96ba-d309b959d875-4759b9e5f3ba7539
 - Source: https://docs.adaptavist.com/sr4c/latest/features#macros--en#built-in-macros--en#create-page-macro--en
 
 The Create Page macro helps users create pages in the right place, with the correct template, and a correctly formatted page title.

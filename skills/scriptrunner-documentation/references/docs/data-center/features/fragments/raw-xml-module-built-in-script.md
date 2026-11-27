@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Fragments
-- Doc ID: doc-sr4js-6a34449c-52b2-46ab-a907-59354d6643fd-834ecb015de36a61
+- Doc ID: doc-sr4js-ac365225-390b-430e-85b6-04152a09eb8a-834ecb015de36a61
 - Source: https://docs.adaptavist.com/sr4js/latest/features#fragments--en#raw-xml-module-built-in-script--en
 
 All of the UI Fragment built-in scripts produce XML that is similar to, but not interchangeable with, XML found in a [plugin descriptor](https://developer.atlassian.com/confdev/confluence-plugin-guide/writing-confluence-plugins/creating-your-plugin-descriptor). You will notice that, for usability reasons, the forms do not provide all the possible configuration elements available in plugins. For example, the web item built-in script form does not give you the option to provide a tooltip for the web item link or a velocity context provider.

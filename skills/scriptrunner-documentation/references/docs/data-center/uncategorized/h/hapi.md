@@ -3,8 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: n/a
-- Doc ID: doc-sr4js-c649db1f-ba71-4c67-a5c2-f054ba1e165e-6859d02d563ab671
+- Doc ID: doc-sr4js-c7180cdb-a4ec-489e-96ae-58b03de1c69c-6859d02d563ab671
 - Source: https://docs.adaptavist.com/sr4js/latest/hapi
+
+Explore HAPI, ScriptRunner's simplified API for creating issues, searching, and updating fields: no deep API knowledge required.
 
 |  |  |
 | --- | --- |

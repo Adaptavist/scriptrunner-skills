@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Mail Handler
-- Doc ID: doc-sr4js-31d42da6-0a7d-4a46-943a-596afb96765c-44e58379a1fa21da
+- Doc ID: doc-sr4js-0b091a55-b6d2-47dc-8190-3d2285931971-44e58379a1fa21da
 - Source: https://docs.adaptavist.com/sr4js/latest/features#mail-handler--en#test-a-mail-handler--en
 
 Warning: The following should be conducted in a test environment.

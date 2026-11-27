@@ -3,8 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features
-- Doc ID: doc-sr4js-bdc13b53-6a30-4fd6-94d1-512dbb612d22-8038e03065e76a0e
+- Doc ID: doc-sr4js-16d18e1e-2bb7-416b-ac4c-c8a82aab3f9f-8038e03065e76a0e
 - Source: https://docs.adaptavist.com/sr4js/latest/features#script-console--en
+
+Run and test Groovy scripts interactively, query Jira data, make bulk changes, and experiment with the API from a single interface.
 
 |  |  |
 | --- | --- |

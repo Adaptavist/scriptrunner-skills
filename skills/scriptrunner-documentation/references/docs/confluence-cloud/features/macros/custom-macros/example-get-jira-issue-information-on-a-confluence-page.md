@@ -3,7 +3,7 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: Features > Macros > Custom Macros
-- Doc ID: doc-sr4cc-f434c6ed-8731-46c9-b70e-dcb602777e8d-5e73fc15544b1449
+- Doc ID: doc-sr4cc-dff60d54-9619-49de-b7e4-18b0f17e1baa-5e73fc15544b1449
 - Source: https://docs.adaptavist.com/sr4cc/latest/features/macros/custom-macros#example-get-jira-issue-information-on-a-confluence-page--en
 
 Information on creating a macro that will pull Jira issue information onto a specified Confluence page.
@@ -13,11 +13,11 @@ You can create a macro to pull Jira issue information onto your Confluence page.
 ## Create the macro
 
 1.  Select Create Custom Macro.
-2.  Enter a Name to identify the Macro, like _Jira_ _Issue Information_.
+2.  Enter a Name to identify the macro, like _Jira Issue Information_.
 3.  Enter an optional Description, like _Get the issue ID and issue summary on your Confluence page_.
 4.  Select Enabled to allow the macro to be added to pages.
-5.  Select _None_ for Body Type.
-6.  Pick _Block_ for Output Type.
+5.  Select None for Body Type.
+6.  Pick Block for Output Type.
     
 7.  Enter the following script into the Script to Execute field:
     
@@ -48,9 +48,9 @@ You can create a macro to pull Jira issue information onto your Confluence page.
 8.  Select Add Parameter.
     
     -   When the window appears, fill out the following fields:
-        1.  Type: _String_
-        2.  Name: _issueID_
-        3.  Description ID: _Issue ID_
+        1.  Type: String
+        2.  Name: issueID
+        3.  Description ID: Issue ID
     -   Check the box for Required.
         
     -   Click Save.

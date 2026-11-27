@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > JQL Functions > Included JQL Functions
-- Doc ID: doc-sr4js-bb1a763b-856d-43ab-9689-cffc0431700f-c22eba94fc850a85
+- Doc ID: doc-sr4js-1bcf9072-2363-44ec-bbf0-dc8d1979e034-c22eba94fc850a85
 - Source: https://docs.adaptavist.com/sr4js/latest/features#jql-functions--en#included-jql-functions--en#match-functions--en
 
 This page provides information on functions used to find issues using text and regular expressions:

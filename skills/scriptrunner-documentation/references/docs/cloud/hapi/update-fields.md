@@ -3,18 +3,20 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: HAPI
-- Doc ID: doc-sr4jc-8ac7342b-0e4f-4db4-903c-1a35bdf6da4e-afb8a5b2fd811336
+- Doc ID: doc-sr4jc-b07f231d-2f20-4451-aabd-e71099f5d46a-afb8a5b2fd811336
 - Source: https://docs.adaptavist.com/sr4jc/latest/hapi#update-fields--en
+
+Learn how to update Jira custom fields using field names, IDs, or underlying objects for flexible and maintainable automation.
 
 Updating custom fields is a very common task. There are three ways to specify custom field values:
 
 1.  Use textual names for fields to provide readable and simple code. For example, for a select list, you specify the option value.
 2.  Use object IDs if you feel concerned about names changing. For instance, in a select list, you can use an option ID.
-3.  Use the underlying objects ( [Option](https://docs.atlassian.com/software/jira/docs/api/9.6.0/com/atlassian/jira/issue/customfields/option/Option.html?_ga=2.190126891.1616100431.1676882043-2029362582.1658496808), [Version](https://docs.atlassian.com/software/jira/docs/api/9.6.0/com/atlassian/jira/project/version/Version.html?_ga=2.190126891.1616100431.1676882043-2029362582.1658496808)). This is useful when copying values from one work item to another.\`
+3.  Use the underlying objects ([Option](https://docs.atlassian.com/software/jira/docs/api/9.6.0/com/atlassian/jira/issue/customfields/option/Option.html?_ga=2.190126891.1616100431.1676882043-2029362582.1658496808), [Version](https://docs.atlassian.com/software/jira/docs/api/9.6.0/com/atlassian/jira/project/version/Version.html?_ga=2.190126891.1616100431.1676882043-2029362582.1658496808)). This is useful when copying values from one work item to another.\`
 
 We also cater for common automation tasks, such as setting an additional fix version or multi-select value without retrieving the current value, adding the new one, and then setting the new list of values.
 
-Custom fields can be set by numeric ID or name. The numeric ID of a custom field is just the number portion of its ID. For example, if the String ID is `customfield_12345`, the numeric ID is `12345`. Use the custom field name for readable and portable scripts. To read the value of a custom field, see the [Reading Custom Field Values](https://docs.adaptavist.com/sr4jc/latest/hapi/update-fields) section below.
+Custom fields can be set by numeric ID or name. The numeric ID of a custom field is just the number portion of its ID. For example, if the String ID is `customfield_12345`, the numeric ID is `12345`. Use the custom field name for readable and portable scripts. For more information, see the [Read the value of custom fields](https://docs.adaptavist.com/sr4jc/latest/hapi#read-the-value-of-custom-fields--en) section below.
 
 Using the ID
 
@@ -184,7 +186,7 @@ workItem.update {
 
 ## Clear the value of a custom field on a work item
 
-The `clearCustomField` HAPI function allows you to clear the value of a custom field on a work item. It supports both numerical custom field IDs ( `Long`) and field names ( `String`) making it flexible for scenarios where the identifier may vary.
+The `clearCustomField` HAPI function allows you to clear the value of a custom field on a work item. It supports both numerical custom field IDs (Long) and field names (String) making it flexible for scenarios where the identifier may vary.
 
 To clear the custom field name:
 

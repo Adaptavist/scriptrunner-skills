@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Script fields > Built-In Script Fields
-- Doc ID: doc-sr4js-f01730cd-c8ee-43ff-972b-cdf4e4a039de-56f8f5af389955ed
+- Doc ID: doc-sr4js-c371a44d-b8dc-48be-9b16-a99b5ac442b1-56f8f5af389955ed
 - Source: https://docs.adaptavist.com/sr4js/latest/features#script-fields--en#built-in-script-fields--en#number-of-times-in-status--en
 
 A field that displays the number of times that the given issue has been in the chosen status(es).

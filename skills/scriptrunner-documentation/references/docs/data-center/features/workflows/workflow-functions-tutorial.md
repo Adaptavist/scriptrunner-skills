@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Workflows
-- Doc ID: doc-sr4js-8e471b14-84ef-486d-8bb8-04d4e817e153-e00673252ebd8075
+- Doc ID: doc-sr4js-4252f143-3854-411b-b235-7bf643bb92bb-e00673252ebd8075
 - Source: https://docs.adaptavist.com/sr4js/latest/features#workflows--en#workflow-functions-tutorial--en
 
 Note: For a visual demonstration of workflow functions, see our [Workflow Functions training video](../../training/course-introduction-to-script-runner-for-jira-data-center/1-5-video-workflow-functions-in-script-runner-for-jira-data-center.md).

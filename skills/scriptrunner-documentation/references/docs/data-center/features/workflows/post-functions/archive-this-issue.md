@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Workflows > Post Functions
-- Doc ID: doc-sr4js-26a5adcc-10e6-42aa-8821-b7666869de31-0ee3f415100bf9a4
+- Doc ID: doc-sr4js-0609506d-6748-4064-a29c-390d28a46773-0ee3f415100bf9a4
 - Source: https://docs.adaptavist.com/sr4js/latest/features#workflows--en#post-functions--en#archive-this-issue--en
 
 The _Archive this issue_ post-function automatically archives an issue when when it is transitioned. You can add a condition to define specific criteria that must be met for the post function to archive an issue. For example, if an issue is in the _Resolve Issue_ transition, and is given the Resolution of _Duplicate_, you may want the issue to be archived.

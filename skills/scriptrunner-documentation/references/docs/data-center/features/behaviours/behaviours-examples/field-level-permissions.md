@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Behaviours > Behaviours Examples
-- Doc ID: doc-sr4js-655ad68a-4793-4c30-b2c8-2a76883bc2d0-365d607f6f512391
+- Doc ID: doc-sr4js-aa176d30-f1fd-4982-ab97-e060601b92e9-365d607f6f512391
 - Source: https://docs.adaptavist.com/sr4js/latest/features#behaviours--en#behaviours-examples--en#field-level-permissions--en
 
 We've made it easy for you to specify field permissions. In the example below, we show you how to make a field mandatory if the priority field is set to _High_ or _Highest_. We also have an example on the [Behaviours Tutorial](https://docs.adaptavist.com/sr4js/latest/features/behaviours/behaviours-tutorial) page that shows you how to [make a field read-only unless a user is in a specific role](https://docs.adaptavist.com/sr4js/latest/features/behaviours/behaviours-tutorial#create-a-simple-behaviour-make-a-field-read-only-except-for-a-certain-role--en).

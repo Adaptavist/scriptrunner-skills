@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Best Practices and App Management
-- Doc ID: doc-sr4c-52a792f5-ffc9-46fd-8f1c-8a4bc9a043fd-fb3b3cc63614b1a3
+- Doc ID: doc-sr4c-1d7df3ff-4cca-4628-954e-a48fd9cc64e0-fb3b3cc63614b1a3
 - Source: https://docs.adaptavist.com/sr4c/latest/best-practices-and-app-management#update-staging-environment--en
 
 Learn to create a staging environment so you can run tests safely.

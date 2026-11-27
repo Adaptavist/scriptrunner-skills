@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Behaviours > Behaviours Examples
-- Doc ID: doc-sr4js-d19ec49e-9412-480c-b900-b2b99169350f-883a64ae0d730e88
+- Doc ID: doc-sr4js-f5aa3f7b-00e1-4201-98a2-ac92a03d8c2c-883a64ae0d730e88
 - Source: https://docs.adaptavist.com/sr4js/latest/features#behaviours--en#behaviours-examples--en#modify-field-descriptions--en
 
 You can use Behaviours to modify field descriptions, for example, to make a field mandatory and add a description. For example, you can use the following example to make the _Description_ field required and add a note to the field when the _Priority_ of an issue is set to _Highest_:

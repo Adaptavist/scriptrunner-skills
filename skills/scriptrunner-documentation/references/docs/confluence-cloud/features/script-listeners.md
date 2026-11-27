@@ -3,7 +3,7 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: Features
-- Doc ID: doc-sr4cc-528a0436-6440-41c5-a552-cd3a2305b43b-ca81c012ecac09c9
+- Doc ID: doc-sr4cc-5caf6c66-0058-47e8-8464-c6ce728f4ded-ca81c012ecac09c9
 - Source: https://docs.adaptavist.com/sr4cc/latest/features/script-listeners
 
 Listeners automate procedures and functions when specific events occur in Confluence Cloud.
@@ -41,7 +41,7 @@ ScriptRunner for Confluence enables you to write your own listeners in a script 
 
 1.  Navigate to ScriptRunner and select Script Listeners.
 2.  In Script Listener Name, enter a name for your listener.
-3.  Choose if you want it Enabled (or turned on).
+3.  Choose if you want it _Enabled_ (turned on).
 4.  Choose at least one event for On These Events.
     
     Remember, this is the event(s) that causes your listener to run. These are the available events:

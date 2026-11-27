@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Script fields > Built-In Script Fields
-- Doc ID: doc-sr4js-c2e2ece1-a835-4ff4-85c7-8d5dd51011d1-a0e04e0a99d1531e
+- Doc ID: doc-sr4js-070bb7e9-e311-433c-98de-cab192160807-a0e04e0a99d1531e
 - Source: https://docs.adaptavist.com/sr4js/latest/features#script-fields--en#built-in-script-fields--en#time-of-last-status-change--en
 
 Use this built-in script field to display the date and time an issue's status was last changed. For example, if an issue's status was last changed from _To-do_ to _Done_, this field will display when this change occurred.

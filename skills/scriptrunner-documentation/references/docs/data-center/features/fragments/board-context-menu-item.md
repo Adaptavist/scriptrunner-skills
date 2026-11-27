@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Fragments
-- Doc ID: doc-sr4js-28bf98a2-c9f3-4737-8edf-32f855ac30b6-a29e4f02cdce3849
+- Doc ID: doc-sr4js-050f83a2-a3cb-451e-85c7-23d50b8366f1-a29e4f02cdce3849
 - Source: https://docs.adaptavist.com/sr4js/latest/features#fragments--en#board-context-menu-item--en
 
 This is a variation of a [web item](https://docs.adaptavist.com/sr4js/latest/features/fragments/web-item), that allows you to place a menu item in the context menu (right-click) of issues in a Scrum or Kanban board.

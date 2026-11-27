@@ -3,7 +3,7 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Release Notes > Breaking Changes
-- Doc ID: doc-sr4jc-98a8f749-b788-4336-ad6c-2cecc41398d3-8a53e6df703cb384
+- Doc ID: doc-sr4jc-067021cd-6e0d-4cd6-93c9-be039be8636f-8a53e6df703cb384
 - Source: https://docs.adaptavist.com/sr4jc/latest/release-notes/breaking-changes#atlassian-rest-api-search-endpoints-deprecation--en
 
 As per [Atlassian's changelog notification](https://developer.atlassian.com/changelog/#CHANGE-2046), the Jira Platform REST endpoints listed below will be deprecated and no longer available for use after August 1st 2025\*. We recommend rewriting your code before this date, as the old endpoints will only continue to work until then.

@@ -3,7 +3,7 @@
 - Platform: connect
 - Space: SRC
 - Hierarchy: Scripting
-- Doc ID: doc-src-a7d38c4a-cefb-4255-8613-5bb9050e9800-bbf089a62b59e9e9
+- Doc ID: doc-src-ae514295-bbc8-4056-b473-5ba65cb56a0b-bbf089a62b59e9e9
 - Source: https://docs.adaptavist.com/src/latest/scripting#runtime--en
 
 ScriptRunner Connect runtime is a custom JavaScript runtime based on Google's [V8](https://v8.dev/) engine, which offers strong security guarantees for isolating script executions.
@@ -12,7 +12,7 @@ Because we have our own runtime, it's incompatible with other runtimes, such as 
 
 ## How does that affect you?
 
-When you want to include an [NPM](https://www.npmjs.com/) package in your workspace, it may not be (fully) compatible with our runtime if it's built exclusively for Node or uses browser-based APIs which we don't support. This does not mean that you can't use any NPM package. There are many packages out there that solve the same problem; you just have to try a different one that may be written to utilize (more modern) standardized APIs. For example, an NPM package that uses [Node's crypto](https://nodejs.org/api/crypto.html) module under the hood wouldn't work because we don't support that API. However, if you find a different package that does the same job and uses [Web Crypto API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API), which is standardized, it's more than likely to work (although our Web Crypto support is currently partial).
+When you want to include an [NPM](https://www.npmjs.com/) package in your workspace, it may not be (fully) compatible with our runtime if it's built exclusively for Node or uses browser-based APIs, which we don't support. This does not mean that you can't use any NPM package. There are many packages out there that solve the same problem; you just have to try a different one that may be written to utilize (more modern) standardized APIs. For example, an NPM package that uses [Node's crypto](https://nodejs.org/api/crypto.html) module under the hood wouldn't work because we don't support that API. However, if you find a different package that does the same job and uses [Web Crypto API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API), which is standardized, it's more than likely to work (although our Web Crypto support is currently partial).
 
 We'll be curating a list of verified (to work in our runtime) third-party NPM packages, which you can easily pick from, but you can try out any NPM package you desire.
 

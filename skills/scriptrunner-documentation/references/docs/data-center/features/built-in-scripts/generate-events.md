@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Built-in scripts
-- Doc ID: doc-sr4js-c70c6211-8c8e-4a99-91b6-125b6a0c6e12-7d30eeb136b13e9c
+- Doc ID: doc-sr4js-c82730c6-8dd1-4f35-aca1-fdb19a8bf72f-7d30eeb136b13e9c
 - Source: https://docs.adaptavist.com/sr4js/latest/features#built-in-scripts--en#generate-events--en
 
 Use the _Generate Events_ built-in script to force ScriptRunner to fire an event to be consumed by a listener.

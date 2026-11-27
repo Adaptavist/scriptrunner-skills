@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Release Notes > Breaking changes
-- Doc ID: doc-sr4c-6f32b171-92dd-4eab-8801-64d28c438059-1970f1316de02c8b
+- Doc ID: doc-sr4c-7e097520-0e5a-4e44-9ab6-324107fcd523-1970f1316de02c8b
 - Source: https://docs.adaptavist.com/sr4c/latest/release-notes/breaking-changes#web-panel-breaking-change-deprecation-for-confluence-9--en
 
 The way you can add a `provider class/script` for [web panels](https://docs.adaptavist.com/sr4c/latest/features/fragments/web-panel) is different after [upgrading to Confluence 9.0](https://docs.adaptavist.com/sr4c/latest/get-started/update/compatibility-with-confluence#confluence-9--en).

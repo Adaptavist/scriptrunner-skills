@@ -3,7 +3,7 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features > Built-In Scripts
-- Doc ID: doc-sr4jc-a876e142-cc6a-4c9b-a995-50076385a580-dabeb6de1ec6baab
+- Doc ID: doc-sr4jc-75dfe6b4-a535-4c13-a506-46afad0a732e-dabeb6de1ec6baab
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/built-in-scripts#bulk-clone-work-items--en
 
 You can select Jira work items to clone and move to another space as a set of work items in bulk. To do so:

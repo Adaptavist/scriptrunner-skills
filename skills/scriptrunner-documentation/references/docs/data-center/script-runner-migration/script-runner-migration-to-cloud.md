@@ -3,8 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: ScriptRunner Migration
-- Doc ID: doc-sr4js-59ef4810-f265-4951-864a-c5fdf2362c9d-e491386e6ccdce76
+- Doc ID: doc-sr4js-17aa3b03-308d-4077-b257-db479064eed3-e491386e6ccdce76
 - Source: https://docs.adaptavist.com/sr4js/latest/scriptrunner-migration/scriptrunner-migration-to-cloud
+
+Understand key feature and platform differences for migration, and access guidance and tools to help you rewrite and deploy scripts successfully.
 
 This section provides you with the steps required to move from ScriptRunner for Jira Server/Data Center to Cloud. It also offers guidance on the differences between the two versions of ScriptRunner and provides some details on rewriting scripts and using alternatives.
 

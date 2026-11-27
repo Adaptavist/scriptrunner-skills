@@ -3,16 +3,16 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: Features > Macros > Custom Macros
-- Doc ID: doc-sr4cc-60704961-1383-49c8-89fe-2de9651ff6be-8db938b96f7032ea
+- Doc ID: doc-sr4cc-ac95a931-b9d4-4991-a431-3abd54f1a2a3-8db938b96f7032ea
 - Source: https://docs.adaptavist.com/sr4cc/latest/features/macros/custom-macros#macro-parameters--en
 
 Information about the parameters that can be set up for custom macros.
 
-While creating a custom macro, you can set up a parameter for the user to enter information that the script uses to return information to the page where the macro is used.
+When creating a custom macro, you can set up a parameter for user input, which the script then uses to return information to the page where the macro is used.
 
 Tip: Implicit parameters
 
-The parameters that are available for use that you don't have to add using this method are:
+The parameters that are available for use, which you don't have to add using this method are:
 
 -   `pageVersion`
     
@@ -27,7 +27,7 @@ Implicit parameters are stored in the same map array as user-defined parameters 
 
 ## Set up the macro parameter
 
-When you [create a custom macro](../custom-macros.md), you can add a field that requests the user to input information when the macro is used on a Confluence page. To set up a new parameter, follow these steps:
+When you [create a custom macro](../custom-macros.md), you can add a field that prompts the user for input when the macro is used on a Confluence page. To set up a new parameter, follow these steps:
 
 1.  Navigate to General Configuration > _ScriptRunner_ > Macros > Create Custom Macros.
 2.  Fill out the fields on the screen, including Macro Name, Description, Enabled, Body Type, Output Type, and Script to Execute.
@@ -38,7 +38,7 @@ When you [create a custom macro](../custom-macros.md), you can add a field that 
     Fill out the fields:
     
     1.  Type: Select the type of field you want to create.
-        -   _Attachment_: Allows users to select an attachment from the page when editing the macro on the page. The filename of the attachment is passed to the macro.
+        -   _Attachment_: Allows users to select an attachment from the page while editing the macro. The filename of the attachment is passed to the macro.
         -   _Boolean_: Allows users to add a checkbox field to the macro.
         -   _Confluence Content_: Allows users to select a Confluence page or blog post when editing the macro on a page. The page name is passed to the macro.
         -   _Int_: Allows users to pass a number to the macro when editing the macro on the page.
@@ -62,7 +62,7 @@ The parameter you added appears in a table on the [Custom Macros](../custom-macr
 
 Note: You can select Actions and then Remove the Parameter if it's no longer needed.
 
-Now, when a user adds your custom macro to a page, they are asked to add input to the parameters. Then, the script that the custom macro uses can use that parameter to return information on the page where the macro is used.
+Now, when a user adds your custom macro to a page, they are prompted to provide input to the parameters. Then, the script that the custom macro uses can use that parameter to return information on the page where the macro is used.
 
 Note: How to use the parameters you add:
 

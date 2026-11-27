@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Built-In Scripts > Confluence Administration Built-In Scripts
-- Doc ID: doc-sr4c-ffa53655-1512-4fd8-8096-0d4a1364f77c-0ba4631f3fdae7c2
+- Doc ID: doc-sr4c-563684db-2694-4070-b620-ac07b4b15193-0ba4631f3fdae7c2
 - Source: https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#confluence-administration-built-in-scripts--en#convert-absolute-links-to-confluence-links--en
 
 Prior to upgrading to recent versions of Confluence, you could have created links to pages in Confluence by copying and pasting the URL from the browser address bar.

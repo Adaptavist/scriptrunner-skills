@@ -3,12 +3,10 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: n/a
-- Doc ID: doc-sr4c-a551c0cc-a5a2-40c7-abdd-e984d72de87c-d4a593b49e1c1807
+- Doc ID: doc-sr4c-baacee24-e071-4308-a5ff-f3241e85e933-d4a593b49e1c1807
 - Source: https://docs.adaptavist.com/sr4c/latest/features
 
-Learn about what features the ScriptRunner for Confluence Server/DC app has to offer.
-
-The main features of ScriptRunner allow you to customize, extend, and automate Confluence. Using these features, you can manage pages, spaces, and users.
+Explore built-in scripts, jobs, listeners, macros, fragments, and more to automate, extend, and manage your Confluence content at scale.
 
 ## Content Management
 

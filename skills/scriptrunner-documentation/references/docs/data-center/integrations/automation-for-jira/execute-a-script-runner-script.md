@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Integrations > Automation for Jira
-- Doc ID: doc-sr4js-1f255f25-11c7-4ba6-a63b-e701cabc83a4-f8ef284660671809
+- Doc ID: doc-sr4js-06ba9f21-1a6f-4ea1-9579-9f26959d71ab-f8ef284660671809
 - Source: https://docs.adaptavist.com/sr4js/latest/integrations/automation-for-jira#execute-a-scriptrunner-script--en
 
 The Execute a ScriptRunner script action for [Automation for Jira](https://marketplace.atlassian.com/plugins/com.codebarrel.addons.automation/server/overview) lets you run your own code.

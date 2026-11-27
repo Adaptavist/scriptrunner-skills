@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Get Started > Settings
-- Doc ID: doc-sr4c-079ece0f-214a-412d-9cc7-0e7b4a6ba1b1-4f81addcc5fb893d
+- Doc ID: doc-sr4c-fc1a8d59-beae-4767-8acd-0d0e3e8f0860-4f81addcc5fb893d
 - Source: https://docs.adaptavist.com/sr4c/latest/get-started#settings--en#space-admin-built-in-script-permissions--en
 
 By default, all space administrators have access to some [built-in scripts](https://docs.adaptavist.com/sr4c/latest/features/built-in-scripts/space-administration-built-in-scripts) within ScriptRunner to help administer their space. Admin can restrict or allow access to built-in scripts for users, groups, and/or spaces here.

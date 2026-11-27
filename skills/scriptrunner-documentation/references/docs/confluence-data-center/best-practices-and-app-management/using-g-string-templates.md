@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Best Practices and App Management
-- Doc ID: doc-sr4c-1b5b8533-99c8-4697-a08b-87414247493a-267da7670dd4cda1
+- Doc ID: doc-sr4c-fac7e5cb-0a24-4dff-b5a2-98e852e1dc4d-267da7670dd4cda1
 - Source: https://docs.adaptavist.com/sr4c/latest/best-practices-and-app-management#using-gstring-templates--en
 
 ScriptRunner allows you to write Groovy scripts with dynamically generated text using GString Templates.

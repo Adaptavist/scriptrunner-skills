@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Get Started
-- Doc ID: doc-sr4c-2666748e-1775-4e70-a05c-b3465539eb8b-bbec293b025edb2c
+- Doc ID: doc-sr4c-91813ecb-874b-4710-8ec7-8a5f65842c0f-bbec293b025edb2c
 - Source: https://docs.adaptavist.com/sr4c/latest/get-started#settings--en
 
 Information on the Settings page, where System Administrators can make changes to the app.

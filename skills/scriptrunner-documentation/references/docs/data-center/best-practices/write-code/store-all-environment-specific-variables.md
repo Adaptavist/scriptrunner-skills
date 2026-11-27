@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Best Practices > Write Code
-- Doc ID: doc-sr4js-51ec4c3f-3ba1-4466-ad02-afdb8d8d48be-d3b29dc6470e188f
+- Doc ID: doc-sr4js-940f4d60-3210-426c-bc71-bd44997e7763-d3b29dc6470e188f
 - Source: https://docs.adaptavist.com/sr4js/latest/best-practices/write-code#store-all-environment-specific-variables--en
 
 You may wish to write and test your ScriptRunner scripts on a test/development instance before migrating over to your production instance. Manually editing environment-specific variables in each custom script is time-consuming and prone to errors. We suggest you use names rather than IDs in scripts as the name of custom components do not typically change when migrating to a production instance.
@@ -42,7 +42,7 @@ Here we describe two ways of doing that - one using a simple java class that var
     
     The package `com.acme` is used here, which can be replaced with something meaningful for your company. Because of the package, the class must be placed in a directory: `com/acme` underneath the script root.
     
-    CAUTION: You could use the [Script Editor](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Data_Center_SR4JS/topics/script_editor.dita) to create the class, or add to the file system directly.
+    CAUTION: You could use the [Script Editor](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/production/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Data_Center_SR4JS/topics/script_editor.dita) to create the class, or add to the file system directly.
     
 2.  Then access one of the variables in your script (either inline or using a file):
     

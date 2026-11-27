@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Get Help
-- Doc ID: doc-sr4c-dd9e9999-c371-467c-9f90-eb5d9ad6b72e-a2e68c1cb5b39f53
+- Doc ID: doc-sr4c-550b3215-c32e-42e5-9471-f9c8abe227a2-a2e68c1cb5b39f53
 - Source: https://docs.adaptavist.com/sr4c/latest/get-help#licensing-faq--en
 
 Answers to frequently asked questions about liciging our app.

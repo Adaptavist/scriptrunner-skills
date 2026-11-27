@@ -3,25 +3,25 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features > Workflow Rules
-- Doc ID: doc-sr4jc-558fa2de-b338-47b0-ad63-b758f9975431-d0f6be2262eb0dd1
+- Doc ID: doc-sr4jc-51b18753-7004-4b3b-b7fe-9b963010e0da-d0f6be2262eb0dd1
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules#restrict-transitions--en
 
-A Restrict transitions rule is a workflow condition that extends the functionality of a basic Jira workflow condition. A restricted transition checks to ensure a requirement is met before a transition is made available to users. If the script returns `false`, the transition button is not available for a work item until the condition is met.
+A Restrict transitions rule is a workflow condition that extends the functionality of a basic Jira workflow condition. A restricted transition checks to ensure a requirement is met before a transition is made available to users. If the script returns `false`, the transition button is not available for a Work item until the condition is met.
 
 There are several ways to enhance your workflow using Restrict transitions, as shown in [Example Restrictions and Validators](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/example-restrictions-and-validators), including:
 
 -   Allow a transition only if the summary starts with specified characters.
 -   Restrict transitions if certain fields are not populated.
--   Enforce that the work item must have at least one PDF file attachment to transition.
--   Allow only certain users to transition a work item.
+-   Enforce that the Work item must have at least one PDF file attachment to transition.
+-   Allow only certain users to transition a Work item.
 
 ScriptRunner for Jira Cloud provides workflow Restrict transitions using the [Jira Expression Framework](https://developer.atlassian.com/cloud/jira/platform/jira-expressions). It is not possible to use the REST API.
 
 Navigate to [Context Variables](https://developer.atlassian.com/cloud/jira/platform/jira-expressions/#context-variables) to see the variables provided by this framework that can be used to create expressions. Click the [variables](https://developer.atlassian.com/cloud/jira/platform/jira-expressions-type-reference/#issue) to view the properties that can be called.
 
-## Create a Restrict transition rule
+## Create a Restrict Transition rule
 
-1.  Navigate to the _Workflows_ menu from within Jira's settings.
+1.  Navigate to the Workflows menu from within Jira's settings.
     
     You will see _Active_ and _Inactive_ workflows displayed.
     
@@ -31,7 +31,7 @@ Navigate to [Context Variables](https://developer.atlassian.com/cloud/jira/platf
     
 3.  Select a transition from within the workflow diagram.
     
-    A list of associated workflow functions, including Restrict c onditions, Validate details, Perform action, Triggers, and Properties, is displayed for the selected transition.
+    A list of associated workflow functions, including Restrict transitions, Validate details, Perform actions, Triggers, and Properties, is displayed for the selected transition.
     
 4.  Click Restrict transition, and the workflow's transition options appear.
     
@@ -45,7 +45,7 @@ Navigate to [Context Variables](https://developer.atlassian.com/cloud/jira/platf
     In the _ScriptRunner Script Restrict transition_ field, enter the script condition expression. This script condition must be written as a [Jira expression](https://developer.atlassian.com/cloud/jira/platform/jira-expressions).
     
 
-## Edit a Restrict transition rule
+## Edit a Restrict Transition rule
 
 1.  Navigate to ScriptRunner > Workflows. All existing workflows are displayed as the default.
 2.  Select Restrict transition from the Type drop-down list. You will now see a refined list displayed.

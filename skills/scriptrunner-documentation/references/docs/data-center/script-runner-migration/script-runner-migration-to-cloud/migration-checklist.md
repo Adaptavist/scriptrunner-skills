@@ -3,8 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: ScriptRunner Migration > ScriptRunner Migration to Cloud
-- Doc ID: doc-sr4js-5c6b812b-ef7d-4732-bfcd-96560848ef16-18d152b6a2555221
+- Doc ID: doc-sr4js-d9d8584a-23ab-4642-95c1-2a00b47a3fdb-18d152b6a2555221
 - Source: https://docs.adaptavist.com/sr4js/latest/scriptrunner-migration/scriptrunner-migration-to-cloud/migration-checklist
+
+Use this checklist to plan, execute, and validate your migration to ensure a smooth and successful transition.
 
 ## ✅ Familiarize yourself with Atlassian's migration documentation
 
@@ -21,7 +23,8 @@ Use these resources to learn about feature parity and platform differences betwe
 -   [Migration Cheat Sheet](https://www.scriptrunnerhq.com/locker/migration-cheat-sheet)
 -   [Platform Differences between ScriptRunner for Jira Server/DC and Jira Cloud](platform-differences-between-script-runner-for-jira-server-dc-and-jira-cloud.md)
 -   [Feature Parity and Script Alternatives](feature-parity-and-script-alternatives.md)
--   [JQL Query Comparison](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/jql_query_comparison.dita)
+-   [JQL query comparison](https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/comparison-with-scriptrunner-for-jira-server)
+    
 
 Note: REST APIs
 
@@ -71,7 +74,7 @@ Follow these steps to create a tailored migration plan for a smooth cloud transi
         
         Warning: ScriptRunner Enhanced Search Initial Synchronisation Estimate
         
-        ScriptRunner JQL functions have been implemented as [Enhanced Search](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/scriptrunner_enhanced_search.dita) within ScriptRunner for Jira Cloud. After installation, an initial JQL Keyword sync is required, which may take several days depending on your instance size (for example, 5.8 days for 1 million issues). Factor this sync time into your migration plan and consult our [Enhanced Search documentation](https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/scriptrunner-enhanced-search-jql-keywords-synchronization#jql-keyword-synchronisation--en) for more details.
+        ScriptRunner JQL functions have been implemented as [Enhanced Search](../../../cloud/features/script-runner-enhanced-search.md) within ScriptRunner for Jira Cloud. After installation, an initial JQL Keyword sync is required, which may take several days depending on your instance size (for example, 5.8 days for 1 million issues). Factor this sync time into your migration plan and consult our [Enhanced Search documentation](https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/scriptrunner-enhanced-search-jql-keywords-synchronization#jql-keyword-synchronisation--en) for more details.
         
     -   Resources: Identify and allocate the necessary resources, including personnel, tools, and budget, to support the migration process.
     -   Responsibilities: Clearly define roles and responsibilities for all stakeholders involved in the migration to ensure accountability and smooth execution.
@@ -91,7 +94,7 @@ See our detailed guide on [Rewriting Scripts for Cloud](rewrite-scripts-for-clou
 
 ## ✅ Rewrite your saved ScriptRunner JQL query filters
 
-Both versions of ScriptRunner use JQL Functions. However, this feature has been implemented as [Enhanced Search](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/scriptrunner_enhanced_search.dita) within ScriptRunner for Jira Cloud. You might need to rewrite your saved JQL query filters that use ScriptRunner JQL functions.
+Both versions of ScriptRunner use JQL Functions. However, this feature has been implemented as [Enhanced Search](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/production/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/scriptrunner_enhanced_search.dita) within ScriptRunner for Jira Cloud. You might need to rewrite your saved JQL query filters that use ScriptRunner JQL functions.
 
 Note: JCMA and ScriptRunner JQL functions
 
@@ -158,7 +161,7 @@ Warning: These features are copied and then deactivated, with any code commented
 
 #### JQL functions supported by JCMA
 
-If you are using [Enhanced Search](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/scriptrunner_enhanced_search.dita) JQL functions and Keywords, you must complete an [initial synchronisation](https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/scriptrunner-enhanced-search-jql-keywords-synchronization) after migrating so that all functions and keywords work.
+If you are using [Enhanced Search](../../../cloud/features/script-runner-enhanced-search.md) JQL functions and Keywords, you must complete an [initial synchronisation](https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/scriptrunner-enhanced-search-jql-keywords-synchronization) after migrating so that all functions and keywords work.
 
 JCMA automatically migrates filters containing ScriptRunner JQL functions if equivalent Enhanced Search functions exist. Filters with non-equivalent ScriptRunner JQL functions will be deleted during migration.
 
@@ -230,7 +233,7 @@ Train your admins on the differences between Jira Data Center and Jira Cloud:
 -   Make sure they're familiar with the new ScriptRunner for Jira Cloud interface and capabilities. To get them started, refer your admins to our [ScriptRunner for Jira Cloud training](../../../cloud/uncategorized/t/training.md) documentation.
 -   Highlight the differences in [scripting in ScriptRunner for Jira Cloud](../../../cloud/get-started/scripting-in-script-runner-for-jira-cloud.md).
 
-Train the rest of your team on [Enhanced Search](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/scriptrunner_enhanced_search.dita) so they're familiar with the new functionality.
+Train the rest of your team on [Enhanced Search](../../../cloud/features/script-runner-enhanced-search.md) so they're familiar with the new functionality.
 
 ## ✅ Go live
 

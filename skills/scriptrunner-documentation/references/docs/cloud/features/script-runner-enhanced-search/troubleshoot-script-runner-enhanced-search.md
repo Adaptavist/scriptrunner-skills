@@ -3,12 +3,12 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features > ScriptRunner Enhanced Search
-- Doc ID: doc-sr4jc-a28bbef1-ca59-4207-8087-7465b9ac9d8e-89d556d51b1d019a
+- Doc ID: doc-sr4jc-e0498490-c5dd-4d15-811c-e11702004959-89d556d51b1d019a
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search#troubleshoot-scriptrunner-enhanced-search--en
 
 Note: Enhanced Search and ScriptRunner Enhanced Search
 
-If you purchase ScriptRunner for Jira Cloud, you will automatically receive [ScriptRunner Enhanced Search](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/scriptrunner_enhanced_search.dita) for free - this is included as part of your license. However, if you find that you're not using any of the other features offered by ScriptRunner for Jira Cloud, and you're only using Enhanced Search functionality, you can purchase [Enhanced Search](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner-Enhanced_Search_for_Jira_Cloud/Enhanced_Search_For_Jira_Cloud_ES.ditamap) as a standalone product instead.
+If you purchase ScriptRunner for Jira Cloud, you will automatically receive [ScriptRunner Enhanced Search](../script-runner-enhanced-search.md) for free - this is included as part of your license. However, if you find that you're not using any of the other features offered by ScriptRunner for Jira Cloud, and you're only using Enhanced Search functionality, you can purchase Enhanced Search as a standalone product instead.
 
 Please note that both apps are not designed to be used simultaneously, as the data is stored separately. Although both products work independently, you will only see filters in the app it was created from and could duplicate work. If you currently have both products installed, or if you would like to switch from one to the other, please contact our [Support](https://the-adaptavist-group-support.atlassian.net/servicedesk/customer/portal/27/user/login?destination=portal%2F27) team, who can manually transfer your data on your behalf.
 

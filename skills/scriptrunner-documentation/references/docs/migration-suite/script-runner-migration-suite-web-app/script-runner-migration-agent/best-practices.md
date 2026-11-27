@@ -3,7 +3,7 @@
 - Platform: migration-suite
 - Space: SMS
 - Hierarchy: ScriptRunner Migration Suite Web App > ScriptRunner Migration Agent
-- Doc ID: doc-sms-90ba9c74-cc5e-491a-8176-4e802a311855-e9ca2d66f0261d90
+- Doc ID: doc-sms-bc01c752-11e2-415b-9e4a-45d5307c4a04-e9ca2d66f0261d90
 - Source: https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-agent/best-practices
 
 There are many best practices for writing prompts in AI. Here are a few of our recommendations:

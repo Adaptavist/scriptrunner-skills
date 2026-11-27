@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features
-- Doc ID: doc-sr4js-6b429688-3e89-4173-9246-9f7e235e5c50-36059a7f1e090f2b
+- Doc ID: doc-sr4js-ee350bc9-4e5d-4df3-aaa8-25b6511ffada-36059a7f1e090f2b
 - Source: https://docs.adaptavist.com/sr4js/latest/features#script-editor--en
 
 ## What is the Script Editor?

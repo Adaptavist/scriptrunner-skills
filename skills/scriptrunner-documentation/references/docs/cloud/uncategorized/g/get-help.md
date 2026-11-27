@@ -3,8 +3,10 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: n/a
-- Doc ID: doc-sr4jc-7c33e327-8a8d-44c2-98e3-c538e8c051cb-47988259ea5f2462
+- Doc ID: doc-sr4jc-794c778e-4511-4263-a1c0-567d61f9a082-47988259ea5f2462
 - Source: https://docs.adaptavist.com/sr4jc/latest/get-help
+
+Access self-service resources, tutorials, and live support options to get help with ScriptRunner.
 
 You will find several links in this section that provide access to self-service information as well as live support. If you want to learn more, check out many of the informative ScriptRunner [blog posts](https://www.adaptavist.com/blog/category/scriptrunner)!
 

@@ -3,10 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: n/a
-- Doc ID: doc-sr4js-93bb37a4-41d3-499a-a653-8765a15db5bb-081beafed56b251a
+- Doc ID: doc-sr4js-f458fded-dce0-4670-b548-3ac04bda3362-081beafed56b251a
 - Source: https://docs.adaptavist.com/sr4js/latest/get-started
 
-Learn how to install and navigate ScriptRunner.
+Find everything you need to install, configure, and begin working with ScriptRunner for Jira Data Center.
 
 -   [Introduction to ScriptRunner](../../get-started/introduction-to-script-runner.md)
 -   [Feature Overview](../../get-started/feature-overview.md)

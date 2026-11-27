@@ -3,8 +3,10 @@
 - Platform: migration-suite
 - Space: SMS
 - Hierarchy: n/a
-- Doc ID: doc-sms-4e24383b-361c-4ceb-a530-4cdc04f4a21d-b91199138bef1b10
+- Doc ID: doc-sms-3d165536-3f90-4052-b256-4134471c26fb-b91199138bef1b10
 - Source: https://docs.adaptavist.com/sms/latest/training
+
+Watch ScriptRunner Migration Suite videos and interactive training.
 
 ## Introduction
 

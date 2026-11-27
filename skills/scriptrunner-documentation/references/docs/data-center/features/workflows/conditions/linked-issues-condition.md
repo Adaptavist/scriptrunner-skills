@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Workflows > Conditions
-- Doc ID: doc-sr4js-f68410e7-c937-4344-95e9-4e146fe32fae-902036399dbcbe03
+- Doc ID: doc-sr4js-adc62d50-19c6-43ef-8bc4-984e777c064d-902036399dbcbe03
 - Source: https://docs.adaptavist.com/sr4js/latest/features#workflows--en#conditions--en#linked-issues-condition--en
 
 Use the _Linked issues condition_ to control whether or not a user can transition an issue based on the status or resolution of linked issues. There are several options available when setting up the _Linked Issues Condition_, and these are described below.

@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Behaviours
-- Doc ID: doc-sr4js-b691c542-1d37-4d6c-8fd8-0dba9ebf4755-d0160b5fd2b4e6d8
+- Doc ID: doc-sr4js-24903d2e-12ac-4e1d-824d-d65db0e34250-d0160b5fd2b4e6d8
 - Source: https://docs.adaptavist.com/sr4js/latest/features#behaviours--en#migrating-behaviours--en
 
 You may want to migrate behaviours from one Jira instance to another. ScriptRunner has native integration with [Configuration Manager for Jira](https://docs.adaptavist.com/sr4js/latest/integrations/other-apps/configuration-manager-for-jira-cmj), which can migrate Behaviours between instances with compatible versions of ScriptRunner.
@@ -50,8 +50,7 @@ Below we explain the process of migrating Behaviours using the HTTP API. Take ca
     
     Warning: Project and issue types are also represented by IDs and might need updating before migration.
     
-3.  \`
-4.  Once the XML is updated, post it to your production instance, using:
+3.  Once the XML is updated, post it to your production instance, using:
     
     ```
     curl  -X POST -u admin:admin --header "X-Atlassian-Token:no-check" --header "Content-Type:application/xml" --data-binary @behaviour_26a15255-ddc9-4575-ad4f-d3efae9199d8.xml <jira-base-url>/rest/scriptrunner/behaviours/latest/config/26a15255-ddc9-4575-ad4f-d3efae9199d8
@@ -61,7 +60,7 @@ Below we explain the process of migrating Behaviours using the HTTP API. Take ca
     
     Warning: If a behaviour already exists with this ID, the command above overwrites it.
     
-5.  Once you have recreated any behaviours, you can write the mappings to the production server:
+4.  Once you have recreated any behaviours, you can write the mappings to the production server:
     
     ```
     curl  -X POST -u admin:admin --header "X-Atlassian-Token:no-check" --header "Content-Type:application/xml" --data-binary @bh.xml <jira-base-url>/rest/scriptrunner/behaviours/latest/config

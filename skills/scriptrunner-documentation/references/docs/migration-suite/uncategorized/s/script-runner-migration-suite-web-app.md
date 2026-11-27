@@ -3,10 +3,12 @@
 - Platform: migration-suite
 - Space: SMS
 - Hierarchy: n/a
-- Doc ID: doc-sms-a8bc9e61-ed3d-4759-9c23-58a4078c9658-eb76c6ca01abf884
+- Doc ID: doc-sms-cf905316-61dd-4579-b4c4-eb25ef9f4d61-eb76c6ca01abf884
 - Source: https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app
 
-The ScriptRunner Migration Suite is a suite of tools that helps you plan, analyse, convert and deploy scripts with confidence, significantly reducing the manual migration effort. It supports (not replaces) your expertise.
+The ScriptRunner Migration Suite is a suite of tools that helps you plan, analyse, convert and deploy scripts with confidence, significantly reducing the manual migration effort.
+
+It supports (not replaces) your expertise.
 
 The ScriptRunner Migration Suite web app is made up of:
 

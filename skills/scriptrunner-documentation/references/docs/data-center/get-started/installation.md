@@ -3,8 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Get Started
-- Doc ID: doc-sr4js-572cfd6e-68fb-4035-90bb-8429cdaa2717-c7645078558c2e61
+- Doc ID: doc-sr4js-7ae06270-c599-4477-b7bb-408ae5049dce-c7645078558c2e61
 - Source: https://docs.adaptavist.com/sr4js/latest/get-started/installation
+
+Install ScriptRunner for Jira Data Center step by step, directly from the Atlassian Marketplace.
 
 You can install ScriptRunner for Jira as follows:
 

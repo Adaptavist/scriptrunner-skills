@@ -3,8 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: n/a
-- Doc ID: doc-sr4js-eec15ece-55aa-4f15-8717-f277146ef178-7232eb6acc27308b
+- Doc ID: doc-sr4js-ef59b489-83fa-48a6-a880-edba93cbff78-7232eb6acc27308b
 - Source: https://docs.adaptavist.com/sr4js/latest/get-involved
+
+Contribute feedback, join beta programs, and connect with the ScriptRunner user community.
 
 ## Get involved with our ScriptRunner products
 

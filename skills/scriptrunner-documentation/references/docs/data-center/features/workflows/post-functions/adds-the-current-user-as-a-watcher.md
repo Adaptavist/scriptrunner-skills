@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Workflows > Post Functions
-- Doc ID: doc-sr4js-83c221f9-0267-4686-a338-5054dbf08d04-0cc6fd31a70b3245
+- Doc ID: doc-sr4js-4a80830b-e756-4205-91f5-82ea1c514a37-0cc6fd31a70b3245
 - Source: https://docs.adaptavist.com/sr4js/latest/features#workflows--en#post-functions--en#adds-the-current-user-as-a-watcher--en
 
 Use the _Adds the current user as a watcher_ post function to add the currently logged-in user as a watcher when they transition the issue. You can apply conditions to this post function so the user is only added as a watcher in specific contexts. For example, you could add a condition so this post function only applies to _Bug_ issues.

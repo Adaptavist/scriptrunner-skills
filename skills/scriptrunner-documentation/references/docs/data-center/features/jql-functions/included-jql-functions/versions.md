@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > JQL Functions > Included JQL Functions
-- Doc ID: doc-sr4js-50aa93a9-b22f-4a0e-93f0-0d4aaf148ede-158a1659425d1803
+- Doc ID: doc-sr4js-a0ab3877-2e9c-48b5-a66b-4863a4a04bcf-158a1659425d1803
 - Source: https://docs.adaptavist.com/sr4js/latest/features#jql-functions--en#included-jql-functions--en#versions--en
 
 ## releaseDate

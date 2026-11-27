@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features
-- Doc ID: doc-sr4js-6f6e2d33-d426-417d-b838-732e93d408c1-494873f872bddd94
+- Doc ID: doc-sr4js-6f344551-039b-458f-a7cd-2d2359983b20-494873f872bddd94
 - Source: https://docs.adaptavist.com/sr4js/latest/features#script-registry--en
 
 The Script Registry allows you to search your ScriptRunner custom scripts, view type-checking errors or deprecation warnings, and export all scripts and configurations on your instance.

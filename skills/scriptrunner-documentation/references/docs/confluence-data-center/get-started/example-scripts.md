@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Get Started
-- Doc ID: doc-sr4c-aa83e989-5e36-4322-9915-1c378c80012e-9a813c15d428c4b4
+- Doc ID: doc-sr4c-804525d1-506b-4876-9a44-8c27ae237461-9a813c15d428c4b4
 - Source: https://docs.adaptavist.com/sr4c/latest/get-started#example-scripts--en
 
 The _Example Scripts_ modal is your go-to destination for finding basic examples and Adaptavist [Example Scripts](https://www.scriptrunnerhq.com/help/example-scripts) without having to leave the ScriptRunner app.

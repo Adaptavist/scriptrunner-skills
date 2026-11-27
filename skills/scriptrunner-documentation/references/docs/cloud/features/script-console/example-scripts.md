@@ -3,7 +3,7 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features > Script Console
-- Doc ID: doc-sr4jc-0f1b0e03-5574-427d-b270-890491eb0a36-de99eb600194196e
+- Doc ID: doc-sr4jc-4f6e1869-86b4-4f95-9244-0fc262b043df-de99eb600194196e
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/script-console#example-scripts--en
 
 We have provided a few example scripts below. These examples serve as a good starting point for writing and editing your own code. Once you have completed your code changes, you can test it by clicking the Run button.

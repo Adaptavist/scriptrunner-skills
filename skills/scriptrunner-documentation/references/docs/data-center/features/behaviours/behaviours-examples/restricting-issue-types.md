@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Behaviours > Behaviours Examples
-- Doc ID: doc-sr4js-25a8fa42-393e-44a0-8b0d-f3dd3619d089-935812c75c2b46d6
+- Doc ID: doc-sr4js-2a1d59d0-d383-4b98-a994-2dace5a77d6a-935812c75c2b46d6
 - Source: https://docs.adaptavist.com/sr4js/latest/features#behaviours--en#behaviours-examples--en#restricting-issue-types--en
 
 Jira issue type schemes are not very flexible, as you cannot limit the available issue types in a project. Typically, if someone has permission to create an issue in a project, they can create every issue type in the project's issue type scheme.
@@ -126,7 +126,7 @@ You can use the following example to make sure members of the `Users` role can o
 The following four outcomes are possible when testing this behaviour:
 
 -   Those not in the _Users_ role will see all available issue types
--   Those in the _Users_ role will be restricted to the _Task_ issue type only. \`
+-   Those in the _Users_ role will be restricted to the _Task_ issue type only.
 
 Note: If enforcing specific issue types is critical, we recommend you implement a workflow validator (such as a [simple scripted validator](https://docs.adaptavist.com/sr4js/latest/features/workflows/validators/simple-scripted-validators)) on the Create transition. This adds an extra layer of security beyond Behaviours, which only affect the browser interface and not the REST API.
 

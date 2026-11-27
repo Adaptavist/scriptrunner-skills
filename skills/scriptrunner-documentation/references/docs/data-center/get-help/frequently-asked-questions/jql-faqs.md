@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Get Help > Frequently Asked Questions
-- Doc ID: doc-sr4js-60336540-92c1-492c-b4aa-b0c45434f5c6-bdc543e2ce0b4185
+- Doc ID: doc-sr4js-8aeb62d3-91a8-43d7-92f5-d437242f603b-bdc543e2ce0b4185
 - Source: https://docs.adaptavist.com/sr4js/latest/get-help#frequently-asked-questions--en#jql-faqs--en
 
 ## When are scripted fields changes updated so that the result can be found with a JQL search?

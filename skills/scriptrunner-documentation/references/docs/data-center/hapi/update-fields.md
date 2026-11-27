@@ -3,8 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: HAPI
-- Doc ID: doc-sr4js-6fc96f7e-1be2-479f-9345-cf30eca3761f-cd67a95ca8269aec
+- Doc ID: doc-sr4js-3bfcd1cd-f6aa-47e8-b012-d1b6dba191e3-cd67a95ca8269aec
 - Source: https://docs.adaptavist.com/sr4js/latest/hapi#update-fields--en
+
+Update individual issue fields using HAPI, with examples covering standard and custom field types.
 
 |  |  |
 | --- | --- |

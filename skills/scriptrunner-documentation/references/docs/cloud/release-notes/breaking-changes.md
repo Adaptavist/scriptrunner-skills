@@ -3,8 +3,54 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Release Notes
-- Doc ID: doc-sr4jc-2ea82a68-6f87-4439-b2d9-32738a85d910-bb917bc5ad3a90d5
+- Doc ID: doc-sr4jc-0b5c75ba-781a-4455-b63c-a564621365b0-bb917bc5ad3a90d5
 - Source: https://docs.adaptavist.com/sr4jc/latest/release-notes/breaking-changes
+
+Learn about changes that may require updates to your existing implementations.
+
+## Forge events: deletion events for child entities
+
+From October 30th, 2026 deleting a space or work item will no longer send deletion events for some of the items inside it, affecting Script Listeners that rely on those events.
+
+### What's changing
+
+As part of moving ScriptRunner for Jira Cloud from Atlassian Connect to Forge, Script Listeners are receiving events through Atlassian's Forge product events instead of Connect webhooks.
+
+We will switch to Forge product events on October 30th, 2026. Until then, listeners behave as they do today.
+
+With Atlassian Connect, deleting a parent entity also sends a deletion event for some of its child entities. For example, deleting a work item also sends a deletion event for each of its comments, worklogs, and issue links.
+
+With Forge, Atlassian sends only a single deletion event for the parent entity. So in this example, only the work item deletion event is sent and no separate events are sent for its children. Script Listeners that rely on these child deletion events will stop firing in that situation. This is how Atlassian's Forge platform works, so ScriptRunner cannot make any changes. For details, refer to [Atlassian's Forge events documentation](https://developer.atlassian.com/platform/forge/events/#handling-cascading-events-in-jira).
+
+### Potential impacts on Script Listeners
+
+You are affected if both of the following apply:
+
+-   You have Script Listeners that run on deletion events for child entities, such as Worklog Deleted, Comment Deleted, Issue Link Deleted, or Version Deleted.
+-   You rely on those listeners firing when the parent space or work item is deleted.
+
+Listeners still fire when you delete a child entity directly.
+
+Tip: When you delete a work item, deletion events are no longer sent for its worklogs, comments, or issue links, and when you delete a space, deletion events are no longer sent for its versions. This change does not affect Issue Deleted events on space deletion or Attachment Deleted events on work item deletion, because those events were never sent by Connect in those cases. Board Deleted and Issue Type Deleted events continue to be sent by Forge.
+
+ScriptRunner for Jira Cloud provides you with [Deprecation Reports](deprecation-notices-overview/deprecation-reports.md) that highlight the usage of Atlassian's deprecated endpoints, fields, and event types in your instance.
+
+## Migration of admin pages to Forge
+
+We have migrated ScriptRunner for Jira Cloud admin pages to Forge!
+
+All of your data will remain unaffected and accessible. Other than the following updates, ScriptRunner for Jira Cloud features function the same, and there is no removal of features. We have a couple of changes in how you access ScriptRunner for Jira Cloud and Enhanced Search:
+
+-   [New admin page navigation](https://docs.adaptavist.com/sr4jc/latest/release-notes/release-notes#concept-3266--en__section-56)
+-   [Updated ScriptRunner visibility for non-administrators](https://docs.adaptavist.com/sr4jc/latest/release-notes/release-notes#concept-3266--en__section-147)
+
+Warning:
+
+Action Required: Update your bookmarks
+
+Administration page URLs have changed since migration. Please update your bookmarks for any administration pages you have saved.
+
+To learn more, please visit the [Release Notes](https://docs.adaptavist.com/sr4jc/latest/release-notes/release-notes#concept-3266--en).
 
 ## Behaviours planned maintenance
 

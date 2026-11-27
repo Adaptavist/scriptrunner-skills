@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Built-in scripts
-- Doc ID: doc-sr4js-32bc89a6-02be-4529-887a-1acdcfeedb33-747a518668390173
+- Doc ID: doc-sr4js-cc7b73ca-c830-4674-b557-1e9680ff1eea-747a518668390173
 - Source: https://docs.adaptavist.com/sr4js/latest/features#built-in-scripts--en#clean-workflows--en
 
 Use the _Clean Workflows_ built-in script to clean up your instance by removing workflow functions left behind by uninstalled/disabled apps.

@@ -3,7 +3,7 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: Get Started > Navigation
-- Doc ID: doc-sr4cc-ebdd3905-96f1-4e19-a810-92229ec6f69e-7d69cc1566a03e83
+- Doc ID: doc-sr4cc-087db6fd-c560-428b-b8a0-4b68bfc07348-7d69cc1566a03e83
 - Source: https://docs.adaptavist.com/sr4cc/latest/get-started/navigation/scriptrunner-home
 
 Find out about the features and how to navigate the ScriptRunner Homepage.

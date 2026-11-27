@@ -3,7 +3,7 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features
-- Doc ID: doc-sr4jc-7aad31e2-7f26-42f7-8809-18d33f787dde-5cda88beb75be51f
+- Doc ID: doc-sr4jc-c2a12cab-7bd0-4b80-9194-37805860c151-5cda88beb75be51f
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/script-manager
 
 Learn how to use the Script Manager to create, manage, and run scripts in your Jira instance.
@@ -77,6 +77,8 @@ To edit saved `.groovy` or `.jel` scripts, follow these steps:
 5.  Click Save when you have finished editing.
     
     Changes are not saved automatically. When there are unsaved changes, the Save button is displayed.
+    
+    Tip: Script Manager stores only the latest saved version of each script. Because multiple users can edit the same saved script at the same time, be aware that the most recent save becomes the final version.
     
 
 ## Rename existing scripts and folders
@@ -161,7 +163,7 @@ You can reuse scripts saved in _Script Manager_ in the Groovy and Jira Expressio
 | [Scripted Fields](scripted-fields.md) |  |  |
 | [Script Listeners](script-listeners.md) |  |  |
 | [Script Listeners (conditions only)](script-listeners.md) |  |  |
-| [Escalation Service](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/escalation_service.dita) |  |  |
+| [Escalation Service](escalation-service.md) |  |  |
 | [Workflow Rules (Perform Actions](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/perform-actions) |  |  |
 | [Workflow Rules (Validate Details](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/validate-details) |  |  |
 | [Workflow Rules (Restrict Transition](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/restrict-transitions) |  |  |
@@ -196,13 +198,13 @@ As an example, let's choose to create a new Scheduled Job.
         
         This creates a new reusable script without overwriting the original.
         
-        Note:
+        Note: View and edit your saved configurations
         
-        In Script Manager, you can view your saved script files and identify exactly where they are configured in your ScriptRunner for Jira Cloud instance. This includes details on the location and number of configurations where your scripts are loaded.
+        In Script Manager, you can view your saved script files and identify exactly where they are configured in your ScriptRunner for Jira Cloud instance. This includes details on the location and number of configurations where your scripts are loaded. Each of the configurations listed are clickable and open an editing tab within Script Manager.
         
         For example, say you have a file that you set up to be loaded within the configuration of two Script Listeners, you can review that file's usage details. Click the Script Usage drop-down list, and a summary of all configurations loading that script displays. Scroll through the feature categories showing where that file is in use and choose the Script Listeners, as shown below:
         
-        You can check scripts that have been loaded for the following features: [Workflow Rules](workflow-rules.md), [Scheduled Jobs](scheduled-jobs.md), [Script Listeners](script-listeners.md), [Escalation Service](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/escalation_service.dita), and [Scripted Fields](scripted-fields.md).
+        You can check scripts that have been loaded for the following features: [Workflow Rules](workflow-rules.md), [Scheduled Jobs](scheduled-jobs.md), [Script Listeners](script-listeners.md), [Escalation Service](escalation-service.md), and [Scripted Fields](scripted-fields.md).
         
 
 ### Reuse scripts by importing reusable Groovy code

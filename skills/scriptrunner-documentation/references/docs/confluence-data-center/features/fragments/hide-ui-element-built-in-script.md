@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Fragments
-- Doc ID: doc-sr4c-da957a1d-9d1a-478f-b682-b26c353567e8-30aa327cfc435bdc
+- Doc ID: doc-sr4c-b3d3fcb7-80fe-4d55-a318-f80b9aa9fc25-30aa327cfc435bdc
 - Source: https://docs.adaptavist.com/sr4c/latest/features#fragments--en#hide-ui-element-built-in-script--en
 
 This built-in script allows you to hide any system web item or panel, or those that are provided by plugins.

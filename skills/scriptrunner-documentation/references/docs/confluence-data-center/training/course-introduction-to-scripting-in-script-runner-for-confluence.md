@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Training
-- Doc ID: doc-sr4c-67903205-1cc3-420a-a2ae-0e45adc54a80-3fef777b9c32cdc1
+- Doc ID: doc-sr4c-2219fcc6-a4b0-4852-96e4-6a7081bf2e55-3fef777b9c32cdc1
 - Source: https://docs.adaptavist.com/sr4c/latest/training#course-introduction-to-scripting-in-scriptrunner-for-confluence--en
 
 Take a video course about scripting in ScriptRunner for Confluence Data Center/Server.

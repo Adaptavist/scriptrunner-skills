@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Get Help > Troubleshooting
-- Doc ID: doc-sr4js-ffd48d11-1eb1-4643-9417-89bf47b607bc-9ab2d133a80c5605
+- Doc ID: doc-sr4js-ed889b04-5b4e-4711-a9e6-8e293c473c83-9ab2d133a80c5605
 - Source: https://docs.adaptavist.com/sr4js/latest/get-help#troubleshooting--en#troubleshooting-behaviours--en
 
 ## Cannot Add Behaviours

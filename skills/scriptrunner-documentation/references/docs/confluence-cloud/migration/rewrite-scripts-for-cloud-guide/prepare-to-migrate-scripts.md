@@ -3,7 +3,7 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: Migration > Rewrite Scripts for Cloud Guide
-- Doc ID: doc-sr4cc-b716d259-1552-4252-94ac-a3c9991e50f4-07023eb6799b82bb
+- Doc ID: doc-sr4cc-6b4b40a9-7bdb-4848-9ac9-edf0319524a7-07023eb6799b82bb
 - Source: https://docs.adaptavist.com/sr4cc/latest/migration/rewrite-scripts-for-cloud-guide#prepare-to-migrate-scripts--en
 
 Our best practices before completing a migration between ScriptRunner for Server/DC and Cloud.

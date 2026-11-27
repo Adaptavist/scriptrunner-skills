@@ -3,12 +3,10 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: n/a
-- Doc ID: doc-sr4c-c1b962c7-a420-45b0-bddd-923b894bfd91-144a9a1db6914755
+- Doc ID: doc-sr4c-80b724d6-47fb-41ce-b035-61d5899dd470-144a9a1db6914755
 - Source: https://docs.adaptavist.com/sr4c/latest/release-notes
 
-Check out what's new for ScriptRunner for Confluence.
-
-Release notes contain information about new features and bug fixes. We'll also include must-know information about the products in this section.
+See what's new in each release, and check fixes, breaking changes, and security notices before you upgrade your Confluence instance.
 
 -   [Breaking Changes](../../release-notes/breaking-changes.md)
 -   [HAPI Changelog](../../release-notes/hapi-changelog.md)

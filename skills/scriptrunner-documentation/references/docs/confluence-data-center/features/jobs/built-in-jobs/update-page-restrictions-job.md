@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Jobs > Built-In Jobs
-- Doc ID: doc-sr4c-c596b0d2-da1b-43b1-8eb5-e11704f90d5b-08e6a246dbecb7df
+- Doc ID: doc-sr4c-27c8e086-d6c6-4f7c-8dc0-1b3f009ac2e1-08e6a246dbecb7df
 - Source: https://docs.adaptavist.com/sr4c/latest/features#jobs--en#built-in-jobs--en#update-page-restrictions-job--en
 
 Use the _Update Page Restrictions_ built-in job to schedule and manage restrictions to parent and child pages.

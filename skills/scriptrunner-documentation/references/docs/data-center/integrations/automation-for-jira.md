@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Integrations
-- Doc ID: doc-sr4js-668e783e-184a-40b3-86e3-5838feff32bf-6223a62f3c784334
+- Doc ID: doc-sr4js-671de00b-1cee-4c61-8015-7f0bacd741af-6223a62f3c784334
 - Source: https://docs.adaptavist.com/sr4js/latest/integrations/automation-for-jira
 
 We have developed actions and triggers you can use in [Automation for Jira](https://marketplace.atlassian.com/plugins/com.codebarrel.addons.automation/server/overview):

@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Behaviours > Behaviours Examples
-- Doc ID: doc-sr4js-305a55d2-dbbc-409c-876d-86e03991224d-8f95c68bf4a9aeb1
+- Doc ID: doc-sr4js-8faed19d-e476-4fb8-8f6b-0dd6583b1a44-8f95c68bf4a9aeb1
 - Source: https://docs.adaptavist.com/sr4js/latest/features#behaviours--en#behaviours-examples--en#scripted-conditions--en
 
 The following script is a collection of example conditions that can be used with Behaviours. These conditions demonstrate various ways to dynamically control field properties based on different criteria such as user roles, custom field values, and workflow states. To use one of these conditions in a Behaviour script, select the relevant part of the code and adapt it to your specific needs.

@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Best Practices > Write Code
-- Doc ID: doc-sr4js-64ed2f9f-66e8-44a6-acc1-c9377ed1a9e3-24ddfc1644a2f34b
+- Doc ID: doc-sr4js-5776fe67-9c91-4b16-851a-d54ab6a44a08-24ddfc1644a2f34b
 - Source: https://docs.adaptavist.com/sr4js/latest/best-practices/write-code#script-roots--en
 
 Script Roots are directories in the [Script Editor](https://docs.adaptavist.com/sr4js/latest/features/script-editor) that ScriptRunner will automatically scan for scripts. The scripts you store here will be available across all of ScriptRunner.

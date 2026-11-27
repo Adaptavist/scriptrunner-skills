@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Resources
-- Doc ID: doc-sr4c-2ec51da7-c35c-49f5-b649-3a72877924a8-9da035683cf35cb5
+- Doc ID: doc-sr4c-0adeb3ed-0499-49d8-b8c5-5d691c8a3a3e-9da035683cf35cb5
 - Source: https://docs.adaptavist.com/sr4c/latest/features#resources--en#slack-connection--en
 
 Follow these instructions to create a connection to Slack.

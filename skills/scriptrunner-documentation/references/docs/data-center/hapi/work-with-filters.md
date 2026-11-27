@@ -3,10 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: HAPI
-- Doc ID: doc-sr4js-49e00529-170f-4dde-8f8e-227ac8d4243d-bc97e00824a77844
+- Doc ID: doc-sr4js-8af7d7c4-4401-4b96-ad3a-24bb4769decd-bc97e00824a77844
 - Source: https://docs.adaptavist.com/sr4js/latest/hapi#work-with-filters--en
 
-With HAPI we've made it easy for you to work with filters.
+Find and manage saved Jira filters using HAPI, including searching by name or owner.
 
 ## Finding filters
 

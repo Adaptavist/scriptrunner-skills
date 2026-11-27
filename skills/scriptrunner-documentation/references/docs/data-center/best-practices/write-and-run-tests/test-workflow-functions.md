@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Best Practices > Write and Run Tests
-- Doc ID: doc-sr4js-fb9f762a-381b-40fa-9ceb-738f62100e76-f219531ab7d3f3b2
+- Doc ID: doc-sr4js-17ed8112-20da-4d0a-9246-6de1da3f2b25-f219531ab7d3f3b2
 - Source: https://docs.adaptavist.com/sr4js/latest/best-practices/write-and-run-tests#test-workflow-functions--en
 
 ## Example Scenario

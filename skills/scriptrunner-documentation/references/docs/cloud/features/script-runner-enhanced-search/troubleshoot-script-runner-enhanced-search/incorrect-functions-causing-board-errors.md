@@ -3,7 +3,7 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features > ScriptRunner Enhanced Search > Troubleshoot ScriptRunner Enhanced Search
-- Doc ID: doc-sr4jc-e308862c-ca90-4a31-8a15-532a33d92ef8-967b1587fe86ae0e
+- Doc ID: doc-sr4jc-574c9675-3a4a-489a-93ab-86b50c9aed7d-967b1587fe86ae0e
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search#troubleshoot-scriptrunner-enhanced-search--en#incorrect-functions-causing-board-errors-the-problem--en
 
 ## The problem

@@ -3,8 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Training > Course: Introduction to ScriptRunner for Jira Data Center
-- Doc ID: doc-sr4js-7abf9bc6-114a-4c74-83be-4f6a312dc40d-058b2d0381467f56
+- Doc ID: doc-sr4js-3e858e73-339b-433c-8233-9fa0483048c9-058b2d0381467f56
 - Source: https://docs.adaptavist.com/sr4js/latest/training/course-introduction-to-scriptrunner-for-jira-data-center/1.2-video-using-behaviours-in-scriptrunner-for-jira-data-center
+
+Watch how to use Behaviours in ScriptRunner to control field behaviour on Jira issue create and edit forms.
 
 Note: For a written tutorial on behaviours, see the [Behaviours Tutorial](https://docs.adaptavist.com/sr4js/latest/features/behaviours/behaviours-tutorial) page.
 

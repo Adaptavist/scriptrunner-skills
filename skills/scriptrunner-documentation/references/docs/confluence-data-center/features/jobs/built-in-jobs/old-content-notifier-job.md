@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Jobs > Built-In Jobs
-- Doc ID: doc-sr4c-b06c3803-52bf-42a2-b9f7-b95f94353930-528452b88c2afe4d
+- Doc ID: doc-sr4c-9a6ca7cd-7fe9-4df9-9830-0ef1d0c2e93e-528452b88c2afe4d
 - Source: https://docs.adaptavist.com/sr4c/latest/features#jobs--en#built-in-jobs--en#old-content-notifier-job--en
 
 This script will check the pages and their descendants returned from the CQL clause provided to determine if there are any inactive pages.

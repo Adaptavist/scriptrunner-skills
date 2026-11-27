@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Best Practices > Write Code
-- Doc ID: doc-sr4js-d9cfed8d-408b-492e-9585-b5687c7d6048-ce5227124c6e13f1
+- Doc ID: doc-sr4js-43628939-8f73-4244-bcb0-e1f8874a5e65-ce5227124c6e13f1
 - Source: https://docs.adaptavist.com/sr4js/latest/best-practices/write-code#set-up-a-dev-environment--en
 
 ## Who This Guide Is For
@@ -343,7 +343,7 @@ The next time you want to create and debug a new script, you will just need to a
 
 Do you find copying and pasting scripts between IntelliJ and the ScriptRunner web interface tedious? There are two better ways: the Script Editor and a script plugin.
 
--   Using the Script Editor, you can edit and create files directly from ScriptRunner's UI. Check out the ScriptRunner [Script Editor](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Data_Center_SR4JS/topics/script_editor.dita) documentation for more information.
+-   Using the Script Editor, you can edit and create files directly from ScriptRunner's UI. Check out the ScriptRunner [Script Editor](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/production/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Data_Center_SR4JS/topics/script_editor.dita) documentation for more information.
 -   The whole environment you just set up is actually a full blown Atlassin plugin development. Take a look at the documentation on [Create a Script Plugin](https://docs.adaptavist.com/sr4js/latest/best-practices/write-code/create-a-script-plugin) for more information on how to use that environment to develop and package your scripts for deployment in test and production instances.
 
 ### Execute Tests

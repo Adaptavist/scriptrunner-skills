@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Macros > Create Custom Macro > Create a Macro with Parameters
-- Doc ID: doc-sr4c-ed4d608e-07fd-4802-970d-fda793ad6a40-ed70c87eb0cdd3fd
+- Doc ID: doc-sr4c-621f626b-0a28-431b-9aa4-fbe234ce5680-ed70c87eb0cdd3fd
 - Source: https://docs.adaptavist.com/sr4c/latest/features#macros--en#create-custom-macro--en#create-a-macro-with-parameters--en#example-aui-message-macro--en
 
 Instructions to create an AUI Message macro.

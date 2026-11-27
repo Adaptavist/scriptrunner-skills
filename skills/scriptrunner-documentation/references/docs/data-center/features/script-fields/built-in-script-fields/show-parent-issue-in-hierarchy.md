@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Script fields > Built-In Script Fields
-- Doc ID: doc-sr4js-350a6d04-9857-469e-8999-98454a58fed4-72d46c6967362e1a
+- Doc ID: doc-sr4js-8e603126-a169-4f69-b099-6cdbab8d0b1e-72d46c6967362e1a
 - Source: https://docs.adaptavist.com/sr4js/latest/features#script-fields--en#built-in-script-fields--en#show-parent-issue-in-hierarchy--en
 
 Use the Show Parent Issue in Hierarchy to create a custom script field that displays an issue's _parent_, where you define what _parent_ means. This script field is particularly useful for [Advanced Roadmaps for Jira](https://confluence.atlassian.com/jirasoftwareserver/discover-advanced-roadmaps-for-jira-1044784153.html) users, although this feature is not limited to just Advanced Roadmaps.

@@ -3,7 +3,7 @@
 - Platform: connect
 - Space: SRC
 - Hierarchy: Workspaces
-- Doc ID: doc-src-17b043a8-2238-4ec2-9e85-d0cb260c57ab-60950d9be1d65c5f
+- Doc ID: doc-src-cb703b74-d760-42a5-b971-13f9003f6a54-60950d9be1d65c5f
 - Source: https://docs.adaptavist.com/src/latest/workspaces#parameters--en
 
 Parameters (formerly known as Environment Variables) let you separate configuration from your scripts.
@@ -20,9 +20,11 @@ Instant application 🚀
 
 You don't need to release and deploy to update parameters. Any changes you make are applied instantly to the environment where you made them.
 
-## Parameters tutorials
+## Parameters tutorial video
 
-Watch the video and interactive demo below to learn more about parameters.
+Watch the video and use the interactive demo below to learn more about parameters.
+
+[Media](https://demo.arcade.software/4WB52Z6nTNm5tuSC3ThO?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true)
 
 ## The basics
 

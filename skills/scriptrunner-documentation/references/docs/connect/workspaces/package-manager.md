@@ -3,14 +3,16 @@
 - Platform: connect
 - Space: SRC
 - Hierarchy: Workspaces
-- Doc ID: doc-src-824b1ddb-d320-4873-9184-c99665512d49-4732b8d7314afd54
+- Doc ID: doc-src-e3fb3bf8-be6a-4f1b-80ff-d2eb18df490c-4732b8d7314afd54
 - Source: https://docs.adaptavist.com/src/latest/workspaces#package-manager--en
 
 Learn how to enter the Package Manager, assuming control for packages with versions included in your workspace and navigate to the NPM page.
 
 ScriptRunner Connect workspaces consist of several JavaScript packages hosted on [NPM](https://www.npmjs.com/) that make it tick. Most of the time, you don't have to concern yourself with how packages are managed because ScriptRunner Connect manages them for you, but there are a few more advanced use cases where you may want to take manual control over how packages are managed for you. You can do so by entering Package Manager and assuming manual control for packages with versions included in your workspace. You can also click on the package name to navigate to the NPM page, which contains additional information on how to use the package.
 
-## Demo
+## Demo: Package manager
+
+[Media](https://demo.arcade.software/zretMBlRAuZXaGf6gx9I?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true)
 
 ## Categories
 

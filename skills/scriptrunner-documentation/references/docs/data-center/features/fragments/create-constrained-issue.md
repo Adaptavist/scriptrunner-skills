@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Fragments
-- Doc ID: doc-sr4js-19dbf966-b9ed-4698-866c-3dbebed89781-da9ac850f8f48c6f
+- Doc ID: doc-sr4js-9dd2cf86-e6c2-4b56-85da-cb9d4bdfcda2-da9ac850f8f48c6f
 - Source: https://docs.adaptavist.com/sr4js/latest/features#fragments--en#create-constrained-issue--en
 
 A special case of a web item creates a menu item that will open the Create Issue dialog with a predefined project, and optionally issue type.

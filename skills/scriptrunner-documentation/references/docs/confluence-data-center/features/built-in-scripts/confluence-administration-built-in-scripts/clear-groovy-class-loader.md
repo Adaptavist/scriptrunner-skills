@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Built-In Scripts > Confluence Administration Built-In Scripts
-- Doc ID: doc-sr4c-d18c2edc-cefa-49d1-aaec-d137cc843bd6-065266822170e060
+- Doc ID: doc-sr4c-358db6e0-a4ff-4059-a10a-201f8e5909c3-065266822170e060
 - Source: https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#confluence-administration-built-in-scripts--en#clear-groovy-class-loader--en
 
 You can run the Clear Groovy Class Loader built-in script to clear caches if automated clearing fails.

@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Listeners > Built-In Listeners
-- Doc ID: doc-sr4js-10535885-217c-4b50-86e7-cc8a213fa303-dfdfbca476ec6b81
+- Doc ID: doc-sr4js-d6cb01f3-06a7-44b2-adc4-1eaa34a20c9c-dfdfbca476ec6b81
 - Source: https://docs.adaptavist.com/sr4js/latest/features#listeners--en#built-in-listeners--en#version-synchroniser--en
 
 This listener allows create, update, delete, move, merge etc. operations on _Jira versions_ across multiple projects. The listener is useful if you have multiple projects that should all have the same versions list.

@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Behaviours > Behaviours Examples
-- Doc ID: doc-sr4js-7cae289f-ffc8-490a-b059-cbbbd4544f60-352037b277cc9043
+- Doc ID: doc-sr4js-d0b2c05b-4763-4efd-947b-54741e7a86e3-352037b277cc9043
 - Source: https://docs.adaptavist.com/sr4js/latest/features#behaviours--en#behaviours-examples--en#setting-a-default-description--en
 
 In this example, we set a default description for renewal issues in the Great Adventure Licensing and Finance project. We recommend you change the details in this example and use your own project/s and description. This description contains set text to help the licensing specialists complete the issues, acting as a template to gather the correct information.

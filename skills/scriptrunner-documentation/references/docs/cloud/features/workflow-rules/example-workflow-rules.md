@@ -3,7 +3,7 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features > Workflow Rules
-- Doc ID: doc-sr4jc-a95d7c42-fe33-4c0c-ad85-423b3fe4ac31-e7c448708f6cf6c3
+- Doc ID: doc-sr4jc-dc33ca47-36f5-490d-85db-e810e6d624de-e7c448708f6cf6c3
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules#example-workflow-rules--en
 
 CAUTION: Atlassian's [new transition experience](https://community.atlassian.com/forums/Jira-articles/Now-GA-try-the-new-issue-transition-experience-in-Jira/ba-p/2734436) in Jira is being permanently rolled out in April 2025. As a consequence, how your Jira expressions ( [Restrict transitions](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/restrict-transitions) and [Validate details](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/validate-details)) work will change. Check out our [Breaking Changes](https://docs.adaptavist.com/sr4jc/latest/release-notes/release-notes#atlassians-new-transition-experience-compatibility-with-jira-expressions--en) section for more information.
@@ -52,7 +52,7 @@ By way of an example, if you would like to add a Perform actions rule to an exis
 
 ### Edit a Perform Actions rule
 
-You can edit the script for the Perform actions rule directly in the workflow, or quickly access it at any time via the _Workflows_ tab in ScriptRunner for Jira Cloud.
+You can edit the script for the Perform actions rule directly in the workflow, or quickly access it at any time via the Workflows tab in ScriptRunner for Jira Cloud.
 
 Note: Remember, you can only view Workflows in ScriptRunner for Jira Cloud if you have already created a Restrict transition, Validate details or Perform actions rule from the Workflows within the Jira Administration menus. Once added within Jira, the workflow then appears in the Workflows section of ScriptRunner for Jira Cloud, where you can edit or disable it.
 
@@ -64,8 +64,8 @@ Note: Remember, you can only view Workflows in ScriptRunner for Jira Cloud if yo
     
 2.  Click the Actions ellipsis for your preferred workflow and select either Edit or Disable.
     
-    -   If you choose to disable the chosen workflow, you can confirm this via a confirmation message once prompted.
-    -   If you choose to edit the chosen workflow, you will see the workflow details screen displayed, from where you can make the required edits to an existing workflow.
+    -   If you choose to _Disable_ the chosen workflow, you can confirm this via a confirmation message once prompted.
+    -   If you choose to _Edit_ the chosen workflow, you will see the workflow details screen displayed, from where you can make the required edits to an existing workflow.
         
         For example:
         
@@ -76,7 +76,7 @@ Note: Remember, you can only view Workflows in ScriptRunner for Jira Cloud if yo
         
         Click Load to reuse a previously saved script from [Script Manager](../script-manager.md). Further details on how to use this features can be found in [Reuse scripts in the UI](https://docs.adaptavist.com/sr4jc/latest/features/script-manager#reuse-scripts-in-the-ui--en).
         
-        This code is executed when the Condition is true.
+        This code is executed when the condition is true.
         
         OR
         

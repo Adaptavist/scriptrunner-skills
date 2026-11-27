@@ -3,7 +3,7 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: Features > Macros > Built-In Macros
-- Doc ID: doc-sr4cc-4166b451-1dca-44cd-bd4d-bcaf3c6452d9-24da930fe9c77d65
+- Doc ID: doc-sr4cc-e2acaae7-92ed-42bd-a140-b9e3e6224819-24da930fe9c77d65
 - Source: https://docs.adaptavist.com/sr4cc/latest/features/macros/built-in-macros/cql-search
 
 Instructions for the CQL Search macro.
@@ -18,9 +18,9 @@ To use this macro, follow these steps:
     
 2.  Select Insert and then Other Macros.
     
-3.  When you search CQL in the search bar, CQL Search appears. Select it.
+3.  Type CQL in the search bar, and select CQL Search.
     
-4.  Enter the CQL statement you wnat to seach in CQL and how many results you want to see in Max results.
+4.  Enter the CQL statement you want to search in CQL and how many results you want to see in Max results.
     
 5.  Select Preview to preview the query.
     
@@ -32,9 +32,9 @@ To use this macro, follow these steps:
 In this example, we will add links to the meeting notes from the Meeting Notes space to a Meetings Guide page in the New Starter Guide space.
 
 1.  Open the Meetings Guide page in the New Starter Guide space.
-2.  Seach for the CQL Search macro from the Other Macros menu.
+2.  Search for the CQL Search macro from the Other Macros menu.
 3.  Enter the CQL query. Since we want to include every page in the space, we use the CQL query `space = meeting`.
-4.  Choose Max results up to 50.
+4.  Specify 50 for Max results.
     1.  You can see how many results to expect in the CQL field after entering a valid query.
 5.  Click Save
 

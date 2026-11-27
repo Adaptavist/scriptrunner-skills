@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Macros > Built-In Macros
-- Doc ID: doc-sr4c-06b5ea2e-93c3-4f8b-ba58-7995e5352afa-d1a09e7aeb2bc8a4
+- Doc ID: doc-sr4c-04cab490-1c18-4a2f-a189-b1af5c3199dc-d1a09e7aeb2bc8a4
 - Source: https://docs.adaptavist.com/sr4c/latest/features#macros--en#built-in-macros--en#mugshot-gallery-macro--en
 
 The _Mugshot Gallery_ macro shows profile pictures of group members in tabular format for a group.

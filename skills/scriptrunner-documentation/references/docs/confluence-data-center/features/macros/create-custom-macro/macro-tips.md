@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Macros > Create Custom Macro
-- Doc ID: doc-sr4c-96a95199-475b-4807-8142-3d3bcf3e67dc-733b1a54aea74a7c
+- Doc ID: doc-sr4c-5b9c14ab-26f8-453d-be1c-9e91cd7d2ba4-733b1a54aea74a7c
 - Source: https://docs.adaptavist.com/sr4c/latest/features#macros--en#create-custom-macro--en#macro-tips--en
 
 This is a macro that displays the latest version of each Atlassian product.

@@ -8,7 +8,7 @@ Total pages: 109
 | 2023 Release Notes | references/docs/confluence-cloud/release-notes/older-release-notes/2023-release-notes.md | https://docs.adaptavist.com/sr4cc/latest/release-notes/older-release-notes/2023-release-notes |
 | 2024 Release Notes | references/docs/confluence-cloud/release-notes/older-release-notes/2024-release-notes.md | https://docs.adaptavist.com/sr4cc/latest/release-notes/older-release-notes/2024-release-notes |
 | Adapt Scripts for Confluence Cloud | references/docs/confluence-cloud/migration/rewrite-scripts-for-cloud-guide/adapt-scripts-for-confluence-cloud.md | https://docs.adaptavist.com/sr4cc/latest/migration/rewrite-scripts-for-cloud-guide#adapt-scripts-for-confluence-cloud--en |
-| Adaptavist Bridge | references/docs/confluence-cloud/features/script-fragments/adaptavist-bridge.md | https://docs.adaptavist.com/sr4cc/latest/features/script-fragments#adaptavist-bridge--en |
+| Adaptavist Bridge | references/docs/confluence-cloud/features/script-fragments/adaptavist-bridge.md | https://docs.adaptavist.com/sr4cc/latest/features/script-fragments#adaptavist-bridge-main--en |
 | Add Label | references/docs/confluence-cloud/features/macros/built-in-macros/add-label.md | https://docs.adaptavist.com/sr4cc/latest/features/macros/built-in-macros/add-label |
 | Audit Logs | references/docs/confluence-cloud/features/logging/audit-logs.md | https://docs.adaptavist.com/sr4cc/latest/features/logging/audit-logs |
 | Breaking Changes | references/docs/confluence-cloud/release-notes/breaking-changes.md | https://docs.adaptavist.com/sr4cc/latest/release-notes/breaking-changes |
@@ -39,7 +39,7 @@ Total pages: 109
 | Data Residency | references/docs/confluence-cloud/get-started/general-information/data-residency.md | https://docs.adaptavist.com/sr4cc/latest/get-started/general-information/data-residency |
 | Delete Page Tree | references/docs/confluence-cloud/features/built-in-scripts/confluence-administration-built-in-scripts/delete-page-tree.md | https://docs.adaptavist.com/sr4cc/latest/features/built-in-scripts/confluence-administration-built-in-scripts#delete-page-tree--en |
 | Delete Page Tree | references/docs/confluence-cloud/features/built-in-scripts/space-administration-built-in-scripts/delete-page-tree.md | https://docs.adaptavist.com/sr4cc/latest/features/built-in-scripts/space-administration-built-in-scripts/delete-page-tree |
-| Example Scripts | references/docs/confluence-cloud/scripting-resources/example-scripts.md | https://docs.adaptavist.com/sr4cc/latest/scripting-resources#example-scripts--en |
+| Example Scripts | references/docs/confluence-cloud/scripting-resources/example-scripts.md | https://docs.adaptavist.com/sr4cc/latest/scripting-resources#example-scripts-in-the-code-editor--en |
 | Example: CQL Function Search all pages that contain a specific label | references/docs/confluence-cloud/features/macros/custom-macros/example-cql-function-search-all-pages-that-contain-a-specific-label.md | https://docs.adaptavist.com/sr4cc/latest/features/macros/custom-macros#example-cql-function-search-all-pages-that-contain-a-specific-label--en |
 | Example: Get Jira Issue Information on a Confluence Page | references/docs/confluence-cloud/features/macros/custom-macros/example-get-jira-issue-information-on-a-confluence-page.md | https://docs.adaptavist.com/sr4cc/latest/features/macros/custom-macros#example-get-jira-issue-information-on-a-confluence-page--en |
 | Example: Return Page Information | references/docs/confluence-cloud/features/macros/custom-macros/example-return-page-information.md | https://docs.adaptavist.com/sr4cc/latest/features/macros/custom-macros#example-return-page-information--en |
@@ -55,6 +55,7 @@ Total pages: 109
 | Get Started | references/docs/confluence-cloud/uncategorized/g/get-started.md | https://docs.adaptavist.com/sr4cc/latest/get-started |
 | HAPI | references/docs/confluence-cloud/uncategorized/h/hapi.md | https://docs.adaptavist.com/sr4cc/latest/hapi |
 | HAPI Changelog | references/docs/confluence-cloud/release-notes/hapi-changelog.md | https://docs.adaptavist.com/sr4cc/latest/release-notes/hapi-changelog |
+| Include Version | references/docs/confluence-cloud/features/macros/built-in-macros/include-version.md | https://docs.adaptavist.com/sr4cc/latest/features/macros/built-in-macros/include-version |
 | Initial Release | references/docs/confluence-cloud/release-notes/older-release-notes/initial-release.md | https://docs.adaptavist.com/sr4cc/latest/release-notes/older-release-notes/initial-release |
 | Installation | references/docs/confluence-cloud/get-started/installation.md | https://docs.adaptavist.com/sr4cc/latest/get-started/installation |
 | Introduction to Groovy | references/docs/confluence-cloud/scripting-resources/introduction-to-groovy.md | https://docs.adaptavist.com/sr4cc/latest/scripting-resources#introduction-to-groovy--en |
@@ -92,7 +93,7 @@ Total pages: 109
 | Script Logs | references/docs/confluence-cloud/features/logging/script-logs.md | https://docs.adaptavist.com/sr4cc/latest/features/logging/script-logs |
 | Script Manager | references/docs/confluence-cloud/features/script-manager.md | https://docs.adaptavist.com/sr4cc/latest/features/script-manager |
 | Script Manager Naming Rules | references/docs/confluence-cloud/features/script-manager/script-manager-naming-rules.md | https://docs.adaptavist.com/sr4cc/latest/features/script-manager#script-manager-naming-rules--en |
-| Script variables | references/docs/confluence-cloud/features/script-variables.md | https://docs.adaptavist.com/sr4cc/latest/features/script-variables |
+| Script Variables | references/docs/confluence-cloud/features/script-variables.md | https://docs.adaptavist.com/sr4cc/latest/features/script-variables |
 | Scripting Resources | references/docs/confluence-cloud/uncategorized/s/scripting-resources.md | https://docs.adaptavist.com/sr4cc/latest/scripting-resources |
 | ScriptRunner Home | references/docs/confluence-cloud/get-started/navigation/script-runner-home.md | https://docs.adaptavist.com/sr4cc/latest/get-started/navigation/scriptrunner-home |
 | Search for Pages | references/docs/confluence-cloud/hapi/search-for-pages.md | https://docs.adaptavist.com/sr4cc/latest/hapi/search-for-pages |
@@ -105,8 +106,7 @@ Total pages: 109
 | Troubleshoot | references/docs/confluence-cloud/get-help/troubleshoot.md | https://docs.adaptavist.com/sr4cc/latest/get-help/troubleshoot |
 | Troubleshooting Script Manager | references/docs/confluence-cloud/features/script-manager/troubleshooting-script-manager.md | https://docs.adaptavist.com/sr4cc/latest/features/script-manager#troubleshooting-script-manager--en |
 | Use IP Addresses | references/docs/confluence-cloud/manage-app/use-ip-addresses.md | https://docs.adaptavist.com/sr4cc/latest/manage-app/use-ip-addresses |
-| Use the Version History macro | references/docs/confluence-cloud/features/macros/built-in-macros/version-history-macro/use-the-version-history-macro.md | https://docs.adaptavist.com/sr4cc/latest/features/macros/built-in-macros/version-history-macro/use-the-version-history-macro |
-| Version History Macro | references/docs/confluence-cloud/features/macros/built-in-macros/version-history-macro.md | https://docs.adaptavist.com/sr4cc/latest/features/macros/built-in-macros/version-history-macro |
+| Version History | references/docs/confluence-cloud/features/macros/built-in-macros/version-history.md | https://docs.adaptavist.com/sr4cc/latest/features/macros/built-in-macros/version-history |
 | Vulnerabilities and Securities | references/docs/confluence-cloud/manage-app/vulnerabilities-and-securities.md | https://docs.adaptavist.com/sr4cc/latest/manage-app/vulnerabilities-and-securities |
 | Work with Labels | references/docs/confluence-cloud/hapi/work-with-labels.md | https://docs.adaptavist.com/sr4cc/latest/hapi/work-with-labels |
 | Work with Page Components | references/docs/confluence-cloud/hapi/work-with-page-components.md | https://docs.adaptavist.com/sr4cc/latest/hapi/work-with-page-components |

@@ -3,10 +3,12 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Built-in scripts
-- Doc ID: doc-sr4js-79726eed-c096-4b09-bef8-5d07cb876e4e-b7ee90b7098a701a
+- Doc ID: doc-sr4js-581bf2db-b5b3-4955-b946-19fc3e8b6c86-b7ee90b7098a701a
 - Source: https://docs.adaptavist.com/sr4js/latest/features#built-in-scripts--en#copy-field-values--en
 
-The _Copy Field Values_ post function copies the values from a configured field to another field on the same issue or to another field on linked issues. This post function can be used to keep fields up-to-date, eliminating the need for manual input of values.
+Automatically copy field values to another field on the same issue or a linked issue using this built-in script.
+
+This built-in script can be used to keep fields up-to-date, eliminating the need for manual input of values.
 
 See below for a detailed list of supported fields. If a field is not visible in your instance, then the field is not supported by this built-in script.
 

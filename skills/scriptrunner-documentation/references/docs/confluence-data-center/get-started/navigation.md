@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Get Started
-- Doc ID: doc-sr4c-230498a1-52e4-41cb-85ce-1b10043bd581-a1f37f56196b7701
+- Doc ID: doc-sr4c-0a1e550d-86d5-490a-8b08-e446da408a0f-a1f37f56196b7701
 - Source: https://docs.adaptavist.com/sr4c/latest/get-started#navigation--en
 
 Learn how to get to where you want to go within our app.

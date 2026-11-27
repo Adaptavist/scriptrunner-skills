@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Built-in scripts > Guardrails Built-in Scripts
-- Doc ID: doc-sr4js-21489e08-4347-49b1-a407-827ea3bf5e64-6a2a0354f754cc04
+- Doc ID: doc-sr4js-3839c29e-d391-4aa7-a558-fc83dcb07436-6a2a0354f754cc04
 - Source: https://docs.adaptavist.com/sr4js/latest/features#built-in-scripts--en#guardrails-built-in-scripts--en#maximum-comments-per-issue--en
 
 Use this built-in script to find issues with more comments than the guardrail, and delete comments that exceed the threshold.

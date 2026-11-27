@@ -3,7 +3,7 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Training > Course: ScriptRunner for Jira Cloud for Intermediate Users
-- Doc ID: doc-sr4jc-49d33fc9-9403-46dc-9bcb-45b550fd77f8-12bbac5989f55650
+- Doc ID: doc-sr4jc-9840c197-acde-4ed5-9351-0aec35f9e3b0-12bbac5989f55650
 - Source: https://docs.adaptavist.com/sr4jc/latest/training/course-scriptrunner-for-jira-cloud-for-intermediate-users/2.3-module-introduction-to-groovy-for-scriptrunner-cloud
 
 [Media](https://player.vimeo.com/video/535183615)[Downloadable Resources](https://adaptavistlearn.app.box.com/file/802225941963?s=qo67n6awoqe1vxcoba5kiniaekfeqa9o)

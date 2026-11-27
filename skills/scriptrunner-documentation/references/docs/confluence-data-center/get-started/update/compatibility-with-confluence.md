@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Get Started > Update
-- Doc ID: doc-sr4c-87d31f1e-8617-4e94-af55-62345b488475-d30f01d45287bb07
+- Doc ID: doc-sr4c-23ab1cfa-825b-439a-89ae-72342a46ebfb-d30f01d45287bb07
 - Source: https://docs.adaptavist.com/sr4c/latest/get-started#update--en#compatibility-with-confluence--en
 
 Information about compatibility between ScriptRunner for Confluence Server/DC and specific versions of Confluence.

@@ -3,14 +3,16 @@
 - Platform: connect
 - Space: SRC
 - Hierarchy: n/a
-- Doc ID: doc-src-2963623d-0a05-4e57-9a02-dde15a45d339-1a378fe187f2c162
+- Doc ID: doc-src-3d531186-4504-45c3-b1c9-63d66ebd1c0a-1a378fe187f2c162
 - Source: https://docs.adaptavist.com/src/latest/rest-api
 
-ScriptRunner Connect offers a RESTful API to help you accomplish more with the app.
+ScriptRunner Connect offers a REST API to help you accomplish more with the app.
 
-You can create new API keys and access existing ones from the app by clicking your name at the bottom-left corner of the screen and then clicking API Keys.
+You can create new API keys and access existing ones from the app by clicking your name in the bottom-left corner of the screen and then clicking API Keys.
 
-Note: Base URL ℹ️
+Note: [Access policies](https://docs.adaptavist.com/src/latest/rest-api/access-policies) let you control what API keys and AI agents can do in ScriptRunner Connect. A policy defines build time permissions for actions in ScriptRunner Connect, such as viewing workspaces or updating scripts, and runtime permissions for the external API endpoints that triggered scripts may call.
+
+Use limited access when creating API keys or starting agent tasks so they receive only the permissions they need. Agents can ask for temporary approvals when a task needs more access; approvals expire and never change the policy itself. Access policies are managed from API Keys > Access Policies, where you can use the built-in policies, duplicate them, or create policies for repeated jobs.
 
 The base URLs are [https://api.scriptrunnerconnect.com](https://api.scriptrunnerconnect.com/) for the EU region and [https://api.us.scriptrunnerconnect.com](https://api.us.scriptrunnerconnect.com/) for the US region.
 

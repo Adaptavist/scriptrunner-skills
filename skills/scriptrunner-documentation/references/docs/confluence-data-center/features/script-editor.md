@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features
-- Doc ID: doc-sr4c-0f4ff452-cef5-4312-9c96-1f263cad2d95-4be714aab4d813a4
+- Doc ID: doc-sr4c-ab052783-860c-4510-945e-7b48291acc16-4be714aab4d813a4
 - Source: https://docs.adaptavist.com/sr4c/latest/features#script-editor--en
 
 Learn about the Script Editor, which allows you to manage Groovy files and folders.

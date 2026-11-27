@@ -3,7 +3,7 @@
 - Platform: connect
 - Space: SRC
 - Hierarchy: Observability > Script Invocation Logs
-- Doc ID: doc-src-137cd030-6540-4c91-932c-27c1323669d8-15f3ce8af78cbb76
+- Doc ID: doc-src-dc69189b-3509-4db5-90b1-c22c9902aa2a-15f3ce8af78cbb76
 - Source: https://docs.adaptavist.com/src/latest/observability/script-invocation-logs#replay-script-invocations--en
 
 Learn about the Replay button, allowing you to re-run a desired script.

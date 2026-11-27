@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Integrations
-- Doc ID: doc-sr4js-cbe3f077-d01c-4f24-a283-9e4b559babe3-a46fe0c6faafb50d
+- Doc ID: doc-sr4js-5b89bfce-5369-4256-89a9-b1626ec1a1c6-a46fe0c6faafb50d
 - Source: https://docs.adaptavist.com/sr4js/latest/integrations/atlassian-products
 
 There are several cases for making an HTTP request from a host application to another Atlassian application, for example:

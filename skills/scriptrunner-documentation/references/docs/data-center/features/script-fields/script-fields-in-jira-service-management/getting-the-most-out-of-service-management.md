@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Script fields > Script Fields in Jira Service Management
-- Doc ID: doc-sr4js-b2463410-5adc-4e6c-b3c7-77036a3c6992-8a1e6f08111b53bc
+- Doc ID: doc-sr4js-b8f886c7-c5c7-4d61-89ea-b9289146cfac-8a1e6f08111b53bc
 - Source: https://docs.adaptavist.com/sr4js/latest/features#script-fields--en#script-fields-in-jira-service-management--en#getting-the-most-out-of-service-management--en
 
 We've been using Service Management for some time, and have found a few irritations and annoyances that get in the way of us firing on all cylinders.

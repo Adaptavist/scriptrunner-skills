@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Macros > Create Custom Macro
-- Doc ID: doc-sr4c-0f8959a4-ad55-4754-a7c0-9e8cf7a6002f-1d46f5b6d9b4a616
+- Doc ID: doc-sr4c-c5eb530a-8361-452b-8527-b9b1a0f9ff72-1d46f5b6d9b4a616
 - Source: https://docs.adaptavist.com/sr4c/latest/features#macros--en#create-custom-macro--en#cql-search-macro--en
 
 A CQL Search macro allows you to enter Confluence Query Language (CQL).

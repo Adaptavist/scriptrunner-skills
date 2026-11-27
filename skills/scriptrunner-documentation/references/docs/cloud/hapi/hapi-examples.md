@@ -3,8 +3,10 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: HAPI
-- Doc ID: doc-sr4jc-d1586d4e-d153-49ab-afd7-8085613460ec-5b2e77ee71754fff
+- Doc ID: doc-sr4jc-95a2a7e9-772c-4110-aa85-854ae2416470-5b2e77ee71754fff
 - Source: https://docs.adaptavist.com/sr4jc/latest/hapi#hapi-examples--en
+
+Explore practical HAPI script examples to help you customize and automate your Jira instance.
 
 To help you get started using HAPI effectively in your Jira instance, we have provided several use cases/examples below that incorporate HAPI in the scripts. You can use these examples to explore and customize your Jira instance.
 
@@ -76,7 +78,7 @@ This script demonstrates how to automatically add a comment to a newly created w
 2.  Open Script Listeners > Create Listener.
 3.  Enter a name for the listener in _Script Listener Called_.
 4.  Enable the Script Listener.
-5.  Select the Issue Created under On these e vents.
+5.  Select the Issue Created under On these events.
 6.  Select the spaces you want the listener to be active for; you can select All Spaces for this example.
 7.  Enter a condition on which the code will run.
 8.  Choose from either _ScriptRunner Add-On User_ or _Current User_ as the user you wish to run the listener from the Run code as: drop-down options.

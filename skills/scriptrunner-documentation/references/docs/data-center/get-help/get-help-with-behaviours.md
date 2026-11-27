@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Get Help
-- Doc ID: doc-sr4js-23a7e097-184a-452f-b2b8-793b000cd5ec-f3b4a697b5541561
+- Doc ID: doc-sr4js-963002de-12aa-4e23-9f15-670979429d41-f3b4a697b5541561
 - Source: https://docs.adaptavist.com/sr4js/latest/get-help#get-help-with-behaviours--en
 
 If you have any problems, please include the following information in your bug report to [Adaptavist Support](https://the-adaptavist-group-support.atlassian.net/servicedesk/customer/portal/21):

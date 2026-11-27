@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Get Help > Troubleshooting
-- Doc ID: doc-sr4js-40f1f08e-613f-4b74-a3bd-d9dd7474fd94-26580f844c7cb07a
+- Doc ID: doc-sr4js-26dde860-1fa3-4dc9-949b-6732371856e5-26580f844c7cb07a
 - Source: https://docs.adaptavist.com/sr4js/latest/get-help#troubleshooting--en#troubleshooting-script-roots-nfs-shares-and-io-bottlenecks--en
 
 ScriptRunner generally performs well across a variety of hosting infrastructures. However, as more customers use cloud providers such as AWS or Azure for their Data Center infrastructure, we have received an increasing number of support tickets. These tickets are from customers who hit performance problems because ScriptRunner gets blocked while trying to read from the Network File System (NFS) where the scripts were stored.

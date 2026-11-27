@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Get Help > Frequently Asked Questions
-- Doc ID: doc-sr4js-65f90c30-d18e-4f81-bb27-282f8bcd5335-7ab08a32fe075252
+- Doc ID: doc-sr4js-70e7de6b-b6fd-474d-8249-1746881317aa-7ab08a32fe075252
 - Source: https://docs.adaptavist.com/sr4js/latest/get-help#frequently-asked-questions--en#behaviours-faqs--en
 
 ## How do I get the Service Management Request Type name in behaviours?

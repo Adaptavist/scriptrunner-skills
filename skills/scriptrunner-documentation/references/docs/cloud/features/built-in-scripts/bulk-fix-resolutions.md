@@ -3,7 +3,7 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features > Built-In Scripts
-- Doc ID: doc-sr4jc-eac3b53a-3f74-4f95-9d38-46239faa9c3b-d39d7afb6213f921
+- Doc ID: doc-sr4jc-78e75cf7-5d84-4cd2-b930-155e5a48b03b-d39d7afb6213f921
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/built-in-scripts#bulk-fix-resolutions--en
 
 The _Resolution_ field within Jira informs you of the various workflow stages of a work item, for example, _Closed_ or _Resolved_. However, _Resolutions_ can often reflect an incorrect status after a workflow has been modified, or due to an import, and need to be updated.

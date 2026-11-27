@@ -3,25 +3,25 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: Features > Macros > Custom Macros
-- Doc ID: doc-sr4cc-23f2eddf-8961-46da-bfcb-45bc0337d673-9bd8ad6070d90e8e
+- Doc ID: doc-sr4cc-11fc3134-628f-4827-a297-3d9a6f165529-9bd8ad6070d90e8e
 - Source: https://docs.adaptavist.com/sr4cc/latest/features/macros/custom-macros#example-return-page-information--en
 
 Instructions for creating a macro that will pull specified page information onto a desired Confluence page.
 
-You can create a macro to pull the page information (like page title, the page creator, the parent page, and the space) of Confluence content onto a Confluence page.
+You can create a macro to pull the page information (like the page title, the page creator, the parent page, and the space) of Confluence content onto a Confluence page.
 
 ## Create the macro
 
 1.  Select Create Custom Macro.
-2.  Enter a Name to identify the Macro, like _Page Information_.
+2.  Enter a Name to identify the macro, like _Page Information_.
 3.  Enter an optional Description, like _Get the current page title, the page creator, the parent page, and the space_.
 4.  Select Enabled to allow the macro to be added to pages.
-5.  Select _None_ for Body Type.
-6.  Pick _Block_ for Output Type.
+5.  Select None for Body Type.
+6.  Pick Block for Output Type.
     
 7.  Enter the following script into the Script to Execute field:
     
-    Tip: This script uses the response status code for error checking.
+    Tip: This script uses the response status code to check for errors.
     
     ```
     //ERROR CHECKING USING THE RESPONSE STATUS

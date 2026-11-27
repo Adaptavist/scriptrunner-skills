@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Get Help > Frequently Asked Questions
-- Doc ID: doc-sr4js-37670f29-4853-4c7b-8e57-f4ce3e0b8e38-0748ca9509c54add
+- Doc ID: doc-sr4js-b698a8cc-0009-475a-b013-8025059497e9-0748ca9509c54add
 - Source: https://docs.adaptavist.com/sr4js/latest/get-help#frequently-asked-questions--en#script-fields-faq--en
 
 ## Will Guardrails affect my script fields?

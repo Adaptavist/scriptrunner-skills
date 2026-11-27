@@ -3,10 +3,10 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: n/a
-- Doc ID: doc-sr4c-345c7ce5-1654-4255-96d7-bc98879dcc7e-86c67a08421e492c
+- Doc ID: doc-sr4c-513dad46-441a-4bec-a33e-efbc88eb1b93-86c67a08421e492c
 - Source: https://docs.adaptavist.com/sr4c/latest/best-practices-and-app-management
 
-Find our reccomendations for best practices and managment within the app.
+Find tips on logging, testing, version control, dev environments, and Groovy to help you write, manage, and maintain reliable scripts.
 
 ## Best practices for Confluence using ScriptRunner
 
@@ -236,12 +236,12 @@ Use the [Slack Connection](https://docs.adaptavist.com/sr4c/latest/features/reso
 
 To keep a good experience for your users, limit downtime, and reduce admin and maintenance costs, use ScriptRunner for Confluence to automate your migration process.
 
-Visit the [Migrate from ScriptRunner for Confluence Server to Cloud](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-or-from-cloud/migrate-from-scriptrunner-for-confluence-server-to-cloud) section of the ScriptRunner for Confluence Data Center documentation to get started.
+Visit the [Migrate from ScriptRunner for Confluence Server to Cloud](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-cloud/migrate-from-scriptrunner-for-confluence-server-to-cloud) section of the ScriptRunner for Confluence Data Center documentation to get started.
 
 A few more links you might find important are:
 
--   [Platform Differences](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-or-from-cloud/platform-differences)
--   [Feature Parity](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-or-from-cloud/feature-parity)
+-   [Platform Differences](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-cloud/platform-differences)
+-   [Feature Parity](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-cloud/feature-parity)
 -   [Contact Support](https://docs.adaptavist.com/sr4c/latest/get-help#contact-support--en)
 
 #### Search and indexing
@@ -435,7 +435,7 @@ Use these built-in scripts to automate simple page tasks within a space:
 
 ##### HAPI script
 
-[Create a Page](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-or-from-cloud/rewrite-scripts-for-cloud/adapt-scripts-for-confluence-cloud#create-a-page--en) with one simple script using HAPI!
+[Create a Page](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-cloud/rewrite-scripts-for-cloud/adapt-scripts-for-confluence-cloud#create-a-page--en) with one simple script using HAPI!
 
 ### Other documentation
 

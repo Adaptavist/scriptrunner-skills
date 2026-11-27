@@ -3,8 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Training
-- Doc ID: doc-sr4js-5b264c7f-7710-4107-b29c-980993f7c29c-18ea142cdc52655a
+- Doc ID: doc-sr4js-613825fc-47d1-4c8a-9157-bdea65d8294f-18ea142cdc52655a
 - Source: https://docs.adaptavist.com/sr4js/latest/training/tutorials
+
+Work through written tutorials covering ScriptRunner's core features: behaviours, listeners, script fields, and workflow functions.
 
 ## Who are these tutorials for?
 

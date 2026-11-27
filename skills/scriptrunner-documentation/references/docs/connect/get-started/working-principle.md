@@ -3,7 +3,7 @@
 - Platform: connect
 - Space: SRC
 - Hierarchy: Get Started
-- Doc ID: doc-src-febf0f7b-66dd-4bd7-9470-4814f093278d-76bdfc909b33ccdb
+- Doc ID: doc-src-9dc0504d-4b7e-4861-81e8-049fd7d20cd0-76bdfc909b33ccdb
 - Source: https://docs.adaptavist.com/src/latest/get-started#working-principle--en
 
 Gain understanding as to how the app works.
@@ -29,6 +29,6 @@ Note: Manual script execution ⚙️
 
 For one-off tasks, you can trigger a script manually. In this use case, the first two steps in the chart are ignored.
 
-## Demo: Working Principle
+## Demo: Working principle
 
-[Media](https://demo.arcade.software/tc0Dnq9AoZ4g8Vhy2YXe?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true)
+[Media](https://demo.arcade.software/tc0Dnq9AoZ4g8Vhy2YXe?embed&embed_mobile=tab&embed_desktop=inline)

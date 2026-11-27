@@ -3,7 +3,7 @@
 - Platform: connect
 - Space: SRC
 - Hierarchy: Templates
-- Doc ID: doc-src-843b3aba-7a97-49c9-a160-0be677e81153-a9cdf136de3182f2
+- Doc ID: doc-src-83d58098-4a52-4126-9756-5e796a345ef8-a9cdf136de3182f2
 - Source: https://docs.adaptavist.com/src/latest/templates#tutorial-configure-a-confluence-cloud-template--en
 
 Follow the steps to configure and run the _Create a Confluence Cloud Page When a Jira Issue is Created_ template.

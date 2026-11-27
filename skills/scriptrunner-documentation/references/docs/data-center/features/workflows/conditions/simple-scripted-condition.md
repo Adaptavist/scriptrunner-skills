@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Workflows > Conditions
-- Doc ID: doc-sr4js-b321b0ab-0155-4d6a-9687-9c3bf54cf335-0be7e1e23982f6de
+- Doc ID: doc-sr4js-3ac33ead-7e72-4cc5-a896-1e3759b03340-0be7e1e23982f6de
 - Source: https://docs.adaptavist.com/sr4js/latest/features#workflows--en#conditions--en#simple-scripted-condition--en
 
 Use the _Simple scripted condition_ to run a simple embedded script that determines whether an issue should be permitted to transition to a particular status within a workflow. This built-in condition allows you to write a Groovy script that can evaluate a wide range of conditions based on issue fields, workflow states, project properties, user permissions, and other contextual data.

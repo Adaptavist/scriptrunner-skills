@@ -3,10 +3,12 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Get Started > Settings
-- Doc ID: doc-sr4js-28039a6e-6afa-4c39-a898-6141f60d06b1-6ef20549a2f9da03
+- Doc ID: doc-sr4js-e942647d-e7a0-414e-8ea4-b56943ea599c-6ef20549a2f9da03
 - Source: https://docs.adaptavist.com/sr4js/latest/get-started/settings/switch-user-function
 
-The _Switch User_ function allows administrator users to temporarily assume the identity of another user. You can switch user as described [below](https://docs.adaptavist.com/sr4js/latest/get-started/settings/switch-user-function#how-to-switch-user--en), or through the [Switch User](https://docs.adaptavist.com/sr4js/latest/features/built-in-scripts/switch-user) built-in script. The switch user function is enabled by default. However, you may wish to disable this feature if you have extremely strong compliance requirements.
+Enable and use the Switch User function to temporarily assume the identity of another user as a Jira administrator.
+
+You can switch user as described [below](https://docs.adaptavist.com/sr4js/latest/get-started/settings/switch-user-function#how-to-switch-user--en), or through the [Switch User](https://docs.adaptavist.com/sr4js/latest/features/built-in-scripts/switch-user) built-in script. The switch user function is enabled by default. However, you may wish to disable this feature if you have extremely strong compliance requirements.
 
 Note: Users with Script Edit Permissions can still create scripts that perform a user switch via the API.
 

@@ -3,7 +3,7 @@
 - Platform: connect
 - Space: SRC
 - Hierarchy: n/a
-- Doc ID: doc-src-35fa387a-da94-46aa-8978-1e6255d57709-ffcbaa5c154858d6
+- Doc ID: doc-src-31bbd7aa-4217-4868-a035-9270500804e0-ffcbaa5c154858d6
 - Source: https://docs.adaptavist.com/src/latest/observability
 
 The observability section details how to drill down and find specific information to help keep your process running efficiently.

@@ -3,8 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Training
-- Doc ID: doc-sr4js-921dfb5d-b5b9-4a81-a6fe-c6958ebcd138-a1605d5bf01c4f07
+- Doc ID: doc-sr4js-3118cef4-96b9-41b8-856b-e3380e4d94b7-a1605d5bf01c4f07
 - Source: https://docs.adaptavist.com/sr4js/latest/training/course-introduction-to-scripting-in-scriptrunner-for-jira-data-center
+
+Build scripting skills with this course introducing Groovy and the Atlassian Java API for ScriptRunner customization and automation.
 
 This course aims to give users the core information and skills they need to start taking advantage of ScriptRunner's customization and automation potential. It introduces the Groovy scripting language and Atlassian's Java API, and walks through modifying existing scripts so users less familiar with coding can take advantage of ScriptRunner's most powerful features.
 

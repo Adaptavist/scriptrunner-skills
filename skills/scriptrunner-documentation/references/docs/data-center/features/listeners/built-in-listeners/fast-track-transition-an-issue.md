@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Listeners > Built-In Listeners
-- Doc ID: doc-sr4js-83dab33a-5506-4e47-a92f-b898932acc05-e140f0c2f3852357
+- Doc ID: doc-sr4js-25bf1d13-c0ac-46f7-a69f-604d8a1f55f9-e140f0c2f3852357
 - Source: https://docs.adaptavist.com/sr4js/latest/features#listeners--en#built-in-listeners--en#fast-track-transition-an-issue--en
 
 This listener transitions an issue when the selected event is triggered and the specified condition is met. For example, you may want to:

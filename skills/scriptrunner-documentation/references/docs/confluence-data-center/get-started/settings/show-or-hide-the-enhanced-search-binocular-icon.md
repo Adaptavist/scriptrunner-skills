@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Get Started > Settings
-- Doc ID: doc-sr4c-cba54ba1-6a33-4a77-b011-0411d9fe2387-627b5102f89f44bd
+- Doc ID: doc-sr4c-e4373b94-5a53-4798-a49e-dfd00d1d56ea-627b5102f89f44bd
 - Source: https://docs.adaptavist.com/sr4c/latest/get-started#settings--en#show-or-hide-the-enhanced-search-binocular-icon--en
 
 You can now hide the binoculars icon for [Enhanced Search](https://docs.adaptavist.com/sr4c/latest/features/enhanced-search) for all users in the instance.

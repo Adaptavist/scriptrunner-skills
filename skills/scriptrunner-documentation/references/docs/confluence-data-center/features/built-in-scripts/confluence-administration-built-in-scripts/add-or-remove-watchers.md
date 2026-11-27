@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Built-In Scripts > Confluence Administration Built-In Scripts
-- Doc ID: doc-sr4c-c4032f50-6f9a-422c-9823-80aa6eeec694-c71e92416d2652f0
+- Doc ID: doc-sr4c-c14b8440-09a2-47a3-8809-7385f729dcc5-c71e92416d2652f0
 - Source: https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#confluence-administration-built-in-scripts--en#add-or-remove-watchers--en
 
 You can choose to add or remove watchers on spaces, blogs, or content selected by CQL using this built-in script.

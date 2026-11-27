@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Get Started > Settings
-- Doc ID: doc-sr4c-150845a1-8e89-4226-9673-ae75e3980e16-a4110ee7a474d93b
+- Doc ID: doc-sr4c-06407e89-5289-40f8-bc6d-b698b6fc1e97-a4110ee7a474d93b
 - Source: https://docs.adaptavist.com/sr4c/latest/get-started#settings--en#user-editor-settings--en
 
 The _User Editor_ setting allows you to enable or disable the editor minimap.

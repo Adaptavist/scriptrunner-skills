@@ -3,10 +3,14 @@
 - Platform: connect
 - Space: SRC
 - Hierarchy: Scripting
-- Doc ID: doc-src-6c15b8e6-a842-4bf1-987f-3c6391a0c0d0-9d6e2222e74deb83
+- Doc ID: doc-src-b237a73c-3eab-4a88-b4fc-3604b83f0c66-9d6e2222e74deb83
 - Source: https://docs.adaptavist.com/src/latest/scripting#triggering-scripts--en
 
 Learn the rules and how to trigger scripts manually.
+
+## Demo: Triggering scripts manually
+
+[Media](https://demo.arcade.software/iybFVsoCUhXH6wOjQUdI?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true)
 
 ## Triggering scripts programatically
 
@@ -20,8 +24,8 @@ Here is an example:
 
 ```
 import { triggerScript } from "@sr-connect/trigger";
- 
-export default async function(event: any, context: Context): Promise<void> {
+
+export default async function (event: any, context: Context): Promise<void> {
     await triggerScript('ScriptName', {
         functionName: 'functionName',
         payload: {
@@ -55,7 +59,7 @@ Here is an example of how you can disable automatic retry logic and warning mess
 
 ```
 import { triggerScript } from "@sr-connect/trigger";
- 
+
 export default async function (event: any, context: Context): Promise<void> {
     try {
         await triggerScript('Script', {

@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Get Started
-- Doc ID: doc-sr4c-1677e8b4-c22a-4535-adc4-01ca6c12e96d-1460f8fde58a2981
+- Doc ID: doc-sr4c-83c3a6d7-1490-4786-b9d9-b85de9bd5523-1460f8fde58a2981
 - Source: https://docs.adaptavist.com/sr4c/latest/get-started#scripting-resources--en
 
 To use ScriptRunner for Confluence to its full capability, write scripts in Groovy to automate and extend your Confluence instance.

@@ -3,7 +3,7 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: HAPI
-- Doc ID: doc-sr4cc-d7314bd4-e906-45d6-9468-ae1c1e3140fe-32dd2722a9235611
+- Doc ID: doc-sr4cc-06436f55-8396-44b5-a68d-99e01c20f843-32dd2722a9235611
 - Source: https://docs.adaptavist.com/sr4cc/latest/hapi/search-for-pages
 
 Learn how to find specific pages through search, using HAPI.

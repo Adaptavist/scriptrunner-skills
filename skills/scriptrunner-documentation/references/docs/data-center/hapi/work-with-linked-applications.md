@@ -3,8 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: HAPI
-- Doc ID: doc-sr4js-44d0aee8-d87f-4244-8071-7f3b32be2998-0cb0f74960b43ff2
+- Doc ID: doc-sr4js-0416ef21-d590-4a3b-b3b3-97378e1798f0-0cb0f74960b43ff2
 - Source: https://docs.adaptavist.com/sr4js/latest/hapi#work-with-linked-applications--en
+
+Make authenticated requests to other Atlassian applications over app links using HAPI's simplified integration methods.
 
 HAPI provides a simpler method of working with other Atlassian products that have been connected via [Application Links](https://confluence.atlassian.com/adminjiraserver/link-to-other-applications-938846918.html) (app link). HAPI is optimised for the most common integration solutions, such as making requests over an app link configured with _OAuth (with impersonation) authentication_.
 

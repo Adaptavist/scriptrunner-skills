@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Integrations > Other Apps
-- Doc ID: doc-sr4js-5fa77083-7af1-49bd-b3f9-94fe6aef6c01-7f734be3fc6998c0
+- Doc ID: doc-sr4js-d41d4609-bd55-4034-9e21-737d4726833e-7f734be3fc6998c0
 - Source: https://docs.adaptavist.com/sr4js/latest/integrations/other-apps#configuration-manager-for-jira-cmj--en
 
 [Configuration Manager for Jira (CMJ)](https://marketplace.atlassian.com/apps/1211611/configuration-manager-for-jira-cmj?hosting=datacenter&tab=overview) automates the process of copying projects and configurations from one Jira instance to another. The app allows you to export or import specific project configurations or complete projects (configuration and data). ScriptRunner is integrated with CMJ, allowing you to export some of your ScriptRunner specific configurations.

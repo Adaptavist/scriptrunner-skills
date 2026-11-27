@@ -3,7 +3,7 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: Features > Macros > Custom Macros
-- Doc ID: doc-sr4cc-54b3c79a-9b97-4979-a7ab-1dbe966d0ac6-00a0d52679f6c14b
+- Doc ID: doc-sr4cc-5346757a-a36b-4a6c-b72c-8e073fb9ebb0-00a0d52679f6c14b
 - Source: https://docs.adaptavist.com/sr4cc/latest/features/macros/custom-macros#example-return-the-page-id--en
 
 Instructions on creating a macro that will pull a specified Page ID onto a desired Confluence page.
@@ -15,11 +15,11 @@ Tip: This is a simple example of the way a custom macro can return page informat
 ## Create the macro
 
 1.  Select Create Custom Macro.
-2.  Enter a Name to identify the Macro, like _Page ID_.
+2.  Enter a Name to identify the macro, like _Page ID_.
 3.  Enter an optional Description, like _Gets the page ID_.
 4.  Select Enabled to allow the macro to be added to pages.
-5.  Select _None_ for Body Type.
-6.  Pick _Block_ for Output Type.
+5.  Select None for Body Type.
+6.  Pick Block for Output Type.
     
 7.  Enter the following script into the Script to Execute field:
     

@@ -3,7 +3,7 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: Migration
-- Doc ID: doc-sr4cc-cc0b4671-51f9-48f7-9c91-670961e2b6b6-8fc1558f94d367df
+- Doc ID: doc-sr4cc-420af594-13c1-4c5a-893f-8ae078508a7a-8fc1558f94d367df
 - Source: https://docs.adaptavist.com/sr4cc/latest/migration/rewrite-scripts-for-cloud-guide
 
 Learn how to rewrite your scripts for use in ScriptRunner for Confluence Cloud after migrating from the Sever/DC product.
@@ -34,9 +34,9 @@ HAPI is an API you can use to write scripts in a simpler way in ScriptRunner. Sc
 
 HAPI in ScriptRunner for Confluence Cloud differs from Data Center as not all methods are available in Cloud. Scripts that use HAPI methods will likely require significantly fewer changes when migrating to ScriptRunner for Confluence Cloud.
 
-Don't have the time or capacity to write scripts in-house? Get your Server scripts translated to Cloud without writing a single line of code yourself. Check out our Scripting Service.
+[Scripting Service](https://www.adaptavist.com/solutions/development-services)
 
-[shortcut Scripting Service](https://www.adaptavist.com/solutions/development-services)
+Don't have the time or capacity to write scripts in-house? Get your Server scripts translated to Cloud without writing a single line of code yourself. Check out our Scripting Service.
 
 ### Migration tools
 

@@ -3,10 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: HAPI
-- Doc ID: doc-sr4js-4868129b-d0a5-4067-b75f-55231f9ce2b7-a39744dfd25c7c82
+- Doc ID: doc-sr4js-1216be47-22a0-4c61-a416-032452c8432b-a39744dfd25c7c82
 - Source: https://docs.adaptavist.com/sr4js/latest/hapi#work-with-epics-stories-and-sprints--en
 
-With HAPI, we've made it easy for you to work with epics, stories, and sprints.
+Link issues to sprints, retrieve sprint information, and work with epics and stories using HAPI.
 
 ## Creating an epic
 

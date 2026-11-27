@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Workflows > Conditions
-- Doc ID: doc-sr4js-3529040a-ddc4-48d0-b07c-7b0a750eda64-cc96693113f33d2f
+- Doc ID: doc-sr4js-341295b7-1a21-4070-ac60-b867b2aa5cd0-cc96693113f33d2f
 - Source: https://docs.adaptavist.com/sr4js/latest/features#workflows--en#conditions--en#groups-condition--en
 
 Use the _Group(s)_ condition to control whether or not a user can transition an issue based on their [group memberships](https://confluence.atlassian.com/adminjiraserver/managing-groups-938847035.html).

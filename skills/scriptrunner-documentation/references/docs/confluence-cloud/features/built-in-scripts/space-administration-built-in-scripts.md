@@ -3,14 +3,14 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: Features > Built-In Scripts
-- Doc ID: doc-sr4cc-9216e88f-a57e-46a3-8cb1-86edc79ab45a-5a4aaf2d83049966
+- Doc ID: doc-sr4cc-83d142bd-1260-4e70-a8af-c4018354d201-5a4aaf2d83049966
 - Source: https://docs.adaptavist.com/sr4cc/latest/features/built-in-scripts/space-administration-built-in-scripts
 
 Learn about the built-in scripts related to Space administration tasks.
 
 Space administrators can:
 
--   Make changes only on the spaces that they are admins of.
+-   Make changes only in the spaces that they are admins of.
 -   Access all features in the _ScriptRunner_ section.
 
 Note: Permissions
@@ -21,7 +21,7 @@ Note: Permissions
 ## Navigation
 
 1.  Navigate to your space.
-2.  Open Space Settings > Integrations > ScriptRunner. The built-in scripts open:
+2.  Open Space Settings > Integrations > ScriptRunner. The Built-in Scripts page opens:
 
 Additionally, you can access the space administration built-in scripts from _Space apps_:
 

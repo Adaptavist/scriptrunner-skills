@@ -3,7 +3,7 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: Features
-- Doc ID: doc-sr4cc-85c257c5-d2f3-4adf-a975-e8d616131c4c-08068211f862358f
+- Doc ID: doc-sr4cc-6cea3390-be82-464c-a1a0-3385b9177c7b-08068211f862358f
 - Source: https://docs.adaptavist.com/sr4cc/latest/features/macros
 
 Macros are configured to enhance the content on your Confluence pages.
@@ -13,7 +13,7 @@ Macros make your organization's pages easier to use for both editors and viewers
 There are two types of macros available:
 
 -   [Built-In Macros](macros/built-in-macros.md)
--   [Custom Macros](macros/custom-macros.md)
+-   [Custom Macros](macros/custom-macros.md).
 
 ## View macros in your instance
 
@@ -27,14 +27,14 @@ You can use the _Actions_ menu to edit, enable, and delete your custom macros. T
 
 You can choose your custom macro when you edit a Confluence Cloud page.
 
-1.  Select the macro browser, and start typing the name of your macro in the field.
+1.  Select the Macro Browser, and start typing the name of your macro in the field.
     
     Tip: View all macros
     
     If you don't know the name of the macro you want to use, select View More to view a list of all macros.
     
 2.  Once your macro appears, select it.
-3.  Enter any required information when the macro and the right sidebar appears.
+3.  Enter any required information when the macro and the right sidebar appear.
     
     Tip: Macro tips
     

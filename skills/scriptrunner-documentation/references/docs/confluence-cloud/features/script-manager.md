@@ -3,7 +3,7 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: Features
-- Doc ID: doc-sr4cc-a831aa06-74f9-4ab1-9944-90dd2f696034-155d5ceacc83dc0f
+- Doc ID: doc-sr4cc-3841b1df-08af-4362-a928-b7d336f92216-155d5ceacc83dc0f
 - Source: https://docs.adaptavist.com/sr4cc/latest/features/script-manager
 
 The Script Manager allows saved scripts and folders to be directly managed from the ScriptRunner front end.
@@ -12,7 +12,7 @@ The Script Manager allows saved scripts and folders to be directly managed from 
 
 The Script Manager feature in ScriptRunner for Confluence Cloud allows you to manage saved `.groovy` scripts and folders directly from the ScriptRunner front-end. It enables you to create, edit, save, delete, and rename scripts and folders within your instance without relying on FTP services or server administrators.
 
-With Script Manager, you can easily reuse and organize scripts in any of the Groovy code editors across your instance, making script management more efficient and accessible.
+With Script Manager, you can easily reuse and organize scripts in any Groovy code editors across your instance, making script management more efficient and accessible.
 
 For example, if you had the same conditional code across multiple scripts and needed to update that condition, you previously had to make the change in several places. With Script Manager, you can write the code once and reuse it wherever needed. When it's time to update it, you modify it in one place, and the change is automatically reflected across all occurrences.
 
@@ -23,7 +23,7 @@ For example, if you had the same conditional code across multiple scripts and ne
     
     Note: If a folder is selected, the new script or folder is created within that folder.
     
-3.  Enter a name in the text box displayed. If you are adding code to a new script file, refer to [Add a new script](https://docs.adaptavist.com/sr4cc/latest/features/script-manager#script-manager-add-a-new-script--en).
+3.  Enter a Name in the text box displayed. If you are adding code to a new script file, refer to [Add a new script](https://docs.adaptavist.com/sr4cc/latest/features/script-manager#script-manager-add-a-new-script--en).
 4.  Click Save.
     
     A new `.groovy` script file or folder is added, as shown in the example below:
@@ -41,8 +41,8 @@ To add a new script:
 
 1.  Navigate to ScriptRunner > Script Manager.
 2.  Click Add Script.
-3.  Enter a name for the new script in the text box displayed.
-4.  Enter the script code for the new script within the code editor.
+3.  Enter a Name for the new script in the text box displayed.
+4.  Enter the new script's code in the code editor.
 5.  Optional: (Optional) Click Example Scripts to view a list of example scripts.
     1.  Choose an example script from the list provided, and the code automatically appears. You also have the option to search for a particular script.
     2.  Click Copy Code and then Close.
@@ -82,7 +82,7 @@ To edit saved `.groovy` scripts:
 To delete `.groovy` script files and folders:
 
 1.  Navigate to ScriptRunner > Script Manager.
-2.  Right click the script file or folder you want to delete.
+2.  Right-click the script file or folder you want to delete.
 3.  Click Delete from the pop-up menu.
 
 Important: Things to remember when deleting scripts and folders
@@ -100,7 +100,7 @@ You can reuse scripts saved in _Script Manager_ in any of the Groovy code editor
 -   [Script Listeners](script-listeners.md)
 -   [Macros](macros.md)
 
-As an example, let's choose to create a new Script Job.
+For example, let's create a new Script Job.
 
 1.  Navigate to ScriptRunner > Script Jobs.
 2.  Click Create Script Job.
@@ -116,7 +116,7 @@ As an example, let's choose to create a new Script Job.
 6.  Select the script you want to reuse.
 7.  Click Load Script, and your chosen script is now available in the Script Jobs code editor.
     
-    Note: As this is a saved script that is ready to be reused, you are automatically shown the script in read-only mode.
+    Note: Because this is a saved script that is ready to be reused, you are automatically shown the script in read-only mode.
     
 8.  Optional: Modify the saved script if necessary, as follows:
     
@@ -134,12 +134,12 @@ As an example, let's choose to create a new Script Job.
     
     In Script Manager, you can view your saved script files and identify exactly where they are configured in your ScriptRunner for Jira Cloud instance. This includes details on the location and number of configurations where your scripts are loaded.
     
-    For example, say you have a file that you set up to be loaded within the configuration of two Script Listeners, you can review that file's usage details. Click the Script Usage drop-down list, and a summary of all configurations loading that script displays. Scroll through the feature categories showing where that file is in use and choose the Script Listeners, as shown below:
+    For example, if you have a file that you set up to be loaded within the configuration of two Script Listeners, you can review that file's usage details. Click the Script Usage drop-down list and a summary of all configurations that the script displays. Scroll through the feature categories showing where that file is in use and choose the Script Listeners, as shown below:
     
 
 ### Reuse scripts by importing reusable Groovy code
 
-You can import reusable `.groovy` code into existing or new scripts, and you can create `.groovy` classes or scripts to organise shared logic. This allows you to structure your code into classes and packages, and to import scripts directly where needed.
+You can import reusable `.groovy` code into existing or new scripts, and you can create `.groovy` classes or scripts to organise shared logic. This allows you to structure your code into classes and packages and to import scripts directly where needed.
 
 ScriptRunner leverages [Groovy's program structure](https://docs.groovy-lang.org/4.0.28/html/documentation/core-program-structure.html#_scripts_versus_classes), which allows for importing and reusing code from classes and scripts. ScriptRunner treats the code stored in Script Manager as a `.groovy` codebase, and all Groovy scripts in ScriptRunner have contextual awareness of the code in Script Manager. This means that if you are writing the same function for two Script Listeners and duplicating the code in both places, you can instead place that logic in a utility script or class in Script Manager, then import and reuse it wherever you need it.
 
@@ -177,6 +177,6 @@ script.greet('Admin')
 
 Note: Package note
 
-The package path must match your directory structure: `com/myapp/simplescripts/reusablescript.groovy`. You will need to provide the package structure when organizing scripts for reuse via imports. The original bolding that was applied to this entire note was dropped during conversion. Watch for other instances of missing bold that you may want to restore.
+The package path must match your directory structure: `com/myapp/simplescripts/reusablescript.groovy`. You will need to provide the package structure when organizing scripts for reuse via imports. The original bolding applied to this note was dropped during conversion. Watch for other instances of missing bold that you may want to restore.
 
 You can call specific methods declared in the script, or you can use Run to run the entire script. Using a script works similarly to using a class because, in the background, each `.groovy` file automatically becomes a class you can instantiate.

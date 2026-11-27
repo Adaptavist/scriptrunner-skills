@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Best Practices > Write Code
-- Doc ID: doc-sr4js-376566a2-379d-45a5-b772-a852c1cf868d-62a45a3ea2135505
+- Doc ID: doc-sr4js-6a5455a9-2bad-4697-be41-46ab2db537fb-62a45a3ea2135505
 - Source: https://docs.adaptavist.com/sr4js/latest/best-practices/write-code#create-a-script-plugin--en
 
 A script plugin is an Atlassian app that bundles ScriptRunner scripts and their configurations. Script plugins can be created for the following ScriptRunner components:

@@ -3,8 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: HAPI
-- Doc ID: doc-sr4js-365d7901-15c8-4b1b-a016-3a7b9d44f05f-912ce3990413edb1
+- Doc ID: doc-sr4js-5a2da6a9-0477-45c8-9814-64c089060029-912ce3990413edb1
 - Source: https://docs.adaptavist.com/sr4js/latest/hapi#work-with-groups--en
+
+Create, modify, and delete groups using HAPI, with code examples for each operation.
 
 |  |  |
 | --- | --- |

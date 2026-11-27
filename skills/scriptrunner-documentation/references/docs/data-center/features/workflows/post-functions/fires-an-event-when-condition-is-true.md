@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Workflows > Post Functions
-- Doc ID: doc-sr4js-112fcc60-78a4-497d-b78f-c33a6fc447f1-49b7c10ee6aa8cae
+- Doc ID: doc-sr4js-b338a59a-931c-4d19-8284-4629cfed078b-49b7c10ee6aa8cae
 - Source: https://docs.adaptavist.com/sr4js/latest/features#workflows--en#post-functions--en#fires-an-event-when-condition-is-true--en
 
 The _Fires an event when condition is true_ post function enables you to trigger a specific [Jira event](https://confluence.atlassian.com/adminjiraserver073/adding-a-custom-event-861253643.html) based on a custom condition. Once fired, the event can be picked up by a [notification scheme](https://confluence.atlassian.com/adminjiraserver0820/creating-a-notification-scheme-1095777110.html), determining who gets alerted.

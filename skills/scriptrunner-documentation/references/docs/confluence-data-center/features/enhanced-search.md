@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features
-- Doc ID: doc-sr4c-c44511c5-0717-4f31-b71e-fd6bda296c1b-fb4fa43c80df535b
+- Doc ID: doc-sr4c-1c6ea544-81ac-4f2c-aa18-b79551752d9c-fb4fa43c80df535b
 - Source: https://docs.adaptavist.com/sr4c/latest/features#enhanced-search--en
 
 Using Enhanced Search, you can search your content using CQL without calling Atlassian's Confluence REST API.

@@ -3,8 +3,10 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: ScriptRunner Migration to Cloud
-- Doc ID: doc-sr4jc-88b6fd8b-28fe-42fc-9cb5-5ee69a7c0523-0b723f213c9cdb98
+- Doc ID: doc-sr4jc-4c064514-ad68-4fc2-8397-cdb4da28cb8c-0b723f213c9cdb98
 - Source: https://docs.adaptavist.com/sr4jc/latest/scriptrunner-migration-to-cloud/gdpr-migration
+
+Understand how GDPR-related changes to Atlassian Cloud REST APIs affect ScriptRunner for Jira Cloud and what updates are required to your scripts.
 
 Atlassian Cloud REST APIs were updated in response to the GDPR legislation.
 
@@ -52,7 +54,7 @@ Matching user fields against full names or display names will work as normal aft
 
 ## What About JQL Keywords?
 
-ScriptRunner provides a number of " [keywords](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/scriptrunner_enhanced_search.dita) " that can be used within regular Jira searches to filter issues based on additional issue data.
+ScriptRunner provides a number of " [keywords](../features/script-runner-enhanced-search.md) " that can be used within regular Jira searches to filter issues based on additional issue data.
 
 If you have any Jira filters that contain "commentedBy", "fileAttachedBy" or "lastCommentBy" then must be updated to use an accountId to reference users.
 

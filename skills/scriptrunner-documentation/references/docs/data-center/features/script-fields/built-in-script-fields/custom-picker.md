@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Script fields > Built-In Script Fields
-- Doc ID: doc-sr4js-5e40ea7f-0a9b-4f9f-85cc-d29349e4bc1d-f17324dda7b3b773
+- Doc ID: doc-sr4js-c4efecca-984a-45e5-8593-b739bc6fab5d-f17324dda7b3b773
 - Source: https://docs.adaptavist.com/sr4js/latest/features#script-fields--en#built-in-script-fields--en#custom-picker--en
 
 Use a _Custom Picker_ field to set up a field that allows users to pick values from a list. It is similar to the _Database, LDAP_, and _Issue Picker_ script fields, but it is not specialized for any particular case.

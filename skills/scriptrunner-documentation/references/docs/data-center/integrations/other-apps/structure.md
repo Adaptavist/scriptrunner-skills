@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Integrations > Other Apps
-- Doc ID: doc-sr4js-2978d0aa-8bd7-4af8-98cf-068e34d0660b-d1dfc1c2859d7117
+- Doc ID: doc-sr4js-8f206809-2f7a-4e2d-8200-45779fe89391-d1dfc1c2859d7117
 - Source: https://docs.adaptavist.com/sr4js/latest/integrations/other-apps#structure--en
 
 Here is a minimal example for listing structures from the [Structure plugin](https://marketplace.atlassian.com/plugins/com.almworks.jira.structure). The comments in the script give more information about the important elements.

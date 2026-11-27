@@ -3,7 +3,7 @@
 - Platform: connect
 - Space: SRC
 - Hierarchy: Get Help
-- Doc ID: doc-src-1df33e28-306c-447a-8220-dbf18d056864-e306b710e369037f
+- Doc ID: doc-src-e22f116d-de5c-4e56-b673-5097d6753299-e306b710e369037f
 - Source: https://docs.adaptavist.com/src/latest/get-help#ai-assistant--en
 
 ScriptRunner Connect has an AI assistant feature based on the ChatGPT 4o model to help you write scripts, answer questions about how the app works, and find useful templates for your use cases.
@@ -12,9 +12,9 @@ The AI assistant can be used with a monthly credit allotment.
 
 Note: Bring your own AI
 
-If you wish to bring your own AI tool, use agentic AI-driven development, or entirely [vibe code](https://en.wikipedia.org/wiki/Vibe_coding) integrations, [you can do that too.](https://docs.adaptavist.com/src/latest/external-coding/working-with-ai-agents).
+If you wish to bring your own AI tool, use agentic AI-driven development, or entirely [vibe code](https://en.wikipedia.org/wiki/Vibe_coding) integrations, [you can do that too.](../work-with-ai-agents/work-with-your-own-ai-agent.md).
 
-## Demo: AI Assistant
+## Demo: AI assistant
 
 [Media](https://demo.arcade.software/1fcFWinIxLAzQxUto7HH?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true)
 

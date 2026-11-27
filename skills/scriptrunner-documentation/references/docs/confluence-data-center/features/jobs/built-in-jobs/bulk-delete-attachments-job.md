@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Jobs > Built-In Jobs
-- Doc ID: doc-sr4c-e5e5474b-a594-4d8e-87b7-ab5ed6d13a67-f8a441574e49de34
+- Doc ID: doc-sr4c-c505f3d5-9db6-4de8-bec6-9aa83204388c-f8a441574e49de34
 - Source: https://docs.adaptavist.com/sr4c/latest/features#jobs--en#built-in-jobs--en#bulk-delete-attachments-job--en
 
 Using the _Bulk Delete Attachments_ job, you can schedule attachments to be deleted based on selected criteria.

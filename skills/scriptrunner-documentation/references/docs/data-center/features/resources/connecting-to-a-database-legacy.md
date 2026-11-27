@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Resources
-- Doc ID: doc-sr4js-835fa197-d4db-4cd3-8db0-dc8ae9d3668a-20aae2ef271b4963
+- Doc ID: doc-sr4js-932d419b-7d15-4a4f-bab9-33bd683f6985-20aae2ef271b4963
 - Source: https://docs.adaptavist.com/sr4js/latest/features#resources--en#connecting-to-a-database-legacy--en
 
 CAUTION: See [Resources](https://docs.adaptavist.com/sr4js/latest/features/resources) for a simpler and more robust way of accessing databases.

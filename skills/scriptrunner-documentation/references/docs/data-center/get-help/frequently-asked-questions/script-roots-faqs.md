@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Get Help > Frequently Asked Questions
-- Doc ID: doc-sr4js-b8e848a6-28a9-4ca4-ba9e-158cb054d849-a7a91a982e1221f0
+- Doc ID: doc-sr4js-841a9031-8919-4e72-9285-a0789ac9ac9c-a7a91a982e1221f0
 - Source: https://docs.adaptavist.com/sr4js/latest/get-help#frequently-asked-questions--en#script-roots-faqs--en
 
 ## Where are script files stored on Jira Data Center? / Where is the script roots folder on Jira Data Center?

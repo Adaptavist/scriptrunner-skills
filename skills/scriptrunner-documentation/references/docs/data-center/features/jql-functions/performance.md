@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > JQL Functions
-- Doc ID: doc-sr4js-84610ac7-b2fe-486b-b50a-403dc4fd6b81-68348a4ccd8ad4d7
+- Doc ID: doc-sr4js-fc669160-48a5-4fee-bb3a-5f738bf59092-68348a4ccd8ad4d7
 - Source: https://docs.adaptavist.com/sr4js/latest/features#jql-functions--en#performance--en
 
 All the functions have been tested on real-world instances with greater than five hundred thousand issues, and most execute in well under one second. Where that is not the case, the performance characteristics are documented.

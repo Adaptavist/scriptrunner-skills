@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > JQL Functions > Included JQL Functions
-- Doc ID: doc-sr4js-f0121d0d-b0fe-4215-bcb1-35da1406719c-2aa329d2acd15f04
+- Doc ID: doc-sr4js-6f005a6f-d235-40fb-a151-36e1e5cb5477-2aa329d2acd15f04
 - Source: https://docs.adaptavist.com/sr4js/latest/features#jql-functions--en#included-jql-functions--en#date--en
 
 This page provides information on functions used to search for issues by date:

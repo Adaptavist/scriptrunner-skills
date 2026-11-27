@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Release Notes
-- Doc ID: doc-sr4c-1a3e8c97-d70b-44d2-931a-601907491f0a-55a1116bc8bb778b
+- Doc ID: doc-sr4c-1453a82c-c96d-45c7-87e0-30e926608208-55a1116bc8bb778b
 - Source: https://docs.adaptavist.com/sr4c/latest/release-notes/breaking-changes
 
 Find information about upcoming and latest changes to ScriptRunner for Confluence Data Center here.
@@ -13,6 +13,55 @@ Find information about upcoming and latest changes to ScriptRunner for Confluenc
 ### Confluence was updated to 10.0.0
 
 See the Atlassian [Confluence 10.0.0 release notes](https://confluence.atlassian.com/doc/confluence-10-0-release-notes-1612579091.html) for details.
+
+### App data storage changes
+
+Confluence 10 changes how apps store their settings, which may affect your REST endpoints. To avoid losing REST endpoints when you upgrade, it's important to check your REST endpoint configuration before upgrading. Please carefully consider the changes described in this section.
+
+#### Large REST endpoint configurations not migrated in Confluence 10
+
+Confluence 10 stores app settings in a new database table, `PLUGIN_SETTING`, which limits each stored value to 99,000 characters. When you upgrade from Confluence 9, Confluence only migrates settings that are under this limit. See [Atlassian's documentation](https://confluence.atlassian.com/doc/preparing-for-confluence-10-0-1509720080.html) for more details.
+
+ScriptRunner stores all of your REST endpoints together as one value, so the limit applies to the combined size of every REST endpoint configuration, including inline scripts, not to each endpoint separately.
+
+If your combined REST endpoint configuration is over 99,000 characters, Confluence doesn't migrate it and doesn't show an error. After the upgrade:
+
+-   Your REST endpoints no longer appear on the REST Endpoints page.
+-   Requests to those endpoints return a 404 error.
+
+Your original configuration usually remains in the Confluence 9 settings table, `BANDANA`, so in most cases you can recover it.
+
+#### What to do before you upgrade
+
+Check the combined size of your REST endpoint configuration before you upgrade to Confluence 10. To do this, run the following script in the Script Console on your Confluence 9 instance:
+
+```
+import com.atlassian.sal.api.component.ComponentLocator
+import com.atlassian.sal.api.pluginsettings.PluginSettingsFactory
+
+def v = ComponentLocator.getComponent(PluginSettingsFactory).createGlobalSettings()
+    .get('com.onresolve.confluence.groovy.groovyrunner:rest-endpoints') as String
+[characters: v?.length() ?: 0, limit: 99000, headroom: 99000 - (v?.length() ?: 0)]
+```
+
+The script returns the number of characters in your REST endpoint configuration, the limit, and how much space you have left (`headroom`). If `headroom` is low or below zero, reduce the size of your configuration before you upgrade.
+
+Run the script before you upgrade. On Confluence 10, the script reads the new settings table, so it returns 0 if your REST endpoints weren't migrated.
+
+Tip: In most cases it may be as simple as moving large inline scripts into script files in your [script roots](https://docs.adaptavist.com/sr4c/latest/best-practices-and-app-management/script-roots), so the configuration stores only the file path.
+
+We also recommend backing up your configuration before you upgrade:
+
+-   Back up your Confluence database as part of your normal upgrade process. This backup includes the `BANDANA` table, where your REST endpoint configuration is stored.
+-   Export a copy of your REST endpoints from the Script Registry by clicking Export. The .zip file contains one JSON file for each REST endpoint, including its inline script. This export is a record of your configuration, not a backup you can import into ScriptRunner.
+
+#### Recover missing REST endpoints
+
+If you've already upgraded to Confluence 10 and your REST endpoints are missing, contact [Adaptavist Support](https://the-adaptavist-group-support.atlassian.net/servicedesk/customer/user/login). We can help you check whether they can be restored.
+
+You can't restore REST endpoints from a Script Registry export.
+
+Recover your REST endpoints before you upgrade to Confluence 11. Atlassian removes the APIs for the `BANDANA` table in Confluence 11.
 
 ### API changes
 

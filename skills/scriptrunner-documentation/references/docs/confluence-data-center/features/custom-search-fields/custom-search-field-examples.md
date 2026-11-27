@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Custom Search Fields
-- Doc ID: doc-sr4c-8f74d75e-1c64-44d2-919e-f9f0a5653a2e-2f649e0c0f764777
+- Doc ID: doc-sr4c-f183bf39-b20e-4048-8445-3408f779bd61-2f649e0c0f764777
 - Source: https://docs.adaptavist.com/sr4c/latest/features#custom-search-fields--en#custom-search-field-examples--en
 
 Find several examples of Custom Search Fields, which help administrators create custom fields to match specific needs.

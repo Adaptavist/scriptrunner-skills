@@ -3,10 +3,12 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Built-in scripts
-- Doc ID: doc-sr4js-143957ea-9f98-4b67-82d8-21d96d796dfa-4af51a2e97b5e30f
+- Doc ID: doc-sr4js-dcae0bb3-2664-473c-9126-b798178bf2a5-4af51a2e97b5e30f
 - Source: https://docs.adaptavist.com/sr4js/latest/features#built-in-scripts--en#configuration-exporter--en
 
-Use _Configuration Exporter_ to export extension configuration information to a descriptor YAML file. The YAML file contains the information required to configure built-in extension points like:
+Use Configuration Exporter to export extension configuration information to a descriptor YAML file.
+
+The YAML file contains the information required to configure built-in extension points like:
 
 -   Listeners
 -   Hooks

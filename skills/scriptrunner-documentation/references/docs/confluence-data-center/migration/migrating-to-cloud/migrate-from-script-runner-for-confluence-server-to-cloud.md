@@ -2,9 +2,9 @@
 
 - Platform: confluence-data-center
 - Space: SR4C
-- Hierarchy: Migration > Migrating to or from Cloud
-- Doc ID: doc-sr4c-c6e0e35a-b0dc-4067-a3b8-77e0b8070a1a-b2cf2c8044aa5d3c
-- Source: https://docs.adaptavist.com/sr4c/latest/migration#migrating-to-or-from-cloud--en#migrate-from-scriptrunner-for-confluence-server-to-cloud--en
+- Hierarchy: Migration > Migrating to Cloud
+- Doc ID: doc-sr4c-8183a3b2-88d4-4a4b-80e6-b97156157e66-b65a605ad7cb8364
+- Source: https://docs.adaptavist.com/sr4c/latest/migration#migrating-to-cloud--en#migrate-from-scriptrunner-for-confluence-server-to-cloud--en
 
 The general approach to migrating a script from Server to Cloud is to analyze the purpose of the script, find the equivalent feature in Cloud (we have named them the same where possible), and rewrite the script.
 

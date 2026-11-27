@@ -3,10 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: HAPI
-- Doc ID: doc-sr4js-15e7a06d-f489-4210-b6ff-df32d6d9b1cc-f5a36360e91cb82a
+- Doc ID: doc-sr4js-a65d1526-ad37-46b1-b16f-d753344ed8f7-f5a36360e91cb82a
 - Source: https://docs.adaptavist.com/sr4js/latest/hapi#hapi-examples--en
 
-You may have read how [HAPI](../uncategorized/h/hapi.md) works but are unsure how to use it effectively in your Jira instance. Below are multiple use cases/examples that incorporate HAPI in the scripts, ready for you to explore and customize to your Jira instance:
+Explore practical HAPI script examples for common Jira tasks, ready to adapt for your own instance.
 
 -   [Automatically add users to linked issues as watchers](https://docs.adaptavist.com/sr4js/latest/hapi#automatically-add-users-to-linked-issues-as-watchers--en)
 -   [Calculate the impact of an issue based on the number of linked support cases](https://docs.adaptavist.com/sr4js/latest/hapi#calculate-the-impact-of-an-issue-based-on-the-number-of-linked-support-cases--en)

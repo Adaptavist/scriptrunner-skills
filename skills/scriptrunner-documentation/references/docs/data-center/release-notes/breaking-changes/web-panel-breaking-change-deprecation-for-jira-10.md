@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Release Notes > Breaking Changes
-- Doc ID: doc-sr4js-e384569c-b498-4ad6-add3-ac0c903b0f21-9e369225be52cfa1
+- Doc ID: doc-sr4js-7b86544a-cb3d-48ee-b339-6e298bea97e2-9e369225be52cfa1
 - Source: https://docs.adaptavist.com/sr4js/latest/release-notes/breaking-changes#web-panel-breaking-change-deprecation-for-jira-10--en
 
 Understand how [web panel](https://docs.adaptavist.com/sr4js/latest/features/fragments/web-panel) provider class behaviour changes after [upgrading to Jira 10.0](https://docs.adaptavist.com/sr4js/latest/get-started/update-scriptrunner/compatibility-with-jira) and what you need to update if you used the Atlassian WebPanel interface.

@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Best Practices
-- Doc ID: doc-sr4js-8233af80-408e-4fab-bda6-18218425cb9e-2ca5a8813e124a87
+- Doc ID: doc-sr4js-4e91e686-574f-4873-9df4-f84220b8af2a-2ca5a8813e124a87
 - Source: https://docs.adaptavist.com/sr4js/latest/best-practices/audit-your-jira-instance-using-scriptrunner
 
 This checklist offers a comprehensive guide to using ScriptRunner to audit your Jira instance and ScriptRunner scripts. A thorough audit ensures a smoother migration process, reduces unexpected issues, and helps you optimize your instance for your move to Cloud.

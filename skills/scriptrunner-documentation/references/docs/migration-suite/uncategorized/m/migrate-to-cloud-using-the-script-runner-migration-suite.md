@@ -3,10 +3,12 @@
 - Platform: migration-suite
 - Space: SMS
 - Hierarchy: n/a
-- Doc ID: doc-sms-af8d59f6-f674-47c3-a308-9c6be2af0069-a50f36cf4ce1ed93
+- Doc ID: doc-sms-66a077a4-3632-49eb-b78a-5dde0d43425f-a50f36cf4ce1ed93
 - Source: https://docs.adaptavist.com/sms/latest/migrate-to-cloud-using-the-scriptrunner-migration-suite
 
-This page will help you plan and accomplish your migration from Data Center to Cloud, using the ScriptRunner Migration Suite. The following steps of a migration plan are outlined for you, including links to resources from Atlassian, ScriptRunner, and the ScriptRunner Migration Suite:
+This page will help you plan and accomplish your migration from Data Center to Cloud, using the ScriptRunner Migration Suite.
+
+The following steps of a migration plan are outlined for you, including links to resources from Atlassian, ScriptRunner, and the ScriptRunner Migration Suite:
 
 -   [Before you start](https://docs.adaptavist.com/sms/latest/migrate-to-cloud-using-the-scriptrunner-migration-suite#before-you-start--en)
 -   [Install ScriptRunner for Jira Cloud](https://docs.adaptavist.com/sms/latest/migrate-to-cloud-using-the-scriptrunner-migration-suite#install-scriptrunner-for-jira-cloud--en)

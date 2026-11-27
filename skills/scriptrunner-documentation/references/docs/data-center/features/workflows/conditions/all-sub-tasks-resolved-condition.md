@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Workflows > Conditions
-- Doc ID: doc-sr4js-2aed5228-54a6-4307-9590-f34e981f7445-bee0be1ebcb0b608
+- Doc ID: doc-sr4js-23314c67-610f-4f74-a42b-7d7003517bee-bee0be1ebcb0b608
 - Source: https://docs.adaptavist.com/sr4js/latest/features#workflows--en#conditions--en#all-sub-tasks-resolved-condition--en
 
 Use the _All sub-tasks must be resolved_ built-in condition to stop/hide a transition in a parent issue until all sub-tasks are set to a chosen resolution. For example, you can use this script to make sure a parent task cannot be transitioned to the _Done_ status until all sub-tasks have a resolution of _Done_.

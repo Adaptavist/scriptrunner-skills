@@ -3,14 +3,14 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: HAPI
-- Doc ID: doc-sr4js-aff1d536-02f6-455f-a9c1-a43c1bc77cfd-83bf2d4e13f89685
+- Doc ID: doc-sr4js-61b9169a-ccd8-4f97-bb62-0112d454ee13-83bf2d4e13f89685
 - Source: https://docs.adaptavist.com/sr4js/latest/hapi#work-with-comments--en
+
+Add comments using HAPI, with examples for adding, updating, and retrieving comments. You can also restrict who can see the comments.
 
 |  |  |
 | --- | --- |
 |  | Migrating to Jira Cloud? This feature is available in Cloud.<br>[HAPI Cloud documentation](https://docs.adaptavist.com/sr4jc/latest/hapi/work-with-comments) |
-
-With HAPI, you can easily add comments to issues and restrict who can see the comments.
 
 Note: To work with comments in Jira Service Management see our [Work with Jira Service Management](https://docs.adaptavist.com/sr4js/latest/hapi/work-with-jira-service-management) page.
 

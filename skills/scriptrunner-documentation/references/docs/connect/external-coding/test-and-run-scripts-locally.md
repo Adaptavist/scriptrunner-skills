@@ -3,10 +3,12 @@
 - Platform: connect
 - Space: SRC
 - Hierarchy: External Coding
-- Doc ID: doc-src-61edf9ea-3912-447c-ab29-62ba235c1f35-362bde9d6c365ad3
-- Source: https://docs.adaptavist.com/src/latest/external-coding#test-and-run-scripts-locally--en
+- Doc ID: doc-src-b4a93b8b-c6fd-4ba4-8570-4bfbaf15b85e-e3ee7e07f90418d6
+- Source: https://docs.adaptavist.com/src/latest/external-coding/test-and-run-scripts-locally
 
 Information on testing and running scripts on your local instance.
+
+Note: This applies for both [CLI](cli-command-line-interface.md) and [SFTP (Remote Workspace)](sftp-remote-workspace.md) interfaces.
 
 Normally, once you've uploaded code, you'll run it inside the ScriptRunner web app. However, there are situations where you may want to run scripts locally in the [Node](https://nodejs.org/) runtime; for example, when developing automated tests or you wish to test the script locally in the local Node runtime, although we recommend keep using our [ScriptRunner Connect runtime](https://docs.adaptavist.com/src/latest/scripting/runtime) by triggering the scripts via our web UI to avoid added complexity that is necessary to have the connectors mocked locally.
 
@@ -35,18 +37,18 @@ Warning: You must implement your own authentication logic instead of relying on 
         BaseApiCore,
     } from '@managed-api/commons-core';
     import { JiraCloudApiCore } from '@managed-api/jira-cloud-v3-core';
-     
+    
     export class JiraCloudApi extends JiraCloudApiCore {
         constructor(
-     private baseUrl: string,
-     private email: string,
-     private apiToken: string,
+            private baseUrl: string,
+            private email: string,
+            private apiToken: string,
         ) {
-     super();
+            super();
         }
-     
-     protected getPlatformImplementation(): PlatformImplementation {
-     return {
+    
+        protected getPlatformImplementation(): PlatformImplementation {
+            return {
                 buffer: {
                     encode: (input) => Buffer.from(input, 'utf-8'),
                     decode: (input) => Buffer.from(input).toString('utf-8'),
@@ -54,15 +56,15 @@ Warning: You must implement your own authentication logic instead of relying on 
                 performHttpCall: (request) => this.performHttpCall(request),
             };
         }
-     
-     private async performHttpCall(request: Request): Promise<CommonsResponse> {
-     const requestUrl = `${this.baseUrl}${request.url}`; // Substitute base URL
+    
+        private async performHttpCall(request: Request): Promise<CommonsResponse> {
+            const requestUrl = `${this.baseUrl}${request.url}`; // Substitute base URL
             request.headers.set('Authorization', `Basic ${btoa(`${this.email}:${this.apiToken}`)}`); // Substitute auth token
-     
-     const requestHeaders = new Headers();
+    
+            const requestHeaders = new Headers();
             request.headers.forEach((value, key) => requestHeaders.append(key, value));
-     
-     const response = await fetch(requestUrl, {
+    
+            const response = await fetch(requestUrl, {
                 method: request.method,
                 headers: requestHeaders,
                 body:
@@ -70,13 +72,13 @@ Warning: You must implement your own authentication logic instead of relying on 
                         ? Buffer.from((await request.arrayBuffer()) ?? new ArrayBuffer(0))
                         : undefined,
             });
-     
-     const responseHeaders = new CommonsHeaders();
+    
+            const responseHeaders = new CommonsHeaders();
             response.headers.forEach((value, key) => responseHeaders.append(key, value));
-     
-     const body = await response.arrayBuffer();
-     
-     return super.buildResponse(response.url, response.status, response.statusText, responseHeaders, body);
+    
+            const body = await response.arrayBuffer();
+    
+            return super.buildResponse(response.url, response.status, response.statusText, responseHeaders, body);
         }
     }
     ```
@@ -89,7 +91,7 @@ Warning: You must implement your own authentication logic instead of relying on 
     
     ```
     export const API_REGISTRY: ApiRegistry = {
-     'api/jira/cloud': new JiraCloudApi('https://myInstance.atlassian.net', 'user@domain.com', 'API_KEY'),
+        'api/jira/cloud': new JiraCloudApi('https://myinstance.atlassian.net', 'user@domain.com', 'API_KEY'),
     };
     ```
     
@@ -116,14 +118,14 @@ import {
     BaseApiCore,
 } from '@managed-api/commons-core';
 import { JiraCloudApiCore } from '@managed-api/jira-cloud-v3-core';
- 
+
 export class JiraCloudApiMock extends JiraCloudApiCore {
     constructor() {
- super();
+        super();
     }
- 
- protected getPlatformImplementation(): PlatformImplementation {
- return {
+
+    protected getPlatformImplementation(): PlatformImplementation {
+        return {
             buffer: {
                 encode: (input) => Buffer.from(input, 'utf-8'),
                 decode: (input) => Buffer.from(input).toString('utf-8'),
@@ -131,29 +133,29 @@ export class JiraCloudApiMock extends JiraCloudApiCore {
             performHttpCall: (request) => this.performHttpCall(request),
         };
     }
- 
- private async performHttpCall(request: Request): Promise<CommonsResponse> {
- switch (request.url) {
- case '/rest/api/3/issue/ISSUE-1':
- return super.buildResponse(
+
+    private async performHttpCall(request: Request): Promise<CommonsResponse> {
+        switch (request.url) {
+            case '/rest/api/3/issue/ISSUE-1':
+                return super.buildResponse(
                     request.url,
- 200,
- 'OK',
- new CommonsHeaders(),
+                    200,
+                    'OK',
+                    new CommonsHeaders(),
                     JSON.stringify({
                         fields: {
                             summary: 'HELLO WORLD!!!',
                         },
                     }),
                 );
- default:
- throw Error(`No mock implementation found for: ${request.url}`);
+            default:
+                throw Error(`No mock implementation found for: ${request.url}`);
         }
     }
 }
- 
+
 export const API_REGISTRY: ApiRegistry = {
- 'api/jira/cloud': new JiraCloudApiMock(),
+    'api/jira/cloud': new JiraCloudApiMock(),
 };
 ```
 
@@ -188,18 +190,18 @@ Here's an example of a simple script named `TestableScript.ts` located in the `s
 
 ```
 import JiraCloud from './api/jira/cloud';
- 
+
 export default async function (event: any, context: Context<EV>): Promise<void> {
     const summary = await getIssueSummary(context.environment.vars.ISSUE_KEY);
- 
+
     console.log(summary);
 }
- 
-export async function getIssueSummary(issueKey: string) {
+
+export async function getIssueSummary(issueKey: string): Promise<string | undefined> {
     const issue = await JiraCloud.Issue.getIssue({
         issueIdOrKey: issueKey,
     });
- 
+
     return issue.fields?.summary;
 }
 ```
@@ -210,10 +212,10 @@ And here is a [Jest](https://jestjs.io/) test for it, located in `node/test/Trig
 import '../runtimeMocks';
 import { jest } from '@jest/globals';
 import DefaultFunction, { getIssueSummary } from '../../scripts/TestableScript';
- 
+
 // Array for intercepted console.log messages
 let interceptedConsoleLogs: string[] = [];
- 
+
 // Function for getting mocked Context object
 export function getContext(ev: EV): Context<EV> {
     return {
@@ -230,39 +232,38 @@ export function getContext(ev: EV): Context<EV> {
         },
     };
 }
- 
+
 beforeAll(() => {
     // Mock all console.log methods to intercept messages and store them
     jest.spyOn(console, 'log').mockImplementation((...args) => interceptedConsoleLogs.push(args.join(' ')));
 });
- 
+
 describe('Test script', () => {
     const issueKey = 'ISSUE-1';
     const expectedSummary = 'Test summary';
- 
+
     test('Expect getIssueSummary function to return expected issue summary', async () => {
         const issueSummary = await getIssueSummary(issueKey);
- 
+
         expect(issueSummary).toBe(expectedSummary);
     });
- 
+
     test('Expect default function to have printed out issue summary', async () => {
         interceptedConsoleLogs = [];
- 
+
         await DefaultFunction(
             {},
             getContext({
                 ISSUE_KEY: issueKey,
             }),
         );
- 
+
         expect(interceptedConsoleLogs[0]).toBe(expectedSummary);
     });
 });
- 
+
 afterAll(() => {
-    jest.clearAllMocks();
-});
+    jest.clearAll
 ```
 
 ## HTTP Logs
@@ -277,9 +278,9 @@ You can also run your scripts directly from Node. To do that, we recommend insta
 
 ```
 import './runtimeMocks';
- 
+
 import DefaultFunction from '../scripts/YourScript';
- 
+
 (async () => {
     await DefaultFunction(
         {},

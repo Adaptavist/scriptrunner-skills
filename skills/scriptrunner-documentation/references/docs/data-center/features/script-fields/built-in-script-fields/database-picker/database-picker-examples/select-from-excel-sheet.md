@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Script fields > Built-In Script Fields > Database Picker > Database Picker Examples
-- Doc ID: doc-sr4js-c2f0e447-e9d6-47ec-97ef-d4d10dd082dc-1d0b0e1a55ffb434
+- Doc ID: doc-sr4js-c4eea7cd-0d8d-4657-a276-aa61535e44c4-1d0b0e1a55ffb434
 - Source: https://docs.adaptavist.com/sr4js/latest/features#script-fields--en#built-in-script-fields--en#database-picker--en#database-picker-examples--en#select-from-excel-sheet--en
 
 There are JDBC drivers available for all commonly-used databases and Excel and CSV files. Therefore, you can connect to a spreadsheet containing a list of items you want to be available in a custom field.

@@ -3,10 +3,10 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: n/a
-- Doc ID: doc-sr4c-ea941192-0a62-4dee-9db3-1c9370fe0935-ab2895076147b8f8
+- Doc ID: doc-sr4c-4727b072-1791-4eda-936d-690db8013875-ab2895076147b8f8
 - Source: https://docs.adaptavist.com/sr4c/latest/get-help
 
-Find information on getting support and troubleshooting problems.
+Troubleshoot common problems, look up Confluence events, find licensing answers, and find out how to contact our support team.
 
 ## Contact Support
 

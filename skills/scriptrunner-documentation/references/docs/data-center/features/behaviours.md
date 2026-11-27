@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features
-- Doc ID: doc-sr4js-6b84c0fa-9055-4152-aa7d-3e45b593e3df-792ac6c9c23ce1d9
+- Doc ID: doc-sr4js-d4dd0e98-b660-4cf6-92dd-d3c685b1d19e-792ac6c9c23ce1d9
 - Source: https://docs.adaptavist.com/sr4js/latest/features#behaviours--en
 
 |  |  |
@@ -16,7 +16,7 @@ Behaviours give you more control over fields in Jira. A [field configuration](ht
 
 ## How to use Behaviours
 
-Behaviours let you extend the standard field configuration options available in Jira, and give you the power to use contextual information like current field values, workflow step name, or user details as conditional logic.
+Behaviours let you extend the standard field configuration options available in Jira, and give you the power to use contextual information as conditional logic. For example, you can use current field values, user details, the issue's current status, or the transition that the user is performing. For more information on status and transition conditions, see [Using Workflow Action and Workflow Step conditions](https://docs.adaptavist.com/sr4js/latest/features/behaviours/behaviours-tutorial#using-workflow-action-and-workflow-step-conditions--en).
 
 You can create behaviours to:
 

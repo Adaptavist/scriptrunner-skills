@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Integrations > Atlassian Products > Via App Links
-- Doc ID: doc-sr4js-c8dee789-335f-4999-ab97-ac3b90d6f6ee-2aab7e98a3707e67
+- Doc ID: doc-sr4js-16187195-3359-43a5-9983-71211dc875e6-2aab7e98a3707e67
 - Source: https://docs.adaptavist.com/sr4js/latest/integrations/atlassian-products/via-app-links#link-to-confluence-from-jira--en
 
 Sometimes you might want to create a confluence page corresponding to an issue. For instance when new Epic types are created, or when high-priority issues change state.

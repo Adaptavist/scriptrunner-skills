@@ -3,8 +3,10 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: n/a
-- Doc ID: doc-sr4jc-d4f38209-475a-494f-91e6-1cf11a7ac9e7-320d82bdb545594f
+- Doc ID: doc-sr4jc-ec426900-869f-48d7-a651-58e6a5948856-320d82bdb545594f
 - Source: https://docs.adaptavist.com/sr4jc/latest/training
+
+Video and interactive training resources to help you get started with ScriptRunner for Jira Cloud.
 
 Video and interactive training to get you up and running with ScriptRunner for Jira Cloud.
 

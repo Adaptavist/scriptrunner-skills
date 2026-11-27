@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Fragments
-- Doc ID: doc-sr4js-64fc3613-6725-4860-a8e6-b33f9d0e22f4-348accb9f88c4548
+- Doc ID: doc-sr4js-332ffb4f-76a1-465f-b468-fad25be526fe-348accb9f88c4548
 - Source: https://docs.adaptavist.com/sr4js/latest/features#fragments--en#hide-ui-element-built-in-script--en
 
 The Atlassian applications are supremely flexible, but this comes at the cost of some complexity.

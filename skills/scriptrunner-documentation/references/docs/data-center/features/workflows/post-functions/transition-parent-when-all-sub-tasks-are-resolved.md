@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Workflows > Post Functions
-- Doc ID: doc-sr4js-642377c7-e2f9-45df-ab35-121affbb9d97-2bae456d2cd5b409
+- Doc ID: doc-sr4js-b4d66037-c20b-4aa8-bb63-726e46991ecd-2bae456d2cd5b409
 - Source: https://docs.adaptavist.com/sr4js/latest/features#workflows--en#post-functions--en#transition-parent-when-all-sub-tasks-are-resolved--en
 
 Use this post function to transition a parent issue when all sub-tasks are marked as [resolved](https://confluence.atlassian.com/adminjiraserver/defining-resolution-field-values-938847105.html). If all sub-tasks are resolved, the parent issue is transitioned using the chosen action (which should be valid for the current step), and given the chosen resolution. The sub-task can be given any resolution to be considered as resolved.

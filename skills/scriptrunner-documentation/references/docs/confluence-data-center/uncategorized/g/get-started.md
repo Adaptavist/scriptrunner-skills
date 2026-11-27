@@ -3,10 +3,10 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: n/a
-- Doc ID: doc-sr4c-48af98bf-9efb-4047-9b73-7182f8a6c5f1-29e7c822a2d33e6b
+- Doc ID: doc-sr4c-35dd48b6-0d94-483e-8336-98f879d0a53f-29e7c822a2d33e6b
 - Source: https://docs.adaptavist.com/sr4c/latest/get-started
 
-Learn what you need to get started using ScriptRunner for Confluence Server/Data Center.
+Install, update, and configure ScriptRunner, then explore permissions, security settings, and example scripts to start building.
 
 ScriptRunner for Confluence is an all-in-one administrator app to manage pages, spaces, and users. Part of the ScriptRunner family, ScriptRunner for Confluence gives you the power and flexibility to customise, extend, and automate Confluence. Script your own functionality using Groovy or use our out-of-the-box functionality.
 

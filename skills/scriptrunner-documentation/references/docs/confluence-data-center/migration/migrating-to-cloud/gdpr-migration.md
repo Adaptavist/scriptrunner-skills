@@ -2,9 +2,9 @@
 
 - Platform: confluence-data-center
 - Space: SR4C
-- Hierarchy: Migration > Migrating to or from Cloud
-- Doc ID: doc-sr4c-0462beb0-f8fa-493c-a735-527595aa8eb5-75777c5af684201f
-- Source: https://docs.adaptavist.com/sr4c/latest/migration#migrating-to-or-from-cloud--en#gdpr-migration--en
+- Hierarchy: Migration > Migrating to Cloud
+- Doc ID: doc-sr4c-8ff29758-1143-4f27-a532-23e793b7f1d5-de1b0b4b25e3fd40
+- Source: https://docs.adaptavist.com/sr4c/latest/migration#migrating-to-cloud--en#gdpr-migration--en
 
 Atlassian Cloud REST APIs were updated in response to the General Data Protection Regulation (GDPR) legislation.
 

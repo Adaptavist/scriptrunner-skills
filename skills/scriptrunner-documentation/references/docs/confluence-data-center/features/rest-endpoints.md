@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features
-- Doc ID: doc-sr4c-6e7c84fb-9f37-4e27-85ff-8fb3463385d2-4d8d987052a0c43d
+- Doc ID: doc-sr4c-3e053ea1-5ab4-4f68-8b8a-911d8ca22f4f-4d8d987052a0c43d
 - Source: https://docs.adaptavist.com/sr4c/latest/features#rest-endpoints--en
 
 An endpoint is a URL that runs a script. ScriptRunner _REST Endpoints_ will enable you to create custom endpoints tailored to your specific needs.

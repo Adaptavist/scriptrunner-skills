@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Best Practices and App Management
-- Doc ID: doc-sr4c-def96c92-e35a-447c-b34d-44275df16d99-02051a8951d9532b
+- Doc ID: doc-sr4c-3091e746-b22e-440f-8649-91323a46159c-02051a8951d9532b
 - Source: https://docs.adaptavist.com/sr4c/latest/best-practices-and-app-management#set-up-a-dev-environment--en
 
 A guide for users who would like to set up a development environment to meet their needs in ScriptRunner for Confluence Data Center.

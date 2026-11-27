@@ -3,7 +3,7 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: Migration
-- Doc ID: doc-sr4cc-f3c9edb3-cd86-4acf-96e8-825d57983b0a-9aff49d54626b8ed
+- Doc ID: doc-sr4cc-583b5612-1998-4360-8230-5cfd09d2d5bf-9aff49d54626b8ed
 - Source: https://docs.adaptavist.com/sr4cc/latest/migration/migration-checklist
 
 Find information needed for your migration between products.
@@ -19,7 +19,7 @@ Use these resources to learn about feature parity between the two products:
 
 Note: APIs
 
-When migrating scripts from Atlassian's on-prem to Cloud products, one common question is whether there's a straightforward way to translate the Java API to the REST API. The Java API used in Data Center is fundamentally different from the REST API used in the Cloud, meaning direct translations are rarely possible. However, the Cloud API does provide a rich set of functions which can be leveraged to achieve similar outcomes.
+When migrating scripts from Atlassian's on-prem to Cloud products, one common question is whether there's a straightforward way to translate the Java API to the REST API. The Java API used in Data Center is fundamentally different from the REST API used in the Cloud, meaning direct translations are rarely possible. However, the Cloud API provides a rich set of functions which can be leveraged to achieve similar outcomes.
 
 For more information on the Atlassian Cloud API, check out [this page from Atlassian](https://developer.atlassian.com/cloud/).
 
@@ -31,7 +31,7 @@ Start by backing up your current environment, including all scripts and configur
 
 ### Review your current instance
 
-Decide whether you need to migrate everything or declutter your instance. Then, figure out which scripts can be rewritten for the new environment and which scripts will need an alternative solution.
+Decide whether you need to migrate everything or declutter your instance. Then, determine which scripts can be rewritten for the new environment and which will need an alternative solution.
 
 ## ✅ Download and install ScriptRunner for Confluence Cloud
 
@@ -54,7 +54,7 @@ If you would prefer to install from inside your Confluence instance, follow [the
 
 ## ✅ Migrate your macros
 
-When you migrate from ScriptRunner for Confluence Server or Data Center to ScriptRunner for Confluence Cloud, most built-in macros are unsupported and need to be replaced with a custom Cloud macro to perform the same tasks. Check out the [Custom Macros documentation](../features/macros/custom-macros.md) for SciptRunner for Confluence Cloud to learn more.
+When you migrate from ScriptRunner for Confluence Server or Data Center to ScriptRunner for Confluence Cloud, most built-in macros are unsupported and need to be replaced with a custom Cloud macro to perform the same tasks. Check out the [Custom Macros documentation](../features/macros/custom-macros.md) for ScriptRunner for Confluence Cloud to learn more.
 
 There are currently several built-in macros that ScriptRunner for Confluence Cloud supports. These built-in macros are:
 
@@ -62,7 +62,10 @@ There are currently several built-in macros that ScriptRunner for Confluence Clo
 -   [Choose Label](../features/macros/built-in-macros/choose-label.md)
 -   [Page Info](../features/macros/built-in-macros/page-info.md)
 -   [Create Page](../features/macros/built-in-macros/create-page.md)
+-   [Include Version](../features/macros/built-in-macros/include-version.md)
 -   [Markdown](../features/macros/built-in-macros/markdown.md)
+-   [CQL Search](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/production/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Confluence_Cloud_SR4CC/topics/cql_search_macro.dita)
+-   [Version History](../features/macros/built-in-macros/version-history.md)
 
 For tips on migrating these macros to ScriptRunner for Confluence Cloud, [check this out](https://docs.adaptavist.com/sr4cc/latest/migration/feature-parity/macro-migration-tips).
 

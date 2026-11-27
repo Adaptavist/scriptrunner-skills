@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Best Practices
-- Doc ID: doc-sr4js-e2260f8f-dd46-463b-86a0-1452e9b136aa-1ff406ffdbbdde89
+- Doc ID: doc-sr4js-7d09b187-e8cd-429c-bc84-983c0a5f8c3e-1ff406ffdbbdde89
 - Source: https://docs.adaptavist.com/sr4js/latest/best-practices/binding-variables
 
 Binding variables are predefined variables that are automatically available within a script. These variables provide access to commonly used objects and services in Jira, allowing you to interact with Jira without having to import/create those objects or services.

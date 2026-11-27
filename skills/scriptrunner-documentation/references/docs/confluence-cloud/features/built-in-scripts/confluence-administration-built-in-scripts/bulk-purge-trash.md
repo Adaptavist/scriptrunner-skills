@@ -3,7 +3,7 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: Features > Built-In Scripts > Confluence Administration Built-In Scripts
-- Doc ID: doc-sr4cc-ae19e607-c4cf-4108-ad01-4f913e345f44-aed19e4f42a885f7
+- Doc ID: doc-sr4cc-ae0e619c-bd0a-491a-b29e-7cf82a04f416-aed19e4f42a885f7
 - Source: https://docs.adaptavist.com/sr4cc/latest/features/built-in-scripts/confluence-administration-built-in-scripts#bulk-purge-trash--en
 
 Instructions for using the Bulk Purge Trash built-in script.

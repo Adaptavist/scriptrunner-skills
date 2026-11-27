@@ -3,14 +3,20 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: Get Started > General Information
-- Doc ID: doc-sr4cc-56a036c3-3604-47b4-9792-67d0b7bb0f90-a1f89fc62bf7f14f
+- Doc ID: doc-sr4cc-a6996b13-f404-484b-bea9-b8079125fab0-a1f89fc62bf7f14f
 - Source: https://docs.adaptavist.com/sr4cc/latest/get-started/general-information/data-residency
 
 Information on how data related to ScriptRunner for Confluence Cloud is stored.
 
-All new Jira and Confluence Cloud customers can choose the location where their instance is hosted, including all processed and stored data related to that instance. These locations are known as the realms, or localities, that customers can choose to pin their data to, provided they are compliant with any legislation in their chosen region (ex, GDPR in the EU). You can find more information on locations and associated AWS regions that Atlassian offers [here](https://support.atlassian.com/security-and-access-policies/docs/understand-data-residency/#What-are-locations-and-AWS-regions).
+All new Jira and Confluence Cloud customers can choose the location where their instance is hosted, including all stored data related to that instance. These locations are known as the realms, or localities, that customers can choose to pin their data to, provided they are compliant with any legislation in their chosen region (ex, GDPR in the European Union). You can find more information on locations and associated AWS regions that Atlassian offers [here](https://support.atlassian.com/security-and-access-policies/docs/understand-data-residency/#What-are-locations-and-AWS-regions).
 
-ScriptRunner for Jira and Confluence Cloud offers hosting in either the EU (Frankfurt) or the USA (Oregon). The location of ScriptRunner data residency will match that of your Jira or Confluence instance if you chose one of these regions.
+ScriptRunner for Jira and Confluence Cloud offers hosting in:
+
+-   Germany (Frankfurt)
+-   the European Union (Frankfurt)
+-   the USA (Oregon)
+
+The location of ScriptRunner data residency will match that of your Jira or Confluence instance if you choose one of these regions.
 
 ## What is data residency?
 
@@ -22,7 +28,7 @@ Data residency gives organizations more control over their data by ensuring thei
 
 ## Data
 
-All script data, including Behaviour scripts, is stored within ScriptRunner for Jira Cloud and Jira.
+All script data, including Behaviour scripts, is stored within ScriptRunner for Confluence Cloud and Confluence.
 
 The data that is stored includes:
 

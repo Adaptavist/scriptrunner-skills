@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Get Help
-- Doc ID: doc-sr4c-247c1a92-d12e-43bd-ba26-b1ae148005e5-70b659ec28c5a7a7
+- Doc ID: doc-sr4c-6b39f6ce-bf70-430f-afa4-21d4baa3d089-70b659ec28c5a7a7
 - Source: https://docs.adaptavist.com/sr4c/latest/get-help#java-agents-and-scriptrunner--en
 
 Information to help with potential problems between Java Agents and the ScriptRunner app.

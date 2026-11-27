@@ -3,8 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Get Started > Settings
-- Doc ID: doc-sr4js-04c2707e-8646-4a0a-aee3-f69b459d59fd-533fc1f9621053cc
+- Doc ID: doc-sr4js-4236f060-3ae0-415f-b917-3b39c3f7a532-533fc1f9621053cc
 - Source: https://docs.adaptavist.com/sr4js/latest/get-started/settings/system-admin-only-script-edit-permission
+
+Restrict script editing to System Administrators only using the Enable System Admin Only Script Edit Permissions setting.
 
 The _Enable System Admin Only Script Edit Permissions_ setting enhances ScriptRunner security by restricting script editing capabilities. Users with Jira System administrators or Jira administrators permissions have script editing permissions by default. This setting allows you to limit script editing to either Jira System administrators only or to specific Jira administrators based on group membership. Check out [Atlassian's documentation](https://confluence.atlassian.com/adminjiraserver/managing-global-permissions-938847142.html) for information on managing global permissions and the difference between Jira System administrators and Jira administrators.
 

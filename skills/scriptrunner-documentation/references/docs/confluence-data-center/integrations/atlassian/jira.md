@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Integrations > Atlassian
-- Doc ID: doc-sr4c-1ba0f02d-ff3b-41af-87e9-4ce937e33ee7-36aea508725528b9
+- Doc ID: doc-sr4c-96b541b8-3831-4e0d-9581-7e192fd13e0e-36aea508725528b9
 - Source: https://docs.adaptavist.com/sr4c/latest/integrations#atlassian--en#jira--en
 
 If you have a Jira instance linked to your Confluence instance, it is possible to interact with it using Jira's REST API.

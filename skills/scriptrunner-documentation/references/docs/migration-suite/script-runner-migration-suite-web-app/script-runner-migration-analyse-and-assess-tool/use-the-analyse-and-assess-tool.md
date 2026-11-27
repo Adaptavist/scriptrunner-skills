@@ -3,7 +3,7 @@
 - Platform: migration-suite
 - Space: SMS
 - Hierarchy: ScriptRunner Migration Suite Web App > ScriptRunner Migration Analyse and Assess Tool
-- Doc ID: doc-sms-1601fc48-5f83-48c9-af5b-b47be5bf7c0b-41bfeeca1258a4ae
+- Doc ID: doc-sms-0060b56c-33f2-4636-b476-920d9c096d87-41bfeeca1258a4ae
 - Source: https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-analyse-and-assess-tool/use-the-analyse-and-assess-tool
 
 Check out the following sections to learn how to analyse an export of a Jira instance:
@@ -14,7 +14,7 @@ Follow these steps to start using the Analyse and Assess tool.
 
 1.  Create or get a script export from the Jira instance with ScriptRunner you want to work with.
     
-    Tip: See the [Script Registry export from ScriptRunner for Jira Data Center](https://docs.adaptavist.com/sr4js/latest/features/script-registry#exporting-your-scripts--en) documentation for details on how to create a script export.
+    Tip: See the [Script Registry export from ScriptRunner for Jira Data Center](https://docs.adaptavist.com/sr4js/latest/features/script-registry) documentation for details on how to create a script export.
     
 2.  Open the ScriptRunner Migration Suite, and log in with your Atlassian ID or email.
 3.  Navigate to the Analyse and Assess tool using the tile or Analyse on the left-hand menu.

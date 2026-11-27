@@ -3,8 +3,10 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Training
-- Doc ID: doc-sr4jc-6740f45f-c181-48cf-ac1c-6dc2eb576496-13befb71a36c3504
+- Doc ID: doc-sr4jc-f2552209-c8b5-45b5-bc5e-922fcf89e130-13befb71a36c3504
 - Source: https://docs.adaptavist.com/sr4jc/latest/training/step-by-step-tutorials
+
+Use these step-by-step tutorials to learn how to apply ScriptRunner for Jira Cloud to real-world use cases and improve how you manage work in Jira.
 
 Highlighted below are links to ScriptRunner for Jira Cloud step-by-step tutorials. These enable you to carry out tasks to enhance Jira's functionality, improve team efficiency, and ensure project management processes are streamlined and effective:
 

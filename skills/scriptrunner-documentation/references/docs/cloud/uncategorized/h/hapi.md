@@ -3,10 +3,14 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: n/a
-- Doc ID: doc-sr4jc-462ce94c-d34e-4e87-a6a5-7a4b5f45cf69-f0cd4d0c410d6096
+- Doc ID: doc-sr4jc-c17daf9f-5484-443f-8c89-f8a075d7cb6e-f0cd4d0c410d6096
 - Source: https://docs.adaptavist.com/sr4jc/latest/hapi
 
+Use HAPI to simplify common Jira tasks with a concise, Groovy-based API.
+
 HAPI is an API used for carrying out common tasks in Jira. These can include managing or searching for work items, updating fields, and more. HAPI is not a _new_ programming language; it's essentially plain Groovy, but it gives you a simpler alternative to Jira's regular API, and you can mix and match HAPI calls with Jira API.
+
+## Before you start
 
 |  |  |
 | --- | --- |
@@ -34,9 +38,9 @@ We want all users to be able to script in ScriptRunner, not just those who are f
 
 HAPI respects the permissions of the current user _by default_. Using HAPI does not change any of the permissions ScriptRunner already has.
 
-Note that some operations in Jira are restricted for Atlassian Connect apps, and HAPI runs on ScriptRunner, which is a Connect app. For example, read about [group membership management](https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-groups/#api-rest-api-2-group-user-post).
+Note that some operations in Jira are restricted for Atlassian Forge apps, and HAPI runs on ScriptRunner, which is a Forge app. For example, read about [group membership management](https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-groups/#api-rest-api-2-group-user-post).
 
-This limitation is not specific to HAPI; it applies to all Connect apps, so even writing the REST request directly will not work when coming from ScriptRunner.
+This limitation is not specific to HAPI; it applies to all Forge apps, so even writing the REST request directly will not work when coming from ScriptRunner.
 
 ## Autocompletions
 

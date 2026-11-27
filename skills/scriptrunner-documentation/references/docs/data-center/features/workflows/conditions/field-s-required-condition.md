@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Workflows > Conditions
-- Doc ID: doc-sr4js-38e8ff70-6124-4516-84d5-e1caa0b45b3b-fcacb81e037ff0d5
+- Doc ID: doc-sr4js-ddf93437-5250-4403-a7bb-e6cc6db86e43-fcacb81e037ff0d5
 - Source: https://docs.adaptavist.com/sr4js/latest/features#workflows--en#conditions--en#fields-required-condition--en
 
 This condition checks that the selected fields have a value before it can transition in a workflow. If any of the specified fields are empty, the issue can not transition.

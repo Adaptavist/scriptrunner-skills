@@ -1,6 +1,6 @@
 # Cloud Documentation Index
 
-Total pages: 137
+Total pages: 144
 
 | Title | Path | Source |
 | --- | --- | --- |
@@ -14,6 +14,7 @@ Total pages: 137
 | 2.4 Module: Modifying Existing Scripts | references/docs/cloud/training/course-script-runner-for-jira-cloud-for-intermediate-users/2-4-module-modifying-existing-scripts.md | https://docs.adaptavist.com/sr4jc/latest/training/course-scriptrunner-for-jira-cloud-for-intermediate-users/2.4-module-modifying-existing-scripts |
 | Adaptavist Bridge | references/docs/cloud/features/script-fragments/adaptavist-bridge.md | https://docs.adaptavist.com/sr4jc/latest/features/script-fragments#adaptavist-bridge--en |
 | Agile and Sprint Management | references/docs/cloud/features/script-runner-enhanced-search/script-runner-enhanced-search-jql-functions/agile-and-sprint-management.md | https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search#scriptrunner-enhanced-search-jql-functions--en#agile-and-sprint-management--en |
+| AI and Agents | references/docs/cloud/features/ai-and-agents.md | https://docs.adaptavist.com/sr4jc/latest/features/ai-and-agents |
 | Atlassian Epic and Parent Fields Jira REST API Deprecation | references/docs/cloud/release-notes/breaking-changes/atlassian-epic-and-parent-fields-jira-rest-api-deprecation.md | https://docs.adaptavist.com/sr4jc/latest/release-notes/breaking-changes#atlassian-epic-and-parent-fields-jira-rest-api-deprecation--en |
 | Atlassian REST API Search Endpoints Deprecation | references/docs/cloud/release-notes/breaking-changes/atlassian-rest-api-search-endpoints-deprecation.md | https://docs.adaptavist.com/sr4jc/latest/release-notes/breaking-changes#atlassian-rest-api-search-endpoints-deprecation--en |
 | Atlassian's Transition to Forge Events and Missing Event Properties | references/docs/cloud/release-notes/breaking-changes/atlassians-transition-to-forge-events-and-missing-event-properties.md | https://docs.adaptavist.com/sr4jc/latest/release-notes/breaking-changes#atlassians-transition-to-forge-events-and-missing-event-properties--en |
@@ -21,6 +22,7 @@ Total pages: 137
 | Behaviours | references/docs/cloud/features/behaviours.md | https://docs.adaptavist.com/sr4jc/latest/features/behaviours |
 | Behaviours API | references/docs/cloud/features/behaviours/behaviours-api.md | https://docs.adaptavist.com/sr4jc/latest/features/behaviours#behaviours-api--en |
 | Behaviours Bot | references/docs/cloud/features/behaviours/behaviours-bot.md | https://docs.adaptavist.com/sr4jc/latest/features/behaviours#behaviours-bot--en |
+| Behaviours Bot security and data | references/docs/cloud/features/behaviours/behaviours-bot/behaviours-bot-security-and-data.md | https://docs.adaptavist.com/sr4jc/latest/features/behaviours#behaviours-bot--en#what-8xdtsrlx--en |
 | Behaviours Limitations | references/docs/cloud/features/behaviours/behaviours-limitations.md | https://docs.adaptavist.com/sr4jc/latest/features/behaviours#behaviours-limitations--en |
 | Behaviours Supported Fields and Products | references/docs/cloud/features/behaviours/behaviours-supported-fields-and-products.md | https://docs.adaptavist.com/sr4jc/latest/features/behaviours#behaviours-supported-fields-and-products--en |
 | Behaviours Terminology | references/docs/cloud/features/behaviours/behaviours-terminology.md | https://docs.adaptavist.com/sr4jc/latest/features/behaviours#behaviours-terminology--en |
@@ -34,6 +36,7 @@ Total pages: 137
 | Bulk Fix Resolutions | references/docs/cloud/features/built-in-scripts/bulk-fix-resolutions.md | https://docs.adaptavist.com/sr4jc/latest/features/built-in-scripts#bulk-fix-resolutions--en |
 | Comparison with ScriptRunner for Jira Server | references/docs/cloud/features/script-runner-enhanced-search/comparison-with-script-runner-for-jira-server.md | https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search#comparison-with-scriptrunner-for-jira-server--en |
 | Compatibility of Atlassian's New Transition Experience with Jira Expressions | references/docs/cloud/release-notes/breaking-changes/compatibility-of-atlassians-new-transition-experience-with-jira-expressions.md | https://docs.adaptavist.com/sr4jc/latest/release-notes/breaking-changes#compatibility-of-atlassians-new-transition-experience-with-jira-expressions--en |
+| Connect AI Agents to ScriptRunner for Jira Cloud with MCP | references/docs/cloud/features/ai-and-agents/connect-ai-agents-to-script-runner-for-jira-cloud-with-mcp.md | https://docs.adaptavist.com/sr4jc/latest/features/ai-and-agents/connect-ai-agents-to-scriptrunner-for-jira-cloud-with-mcp |
 | Connected Apps | references/docs/cloud/manage-app/connected-apps.md | https://docs.adaptavist.com/sr4jc/latest/manage-app/connected-apps |
 | Copy Custom Field Values to Another Field | references/docs/cloud/features/built-in-scripts/copy-custom-field-values-to-another-field.md | https://docs.adaptavist.com/sr4jc/latest/features/built-in-scripts#copy-custom-field-values-to-another-field--en |
 | Course: ScriptRunner for Jira Cloud for Beginners | references/docs/cloud/training/course-script-runner-for-jira-cloud-for-beginners.md | https://docs.adaptavist.com/sr4jc/latest/training/course-scriptrunner-for-jira-cloud-for-beginners |
@@ -46,6 +49,7 @@ Total pages: 137
 | Date Functions | references/docs/cloud/features/script-runner-enhanced-search/script-runner-enhanced-search-jql-functions/date-and-time-management/date-functions.md | https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search#scriptrunner-enhanced-search-jql-functions--en#date-and-time-management-datecompare--en#date-functions--en |
 | Deprecation Notices Overview | references/docs/cloud/release-notes/deprecation-notices-overview.md | https://docs.adaptavist.com/sr4jc/latest/release-notes/deprecation-notices-overview |
 | Deprecation reports | references/docs/cloud/release-notes/deprecation-notices-overview/deprecation-reports.md | https://docs.adaptavist.com/sr4jc/latest/release-notes/deprecation-notices-overview/deprecation-reports |
+| Detect Broken Filters Using an Analyzer | references/docs/cloud/features/script-runner-enhanced-search/troubleshoot-script-runner-enhanced-search/detect-broken-filters-using-an-analyzer.md | https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search#troubleshoot-scriptrunner-enhanced-search--en#detect-broken-filters-using-an-analyzer--en |
 | Empty or Missing Results | references/docs/cloud/features/script-runner-enhanced-search/troubleshoot-script-runner-enhanced-search/empty-or-missing-results.md | https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search#troubleshoot-scriptrunner-enhanced-search--en#empty-or-missing-results--en |
 | Enhanced Search Migration to Forge | references/docs/cloud/release-notes/breaking-changes/enhanced-search-migration-to-forge.md | https://docs.adaptavist.com/sr4jc/latest/release-notes/breaking-changes#enhanced-search-migration-to-forge--en |
 | Enhanced Search: JQL Functions & Subqueries | references/docs/cloud/training/video-playlist-script-runner-for-jira-cloud-demo/enhanced-search-jql-functions-and-subqueries.md | https://docs.adaptavist.com/sr4jc/latest/training/video-playlist-scriptrunner-for-jira-cloud-demo/enhanced-search-jql-functions--subqueries |
@@ -66,6 +70,7 @@ Total pages: 137
 | Feature Parity and Script Alternatives | references/docs/cloud/script-runner-migration-to-cloud/feature-parity-and-script-alternatives.md | https://docs.adaptavist.com/sr4jc/latest/scriptrunner-migration-to-cloud/feature-parity-and-script-alternatives |
 | Features | references/docs/cloud/uncategorized/f/features.md | https://docs.adaptavist.com/sr4jc/latest/features |
 | Fields | references/docs/cloud/features/workflow-rules/perform-actions/fields.md | https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules#perform-actions--en#fields--en |
+| Fixing Filters Affected by the 1 October 2026 Bug | references/docs/cloud/features/script-runner-enhanced-search/troubleshoot-script-runner-enhanced-search/fixing-filters-affected-by-the-1-october-2026-bug.md | https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search#troubleshoot-scriptrunner-enhanced-search--en#fixing-filters-affected-by-the-1-october-2026-bug--en |
 | GDPR Migration | references/docs/cloud/script-runner-migration-to-cloud/gdpr-migration.md | https://docs.adaptavist.com/sr4jc/latest/scriptrunner-migration-to-cloud/gdpr-migration |
 | Get Help | references/docs/cloud/uncategorized/g/get-help.md | https://docs.adaptavist.com/sr4jc/latest/get-help |
 | Get Involved | references/docs/cloud/uncategorized/g/get-involved.md | https://docs.adaptavist.com/sr4jc/latest/get-involved |
@@ -99,9 +104,11 @@ Total pages: 137
 | Review Logs | references/docs/cloud/manage-app/review-logs.md | https://docs.adaptavist.com/sr4jc/latest/manage-app/review-logs |
 | Rewrite Scripts for Cloud Hints and Tips | references/docs/cloud/script-runner-migration-to-cloud/rewrite-scripts-for-cloud-hints-and-tips.md | https://docs.adaptavist.com/sr4jc/latest/scriptrunner-migration-to-cloud/rewrite-scripts-for-cloud-hints-and-tips |
 | Rewrite Scripts with HAPI | references/docs/cloud/hapi/rewrite-scripts-with-hapi.md | https://docs.adaptavist.com/sr4jc/latest/hapi#rewrite-scripts-with-hapi--en |
+| Rovo Integration | references/docs/cloud/features/ai-and-agents/rovo-integration.md | https://docs.adaptavist.com/sr4jc/latest/features/ai-and-agents/rovo-integration |
 | Scheduled Jobs | references/docs/cloud/features/scheduled-jobs.md | https://docs.adaptavist.com/sr4jc/latest/features/scheduled-jobs |
 | Script Console | references/docs/cloud/features/script-console.md | https://docs.adaptavist.com/sr4jc/latest/features/script-console |
 | Script Fragments | references/docs/cloud/features/script-fragments.md | https://docs.adaptavist.com/sr4jc/latest/features/script-fragments |
+| Script Listener behavior change on Forge events | references/docs/cloud/features/script-listeners/script-listener-behavior-change-on-forge-events.md | https://docs.adaptavist.com/sr4jc/latest/features/script-listeners#script-listener-behavior-change-on-forge-events--en |
 | Script Listeners | references/docs/cloud/features/script-listeners.md | https://docs.adaptavist.com/sr4jc/latest/features/script-listeners |
 | Script Manager | references/docs/cloud/features/script-manager.md | https://docs.adaptavist.com/sr4jc/latest/features/script-manager |
 | Script Manager Naming Rules | references/docs/cloud/features/script-manager/script-manager-naming-rules.md | https://docs.adaptavist.com/sr4jc/latest/features/script-manager#script-manager-naming-rules--en |

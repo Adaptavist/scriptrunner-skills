@@ -3,10 +3,10 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: n/a
-- Doc ID: doc-sr4c-42bf6eb1-0c0b-43f7-9676-001c6b27746a-0916b3a80670835f
+- Doc ID: doc-sr4c-cc9d8f6a-7d78-4600-92d1-00356440e202-0916b3a80670835f
 - Source: https://docs.adaptavist.com/sr4c/latest/get-involved
 
-Find out how to become involved in shaping the future of ScriptRunner for Confluence.
+Share your ideas, experiences, and opinions with the ScriptRunner team to help shape future features and development.
 
 ## Get involved with our ScriptRunner products
 

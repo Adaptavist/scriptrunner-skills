@@ -3,7 +3,7 @@
 - Platform: connect
 - Space: SRC
 - Hierarchy: Scripting
-- Doc ID: doc-src-ee0c36e5-27a6-4438-8553-f13f6303aabf-040e4a7f628cc939
+- Doc ID: doc-src-a7a76acc-9b90-47ed-8cb8-9b2505659bc4-040e4a7f628cc939
 - Source: https://docs.adaptavist.com/src/latest/scripting#code-snippets--en
 
 Snippets are code examples that you can copy and paste into your workspace.

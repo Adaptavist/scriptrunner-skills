@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > JQL Functions
-- Doc ID: doc-sr4js-7f25e794-108d-477a-9d43-be0b4a0de7db-b4f7f01c920dee63
+- Doc ID: doc-sr4js-bcc75cf0-7839-4074-9803-a0befc00503a-b4f7f01c920dee63
 - Source: https://docs.adaptavist.com/sr4js/latest/features#jql-functions--en#jql-functions-tutorial--en
 
 You can use ScriptRunner JQL functions to extend Jira's built-in capabilities, allowing you to conduct more granular searches, and obtain more detailed information about what is happening in your instance and projects. For example, if you need to find blocker issues in a project, you can use the `[hasLinkType](https://docs.adaptavist.com/sr4js/latest/features/jql-functions/included-jql-functions/issue-links)` ScriptRunner JQL function with the `Blocker` value. To understand how our functions work you must know [how to search for issues in Jira](https://confluence.atlassian.com/jirasoftwareserver/searching-for-issues-939938681.html) and [how to construct a JQL query](https://confluence.atlassian.com/jirasoftwareserver/advanced-searching-939938733.html#Advancedsearching-ConstructingJQLqueries).

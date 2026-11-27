@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Script fields
-- Doc ID: doc-sr4js-043fc731-31de-4256-b456-2824b7286c5d-3448aebda79d466b
+- Doc ID: doc-sr4js-962b0bf7-c6ac-4b65-878f-8bed23c72bb0-3448aebda79d466b
 - Source: https://docs.adaptavist.com/sr4js/latest/features#script-fields--en#custom-script-field--en
 
 Use custom script fields to create custom fields from a Groovy script. Custom script fields are designed to calculate values based on other issue fields.

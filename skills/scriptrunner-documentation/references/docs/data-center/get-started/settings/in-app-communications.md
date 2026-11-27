@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Get Started > Settings
-- Doc ID: doc-sr4js-faebca03-704b-499c-85a3-4084afdcf3ee-37dc379835381e7a
+- Doc ID: doc-sr4js-e50e7f71-bf32-4ecc-aedf-6fd5526fe253-37dc379835381e7a
 - Source: https://docs.adaptavist.com/sr4js/latest/get-started/settings/in-app-communications
 
 The In-App Inbox is a feature in ScriptRunner that, when enabled, allows ScriptRunner to show notifications in the Inbox when viewing a ScriptRunner admin screen.

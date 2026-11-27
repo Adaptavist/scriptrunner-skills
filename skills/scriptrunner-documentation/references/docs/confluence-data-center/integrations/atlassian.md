@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Integrations
-- Doc ID: doc-sr4c-d0485e97-a670-4974-9af9-ec47629fc9a9-7314151bc672066c
+- Doc ID: doc-sr4c-a44a94ba-cef0-4bd6-94b6-63421a24dedb-7314151bc672066c
 - Source: https://docs.adaptavist.com/sr4c/latest/integrations#atlassian--en
 
 There are several cases for making an HTTP request from a host application to another Atlassian application.

@@ -3,7 +3,7 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Release Notes > Breaking Changes
-- Doc ID: doc-sr4jc-73cae988-51ce-4d49-b773-d373225aa365-d8ff7e44488dd9fa
+- Doc ID: doc-sr4jc-df75d21a-6aac-419f-a255-3d79267f2426-d8ff7e44488dd9fa
 - Source: https://docs.adaptavist.com/sr4jc/latest/release-notes/breaking-changes#enhanced-search-jql-parsing-updates--en
 
 Atlassian's Jira Cloud search [now strictly enforces valid JQL syntax and operators](https://developer.atlassian.com/changelog/#CHANGE-3131). Invalid JQL clauses will return in zero results. Previously, some invalid JQL clauses were handled and could return partial or lenient results, which created inconsistent search behavior. Jira Cloud is now handling these invalid JQL cases like Jira Data Center and follows the [JQL documentation](https://www.atlassian.com/software/jira/guides/jql/cheat-sheet#intro-to-jql). This change is not backwards compatible. Invalid syntax or operators that were previously in use will now receive zero results for those clauses, instead of partial or lenient results.

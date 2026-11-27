@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Get Help > Frequently Asked Questions
-- Doc ID: doc-sr4js-ac221b4b-82f9-443f-b299-730a264ee3c2-6dbf48e07dd36235
+- Doc ID: doc-sr4js-32421ecc-8ae0-47e8-afbb-23f63c7655d0-6dbf48e07dd36235
 - Source: https://docs.adaptavist.com/sr4js/latest/get-help#frequently-asked-questions--en#script-fragments-faqs--en
 
 ## How do I find the variables available in the context of where I create my Script Fragments?

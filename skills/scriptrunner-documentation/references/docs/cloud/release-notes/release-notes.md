@@ -3,12 +3,12 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Release Notes
-- Doc ID: doc-sr4jc-879441b0-d60a-4d91-b3bd-a384c88ac2fd-e77398690e166e2b
+- Doc ID: doc-sr4jc-3b9611a3-f1ad-4983-86d0-c1c9f4513709-e77398690e166e2b
 - Source: https://docs.adaptavist.com/sr4jc/latest/release-notes/release-notes
 
-Tip: Try our migration tools!
+Learn about the latest updates, improvements, and changes in this release.
 
-The ScriptRunner Migration Suite is a suite of tools that helps you plan, analyse, convert and deploy scripts with confidence, significantly reducing the manual migration effort. It supports (not replaces) your expertise. The suite is made up of three tools:
+Tip: Try our migration tools!
 
 The ScriptRunner Migration Suite is a suite of tools that helps you plan, analyse, convert and deploy scripts with confidence, significantly reducing the manual migration effort. It supports (not replaces) your expertise. The suite is made up of three tools:
 
@@ -16,7 +16,151 @@ The ScriptRunner Migration Suite is a suite of tools that helps you plan, analys
 -   [The ScriptRunner Migration Agent](../../migration-suite/script-runner-migration-suite-web-app/script-runner-migration-agent.md): Use our specialised AI chat agent to create, convert, and optimise scripts, or you can use it to answer a variety of different questions about ScriptRunner.
 -   [ScriptRunner Dev and Deployment Tool](../../migration-suite/uncategorized/s/script-runner-dev-and-deployment-tool.md): Use this tool to organise and deploy ScriptRunner Cloud scripts. It is focused on making it easier and faster for consultants and developers to migrate, test, and deploy scripts from ScriptRunner DC to Cloud.
 
-If you have any questions, need help, or would like to request access to SMS, the quickest way to get assistance is through our [dedicated support portal](https://the-adaptavist-group-support.atlassian.net/servicedesk/customer/portal/1069/user/login?destination=portal%2F1069).
+If you have any questions, need help, or would like to request access, visit our [dedicated support portal](https://the-adaptavist-group-support.atlassian.net/servicedesk/customer/portal/1069/user/login?destination=portal%2F1069).
+
+## November 2026
+
+### Reuse Script Manager saved configurations
+
+Quickly access and edit your saved ScriptRunner for Jira Cloud configurations using Script Manager.
+
+In [Script Manager](../features/script-manager.md), you can view your saved script files and identify exactly where they are configured in your ScriptRunner for Jira Cloud instance. For example:
+
+Now, this functionality is further enhanced by making each configuration a clickable link that opens in edit mode, providing quick access to saved scripts.
+
+### New integration of AI and agents
+
+Review new AI updates for ScriptRunner for Jira Cloud
+
+#### Use Rovo with your instance
+
+You can now use Atlassian Rovo within ScriptRunner for Jira Cloud to write scripts, answer ScriptRunner questions, and improve your Jira automations.
+
+Warning: Rovo is turned on by default.
+
+Access Rovo in two ways:
+
+-   Select Ask Agent on any ScriptRunner screen:
+-   Select the Agent button on any code editor, and then select Open Agent:
+
+Once you open the agent, your chat screen looks like this:
+
+Learn more in [Rovo Integration](../features/ai-and-agents/rovo-integration.md).
+
+#### Restricting the Rovo agent
+
+Atlassian currently gives administrators limited controls over app agents, and there's no way to remove one from a site. We have submitted feedback to Atlassian asking for better controls.
+
+In the meantime, you can restrict the agent to specific people in Rovo Studio. Visit [Restricting the Rovo agent](https://docs.adaptavist.com/sr4jc/latest/features/ai-and-agents/rovo-integration#concept-4572--en__section-381) to learn more.
+
+#### Connect your own agents
+
+Want your AI agent to help with ScriptRunner? With our [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) server, agents like Claude Code, Codex, and ChatGPT can work with ScriptRunner for Jira Cloud on your behalf. They can look through your setup, build and update configuration for you, and help work out why a script didn't behave. Learn more in [Connect AI Agents to ScriptRunner for Jira Cloud with MCP](../features/ai-and-agents/connect-ai-agents-to-script-runner-for-jira-cloud-with-mcp.md).
+
+## October 2026
+
+### Script Listeners on Forge events
+
+As Atlassian [retires Connect](https://www.atlassian.com/blog/developer/announcing-connect-end-of-support-timeline-and-next-steps), and ScriptRunner for Jira Cloud transitions to Forge, script context variables, such as `issue`, `user` and `changelog`, now get their data from Atlassian's Forge events. This affects Script Listeners, Workflow Perform Actions, and background syncing Scripted Fields.
+
+As Forge events contain less data than Connect events, ScriptRunner now fetches missing properties from Jira when your script reads them.
+
+Note: Your scripts will continute to keep working without a rewrite.
+
+Because reading a value can now trigger an API call, a rate-limited call that fails on retry stops the script with an error. After bulk edits or imports, check Execution History for failed runs within 72 hours.
+
+For more information, refer to [Script Listener behavior changes on Forge events](https://docs.adaptavist.com/sr4jc/latest/features/script-listeners/script-listener-behavior-change-on-forge-events).
+
+### JSM Behaviours are now available on Agent view
+
+In [July 2026](https://docs.adaptavist.com/sr4jc/latest/release-notes/release-notes#release_notes__april_2026-ufwthk1f--en), we launched new functionality for the Behaviours feature in ScriptRunner for Jira Cloud that allowed you to create and edit behaviours on JSM in the Portal view type only.
+
+We're happy to announce that support for JSM Behaviours is now gradually rolling out to include the Agent view type. Rollout begins October 29th, 2026 and we estimate that it will complete by November 10th, 2026.
+
+Note: As detailed in our [Supported fields in JSM](https://docs.adaptavist.com/sr4jc/latest/features/behaviours/behaviours-supported-fields-and-products#concept-e2eupydd--en), not all fields are supported for the Agent view type. As more capabilities become available in the UI Modifications API, more functionality can be added to ScriptRunner's Behaviours feature. We are actively enhancing this feature by integrating new capabilities as Atlassian releases them.
+
+For further details, refer to [Create and Modify JSM Behaviours](https://docs.adaptavist.com/sr4jc/latest/features/behaviours/create-and-modify-jsm-behaviours).
+
+### New in app help launched
+
+A new in-app help experience is now available for ScriptRunner for Jira Cloud. It introduces an updated user interface, improved search, and refreshed branding, making it easier to find and use guidance directly within the product.
+
+Click the ScriptRunner help icon to open the panel that provides context-sensitive help directly in your instance, without needing to switch to our [documentation website](https://docs.adaptavist.com/sr4jc/latest/). For example:
+
+You can scroll through the content, expand sections from the top menu bar, and open the documentation website using the external link icon.
+
+### Deprecation notice for Forge deletion events for child entities
+
+Deleting a space or work item will no longer send deletion events for the items inside it. This affects Script Listeners that rely on those events.
+
+As part of moving ScriptRunner for Jira Cloud from Atlassian Connect to Forge, Script Listeners will soon receive events through Atlassian's Forge product events instead of Connect webhooks.
+
+We will switch to Forge product events on October 30th, 2026.
+
+After the switch, some listeners stop firing. With Connect, deleting a work item or space also sends deletion events for some of its child entities, such as comments, worklogs, and issue links. These are known as cascading events. Forge sends only one event for the work item or space itself.
+
+Check out our [Breaking Changes](https://docs.adaptavist.com/sr4jc/latest/release-notes/breaking-changes#concept-6637--en) section for more information.
+
+### Data residency update
+
+ScriptRunner for Jira Cloud and ScriptRunner for Confluence Cloud now support data residency in Germany (Frankfurt). If your Jira or Confluence Cloud instance is pinned to Germany, you can now migrate ScriptRunner data to be stored in Germany (Frankfurt) as well. This includes scripts, script variables, configurations and script logs.
+
+New customers: If your instance is pinned to Germany when you install ScriptRunner, your ScriptRunner data is stored in Germany (Frankfurt) automatically.
+
+Existing customers: If you move your Atlassian instance to Germany, you can choose to move your ScriptRunner data there too. When Atlassian provides us with information about your move request, we migrate your ScriptRunner data to Germany (Frankfurt).
+
+For more information, see:
+
+-   [Data Residency (Jira Cloud)](https://docs.adaptavist.com/sr4jc/latest/get-started/data-residency#data-residency-data--en)
+-   [Data Residency (Confluence)](../../confluence-cloud/get-started/general-information/data-residency.md)
+-   [Atlassian's Data Residency](https://www.atlassian.com/software/data-residency)
+
+### Enhanced Search bug that may require filter fixes
+
+Learn how to identify and correct Jira Enhanced Search filters affected by the 1 October 2026 bug, or remove filters that are no longer needed by reviewing [Fixing Filters Affected by the 1 October 2026 Bug](https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/troubleshoot-scriptrunner-enhanced-search/fixing-filters-affected-by-the-1-october-2026-bug).
+
+### Log in as another user not available on Forge
+
+In Forge, users cannot log into Enhanced Search as another user because of an [Atlassian limitation](https://jira.atlassian.com/browse/ECO-244). There is currently not a workaround at the platform level, but you can follow this troubleshooting advice:
+
+-   Use a test account with the same groups, product access, and project roles as the affected user
+-   Hold a screen-sharing session with the affected user, or ask them to capture a HAR file and console logs
+
+Note: You can still log in with your credentials or SSO as usual.
+
+Watch the [Atlassian ticket](https://jira.atlassian.com/browse/ECO-244) for updates.
+
+## September 2026
+
+### Migration of admin pages to Forge
+
+We have migrated ScriptRunner for Jira Cloud admin pages to Forge!
+
+All of your data will remain unaffected and accessible. Other than the following updates, ScriptRunner for Jira Cloud features function the same, and there is no removal of features. We have a couple of changes in how you access ScriptRunner for Jira Cloud and Enhanced Search:
+
+Warning:
+
+Action Required: Update your bookmarks
+
+Administration page URLs have changed since migration. Please update your bookmarks for any administration pages you have saved.
+
+#### New admin page navigation
+
+There is now a drop-down from Apps\>ScriptRunner for Jira Cloud:
+
+  
+  
+
+From there, you can choose if you want to access ScriptRunner or Enhanced Search.
+
+#### ScriptRunner visibility for non-administrators
+
+If you choose ScriptRunner and you are not an administrator, you will see an informational panel:
+
+  
+  
+
+If you see this message and need to use ScriptRunner, contact your Jira administrator for access. All users still have access to Enhanced Search.
 
 ## August 2026
 
@@ -42,7 +186,7 @@ Date of change: August 18th 2026
 
 A new script usage feature has been added to [Script Manager](../features/script-manager.md) that enables you to check where your saved scripts are used across your ScriptRunner for Jira Cloud instance. It allows you to review details on the location and number of configurations where your scripts are loaded.
 
-The script usage feature is available for scripts used in the following features: [Workflow Rules](../features/workflow-rules.md), [Scheduled Jobs](../features/scheduled-jobs.md), [Script Listeners](../features/script-listeners.md), [Escalation Service](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/escalation_service.dita), and [Scripted Fields](../features/scripted-fields.md).
+The script usage feature is available for scripts used in the following features: [Workflow Rules](../features/workflow-rules.md), [Scheduled Jobs](../features/scheduled-jobs.md), [Script Listeners](../features/script-listeners.md), [Escalation Service](../features/escalation-service.md), and [Scripted Fields](../features/scripted-fields.md).
 
 ### Behaviours functionality is moving into ScriptRunner for Jira Cloud
 
@@ -53,6 +197,10 @@ No data will be lost. Your Behaviours configurations transfer automatically into
 For more information about what to expect during the move, see [Breaking Changes](breaking-changes.md).
 
 Date of change: August 3rd 2026
+
+### Enhanced Search extended timeout limit
+
+We have updated the precomputation timeout limit from 25 seconds to 55 seconds. Visit [Detect Broken Filters Using an Analyzer](https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/troubleshoot-scriptrunner-enhanced-search/detect-broken-filters-using-an-analyzer) to learn more.
 
 ## July 2026
 
@@ -128,7 +276,7 @@ As noted in our earlier March 2026 release note, ScriptRunner for Jira Cloud is 
 
 ScriptRunner for Jira Cloud documentation, including the in-app help, has now been updated. However, please note the following:
 
--   Although the ScriptRunner for Jira Cloud UI now reflects Atlassian's new terminology, the Jira Cloud API has not been updated. Therefore, ScriptRunner for Jira Cloud features that interact with the API, including [ScriptRunner Enhanced Search](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/scriptrunner_enhanced_search.dita), still use the old terminology.
+-   Although the ScriptRunner for Jira Cloud UI now reflects Atlassian's new terminology, the Jira Cloud API has not been updated. Therefore, ScriptRunner for Jira Cloud features that interact with the API, including [ScriptRunner Enhanced Search](../features/script-runner-enhanced-search.md), still use the old terminology.
 -   Some Atlassian documentation - particularly the [Jira UI modifications](https://developer.atlassian.com/platform/forge/manifest-reference/modules/jira-ui-modifications/?tabId=3&tab=jira+global+issue+create#view-specific-requirements-and-limitations) guide - still uses the previous terminology. As a result, some of the [Behaviours](../features/behaviours.md) documentation currently reflects that older terminology with only minimal updates, and will be revised in due course.
 -   Training videos will be updated at a later date.
 
@@ -237,7 +385,7 @@ Using the Behaviours Bot offers several advantages when creating and managing Be
 
 Following our notice earlier this month regarding Atlassian's transition to Forge events and missing event properties, we have introduced a new [Deprecation Report](https://docs.adaptavist.com/sr4jc/latest/release-notes/release-notes#atlassian-rest-api-search-endpoints-deprecation--en).
 
-You can use this report to identify any deprecated event types currently in use within your instance. Check out our [Breaking Changes](https://docs.adaptavist.com/sr4jc/latest/release-notes/release-notes#atlassians-transition-to-forge-events-and-missing-event-properties--en) section for more information.
+You can use this report to identify any deprecated event types currently in use within your instance. Check out our [Breaking Changes](https://docs.adaptavist.com/sr4jc/latest/release-notes/breaking-changes/atlassians-transition-to-forge-events-and-missing-event-properties) section for more information.
 
 ### Script Context UI enhancement
 
@@ -249,7 +397,7 @@ Previously, this information appeared above the code editor. Now, you can click 
 
 Due to [Atlassian's platform changes](https://www.atlassian.com/blog/developer/announcing-connect-end-of-support-timeline-and-next-steps), the transition to native Forge events is required, and the deprecation of the old event model, resulting in missing event properties that cannot be retrieved from the Atlassian API. This change means you need to review and update any [Script Listeners](../features/script-listeners.md) that depend on the missing properties.
 
-Check out our [Breaking Changes](https://docs.adaptavist.com/sr4jc/latest/release-notes/release-notes#atlassians-transition-to-forge-events-and-missing-event-properties--en) section for more information.
+Check out our [Breaking Changes](https://docs.adaptavist.com/sr4jc/latest/release-notes/breaking-changes/atlassians-transition-to-forge-events-and-missing-event-properties) section for more information.
 
 ## August 2025
 
@@ -380,7 +528,7 @@ Check out our [Breaking Changes](https://docs.adaptavist.com/sr4jc/latest/releas
 
 ### Results page UI update
 
-Currently, when your search results return several pages of information in the [ScriptRunner for Jira Cloud Enhanced Search](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/scriptrunner_enhanced_search.dita) app, you navigate through them using page numbers.
+Currently, when your search results return several pages of information in the [ScriptRunner for Jira Cloud Enhanced Search](../features/script-runner-enhanced-search.md) app, you navigate through them using page numbers.
 
 We have updated our UI and now use Previous and Next options, along with an indication of the number of pages.
 
@@ -432,7 +580,7 @@ On [Issue](https://docs.adaptavist.com/sr4jc/latest/features/behaviours/behaviou
 
 ### Documentation enhancements
 
-We have incorporated several new videos into our [ScriptRunner Enhanced Search section](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/scriptrunner_enhanced_search.dita) and enhanced the content to improve usability and ease of reference. Specifically, we have added new demo videos to several parts of the [ScriptRunner Enhanced Search JQL Functions](https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/scriptrunner-enhanced-search-jql-functions) chapter and introduced a [Troubleshoot ScriptRunner Enhanced Search](https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/troubleshoot-scriptrunner-enhanced-search) section.
+We have incorporated several new videos into our [ScriptRunner Enhanced Search section](../features/script-runner-enhanced-search.md) and enhanced the content to improve usability and ease of reference. Specifically, we have added new demo videos to several parts of the [ScriptRunner Enhanced Search JQL Functions](https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/scriptrunner-enhanced-search-jql-functions) chapter and introduced a [Troubleshoot ScriptRunner Enhanced Search](https://docs.adaptavist.com/sr4jc/latest/features/scriptrunner-enhanced-search/troubleshoot-scriptrunner-enhanced-search) section.
 
 ## November 2024
 
@@ -810,7 +958,7 @@ UI improvements have been made to the [Scripted Variables](../features/script-va
 UI improvements have been made to the following pages:
 
 -   [Scheduled Jobs](../features/scheduled-jobs.md)
--   [Escalation Services](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/escalation_service.dita)
+-   [Escalation Services](../features/escalation-service.md)
 -   [Script Listeners](../features/script-listeners.md) and
 -   [Scripted Fields](../features/scripted-fields.md).
 
@@ -833,7 +981,7 @@ UI improvements have been made to the following pages:
 
 ## Apr 2020
 
--   Menu items have been consolidated in the UI to improve navigation. [Escalation Services](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/escalation_service.dita) , [Script Variables](../features/script-variables.md), and [Script Fragments](../features/script-fragments.md) are now found under the More drop-down.
+-   Menu items have been consolidated in the UI to improve navigation. [Escalation Services](../features/escalation-service.md), [Script Variables](../features/script-variables.md), and [Script Fragments](../features/script-fragments.md) are now found under the More drop-down.
 
 ## 7 Jan 2020
 

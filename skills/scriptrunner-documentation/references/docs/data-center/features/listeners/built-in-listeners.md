@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Listeners
-- Doc ID: doc-sr4js-f4af06eb-1a1a-44b0-a5a8-020c794e6b92-2591af176652400a
+- Doc ID: doc-sr4js-cd35df5d-7fc7-4f7a-a5aa-ec7fb9aa762b-2591af176652400a
 - Source: https://docs.adaptavist.com/sr4js/latest/features#listeners--en#built-in-listeners--en
 
 We have a number of built-in listeners that let you have better control over your business processes. Many of the listeners available are also available as [Post Functions](https://docs.adaptavist.com/sr4js/latest/features/workflows/post-functions); however, listeners allow you more control over automated actions than you would get with a post function.

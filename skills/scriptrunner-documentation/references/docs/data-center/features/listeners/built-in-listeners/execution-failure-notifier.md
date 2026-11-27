@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Listeners > Built-In Listeners
-- Doc ID: doc-sr4js-d1b7a64d-4ab1-4818-b968-b9f55e6b6533-79eed1e4cdf0843d
+- Doc ID: doc-sr4js-e687b327-3953-45a5-a8b0-a0bc8ea3c991-79eed1e4cdf0843d
 - Source: https://docs.adaptavist.com/sr4js/latest/features#listeners--en#built-in-listeners--en#execution-failure-notifier--en
 
 You can use this listener to listen for script execution failures in your instance and to notify you of the failure. You can specify which properties are extracted from the failing execution (for example, feature name, URL and stack trace) and have these details automatically sent to you via Slack, email, or another software platform.

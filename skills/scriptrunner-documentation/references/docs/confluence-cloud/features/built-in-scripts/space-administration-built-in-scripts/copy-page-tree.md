@@ -3,7 +3,7 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: Features > Built-In Scripts > Space Administration Built-In Scripts
-- Doc ID: doc-sr4cc-217a631f-d6b2-42d6-9378-179c0ba17526-7a69ed6ee8ce7509
+- Doc ID: doc-sr4cc-5f65aa5c-5632-465e-bec6-bf0261ea02c7-7a69ed6ee8ce7509
 - Source: https://docs.adaptavist.com/sr4cc/latest/features/built-in-scripts/space-administration-built-in-scripts/copy-page-tree
 
 Instructions for using the Copy Page Tree built-in script.
@@ -34,7 +34,7 @@ If you have a client demonstration space and want to copy a page tree to have mo
 
 1.  For Source Space, enter the name of the space you want pages copied from.
     
-    For this example, _Client Demonstration for CQL (CQLDS\_)_.
+    For this example, Client Demonstration for CQL (CQLDS).
     
 2.  For Select a Space, select the page trees you want to copy.
     
@@ -48,14 +48,14 @@ If you have a client demonstration space and want to copy a page tree to have mo
     
     For this example, we chose the main page tree.
     
-5.  Enter _Copy_ in Prefix to indicate that the copied pages are copies.
+5.  Enter Copy in Prefix to indicate that the copied pages are copies.
 6.  Select Run.
     
 7.    
     
     Tip: To use Search and Replace, enter the words into the field.
     
-    Search is the field for the word you want to remove, and Replace is for the new word you want to use. For example, you could replace Demo with Demonstration by filling out the fields like this:
+    Search is the field for the word you want to remove, and Replace is for the new word you want to use. For example, you could replace _Demo_ with _Demonstration_ by filling out the fields like this:
     
 
 Once your script runs, the pages should be copied. Here is what the copied pages will look like in the Confluence space:

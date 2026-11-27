@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Event Listeners > Built-In Listeners
-- Doc ID: doc-sr4c-883d1aea-f0eb-4819-8e28-f229d9dad827-6a49967adbf1fdc5
+- Doc ID: doc-sr4c-0b3c7324-e912-4d97-988e-be600b4eb5be-6a49967adbf1fdc5
 - Source: https://docs.adaptavist.com/sr4c/latest/features#event-listeners--en#built-in-listeners--en#inherit-parent-permissions-for-new-pages-listener--en
 
 Use the _Inherit Parent Permissions For New Pages_ built-in listener to create pages that inherit the parent page restrictions.

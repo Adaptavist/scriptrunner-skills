@@ -3,7 +3,7 @@
 - Platform: connect
 - Space: SRC
 - Hierarchy: Workspaces
-- Doc ID: doc-src-6bcae5e6-97bd-4c2a-a812-5a3a29183bdb-634648296213e980
+- Doc ID: doc-src-a0fa6314-1030-49f1-91b0-f2c3ab30b0bd-634648296213e980
 - Source: https://docs.adaptavist.com/src/latest/workspaces#event-queues--en
 
 Event queues are designed to let you queue incoming (external) events that must be processed sequentially, rather than concurrently, which is the default behavior.

@@ -2,9 +2,9 @@
 
 - Platform: confluence-data-center
 - Space: SR4C
-- Hierarchy: Migration > Migrating to or from Cloud
-- Doc ID: doc-sr4c-56fd77d4-056d-4d37-98d5-e84d3b01c764-5e6a6bbb1db30df0
-- Source: https://docs.adaptavist.com/sr4c/latest/migration#migrating-to-or-from-cloud--en#rewrite-scripts-for-cloud--en
+- Hierarchy: Migration > Migrating to Cloud
+- Doc ID: doc-sr4c-641e5b33-b4b9-4065-8573-9ec20f23f85a-21d5a62a7e34ca2a
+- Source: https://docs.adaptavist.com/sr4c/latest/migration#migrating-to-cloud--en#rewrite-scripts-for-cloud--en
 
 Learn how to rewrite your scripts for use in ScriptRunner for Confluence Cloud after migrating from the Sever/DC product.
 
@@ -16,7 +16,7 @@ Confluence Server/Data Center relies on certain APIs and functionalities that ar
 
 ## Platform differences between Server/Data Center and Cloud
 
-Confluence Cloud uses the [Atlassian Connect](https://developer.atlassian.com/cloud/confluence/getting-started-with-connect/) framework, while Confluence Server/Data Center relies on the [Atlassian Plugins](https://developer.atlassian.com/server/confluence/confluence-plugin-guide/) framework, also known as Plugins v2 (or P2). We have documented the notable differences between these two frameworks on our [Differences between ScriptRunner for Confluence Server/DC and Cloud](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-or-from-cloud/platform-differences) page. It's important to understand these differences before you start rewriting your scripts.
+Confluence Cloud uses the [Atlassian Connect](https://developer.atlassian.com/cloud/confluence/getting-started-with-connect/) framework, while Confluence Server/Data Center relies on the [Atlassian Plugins](https://developer.atlassian.com/server/confluence/confluence-plugin-guide/) framework, also known as Plugins v2 (or P2). We have documented the notable differences between these two frameworks on our [Differences between ScriptRunner for Confluence Server/DC and Cloud](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-cloud/platform-differences) page. It's important to understand these differences before you start rewriting your scripts.
 
 The P2 framework in Confluence Server/Data Center allows deep integration with the host application, providing direct access to the Java API. In contrast, Confluence Cloud uses the Atlassian Connect framework, which operates on a more decoupled model. In this environment, apps like ScriptRunner must rely on Confluence's public REST APIs to perform operations.
 
@@ -44,6 +44,6 @@ During the migration process from Confluence Server/Data Center to Confluence Cl
 
 ## Next steps
 
--   [Prepare to Migrate Scripts](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-or-from-cloud/rewrite-scripts-for-cloud/prepare-to-migrate-scripts)
--   [Adapt Scripts for Confluence Cloud](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-or-from-cloud/rewrite-scripts-for-cloud/adapt-scripts-for-confluence-cloud)
--   [Migration Best Practices and Supporting Technical Information](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-or-from-cloud/rewrite-scripts-for-cloud/migration-best-practices-and-supporting-technical-information)
+-   [Prepare to Migrate Scripts](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-cloud/rewrite-scripts-for-cloud/prepare-to-migrate-scripts)
+-   [Adapt Scripts for Confluence Cloud](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-cloud/rewrite-scripts-for-cloud/adapt-scripts-for-confluence-cloud)
+-   [Migration Best Practices and Supporting Technical Information](https://docs.adaptavist.com/sr4c/latest/migration/migrating-to-cloud/rewrite-scripts-for-cloud/migration-best-practices-and-supporting-technical-information)

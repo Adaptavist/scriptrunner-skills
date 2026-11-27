@@ -3,7 +3,7 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: Features > Built-In Scripts > Space Administration Built-In Scripts
-- Doc ID: doc-sr4cc-74dfff80-4eff-46d4-a9c7-2a65c29e5eca-981170787e2c4ca7
+- Doc ID: doc-sr4cc-746e79c8-0663-4dbf-accf-0436d3ffa8a8-981170787e2c4ca7
 - Source: https://docs.adaptavist.com/sr4cc/latest/features/built-in-scripts/space-administration-built-in-scripts/delete-page-tree
 
 Instructions for using the Delete Page Tree built-in script.

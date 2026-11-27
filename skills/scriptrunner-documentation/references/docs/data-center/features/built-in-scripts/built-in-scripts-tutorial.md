@@ -3,8 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Built-in scripts
-- Doc ID: doc-sr4js-fade5318-21f3-46a9-9868-bdd782a7952b-f3d9256fdc295589
+- Doc ID: doc-sr4js-96aabf0d-f804-4aa9-b42c-760dde8e6ed7-f3d9256fdc295589
 - Source: https://docs.adaptavist.com/sr4js/latest/features#built-in-scripts--en#built-in-scripts-tutorial--en
+
+Walk through setting up and running a Built-In Script for the first time with a practical example to get you started.
 
 As an administrator, you likely handle lots of tasks in your Jira instance. Many of these tasks can be a bit tedious. And like most of us, you want to make your life easier and handle more tasks automatically- that's where ScriptRunner built-in scripts come in. While ScriptRunner provides extended functionality in many different ways, its built-in scripts offer several options to automate or simplify different processes in Jira. Also, built-in scripts, as their name indicates, are built into ScriptRunner, so you don't need to work with Groovy to get them running.
 

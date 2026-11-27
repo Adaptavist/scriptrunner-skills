@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Workflows > Validators
-- Doc ID: doc-sr4js-378469c0-8037-44fb-b47d-92b4fe428a3e-116107177b2b6299
+- Doc ID: doc-sr4js-4f05a093-0de1-48fa-b37e-497d2152aac6-116107177b2b6299
 - Source: https://docs.adaptavist.com/sr4js/latest/features#workflows--en#validators--en#fields-changed-validator--en
 
 Use the _Field(s) changed validator_ to ensure that the values of the selected fields have changed during a workflow transition. If there has been no change to the selected fields, the issue will not be permitted to transition, and an error will be displayed. For example, you may want to ensure that the _Assignee_ field is updated when transitioning between _In Development_ and _In Test_.

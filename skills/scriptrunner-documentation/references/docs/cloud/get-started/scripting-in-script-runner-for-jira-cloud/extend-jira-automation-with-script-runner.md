@@ -3,7 +3,7 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Get Started > Scripting in ScriptRunner for Jira Cloud
-- Doc ID: doc-sr4jc-b473e34c-cd57-484d-9e98-467a6c9be29c-f9b2d452107b6036
+- Doc ID: doc-sr4jc-25d0ca69-15a1-41f2-820a-d6255021e7bc-f9b2d452107b6036
 - Source: https://docs.adaptavist.com/sr4jc/latest/get-started/scripting-in-scriptrunner-for-jira-cloud#extend-jira-automation-with-scriptrunner--en
 
 Learn when to use ScriptRunner for Jira Cloud versus Jira Automation, and compare their capabilities for advanced, code-based automation.
@@ -17,15 +17,15 @@ We've provided a comparison of the capabilities of ScriptRunner for Jira Cloud a
 ## Use ScriptRunner when you need:
 
 -   full programming capabilities using Groovy, Typescript/JavaScript, HAPI, or assisted scripting
--   a [Script Console](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/features_script_console.dita) to run and debug scripts on demand against your live instance before deployment
+-   a [Script Console](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/production/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/features_script_console.dita) to run and debug scripts on demand against your live instance before deployment
 -   reusable scripts via the [Script Manager](../../features/script-manager.md)
 -   advanced Workflow Rules such as [Validate Details](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/validate-details), [Restrict Transitions](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/restrict-transitions), and [Perform Actions](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/perform-actions)
 -   dynamic field control and user-specific field visibility using [Behaviours](../../features/behaviours.md)
 -   calculated custom fields using [Scripted Fields](../../features/scripted-fields.md)
--   custom JQL functions and keywords using [ScriptRunner Enhanced Search](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/scriptrunner_enhanced_search.dita)
+-   custom JQL functions and keywords using [ScriptRunner Enhanced Search](../../features/script-runner-enhanced-search.md)
 -   complex data transformation, including parsing JSON or XML and manipulating collections
 -   advanced REST API calls and response parsing
--   secure credential storage using [Script Variables](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/features_script_variables.dita)
+-   secure credential storage using [Script Variables](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/production/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Cloud_SR4JC/topics/features_script_variables.dita)
 -   custom retry logic and more detailed error handling
 -   bulk work item processing and complex multi-work item operations
 -   admin-level actions such as managing users, groups, and space roles

@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Script fields > Built-In Script Fields > Issue Picker
-- Doc ID: doc-sr4js-743b5e42-aeb6-43cb-b767-0a1fe7c712e0-6601941d5331f339
+- Doc ID: doc-sr4js-4402ad77-99cf-48f7-8c7f-fb25940bff5d-6601941d5331f339
 - Source: https://docs.adaptavist.com/sr4js/latest/features#script-fields--en#built-in-script-fields--en#issue-picker--en#issue-picker-customizations--en
 
 You can customize the picker in many ways using the _Configuration Script_ option. However, it's recommended you get the basic functionality of your picker working before you work on advanced customization.

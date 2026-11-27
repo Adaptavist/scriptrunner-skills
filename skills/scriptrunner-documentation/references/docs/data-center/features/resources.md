@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features
-- Doc ID: doc-sr4js-6b382c8a-1ce9-4caf-8924-6eb503b88fd3-05ffec932b13ed9c
+- Doc ID: doc-sr4js-27a64a2f-1a48-486c-ac77-7edcff7afbd9-05ffec932b13ed9c
 - Source: https://docs.adaptavist.com/sr4js/latest/features#resources--en
 
 |  |  |

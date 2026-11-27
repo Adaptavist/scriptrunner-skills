@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > JQL Functions > Included JQL Functions
-- Doc ID: doc-sr4js-5cae110d-7277-42ef-ad7d-f23465733e4e-5dbb72c13b2f0c26
+- Doc ID: doc-sr4js-c5d9db78-c900-4b5a-b4bb-ff4aa470fcc1-5dbb72c13b2f0c26
 - Source: https://docs.adaptavist.com/sr4js/latest/features#jql-functions--en#included-jql-functions--en#portfolio--en
 
 The functions on this page are only available if [Advanced Roadmaps for Jira](https://confluence.atlassian.com/jirasoftwareserver/discover-advanced-roadmaps-for-jira-1044784153.html) (previously known as _Portfolio for Jira)_ is installed.

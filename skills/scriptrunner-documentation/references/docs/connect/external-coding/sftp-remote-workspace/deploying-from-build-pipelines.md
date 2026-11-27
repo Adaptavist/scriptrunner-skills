@@ -2,13 +2,13 @@
 
 - Platform: connect
 - Space: SRC
-- Hierarchy: External Coding
-- Doc ID: doc-src-2d8b7d4c-30ad-47f7-822e-57fedf9fbe87-e2cd2afeb5fe66eb
-- Source: https://docs.adaptavist.com/src/latest/external-coding#deploying-from-build-pipelines--en
+- Hierarchy: External Coding > SFTP (Remote Workspace)
+- Doc ID: doc-src-7654d753-981e-4bf9-8baa-919374abd412-165a167f77aa2de4
+- Source: https://docs.adaptavist.com/src/latest/external-coding/sftp-remote-workspace#deploying-from-build-pipelines--en
 
 Information about deploying work from build pipelines while using our external coding features.
 
-When using Git or another version control system (VCS) in your workflows, you may want to automatically deploy your [remote workspace](../uncategorized/e/external-coding.md) changes after they are merged into the `main` branch.
+When using Git or another version control system (VCS) in your workflows, you may want to automatically deploy your [remote workspace](../sftp-remote-workspace.md) changes after they are merged into the `main` branch.
 
 This can be done using your existing secure file transfer protocol (SFTP) credentials, which were used to develop the change in the remote workspace. However, this creates a safety issue when you or any of your teammates continue working on the `HEAD` version, since the build pipeline deploys directly to it. Doing this will overwrite any new work that may have been done since. Someone actively working while automated deployment is underway is also unsafe because it can lead to a corrupted release being created and deployed (working copy scripts mixed with the deployed version).
 
@@ -29,7 +29,7 @@ We plan to address this shortcoming in the future, so the build pipeline deploym
 
 Let's say you want a PR created in Git, that's merged to the main branch, and a build pipeline is kicked off that deploys this change back to your workspace, creates a release from it, and deploys that release to one of your environments. To achieve this, build the following logic in your build pipeline:
 
-1.  Create new, temporary SFTP credentials by calling [POST /v1/workspace/{workspaceId}/sftp/temp](https://docs.api.scriptrunnerconnect.com/#/Remote%20Workspace/RemoteWorkspaceTemporaryCredentials_createRemoteWorkspaceTemporaryCredentials) API endpoint using the [REST API](../uncategorized/r/rest-api.md).
+1.  Create new, temporary SFTP credentials by calling [POST /v1/workspace/{workspaceId}/sftp/temp](https://docs.api.scriptrunnerconnect.com/#/Remote%20Workspace/RemoteWorkspaceTemporaryCredentials_createRemoteWorkspaceTemporaryCredentials) API endpoint using the [REST API](../../uncategorized/r/rest-api.md).
     
     Doing so, you'll get the ID for the temporary SFTP access and credentials to use.
     

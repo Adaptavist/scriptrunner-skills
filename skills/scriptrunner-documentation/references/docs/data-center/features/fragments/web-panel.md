@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Fragments
-- Doc ID: doc-sr4js-afeaf272-edc8-44b3-82b2-a52ab022d651-3257700464c4e001
+- Doc ID: doc-sr4js-6f9ac894-d8d7-4043-91fe-46cd6cfe1ae7-3257700464c4e001
 - Source: https://docs.adaptavist.com/sr4js/latest/features#fragments--en#web-panel--en
 
 Web panels can be used to add HTML snippets to parts of a page. They could be used to display additional information on a particular build, a plan, or the system navigation. For more information, read up on [web panels](https://developer.atlassian.com/server/framework/atlassian-sdk/web-panel-plugin-module/) in the Atlassian documentation.

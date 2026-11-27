@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Best Practices
-- Doc ID: doc-sr4js-f945a63f-08aa-4323-b3f6-f19a8273d360-2521cd0c31b5d2fb
+- Doc ID: doc-sr4js-12c79a1d-da09-4bfd-89a7-98d4e6d12cd9-2521cd0c31b5d2fb
 - Source: https://docs.adaptavist.com/sr4js/latest/best-practices/write-code
 
 Note: For a video on Groovy scripting, see our [Groove Basics](../training/course-introduction-to-scripting-in-script-runner-for-jira-d/2-1-video-groovy-basics-for-script-runner-data-center.md) training video.

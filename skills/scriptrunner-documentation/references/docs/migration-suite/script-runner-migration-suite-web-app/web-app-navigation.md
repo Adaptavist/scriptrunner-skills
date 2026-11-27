@@ -3,7 +3,7 @@
 - Platform: migration-suite
 - Space: SMS
 - Hierarchy: ScriptRunner Migration Suite Web App
-- Doc ID: doc-sms-c5ab583f-5ebe-4ceb-b9fd-2560b61e1088-376005165ebe9b41
+- Doc ID: doc-sms-117ce8bf-c6a0-481c-a8f5-fb8d7e4ccf66-376005165ebe9b41
 - Source: https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/web-app-navigation
 
 The Web App has three main points of navigation:
@@ -18,6 +18,7 @@ You can find the main feature navigation on the left-hand side of the Web App:
 
 Using these, you can navigate to:
 
+-   [Organisations](https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/projects/switch-between-organisations) (example image shows Adaptavist.com)
 -   The Home screen
 -   The new [Projects](projects.md) feature
 -   The [Analyse and Assess Tool](script-runner-migration-analyse-and-assess-tool.md)

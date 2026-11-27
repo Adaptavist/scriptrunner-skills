@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features
-- Doc ID: doc-sr4c-c4f1b337-c8ff-4195-b351-78085035c4e0-0074bea4802c7101
+- Doc ID: doc-sr4c-5dec57d0-e322-41d0-a609-f4de93092e8a-0074bea4802c7101
 - Source: https://docs.adaptavist.com/sr4c/latest/features#resources--en
 
 The _Resources_ feature allows you to add connections to databases for use in scripts and other places.

@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Best Practices > Write Code
-- Doc ID: doc-sr4js-aeb48487-e40a-4eff-84c2-80009ed4c029-5544fcd3e6909293
+- Doc ID: doc-sr4js-3f99fa31-d8e3-4a85-a364-70d468e2d9d0-5544fcd3e6909293
 - Source: https://docs.adaptavist.com/sr4js/latest/best-practices/write-code#code-editor--en
 
 Use the Code Editor to write scripts in ScriptRunner. The browser-based Code Editor provides code completions, inline Javadoc lookups, inline find and replace, and error line indication.

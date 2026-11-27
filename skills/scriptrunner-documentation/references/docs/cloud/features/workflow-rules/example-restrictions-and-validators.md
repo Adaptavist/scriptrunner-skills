@@ -3,12 +3,12 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features > Workflow Rules
-- Doc ID: doc-sr4jc-52930de4-8f0e-4857-a1dc-603ead10f161-7bbc80ac9c0c59f4
+- Doc ID: doc-sr4jc-046463a2-a821-4016-bacd-f765c66c1337-7bbc80ac9c0c59f4
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules#example-restrictions-and-validators--en
 
 The Jira expression examples highlighted in this section can be used for either [restrictions](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/restrict-transitions) or [validators](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/validate-details) and on all transitions unless noted otherwise.
 
-Note: Jira expression framework limitation: nested condition
+Note: Jira expression framework limitation: Nested condition
 
 [Jira expressions](https://developer.atlassian.com/cloud/jira/platform/jira-expressions/#conditional-expressions) do not support nested `if` statements. For example, the following expression will _fail_:
 
@@ -30,7 +30,7 @@ if (issue.summary.length > 10 && issue.assignee) {
 
 Note: Atlassian's [new transition experience](https://community.atlassian.com/forums/Jira-articles/Now-GA-try-the-new-issue-transition-experience-in-Jira/ba-p/2734436) in Jira is being permanently rolled out in April 2025. As a consequence, how your Jira expressions ([restrictions](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/restrict-transitions) and [validators](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/validate-details)) work will change. Check out our [Breaking Changes](https://docs.adaptavist.com/sr4jc/latest/release-notes/release-notes#atlassians-new-transition-experience-compatibility-with-jira-expressions--en) section for more information.
 
-## Checks if the work item has been in a status previously
+## Checks if the Work Item has been in a status previously
 
 ```
 issue.changelogs.some(c =>
@@ -92,7 +92,7 @@ The following system fields return a [Date](https://developer.atlassian.com/clou
  false
 ```
 
-### Checks whether a work item is due within the next 3 months:
+### Checks whether a Work Item is due within the next 3 months:
 
 The following system fields return a [CalendarDate](https://developer.atlassian.com/cloud/jira/platform/jira-expressions-type-reference/#calendardate) object: `dueDate`.
 
@@ -106,13 +106,13 @@ CAUTION: `dueDate` and `resolutionDate`, along with custom fields, can be null. 
 
 `Date` custom fields have a string value, but can be converted to a calendar date like so: `new CalendarDate(issue.customfield_10200)`
 
-### Checks whether a work item was created more than 7 days ago:
+### Checks whether a Work Item was created more than 7 days ago:
 
 ```
 issue.created < new Date().minusDays(7)
 ```
 
-### Checks whether a work item was resolved within the last 30 days:
+### Checks whether a Work Item was resolved within the last 30 days:
 
 ```
 issue.resolutionDate ? 
@@ -120,7 +120,7 @@ issue.resolutionDate ?
  false
 ```
 
-### Checks whether a work item was updated within the last 2 hours:
+### Checks whether a Work Item was updated within the last 2 hours:
 
 ```
 issue.updated > new Date().minusHours(2)
@@ -138,7 +138,7 @@ The following examples verify that the field is not empty (i.e., it's a required
 
 At least one of two label fields must have a value.
 
-### Checks if the work type is Bug or Task
+### Checks if the Work Type is Bug or Task
 
 ```
  ["Bug", "Task"].includes(issue.issueType.name)
@@ -152,7 +152,7 @@ At least one of two label fields must have a value.
 
 ## Field(s) changed
 
-Check whether a specified field has been changed in the work item's lifetime.
+Check whether a specified field has been changed in the Work item's lifetime.
 
 ```
 issue.changelogs.some(c => c.items.some(i => i.field == 'Field Name'))
@@ -160,7 +160,7 @@ issue.changelogs.some(c => c.items.some(i => i.field == 'Field Name'))
 
 ## Field(s) required
 
-For text fields, single, multi selects, radio buttons, checkboxes, and cascading select fields:
+For text fields, single, multi-selects, radio buttons, checkboxes, and cascading select fields:
 
 ```
 issue.customfield_10040 != null
@@ -191,21 +191,21 @@ The code will not run because the return value is a list of objects.
 issue.comments.map(c => c.body)
 ```
 
-## Work item must be in the current active sprint
+## Work Item must be in the current active sprint
 
-As a space manager, you want to ensure that only work items planned in the current sprint are worked on. Allow work to start only on work items in the current active sprint.
+As a space manager, you want to ensure that only Work items planned in the current sprint are worked on. Allow work to start only on Work items in the current active sprint.
 
 ```
 issue.sprint?.state == 'active'
 ```
 
-## Work item must have at least one PDF attachment
+## Work Item must have at least one PDF attachment
 
 ```
 issue.attachments.some(attachment => attachment.mimeType == 'application/pdf')
 ```
 
-## Work item must have at least three PDF attachments
+## Work Item must have at least three PDF attachments
 
 ```
 issue.attachments.filter(attachment => attachment.mimeType == 'application/pdf').length > 3
@@ -213,7 +213,7 @@ issue.attachments.filter(attachment => attachment.mimeType == 'application/pdf')
 
 ## Last field changed
 
-Check whether a specified field has been changed within the work item's lifetime.
+Check whether a specified field has been changed within the Work item's lifetime.
 
 ```
 issue.changelogs[0].items.some(i => i.field == 'Field Name')
@@ -221,7 +221,7 @@ issue.changelogs[0].items.some(i => i.field == 'Field Name')
 
 ## Linked work
 
-Use the _Linked Work Condition_ to control whether or not a user can transition a work item based on the status or resolution of linked work.
+Use the _Linked Work Condition_ to control whether or not a user can transition a Work item based on the status or resolution of linked work.
 
 ```
 // Check all linked work items are in a certain status
@@ -244,15 +244,15 @@ issue.links
 
 ## Minimum length of all comments
 
-As a support manager, you want to ensure that all comments have detailed descriptions. By setting a minimum character length, you can enforce meaningful comments on all work items before they can be created.
+As a support manager, you want to ensure that all comments have detailed descriptions. By setting a minimum character length, you can enforce meaningful comments on all Work items before they can be created.
 
 ```
  issue.comments.every(comment => comment.body.plainText.length > 10)
 ```
 
-## Minimum length of work item description
+## Minimum length of Work Item description
 
-As a support manager, you want to ensure that all reported bugs have detailed descriptions so you can replicate and solve them as easily as possible. By setting a minimum character length, you can enforce thorough descriptions of all work items before they can be created.
+As a support manager, you want to ensure that all reported bugs have detailed descriptions so you can replicate and solve them as easily as possible. By setting a minimum character length, you can enforce thorough descriptions of all Work items before they can be created.
 
 ```
  issue.description.plainText.length > 30
@@ -270,7 +270,7 @@ issue.customfield_10214 ?
 
 ## Multi-select list or checkbox field must be populated with specific value
 
-You want to enforce that work items have a specific value selected in a multi-select list or checkbox before progressing. 
+You want to enforce that Work items have a specific value selected in a multi-select list or checkbox before progressing. 
 
 ```
 issue.customfield_10263 ?
@@ -292,9 +292,9 @@ issue.customfield_10214 ?
 
 ## Regular expressions
 
-The Regular Expression condition is only available on all strings, including text fields and option values.
+The Regular Expression Restrict transition rule is only available on all strings, including text fields and option values.
 
-Checks that the description contains the string \`SRJ-\` then any amount of digits, for example, to match a work tracker key:
+Checks that the description contains the string `SRJ-`, then any number of digits, for example, to match a work tracker key:
 
 ```
 issue.description.plainText.match("SRJ-\d+") != null
@@ -340,7 +340,7 @@ issue.attachments.filter(attachment => attachment.id == null && attachment.mimeT
 
 ## Require attachments
 
-You want a PDF of the contract agreement attached to a work item before work can begin, so developers know what was agreed with the client. This script ensures that at least one PDF file is attached before the Start Progress transition is available for the work item.
+You want a PDF of the contract agreement attached to a Work item before work can begin, so developers know what was agreed with the client. This script ensures that at least one PDF file is attached before the Start Progress transition is available for the Work item.
 
 ```
 issue.attachments.some(attachment => attachment.mimeType == 'application/pdf')
@@ -354,7 +354,7 @@ issue.attachments.filter(attachment => attachment.mimeType == 'application/pdf')
 
 Edit `length > 0` to the minimum number of PDFs required.
 
-As a space manager, you want to ensure the required number of attachments have been added to a work item as it transitions, to align with business processes. Ensure a minimum number of attachments have been added as a work item transitions.
+As a space manager, you want to ensure the required number of attachments have been added to a Work item as it transitions, to align with business processes. Ensure a minimum number of attachments have been added as a Work item transitions.
 
 ```
 issue.attachments.filter(attachment => attachment.id == null).length == 3
@@ -362,9 +362,9 @@ issue.attachments.filter(attachment => attachment.id == null).length == 3
 
 Change `length ==3` to specify the minimum number of required attachments. The transition screen must be configured to include the _Attachments_ field so users can submit attachments during the transition.
 
-## Require one linked work item
+## Require one linked Work Item
 
-You have a support portal and a separate support development instance. You want to ensure that all work created on the support development instance is linked to its corresponding user-facing ticket on the support portal. Ensure all work items created on one Jira instance are linked with their corresponding items on another instance.
+You have a support portal and a separate support development instance. You want to ensure that all work created on the support development instance is linked to its corresponding user-facing ticket on the support portal. Ensure all Work items created on one Jira instance are linked with their corresponding items on another instance.
 
 ```
 issue.links.length > 0
@@ -374,7 +374,7 @@ You can edit this script to make other fields required. For example, replace `li
 
 ## Require specific users in a space can create work of a specified type
 
-In this example, only members of the Developers role can create Bug work types, but all users can create other work types.
+In this example, only members of the _Developers_ role can create Bug work types, but all users can create other work types.
 
 ```
 issue.issueType.name == 'Bug' ? 
@@ -384,7 +384,7 @@ issue.issueType.name == 'Bug' ?
 
 ## Require sub-tasks
 
-As a space manager, you want developers to add subtasks to work items so you can see the steps required to complete them. You want to prevent a work item from transitioning if it has no subtasks. This script only shows the transition option if the work item has at least one sub-task.
+As a space manager, you want developers to add subtasks to Work items so you can see the steps required to complete them. You want to prevent a Work item from transitioning if it has no subtasks. This script only shows the transition option if the Work item has at least one sub-task.
 
 ```
 issue.subtasks.length > 0
@@ -394,7 +394,7 @@ Edit `length > 0` to the minimum number of sub-tasks required.
 
 ## Restrict transition permissions
 
-As a team lead, you want to restrict the transition of work items to a specific status for certain user groups or space roles. This condition only shows a certain transition option to users belonging to the groups or roles specified.
+As a team lead, you want to restrict the transition of Work items to a specific status for certain user groups or space roles. This condition only shows a certain transition option to users belonging to the groups or roles specified.
 
 ### Restrict to space role
 
@@ -402,7 +402,7 @@ As a team lead, you want to restrict the transition of work items to a specific 
 user.getProjectRoles(project).some(p => p.name == "userrole")
 ```
 
-Replace `userrole` with the space role you want to be able to transition the work item (for example, _Developers_). Roles apply only to spaces, whereas user groups are global. See the [Atlassian documentation](https://confluence.atlassian.com/adminjiracloud/managing-project-roles-776636382.html) for information on managing space roles.
+Replace `userrole` with the space role you want to be able to transition the Work item (for example, _Developers_). Roles apply only to spaces, whereas user groups are global. See the [Atlassian documentation](https://confluence.atlassian.com/adminjiracloud/managing-project-roles-776636382.html) for information on managing space roles.
 
 ### Restrict to user groups
 
@@ -445,7 +445,7 @@ issue
 
 ## Sub-tasks must be done
 
-You want to enforce that _Done_ means all sub-tasks are completed by hiding the _Done_ transition option of a work item when there are outstanding sub-tasks. This script only shows the transition option when all sub-tasks have the _Done_ resolution.
+You want to enforce that _Done_ means all sub-tasks are completed by hiding the _Done_ transition option of a Work item when there are outstanding sub-tasks. This script only shows the transition option when all sub-tasks have the _Done_ resolution.
 
 ```
 issue.subtasks.every(subtask => subtask.status.name == 'Done')
@@ -455,7 +455,7 @@ Edit `subtask.status.name == 'Done'` if you require a different sub-task resolut
 
 ## Sub-tasks must be in progress
 
-As a space manager, you want to ensure all sub-tasks have been started before progress can start on the parent work item to keep work aligned. Ensure all sub-tasks are _In Progress_ before a parent work item can be transitioned to _In Progress_.
+As a space manager, you want to ensure all sub-tasks have been started before progress can start on the parent Work item to keep work aligned. Ensure all sub-tasks are _In Progress_ before a parent Work item can be transitioned to _In Progress_.
 
 This example cannot be used on the _Create_ transition. Use the _Start Progress_ transition.
 
@@ -465,7 +465,7 @@ issue.subtasks.every(subtask => subtask.status.name == 'In Progress')
 
 ## Sub-Tasks must have assignee
 
-You want to make sure all sub-tasks have been assigned before the parent work item can be transitioned to _In Progress_. This script only shows the _In Progress_ transition option on a parent work item when all sub-tasks have assignees.
+You want to make sure all sub-tasks have been assigned before the parent Work item can be transitioned to _In Progress_. This script only shows the _In Progress_ transition option on a parent Work item when all sub-tasks have assignees.
 
 ```
 issue.subtasks.every(subtask => subtask.assignee != null)
@@ -524,7 +524,7 @@ issue.customfield_10078 ?
 
 ## Verify work type
 
-Returns true for work with work type: Bug or Task.
+Returns true for work with work type: _Bug_ or _Task_.
 
 ```
 ["Bug", "Task"].includes(issue.issueType.name)

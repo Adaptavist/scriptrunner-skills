@@ -3,10 +3,12 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: n/a
-- Doc ID: doc-sr4js-9ccd8795-aec9-43fe-aa5d-02cd1abef5b8-cb0ae44c5664cb3f
+- Doc ID: doc-sr4js-5d13f774-16cd-431c-ad1a-f8deb88099e1-cb0ae44c5664cb3f
 - Source: https://docs.adaptavist.com/sr4js/latest/features
 
-This page summarises the main features of ScriptRunner for Jira Data Center and describes additional features we have developed to optimize your scripting experience. See _[Navigation](../../get-started/navigation.md)_ for more information on how to access ScriptRunner features.
+Explore all ScriptRunner features: from Script Console and Listeners to Behaviours, JQL Functions, Fragments, and more.
+
+See _[Navigation](../../get-started/navigation.md)_ for more information on how to access ScriptRunner features.
 
 |  |  |
 | --- | --- |

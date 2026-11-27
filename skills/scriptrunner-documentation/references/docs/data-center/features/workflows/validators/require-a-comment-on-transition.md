@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Workflows > Validators
-- Doc ID: doc-sr4js-3e147310-52a9-486a-ac09-c5a81a83ef2f-b4216f339d9787ac
+- Doc ID: doc-sr4js-1edf59c5-7ffc-4400-b76d-f0afd84cd004-b4216f339d9787ac
 - Source: https://docs.adaptavist.com/sr4js/latest/features#workflows--en#validators--en#require-a-comment-on-transition--en
 
 Use the _Require a comment on transition_ validator to make sure a comment is added to the issue during the chosen transition. For example, you can use this validator to ensure a closing statement is added to an issue when it is transitioned to _Done_, or equivalent.

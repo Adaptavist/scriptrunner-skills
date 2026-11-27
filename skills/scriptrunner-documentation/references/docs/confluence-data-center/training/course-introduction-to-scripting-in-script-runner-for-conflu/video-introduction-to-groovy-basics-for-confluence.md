@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Training > Course: Introduction to Scripting in ScriptRunner for Confluence
-- Doc ID: doc-sr4c-7daf9ec4-c3eb-4770-b95a-4b4b73302a86-1a49037ef634aa33
+- Doc ID: doc-sr4c-5e63b5e9-a646-44a7-b91b-5ef7262d3f8c-1a49037ef634aa33
 - Source: https://docs.adaptavist.com/sr4c/latest/training#course-introduction-to-scripting-in-scriptrunner-for-confluence--en#video-introduction-to-groovy-basics-for-confluence--en
 
 [Media](https://player.vimeo.com/video/733187072?h=4ee4093e28)

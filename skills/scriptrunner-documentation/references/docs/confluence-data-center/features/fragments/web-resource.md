@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Fragments
-- Doc ID: doc-sr4c-12b6f0a7-d06f-41cd-9b87-abc42072a4c7-fc9fc87119c23c6b
+- Doc ID: doc-sr4c-8a54094c-c4f4-4d7e-838e-f6f14b2f90ee-fc9fc87119c23c6b
 - Source: https://docs.adaptavist.com/sr4c/latest/features#fragments--en#web-resource--en
 
 Using web resources, you can include JavaScript and CSS resources in certain contexts, like blog posts or the editor.

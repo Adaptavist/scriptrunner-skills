@@ -3,7 +3,7 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features > Built-In Scripts
-- Doc ID: doc-sr4jc-4bba3564-4d52-4ebb-9acc-d9a370812bce-f2ba936bde64aefc
+- Doc ID: doc-sr4jc-6fddae2e-74b4-4681-8fbc-2f51b0ddc728-f2ba936bde64aefc
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/built-in-scripts#copy-custom-field-values-to-another-field--en
 
 Work items in Jira are made up of built-in fields along with fields that you can create and customise to meet the needs of your project team. Custom fields contain values that you can copy from one to another, allowing you to widen or narrow the custom field.

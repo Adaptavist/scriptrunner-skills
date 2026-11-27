@@ -3,7 +3,7 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Release Notes > Breaking Changes
-- Doc ID: doc-sr4jc-2d5feb27-adf3-4b9c-88e4-0600884a5460-9dad79878b53db8f
+- Doc ID: doc-sr4jc-7fa32899-b415-4487-866b-f3ac8ff8d52b-9dad79878b53db8f
 - Source: https://docs.adaptavist.com/sr4jc/latest/release-notes/breaking-changes#compatibility-of-atlassians-new-transition-experience-with-jira-expressions--en
 
 Since April 2025, Atlassian has permanently rolled out the [new transition experience](https://community.atlassian.com/forums/Jira-articles/Now-GA-try-the-new-issue-transition-experience-in-Jira/ba-p/2734436) in Jira. As a consequence, the way your Jira expressions ([conditions](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/restrict-transitions) and [validators](https://docs.adaptavist.com/sr4jc/latest/features/workflow-rules/validate-details)) work will change.

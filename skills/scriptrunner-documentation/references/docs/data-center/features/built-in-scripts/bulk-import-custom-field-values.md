@@ -3,10 +3,12 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Built-in scripts
-- Doc ID: doc-sr4js-46bf4f43-298f-45c2-87b4-66214abdbadc-9ef0382276b88026
+- Doc ID: doc-sr4js-66820f00-02a2-4295-ab2b-49dd19f1cb10-9ef0382276b88026
 - Source: https://docs.adaptavist.com/sr4js/latest/features#built-in-scripts--en#bulk-import-custom-field-values--en
 
-Use this built-in script to bulk import a list of values into any custom field that supports options, such as select lists, radio buttons, and checkboxes. This built-in script removes the need to [manually add options](https://confluence.atlassian.com/adminjiraserver100/configuring-custom-field-contexts-1442845462.html#Configuringcustomfieldcontexts-Changefield%E2%80%99soptionsanddefaultvalue) to your custom fields when you configure a custom field's context, enabling you to quickly and easily add an entire list of options.
+Bulk import option values into select lists, radio buttons, or checkboxes using the built-in script: no manual configuration needed.
+
+This built-in script removes the need to [manually add options](https://confluence.atlassian.com/adminjiraserver100/configuring-custom-field-contexts-1442845462.html#Configuringcustomfieldcontexts-Changefield%E2%80%99soptionsanddefaultvalue) to your custom fields when you configure a custom field's context, enabling you to quickly and easily add an entire list of options.
 
 If your custom field already contains options, this built-in script appends the new options beneath the existing ones. Additionally, it bypasses any options that are already present, allowing you to update custom fields without fear of accidental deletion or duplication.
 

@@ -3,14 +3,14 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Training > Course: Managing Your Confluence Space with ScriptRunner
-- Doc ID: doc-sr4c-b2d74a53-3760-4d32-99cc-fb0a35a5f153-6999e09235374028
+- Doc ID: doc-sr4c-bc51f151-084f-475a-a648-374573a17072-6999e09235374028
 - Source: https://docs.adaptavist.com/sr4c/latest/training#course-managing-your-confluence-space-with-scriptrunner--en#video-managing-content-with-scriptrunner-for-confluence--en
 
 [Media](https://player.vimeo.com/video/734708750?h=2bb5189418)
 
 |  |  |  |
 | --- | --- | --- |
-| [Downloadable Resources](https://app.box.com/s/9x2swm0mt42qjr6cw5kzznzn3070xgrp) |  | [Next](https://docs.adaptavist.com/sr4c/latest/training/course-introduction-to-scripting-in-scriptrunner-for-confluence) |
+| [Downloadable Resources](https://app.box.com/s/9x2swm0mt42qjr6cw5kzznzn3070xgrp) |  | [Next Course](https://docs.adaptavist.com/sr4c/latest/training/course-introduction-to-scripting-in-scriptrunner-for-confluence) |
 
 ## Links
 

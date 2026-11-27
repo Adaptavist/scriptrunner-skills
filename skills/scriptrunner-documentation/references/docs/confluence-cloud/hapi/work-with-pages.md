@@ -3,7 +3,7 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: HAPI
-- Doc ID: doc-sr4cc-d35a4753-c20d-43ce-91e8-51ab0c5a183c-4225ed4ef62b0be7
+- Doc ID: doc-sr4cc-d04bd6ff-890f-4cc7-9b6b-990623389d41-4225ed4ef62b0be7
 - Source: https://docs.adaptavist.com/sr4cc/latest/hapi/work-with-pages
 
 Learn how to use HAPI to complete tasks that require pages.
@@ -30,7 +30,7 @@ setParentPage(parentPage)
 
 When the script finishes running, you see a log entry. This script creates a new page called `FAQ` in the Test space:
 
-You can customize the script by changing the space key, page title, and parent page ID.
+You can customize the script by changing the _space key_, _page title_, and _parent page ID_.
 
 ## Create a new page with labels
 
@@ -48,7 +48,7 @@ newHapiDoc.getLabels()
 
 Again, you'll see a log entry when the script finishes running. And here is your new page called `HAPI Documentation` with the `documentation` label:
 
-You can customize the script by changing the space key, page title, and labels.
+You can customize the script by changing the _space key_, _page title_, and _labels_.
 
 ## Delete a page
 
@@ -64,7 +64,7 @@ pageToBeDeleted.delete()
 
 This script deletes a page, which is identified by its page ID. You can see the _Return Page ID_ page was deleted from the _Test_ space.
 
-You can customize this script by changing the page ID.
+You can customize this script by changing the _page ID_.
 
 ## Get a page by ID
 
@@ -78,7 +78,7 @@ Tip: Learn how to find the page ID [here](https://confluence.atlassian.com/confk
     
     After running this script, the page with the specified ID is retrieved and the page title appears in the _Result_.
     
--   You can customize the script by changing the page ID.
+-   You can customize the script by changing the _page ID_.
 
 ### Set the body format
 
@@ -119,7 +119,7 @@ Pages.getById(196721).moveToSpace("TEST")
 
 The page appears in the specified space:
 
-You can customize this script by replacing the page ID and the space key.
+You can customize this script by replacing the _page ID_ and the _space key_.
 
 ## Update a page
 
@@ -138,7 +138,7 @@ Tip: Learn how to find the page ID [here](https://confluence.atlassian.com/confk
     
     After running the script, the page's title will be updated to what the script specifies:
     
--   You can customize the script by updating the page ID and title.
+-   You can customize the script by updating the _page ID_ and _title_.
 
 ### Update the body text of a page
 
@@ -154,4 +154,4 @@ Warning: This will replace the current existing body of the page. Any existing t
 
 After running this script, the page's body will be updated to what the script specifies:
 
-Customize the script by updating the page ID and body text.
+Customize the script by updating the _page ID_ and _body text_.

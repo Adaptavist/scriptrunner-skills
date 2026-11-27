@@ -3,8 +3,10 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: HAPI
-- Doc ID: doc-sr4jc-b9109194-be94-4b83-92c3-a3e7a93afefb-168edc2ea4018345
+- Doc ID: doc-sr4jc-769be8a1-549e-43c4-a04e-c06b2a26f42f-168edc2ea4018345
 - Source: https://docs.adaptavist.com/sr4jc/latest/hapi#work-with-work-items--en
+
+Learn how to use HAPI to create, update, transition, and search for work items in Jira.
 
 Here, we can demonstrate how HAPI simplifies creating and updating work items. This section also explains how to transition work items in Jira, including updating fields during transitions. Additionally, HAPI streamlines searching for work items, enabling you to run JQL queries with ease.
 
@@ -166,7 +168,7 @@ WorkItems.search("project = 'JRA' AND issuetype = 'Bug'").each { workItem ->
 }
 ```
 
-Note: `WorkItems.search` returns an `Iterator`. This is designed for you to iterate through the results instead of retaining many work items in memory.
+Note: `WorkItems.search`returns an`Iterator`. This is designed for you to iterate through the results instead of retaining many work items in memory.
 
 ### Update all returned work items
 
@@ -198,7 +200,7 @@ If you require a `List` of work items, limit the size, as shown below.
 WorkItems.search("project = 'KAN' AND issuetype = 'Story' AND priority = 'High'").take(10).toList()
 ```
 
-In terms of memory usage, having one thousand work items in a `List` is acceptable, tens of thousands might be feasible, but handling millions is not advisable.
+In terms of memory usage, having 1,000 work items in a `List` is acceptable, tens of 1,000s might be feasible, but handling millions is not advisable.
 
 If you need a count of work items, use `count`. This provides better performance than executing a query and iterating through them all just to count them:
 

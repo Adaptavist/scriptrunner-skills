@@ -3,8 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Training > Course: Introduction to Scripting in ScriptRunner for Jira Data Center
-- Doc ID: doc-sr4js-f4d6a1be-ce08-4015-8bb7-d60cc72e7a67-373a404f44d21b5b
+- Doc ID: doc-sr4js-deb1a21c-1183-42b8-87a9-f07c03154467-373a404f44d21b5b
 - Source: https://docs.adaptavist.com/sr4js/latest/training/course-introduction-to-scripting-in-scriptrunner-for-jira-data-center/2.2-video-modifying-existing-scripts-in-scriptrunner-for-jira-data-center
+
+Watch how to find, read, and modify existing ScriptRunner scripts to suit your own use cases.
 
 [Media](https://player.vimeo.com/video/622521090?h=8c8b3e5abd)
 

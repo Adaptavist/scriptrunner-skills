@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Get Started
-- Doc ID: doc-sr4c-a395ba85-5e65-4b5b-a16e-ee17039c26b5-b7786e83c80935c0
+- Doc ID: doc-sr4c-4958e3c4-124f-4120-8722-d09baac58bda-b7786e83c80935c0
 - Source: https://docs.adaptavist.com/sr4c/latest/get-started#permissions--en
 
 You must have administrator rights to use ScriptRunner for Confluence. Use our table to know which permissions you need for each feature.

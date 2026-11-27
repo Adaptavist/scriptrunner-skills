@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Built-In Scripts > Confluence Administration Built-In Scripts
-- Doc ID: doc-sr4c-b662b517-6d43-4457-aeb1-d06822aaaa2e-f72f9a220a9bfa5e
+- Doc ID: doc-sr4c-b992bdca-da80-46a4-8229-5f74ef7d0b65-f72f9a220a9bfa5e
 - Source: https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#confluence-administration-built-in-scripts--en#configuration-exporter--en
 
 Use _Configuration Exporter_ to export extension configuration information to a descriptor YAML file.

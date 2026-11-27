@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Training > Course: Managing Your Confluence Space with ScriptRunner
-- Doc ID: doc-sr4c-7489dcd6-a434-40d1-b00b-d3e4e9d1bb4c-88d685af89afddc6
+- Doc ID: doc-sr4c-4fbe9c55-d48a-416e-a66f-2b9e01adadd4-88d685af89afddc6
 - Source: https://docs.adaptavist.com/sr4c/latest/training#course-managing-your-confluence-space-with-scriptrunner--en#video-troubleshooting-issues-with-scriptrunner-for-confluence--en
 
 [Media](https://player.vimeo.com/video/734708114?h=362d5ac0cd)

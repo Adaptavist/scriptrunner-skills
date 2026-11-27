@@ -1,6 +1,6 @@
 # ScriptRunner Migration Suite Documentation Index
 
-Total pages: 39
+Total pages: 41
 
 | Title | Path | Source |
 | --- | --- | --- |
@@ -22,6 +22,7 @@ Total pages: 39
 | Contact Us | references/docs/migration-suite/script-runner-migration-suite-web-app/script-runner-migration-analyse-and-assess-tool/contact-us.md | https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-analyse-and-assess-tool/contact-us |
 | Contact Us | references/docs/migration-suite/training/contact-us.md | https://docs.adaptavist.com/sms/latest/training/contact-us |
 | Data Residency and Privacy | references/docs/migration-suite/script-runner-migration-suite-web-app/data-residency-and-privacy.md | https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/data-residency-and-privacy |
+| FAQ | references/docs/migration-suite/script-runner-migration-suite-web-app/projects/faq.md | https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/projects#concept-7838--en |
 | FAQ | references/docs/migration-suite/script-runner-migration-suite-web-app/script-runner-migration-agent/faq.md | https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-agent/faq |
 | FAQ | references/docs/migration-suite/script-runner-migration-suite-web-app/script-runner-migration-analyse-and-assess-tool/faq.md | https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-analyse-and-assess-tool/faq |
 | FAQ: Migration and ScriptRunner Migration Suite | references/docs/migration-suite/migrate-to-cloud-using-the-script-runner-migration-suite/faq-migration-and-script-runner-migration-suite.md | https://docs.adaptavist.com/sms/latest/migrate-to-cloud-using-the-scriptrunner-migration-suite#faq-migration-and-scriptrunner-migration-suite--en |
@@ -38,6 +39,7 @@ Total pages: 39
 | Supported Features and Limitations | references/docs/migration-suite/script-runner-dev-and-deployment-tool/supported-features-and-limitations.md | https://docs.adaptavist.com/sms/latest/scriptrunner-dev-and-deployment-tool#supported-features-and-limitations--en |
 | Supported Features and Limitations | references/docs/migration-suite/script-runner-migration-suite-web-app/script-runner-migration-agent/supported-features-and-limitations.md | https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-agent/supported-features-and-limitations |
 | Supported Features and Limitations | references/docs/migration-suite/script-runner-migration-suite-web-app/script-runner-migration-analyse-and-assess-tool/supported-features-and-limitations.md | https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-analyse-and-assess-tool/supported-features-and-limitations |
+| Switch Between Organisations | references/docs/migration-suite/script-runner-migration-suite-web-app/projects/switch-between-organisations.md | https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/projects#switch-between-organisations--en |
 | Training | references/docs/migration-suite/uncategorized/t/training.md | https://docs.adaptavist.com/sms/latest/training |
 | Use the Analyse and Assess Tool | references/docs/migration-suite/script-runner-migration-suite-web-app/script-runner-migration-analyse-and-assess-tool/use-the-analyse-and-assess-tool.md | https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/scriptrunner-migration-analyse-and-assess-tool/use-the-analyse-and-assess-tool |
 | Use the Dev and Deployment Tool | references/docs/migration-suite/script-runner-dev-and-deployment-tool/use-the-dev-and-deployment-tool.md | https://docs.adaptavist.com/sms/latest/scriptrunner-dev-and-deployment-tool#use-the-dev-and-deployment-tool--en |

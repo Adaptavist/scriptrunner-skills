@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Event Listeners > Built-In Listeners
-- Doc ID: doc-sr4c-9e632d10-dd84-4940-b70b-7cdf836f99a4-be830e93d20da75a
+- Doc ID: doc-sr4c-15270aa7-b439-44cd-b8d3-96b17aa31ad7-be830e93d20da75a
 - Source: https://docs.adaptavist.com/sr4c/latest/features#event-listeners--en#built-in-listeners--en#update-page-restrictions-listener--en
 
 Use the _Update Page Restrictions_ built-in listener to add and remove restrictions to parent and child pages.

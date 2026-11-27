@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: HAPI
-- Doc ID: doc-sr4c-f645b3c2-277a-4dbc-991c-7ead32dcc78c-c1dbbfaf2d3a3e50
+- Doc ID: doc-sr4c-c030be4d-5078-4a51-81e8-1b33b37d8536-c1dbbfaf2d3a3e50
 - Source: https://docs.adaptavist.com/sr4c/latest/hapi#run-scripts-as-other-users--en
 
 You can use HAPI to run scripts as other users or as an anonymous user!

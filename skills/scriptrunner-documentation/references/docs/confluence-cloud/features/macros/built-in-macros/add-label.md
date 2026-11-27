@@ -3,7 +3,7 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: Features > Macros > Built-In Macros
-- Doc ID: doc-sr4cc-0cf1487d-3684-43c3-adc2-5184de168c83-f621901216f07435
+- Doc ID: doc-sr4cc-00ee253b-9aaf-41cd-8b58-5e129ba6161f-f621901216f07435
 - Source: https://docs.adaptavist.com/sr4cc/latest/features/macros/built-in-macros/add-label
 
 Instructions for the Add Label macro.
@@ -14,7 +14,7 @@ The _Add Label_ macro enables you to add multiple specified labels to a page if 
 
 When you are editing or creating a page in Confluence Cloud, you can use ScriptRunner for Confluence Cloud to add a label to the page.
 
-1.  Select Insert, and then search _Add_.
+1.  Select Insert, and then search Add.
     
 2.  Select the Add Label macro from the provided list.
 3.  Complete the Labels field.
@@ -28,4 +28,4 @@ When you are editing or creating a page in Confluence Cloud, you can use ScriptR
 4.  Click Publish and the labels you added appear on the page.
     
 
-When the page where the macro is located is refreshed, the labels are applied. If some of the labels are already present, only the missing labels are applied. If all the labels are already present, no action is taken.
+When the page containing the macro is refreshed, the labels are applied. If some labels are already present, only the missing ones are applied. If all the labels are already present, no action is taken.

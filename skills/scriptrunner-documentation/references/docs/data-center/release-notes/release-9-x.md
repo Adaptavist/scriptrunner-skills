@@ -3,8 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Release Notes
-- Doc ID: doc-sr4js-5dd1d9f5-e348-4085-91da-e749a10f8efd-989a56f36b1a5309
+- Doc ID: doc-sr4js-6480e6b3-92e1-40f9-b12f-22db57c0301a-989a56f36b1a5309
 - Source: https://docs.adaptavist.com/sr4js/latest/release-notes/release-9.x
+
+See all fixes, new features, and known issues across every 9.x release of ScriptRunner for Jira Data Center.
 
 Note: Feature Release Summary
 
@@ -19,6 +21,92 @@ The ScriptRunner Migration Suite is a suite of tools that helps you plan, analys
 -   [ScriptRunner Dev and Deployment Tool](../../migration-suite/uncategorized/s/script-runner-dev-and-deployment-tool.md): Use this tool to organise and deploy ScriptRunner Cloud scripts. It is focused on making it easier and faster for consultants and developers to migrate, test, and deploy scripts from ScriptRunner DC to Cloud.
 
 If you have any questions, need help, or would like to request access, the quickest way to get assistance is through our [dedicated support portal](https://the-adaptavist-group-support.atlassian.net/servicedesk/customer/portal/1069).
+
+## 9.47.0
+
+26 Nov 2026
+
+### Security update
+
+We've made targeted security improvements in this release as part of our ongoing hardening work. For more details on how we handle security and vulnerability management, see our Vulnerabilities and Security documentation.
+
+### Third-party dependencies updated to remove CVEs
+
+We've updated third party dependencies within ScriptRunner, including `jsoup`, to address known CVEs (Common Vulnerabilities and Exposures). These changes are part of our ongoing hardening work.
+
+### Cloud migration update
+
+When you migrate to Jira Cloud, ScriptRunner now migrates over Forge by default. There's nothing for an administrator to switch on.
+
+### Automation for Jira ScriptRunner action bug fixed
+
+We've fixed an issue where ScriptRunner actions in Automation for Jira rules, such as Execute a ScriptRunner Script, failed with a permission error when the rule actor was not a Jira administrator. These actions now run as expected for actors without administrator permissions.
+
+### Behaviours customer portal bugs fixed
+
+We've fixed multiple issues with Behaviours in the Jira Service Management customer portal:
+
+-   `setFormValue()` had no effect on single user picker fields. It now sets the field value as expected.
+-   After `setFieldOptions()` limited the options of a cascading select field, the parent options could no longer be selected when the controlling field changed. They can now be selected as expected.
+
+### Behaviours rich text field bug fixed
+
+We've fixed an issue on Jira 10.3.24 and later where Behaviours could not make a rich text editor field read-only. Rich text fields now become read-only as expected.
+
+### Canned responses bug fixed
+
+We've fixed an issue on Jira 10.3.24 and later where choosing a Jira Service Management canned response whose template contains `{CURSOR}` inserted nothing into the comment field. Canned responses now insert their text as expected.
+
+### Customer portal field display bugs fixed
+
+We've fixed multiple issues with how field values are shown in the Jira Service Management customer portal:
+
+-   When a form included an Issue Picker field, the submitted field values were shown more than once. They are now shown once.
+-   After a customer added a comment to a request, ScriptRunner script fields, such as a Database Picker, showed their raw stored value until the page was reloaded. They now keep their formatted value.
+
+### Scripted field Issue(s) template bug fixed
+
+We've fixed an issue where scripted fields that return a list of issues and use the Issue(s) template showed raw template code instead of a formatted list of issues. The field value now renders correctly.
+
+### Script editor Java documentation bug fixed
+
+We've fixed an issue in the script editor where documentation for Java (JDK) classes failed to load and showed Cannot fetch documentation, please check your internet connection. The documentation panel and hover now show a View Documentation on docs.oracle.com link to the relevant class or method page.
+
+## 9.46.0
+
+20 Oct 2026
+
+### Security update
+
+We've made targeted security improvements in this release as part of our ongoing hardening work. For more details on how we handle security and vulnerability management, see our [Vulnerabilities and Security](../get-started/vulnerabilities-and-security.md) documentation.
+
+### Third-party dependencies updated to remove CVEs
+
+We've updated third-party dependencies within ScriptRunner, including Apache Ant, to address known CVEs (Common Vulnerabilities and Exposures). These changes are part of our ongoing hardening work.
+
+### Fragments performance improvement
+
+We've made an improvement to how Fragments are processed available to all customers. This reduces the load Fragments place on large or busy instances.
+
+### Behaviours reporter field bug fixed
+
+We've fixed an issue where Behaviours on the Reporter field did not run in the Jira Service Management customer portal. Behaviours on the Reporter field now run as expected in the portal.
+
+### Script Export bug fixed
+
+We've fixed an issue where Script Export could mix up parameters between legacy workflow conditions, validators and post functions, so exports contained the wrong script or settings. Legacy workflow functions are now exported correctly.
+
+### Issue Picker bug fixed
+
+We've fixed an issue where the dropdown list for a scripted Issue Picker field was hidden on a transition screen when a Behaviour hid the Comment field. The dropdown list now displays as expected.
+
+### Script engine and diagnostics bugs fixed
+
+We've fixed several issues with script execution and diagnostics:
+
+-   The script engine could load duplicate classes. Scripts now load and run as expected.
+-   Groovy compiler errors, such as `BUG! exception in phase 'class generation'`, were logged with an empty stack trace. These errors now include full stack traces, which makes them easier to diagnose.
+-   The ScriptRunner diagnostics tools could fail with a `NoClassDefFoundError` related to logging. Diagnostics now run as expected.
 
 ## 9.44.0
 
@@ -458,7 +546,7 @@ We've resolved a bug related to our Behaviours feature where `setFieldOptions()`
 
 ### Documentation enhancement
 
-We've updated our [Rewriting Scripts for Cloud Hints and Tips](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/master/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Data_Center_SR4JS/topics/rewriting_scripts_for_cloud_hints_and_tips.dita) page. This page provides step-by-step instructions, best practice tips, and examples to support your migration from Scriptrunner for Jira Server/Data Center to ScriptRunner for Jira Cloud.
+We've updated our [Rewriting Scripts for Cloud Hints and Tips](https://docs.adaptavist.com/db/organizations/adaptavist/repositories/production/content/documents/Adaptavist_Content/ScriptRunner/ScriptRunner_for_Jira_Data_Center_SR4JS/topics/rewriting_scripts_for_cloud_hints_and_tips.dita) page. This page provides step-by-step instructions, best practice tips, and examples to support your migration from Scriptrunner for Jira Server/Data Center to ScriptRunner for Jira Cloud.
 
 ## 9.16.0
 

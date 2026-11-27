@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features
-- Doc ID: doc-sr4c-a467afca-0c88-48d6-b3ff-0a74ba653590-5067a7c500e63440
+- Doc ID: doc-sr4c-58710e8e-4dd8-41ad-b3d2-4fbb1d7d70a8-5067a7c500e63440
 - Source: https://docs.adaptavist.com/sr4c/latest/features#custom-search-fields--en
 
 Use custom search fields to add useful indexes to Confluence's search, enabling you to find content that meets specific criteria.

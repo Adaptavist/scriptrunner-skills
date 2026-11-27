@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features
-- Doc ID: doc-sr4c-c404153c-e5a8-444c-b7e8-60933d50df58-8a254c688a26e624
+- Doc ID: doc-sr4c-e4d17f3b-9171-43b6-b6d6-e354413021b0-8a254c688a26e624
 - Source: https://docs.adaptavist.com/sr4c/latest/features#script-registry--en
 
 The Script Registry allows you to search your ScriptRunner custom scripts, view type-checking errors or deprecation warnings, and export all scripts and configurations on your instance.

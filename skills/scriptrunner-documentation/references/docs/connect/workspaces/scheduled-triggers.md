@@ -3,12 +3,12 @@
 - Platform: connect
 - Space: SRC
 - Hierarchy: Workspaces
-- Doc ID: doc-src-cc9176a3-00f3-4063-8ee6-8fd9220c9214-1148bf626c43b96b
+- Doc ID: doc-src-acc943c4-f43a-4e5e-bac4-cbecab1f9f72-1148bf626c43b96b
 - Source: https://docs.adaptavist.com/src/latest/workspaces#scheduled-triggers--en
 
 Scheduled triggers enable you to execute scripts at a specific time.
 
-## ScriptRunner Connect help or build it yourself
+## Have ScriptRunner Connect help or build it yourself
 
 When you create a new scheduled trigger, you'll be asked to provide a schedule in [CRON format](http://www.nncron.ru/help/EN/working/cron-format.htm), as well as a script to trigger it. The ScriptRunner Connect UI helps you follow the correct CRON schedule format. You can use the app's help to construct the CRON expression, build the expression manually, or use the app's guidance to get started and manually tweak the CRON expression to your liking.
 

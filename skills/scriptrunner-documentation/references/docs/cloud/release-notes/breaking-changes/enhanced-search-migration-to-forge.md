@@ -3,7 +3,7 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Release Notes > Breaking Changes
-- Doc ID: doc-sr4jc-abc2298f-b7af-4e60-b6c6-969062871c73-7e70ae938d644504
+- Doc ID: doc-sr4jc-a9653df1-c3e8-4da9-846c-eaa59c03919e-7e70ae938d644504
 - Source: https://docs.adaptavist.com/sr4jc/latest/release-notes/breaking-changes#enhanced-search-migration-to-forge--en
 
 ## Advance notice: ScriptRunner Enhanced Search for Jira Cloud migration to Forge
@@ -21,6 +21,8 @@ We will initiate the transfer of your filters according to a planned migration s
 
 To avoid disruption during the rollout of the new app version, you must identify any existing saved filters that require attention to ensure a successful migration from the current Connect platform to Forge.
 
+Warning: At the time of publication, the timeout limit was 25 seconds. In [August 2026](https://docs.adaptavist.com/sr4jc/latest/release-notes/release-notes#release_notes__april_2026-flvoujx0--en), it was raised to 55 seconds. This page has been updated with that new limit.
+
 1.  Detect broken filters.
     
     If a filter requires attention, an error symbol indicator appears alongside it. This indicator:
@@ -35,16 +37,16 @@ To avoid disruption during the rollout of the new app version, you must identify
     There are two new limits associated with the Forge migration:
     
     -   Result limit of 1,000 issues
-    -   Timeout limit of 25 seconds
+    -   Timeout limit of 55 seconds
     
-    Both of these limits are per precomputation. A precomputation is an individual use of an Enhanced Search function. Filters can contain multiple precomputations, and each one can return up to 1,000 issues and run for 25 seconds.
+    Both of these limits are per precomputation. A precomputation is an individual use of an Enhanced Search function. Filters can contain multiple precomputations, and each one can return up to 1,000 issues and run for 55 seconds.
     
-    Example: `issueFunction` in `linkedIssuesOf("project = test")` and `issueFunction` in `addedAfterSprintStart(1)`. Each use of a function, or precomputation, can return 1000 issues, so the entire filter could return 2,000 issues since there are two. For timeout limits, each function, or precomputation, can take 25-seconds to process. They will run at the same time.
+    Example: `issueFunction` in `linkedIssuesOf("project = test")` and `issueFunction` in `addedAfterSprintStart(1)`. Each use of a function, or precomputation, can return 1000 issues, so the entire filter could return 2,000 issues since there are two. For timeout limits, each function, or precomputation, can take 55-seconds to process. They will run at the same time.
     
     Each symbol relates to a different error type that include:
     
     -   Results exceeding 1,000 issues.
-    -   Taking 25 seconds or longer to load.
+    -   Taking 55 seconds or longer to load.
     -   Returning errors.
     
     Once the issue is resolved, the indicator will disappear.

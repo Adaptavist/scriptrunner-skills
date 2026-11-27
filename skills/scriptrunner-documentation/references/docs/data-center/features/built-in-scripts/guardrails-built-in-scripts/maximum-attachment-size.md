@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Built-in scripts > Guardrails Built-in Scripts
-- Doc ID: doc-sr4js-c9c1c9f9-4a20-4a47-b60c-84e8fef80a92-3520af3074b4c95a
+- Doc ID: doc-sr4js-d0516bc5-7621-41eb-8100-1fd34632d067-3520af3074b4c95a
 - Source: https://docs.adaptavist.com/sr4js/latest/features#built-in-scripts--en#guardrails-built-in-scripts--en#maximum-attachment-size--en
 
 Use this built-in script to find attachments over the specified size, and delete them.

@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Integrations > Atlassian Products
-- Doc ID: doc-sr4js-aa6c78f1-dd94-48fb-9aea-bfde2273338a-73a11982c34fa005
+- Doc ID: doc-sr4js-f484a9ee-f9e5-48a0-83ae-71c4c7ddcc2b-73a11982c34fa005
 - Source: https://docs.adaptavist.com/sr4js/latest/integrations/atlassian-products/via-app-links
 
 [Application Links](https://confluence.atlassian.com/display/APPLINKS/Application+Links+Documentation) exist to handle authentication when making calls between applications.

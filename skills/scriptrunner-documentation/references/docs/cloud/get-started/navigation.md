@@ -3,8 +3,10 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Get Started
-- Doc ID: doc-sr4jc-a4775b39-6fba-4cf5-9324-53b3ac07c6ff-bbe099f6138a8c8f
+- Doc ID: doc-sr4jc-dd2e6ece-ed96-48ad-925f-2da69366a046-bbe099f6138a8c8f
 - Source: https://docs.adaptavist.com/sr4jc/latest/get-started/navigation
+
+Access ScriptRunner for Jira Cloud from your Jira Cloud instance and navigate to example scripts using the app menu.
 
 To open ScriptRunner for Jira Cloud from within your Jira Cloud instance, click the Jira Administration Cog icon on the top right corner of your screen and select the Apps option.
 

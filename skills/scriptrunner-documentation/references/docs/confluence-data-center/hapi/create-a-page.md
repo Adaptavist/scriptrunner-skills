@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: HAPI
-- Doc ID: doc-sr4c-6779c822-ee7c-4aa0-af74-fa2013a1a1b7-5ae3bad76ecb9881
+- Doc ID: doc-sr4c-0a43371f-70e6-4b1e-b280-6be30104ccd0-5ae3bad76ecb9881
 - Source: https://docs.adaptavist.com/sr4c/latest/hapi#create-a-page--en
 
 With HAPI, we've made it easy for you to create new pages in your Confluence instance!

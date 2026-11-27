@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Listeners > Built-In Listeners
-- Doc ID: doc-sr4js-c469d0c2-e989-460f-99b7-14447b761368-50a6fe66a9baf517
+- Doc ID: doc-sr4js-246036f8-7b61-4a74-b95c-eaf4a83fc403-50a6fe66a9baf517
 - Source: https://docs.adaptavist.com/sr4js/latest/features#listeners--en#built-in-listeners--en#adds-the-current-user-as-a-watcher--en
 
 This listener adds the current user (the user performing the action) as a watcher on the issue. You may want to:

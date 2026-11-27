@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Built-In Scripts > Space Administration Built-In Scripts
-- Doc ID: doc-sr4c-831e5a99-3671-4b36-a020-97d5d0e891a4-17daa98a4800340c
+- Doc ID: doc-sr4c-aaa908ca-a55b-4324-8f39-cd3a9c0d4378-17daa98a4800340c
 - Source: https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#space-administration-built-in-scripts--en#copy-pages--en
 
 Use _Copy Pages_ to copy a page tree or pages from one location to another.

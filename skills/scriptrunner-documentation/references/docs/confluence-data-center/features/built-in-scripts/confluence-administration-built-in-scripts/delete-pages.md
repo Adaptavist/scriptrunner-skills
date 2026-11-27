@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Built-In Scripts > Confluence Administration Built-In Scripts
-- Doc ID: doc-sr4c-22132555-f9dd-424d-b516-238484d0f36f-11d46f6e590d3368
+- Doc ID: doc-sr4c-bd98f424-01fa-4dda-b872-728c90b85cb9-11d46f6e590d3368
 - Source: https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#confluence-administration-built-in-scripts--en#delete-pages--en
 
 Use _Delete Pages_ to move a page (or pages) and all of its children to the trash.

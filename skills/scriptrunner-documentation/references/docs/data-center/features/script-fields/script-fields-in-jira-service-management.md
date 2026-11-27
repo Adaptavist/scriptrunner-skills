@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Script fields
-- Doc ID: doc-sr4js-1110e9e0-b58d-431e-9497-21951594a07e-1bb769428fbb8261
+- Doc ID: doc-sr4js-eacf86ab-88fb-4510-8e8f-1a9555291992-1bb769428fbb8261
 - Source: https://docs.adaptavist.com/sr4js/latest/features#script-fields--en#script-fields-in-jira-service-management--en
 
 Add your ScriptRunner script fields to a Service Management customer portal request form.

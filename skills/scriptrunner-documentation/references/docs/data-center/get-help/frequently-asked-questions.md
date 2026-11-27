@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Get Help
-- Doc ID: doc-sr4js-fe54abf8-df7f-4814-b3f8-457b52053c65-0947ec091a4670bd
+- Doc ID: doc-sr4js-bfbb7b1f-024a-46a4-a055-ebc40e2e342a-0947ec091a4670bd
 - Source: https://docs.adaptavist.com/sr4js/latest/get-help#frequently-asked-questions--en
 
 Here you'll find answers for some of the most common questions we get asked about ScriptRunner for Jira Server/DC.

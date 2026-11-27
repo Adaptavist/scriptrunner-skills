@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Behaviours
-- Doc ID: doc-sr4js-63bdacc4-167d-4443-aaac-77ea85980c78-ffb91f924edcc422
+- Doc ID: doc-sr4js-983668a5-c400-4a90-be58-515d975c60ce-ffb91f924edcc422
 - Source: https://docs.adaptavist.com/sr4js/latest/features#behaviours--en#behaviour-limitations--en
 
 ## JavaScript-based
@@ -38,7 +38,7 @@ Normally, this is fine as all applicable behaviours are applied in any given con
 
 If a behaviour appears to be working inconsistently, this is a likely cause.
 
-It may be helpful in these circumstances to use one server-side behaviour for that field. You can map it to every applicable context, then provide some detailed logic specifying in one place what ought to happen in which circumstances. See [Scripted Cond\`\`\`itions](https://docs.adaptavist.com/sr4js/latest/features/behaviours/behaviours-examples/scripted-conditions) for some sample code that you can re-purpose inside a behaviour.
+It may be helpful in these circumstances to use one server-side behaviour for that field. You can map it to every applicable context, then provide some detailed logic specifying in one place what ought to happen in which circumstances. See [Scripted Conditions](https://docs.adaptavist.com/sr4js/latest/features/behaviours/behaviours-examples/scripted-conditions) for some sample code that you can re-purpose inside a behaviour.
 
 ## Screens
 
@@ -49,11 +49,13 @@ Behaviours only function on the following screens:
 -   Assign Issue
 -   Workflow Transition
 
-Behaviors are not supported on other screens (for example, Advanced Roadmaps/Plans screens).
+Behaviours are not supported on other screens (for example, Advanced Roadmaps/Plans screens).
+
+Note: On a workflow transition screen, a Workflow Action condition only applies if the transition has a screen and the field is on it. A Workflow Step condition checks the issue's current status, so it doesn't apply while an issue transitions into that status. For more information, see [Using Workflow Action and Workflow Step conditions](https://docs.adaptavist.com/sr4js/latest/features/behaviours/behaviours-tutorial#using-workflow-action-and-workflow-step-conditions--en).
 
 On the _View Issue_ screen, trying to edit a field with a behaviour launches the _Edit Issue screen_, instead of the normal inline editor.
 
-Note: Behaviours do not work on the _Move Issue_\`\`\` screen. They also do not work for any bulk issue operations, or any issue edits that bypass the UI such as the REST API and other ScriptRunner scripts.
+Note: Behaviours do not work on the _Move Issue_ screen. They also do not work for any bulk issue operations, or any issue edits that bypass the UI such as the REST API and other ScriptRunner scripts.
 
 ## Permissions
 
@@ -63,4 +65,4 @@ If you use a behaviour to link to other projects, the user interacting with the 
 
 There is a known limitation with the Behaviours feature in the Jira Service Desk (JSD) customer portal. Currently, Behaviours cannot override required fields in this specific interface. If a field is set as required in Project settings, using a Behaviour to make it optional will not take effect when creating issues through the JSD portal. The field will still appear as required.
 
-Note: \`\`\`This limitation only applies to the customer portal.
+Note: This limitation only applies to the customer portal.

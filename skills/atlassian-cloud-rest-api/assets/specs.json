@@ -4,7 +4,7 @@
     "fileName": "assets-cloud-openapi.json",
     "operationCount": 64,
     "pathPrefix": "/rest/assets/1.0/",
-    "schemaCount": 52,
+    "schemaCount": 54,
     "sourceUrl": "https://dac-static.atlassian.com/cloud/assets/swagger.v3.json",
     "title": "Assets Cloud REST API"
   },
@@ -31,7 +31,7 @@
     "fileName": "jira-cloud-platform-v3-openapi.json",
     "operationCount": 630,
     "pathPrefix": "/rest/api/3/",
-    "schemaCount": 1000,
+    "schemaCount": 1001,
     "sourceUrl": "https://dac-static.atlassian.com/cloud/jira/platform/swagger-v3.v3.json",
     "title": "Jira Cloud platform REST API v3"
   },

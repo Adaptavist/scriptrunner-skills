@@ -3,7 +3,7 @@
 - Platform: migration-suite
 - Space: SMS
 - Hierarchy: Training
-- Doc ID: doc-sms-e870b2d7-1431-4124-81e5-8609b1fc09ac-1eb8b2cf7e7a5b44
+- Doc ID: doc-sms-ea9c5891-985e-4794-952c-6596998fd547-1eb8b2cf7e7a5b44
 - Source: https://docs.adaptavist.com/sms/latest/training/1.1-meet-the-scriptrunner-migration-suite
 
 Moving to the Cloud can be a challenging and time-consuming process, often filled with both known and unknown obstacles.

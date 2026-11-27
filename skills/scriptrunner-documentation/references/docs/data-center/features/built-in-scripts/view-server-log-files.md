@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Built-in scripts
-- Doc ID: doc-sr4js-688c5951-6b01-4ec0-bdfe-414d1b59ec54-f5280f3e2fb0ff38
+- Doc ID: doc-sr4js-042f2ceb-f38a-481b-8e93-939d08946871-f5280f3e2fb0ff38
 - Source: https://docs.adaptavist.com/sr4js/latest/features#built-in-scripts--en#view-server-log-files--en
 
 Use _View Server Log Files_ to show the last N lines of application log files. Follow these steps to run the built-in script:

@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Built-In Scripts > Confluence Administration Built-In Scripts
-- Doc ID: doc-sr4c-5030ab75-dbb4-479a-a72e-3a1a293aae37-8fba1f07d4a38c63
+- Doc ID: doc-sr4c-89d61833-d9f3-4801-a3a7-c77e26d709c1-8fba1f07d4a38c63
 - Source: https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#confluence-administration-built-in-scripts--en#script-registry--en
 
 Use the _Script Registry_ to search your ScriptRunner custom scripts, and view any type checking errors or deprecation warnings.

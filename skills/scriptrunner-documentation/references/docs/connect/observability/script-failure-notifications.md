@@ -3,7 +3,7 @@
 - Platform: connect
 - Space: SRC
 - Hierarchy: Observability
-- Doc ID: doc-src-895d93ae-a23e-4402-9a03-3cce10aef9d1-dcc35505285e2456
+- Doc ID: doc-src-b20cbe79-8653-4df0-9270-f5271820221c-dcc35505285e2456
 - Source: https://docs.adaptavist.com/src/latest/observability/script-failure-notifications
 
 Learn how to enable real-time notifications for scripts that fail to execute.

@@ -1,10 +1,14 @@
-# Use the Version History macro
+# Version History
 
 - Platform: confluence-cloud
 - Space: SR4CC
-- Hierarchy: Features > Macros > Built-In Macros > Version History Macro
-- Doc ID: doc-sr4cc-a24f8d3c-cfdc-4ad2-ab40-569fbe52f652-ef4a27d5e56c8b4f
-- Source: https://docs.adaptavist.com/sr4cc/latest/features/macros/built-in-macros/version-history-macro/use-the-version-history-macro
+- Hierarchy: Features > Macros > Built-In Macros
+- Doc ID: doc-sr4cc-c39769aa-1586-4460-8bf4-16ececcbbd0f-7a7b736fe5571f1e
+- Source: https://docs.adaptavist.com/sr4cc/latest/features/macros/built-in-macros/version-history
+
+The Version History macro makes it easy to display versioning information about any page in a list.
+
+## Use the Version History macro
 
 To use the macro, follow these steps:
 
@@ -18,6 +22,6 @@ To use the macro, follow these steps:
     3.  Reverse Order: Display the version history list in reverse order.
     4.  Max entries: Specify how many results are displayed. Leave blank to display all versions or specify as desired.
 3.  Optional: Optional: Use the Preview tab to see your current configuration results.
-4.  Select Save, and the _Version History_ macro appears in edit mode.
+4.  Select Save, and the macro appears in edit mode.
 
 Once you Update the Confluence page, the Version History macro appears.

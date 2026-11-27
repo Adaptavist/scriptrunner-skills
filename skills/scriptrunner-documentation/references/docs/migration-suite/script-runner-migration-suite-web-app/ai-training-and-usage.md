@@ -3,7 +3,7 @@
 - Platform: migration-suite
 - Space: SMS
 - Hierarchy: ScriptRunner Migration Suite Web App
-- Doc ID: doc-sms-ad66f956-b717-476a-9633-b8238557ae48-8efc81f62f42b98d
+- Doc ID: doc-sms-1e8375a5-ceec-4a77-8324-6ff388baa3ed-8efc81f62f42b98d
 - Source: https://docs.adaptavist.com/sms/latest/scriptrunner-migration-suite-web-app/ai-training-and-usage
 
 For in depth information about data privacy, please read our terms and conditions. By using this tool, you agree to the terms of:
@@ -17,9 +17,9 @@ For in depth information about data privacy, please read our terms and condition
 
 ## AI models
 
-We _do not_ train custom AI models with your use of the tool or your data. ScriptRunner Migration Suite is powered by models provided by third parties. Currently, it is powered by Claude 4.6 Sonnet from Anthropic. View more about Anthropic below.
+We _do not_ train custom AI models with your use of the tool or your data. ScriptRunner Migration Suite is powered by models provided by third parties. Currently, it is powered by Claude 5.5 Sonnet from Anthropic. View more about Anthropic below.
 
--   Assess and Analyse Tool: This tool does not use AI. It's deterministic software. The output is designed to feed AI agents if/when you want them, but no AI is baked into this tool.
+-   Assess and Analyse Tool: This tool does not use AI. It's deterministic software. The output is designed to feed AI agents if/when you want them, but no AI is baked into this tool. However, the [Bulk Convert Your Scripts](script-runner-migration-analyse-and-assess-tool/bulk-convert-your-scripts.md) process uses the ScriptRunner Migration Agent, so those AI training and usage terms apply.
 -   ScriptRunner Migration Agent: We do not train custom AI models for the Migration Agent. We do not use your prompts or scripts to train or fine tune the underlying model powering the Migration Agent. Inputs are used to generate results for your session only. OpenAI is used for generating chat titles and to power searches of ScriptRunner documentation and other sources via the OpenAI embeddings API.
 
 ScriptRunner Migration Suite does not automatically integrate with ScriptRunner or Jira. Jira issue data, product data, and ScriptRunner scripts will not be shared with our AI provider(s) unless you actively upload or import this information into ScriptRunner Migration Suite.

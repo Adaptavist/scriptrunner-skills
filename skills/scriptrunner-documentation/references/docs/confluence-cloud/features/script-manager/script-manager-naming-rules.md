@@ -3,7 +3,7 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: Features > Script Manager
-- Doc ID: doc-sr4cc-91f5eb00-fe70-4aee-a34e-38bbebd8827d-3d951a8cf0b63604
+- Doc ID: doc-sr4cc-5c469c21-add5-4613-bed9-ae55e5b619aa-3d951a8cf0b63604
 - Source: https://docs.adaptavist.com/sr4cc/latest/features/script-manager#script-manager-naming-rules--en
 
 Find out the specifications for naming scripts and folders within the Script Manager to ensure proper functionality.
@@ -56,6 +56,6 @@ Script Manager prevents you from creating scripts or folders with the same name 
 
 -   File names automatically get the `.groovy` extension appended.
 -   Folder structures should be reflected in the package definition of scripts and classes.
--   Validation happens in real-time as you type.
+-   Validation happens in real time as you type.
 -   The validation rules are enforced on the frontend before saving to the backend.
 -   These rules ensure compatibility with Groovy file system conventions.

@@ -3,8 +3,10 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: n/a
-- Doc ID: doc-sr4jc-59ef4810-f265-4951-864a-c5fdf2362c9d-20e78c86b64c4691
+- Doc ID: doc-sr4jc-17aa3b03-308d-4077-b257-db479064eed3-20e78c86b64c4691
 - Source: https://docs.adaptavist.com/sr4jc/latest/scriptrunner-migration-to-cloud
+
+Understand key feature and platform differences for migration, and access guidance and tools to help you rewrite and deploy scripts successfully.
 
 This section provides you with the steps required to move from ScriptRunner for Jira Server/Data Center to Cloud. It also offers guidance on the differences between the two versions of ScriptRunner and provides some details on rewriting scripts and using alternatives.
 

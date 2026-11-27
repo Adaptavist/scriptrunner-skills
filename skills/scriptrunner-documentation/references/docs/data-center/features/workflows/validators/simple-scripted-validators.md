@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Workflows > Validators
-- Doc ID: doc-sr4js-4ca8cc28-48b1-4ec3-8a2c-a3a647874b6b-20bfe5582cadf613
+- Doc ID: doc-sr4js-40c0b173-6e2d-4b40-b400-5995920673a1-20bfe5582cadf613
 - Source: https://docs.adaptavist.com/sr4js/latest/features#workflows--en#validators--en#simple-scripted-validators--en
 
 Use the _Simple scripted validator_ to run a simple embedded script that determines whether an issue should be permitted to transition to a particular status within a workflow. This validator allows you to write a Groovy script that can evaluate a wide range of conditions based on issue fields, workflow states, project properties, user permissions, and other contextual data. If validation fails, you can provide a custom error message that explains why the transition is not allowed.

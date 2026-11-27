@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Behaviours > Behaviours Examples
-- Doc ID: doc-sr4js-4bcda558-f880-4053-83e8-2480a5112125-93d9db8baad39e8e
+- Doc ID: doc-sr4js-5a5bfb4e-ec26-4f48-a423-729c02e04d32-93d9db8baad39e8e
 - Source: https://docs.adaptavist.com/sr4js/latest/features#behaviours--en#behaviours-examples--en#field-required--en
 
 While Jira allows you to make [fields required](https://confluence.atlassian.com/adminjiraserver/specifying-field-behavior-938847255.html#Specifyingfieldbehavior-requirefield), ScriptRunner offers more advanced options that allow you to make fields mandatory under specific conditions. This page describes the different capabilities that ScriptRunner provides, and how to configure them.

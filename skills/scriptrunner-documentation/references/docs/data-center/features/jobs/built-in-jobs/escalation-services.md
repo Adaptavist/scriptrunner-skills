@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Jobs > Built-In Jobs
-- Doc ID: doc-sr4js-da600058-15e3-4f2f-b4f0-22080a7f7511-60d7b6207c8acb47
+- Doc ID: doc-sr4js-629f4022-cb07-4e2c-ad79-619727aac03e-60d7b6207c8acb47
 - Source: https://docs.adaptavist.com/sr4js/latest/features#jobs--en#built-in-jobs--en#escalation-services--en
 
 Automate issue escalation with ScriptRunner _Escalation Services_. Use a JQL query to modify issues based on elapsed time, and enable actions (such as transitions) to occur after a specified time has passed. For example, if a task has been opened but not assigned for seven days, you can set up an escalation service to automatically give the issue a priority status, or send an email to notify the team.

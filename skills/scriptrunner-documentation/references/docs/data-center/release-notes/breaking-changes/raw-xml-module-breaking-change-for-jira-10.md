@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Release Notes > Breaking Changes
-- Doc ID: doc-sr4js-4af8a84a-9b2c-4cd5-968b-78b9e99c0e72-b42c66cd1b7cfe0a
+- Doc ID: doc-sr4js-fb463345-ca31-4040-a567-19a19ea57c4b-b42c66cd1b7cfe0a
 - Source: https://docs.adaptavist.com/sr4js/latest/release-notes/breaking-changes#raw-xml-module-breaking-change-for-jira-10--en
 
 Understand the raw XML format changes for `condition` and `provider class` scripts introduced in [Jira 10.0](https://docs.adaptavist.com/sr4js/latest/get-started/update-scriptrunner/compatibility-with-jira) and how to update your configuration.

@@ -3,7 +3,7 @@
 - Platform: cloud
 - Space: SR4JC
 - Hierarchy: Features > Script Fragments
-- Doc ID: doc-sr4jc-e3772b3c-b069-4ac1-8378-df06087e6057-2e40d1dddcff7b7d
+- Doc ID: doc-sr4jc-0ba50ebc-b1c3-46b4-9e1b-859c2088569c-2e40d1dddcff7b7d
 - Source: https://docs.adaptavist.com/sr4jc/latest/features/script-fragments#adaptavist-bridge--en
 
 ## Additional functionality with the Adaptavist bridge

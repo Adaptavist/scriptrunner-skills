@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features
-- Doc ID: doc-sr4c-992bf2d0-4cf5-424f-a96a-cafb3b42fd85-9ce8b387a0ce2a7e
+- Doc ID: doc-sr4c-b55faf92-f465-4605-9498-aed3f01034a3-9ce8b387a0ce2a7e
 - Source: https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en
 
 ScriptRunner built-in scripts are out-of the-box solutions, created by us, made to help you get started customizing, automating, and extending Confluence to suit your needs.

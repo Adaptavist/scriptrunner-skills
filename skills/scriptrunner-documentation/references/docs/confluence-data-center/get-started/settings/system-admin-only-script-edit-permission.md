@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Get Started > Settings
-- Doc ID: doc-sr4c-9434a179-19dc-4306-8e00-b001454ce3a6-5de293e014e690d3
+- Doc ID: doc-sr4c-e71a3257-c043-4e57-a674-f3bddffbded3-5de293e014e690d3
 - Source: https://docs.adaptavist.com/sr4c/latest/get-started#settings--en#system-admin-only-script-edit-permission--en
 
 By default, all Confluence Administrators can edit and execute scripts. However, _Script Edit_ permissions can optionally be restricted to a smaller set of users.

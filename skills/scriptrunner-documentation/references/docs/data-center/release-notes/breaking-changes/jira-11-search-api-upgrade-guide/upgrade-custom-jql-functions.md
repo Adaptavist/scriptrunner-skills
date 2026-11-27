@@ -3,8 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Release Notes > Breaking Changes > Jira 11 Search API Upgrade Guide
-- Doc ID: doc-sr4js-015c9251-0b49-4be7-a463-9d066b1ed49b-fedaa1d111df04a0
+- Doc ID: doc-sr4js-297a8394-4b65-4233-a185-5a6784d45c9b-fedaa1d111df04a0
 - Source: https://docs.adaptavist.com/sr4js/latest/release-notes/breaking-changes#jira-11-search-api-upgrade-guide--en#upgrade-custom-jql-functions--en
+
+Upgrade custom JQL functions from deprecated Lucene-based search methods to the new Search API equivalents introduced in Jira 10.4.
 
 Atlassian has introduced a [new Search API](https://confluence.atlassian.com/adminjiraserver/search-api-upgrade-guide-1488594607.html) in Jira Data Center version 10.4, transitioning from Lucene to OpenSearch. Some of the existing search methods used in custom JQL functions have been deprecated and will be removed in Jira 11. If you currently use any of the deprecated methods, you will need to rewrite your scripts before upgrading to Jira 11.
 

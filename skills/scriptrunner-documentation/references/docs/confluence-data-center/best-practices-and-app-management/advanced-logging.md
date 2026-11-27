@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Best Practices and App Management
-- Doc ID: doc-sr4c-6cafd050-1fd9-4d1d-90df-1acbb0d62e75-442dc64905a01c8e
+- Doc ID: doc-sr4c-4bb2c726-eb49-40b9-a6ce-a19b25e1b3da-442dc64905a01c8e
 - Source: https://docs.adaptavist.com/sr4c/latest/best-practices-and-app-management#advanced-logging--en
 
 Learn our advanced concepts for logging in the app.

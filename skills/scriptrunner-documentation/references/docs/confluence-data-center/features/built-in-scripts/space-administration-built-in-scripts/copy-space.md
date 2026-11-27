@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > Built-In Scripts > Space Administration Built-In Scripts
-- Doc ID: doc-sr4c-0ab4f4ed-0cf3-47e0-bfcd-2421e8e247f2-cf41175359a13371
+- Doc ID: doc-sr4c-011dac0f-d9e6-46b0-8e33-da73ce351465-cf41175359a13371
 - Source: https://docs.adaptavist.com/sr4c/latest/features#built-in-scripts--en#space-administration-built-in-scripts--en#copy-space--en
 
 You can make a complete copy of an existing space using _Copy Space_.

@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Behaviours > Behaviours Examples
-- Doc ID: doc-sr4js-595f930d-2678-4547-b621-6d788a566a5e-e88b3e211f5f4676
+- Doc ID: doc-sr4js-9901678c-2e2e-403a-a37a-724c830aef8a-e88b3e211f5f4676
 - Source: https://docs.adaptavist.com/sr4js/latest/features#behaviours--en#behaviours-examples--en#require-comment-for-action--en
 
 Conditions can also be set based on workflow transitions or states. In the following example, we show you how to make the comment field required when an issue is moved from _Done_ to _Reopened_.

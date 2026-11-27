@@ -3,10 +3,10 @@
 - Platform: confluence-cloud
 - Space: SR4CC
 - Hierarchy: Get Help > Troubleshoot
-- Doc ID: doc-sr4cc-59c5d52f-27d8-4317-8986-2bed0bdf2ddf-8096e1b6577cadfa
+- Doc ID: doc-sr4cc-99d537ed-04d6-4df0-be60-6290cf09240d-8096e1b6577cadfa
 - Source: https://docs.adaptavist.com/sr4cc/latest/get-help/troubleshoot/static-type-checking
 
-Static type checking (STC) provides information about whether your script is correctly written.
+Static Type Checking (STC) provides information about whether your script is correctly written.
 
 Groovy is a dynamic language, which means that method and property names are looked up when your code is run, not when it's compiled (like Java).
 
@@ -27,7 +27,7 @@ When your scripts are executed, they are always compiled dynamically. When they 
 There are limitations to the type checker. It is possible to write code that shows errors in the editor, but is valid and executes fine. Some of these situations are:
 
 -   Using certain builders: Builder patterns may confuse type inference.
--   Using closures where the parameter types can't be inferred: See the Closures section for workarounds.
+-   Using closures where the parameter types can't be inferred.
 -   Using Spock test framework blocks: When writing Spock tests (extending `spock.lang.Specification`), the static type checker cannot infer types correctly within Spock's DSL blocks ( `expect:`, `when:`, `then:`, `setup:`, etc.). Expressions in these blocks are treated as operating on `java.lang.Object`, resulting in false-positive errors. These errors can be safely ignored, and the tests will compile and run correctly when executed via the Test Runner or your IDE.
 
 If you write code that triggers these limitations, you may prefer to use an IDE, which does not rely on the STC.

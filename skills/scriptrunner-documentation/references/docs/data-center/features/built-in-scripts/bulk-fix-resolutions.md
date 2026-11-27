@@ -3,10 +3,10 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Built-in scripts
-- Doc ID: doc-sr4js-84f5572f-96f1-48d3-9280-683916da3ed7-ef866ebccf958dd4
+- Doc ID: doc-sr4js-83158966-ff66-40c2-aefc-9da2e65dc79e-ef866ebccf958dd4
 - Source: https://docs.adaptavist.com/sr4js/latest/features#built-in-scripts--en#bulk-fix-resolutions--en
 
-Use the _Bulk Fix Resolution_ built-in script to change the Resolution field on multiple issues that match a [saved filter](https://confluence.atlassian.com/jirasoftwareserver/saving-your-search-as-a-filter-939938748.html).
+Fix incorrect Resolution field values on multiple issues at once using the Bulk Fix Resolution built-in script and a [saved filter](https://confluence.atlassian.com/jirasoftwareserver/saving-your-search-as-a-filter-939938748.html).
 
 Problems with imports, workflow modifications and Jira migrations can all cause incorrect Resolution values for multiple issues. _Bulk Fix Resolution_ allows you to modify the Resolution value for all issues returned by a JQL query (filter) without entering the database or re-indexing.
 

@@ -3,7 +3,7 @@
 - Platform: confluence-data-center
 - Space: SR4C
 - Hierarchy: Features > CQL Functions
-- Doc ID: doc-sr4c-78505bea-6a3b-4d69-9a66-d87680ab1ab8-a2193bafbe3cc82d
+- Doc ID: doc-sr4c-9e5c4ab1-a52b-41e1-b133-da5c0a228cac-a2193bafbe3cc82d
 - Source: https://docs.adaptavist.com/sr4c/latest/features#cql-functions--en#custom-cql-functions--en
 
 Using custom CQL functions in ScriptRunner for Confluence allows you to create and share custom CQL functions (values) with your users to empower their search.

@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Workflows > Conditions
-- Doc ID: doc-sr4js-805b3375-eb61-4cfd-bf55-5f417bbaafa3-f66e00a4da93d324
+- Doc ID: doc-sr4js-ed5aaa0f-761e-45e1-a3e8-bdec046ac1a8-f66e00a4da93d324
 - Source: https://docs.adaptavist.com/sr4js/latest/features#workflows--en#conditions--en#project-roles-condition--en
 
 Use the _Project role(s)_ condition to control whether or not a user can transition an issue based on their [project role memberships](https://confluence.atlassian.com/adminjiraserver/managing-project-role-membership-938847171.html).

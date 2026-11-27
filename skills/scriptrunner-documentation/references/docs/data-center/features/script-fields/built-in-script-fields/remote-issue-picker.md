@@ -3,7 +3,7 @@
 - Platform: data-center
 - Space: SR4JS
 - Hierarchy: Features > Script fields > Built-In Script Fields
-- Doc ID: doc-sr4js-c071727b-28d9-4850-9b19-295c16dda525-75a46761a5bfd48a
+- Doc ID: doc-sr4js-124bf8a2-5b33-4518-a1b4-93d6b4620916-75a46761a5bfd48a
 - Source: https://docs.adaptavist.com/sr4js/latest/features#script-fields--en#built-in-script-fields--en#remote-issue-picker--en
 
 A field that allows for picking an issue, or issues, from a pre-defined JQL query _from a linked Jira instance_. Examples for usage might be:

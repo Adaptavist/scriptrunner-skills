@@ -7,7 +7,7 @@ description: >-
     @sr-connect/cli. Use for any SRC, ScriptRunner Connect or Atlassian-integration question, and
     load references/ before running the CLI.
 metadata:
-    version: '1.24'
+    version: '1.25'
     minCliVersion: '0.7.0'
 ---
 
@@ -190,7 +190,7 @@ Source: https://docs.adaptavist.com/src/latest/workspaces/package-manager
 
 ### Record storage
 
-A key-value store scripts use for state across invocations: get, set, delete, exists, list keys. Scopes are environment, the default, workspace, team and invocation. Options: TTL, encryption, deny-overwrite. A plain write overwrites, last writer wins; a write with deny-overwrite is an atomic create-if-absent, exactly one of several racing writers succeeds, which is what makes a lock, an idempotency guard or an append log possible. Rate-limited per team with automatic retry. Capacity is per plan; see Limits.
+A key-value store scripts use for state across invocations: get, set, delete, exists, list keys. Scopes are environment, the default, workspace, team and invocation. Options: TTL, encryption, deny-overwrite. A plain write overwrites, last writer wins; a write with deny-overwrite is an atomic create-if-absent, exactly one of several racing writers succeeds, which is what makes a lock, an idempotency guard or an append log possible. Rate-limited per team with automatic retry. Capacity is per plan; see Limits. The team's Usage page shows how much is stored against that capacity, and warns once the team is over it.
 
 Source: https://docs.adaptavist.com/src/latest/scripting/record-storage
 

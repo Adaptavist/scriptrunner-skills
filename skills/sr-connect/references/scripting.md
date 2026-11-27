@@ -800,7 +800,7 @@ listener.
 | JSM On-Premise              |                                     | `@managed-api/jira-service-management-on-premise-v4-sr-connect`     |
 | JSM On-Premise Assets       |                                     | `@managed-api/jira-service-management-on-premise-assets-sr-connect` |
 | Microsoft Teams             | `@sr-connect/microsoft`             | `@managed-api/microsoft-graph-v1-sr-connect`                        |
-| monday.com                  | `@sr-connect/monday`                | `@managed-api/monday-v2025-07-sr-connect`                           |
+| monday.com                  | `@sr-connect/monday`                | `@managed-api/monday-v2026-10-sr-connect`                           |
 | NetSuite                    | `@sr-connect/netsuite`              | `@managed-api/netsuite-v1-sr-connect`                               |
 | Opsgenie                    | `@sr-connect/opsgenie`              | `@managed-api/opsgenie-sr-connect`                                  |
 | Salesforce                  | `@sr-connect/salesforce`            | `@managed-api/salesforce-v57-sr-connect`                            |
